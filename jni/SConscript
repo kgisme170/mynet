@@ -1,0 +1,13 @@
+#1. Env setttings
+import os
+env=Environment(ENV=os.environ)
+ODPS_SRC=env['ENV']['ODPS_SRC']
+env.Append(CPPPATH=['./include'])
+env.Append(CPPPATH=['.'])
+env.Append(CPPPATH=[ODPS_SRC+'/thirdparty/compatible/include'])
+env.Append(LIBPATH=[ODPS_SRC+'/thirdparty/compatible/lib'])
+env.Append(CCFLAGS="-g")
+env.Append(LINKFLAGS="-rdynamic")
+linuxlibs  = ['jvm']
+env.Program(target="usejclass",    source=['usejclass.cpp'],  LIBS=[linuxlibs])
+env.SharedLibrary(target="impl", source=['impl.c'])

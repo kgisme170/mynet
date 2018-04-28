@@ -1,0 +1,18 @@
+#1. Env setttings
+import os
+env=Environment(ENV=os.environ)
+#2. Targets
+env.Program(target='testPthread',                source='testPthread.cpp',             LIBS=['pthread'])
+env.Program(target='testPthreadReturn',          source='testPthreadReturn.cpp',       LIBS=['pthread'])
+env.Program(target='testPthreadCancel',          source='testPthreadCancel.c',         LIBS=['pthread'])
+env.Program(target='testPthreadCancelCpp',       source='testPthreadCancelCpp.cpp',    LIBS=['pthread'])
+env.Program(target='testPthreadCancelCppStd',    source='testPthreadCancelCppStd.cpp', LIBS=['pthread'])
+env.Program(target='testPthreadCancelUnwind',    source='testPthreadCancelUnwind.cpp', LIBS=['pthread'])
+env.Program(target='testPthreadExit',            source='testPthreadExit.cpp',         LIBS=['pthread'])
+env.Program(target='testPthreadMutex',           source='testPthreadMutex.cpp',        LIBS=['pthread'])
+env.Program(target='testPthreadCond',            source='testPthreadCond.cpp',         LIBS=['pthread'])
+env.Program(target='testPthreadJoin',            source='testPthreadJoin.cpp',         LIBS=['pthread'])
+env.Program(target='producerConsumer',           source='producerConsumer.cpp',        LIBS=['pthread'])
+env.Program(target='usetls',                     source='usetls.cpp',                  LIBS=['pthread'])
+env.Program(target='useTlsCheck',                source=['useTlsCheck.cpp', 'useTlsCreate.cpp'], LIBS=['pthread'])
+env.Program(target='testRWlock',                 source=['testRWlock.cpp'],            LIBS=['pthread'])

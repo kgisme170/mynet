@@ -1,0 +1,12 @@
+ALICPP_DIR ?= /usr/ali/alicpp/built/gcc-4.9.2
+CC := $(ALICPP_DIR)/gcc-4.9.2/bin/gcc
+CXX := $(ALICPP_DIR)/gcc-4.9.2/bin/g++
+CXXFLAGS := -std=c++11 -nostdinc++ -isystem $(ALICPP_DIR)/gcc-4.9.2/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include -isystem $(ALICPP_DIR)/gcc-4.9.2/lib/gcc/x86_64-unknown-linux-gnu/4.9.2/include-fixed -isystem $(GCC_DIR)/include/c++/4.9.2 -isystem $(ALICPP_DIR)/gcc-4.9.2/include/c++/4.9.2/x86_64-unknown-linux-gnu -isystem /usr/include -I$(ALICPP_DIR)/三方库/include
+LDFLAGS := -L$(ALICPP_DIR)/gcc-4.9.2/lib64 -Wl,-rpath=$(ALICPP_DIR)/gcc-4.9.2/lib64 -Wl,-rpath-link=$(ALICPP_DIR)/gcc-4.9.2/lib64 -static-libstdc++ -static-libgcc -Wl,--whole-archive -Wl,-Bstatic  -L$(ALICPP_DIR)/usr/ali/alicpp/built/gcc-4.9/三方库/lib -Wl,-Bdynamic -Wl,--no-whole-archive
+
+cpp11test:
+	${CXX} testStringCow.cpp ${LDFLAGS}
+	${CXX} testSetDifference.cpp ${LDFLAGS}
+	${CXX} typeDeductionForInitializerlist.cpp ${LDFLAGS}
+	${CXX} typeDeductionForAutoCpp17.cpp ${LDFLAGS}
+	${CXX} testTemplate.cpp ${LDFLAGS}

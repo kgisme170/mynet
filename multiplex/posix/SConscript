@@ -1,0 +1,15 @@
+import os
+env=Environment(ENV=os.environ)
+env.Program(target='threads_cacheline',source='threads_cacheline.cpp',LIBS='pthread')
+env.Program(target='threads_omp'      ,source='threads_omp.cpp',      LIBS='pthread')
+env.Program(target='threads_lock'     ,source='threads_lock.cpp',     LIBS='pthread')
+env.Program(target='testLibEvent'     ,source='testLibEvent.cpp',     LIBS='event')
+env.Program(target='testLibEventHttp' ,source='testLibEventHttp.cpp', LIBS='event')
+
+env.Program(target='testdup'          ,source='testdup.cpp')
+env.Program(target='testAlarm'        ,source='testAlarm.cpp')
+env.Program(target='testAlarmFork'    ,source='testAlarmFork.cpp')
+env.Program(target='testSelect'       ,source='testSelect.cpp')
+env.Program(target='testPoll'         ,source='testPoll.cpp')
+env.Program(target='testLibEv'        ,source='testLibEv.cpp',      LIBS='ev')
+env.Program(target='testPipeEv'       ,source='testPipeEv.cpp',     LIBS='ev')

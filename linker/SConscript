@@ -1,0 +1,32 @@
+#1. Env setttings
+import os
+env=Environment(ENV=os.environ)
+env.Append(LIBPATH=".")
+#2. Targets
+env.Object('b.cpp')
+env.Object('d.cpp')
+env.StaticLibrary('b',['b.o'])
+env.StaticLibrary('d',['d.o'])
+env.Program('a',source=['a.cpp'],LIBS=['b','d'])
+
+main=env.Object('doubledefinemain.cpp')
+env.Program('doubledefineCpp',source=[main,'doubledefine01.cpp','doubledefine02.cpp'])
+
+doubledefine01=env.Object('doubledefine01.cpp')
+doubledefine02=env.Object('doubledefine02.cpp')
+env.Program('doubledefineObj',source=[main,doubledefine01,doubledefine02])
+
+env.StaticLibrary('archive',source=[doubledefine01,doubledefine02])
+env.Program('doubledefineAr',source=main,LIBS=['archive'])
+
+env.Append(LINKFLAGS="-rdynamic")
+env.Append(LINKFLAGS="--shared")
+env.Append(CCFLAGS="-fPIC")
+maindy=env.Object('maindy.o','doubledefinemain.cpp')
+
+env.SharedLibrary('d01',source='doubledefine01.cpp')
+env.SharedLibrary('d02',source='doubledefine02.cpp')
+env.SharedLibrary('both',source=['doubledefine01.cpp','doubledefine02.cpp'])
+
+env.Program('doubledefineSo',  source=maindy,LIBS=['d01','d02'])
+env.Program('doubledefineBoth',source=maindy,LIBS=['both'])
