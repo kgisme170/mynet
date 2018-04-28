@@ -1,0 +1,27 @@
+#1. Env setttings
+import os
+env=Environment(ENV=os.environ)
+ODPS_SRC=env['ENV']['ODPS_SRC']
+#2. Targets
+env.Program(target='templateContainer',source='templateContainer.cpp')
+env.Program(target='typeDeductionForConst',source='typeDeductionForConst.cpp')
+env.Program(target='typeDeductionForConst2',source='typeDeductionForConst2.cpp')
+env.Program(target='typeDeductionForRefMember',source='typeDeductionForRefMember.cpp')
+env.Program(target='testPosixspawn',source='testPosixspawn.cpp')
+env.Program(target='hideFunction',  source='hideFunction.cpp')
+env.Program(target='virtual01',   source='virtual01.cpp')
+env.Program(target='virtual02',   source='virtual02.cpp')
+env.Program(target='virtual03',   source='virtual03.cpp')
+env.Program(target='virtual04',   source='virtual04.cpp')
+env.Program(target='closure',     source='closure.cpp')
+env.Program(target='printMap',    source='printMap.cpp')
+env.Program(target='staticCheckBaseDerive',source='staticCheckBaseDerive.cpp')
+env.Program(target='virtualInheritance',   source='virtualInheritance.cpp')
+env.Program(target='pointerAdjustment',    source='pointerAdjustment.cpp')
+env.Program(target='testMetaProgramming',  source='testMetaProgramming.cpp')
+env.Program(target='testExprTemplate',     source='testExprTemplate.cpp')
+
+env.Program(target='testNewClosure', source='testNewClosure.cpp',  LIBS=['pthread'], CPPPATH=[ODPS_SRC+'/apsara/sdk/release/include/'])
+env.Program(target='testPointer',    source='testPointer.cpp',     LIBS=['pthread'])
+env.Program(target='fileToString',   source='fileToString.cpp')
+env.Program(target='printFormatTime',source='printFormatTime.cpp')
