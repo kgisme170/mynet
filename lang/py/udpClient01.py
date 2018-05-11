@@ -4,7 +4,7 @@ from socket import *
 from time import ctime
 HOST='localhost' # HOST='#1'再测试一下，socket(AF_INET6)
 PORT=21567
-BUFSIZ=2014
+BUFSIZ=1024
 ADDR=(HOST,PORT)
 
 udpCliSock=socket(AF_INET, SOCK_DGRAM)

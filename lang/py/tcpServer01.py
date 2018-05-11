@@ -4,7 +4,7 @@ from socket import *
 from time import ctime
 HOST=''
 PORT=21567
-BUFSIZ=2014
+BUFSIZ=1024
 ADDR=(HOST,PORT)
 
 tcpServerSock=socket(AF_INET, SOCK_STREAM)
@@ -12,9 +12,9 @@ tcpServerSock.bind(ADDR)
 tcpServerSock.listen(5)
 
 while True:
-    print '等待连接'
+    print 'Wait connection'
     tcpCliSock, addr=tcpServerSock.accept()
-    print "......连接来自于:", addr
+    print "......Connected from:", addr
 
     while True:
         data=tcpCliSock.recv(BUFSIZ)
