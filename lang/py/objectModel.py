@@ -9,7 +9,10 @@ class C(A):
         print 'C f'
 
 class D(B,C):
+    def __init__(self):
+        print "D init"
     def g(self):
         f()
 d=D()
+d.f()
 d.g()
