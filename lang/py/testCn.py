@@ -1,5 +1,6 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*- 
+#!/usr/bin/env python
+print "这里"
 #with open("E:\\问题.txt") as f:
 #    print f.read()
 

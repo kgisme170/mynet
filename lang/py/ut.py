@@ -1,6 +1,7 @@
 import unittest
 class mytest(unittest.TestCase):
-    def __init__(self):
+    def __init__(self,methodName='runTest'):
+        super(mytest,self).__init__(methodName)
         print '__init__'
     def setUp(self):
         print 'setup'
