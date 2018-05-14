@@ -12,7 +12,7 @@ class D(B,C):
     def __init__(self):
         print "D init"
     def g(self):
-        f()
+        super(D,self).f()
 d=D()
 d.f()
 d.g()
