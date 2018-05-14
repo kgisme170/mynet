@@ -12,20 +12,3 @@ def loop1():
 thread.start_new_thread(loop0,())
 thread.start_new_thread(loop1,())
 sleep(6)
-#.net await
-# subprocess
-# concurrent.futures
-
-
-
-
-
-
-
-
-
-
-
-
-
-
