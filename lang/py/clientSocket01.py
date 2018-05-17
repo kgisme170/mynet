@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-  
-from socket import *
+
+from socket import socket, AF_INET, SOCK_STREAM
 HOST='localhost'
 PORT=21571
 BUFSIZ=1024
 ADDR=(HOST,PORT)
-
 while True:
     tcpCliSock=socket(AF_INET, SOCK_STREAM)
     tcpCliSock.connect(ADDR)
@@ -15,6 +15,6 @@ while True:
     tcpCliSock.send('%s\r\n' % data)
     data=tcpCliSock.recv(BUFSIZ)
     if not data:
-        break;
+        break
     print data.strip()
     tcpCliSock.close()
