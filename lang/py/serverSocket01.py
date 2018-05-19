@@ -7,7 +7,7 @@ PORT=21571
 ADDR=(HOST,PORT)
 
 class MyRequestHandler(SRH):
-    def handler(self):
+    def handle(self):
         print '...connected from :', self.client_address
         self.wfile.write('[%s] %s' % (ctime(), self.rfile.readline()))
 tcpServer=TCP(ADDR,MyRequestHandler)
