@@ -9,6 +9,7 @@ class Context(object):
         print "type:", type
         print "value:", value
         print "trace:", trace
+        return True # 如果返回False，异常会被重举，True，异常被终止
     def myexception(self):
         print 1/0
     def __str__(self):
@@ -20,14 +21,4 @@ def get_context():
 with Context() as ret:
     print ret
 with get_context() as ret:
-    print "context:"
-    #ret.myexception()
-
-
-class Item():
-    def __init__(self,name):
-        self._name=name
-    def __repr__(self):
-        return "Item's name is :" + self._name
-    __str__=__repr__
-print Item("Car")
+   ret.myexception()
