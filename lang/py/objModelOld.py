@@ -1,8 +1,7 @@
-class A:
+class A: # 老的对象模型，不从object继承，多继承是深度优先搜索父类方法
     def __init__(self):
         print 'this is A'
-
-    def save(self):
+    def f(self):
         print 'come from A'
 
 class B(A):
@@ -12,12 +11,13 @@ class B(A):
 class C(A):
     def __init__(self):
         print 'this is C'
-    def save(self):
+    def f(self):
         print 'come from C'
 
 class D(B,C):
     def __init__(self):
         print 'this is D'
+    pass
 
 d1=D()
-d1.save()  #结果为'come from A
+d1.f()  #结果为'come from A
