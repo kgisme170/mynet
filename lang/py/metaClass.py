@@ -50,27 +50,31 @@ class ModelMetaclass(type):
         return type.__new__(cls, name, bases, attrs)
 
 class Model(dict):
-    __metaclass__=ModelMetaclass
+    __metaclass__ = ModelMetaclass
+
     def __init__(self, **kw):
-        super(Model,self).__init__(**kw)
-    def __getattribute__(self, key):
+        super(Model, self).__init__(**kw)
+
+    def __getattr__(self, key):
         try:
             return self[key]
-        except KeyError as err:
-            print "Error:", err
+        except KeyError:
+            raise AttributeError(r"'Model' object has no attribute '%s'" % key)
+
     def __setattr__(self,key,value):
         self[key]=value
+
     def save(self):
-        fields = []
-        params = []
-        args = []
-        for k, v in self.__mappings__.iteritems():
-            fields.append(v.name)
-            params.append('?')
-            args.append(getattr(self, k, None))
-        sql = 'insert into %s (%s) values (%s)' % (self.__table__, ','.join(fields), ','.join(params))
-        print('SQL: %s' % sql)
-        print('ARGS: %s' % str(args))
+        field=[]
+        param=[]
+        args=[]
+        for k,v in self.__mappings__.iteritems():
+            field.append(v.name)
+            param.append('?')
+            args.append(getattr(self,k,None))
+        sql='insert into %s (%s) values (%s)' % (self.__table__, ','.join(field), ','.join(param))
+        print "SQL:", sql
+        print "ARGS:", str(args)
 class User(Model):
     id = IntegerField('id')
     name = StringField('username')
