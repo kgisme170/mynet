@@ -11,3 +11,4 @@ subprocess.call(['dir',],)
 3. python协程，yield
 
 4. 在repl模式下直接执行一个文件？
+5. wsgi是否是python web开发专用的一种接口
