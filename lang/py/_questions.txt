@@ -1,5 +1,0 @@
-1. print base64.urlsafe_b64encode("abcde")#why it still has '='?
-2. 
-
-3. python协程，yield
-4. singleton7里面的问题

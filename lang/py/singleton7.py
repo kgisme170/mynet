@@ -39,7 +39,7 @@ class s3(object):
         print 's3'
 s3().p()
 print '-------------'
-def f4(cls):#how does class decorator work?
+def f4(cls):
     i = {}
     def myinstance():
         if cls not in i:
@@ -61,7 +61,7 @@ class s4(type):
     def __init__(cls, name, bases, dct):
         super(s4, cls).__init__(name, bases, dct)
         cls.instance = None
-    def __call__(cls, *args):#why is this called?
+    def __call__(cls, *args):
         if cls.instance is None:
             cls.instance = super(s4, cls).__call__(*args)
         return cls.instance
@@ -87,5 +87,5 @@ Singleton = Singleton()
 Singleton.foo()
 a = Singleton()
 b = Singleton()
-print(id(a))#why identical
+print(id(a))
 print(id(b))
