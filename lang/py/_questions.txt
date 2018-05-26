@@ -1,14 +1,5 @@
 1. print base64.urlsafe_b64encode("abcde")#why it still has '='?
 2. 
 
-#from multiprocessing import Pool
-#from multiprocessing import Process
-import subprocess
-subprocess.call(['dir',],)
-
-上面的两个import，只有在python的安装目录下面执行才能成功，在其他的目录下执行都说是找不到module
-
 3. python协程，yield
-
-4. 在repl模式下直接执行一个文件？
-5. wsgi是否是python web开发专用的一种接口
+4. singleton7里面的问题
