@@ -1,6 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from numpy import ones,array,arange,sin,pi,random
 #from scipy import io as spio
-from scipy import linalg,fftpack,optimize,stats
+from scipy import linalg,fftpack,optimize#,stats
 import matplotlib.pyplot as plt
 
 a=ones((3,3))
@@ -31,3 +33,8 @@ a=random.normal(size=1000)
 #loc,std=stats.norm.fit(a)
 #print loc,std
 #print median(a)
+
+#在mac环境下要使用matplotlib最好用virtualenv
+#virtualenv /tmp/lpy
+#source /tmp/lpy/bin/activate
+#pip install matplotlib
