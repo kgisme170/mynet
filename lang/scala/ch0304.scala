@@ -26,7 +26,7 @@ println(b1.sum)
 println(a.max)
 println(b1.sortWith(_>_))
 scala.util.Sorting.quickSort(a)
-println(a)//Array和ArrayBuffer的本质区别?
+println(a)
 val matrix=Array.ofDim[Double](3,4)
 matrix(2)(3)=42
 println(matrix)
