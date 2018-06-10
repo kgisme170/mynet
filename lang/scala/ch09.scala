@@ -83,23 +83,28 @@ def errorFunction2()
     val p_ = in.readObject().asInstanceOf[Person]
     println(p_)
 }
+def runProcess()
+{
+    import sys.process._
+    "ifconfig" #| "grep IPv4" #> new File("output.txt") !
 
-import sys.process._
-"ipconfig" #| "findstr IPv4" #> new File("output.txt") !
+    val pr = Process("sh", new File("."), ("LANG", "en_US"))
+    "ifconfig" #| pr
+}
+def runRegex()
+{
+    import scala.util.matching.Regex
+    val numPattern="[0-9]+".r
+    val s="99 bottles,98 bottles"
+    for(matchString<-numPattern.findAllIn(s))
+        println(matchString)
 
-val pr = Process("cmd", new File("."), ("LANG", "en_US"))
-"ipconfig" #| pr
+    val m1=numPattern.findFirstIn(s)
+    println(m1)
 
-import scala.util.matching.Regex
-val numPattern="[0-9]+".r
-val s="99 bottles,98 bottles"
-for(matchString<-numPattern.findAllIn(s))
-    println(matchString)
-
-val m1=numPattern.findFirstIn(s)
-println(m1)
-
-val numitem="([0-9]+) ([a-z]+)".r
-val numitem(num, item)="99 bottles"
-println(num)
-println(item)
+    val numitem="([0-9]+) ([a-z]+)".r
+    val numitem(num, item)="99 bottles"
+    println(num)
+    println(item)
+}
+errorFunction
