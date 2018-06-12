@@ -47,3 +47,10 @@ def ulcase(s:String)=Vector(s.toUpperCase(),s.toLowerCase())
 val names=List("Peter","Paul")
 names.map(ulcase).foreach(println _)
 names.flatMap(ulcase).foreach(println _)
+
+val freq=scala.collection.mutable.Map[Char,Int]()
+for(c<-"Mississippi")freq(c)=freq.getOrElse(c,0)+1
+freq.foreach(println _)
+println((Map[Char,Int]()/:"Mississippi"){
+    (m,c)=>m+(c->(m.getOrElse(c,0)+1))
+})
