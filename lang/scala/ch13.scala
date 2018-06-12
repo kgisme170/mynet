@@ -43,4 +43,7 @@ println(Set(1,2) subsetOf digits)
 List("Peter","John").map(_.toUpperCase).foreach(println _)
 println(List(1,7,2,9).foldLeft(0)(_-_))
 println((0/:List(1,7,2,9))(_-_))
-
+def ulcase(s:String)=Vector(s.toUpperCase(),s.toLowerCase())
+val names=List("Peter","Paul")
+names.map(ulcase).foreach(println _)
+names.flatMap(ulcase).foreach(println _)
