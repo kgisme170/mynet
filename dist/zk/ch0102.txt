@@ -1,0 +1,19 @@
+---------------单机版----------------
+1. 下载zk最新版，解压缩之后修改cd conf
+2. mv zoo_sample.cfg zoo.cfg
+3. 修改zoo.cfg中datadir路径和端口号
+4. 启动bin/zkServer.sh start/start-foreground命令开启服务
+5. bin/zkCli.sh可以连接服务
+
+---------------伪多机版--------------
+1. 拷贝安装目录到~/Documents/zk/z1到z3
+2. 分别修改zoo.cfg，使用不同的端口号，添加3个server的描述
+3. 在各自的data目录下创建一个myid的文本文件，里面分别填入1～3
+4. 启动3个服务器，可以用bin/zkServer.sh status看到当前的服务是leader还是follower
+
+---------------创建和提交任务---------
+create -e x创建临时节点
+create -e x "y" 创建临时节点，文本内容是y
+create x 创建永久节点
+ls /xxx 列出文件
+ls /xxx true 监视一个目录或者文件的状态
