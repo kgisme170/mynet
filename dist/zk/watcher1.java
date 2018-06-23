@@ -13,17 +13,32 @@ public class watcher1 implements Watcher{
         zk=new ZooKeeper(hostPort, 15000, this);
     }
     void stopZK() throws Exception {zk.close();}
-    public void process(WatchedEvent e){
-        System.out.println(e);
+    public void process(WatchedEvent event){
+        String msg = "##########====>";
+        msg += event;
+        System.out.println("Enter the process method,the event is :" + msg);
+        Event.EventType type = event.getType();
+        switch (type) {
+            case NodeCreated:
+                System.out.println("新建节点:" + event.getPath());
+            case NodeDeleted:
+                System.out.println("删除节点:" + event.getPath());
+            case NodeDataChanged:
+                System.out.println("修改节点:" + event.getPath());
+            case NodeChildrenChanged:
+                System.out.println("子节点:" + event);
+        }
     }
     Random rand = new Random();
     String serverId = Long.toString(rand.nextLong());
+    String path = "/master";
     static boolean isLeader = false;
-    boolean checkMaster(){
+    boolean checkMaster(){//如果这个节点已存在，那么前面的create就不会执行。
         while(true){
             try{
                 Stat stat = new Stat();
-                byte data[]=zk.getData("/master", false, stat);
+                System.out.println("##########检查master节点");
+                byte data[]=zk.getData(path, false, stat);
                 isLeader = new String(data).equals(serverId);
                 return true;
             }catch(NoNodeException e){
@@ -45,14 +60,27 @@ public class watcher1 implements Watcher{
         System.out.println("---------------runForMaster--------------");
 
         while(true){
+            System.out.println("---------------while--------------");
             try {
-                zk.create(
-                    "/master",
-                    serverId.getBytes(),
-                    ZooDefs.Ids.OPEN_ACL_UNSAFE,
-                    CreateMode.EPHEMERAL);
-                isLeader = true;
-                break;
+                System.out.println("---------------create--------------");
+                Stat stat = zk.exists(path, this);
+                if (stat == null) {
+                    zk.create(
+                        "/master",
+                        serverId.getBytes(),
+                        ZooDefs.Ids.OPEN_ACL_UNSAFE,
+                        CreateMode.EPHEMERAL);
+                    isLeader = true;
+                    System.out.println("---------------after create--------------");
+                    break;
+                }else{
+                    if(checkMaster()){
+                        System.out.println("---------------end while--------------");
+                        break;
+                    }
+                    Thread.sleep(5000);
+                    zk.delete(path, stat.getVersion());
+                }
             }catch (NodeExistsException e) {
                 isLeader = false;
                 break;
@@ -61,7 +89,6 @@ public class watcher1 implements Watcher{
             }catch(KeeperException e){
                 System.out.println("KeeperException");
             }
-            if(checkMaster())break;
             System.out.println("---------------checkMaster again--------------");
         }
     }
