@@ -1,18 +1,38 @@
+import java.util.Date;
+import java.util.List;
 import java.util.Random;
 import java.lang.Exception.*;
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.data.*;
 import org.apache.zookeeper.KeeperException.*;
 public class watcher1 implements Watcher{
-    ZooKeeper zk;
-    String hostPort;
+    private ZooKeeper zk;
+    private String hostPort;
+    private static final int SESSION_TIME_OUT = 15000;
     watcher1(String _hostPort){
         hostPort=_hostPort;
     }
     void startZK() throws Exception{
-        zk=new ZooKeeper(hostPort, 15000, this);
+        zk=new ZooKeeper(hostPort, SESSION_TIME_OUT, this);
     }
     void stopZK() throws Exception {zk.close();}
+    String createNode(String path, String data) throws Exception{
+        return zk.create(path, data.getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL);
+    }
+    List<String> getChildren(String path) throws KeeperException, InterruptedException{
+        return zk.getChildren(path, false);
+    }
+    String getData(String path) throws KeeperException, InterruptedException{
+        byte[] data = zk.getData(path, false, null);
+        if(data==null)return "";
+        return new String(data);
+    }
+    Stat setData(String path, String data) throws KeeperException, InterruptedException{
+        return zk.setData(path, data.getBytes(), -1);
+    }
+    void deleteNode(String path) throws KeeperException, InterruptedException{
+        zk.delete(path, -1);
+    }
     public void process(WatchedEvent event){
         String msg = "##########====>";
         msg += event;
@@ -36,10 +56,8 @@ public class watcher1 implements Watcher{
     boolean checkMaster(){//如果这个节点已存在，那么前面的create就不会执行。
         while(true){
             try{
-                Stat stat = new Stat();
                 System.out.println("##########检查master节点");
-                byte data[]=zk.getData(path, false, stat);
-                isLeader = new String(data).equals(serverId);
+                isLeader = getData(path).equals(serverId);
                 return true;
             }catch(NoNodeException e){
                 System.out.println("NoNodeException");
@@ -65,11 +83,7 @@ public class watcher1 implements Watcher{
                 System.out.println("---------------create--------------");
                 Stat stat = zk.exists(path, this);
                 if (stat == null) {
-                    zk.create(
-                        "/master",
-                        serverId.getBytes(),
-                        ZooDefs.Ids.OPEN_ACL_UNSAFE,
-                        CreateMode.EPHEMERAL);
+                    createNode("/master", serverId);
                     isLeader = true;
                     System.out.println("---------------after create--------------");
                     break;
@@ -88,11 +102,17 @@ public class watcher1 implements Watcher{
 
             }catch(KeeperException e){
                 System.out.println("KeeperException");
+            }catch(Exception e){
+                System.out.println("KeeperException");
             }
             System.out.println("---------------checkMaster again--------------");
         }
     }
     public static void main(String args[])throws Exception{
+        if (args.length == 0){
+            System.out.println("需要zk server的ip地址和端口作为参数");
+            System.exit(1);
+        }
         watcher1 m = new watcher1(args[0]);
         m.startZK();
         m.runForMaster();
