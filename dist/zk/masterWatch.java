@@ -5,11 +5,11 @@ import java.lang.Exception.*;
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.data.*;
 import org.apache.zookeeper.KeeperException.*;
-public class watcher1 implements Watcher{
+public class masterWatch implements Watcher{
     private ZooKeeper zk;
     private String hostPort;
     private static final int SESSION_TIME_OUT = 15000;
-    watcher1(String _hostPort){
+    masterWatch(String _hostPort){
         hostPort=_hostPort;
     }
     void startZK() throws Exception{
@@ -113,7 +113,7 @@ public class watcher1 implements Watcher{
             System.out.println("需要zk server的ip地址和端口作为参数");
             System.exit(1);
         }
-        watcher1 m = new watcher1(args[0]);
+        masterWatch m = new masterWatch(args[0]);
         m.startZK();
         m.runForMaster();
         if(isLeader){

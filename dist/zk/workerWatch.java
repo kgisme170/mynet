@@ -6,11 +6,11 @@ import org.apache.zookeeper.*;
 import org.apache.zookeeper.data.*;
 import org.apache.zookeeper.KeeperException.*;
 import org.apache.zookeeper.AsyncCallback.*;
-public class watcher2 implements Watcher{
+public class workerWatch implements Watcher{
     private ZooKeeper zk;
     private String hostPort;
     private static final int SESSION_TIME_OUT = 15000;
-    watcher2(String _hostPort){
+    workerWatch(String _hostPort){
         hostPort=_hostPort;
     }
     void startZK() throws Exception{
@@ -56,7 +56,7 @@ public class watcher2 implements Watcher{
             System.out.println("需要zk server的ip地址和端口作为参数");
             System.exit(1);
         }
-        watcher2 m = new watcher2(args[0]);
+        workerWatch m = new workerWatch(args[0]);
         m.startZK();
         m.register();
         Thread.sleep(30000);
