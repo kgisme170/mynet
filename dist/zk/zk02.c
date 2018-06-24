@@ -6,12 +6,22 @@
 #include<stdarg.h>
 #include"zookeeper.h"
 #include"zookeeper_log.h"
-char* make_path(int count, const char* param1, ...){
+char* make_path(int count, ...){
     va_list args;
-    va_start(args, param1);
+    va_start(args, count);
+   
+    size_t index=0;
+    char* p=NULL;
     char* buffer=(char*)malloc(1024);
-    vsnprintf(buffer, count, param1, args);
-    va_end(args);
+    int i;
+    for(i=0;i<count;++i){
+        p=va_arg(args,char*);
+        puts(p);
+        size_t len=strlen(p);
+        memcpy(buffer+index, p, len);
+        index+=len;
+    }
+    return buffer;
 }
 static int connected = 0;
 static int expired = 0;
