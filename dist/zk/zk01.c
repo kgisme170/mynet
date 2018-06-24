@@ -103,28 +103,27 @@ void delete(zhandle_t *zkhandle,char *str)
 
 int main(int argc, const char *argv[])
 {
-    const char* host = "192.168.0.187:2181";
+    const char* host = "127.0.0.1:2181";
     int timeout = 30000;
     char buffer[512];
     int *bufferlen;
-
+    printf("初始化\n");
     zoo_set_debug_level(ZOO_LOG_LEVEL_WARN); //设置日志级别,避免出现一些其他信息
     zhandle_t* zkhandle = zookeeper_init(host,zktest_watcher_g, timeout, 0, "hello zookeeper.", 0);
+    printf("初始化完成\n");
     if (zkhandle ==NULL)
     {
         fprintf(stderr, "Error when connecting to zookeeper servers...\n");
         exit(EXIT_FAILURE);
     }
 
-
+    printf("开始删除节点\n");
     char str[]="/xyz30000000014";
-    // wexists(zkhandle,str);
-    // printf("---------------\n");
-    //create(zkhandle,str);
-    //get(zkhandle);
-    // getChildren(zkhandle,str);
-    //getACL(zkhandle,str);
+    wexists(zkhandle,str);
+    printf("---------------\n");
+    create(zkhandle,str);
+    get(zkhandle);
+    getChildren(zkhandle,str);
+    getACL(zkhandle,str);
     delete(zkhandle,str);
-
-
 }
