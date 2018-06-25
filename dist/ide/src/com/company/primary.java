@@ -1,3 +1,5 @@
+package com.company;
+
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
@@ -58,11 +60,11 @@ public class primary implements Watcher{
     }
     void createNode(String path, String data) throws Exception{
         zk.create(
-            path,
-            data.getBytes(),
-            ZooDefs.Ids.OPEN_ACL_UNSAFE,
-            CreateMode.EPHEMERAL,
-            masterCreateCallback, null);
+                path,
+                data.getBytes(),
+                ZooDefs.Ids.OPEN_ACL_UNSAFE,
+                CreateMode.EPHEMERAL,
+                masterCreateCallback, null);
     }
     List<String> getChildren(String path) throws KeeperException, InterruptedException{
         return zk.getChildren(path, false);
@@ -117,7 +119,7 @@ public class primary implements Watcher{
         }
     }
     void runForMaster(){
-            System.out.println("---------------create--------------");
+        System.out.println("---------------create--------------");
         try{
             createNode("/master", serverId);
             Thread.sleep(5000);
@@ -130,19 +132,15 @@ public class primary implements Watcher{
         }
         System.out.println("---------------checkMaster again--------------");
     }
-    public static void main(String args[])throws Exception{
-        if (args.length == 0){
-            System.out.println("需要zk server的ip地址和端口作为参数");
-            System.exit(1);
+    void check(){
+        try {
+            if (isLeader) {
+                Thread.sleep(60000);
+            } else {
+                System.out.println("Someone else is the leader");
+            }
+        }catch(InterruptedException e){
+            System.out.println("Interrupted");
         }
-        primary m = new primary(args[0]);
-        m.startZK();
-        m.runForMaster();
-        if(isLeader){
-            Thread.sleep(60000);
-        }else{
-            System.out.println("Someone else is the leader");
-        }
-        m.stopZK();
     }
 }
