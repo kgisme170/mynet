@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 using namespace std;
 /*功能:
  *设计二叉树算法，计算
@@ -10,8 +9,6 @@ using namespace std;
  * 5 求值为x的层次号 Done
  * 6 已知先序和中序遍历，构造树 Done
  * 7 用栈来遍历 Done
- * 8 已知满2叉树的先序遍历，求后序遍历
- * 9 判定一个关键字序列是否是排序二叉树的排序查找序列
  */
 struct node{
     int value;
