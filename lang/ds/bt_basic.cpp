@@ -10,8 +10,6 @@ struct node{
     node(int v, node* p):value(v),lchild(NULL),rchild(NULL),parent(p){}
 };
 class bt{
-    size_t allElements;
-    size_t leafElements;
     node* root;
     void del(node* p){
         if(!p)return;
@@ -22,14 +20,10 @@ class bt{
     void preorder(node* p){
         if(!p)return;
         cout<<p->value<<',';
-        ++allElements;
         if(p->lchild){
             preorder(p->lchild);
         }if(p->rchild){
             preorder(p->rchild);
-        }
-        if(!p->lchild && !p->rchild){
-            ++leafElements;
         }
     }
     node* createBst(int pre[], int in[],
@@ -57,11 +51,8 @@ public:
     }
     void printPreorder(){
         cout<<"先序";
-        allElements = 0;
-        leafElements = 0;
         preorder(root);
         cout<<'\n';
-        cout<<"全部结点="<<allElements<<",叶子结点="<<leafElements<<'\n';
     }
 };
 int main(){
