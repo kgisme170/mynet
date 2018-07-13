@@ -3,7 +3,7 @@
 #include <condition_variable>
 #include <mutex>
 using namespace std;
-/*功能: 测试线程和mutex的功能*/
+/*功能: 测试条件变量的功能*/
 
 mutex m;
 condition_variable c;

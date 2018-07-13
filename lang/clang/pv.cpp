@@ -3,7 +3,7 @@
 #include <condition_variable>
 #include <mutex>
 using namespace std;
-/*功能: 测试线程和mutex的功能*/
+/*功能: 测试pv原语*/
 
 class Semaphore{
     mutex m;
