@@ -24,7 +24,6 @@ class threadedBt{
     }
     void preorder(node* p, node*& pre){ // 这个pre要被不断修改
         if(!p)return;
-        cout<<p->value<<'\n';
         if(!p->lchild){
             p->lFlag = flag::CLUE;
             p->lchild = pre;
@@ -41,6 +40,21 @@ class threadedBt{
         if(p->rFlag == flag::LINK){
             preorder(p->rchild, pre);
         }
+    }
+    void inorder(node* p, node*& pre){ // 这个pre要被不断修改
+        if(!p)return;
+        inorder(p->lchild, pre);
+        if(!p->lchild){
+            p->lFlag = flag::CLUE;
+            p->lchild = pre;
+        }
+        if(pre && !pre->rchild){
+            pre->rFlag = flag::CLUE;
+            pre->rchild = p;
+        }
+        //cout<<p->value<<", 前驱="<<p->lchild->value<<",后继="<<p->rchild->value<<'\n';
+        pre = p;
+        inorder(p->rchild, pre);
     }
     node* createBst(int pre[], int in[],
                     size_t l1/*pre范围左界*/,
@@ -70,7 +84,7 @@ public:
         cout<<"先序线索化二叉树构造\n";
         node* pre = NULL;
         preorder(root, pre);
-        cout<<"\n顺序遍历线索化二叉树\n";
+        cout<<"顺序遍历线索化二叉树\n";
         node* p = root;
 
         while(p){
@@ -82,11 +96,32 @@ public:
             p = p->rchild;
         }
     }
+    void printInorder(){
+        cout<<"中序线索化二叉树构造\n";
+        node* pre = NULL;
+        inorder(root, pre);
+        cout<<"顺序遍历线索化二叉树\n";
+        node* p = root;
+
+        while(p){
+            while(p->lFlag != flag::CLUE){
+                p = p->lchild;
+            }
+            cout << p->value << ',';
+            while(p->rFlag == flag::CLUE){
+                p = p->rchild;
+                cout << p->value << ',';
+            }
+            p = p->rchild;
+        }
+    }
 };
 int main(){
     int pre[]={1,2,4,5,3,6};
     int in []={4,2,5,1,3,6};
     threadedBt b(pre, in, sizeof(pre)/sizeof(int), sizeof(in)/sizeof(int));
     b.printPreorder();
+    threadedBt b2(pre, in, sizeof(pre)/sizeof(int), sizeof(in)/sizeof(int));
+    b2.printInorder();
     return 0;
 }
