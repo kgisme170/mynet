@@ -1,15 +1,10 @@
 #include <iostream>
 #include <deque>
 using namespace std;
-/*功能: 设计置换-选择排序
- * 需要做的事情有
- * 从待排序的集合构造初始归并集合
- * 构造败者树, 败者树一共n个节点，构造n个叶子节点后才算完成，n个非叶子节点会有n+1个叶子节点
- * 采用广度优先算法构造一个平衡的二叉树
- * 败者树构造和调整的算法
+/*功能: 广度优先构造并遍历
  */
 class testLeaf{
-    size_t len;//败者树的节点值
+    size_t len;//树的叶子节点值
 public:
     testLeaf(size_t l):len(l){}
     size_t length(){return len;}
