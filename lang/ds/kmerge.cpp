@@ -21,26 +21,6 @@ struct dataSource{
     virtual ~dataSource(){}
 };
 
-const size_t testLen = 5;
-size_t bufIndex[testLen] = {0};
-const static int buf[testLen][3] = {
-    {10,15,16},
-    {9,18,21},
-    {20,22,40},
-    {6,17,25},
-    {12,37,48}
-};
-struct arrayDataSource:dataSource{
-    size_t length(){return testLen;}
-    int getNext(size_t arrayIdx){
-        size_t& idx = bufIndex[arrayIdx];
-        int r = (idx>=sizeof(buf[0])/sizeof(int))
-            ? INT_MAX : buf[arrayIdx][idx];
-        ++idx;
-        return r;
-    }
-};
-
 struct IoWorker{
     virtual size_t length() = 0;
     virtual int input(size_t arrayIdx) = 0;
@@ -51,8 +31,8 @@ struct dataWorker : IoWorker{//败者树的数据输入输出
     dataSource* source;
     bool shouldDelete;
 public:
-    dataWorker(dataSource* pSource, bool d = true):
-        source(pSource),
+    dataWorker(dataSource* p, bool d = true):
+        source(p),
         shouldDelete(d){}
     ~dataWorker(){
         if(shouldDelete){
@@ -74,11 +54,13 @@ public:
 class K_Merge{
     IoWorker* worker;
     bool shouldDelete;
+    bool bMiniMax;
+    int miniMax;
     vector<size_t> ls;//LoserTree结点，存储下标
     vector<int> b;//External结点
     size_t k;//归并段的数量
 
-    void Adjust(size_t s){
+    bool Adjust(size_t s){
         COUT<<"->Adjust(s)="<<s<<'\n';
         size_t t = (s+k)/2; // t是双亲节点
         while(t>0){
@@ -93,15 +75,24 @@ class K_Merge{
             t/=2;
             COUT<<'\n';
         }
-        ls[0]=s;
-        printLoserTree();
+        //if(!bMiniMax/*普通流程*/ || ls[s]>=INT_MIN/*可以更新*/){
+            ls[0]=s;
+            printLoserTree();
+            return true;
+        //}else{
+        //    return false;
+        //}
     }
 public:
-    K_Merge(IoWorker* pWorker, bool d = true):
-        worker(pWorker),
-        shouldDelete(d)
+    K_Merge(IoWorker* p,
+            bool d = true, /*是否管理pWorker的声明周期*/
+            bool m = false/*是否采用置换-选择排序的miniMax判断*/):
+        worker(p),
+        shouldDelete(d),
+        bMiniMax(m),
+        miniMax(INT_MIN)
     {
-        k = pWorker->length();
+        k = worker->length();
         ls.resize(k);
         b.resize(k+1);
         b[k]=INT_MIN;//用于初始化第一次Adjust
@@ -129,7 +120,9 @@ public:
             worker->output(b[q]);
             b[q] = worker->input(q);
             COUT<<"补充的新值="<<b[q]<<'\n';
-            Adjust(q);
+            if(!Adjust(q)){
+                break;
+            }
         }
         cout<<'\n';
     }
@@ -141,21 +134,14 @@ public:
     }
 };
 
-const size_t dataBufSize = 6;
-const static int data[] = {
-    51, 49, 39, 46, 38,
-    29, 14, 61, 15, 30,
-    1,  48, 52, 3,  63,
-    27, 4,  13, 89, 24,
-    46, 58, 33, 76
-};
 class mergedData{
-    size_t bufSize;
+    const int* data;
     size_t numData;
+    size_t bufSize;
     vector<vector<int>> initVector;
 public:
-    mergedData():bufSize(dataBufSize){
-        numData = sizeof(data)/sizeof(data[0]);
+    mergedData(const int* d, size_t n, size_t s):
+            data(d),numData(n), bufSize(s){
         size_t numVector = numData / bufSize + numData % bufSize;//如果不整除就要加1
         COUT<<"vector的数量="<<numVector<<'\n';
         initVector.resize(numVector);
@@ -168,7 +154,11 @@ public:
         }
         COUT<<'\n';
     }
+    mergedData(const vector<vector<int>>& v){
+        initVector = v;
+    }
     size_t length(){return numData;}
+    vector<vector<int>> getSections(){return initVector;}
     vector<vector<int>> getInitMergeSections(){ //简单排序
         for(size_t i=0;i<initVector.size();++i){
             sort(initVector[i].begin(),initVector[i].end());
@@ -198,11 +188,28 @@ public:
 };
 
 int main(){
-    K_Merge mArray(new dataWorker(new arrayDataSource()));
+    vector<vector<int>> v;
+    v.push_back({10,15,16});
+    v.push_back({9,18,21});
+    v.push_back({20,22,40});
+    v.push_back({6,17,25});
+    v.push_back({12,37,48});
+    K_Merge mArray(new dataWorker(new vectorDataSource(v)));
     mArray.merge();
     mArray.printLoserTree();
 
-    K_Merge mVector(new dataWorker(new vectorDataSource(mergedData().getInitMergeSections())));
+    const size_t cacheSize2 = 6;
+    const static int testData2[] = {
+        51, 49, 39, 46, 38,
+        29, 14, 61, 15, 30,
+        1,  48, 52, 3,  63,
+        27, 4,  13, 89, 24,
+        46, 58, 33, 76
+    };
+    K_Merge mVector(
+        new dataWorker(
+            new vectorDataSource(
+                mergedData(testData2, sizeof(testData2)/sizeof(testData2[0]), cacheSize2).getInitMergeSections())));
     mVector.merge();
     mVector.printLoserTree();
     return 0;
