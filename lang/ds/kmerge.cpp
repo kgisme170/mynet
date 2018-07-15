@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <cstdlib>
 #include <iostream>
 #include <vector>
@@ -17,6 +18,7 @@ struct DevNull:ostream{}dev;
 struct dataSource{
     virtual size_t length() = 0;
     virtual int getNext(size_t arrayIdx) = 0;
+    virtual ~dataSource(){}
 };
 
 const size_t testLen = 5;
@@ -28,7 +30,7 @@ const static int buf[testLen][3] = {
     {6,17,25},
     {12,37,48}
 };
-struct testDataSource:dataSource{
+struct arrayDataSource:dataSource{
     size_t length(){return testLen;}
     int getNext(size_t arrayIdx){
         size_t& idx = bufIndex[arrayIdx];
@@ -43,6 +45,7 @@ struct IoWorker{
     virtual size_t length() = 0;
     virtual int input(size_t arrayIdx) = 0;
     virtual void output(int i) = 0;
+    virtual ~IoWorker(){}
 };
 struct dataWorker : IoWorker{//败者树的数据输入输出
     dataWorker(dataSource* pSource):source(pSource){}
@@ -51,54 +54,15 @@ struct dataWorker : IoWorker{//败者树的数据输入输出
     size_t length(){return source->length();}
     int input(size_t arrayIdx){
         if(arrayIdx>=length()){
-            cout<<"编程错误, arrayIdx="<<arrayIdx<<'\n';
+            cerr<<"编程错误, arrayIdx="<<arrayIdx<<'\n';
             exit(1);
         }
         return source->getNext(arrayIdx);
     }
-    void output(int i){cout<<"i="<<i<<'\n';}
+    void output(int i){cout<<i<<',';}
     void init(){}//初始化归并段
 };
 
-const size_t dataBufSize = 6;
-const static int data[] = {
-    51, 49, 39, 46, 38,
-    29, 14, 61, 15, 30,
-    1,  48, 52, 3,  63,
-    27, 4,  13, 89, 24,
-    46, 58, 33, 76
-};
-class mergedData{
-    size_t bufSize;
-    size_t numData;
-    vector<vector<int>> initVector;
-public:
-    mergedData():bufSize(dataBufSize){
-        numData = sizeof(data)/sizeof(data[0]);
-        size_t numVector = numData / bufSize + numData % bufSize;//如果不整除就要加1
-        cout<<"vector的数量="<<numVector<<'\n';
-        initVector.resize(numVector);
-        for(size_t i=0;i<numData;++i){
-            size_t vIdx = i / bufSize;//第几个vector
-            initVector[vIdx].push_back(data[i]);
-        }
-        for(size_t i=0;i<numVector;++i){
-            cout<<"第"<<i<<"个vector的元素个数="<<initVector[i].size()<<',';
-        }
-        cout<<'\n';
-    }
-    size_t length(){return numData;}
-    void input(int& k, size_t arrayIdx){
-        if(arrayIdx>=testLen){
-            cout<<"编程错误, arrayIdx="<<arrayIdx<<'\n';
-            exit(1);
-        }
-        size_t& idx = bufIndex[arrayIdx];
-        k = (idx>=testLen) ? INT_MAX : buf[arrayIdx][idx];
-        ++idx;
-    }
-    void output(int i){}
-};
 //k-路 归并
 class K_Merge{
     IoWorker* worker;
@@ -152,6 +116,7 @@ public:
             COUT<<"补充的新值="<<b[q]<<'\n';
             Adjust(q);
         }
+        cout<<'\n';
     }
     void printLoserTree(){
         for(size_t i=0;i<k;++i){
@@ -160,10 +125,70 @@ public:
         COUT<<'\n';
     }
 };
+
+const size_t dataBufSize = 6;
+const static int data[] = {
+    51, 49, 39, 46, 38,
+    29, 14, 61, 15, 30,
+    1,  48, 52, 3,  63,
+    27, 4,  13, 89, 24,
+    46, 58, 33, 76
+};
+class mergedData{
+    size_t bufSize;
+    size_t numData;
+    vector<vector<int>> initVector;
+public:
+    mergedData():bufSize(dataBufSize){
+        numData = sizeof(data)/sizeof(data[0]);
+        size_t numVector = numData / bufSize + numData % bufSize;//如果不整除就要加1
+        COUT<<"vector的数量="<<numVector<<'\n';
+        initVector.resize(numVector);
+        for(size_t i=0;i<numData;++i){
+            size_t vIdx = i / bufSize;//第几个vector
+            initVector[vIdx].push_back(data[i]);
+        }
+        for(size_t i=0;i<numVector;++i){
+            COUT<<"第"<<i<<"个vector的元素个数="<<initVector[i].size()<<',';
+        }
+        COUT<<'\n';
+    }
+    size_t length(){return numData;}
+    vector<vector<int>> getInitMergeSections(){ //简单排序
+        for(size_t i=0;i<initVector.size();++i){
+            sort(initVector[i].begin(),initVector[i].end());
+        }
+        return initVector;
+    }
+};
+
+struct vectorDataSource:dataSource{
+    vector<vector<int>> dataVector;
+    vector<size_t> bufIndexVector;
+public:
+    vectorDataSource(const vector<vector<int>>& v):
+        dataVector(v),
+        bufIndexVector(v.size())
+    {}
+    size_t length(){return dataVector.size();}
+    int getNext(size_t arrayIdx){
+        COUT<<"getNext("<<arrayIdx<<") begin\n";
+        size_t& idx = bufIndexVector[arrayIdx];
+        int r = (idx>=dataVector[idx].size())
+            ? INT_MAX : dataVector[arrayIdx][idx];
+        ++idx;
+        COUT<<"getNext("<<arrayIdx<<") end\n";
+        return r;
+    }
+};
+
 int main(){
-    K_Merge mTest(new dataWorker(new testDataSource));
-    mTest.merge();
-    mTest.printLoserTree();
-    mergedData d;
+    K_Merge mArray(new dataWorker(new arrayDataSource()));
+    mArray.merge();
+    mArray.printLoserTree();
+
+    K_Merge mVector(new dataWorker(new vectorDataSource(mergedData().getInitMergeSections())));
+    mVector.merge();
+    mVector.printLoserTree();
     return 0;
 }
