@@ -217,7 +217,5 @@ int main(){
             new vectorDataSource(vd.getSortedData())));
     mVector.merge();
     mVector.printLoserTree();
-
-    K_Merge mLs(new dataWorker(new vectorDataSource(vd2.getData())));
     return 0;
 }
