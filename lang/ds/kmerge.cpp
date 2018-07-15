@@ -39,19 +39,27 @@ struct testDataSource:dataSource{
     }
 };
 
-struct testWorker{//败者树的数据输入输出
-    testDataSource source;
-    size_t length(){return source.length();}
-    void input(int& k, size_t arrayIdx){
+struct IoWorker{
+    virtual size_t length() = 0;
+    virtual int input(size_t arrayIdx) = 0;
+    virtual void output(int i) = 0;
+};
+struct dataWorker : IoWorker{//败者树的数据输入输出
+    dataWorker(dataSource* pSource):source(pSource){}
+    ~dataWorker(){delete source;}
+    dataSource* source;
+    size_t length(){return source->length();}
+    int input(size_t arrayIdx){
         if(arrayIdx>=length()){
             cout<<"编程错误, arrayIdx="<<arrayIdx<<'\n';
             exit(1);
         }
-        k = source.getNext(arrayIdx);
+        return source->getNext(arrayIdx);
     }
     void output(int i){cout<<"i="<<i<<'\n';}
     void init(){}//初始化归并段
 };
+
 const size_t dataBufSize = 6;
 const static int data[] = {
     51, 49, 39, 46, 38,
@@ -90,13 +98,12 @@ public:
         ++idx;
     }
     void output(int i){}
-    void init(){}//初始化归并段
 };
 //k-路 归并
-template<typename KeyType, typename IoWorker>
-class K_Merge: public IoWorker{
+class K_Merge{
+    IoWorker* worker;
     vector<size_t> ls;//LoserTree结点，存储下标
-    vector<KeyType> b;//External结点
+    vector<int> b;//External结点
     size_t k;//归并段的数量
 
     void Adjust(size_t s){
@@ -118,9 +125,8 @@ class K_Merge: public IoWorker{
         printLoserTree();
     }
 public:
-    K_Merge(){
-        IoWorker::init();
-        k = IoWorker::length();
+    K_Merge(IoWorker* pWorker):worker(pWorker){
+        k = pWorker->length();
         ls.resize(k);
         b.resize(k+1);
         b[k]=INT_MIN;//用于初始化第一次Adjust
@@ -128,9 +134,10 @@ public:
             ls[i]=k;//败者树的初始值，指向b[k]
         }
     }
+    ~K_Merge(){delete worker;}
     void merge(){
         for(size_t i=0;i<k;++i){
-            IoWorker::input(b[i], i);
+            b[i] = worker->input(i);
         }
         //CreateLoserTree() 创建败者树
         for(int i=k-1;i>=0;--i){
@@ -140,8 +147,8 @@ public:
         while(b[ls[1]]!=INT_MAX){
             int q = ls[0];//ls[0];
             COUT<<"输出位置="<<q<<",值=";
-            IoWorker::output(b[q]);
-            IoWorker::input(b[q], q);
+            worker->output(b[q]);
+            b[q] = worker->input(q);
             COUT<<"补充的新值="<<b[q]<<'\n';
             Adjust(q);
         }
@@ -154,7 +161,7 @@ public:
     }
 };
 int main(){
-    K_Merge<int, testWorker> mTest;
+    K_Merge mTest(new dataWorker(new testDataSource));
     mTest.merge();
     mTest.printLoserTree();
     mergedData d;
