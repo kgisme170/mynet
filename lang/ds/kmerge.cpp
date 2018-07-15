@@ -9,22 +9,17 @@ using namespace std;
  */
 
 const size_t testLen = 5;
+const static int buf[testLen][3] = {{10,15,16}, {9,18,20}, {20,22,40}, {6,15,25}, {12,37,48}};
+size_t bufIndex[testLen] = {0};
 struct testWorker{//败者树的数据输入输出
     size_t length(){return testLen;}
-    void input(int& k){
-        const static int buf[testLen] = {10, 9, 20, 6, 12};
-        static size_t idx = 0;
-        if(idx<testLen){
-            k = buf[idx++];
-        }else{
-            cout<<"idx越界="<<idx<<'\n';
-            if(idx == testLen){
-                ++idx;
-                k = 15;
-            }else{
-                k = INT_MAX;
-            }
+    void input(int& k, size_t arrayIdx){
+        if(arrayIdx>=testLen){
+            cout<<"编程错误, arrayIdx="<<arrayIdx<<'\n';
+            exit(1);
         }
+        size_t idx = bufIndex[arrayIdx];
+        k = (idx>=testLen) ? INT_MAX : buf[arrayIdx][idx];
     }
     void output(int i){}
     void init(){}//初始化归并段
@@ -65,7 +60,7 @@ public:
     }
     void merge(){
         for(size_t i=0;i<k;++i){
-            IoWorker::input(b[i]);
+            IoWorker::input(b[i], i);
         }
         //CreateLoserTree() 创建败者树
         for(int i=k-1;i>=0;--i){
@@ -76,7 +71,7 @@ public:
         //while(b[ls[0]]!=INT_MAX){
             int q = ls[0];//ls[0];
             IoWorker::output(q);
-            IoWorker::input(b[q]);
+            IoWorker::input(b[q], q);
             Adjust(q);
         //}
     }
