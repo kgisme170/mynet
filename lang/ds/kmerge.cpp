@@ -18,8 +18,9 @@ struct testWorker{//败者树的数据输入输出
             cout<<"编程错误, arrayIdx="<<arrayIdx<<'\n';
             exit(1);
         }
-        size_t idx = bufIndex[arrayIdx];
+        size_t& idx = bufIndex[arrayIdx];
         k = (idx>=testLen) ? INT_MAX : buf[arrayIdx][idx];
+        ++idx;
     }
     void output(int i){}
     void init(){}//初始化归并段
@@ -46,6 +47,7 @@ class K_Merge: public IoWorker{
             cout<<'\n';
         }
         ls[0]=s;
+        printLoserTree();
     }
 public:
     K_Merge(){
@@ -65,15 +67,14 @@ public:
         //CreateLoserTree() 创建败者树
         for(int i=k-1;i>=0;--i){
             Adjust(i);//从后往前调整所有叶子结点到根的路径
-            printLoserTree();
         }
-        //CreateLoserTree() ends
-        //while(b[ls[0]]!=INT_MAX){
+        cout<<"CreateLoserTree() ends========================\n";
+        while(b[ls[1]]!=INT_MAX){
             int q = ls[0];//ls[0];
             IoWorker::output(q);
             IoWorker::input(b[q], q);
             Adjust(q);
-        //}
+        }
     }
     void printLoserTree(){
         for(size_t i=0;i<k;++i){
