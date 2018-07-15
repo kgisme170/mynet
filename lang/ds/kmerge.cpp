@@ -14,7 +14,13 @@ struct DevNull:ostream{}dev;
 #else
 #define COUT dev
 #endif // define
+struct dataSource{
+    virtual size_t length() = 0;
+    virtual int getNext(size_t arrayIdx) = 0;
+};
+
 const size_t testLen = 5;
+size_t bufIndex[testLen] = {0};
 const static int buf[testLen][3] = {
     {10,15,16},
     {9,18,21},
@@ -22,19 +28,26 @@ const static int buf[testLen][3] = {
     {6,17,25},
     {12,37,48}
 };
-size_t bufIndex[testLen] = {0};
-struct testWorker{//败者树的数据输入输出
+struct testDataSource:dataSource{
     size_t length(){return testLen;}
+    int getNext(size_t arrayIdx){
+        size_t& idx = bufIndex[arrayIdx];
+        int r = (idx>=sizeof(buf[0])/sizeof(int))
+            ? INT_MAX : buf[arrayIdx][idx];
+        ++idx;
+        return r;
+    }
+};
+
+struct testWorker{//败者树的数据输入输出
+    testDataSource source;
+    size_t length(){return source.length();}
     void input(int& k, size_t arrayIdx){
-        if(arrayIdx>=testLen){
+        if(arrayIdx>=length()){
             cout<<"编程错误, arrayIdx="<<arrayIdx<<'\n';
             exit(1);
         }
-        size_t& idx = bufIndex[arrayIdx];
-        //cout<<"idx="<<idx<<",size="<<sizeof(buf[0])/sizeof(int)<<'\n';
-        //if(idx==sizeof(buf[0])/sizeof(int))cout<<"到达结尾\n";
-        k = (idx>=sizeof(buf[0])/sizeof(int)) ? INT_MAX : buf[arrayIdx][idx];
-        ++idx;
+        k = source.getNext(arrayIdx);
     }
     void output(int i){cout<<"i="<<i<<'\n';}
     void init(){}//初始化归并段
@@ -139,31 +152,11 @@ public:
         }
         COUT<<'\n';
     }
-
-    void drawLoserTree(){
-        struct IntervalYield{
-            size_t n;
-            size_t count = 0;
-            IntervalYield(size_t _n):n(_n){
-                size_t height = 1;
-                while(n){
-                    ++height;
-                    n/=2;
-                }
-                cout<<height<<'\n';
-            }
-            void drawNext(const string& msg){
-
-            }
-        }y(ls.size());
-        // 计算树的层数
-    }
 };
 int main(){
     K_Merge<int, testWorker> mTest;
     mTest.merge();
     mTest.printLoserTree();
-    mTest.drawLoserTree();
     mergedData d;
     return 0;
 }
