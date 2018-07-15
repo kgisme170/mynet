@@ -160,8 +160,8 @@ public:
         }
     }
     size_t length(){return numData;}
-    vector<vector<int>> getSections(){return initVector;}
-    vector<vector<int>> getSortedSections(){ //简单排序
+    vector<vector<int>> getData(){return initVector;}
+    vector<vector<int>> getSortedData(){ //简单排序
         for(size_t i=0;i<initVector.size();++i){
             sort(initVector[i].begin(),initVector[i].end());
         }
@@ -214,8 +214,10 @@ int main(){
     vectorData vd2 = vd;//没有std::sort()排序过的
     K_Merge mVector(
         new dataWorker(
-            new vectorDataSource(vd.getSortedSections())));
+            new vectorDataSource(vd.getSortedData())));
     mVector.merge();
     mVector.printLoserTree();
+
+    K_Merge mLs(new dataWorker(new vectorDataSource(vd2.getData())));
     return 0;
 }
