@@ -75,13 +75,13 @@ class K_Merge{
             t/=2;
             COUT<<'\n';
         }
-        //if(!bMiniMax/*普通流程*/ || ls[s]>=INT_MIN/*可以更新*/){
+        if(!bMiniMax/*普通流程*/ || ls[s]>=INT_MIN/*可以更新*/){
             ls[0]=s;
             printLoserTree();
             return true;
-        //}else{
-        //    return false;
-        //}
+        }else{
+            return false;
+        }
     }
 public:
     K_Merge(IoWorker* p,
@@ -134,12 +134,12 @@ public:
     }
 };
 
-class mergedData{
+class vectorData{
     size_t numData;
     size_t bufSize;
     vector<vector<int>> initVector;
 public:
-    mergedData(const int* data, size_t n, size_t s):
+    vectorData(const int* data, size_t n, size_t s):
             numData(n), bufSize(s){
         size_t numVector = numData / bufSize + numData % bufSize;//如果不整除就要加1
         COUT<<"vector的数量="<<numVector<<'\n';
@@ -153,7 +153,7 @@ public:
         }
         COUT<<'\n';
     }
-    mergedData(const vector<vector<int>>& v, size_t b):
+    vectorData(const vector<vector<int>>& v, size_t b):
         numData(0), bufSize(b), initVector(v){
         for(size_t i=0;i<v.size();++i){
             numData += v[i].size();
@@ -161,7 +161,7 @@ public:
     }
     size_t length(){return numData;}
     vector<vector<int>> getSections(){return initVector;}
-    vector<vector<int>> getInitMergeSections(){ //简单排序
+    vector<vector<int>> getSortedSections(){ //简单排序
         for(size_t i=0;i<initVector.size();++i){
             sort(initVector[i].begin(),initVector[i].end());
         }
@@ -208,10 +208,13 @@ int main(){
         27, 4,  13, 89, 24,
         46, 58, 33, 76
     };
+    vectorData vd(testData2,
+                 sizeof(testData2)/sizeof(testData2[0]),
+                 cacheSize2);
+    vectorData vd2 = vd;//没有std::sort()排序过的
     K_Merge mVector(
         new dataWorker(
-            new vectorDataSource(
-                mergedData(testData2, sizeof(testData2)/sizeof(testData2[0]), cacheSize2).getInitMergeSections())));
+            new vectorDataSource(vd.getSortedSections())));
     mVector.merge();
     mVector.printLoserTree();
     return 0;
