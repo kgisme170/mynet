@@ -74,7 +74,7 @@ public:
         }
         //CreateLoserTree() ends
         //while(b[ls[0]]!=INT_MAX){
-            int q = 3;//ls[0];
+            int q = ls[0];//ls[0];
             IoWorker::output(q);
             IoWorker::input(b[q]);
             Adjust(q);
