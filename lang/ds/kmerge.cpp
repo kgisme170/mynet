@@ -135,13 +135,12 @@ public:
 };
 
 class mergedData{
-    const int* data;
     size_t numData;
     size_t bufSize;
     vector<vector<int>> initVector;
 public:
-    mergedData(const int* d, size_t n, size_t s):
-            data(d),numData(n), bufSize(s){
+    mergedData(const int* data, size_t n, size_t s):
+            numData(n), bufSize(s){
         size_t numVector = numData / bufSize + numData % bufSize;//如果不整除就要加1
         COUT<<"vector的数量="<<numVector<<'\n';
         initVector.resize(numVector);
@@ -154,8 +153,11 @@ public:
         }
         COUT<<'\n';
     }
-    mergedData(const vector<vector<int>>& v){
-        initVector = v;
+    mergedData(const vector<vector<int>>& v, size_t b):
+        numData(0), bufSize(b), initVector(v){
+        for(size_t i=0;i<v.size();++i){
+            numData += v[i].size();
+        }
     }
     size_t length(){return numData;}
     vector<vector<int>> getSections(){return initVector;}
