@@ -48,9 +48,17 @@ struct IoWorker{
     virtual ~IoWorker(){}
 };
 struct dataWorker : IoWorker{//败者树的数据输入输出
-    dataWorker(dataSource* pSource):source(pSource){}
-    ~dataWorker(){delete source;}
     dataSource* source;
+    bool shouldDelete;
+public:
+    dataWorker(dataSource* pSource, bool d = true):
+        source(pSource),
+        shouldDelete(d){}
+    ~dataWorker(){
+        if(shouldDelete){
+            delete source;
+        }
+    }
     size_t length(){return source->length();}
     int input(size_t arrayIdx){
         if(arrayIdx>=length()){
@@ -60,12 +68,12 @@ struct dataWorker : IoWorker{//败者树的数据输入输出
         return source->getNext(arrayIdx);
     }
     void output(int i){cout<<i<<',';}
-    void init(){}//初始化归并段
 };
 
 //k-路 归并
 class K_Merge{
     IoWorker* worker;
+    bool shouldDelete;
     vector<size_t> ls;//LoserTree结点，存储下标
     vector<int> b;//External结点
     size_t k;//归并段的数量
@@ -89,7 +97,10 @@ class K_Merge{
         printLoserTree();
     }
 public:
-    K_Merge(IoWorker* pWorker):worker(pWorker){
+    K_Merge(IoWorker* pWorker, bool d = true):
+        worker(pWorker),
+        shouldDelete(d)
+    {
         k = pWorker->length();
         ls.resize(k);
         b.resize(k+1);
@@ -98,7 +109,11 @@ public:
             ls[i]=k;//败者树的初始值，指向b[k]
         }
     }
-    ~K_Merge(){delete worker;}
+    ~K_Merge(){
+        if(shouldDelete){
+            delete worker;
+        }
+    }
     void merge(){
         for(size_t i=0;i<k;++i){
             b[i] = worker->input(i);
