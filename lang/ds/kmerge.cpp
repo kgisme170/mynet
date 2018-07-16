@@ -93,6 +93,7 @@ public:
         bMiniMax(m),
         miniMax(INT_MIN)
     {
+        COUT<<"K_Merge ctor begin\n";
         k = worker->length();
         ls.resize(k);
         b.resize(k+1);
@@ -100,6 +101,7 @@ public:
         for(size_t i=0;i<k;++i){
             ls[i]=k;//败者树的初始值，指向b[k]
         }
+        COUT<<"K_Merge ctor end\n";
     }
     ~K_Merge(){
         if(shouldDelete){
@@ -185,7 +187,10 @@ public:
         size_t& idx = bufIndexVector[arrayIdx];
         int r = (idx>dataVector[arrayIdx].size()-1)
             ? INT_MAX : dataVector[arrayIdx][idx];
-        if(idx>dataVector[arrayIdx].size()-1)cout<<"arrayIdx="<<arrayIdx<<"到达最大:"<<idx<<"===========================\n";
+        if(idx>dataVector[arrayIdx].size()-1){
+            cerr<<"arrayIdx="<<arrayIdx<<"到达最大:"<<idx<<"===========================\n";
+            exit(1);
+        }
         ++idx;
         COUT<<"getNext("<<arrayIdx<<") end\n";
         return r;
@@ -225,15 +230,45 @@ void f2()
     mVector.printLoserTree();
 }
 
+struct arrayDataSource:dataSource{//一维，用于构造初始归并集合
+    const int* data;
+    size_t dataSize;
+    size_t cacheLen;
+    size_t idx;
+public:
+    arrayDataSource(const int* d, size_t s, size_t l):data(d),dataSize(s),cacheLen(l),idx(0){}
+    size_t length(){return cacheLen;}
+    int getNext(size_t arrayIdx){
+        COUT<<"getNext("<<arrayIdx<<"), idx="<<idx<<",data="<<data[idx]<<"\n";
+        if(idx==dataSize)return INT_MAX;
+        if(idx>=dataSize){
+            cerr<<"arrayDataSource编程错误\n";
+            exit(1);
+        }
+        return data[idx++];
+    }
+};
+struct arrayDataWorker : dataWorker{//败者树的数据输入输出
+    arrayDataWorker(dataSource* p, bool d = true):
+        dataWorker(p, d){COUT<<"arrayDataWorker ctor\n";}
+    int input(size_t arrayIdx){
+        return source->getNext(arrayIdx);
+    }
+    void output(int i){cout<<i<<',';}
+};
 int main(){
     cout<<"测试3\n";
-    vector<vector<int>> v2;
-    v2.push_back({51, 49, 39, 46, 38, 29});
-    v2.push_back({14, 61, 15, 30, 1,  48});
-    v2.push_back({52, 3,  63, 27, 4,  13});
-    v2.push_back({89, 24, 46, 58, 33, 76});
-
-    K_Merge mAlgo(new dataWorker(new vectorDataSource(v2)));
+    const size_t cacheSize2 = 6;
+    const static int testData2[] = {
+        51, 49, 39, 46, 38,
+        29, 14, 61, 15, 30,
+        1,  48, 52, 3,  63,
+        27, 4,  13, 89, 24,
+        46, 58, 33, 76
+    };
+    K_Merge mAlgo(
+        new arrayDataWorker(
+            new arrayDataSource(testData2, sizeof(testData2)/sizeof(int), cacheSize2)));
     mAlgo.merge();
     mAlgo.printLoserTree();
     return 0;
