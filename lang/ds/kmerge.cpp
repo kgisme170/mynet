@@ -63,15 +63,14 @@ public:
 
 //k-路 归并
 class K_Merge{
+protected:
     IoWorker* worker;
     bool shouldDelete;
-    bool bMiniMax;
-    int miniMax;
     vector<size_t> ls;//LoserTree结点，存储下标
     vector<int> b;//External结点
     size_t k;//归并段的数量
 
-    void Adjust(size_t s){
+    virtual void Adjust(size_t s){
         COUT<<"->Adjust(s)="<<s<<'\n';
         size_t t = (s+k)/2; // t是双亲节点
         while(t>0){
@@ -91,12 +90,9 @@ class K_Merge{
     }
 public:
     K_Merge(IoWorker* p,
-            bool d = true, /*是否管理pWorker的声明周期*/
-            bool m = false/*是否采用置换-选择排序的miniMax判断*/):
+            bool d = true):/*是否管理pWorker的生命周期*/
         worker(p),
-        shouldDelete(d),
-        bMiniMax(m),
-        miniMax(INT_MIN)
+        shouldDelete(d)
     {
         COUT<<"K_Merge ctor begin\n";
         k = worker->dataDimemsion();
@@ -108,12 +104,12 @@ public:
         }
         COUT<<"K_Merge ctor end\n";
     }
-    ~K_Merge(){
+    virtual ~K_Merge(){
         if(shouldDelete){
             delete worker;
         }
     }
-    void merge(){
+    virtual void merge(){
         for(size_t i=0;i<k;++i){
             b[i] = worker->input(i);
         }
@@ -276,11 +272,46 @@ void f3(){
     mAlgo.merge();
     mAlgo.printLoserTree();
 }
+
+class K_Merge_unsorted: public K_Merge{
+    bool bMiniMax;
+    int miniMax;
+public:
+    K_Merge_unsorted(IoWorker* p,
+            bool d = true, /*是否管理pWorker的生命周期*/
+            bool m = false/*是否采用置换-选择排序的miniMax判断*/):
+        K_Merge(p,d),
+        bMiniMax(m),
+        miniMax(INT_MIN)
+    {}
+    void merge(){
+        for(size_t i=0;i<k;++i){
+            b[i] = worker->input(i);
+        }
+        //CreateLoserTree() 创建败者树
+        cout<<"CreateLoserTree() begins======================\n";
+        for(int i=k-1;i>=0;--i){
+            Adjust(i);//从后往前调整所有叶子结点到根的路径
+        }
+        cout<<"CreateLoserTree() ends========================\n";
+        size_t len = worker->dataNumber();
+        size_t outputNum = 0;
+        while(outputNum<len){//(b[ls[1]]!=INT_MAX){
+            int q = ls[0];//ls[0];
+            COUT<<"输出位置="<<q<<",值=";
+            worker->output(b[q]);
+            b[q] = worker->input(q);
+            COUT<<"补充的新值="<<b[q]<<'\n';
+            Adjust(q);
+            ++outputNum;
+        }
+        cout<<"总共输出"<<worker->totalCount()<<"个值\n";
+        cout<<'\n';
+    }
+};
+
 int main(){
-    f1();
-    f2();
-    f3();
-    return 0;
+    //f1();    f2();    f3();    return 0;
     cout<<"测试4\n";
     K_Merge mAlgo(
         new arrayDataWorker(
