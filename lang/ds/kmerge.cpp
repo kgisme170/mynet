@@ -27,14 +27,17 @@ struct IoWorker{
     virtual int input(size_t arrayIdx) = 0;
     virtual void output(int i) = 0;
     virtual ~IoWorker(){}
+    virtual size_t totalCount() = 0;
 };
 struct dataWorker : IoWorker{//败者树的数据输入输出
     dataSource* source;
     bool shouldDelete;
+    size_t count;
 public:
     dataWorker(dataSource* p, bool d = true):
         source(p),
-        shouldDelete(d){}
+        shouldDelete(d),
+        count(0){}
     ~dataWorker(){
         if(shouldDelete){
             delete source;
@@ -48,7 +51,11 @@ public:
         }
         return source->getNext(arrayIdx);
     }
-    void output(int i){cout<<i<<',';}
+    void output(int i){
+        ++count;
+        cout<<i<<',';
+    }
+    size_t totalCount(){return count;}
 };
 
 //k-路 归并
@@ -61,7 +68,7 @@ class K_Merge{
     vector<int> b;//External结点
     size_t k;//归并段的数量
 
-    bool Adjust(size_t s){
+    void Adjust(size_t s){
         COUT<<"->Adjust(s)="<<s<<'\n';
         size_t t = (s+k)/2; // t是双亲节点
         while(t>0){
@@ -76,13 +83,8 @@ class K_Merge{
             t/=2;
             COUT<<'\n';
         }
-        //if(!bMiniMax/*普通流程*/ || ls[s]>=INT_MIN/*可以更新*/){
-            ls[0]=s;
-            printLoserTree();
-            return true;
-        //}else{
-        //    return false;
-        //}
+        ls[0]=s;
+        printLoserTree();
     }
 public:
     K_Merge(IoWorker* p,
@@ -120,14 +122,14 @@ public:
         cout<<"CreateLoserTree() ends========================\n";
         while(b[ls[1]]!=INT_MAX){
             int q = ls[0];//ls[0];
-            COUT<<"输出位置="<<q<<",值=";
+            cout<<"输出位置="<<q<<",值=";
             worker->output(b[q]);
             b[q] = worker->input(q);
-            COUT<<"补充的新值="<<b[q]<<'\n';
-            if(!Adjust(q)){
-                break;
-            }
+            cout<<"补充的新值="<<b[q]<<'\n';
+            Adjust(q);
         }
+        worker->output(b[ls[0]]);
+        cout<<"总共输出"<<worker->totalCount()<<"个值\n";
         cout<<'\n';
     }
     void printLoserTree(){
@@ -173,7 +175,7 @@ public:
     }
 };
 
-struct vectorDataSource:dataSource{
+struct vectorDataSource:dataSource{//2维
     vector<vector<int>> dataVector;
     vector<size_t> bufIndexVector;
 public:
@@ -187,7 +189,7 @@ public:
         size_t& idx = bufIndexVector[arrayIdx];
         int r = (idx>dataVector[arrayIdx].size()-1)
             ? INT_MAX : dataVector[arrayIdx][idx];
-        if(idx>dataVector[arrayIdx].size()-1){
+        if(idx>dataVector[arrayIdx].size()){
             cerr<<"arrayIdx="<<arrayIdx<<"到达最大:"<<idx<<"===========================\n";
             exit(1);
         }
@@ -209,17 +211,11 @@ void f1()
     mArray.merge();
     mArray.printLoserTree();
 }
+const size_t cacheSize2 = 6;
+const static int testData2[] = {51, 49, 39, 46, 38, 29, 14, 61, 15, 30, 1,  48, 52, 3,  63, 27, 4,  13, 89, 24, 46, 58, 33, 76};
 void f2()
 {
     cout<<"测试2\n";
-    const size_t cacheSize2 = 6;
-    const static int testData2[] = {
-        51, 49, 39, 46, 38,
-        29, 14, 61, 15, 30,
-        1,  48, 52, 3,  63,
-        27, 4,  13, 89, 24,
-        46, 58, 33, 76
-    };
     vectorData vd(testData2,
                  sizeof(testData2)/sizeof(testData2[0]),
                  cacheSize2);
@@ -230,7 +226,7 @@ void f2()
     mVector.printLoserTree();
 }
 
-struct arrayDataSource:dataSource{//一维，用于构造初始归并集合
+struct arrayDataSource:dataSource{//1维，用于构造初始归并集合
     const int* data;
     size_t dataSize;
     size_t cacheLen;
@@ -256,16 +252,20 @@ struct arrayDataWorker : dataWorker{//败者树的数据输入输出
     }
     void output(int i){cout<<i<<',';}
 };
-int main(){
+void f3(){
     cout<<"测试3\n";
-    const size_t cacheSize2 = 6;
-    const static int testData2[] = {
-        51, 49, 39, 46, 38,
-        29, 14, 61, 15, 30,
-        1,  48, 52, 3,  63,
-        27, 4,  13, 89, 24,
-        46, 58, 33, 76
-    };
+    K_Merge mAlgo(
+        new arrayDataWorker(
+            new arrayDataSource(testData2, sizeof(testData2)/sizeof(int), cacheSize2)));
+    mAlgo.merge();
+    mAlgo.printLoserTree();
+}
+int main(){
+    //f1();
+    f2();
+    //f3();
+    return 0;
+    cout<<"测试4\n";
     K_Merge mAlgo(
         new arrayDataWorker(
             new arrayDataSource(testData2, sizeof(testData2)/sizeof(int), cacheSize2)));
