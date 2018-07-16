@@ -17,13 +17,15 @@ struct DevNull:ostream{}dev;
 #define COUT dev
 #endif // define
 struct dataSource{
-    virtual size_t length() = 0;
+    virtual size_t dataDimemsion() = 0;
+    virtual size_t dataNumber() = 0;
     virtual int getNext(size_t arrayIdx) = 0;
     virtual ~dataSource(){}
 };
 
 struct IoWorker{
-    virtual size_t length() = 0;
+    virtual size_t dataDimemsion() = 0;
+    virtual size_t dataNumber() = 0;
     virtual int input(size_t arrayIdx) = 0;
     virtual void output(int i) = 0;
     virtual ~IoWorker(){}
@@ -43,9 +45,10 @@ public:
             delete source;
         }
     }
-    size_t length(){return source->length();}
+    size_t dataDimemsion(){return source->dataDimemsion();}
+    size_t dataNumber(){return source->dataNumber();}
     int input(size_t arrayIdx){
-        if(arrayIdx>=length()){
+        if(arrayIdx>=dataDimemsion()){
             cerr<<"编程错误, arrayIdx="<<arrayIdx<<'\n';
             exit(1);
         }
@@ -96,7 +99,7 @@ public:
         miniMax(INT_MIN)
     {
         COUT<<"K_Merge ctor begin\n";
-        k = worker->length();
+        k = worker->dataDimemsion();
         ls.resize(k);
         b.resize(k+1);
         b[k]=INT_MIN;//用于初始化第一次Adjust
@@ -120,15 +123,17 @@ public:
             Adjust(i);//从后往前调整所有叶子结点到根的路径
         }
         cout<<"CreateLoserTree() ends========================\n";
-        while(b[ls[1]]!=INT_MAX){
+        size_t len = worker->dataNumber();
+        size_t outputNum = 0;
+        while(outputNum<len){//(b[ls[1]]!=INT_MAX){
             int q = ls[0];//ls[0];
-            cout<<"输出位置="<<q<<",值=";
+            COUT<<"输出位置="<<q<<",值=";
             worker->output(b[q]);
             b[q] = worker->input(q);
-            cout<<"补充的新值="<<b[q]<<'\n';
+            COUT<<"补充的新值="<<b[q]<<'\n';
             Adjust(q);
+            ++outputNum;
         }
-        worker->output(b[ls[0]]);
         cout<<"总共输出"<<worker->totalCount()<<"个值\n";
         cout<<'\n';
     }
@@ -165,7 +170,7 @@ public:
             numData += v[i].size();
         }
     }
-    size_t length(){return numData;}
+    size_t dataDimemsion(){return numData;}
     vector<vector<int>> getData(){return initVector;}
     vector<vector<int>> getSortedData(){ //简单排序
         for(size_t i=0;i<initVector.size();++i){
@@ -183,7 +188,14 @@ public:
         dataVector(v),
         bufIndexVector(v.size())
     {}
-    size_t length(){return dataVector.size();}
+    size_t dataDimemsion(){return dataVector.size();}
+    size_t dataNumber(){
+        size_t sum = 0;
+        for(size_t i=0;i<dataVector.size();++i){
+            sum += dataVector[i].size();
+        }
+        return sum;
+    }
     int getNext(size_t arrayIdx){
         COUT<<"getNext("<<arrayIdx<<") begin\n";
         size_t& idx = bufIndexVector[arrayIdx];
@@ -233,7 +245,8 @@ struct arrayDataSource:dataSource{//1维，用于构造初始归并集合
     size_t idx;
 public:
     arrayDataSource(const int* d, size_t s, size_t l):data(d),dataSize(s),cacheLen(l),idx(0){}
-    size_t length(){return cacheLen;}
+    size_t dataDimemsion(){return cacheLen;}
+    size_t dataNumber(){return dataSize;}
     int getNext(size_t arrayIdx){
         COUT<<"getNext("<<arrayIdx<<"), idx="<<idx<<",data="<<data[idx]<<"\n";
         if(idx==dataSize)return INT_MAX;
@@ -250,7 +263,10 @@ struct arrayDataWorker : dataWorker{//败者树的数据输入输出
     int input(size_t arrayIdx){
         return source->getNext(arrayIdx);
     }
-    void output(int i){cout<<i<<',';}
+    void output(int i){
+        ++count;
+        cout<<i<<',';
+    }
 };
 void f3(){
     cout<<"测试3\n";
@@ -261,9 +277,9 @@ void f3(){
     mAlgo.printLoserTree();
 }
 int main(){
-    //f1();
+    f1();
     f2();
-    //f3();
+    f3();
     return 0;
     cout<<"测试4\n";
     K_Merge mAlgo(
