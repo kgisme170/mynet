@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <vector>
+#include <limits.h>
 using namespace std;
 /*功能: 设计置换-选择排序
  * 从待排序的集合构造初始归并集合
@@ -75,13 +76,13 @@ class K_Merge{
             t/=2;
             COUT<<'\n';
         }
-        if(!bMiniMax/*普通流程*/ || ls[s]>=INT_MIN/*可以更新*/){
+        //if(!bMiniMax/*普通流程*/ || ls[s]>=INT_MIN/*可以更新*/){
             ls[0]=s;
             printLoserTree();
             return true;
-        }else{
-            return false;
-        }
+        //}else{
+        //    return false;
+        //}
     }
 public:
     K_Merge(IoWorker* p,
@@ -110,6 +111,7 @@ public:
             b[i] = worker->input(i);
         }
         //CreateLoserTree() 创建败者树
+        cout<<"CreateLoserTree() begins======================\n";
         for(int i=k-1;i>=0;--i){
             Adjust(i);//从后往前调整所有叶子结点到根的路径
         }
@@ -181,15 +183,17 @@ public:
     int getNext(size_t arrayIdx){
         COUT<<"getNext("<<arrayIdx<<") begin\n";
         size_t& idx = bufIndexVector[arrayIdx];
-        int r = (idx>=dataVector[idx].size())
+        int r = (idx>dataVector[arrayIdx].size()-1)
             ? INT_MAX : dataVector[arrayIdx][idx];
+        if(idx>dataVector[arrayIdx].size()-1)cout<<"arrayIdx="<<arrayIdx<<"到达最大:"<<idx<<"===========================\n";
         ++idx;
         COUT<<"getNext("<<arrayIdx<<") end\n";
         return r;
     }
 };
-
-int main(){
+void f1()
+{
+    cout<<"测试1\n";
     vector<vector<int>> v;
     v.push_back({10,15,16});
     v.push_back({9,18,21});
@@ -199,7 +203,10 @@ int main(){
     K_Merge mArray(new dataWorker(new vectorDataSource(v)));
     mArray.merge();
     mArray.printLoserTree();
-
+}
+void f2()
+{
+    cout<<"测试2\n";
     const size_t cacheSize2 = 6;
     const static int testData2[] = {
         51, 49, 39, 46, 38,
@@ -211,11 +218,23 @@ int main(){
     vectorData vd(testData2,
                  sizeof(testData2)/sizeof(testData2[0]),
                  cacheSize2);
-    vectorData vd2 = vd;//没有std::sort()排序过的
     K_Merge mVector(
         new dataWorker(
             new vectorDataSource(vd.getSortedData())));
     mVector.merge();
     mVector.printLoserTree();
+}
+
+int main(){
+    cout<<"测试3\n";
+    vector<vector<int>> v2;
+    v2.push_back({51, 49, 39, 46, 38, 29});
+    v2.push_back({14, 61, 15, 30, 1,  48});
+    v2.push_back({52, 3,  63, 27, 4,  13});
+    v2.push_back({89, 24, 46, 58, 33, 76});
+
+    K_Merge mAlgo(new dataWorker(new vectorDataSource(v2)));
+    mAlgo.merge();
+    mAlgo.printLoserTree();
     return 0;
 }
