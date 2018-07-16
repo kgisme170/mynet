@@ -354,7 +354,7 @@ public:
 
 int main(){
     //f1();    f2();    f3();    return 0;
-    cout<<"测试4\n";
+    cout<<"测试4\n";//下面的功能未完成
     K_Merge_unsorted mAlgo(
         new arrayDataWorker(
             new arrayDataSource(testData2, sizeof(testData2)/sizeof(int), cacheSize2)));
