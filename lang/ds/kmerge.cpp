@@ -70,7 +70,7 @@ protected:
     vector<int> b;//External结点
     size_t k;//归并段的数量
 
-    virtual void Adjust(size_t s){
+    void Adjust(size_t s){
         COUT<<"->Adjust(s)="<<s<<'\n';
         size_t t = (s+k)/2; // t是双亲节点
         while(t>0){
@@ -89,8 +89,7 @@ protected:
         printLoserTree();
     }
 public:
-    K_Merge(IoWorker* p,
-            bool d = true):/*是否管理pWorker的生命周期*/
+    K_Merge(IoWorker* p, bool d/*是否管理pWorker的生命周期*/ = true):
         worker(p),
         shouldDelete(d)
     {
@@ -274,15 +273,39 @@ void f3(){
 }
 
 class K_Merge_unsorted: public K_Merge{
-    bool bMiniMax;
-    int miniMax;
+    //int miniMax;
+    int firstUpdate = INT_MIN;
+    bool Adjust(size_t s, int){
+        COUT<<"->Adjust(s)="<<s<<'\n';
+        size_t t = (s+k)/2; // t是双亲节点
+        while(t>0){
+            COUT<<"t="<<t<<',';
+            if(b[s]>b[ls[t]]){//ls[t]指向败者, s用于比较，指向胜者
+                COUT<<"交换b["<<s<<"]("<<b[s]<<")和ls["<<t<<"]("<<ls[t]<<"),";
+                size_t tmpS = s;
+                s = ls[t];
+                COUT<<"s的新值="<<s<<'\n';
+                ls[t] = tmpS;
+            }
+            t/=2;
+            COUT<<'\n';
+        }
+        if(b[s]>firstUpdate){
+            COUT<<"\n更新b[s]="<<b[s]<<",firstUpdate="<<firstUpdate<<"\n";
+            ls[0]=s;
+            firstUpdate = b[s];
+            //printLoserTree();
+            return true;
+        }else{
+            COUT<<"\n不更新b[s]="<<b[s]<<"\n";
+            return false;
+        }
+    }
+    vector<int> result;
 public:
-    K_Merge_unsorted(IoWorker* p,
-            bool d = true, /*是否管理pWorker的生命周期*/
-            bool m = false/*是否采用置换-选择排序的miniMax判断*/):
-        K_Merge(p,d),
-        bMiniMax(m),
-        miniMax(INT_MIN)
+    K_Merge_unsorted(IoWorker* p, bool d/*是否管理pWorker的生命周期*/ = true):
+        K_Merge(p,d)//,
+        //miniMax(INT_MIN)
     {}
     void merge(){
         for(size_t i=0;i<k;++i){
@@ -291,32 +314,55 @@ public:
         //CreateLoserTree() 创建败者树
         cout<<"CreateLoserTree() begins======================\n";
         for(int i=k-1;i>=0;--i){
-            Adjust(i);//从后往前调整所有叶子结点到根的路径
+            K_Merge::Adjust(i);//从后往前调整所有叶子结点到根的路径
         }
         cout<<"CreateLoserTree() ends========================\n";
         size_t len = worker->dataNumber();
         size_t outputNum = 0;
+        static int bFirstUpdate = true;
+        size_t dim = worker->dataDimemsion();
+        size_t failedCount = 0;
         while(outputNum<len){//(b[ls[1]]!=INT_MAX){
             int q = ls[0];//ls[0];
             COUT<<"输出位置="<<q<<",值=";
             worker->output(b[q]);
+            if(bFirstUpdate){
+                firstUpdate = b[q];
+                bFirstUpdate = false;
+            }
             b[q] = worker->input(q);
             COUT<<"补充的新值="<<b[q]<<'\n';
-            Adjust(q);
+            if(Adjust(q, 0)){
+                int champion = b[ls[0]];
+                if(champion != INT_MAX){
+                    COUT<<"输出="<<champion<<'\n';
+                    result.push_back(champion);
+                }
+            }else{
+                ++failedCount;
+                if(failedCount == dim){
+                    break;
+                }
+            }
             ++outputNum;
         }
-        cout<<"总共输出"<<worker->totalCount()<<"个值\n";
+        //cout<<"总共输出"<<worker->totalCount()<<"个值\n";
         cout<<'\n';
     }
+    vector<int> getResult(){return result;}
 };
 
 int main(){
     //f1();    f2();    f3();    return 0;
     cout<<"测试4\n";
-    K_Merge mAlgo(
+    K_Merge_unsorted mAlgo(
         new arrayDataWorker(
             new arrayDataSource(testData2, sizeof(testData2)/sizeof(int), cacheSize2)));
     mAlgo.merge();
-    mAlgo.printLoserTree();
+    vector<int> result = mAlgo.getResult();
+    cout<<"=======\n";
+    for(size_t i=0;i<result.size();++i){
+        cout<<result[i]<<'\n';
+    }
     return 0;
 }
