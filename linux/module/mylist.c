@@ -45,3 +45,5 @@ void doublelist_exit(void){
     }
     printk("doublelist is exiting...\n");
 }
+EXPORT_SYMBOL(doublelist_init);
+EXPORT_SYMBOL(doublelist_exit);
