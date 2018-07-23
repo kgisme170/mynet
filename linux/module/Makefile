@@ -1,4 +1,4 @@
-obj-m += hellomod.o mylist.o
+obj-m += hellomod.o
 module-objs := mylist.o
 KERNEL ?= /lib/modules/$(shell uname -r)/build
 all:
