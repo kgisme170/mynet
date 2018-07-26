@@ -22,5 +22,6 @@ int main(){
 
     b=(char*)malloc(1);
     printf("Heap location 2:%p\n", b);
+    getchar();
     return 0;
 }
