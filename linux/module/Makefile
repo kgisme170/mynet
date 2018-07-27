@@ -1,6 +1,7 @@
 obj-m += hellomod.o
 obj-m += print_pid.o
-obj-m += memtest.o
+#obj-m += memtest.o
+obj-m += phymem.o
 module-objs := mylist.o
 KERNEL ?= /lib/modules/$(shell uname -r)/build
 all:

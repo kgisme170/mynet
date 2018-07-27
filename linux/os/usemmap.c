@@ -4,7 +4,7 @@
 #include<wait.h>
 #include<stdio.h>
 void main(){
-    int i,sum,fd;
+    int i,sum;
     int*result_ptr=mmap(0,4,PROT_READ|PROT_WRITE,MAP_SHARED|MAP_ANONYMOUS,0,0);
     int pid=fork();
     if(pid==0){//child
