@@ -1,13 +1,14 @@
-#include <linux/init.h>
 #include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/cdev.h>
+#include <linux/init.h>
 #include <linux/fs.h>
-#include <linux/errno.h>
-#include <asm/current.h>
+#include <linux/wait.h>
+#include <linux/semaphore.h>
 #include <linux/sched.h>
+#include <linux/cdev.h>
+#include <linux/types.h>
+#include <linux/kdev_t.h>
 #include <linux/device.h>
-
+#include <asm/uaccess.h>
 MODULE_LICENSE("GPL");
 static struct class *cls = NULL;
 
@@ -40,12 +41,18 @@ static ssize_t demo_read(struct file *filp, char __user *buf, size_t size, loff_
 }
 //写设备 
 static ssize_t demo_write(struct file *filp, const char __user *buf, size_t size, loff_t *offset) {
+    char buffer[128];
     struct inode *inode = filp->f_path.dentry->d_inode; 
     //get command and pid 
     printk(KERN_INFO "write request(%s:pid=%d), %s : %s : %d, size = %ld\n", current->comm, current->pid, __FILE__, __func__, __LINE__, size); 
     //get major and minor from inode 
     printk(KERN_INFO "(major=%d, minor=%d), %s : %s : %d\n", imajor(inode), iminor(inode), __FILE__, __func__, __LINE__); 
-    return size; 
+    if(raw_copy_from_user(buffer, buf, size)){
+        return -EFAULT;
+    }
+    buffer[size-1]='\0';
+    printk(KERN_INFO "user wrote bytes=%s", buffer);
+    return size;
 } 
 static struct file_operations fops = {
     .owner   = THIS_MODULE,
