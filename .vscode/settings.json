@@ -10,6 +10,9 @@
         "deque": "cpp",
         "list": "cpp",
         "*.tcc": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "future": "c",
+        "istream": "c",
+        "tuple": "c"
     }
 }
