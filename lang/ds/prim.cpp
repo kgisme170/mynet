@@ -7,6 +7,7 @@ using namespace std;
 struct edge{
     size_t v1;
     size_t v2;
+    int weight;
 };
 /*功能: prim算法 采用邻接矩阵存储*/
 int matrix[6][6]={
@@ -41,14 +42,17 @@ void prim(const vector<vector<int>> graph){
             }
         }
         cout<<"edge:"<<iSelected+1<<","<<iOther+1<<'\n';
-        edge e = {.v1=iSelected+1,.v2=iOther+1};
+        edge e = {.v1=iSelected+1,.v2=iOther+1,.weight=graph[iSelected][iOther]};
         eList.push_back(e);
         vSelected.push_back(iOther);
         vOthers.remove(iOther);
     }
+    int sum = 0;
     for(auto e:eList){
         cout<<e.v1<<"-->"<<e.v2<<'\n';
+        sum += e.weight;
     }
+    cout<<"总代价="<<sum<<'\n';
 }
 int main(){
     vector<vector<int>> graph;//graph必须是连通图
