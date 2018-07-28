@@ -1,6 +1,10 @@
 {
     "files.associations": {
         "kernel.h": "c",
-        "fstream": "c"
+        "fstream": "c",
+        "array": "cpp",
+        "initializer_list": "cpp",
+        "string_view": "cpp",
+        "utility": "cpp"
     }
 }
