@@ -13,6 +13,9 @@
         "unordered_map": "cpp",
         "future": "c",
         "istream": "c",
-        "tuple": "c"
+        "tuple": "c",
+        "ratio": "cpp",
+        "system_error": "cpp",
+        "type_traits": "cpp"
     }
 }
