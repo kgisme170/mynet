@@ -72,3 +72,4 @@ libraryDependencies += "org.typelevel" %% "cats-core" % "1.1.0"
 
 // To learn more about multi-project builds, head over to the official sbt
 // documentation at http://www.scala-sbt.org/documentation.html
+libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.0"
