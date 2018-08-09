@@ -1,5 +1,7 @@
 {
     "files.associations": {
+        "SConstruct": "python",
+        "SConscript": "python",
         "kernel.h": "c",
         "fstream": "c",
         "array": "cpp",
@@ -16,6 +18,19 @@
         "tuple": "c",
         "ratio": "cpp",
         "system_error": "cpp",
-        "type_traits": "cpp"
+        "type_traits": "cpp",
+        "string": "cpp",
+        "iosfwd": "cpp",
+        "iterator": "cpp",
+        "__bit_reference": "cpp",
+        "algorithm": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "hash_map": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "unordered_set": "cpp",
+        "hashtable": "cpp",
+        "cstdarg": "cpp"
     }
 }
