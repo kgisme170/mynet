@@ -107,19 +107,20 @@ struct banker{
         vArray _al = allocation;
         vArray _ne = need;
         vl _av = available;
-        
+
         va_list args;
         va_start(args, idx);
         vl& a = allocation[idx];
         vl& n = need[idx];
-        for (int i = 0; i < rType; ++i) {
+        for (size_t i = 0; i < rType; ++i) {
             size_t result = va_arg(args, size_t);
             cout<<"result="<<result<<endl;
             a[i] += result;
             n[i] -= result;
+            available[i] -= result;
         }
         va_end(args);
- 
+
         size_t count = checkSafeImpl();
 
         allocation = _al;
