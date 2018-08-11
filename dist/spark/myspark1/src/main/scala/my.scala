@@ -1,26 +1,38 @@
+import java.io.File
+
+import org.apache.spark.SparkConf
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkContext._
+
 /*
-object my {
-  def main(args: Array[String]):Unit = {
-    println("Hello World!")
+ * 读取一个文件并分解到目标目录下
+ */
+object ch02 extends App {
+  def deleteDir(dir: File): Unit = {
+    val files = dir.listFiles();
+    files.foreach(f => {
+      if (f.isDirectory()) {
+        deleteDir(f);
+      } else {
+        f.delete();
+      }
+    });
+    dir.delete();
   }
-}
-*/
 
-import org.apache.spark.{SparkConf, SparkContext}
+  def checkExistenceAndDelete(dir: String): Unit = {
+    val file = new File(dir);
+    if (file.exists()) {
+      deleteDir(file);
+    }
+  }
 
-/**
-  * Created by wuke on 2016/7/5.
-  */
-object LoadLibSVMFile extends App {
-
-  import org.apache.spark.mllib.regression.LabeledPoint
-  import org.apache.spark.mllib.util.MLUtils
-  import org.apache.spark.rdd.RDD
-
-  val conf = new SparkConf().setAppName("LogisticRegressionMail").setMaster("local")
-
+  val conf = new SparkConf().setMaster("local").setAppName("My App")
   val sc = new SparkContext(conf)
-  val examples: RDD[LabeledPoint] = MLUtils.loadLibSVMFile(sc, "sample_libsvm_data.txt")
-
-  println(examples.first)
+  val input = sc.textFile("pom.xml");
+  val words = input.flatMap(line => line.split(" "));
+  val counts = words.map(word => (word, 1)).reduceByKey { case (x, y) => x + y }
+  val dir = "myResultDir";
+  checkExistenceAndDelete(dir);
+  counts.saveAsTextFile(dir);
 }

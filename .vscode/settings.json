@@ -31,6 +31,9 @@
         "set": "cpp",
         "unordered_set": "cpp",
         "hashtable": "cpp",
-        "cstdarg": "cpp"
+        "cstdarg": "cpp",
+        "__mutex_base": "cpp",
+        "shared_mutex": "cpp",
+        "thread": "cpp"
     }
 }
