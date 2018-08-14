@@ -37,19 +37,22 @@ object ch02 extends App {
     counts.saveAsTextFile(dir);
   }
 
+  def test02(): Unit = {
+    val lines = sc.parallelize((List("pandas", "i like pandas", "I have", "my pandas")))
+    println(lines.count())
+    val p = lines.filter(l => l.contains("panda"))
+    val q = lines.filter(l => l.contains("like"))
+    val u = q.union(q)
+    p.take(1).foreach(println)
+    p.collect()
+    println(p.count())
+    println(divide1.isDefinedAt(0))
+  }
+
   val divide1:PartialFunction[Int, Int]= {
     case d: Int if d != 0 => 100 / d
   }
   val conf = new SparkConf().setMaster("local").setAppName("My App")
   val sc = new SparkContext(conf)
 
-  val lines = sc.parallelize((List("pandas", "i like pandas", "I have", "my pandas")))
-  println(lines.count())
-  val p = lines.filter(l=>l.contains("panda"))
-  val q = lines.filter(l=>l.contains("like"))
-  val u = q.union(q)
-  p.take(1).foreach(println)
-  p.collect()
-  println(p.count())
-  println(divide1.isDefinedAt(0))
 }
