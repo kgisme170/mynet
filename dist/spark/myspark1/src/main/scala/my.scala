@@ -1,8 +1,6 @@
 import java.io.File
-
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
-import org.apache.spark.SparkContext._
 
 /*
  * 读取一个文件并分解到目标目录下
