@@ -9,32 +9,34 @@ import org.apache.spark.SparkContext._
  */
 object ch02 extends App {
   def deleteDir(dir: File): Unit = {
-    val files = dir.listFiles();
+    val files = dir.listFiles()
     files.foreach(f => {
       if (f.isDirectory()) {
-        deleteDir(f);
+        deleteDir(f)
       } else {
-        f.delete();
+        f.delete()
       }
-    });
-    dir.delete();
+    })
+    dir.delete()
   }
 
   def checkExistenceAndDelete(dir: String): Unit = {
     val file = new File(dir);
     if (file.exists()) {
-      deleteDir(file);
+      deleteDir(file)
     }
   }
 
   def test01() {
-    val input = sc.textFile("pom.xml");
+    val input = sc.textFile("/Users/x/Documents/spark-2.3.1-bin-hadoop2.7/README.md");
     input.persist()
     val words = input.flatMap(line => line.split(" "));
     val counts = words.map(word => (word, 1)).reduceByKey { case (x, y) => x + y }
-    val dir = "myResultDir";
-    checkExistenceAndDelete(dir);
-    counts.saveAsTextFile(dir);
+    val dir = "myResultDir"
+    checkExistenceAndDelete(dir)
+    counts.saveAsTextFile(dir)
+    val a = counts.collect()
+    a.foreach(println)
   }
 
   def test02(): Unit = {
@@ -44,7 +46,6 @@ object ch02 extends App {
     val q = lines.filter(l => l.contains("like"))
     val u = q.union(q)
     p.take(1).foreach(println)
-    p.collect()
     println(p.count())
     println(divide1.isDefinedAt(0))
   }
@@ -54,5 +55,5 @@ object ch02 extends App {
   }
   val conf = new SparkConf().setMaster("local").setAppName("My App")
   val sc = new SparkContext(conf)
-
+  test01()
 }
