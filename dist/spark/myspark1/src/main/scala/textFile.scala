@@ -48,7 +48,7 @@ object textFile extends App {
     println(divide1.isDefinedAt(0))
   }
 
-  val divide1:PartialFunction[Int, Int]= {
+  val divide1: PartialFunction[Int, Int] = {
     case d: Int if d != 0 => 100 / d
   }
   val conf = new SparkConf().setMaster("local").setAppName("My App")

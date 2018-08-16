@@ -19,20 +19,20 @@ object partitionCombine extends App {
   wordsRDD.groupByKey().foreach(println)
   println("test05==================================")
   var rdd1 = sc.parallelize(Array(("A", 9.0), ("A", 2.0), ("B", 1.0), ("B", 2.0), ("C", 1.0))).partitionBy(new HashPartitioner(3))
-  rdd1.foreachPartition(p=>println(p.length))
+  rdd1.foreachPartition(p => println(p.length))
   println("test06==================================")
-  rdd1.foreachPartition(p=>p.foreach(i=>println(i._2)))
+  rdd1.foreachPartition(p => p.foreach(i => println(i._2)))
   println("test07==================================")
 
   type cType = (Int, Double)
   val cb = rdd1.combineByKey(
-    createCombiner =  c => (1, c),
+    createCombiner = c => (1, c),
     mergeValue = (c: cType, v) => (c._1 + 1, c._2 + v),
     mergeCombiners = (c: cType, c2: cType) => (c._1 + c2._1, c._2 + c2._2),
     numPartitions = rdd1.partitions.size
   )
   cb.foreach(println)
   println("test08==================================")
-  cb.map{case (name, (num, score)) => (name, score / num)}.foreach(println)
+  cb.map { case (name, (num, score)) => (name, score / num) }.foreach(println)
   println("test09==================================")
 }
