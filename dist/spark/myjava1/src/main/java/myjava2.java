@@ -13,7 +13,7 @@ public class myjava2 {
     public static void main(String[] args){
         SparkConf conf=new SparkConf().setMaster("local").setAppName("My App");
         JavaSparkContext sc = new JavaSparkContext(conf);
-        JavaRDD<String> input=sc.textFile("/home/a/Downloads/spark-1.6.3-bin-hadoop2.6/README.md");
+        JavaRDD<String> input=sc.textFile("pom.xml");
         JavaRDD<String> words = input.flatMap(new FlatMapFunction<String, String>(){
             public Iterable<String> call(String x){
                 return Arrays.asList(x.split(" "));
@@ -30,6 +30,6 @@ public class myjava2 {
                 return integer + integer2;
             }
         });
-        counts.saveAsTextFile("/home/a/mytest05.txt");
+        counts.saveAsTextFile("mytest06");
     }
 }
