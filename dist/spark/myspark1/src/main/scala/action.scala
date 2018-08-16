@@ -16,4 +16,7 @@ object action extends App {
   result2.flatMapValues(x=>(x to 5)).foreach(println)
   result2.sortByKey().foreach(println)
   result2.filter{case (k,v)=>v<=3}.foreach(println)
+  println("-------------")
+  result2.reduceByKey(_+_)
+  result2.reduceByKey(_+_, 10)
 }
