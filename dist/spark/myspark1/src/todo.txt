@@ -1,0 +1,3 @@
+scala自定义分区
+scala读取json/csv
+spark读取hadoop file
