@@ -1,5 +1,5 @@
 import org.apache.spark.{HashPartitioner, SparkConf, SparkContext}
-object he extends App {
+object partitionCombine extends App {
   val conf = new SparkConf().setMaster("local").setAppName("My App")
   val sc = new SparkContext(conf)
   println("test00==================================")
