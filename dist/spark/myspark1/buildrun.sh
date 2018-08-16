@@ -1,3 +1,3 @@
 #!/bin/bash
 mvn package
-mvn exec:java -Dexec.mainClass="com.he.App"
+mvn exec:java -Dexec.mainClass="com.action.App"
