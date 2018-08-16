@@ -17,6 +17,16 @@ object action extends App {
   result2.sortByKey().foreach(println)
   result2.filter{case (k,v)=>v<=3}.foreach(println)
   println("-------------")
-  result2.reduceByKey(_+_)
-  result2.reduceByKey(_+_, 10)
+  println(result2.reduceByKey(_+_))
+  println("-------------")
+  result2.reduceByKey(_+_, 10).foreach(println)
+  println("-------------")
+  println(data2.countByKey())
+  println("-------------")
+
+  val d1 = sc.parallelize(List((1,"hadoop"),(2,"spark")))
+  val d2 = sc.parallelize(List((1,"java"),(2,"scala"),(3,"python")))
+  val d3 = sc.parallelize(List((1,"hdfs"),(2,"hbase"),(3,"hive")))
+  val res = d1.cogroup(d2,d3)
+  res.foreach(println)
 }
