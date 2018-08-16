@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9203d647-cb03-4cff-b46e-9097ead9182c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/aggregate.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/partitionCombine.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/partitionCombine.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/textFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/textFile.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/myjava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/myjava.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,14 +16,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="172" />
-          <entry key="scala" value="2424" />
+          <entry key="scala" value="2425" />
           <entry key="xml" value="79" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="172" />
-          <entry key="Scala" value="2424" />
+          <entry key="Scala" value="2425" />
           <entry key="XML" value="79" />
         </counts>
       </usages-collector>
@@ -55,24 +52,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/myjava.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="54">
+              <caret line="39" column="75" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="75" />
               <folding>
-                <element signature="e#65#66#0" expanded="true" />
-                <element signature="e#109#110#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#479#649#0" expanded="true" />
+                <element signature="e#563#569#0" expanded="true" />
+                <element signature="e#479#649#0" expanded="true" />
+                <element signature="e#524#639#0" expanded="true" />
+                <element signature="e#607#622#0" expanded="true" />
+                <element signature="e#524#639#0" expanded="true" />
+                <element signature="e#820#846#1" expanded="true" />
+                <element signature="e#776#835#0" expanded="true" />
+                <element signature="e#776#835#0" expanded="true" />
+                <element signature="e#1009#1085#1" expanded="true" />
+                <element signature="e#1094#1143#1" expanded="true" />
+                <element signature="e#1152#1199#1" expanded="true" />
+                <element signature="e#1208#1523#1" expanded="true" />
+                <element signature="e#1532#2096#1" expanded="true" />
+                <element signature="e#2105#2129#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/aggregate.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
+            <state relative-caret-position="255">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -93,13 +104,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/my.java" />
-        <option value="$PROJECT_DIR$/src/main/scala/myjava.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/scala/he.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/my.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/partitionCombine.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/textFile.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/aggregate.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/myjava.java" />
       </list>
     </option>
   </component>
@@ -177,7 +188,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534419483029" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534420153777" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -195,7 +206,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.aggregate">
+  <component name="RunManager" selected="Application.myjava">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -309,7 +320,7 @@
     <frame x="79" y="23" width="1361" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23881729" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23881729" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -320,7 +331,7 @@
       <window_info id="MaxCompute Job Explorer" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32939634" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32939634" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -398,21 +409,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/myjava.java">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/aggregate.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#65#66#0" expanded="true" />
-            <element signature="e#109#110#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/aggregate.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/myjava.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        <state relative-caret-position="54">
+          <caret line="39" column="75" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#479#649#0" expanded="true" />
+            <element signature="e#563#569#0" expanded="true" />
+            <element signature="e#479#649#0" expanded="true" />
+            <element signature="e#524#639#0" expanded="true" />
+            <element signature="e#607#622#0" expanded="true" />
+            <element signature="e#524#639#0" expanded="true" />
+            <element signature="e#820#846#1" expanded="true" />
+            <element signature="e#776#835#0" expanded="true" />
+            <element signature="e#776#835#0" expanded="true" />
+            <element signature="e#1009#1085#1" expanded="true" />
+            <element signature="e#1094#1143#1" expanded="true" />
+            <element signature="e#1152#1199#1" expanded="true" />
+            <element signature="e#1208#1523#1" expanded="true" />
+            <element signature="e#1532#2096#1" expanded="true" />
+            <element signature="e#2105#2129#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
