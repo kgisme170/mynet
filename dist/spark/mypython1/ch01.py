@@ -18,9 +18,10 @@ data = sc.parallelize([1,2,3,4,1,3])
 print data.reduce(lambda x,y: x+y)
 
 def printall(rdd):
-    for r in rdd:
+    print("----------")
+    for r in list(rdd.collect()):
         print r
-printall(data.distinct().take(10))
+printall(data.distinct())
 for d in list(data.distinct().collect()):
     print d
 
@@ -33,3 +34,10 @@ sums = n.aggregate((0,0),
     (lambda p, value:(p[0]+value, p[1]+1)),
     (lambda p1, p2:(p1[0]+p2[0], p1[1]+p2[1])))
 print sums[0]/float(sums[1])
+rdd1 = sc.parallelize([1,2,3])
+rdd2 = sc.parallelize([3,4,5])
+u = rdd1.union(rdd2)
+printall(u)
+printall(rdd1.intersection(rdd2))
+printall(rdd1.subtract(rdd2))
+printall(rdd1.cartesian(rdd2))
