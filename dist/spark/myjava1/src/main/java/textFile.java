@@ -2,8 +2,6 @@ import java.io.File;
 import java.util.Arrays;
 
 import org.apache.spark.SparkConf;
-import org.apache.spark.SparkContext;
-import org.apache.spark.SparkContext.*;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -12,7 +10,7 @@ import org.apache.spark.api.java.function.Function2;
 import org.apache.spark.api.java.function.PairFunction;
 import scala.Tuple2;
 
-public class myjava1 {
+public class textFile {
     static void deleteDir(File dir) {
         for (File f : dir.listFiles()) {
             if (f.isDirectory()) {
