@@ -33,7 +33,7 @@ public class myjava1 {
 
     public static void main(String[] args) {
         System.out.println("hw");
-        SparkConf conf = new SparkConf().setAppName("wordCount");
+        SparkConf conf = new SparkConf().setAppName("wordCount").setMaster("local");
         JavaSparkContext sc = new JavaSparkContext(conf);
         JavaRDD<String> input = sc.textFile("pom.xml");
         JavaRDD<String> words = input.flatMap(

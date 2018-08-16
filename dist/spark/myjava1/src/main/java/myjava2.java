@@ -9,7 +9,7 @@ import scala.Tuple2;
 
 import java.util.Arrays;
 
-public class mytest05 {
+public class myjava2 {
     public static void main(String[] args){
         SparkConf conf=new SparkConf().setMaster("local").setAppName("My App");
         JavaSparkContext sc = new JavaSparkContext(conf);
