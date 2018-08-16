@@ -5,7 +5,7 @@ import org.apache.spark.SparkContext
 /*
  * 读取一个文件并分解到目标目录下
  */
-object ch02 extends App {
+object my extends App {
   def deleteDir(dir: File): Unit = {
     val files = dir.listFiles()
     files.foreach(f => {
