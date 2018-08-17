@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9203d647-cb03-4cff-b46e-9097ead9182c" name="Default Changelist" comment="ok">
+      <change beforePath="$PROJECT_DIR$/../myjava1/src/main/java/aggregate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myjava1/src/main/java/checkDeleteDir.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myjava1/src/main/java/hadoopFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myjava1/src/main/java/textFile.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/partitions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/partitions.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/jsoncsvio.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/partitioner.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/sequenceFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/sequenceFile.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,20 +23,21 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="csv" value="26" />
-          <entry key="java" value="1689" />
+          <entry key="dummy" value="3" />
+          <entry key="java" value="1738" />
           <entry key="json" value="51" />
           <entry key="py" value="4" />
-          <entry key="scala" value="6220" />
+          <entry key="scala" value="6224" />
           <entry key="txt" value="2" />
           <entry key="xml" value="79" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1689" />
+          <entry key="JAVA" value="1738" />
           <entry key="JSON" value="51" />
-          <entry key="PLAIN_TEXT" value="32" />
-          <entry key="Scala" value="6220" />
+          <entry key="PLAIN_TEXT" value="35" />
+          <entry key="Scala" value="6224" />
           <entry key="XML" value="79" />
         </counts>
       </usages-collector>
@@ -38,11 +45,11 @@
         <counts>
           <entry key="class" value="3" />
           <entry key="csv" value="2" />
-          <entry key="java" value="4" />
+          <entry key="java" value="9" />
           <entry key="json" value="7" />
           <entry key="part-00000" value="1" />
           <entry key="py" value="2" />
-          <entry key="scala" value="20" />
+          <entry key="scala" value="26" />
           <entry key="txt" value="2" />
           <entry key="xml" value="1" />
         </counts>
@@ -50,10 +57,10 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="4" />
+          <entry key="JAVA" value="9" />
           <entry key="JSON" value="7" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Scala" value="20" />
+          <entry key="Scala" value="26" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -63,51 +70,26 @@
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/sequenceFile.scala">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/textFile_.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/counter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="374">
+              <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#644#955#1" expanded="true" />
+                <element signature="e#778#784#0" expanded="true" />
+                <element signature="e#749#1085#1" expanded="true" />
+                <element signature="e#1094#1118#1" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/partitions.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="74" column="1" lean-forward="true" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -156,8 +138,14 @@
         <option value="$PROJECT_DIR$/test.json" />
         <option value="$PROJECT_DIR$/test2.json" />
         <option value="$PROJECT_DIR$/src/main/scala/jsoncsv.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/sequenceFile.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/partitions.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/scriptFile.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/aggregate_.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/jsoncsvio.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/hadoopFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/textFile.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/sequenceFile.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/textFile_.java" />
       </list>
     </option>
   </component>
@@ -202,9 +190,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,6 +223,14 @@
               <item name="myspark1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="aggregate_.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="myspark-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myspark1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -254,7 +250,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SearchEverywhereHistoryKey" value="new HashPartitioner&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534519745043" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534546269902" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -281,7 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.partitions">
+  <component name="RunManager" selected="Application.textFile_">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -308,6 +304,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="aggregate_" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="aggregate_" />
+      <module name="myspark-1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="counter" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="counter" />
       <module name="myspark-1" />
@@ -319,6 +322,13 @@
       <option name="MAIN_CLASS_NAME" value="hadoopFile" />
       <module name="myspark-1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="hadoopFile_" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="hadoopFile_" />
+      <module name="myspark-1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -373,6 +383,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="textFile_" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="textFile_" />
+      <module name="myspark-1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -413,6 +430,9 @@
       <item itemvalue="Application.jsoncsv" />
       <item itemvalue="Application.partitionCombine" />
       <item itemvalue="Application.aggregate" />
+      <item itemvalue="Application.aggregate_" />
+      <item itemvalue="Application.hadoopFile_" />
+      <item itemvalue="Application.textFile_" />
       <item itemvalue="Application.partitions" />
       <item itemvalue="Application.sql" />
       <item itemvalue="Application.counter" />
@@ -516,9 +536,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="80" y="23" width="1360" height="877" extended-state="6" />
+    <frame x="80" y="23" width="1360" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2124431" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.215478" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -528,18 +549,18 @@
       <window_info id="MaxCompute Project Explorer" order="7" />
       <window_info id="MaxCompute Job Explorer" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32939634" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2952756" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32939634" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.24671917" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.24671917" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.27427822" />
       <window_info anchor="bottom" id="MaxCompute Job" order="10" />
       <window_info anchor="bottom" id="MaxCompute Console" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.29002625" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.29002625" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24943139" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -621,26 +642,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../mypython1/ch01.py" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/hadoopFile.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="4" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/textFile.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/customers.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -715,16 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/sequenceFile.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
@@ -734,7 +725,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/counter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
+        <state relative-caret-position="930">
           <caret line="76" selection-start-line="76" selection-end-line="76" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -744,8 +735,93 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/partitions.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="74" column="1" lean-forward="true" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+        <state relative-caret-position="92">
+          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/checkDeleteDir.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/scriptFile.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/jsoncsvio.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/partitioner.scala">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/aggregate_.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/hadoopFile.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hadoopFile_.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/textFile.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sequenceFile.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/textFile_.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#644#955#1" expanded="true" />
+            <element signature="e#778#784#0" expanded="true" />
+            <element signature="e#749#1085#1" expanded="true" />
+            <element signature="e#1094#1118#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

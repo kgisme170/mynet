@@ -25,5 +25,4 @@ object sequenceFile {
     val ou = sc.objectFile("output2")
     ou.foreach(println)
   }
->>>>>>> df9af2f218eed1dafc8f4704821b0e713bba112e
 }
