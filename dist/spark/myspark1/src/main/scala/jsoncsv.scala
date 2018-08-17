@@ -1,0 +1,5 @@
+package jsoncsv
+
+class scala {
+
+}
