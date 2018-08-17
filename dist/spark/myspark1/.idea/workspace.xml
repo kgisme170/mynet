@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9203d647-cb03-4cff-b46e-9097ead9182c" name="Default Changelist" comment="ok">
-      <change beforePath="$PROJECT_DIR$/../myjava1/src/main/java/aggregate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myjava1/src/main/java/checkDeleteDir.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myjava1/src/main/java/hadoopFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../myjava1/src/main/java/textFile.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/jsoncsvio.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/partitioner.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/sequenceFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/sequenceFile.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +17,7 @@
         <counts>
           <entry key="csv" value="26" />
           <entry key="dummy" value="3" />
-          <entry key="java" value="1738" />
+          <entry key="java" value="1742" />
           <entry key="json" value="51" />
           <entry key="py" value="4" />
           <entry key="scala" value="6224" />
@@ -34,7 +27,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1738" />
+          <entry key="JAVA" value="1742" />
           <entry key="JSON" value="51" />
           <entry key="PLAIN_TEXT" value="35" />
           <entry key="Scala" value="6224" />
@@ -81,14 +74,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/textFile_.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+            <state relative-caret-position="405">
+              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#644#955#1" expanded="true" />
                 <element signature="e#778#784#0" expanded="true" />
                 <element signature="e#749#1085#1" expanded="true" />
-                <element signature="e#1094#1118#1" expanded="true" />
+                <element signature="e#1035#1059#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -250,7 +243,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SearchEverywhereHistoryKey" value="new HashPartitioner&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534546269902" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534546530961" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -396,17 +389,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Unnamed" type="ScalaScriptRunConfiguration" factoryName="Scala Script">
-      <module name="myspark-1" />
-      <setting name="path" value="$PROJECT_DIR$/src/main/scala/jsoncsv.scala" />
-      <setting name="vmparams" value="" />
-      <setting name="consoleargs" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
@@ -436,7 +418,6 @@
       <item itemvalue="Application.partitions" />
       <item itemvalue="Application.sql" />
       <item itemvalue="Application.counter" />
-      <item itemvalue="Scala Script.Unnamed" />
       <item itemvalue="Application.textFile" />
       <item itemvalue="Application.sequenceFile" />
       <item itemvalue="Application.hadoopFile" />
@@ -539,7 +520,7 @@
     <frame x="80" y="23" width="1360" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.215478" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.215478" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -557,10 +538,10 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32939634" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.24671917" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.27427822" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.27427822" />
       <window_info anchor="bottom" id="MaxCompute Job" order="10" />
       <window_info anchor="bottom" id="MaxCompute Console" order="11" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.29002625" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.29002625" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24943139" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -813,14 +794,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/textFile_.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="405">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#644#955#1" expanded="true" />
             <element signature="e#778#784#0" expanded="true" />
             <element signature="e#749#1085#1" expanded="true" />
-            <element signature="e#1094#1118#1" expanded="true" />
+            <element signature="e#1035#1059#1" expanded="true" />
           </folding>
         </state>
       </provider>
