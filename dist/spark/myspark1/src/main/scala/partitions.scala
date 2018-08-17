@@ -1,11 +1,19 @@
 import org.apache.spark.{HashPartitioner, SparkConf, SparkContext}
 object partitions extends App {
-  val conf = new SparkConf().setMaster("local[3]").setAppName("My App")
+  val conf = new SparkConf().setMaster("local").setAppName("My App")
   val sc = new SparkContext(conf)
-  //var pairRdd = sc.parallelize(List((1,1), (1,2), (2,3), (2,4), (3,5), (3,6),(4,7), (4,8),(5,9), (5,10)))
-  //pairRdd.partitionBy(new HashPartitioner(3))
-  //pairRdd.mapPartitions{(x:Int,y:Int)=>(x+1,y+1)}
-  //pairRdd.collect.foreach(println)
+  println("----------------------")
+  var pairRdd = sc.parallelize(List((1,1), (1,2), (2,3), (2,4), (3,5), (3,6),(4,7), (4,8),(5,9), (5,10))).partitionBy(new HashPartitioner(3))
+  val mapRdd = pairRdd.mapPartitions{iter=>
+    var res = List[(Int,Int)]()
+    while (iter.hasNext){
+      val cur = iter.next
+      res=res.::(cur._1,cur._2*cur._2)
+    }
+    res.iterator
+  }
+  mapRdd.collect.foreach(println)
+  println("----------------------")
   //pairRdd.saveAsTextFile("output")
   var rdd1 = sc.makeRDD(1 to 10, 3)
   var rdd2 = rdd1.mapPartitions { data => {
