@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9203d647-cb03-4cff-b46e-9097ead9182c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sample.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/sequenceFile.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/jsoncsv.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/jsoncsv.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,15 +18,16 @@
         <counts>
           <entry key="csv" value="26" />
           <entry key="java" value="172" />
-          <entry key="scala" value="3359" />
+          <entry key="scala" value="3454" />
+          <entry key="txt" value="2" />
           <entry key="xml" value="79" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="172" />
-          <entry key="PLAIN_TEXT" value="26" />
-          <entry key="Scala" value="3359" />
+          <entry key="PLAIN_TEXT" value="28" />
+          <entry key="Scala" value="3454" />
           <entry key="XML" value="79" />
         </counts>
       </usages-collector>
@@ -37,7 +37,7 @@
           <entry key="java" value="2" />
           <entry key="json" value="2" />
           <entry key="part-00000" value="1" />
-          <entry key="scala" value="12" />
+          <entry key="scala" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -45,7 +45,7 @@
           <entry key="JAVA" value="2" />
           <entry key="JSON" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Scala" value="12" />
+          <entry key="Scala" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -59,10 +59,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/jsoncsv.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
+            <state relative-caret-position="210">
               <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
@@ -73,11 +73,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample.csv">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/sequenceFile.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            <state relative-caret-position="330">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,6 +118,7 @@
         <option value="$PROJECT_DIR$/src/main/scala/scala.scala" />
         <option value="$PROJECT_DIR$/sample.csv" />
         <option value="$PROJECT_DIR$/src/main/scala/jsoncsv.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/sequenceFile.scala" />
       </list>
     </option>
   </component>
@@ -192,7 +196,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534472950138" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534473745281" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -218,7 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.jsoncsv">
+  <component name="RunManager" selected="Application.sequenceFile">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -262,6 +266,14 @@
     <configuration name="partitionCombine" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="partitionCombine" />
       <module name="myspark-1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sequenceFile" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="sequenceFile" />
+      <module name="myspark-1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -315,9 +327,11 @@
       <item itemvalue="Application.aggregate" />
       <item itemvalue="Scala Script.Unnamed" />
       <item itemvalue="Application.textFile" />
+      <item itemvalue="Application.sequenceFile" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.sequenceFile" />
         <item itemvalue="Application.textFile" />
       </list>
     </recent_temporary>
@@ -333,6 +347,14 @@
       <option name="presentableId" value="Default" />
       <updated>1533808658155</updated>
     </task>
+    <task id="LOCAL-00001" summary="ok">
+      <created>1534473042993</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1534473042993</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -409,6 +431,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/my.java" />
@@ -492,12 +518,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/jsoncsv.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
+        <state relative-caret-position="210">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
             <element signature="e#569#588#0" expanded="true" />
             <element signature="e#872#899#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/sequenceFile.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
