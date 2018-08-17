@@ -14,7 +14,7 @@ object partitions extends App {
   }
   mapRdd.collect.foreach(println)
   println("----------------------")
-  //pairRdd.saveAsTextFile("output")
+  mapRdd.saveAsTextFile("output")
   var rdd1 = sc.makeRDD(1 to 10, 3)
   var rdd2 = rdd1.mapPartitions { data => {
     var result = List[Int]()
@@ -71,4 +71,5 @@ object partitions extends App {
     res.iterator
   }
   mapRdd2.collect.foreach(println)
+  mapRdd2.saveAsTextFile("output2")
 }
