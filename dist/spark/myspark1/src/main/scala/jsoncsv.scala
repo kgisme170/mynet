@@ -1,5 +1,4 @@
 import org.apache.spark.{SparkConf, SparkContext}
-import shapeless.Data
 object jsoncsv extends App {
   def testjson: Unit = {
     case class Address(line1: String, city: String, state: String, zip: String) {
@@ -20,10 +19,11 @@ object jsoncsv extends App {
     inputRDD.foreach(println)
     inputRDD.saveAsTextFile("myResult")
   }
+
   def testcsv: Unit = {
     import java.io.StringReader
     import au.com.bytecode.opencsv.CSVReader
-    case class myData(index: String, title: String, content: String){
+    case class myData(index: String, title: String, content: String) {
       override def toString = s"Data(index=$index, title=$title, content=$content)"
     }
     val input = sc.textFile("sample.csv")
@@ -31,12 +31,30 @@ object jsoncsv extends App {
       val reader = new CSVReader(new StringReader(line))
       reader.readNext()
     }
-    for(res <- result){
-      for(re <- res)
+    for (res <- result) {
+      for (re <- res)
         println(re)
     }
 
+    val _ = sc.wholeTextFiles("sample.csv")
   }
+
+  def testJackson(): Unit = {
+    import com.fasterxml.jackson.module.scala.DefaultScalaModule
+    import com.fasterxml.jackson.module.scala.experimental.DefaultRequiredAnnotationIntrospector
+    import com.fasterxml.jackson.databind
+    /*
+    case class Person(name:String, lovePandas:Boolean)
+    val input = sc.textFile("test2.json")
+    val result = input.flatMap(data=>{
+      try{
+        Some(mapper.readValue(data,classOf[Person]))
+      }catch{
+        case _:Exception=>None
+      }
+    })*/
+  }
+
   val conf = new SparkConf().setMaster("local").setAppName("My App")
   val sc = new SparkContext(conf)
   testcsv

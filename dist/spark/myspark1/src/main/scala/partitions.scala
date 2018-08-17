@@ -1,14 +1,14 @@
-import org.apache.spark.{HashPartitioner, SparkConf, SparkContext}
+import org.apache.spark.{HashPartitioner, Partitioner, SparkConf, SparkContext}
 object partitions extends App {
   val conf = new SparkConf().setMaster("local").setAppName("My App")
   val sc = new SparkContext(conf)
   println("----------------------")
   var pairRdd = sc.parallelize(List((1,1), (1,2), (2,3), (2,4), (3,5), (3,6),(4,7), (4,8),(5,9), (5,10))).partitionBy(new HashPartitioner(3))
-  val mapRdd = pairRdd.mapPartitions{iter=>
-    var res = List[(Int,Int)]()
-    while (iter.hasNext){
+  val mapRdd = pairRdd.mapPartitions { iter =>
+    var res = List[(Int, Int)]()
+    while (iter.hasNext) {
       val cur = iter.next
-      res=res.::(cur._1,cur._2*cur._2)
+      res = res.::(cur._1, cur._2 * cur._2)
     }
     res.iterator
   }
@@ -41,4 +41,34 @@ object partitions extends App {
 
   println("before rdd3 collect")
   rdd3.collect.foreach(println)
+  import java.net.URL;
+  class dnPartition(numParts:Int)extends Partitioner{
+    override def numPartitions: Int = numParts
+
+    override def getPartition(key: Any): Int = {
+      val domain = new URL(key.toString).getHost()
+      val code = (domain.hashCode % numPartitions)
+      if (code < 0) {
+        code + numPartitions
+      } else {
+        code
+      }
+    }
+
+    override def equals(obj: scala.Any): Boolean = obj match {
+      case dnp: dnPartition => dnp.numPartitions == numPartitions
+      case _ => false
+    }
+  }
+  val urls = List(("http://music.baidu.com", 1), ("http://tieba.baidu.com/123", 2), ("http://tieba.baidu.com/124", 3))
+  var urlRdd = sc.parallelize(urls).partitionBy(new dnPartition(3))
+  val mapRdd2 = urlRdd.mapPartitions { iter =>
+    var res = List[(String, Int)]()
+    while (iter.hasNext) {
+      val cur = iter.next
+      res = res.::(cur._1, cur._2 * cur._2)
+    }
+    res.iterator
+  }
+  mapRdd2.collect.foreach(println)
 }
