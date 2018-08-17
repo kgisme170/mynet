@@ -1,6 +1,6 @@
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.storage.StorageLevel
-object  action extends App {
+object action extends App {
   val conf = new SparkConf().setMaster("local").setAppName("My App")
   val sc = new SparkContext(conf)
   val data = sc.parallelize(List(1,2,1,3,1,4))

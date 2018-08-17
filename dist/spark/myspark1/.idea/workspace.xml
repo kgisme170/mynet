@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9203d647-cb03-4cff-b46e-9097ead9182c" name="Default Changelist" comment="ok">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/hiveCtx.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/action.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/action.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +22,7 @@
           <entry key="java" value="1742" />
           <entry key="json" value="51" />
           <entry key="py" value="4" />
-          <entry key="scala" value="6224" />
+          <entry key="scala" value="6506" />
           <entry key="txt" value="2" />
           <entry key="xml" value="79" />
         </counts>
@@ -30,7 +32,7 @@
           <entry key="JAVA" value="1742" />
           <entry key="JSON" value="51" />
           <entry key="PLAIN_TEXT" value="35" />
-          <entry key="Scala" value="6224" />
+          <entry key="Scala" value="6506" />
           <entry key="XML" value="79" />
         </counts>
       </usages-collector>
@@ -39,22 +41,22 @@
           <entry key="class" value="3" />
           <entry key="csv" value="2" />
           <entry key="java" value="9" />
-          <entry key="json" value="7" />
+          <entry key="json" value="9" />
           <entry key="part-00000" value="1" />
           <entry key="py" value="2" />
-          <entry key="scala" value="26" />
+          <entry key="scala" value="28" />
           <entry key="txt" value="2" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="JAVA" value="9" />
-          <entry key="JSON" value="7" />
+          <entry key="JSON" value="9" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Scala" value="26" />
-          <entry key="XML" value="1" />
+          <entry key="Scala" value="28" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -72,16 +74,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/textFile_.java">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/hiveCtx.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="75">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#644#955#1" expanded="true" />
-                <element signature="e#778#784#0" expanded="true" />
-                <element signature="e#749#1085#1" expanded="true" />
-                <element signature="e#1035#1059#1" expanded="true" />
+                <element signature="e#0#49#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,6 +100,7 @@
       <find>HashPartitioner</find>
       <find>partitionedBy</find>
       <find>registerTempTable</find>
+      <find>hive</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,7 +117,6 @@
         <option value="$PROJECT_DIR$/src/main/scala/textFile.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/aggregate.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/myjava.java" />
-        <option value="$PROJECT_DIR$/src/main/scala/action.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/test.json" />
         <option value="$PROJECT_DIR$/src/main/scala/scala.scala" />
         <option value="$PROJECT_DIR$/sample.csv" />
@@ -139,6 +137,8 @@
         <option value="$PROJECT_DIR$/src/main/java/textFile.java" />
         <option value="$PROJECT_DIR$/src/main/scala/sequenceFile.scala" />
         <option value="$PROJECT_DIR$/src/main/java/textFile_.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/action.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/hiveCtx.scala" />
       </list>
     </option>
   </component>
@@ -216,8 +216,7 @@
               <item name="myspark1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aggregate_.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myspark-1" type="b2602c69:ProjectViewProjectNode" />
@@ -243,7 +242,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SearchEverywhereHistoryKey" value="new HashPartitioner&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534546530961" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534547645722" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -270,7 +269,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.textFile_">
+  <component name="RunManager" selected="Application.hiveCtx">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -322,6 +321,14 @@
     <configuration name="hadoopFile_" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="hadoopFile_" />
       <module name="myspark-1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="hiveCtx" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="hiveCtx" />
+      <module name="myspark-1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -421,9 +428,11 @@
       <item itemvalue="Application.textFile" />
       <item itemvalue="Application.sequenceFile" />
       <item itemvalue="Application.hadoopFile" />
+      <item itemvalue="Application.hiveCtx" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.hiveCtx" />
         <item itemvalue="Application.sequenceFile" />
         <item itemvalue="Application.hadoopFile" />
         <item itemvalue="Application.textFile" />
@@ -538,10 +547,10 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32939634" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.24671917" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.27427822" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.27427822" />
       <window_info anchor="bottom" id="MaxCompute Job" order="10" />
       <window_info anchor="bottom" id="MaxCompute Console" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.29002625" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.29002625" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24943139" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -593,13 +602,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/my.java" />
     <entry file="file://$PROJECT_DIR$/myResultDir/part-00000" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/action.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="28" column="66" lean-forward="true" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/aggregate.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -671,20 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/jsoncsv.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -694,13 +682,6 @@
             <element signature="e#895#922#0" expanded="true" />
             <element signature="e#1382#1442#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -802,6 +783,44 @@
             <element signature="e#778#784#0" expanded="true" />
             <element signature="e#749#1085#1" expanded="true" />
             <element signature="e#1035#1059#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/action.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/hiveCtx.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
