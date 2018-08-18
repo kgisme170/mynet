@@ -26,7 +26,7 @@ object textFile extends App {
   }
 
   def test01() {
-    val input = sc.textFile("/Users/x/Documents/spark-2.3.1-bin-hadoop2.7/README.md");
+    val input = sc.textFile("pom.xml");
     input.persist()
     val words = input.flatMap(line => line.split(" "));
     val counts = words.map(word => (word, 1)).reduceByKey { case (x, y) => x + y }
