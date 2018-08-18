@@ -17,4 +17,9 @@ object accumulator extends App {
 
   val b = sc.broadcast(file.collect)
   b.value.foreach(println)
+
+  val data = sc.parallelize(List(1,3,4,1,9))
+  val stats = data.stats()
+  println(stats.stdev)
+  println(stats.mean)
 }
