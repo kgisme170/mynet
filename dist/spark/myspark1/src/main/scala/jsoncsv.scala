@@ -39,22 +39,6 @@ object jsoncsv extends App {
     val _ = sc.wholeTextFiles("sample.csv")
   }
 
-  def testJackson(): Unit = {
-    import com.fasterxml.jackson.module.scala.DefaultScalaModule
-    import com.fasterxml.jackson.module.scala.experimental.DefaultRequiredAnnotationIntrospector
-    import com.fasterxml.jackson.databind
-    /*
-    case class Person(name:String, lovePandas:Boolean)
-    val input = sc.textFile("test2.json")
-    val result = input.flatMap(data=>{
-      try{
-        Some(mapper.readValue(data,classOf[Person]))
-      }catch{
-        case _:Exception=>None
-      }
-    })*/
-  }
-
   val conf = new SparkConf().setMaster("local").setAppName("My App")
   val sc = new SparkContext(conf)
   testcsv
