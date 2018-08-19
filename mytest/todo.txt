@@ -1,6 +1,5 @@
-scala自定义分区
-scala读取json/csv
-spark读取hadoop file
+spark-submit --driver-class-path /home/a/.m2/repository/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar --jars target/myspark-1-1.0-SNAPSHOT.jar --class jdbcMysql target/myspark-1-1.0-SNAPSHOT.jar
+---------------------问题
 elephant bird->pb
 
 ch20.scala
