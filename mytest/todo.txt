@@ -5,3 +5,10 @@ elephant bird->pb
 ch20.scala
 ch21.scala
 Class.forName
+hiveCtx.scala
+
+$SPARK_HOME/sbin/start-thrift-server.sh --master sparkMaster
+beeline
+
+select sum(count1),sum(count2),userid from xx groupby userid
+hive多个客户端，共享数据和udf
