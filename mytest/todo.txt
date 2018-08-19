@@ -3,7 +3,6 @@ scala读取json/csv
 spark读取hadoop file
 elephant bird->pb
 
-sqlSession.scala
-jabcMysql.scala
 ch20.scala
 ch21.scala
+Class.forName
