@@ -11,5 +11,6 @@
     <modules>
         <module>spark-local-scala</module>
         <module>myspark1</module>
+        <module>java-local</module>
     </modules>
 </project>
