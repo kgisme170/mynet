@@ -8,5 +8,7 @@ object sqlSession extends App {
     genderRDD.printSchema()
   }
   val spark = SparkSession.builder().appName("sqlSession").getOrCreate()
-  fromJson()
+  val data = spark.sqlContext.sql("show databases")//select * from z")
+  data.show()
+  data.printSchema()
 }
