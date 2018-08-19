@@ -2,10 +2,10 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
-public class testPq{
+public class testPq_ {
     private String name;
     private int population;
-    public testPq(String _n, int _p){
+    public testPq_(String _n, int _p){
         name = _n;
         population = _p;
     }
@@ -16,8 +16,8 @@ public class testPq{
         return population;
     }
     public static void main(String[] args){
-        Comparator<testPq> order = new Comparator<testPq>(){
-            public int compare(testPq o1, testPq o2){
+        Comparator<testPq_> order = new Comparator<testPq_>(){
+            public int compare(testPq_ o1, testPq_ o2){
                 int p1=o1.getPopuliation();
                 int p2=o2.getPopuliation();
                 if(p1>p2)return 1;
@@ -25,11 +25,11 @@ public class testPq{
                 else return 0;
             }
         };
-        testPq t1=new testPq("t1",1);
-        testPq t2=new testPq("t2",5);
-        testPq t3=new testPq("t3",3);
-        testPq t4=new testPq("t4",4);
-        Queue<testPq> q = new PriorityQueue<testPq>(10,order);
+        testPq_ t1=new testPq_("t1",1);
+        testPq_ t2=new testPq_("t2",5);
+        testPq_ t3=new testPq_("t3",3);
+        testPq_ t4=new testPq_("t4",4);
+        Queue<testPq_> q = new PriorityQueue<testPq_>(10,order);
         q.add(t1);
         q.add(t2);
         q.add(t3);

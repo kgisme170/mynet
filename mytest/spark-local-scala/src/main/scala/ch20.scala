@@ -1,6 +1,6 @@
 //actors is a deprecated package in favor of Akka
 object ch20 extends App {
-
+/*
     import scala.actors.Actor
     import scala.actors.Actor._
 
@@ -25,5 +25,5 @@ object ch20 extends App {
             }
         }
     }
-    actor2 ! "Hi"
+    actor2 ! "Hi"*/
 }

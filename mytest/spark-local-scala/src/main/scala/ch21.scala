@@ -1,4 +1,5 @@
 object ch21 extends App {
+    /*
     val cont: (Unit => Unit) = null
     val filename = "myfile.txt"
     var contents = ""
@@ -17,5 +18,5 @@ object ch21 extends App {
         filename = readLine()
         cont()
     }
-    println(contents)
+    println(contents)*/
 }
