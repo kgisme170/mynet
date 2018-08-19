@@ -53,5 +53,7 @@ object textFile extends App {
   }
   val conf = new SparkConf().setMaster("local").setAppName("My App")
   val sc = new SparkContext(conf)
-  test01()
+  val lines = sc.textFile("/home/a/Downloads/my.txt.gz")
+  lines.foreach(println)
+  sc.textFile("hdfs://localhost:9000/tmp/myNotes.txt/NOTES.txt").foreach(println)
 }
