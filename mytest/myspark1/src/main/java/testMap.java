@@ -11,24 +11,6 @@ import org.apache.spark.api.java.function.PairFunction;
 import scala.Tuple2;
 
 public class myjava {
-    static void deleteDir(File dir) {
-        for (File f : dir.listFiles()) {
-            if (f.isDirectory()) {
-                deleteDir(f);
-            } else {
-                f.delete();
-            }
-        }
-        dir.delete();
-    }
-
-    static void checkExistenceAndDelete(String dir) {
-        File file = new File(dir);
-        if (file.exists()) {
-            deleteDir(file);
-        }
-    }
-
     public static void main(String[] args) {
         System.out.println("hw");
         SparkConf conf = new SparkConf().setAppName("wordCount").setMaster("local");
@@ -56,7 +38,7 @@ public class myjava {
             }
         });
         String dir = "myResult";
-        checkExistenceAndDelete(dir);
+        checkDeleteDir.checkExistenceAndDelete(dir);
         counts.saveAsTextFile(dir);
     }
 }
