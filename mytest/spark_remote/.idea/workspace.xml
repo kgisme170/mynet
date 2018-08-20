@@ -240,43 +240,43 @@
           <expand>
             <path>
               <item name="myspark-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myspark1" type="462c0819:PsiDirectoryNode" />
+              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myspark-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myspark1" type="462c0819:PsiDirectoryNode" />
+              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myspark-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myspark1" type="462c0819:PsiDirectoryNode" />
+              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myspark-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myspark1" type="462c0819:PsiDirectoryNode" />
+              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myspark-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myspark1" type="462c0819:PsiDirectoryNode" />
+              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myspark-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myspark1" type="462c0819:PsiDirectoryNode" />
+              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myspark-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myspark1" type="462c0819:PsiDirectoryNode" />
+              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>

@@ -40,7 +40,7 @@ public void map(LongWritable key, Text value,
 
 public static class Reduce extends MapReduceBase implements Reducer< Text, IntWritable, Text, IntWritable > {
 public void reduce(Text key, Iterator values,
- OutputCollector<text, intwritable=""> output,
+ OutputCollector<text, IntWritable> output,
  Reporter reporter) throws IOException {
       int sum = 0;
       while (values.hasNext()) {

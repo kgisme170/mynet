@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="Maven 1" modules="spark-local-scala">
+    <profile name="Maven 1" modules="local_test">
       <parameters>
         <parameter value="-dependencyfile" />
-        <parameter value="$PROJECT_DIR$/spark-local-scala/target/.scala_dependencies" />
+        <parameter value="$PROJECT_DIR$/local_test/target/.scala_dependencies" />
       </parameters>
     </profile>
     <profile name="Maven 2" modules="myspark-1" />
