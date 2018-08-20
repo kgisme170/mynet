@@ -11,6 +11,6 @@
     <modules>
         <module>local_test</module>
         <module>spark_remote</module>
-        <module>hadoop-mr</module>
+        <module>mr</module>
     </modules>
 </project>

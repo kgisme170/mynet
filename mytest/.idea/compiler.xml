@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hadoopmr" />
-        <module name="myspark-1" />
+        <module name="mr" />
         <module name="local_test" />
+        <module name="spark_remote" />
       </profile>
     </annotationProcessing>
   </component>
