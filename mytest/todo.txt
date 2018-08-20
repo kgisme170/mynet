@@ -2,10 +2,7 @@ spark-submit --driver-class-path /home/a/.m2/repository/mysql/mysql-connector-ja
 ---------------------问题
 elephant bird->pb
 
-ch20.scala
-ch21.scala
 Class.forName
-hiveCtx.scala
 streamlog.scala
 
 $SPARK_HOME/sbin/start-thrift-server.sh --master sparkMaster
