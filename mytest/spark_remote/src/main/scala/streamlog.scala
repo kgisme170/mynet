@@ -1,23 +1,3 @@
-
-import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.streaming.StreamingContext
-import org.apache.spark.streaming.StreamingContext._
-import org.apache.spark.streaming.dstream.DStream
-import org.apache.spark.streaming.Duration
-import org.apache.spark.streaming.Seconds
-object streamlog extends App {
-  val conf = new SparkConf().setMaster("local").setAppName("My App")
-  conf.set("spark.sql.codegen", "true")
-  val ssc = new StreamingContext(conf, Seconds(5))
-  val lines = ssc.socketTextStream("localhost", 7000)
-  //val infoLines = lines.filter(_.contains("info"))
-  lines.print()
-  lines.saveAsTextFiles("/Users/x/temp")
-  println("保存文件-----------------------------")
-  ssc.start()
-  ssc.awaitTermination()
-}
-/*
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
@@ -46,4 +26,3 @@ object streamlog {
     ssc.awaitTermination()
   }
 }
-*/

@@ -183,21 +183,21 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="myspark-1" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="spark_remote" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="myspark-1" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="spark_remote" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="myspark-1" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="spark_remote" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="myspark-1" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="spark_remote" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
           <item name="compiler" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
@@ -239,43 +239,43 @@
         <subPane>
           <expand>
             <path>
-              <item name="myspark-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark_remote" type="b2602c69:ProjectViewProjectNode" />
               <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myspark-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark_remote" type="b2602c69:ProjectViewProjectNode" />
               <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myspark-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark_remote" type="b2602c69:ProjectViewProjectNode" />
               <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myspark-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark_remote" type="b2602c69:ProjectViewProjectNode" />
               <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myspark-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark_remote" type="b2602c69:ProjectViewProjectNode" />
               <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myspark-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark_remote" type="b2602c69:ProjectViewProjectNode" />
               <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="myspark-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spark_remote" type="b2602c69:ProjectViewProjectNode" />
               <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -336,35 +336,35 @@
     </configuration>
     <configuration name="action" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="action" />
-      <module name="myspark-1" />
+      <module name="spark_remote" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="aggregate" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="aggregate" />
-      <module name="myspark-1" />
+      <module name="spark_remote" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="aggregate_" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="aggregate_" />
-      <module name="myspark-1" />
+      <module name="spark_remote" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="counter" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="counter" />
-      <module name="myspark-1" />
+      <module name="spark_remote" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="hadoopFile" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="hadoopFile" />
-      <module name="myspark-1" />
+      <module name="spark_remote" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -372,14 +372,14 @@
     </configuration>
     <configuration name="hadoopFile_" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="hadoopFile_" />
-      <module name="myspark-1" />
+      <module name="spark_remote" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="hiveCtx" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="hiveCtx" />
-      <module name="myspark-1" />
+      <module name="spark_remote" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -387,35 +387,35 @@
     </configuration>
     <configuration name="jsoncsv" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="jsoncsv" />
-      <module name="myspark-1" />
+      <module name="spark_remote" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="myjava" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="myjava" />
-      <module name="myspark-1" />
+      <module name="spark_remote" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="partitionCombine" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="partitionCombine" />
-      <module name="myspark-1" />
+      <module name="spark_remote" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="partitions" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="partitions" />
-      <module name="myspark-1" />
+      <module name="spark_remote" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="sequenceFile" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="sequenceFile" />
-      <module name="myspark-1" />
+      <module name="spark_remote" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -423,21 +423,21 @@
     </configuration>
     <configuration name="sql" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sql" />
-      <module name="myspark-1" />
+      <module name="spark_remote" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="textFile" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="textFile" />
-      <module name="myspark-1" />
+      <module name="spark_remote" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="textFile_" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="textFile_" />
-      <module name="myspark-1" />
+      <module name="spark_remote" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

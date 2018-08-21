@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.myspark</groupId>
-    <artifactId>myspark-1</artifactId>
+    <artifactId>spark_remote</artifactId>
     <name>${project.artifactId}</name>
     <version>1.0-SNAPSHOT</version>
 
