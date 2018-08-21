@@ -41,5 +41,4 @@ object children extends App{
   println("XiaoMing was killed")
 
   Thread.sleep(5000)
-  actorSystem.shutdown
 }

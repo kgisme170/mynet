@@ -19,5 +19,4 @@ object kill extends App{
   val number5 = system.actorOf(Props[Number5], name="Number5")
   number5 ! "hello"
   number5 ! Kill
-  system.shutdown
 }
