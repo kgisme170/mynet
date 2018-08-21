@@ -9,8 +9,10 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>local_test</module>
         <module>spark_remote</module>
-        <module>mr</module>
+        <module>scala_local</module>
+        <module>java_local</module>
+        <module>cpp</module>
+        <module>python</module>
     </modules>
 </project>

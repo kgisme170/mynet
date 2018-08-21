@@ -9,7 +9,7 @@ class HelloActor extends Actor{
   }
 }
 
-object actor01 {
+object actor01 extends App{
   val system = ActorSystem("actor01")
   val helloActor = system.actorOf(Props[HelloActor],name="myActor")
   helloActor!"msg"

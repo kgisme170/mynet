@@ -6,10 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cpp" />
+        <module name="java_local" />
         <module name="local_test" />
-        <module name="mr" />
+        <module name="python" />
+        <module name="scala_local" />
         <module name="spark_remote" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mr" target="1.5" />
+      <module name="spark-local-scala" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
