@@ -12,7 +12,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="myspark-1" target="1.8" />
+      <module name="spark_remote" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
