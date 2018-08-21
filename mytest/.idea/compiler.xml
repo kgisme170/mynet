@@ -11,8 +11,5 @@
         <module name="spark_remote" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="spark_remote" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
