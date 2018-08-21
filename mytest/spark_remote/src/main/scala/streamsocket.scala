@@ -2,7 +2,7 @@ import org.apache.log4j.{Level, Logger}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.{SparkConf, SparkContext}
 
-object TCPOnStreaming {
+object streamsocket {
   def main(args: Array[String]) {
 
     Logger.getLogger("org.apache.spark").setLevel(Level.ERROR)
