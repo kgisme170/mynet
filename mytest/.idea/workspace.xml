@@ -5,15 +5,159 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spark_remote/src/main/scala/streamsocket.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/campus2017.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/campus2017.tar.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/Makefile.testString01" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/Makefile.testString01" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/SConscript" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/SConscript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/atomicVsMutex.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/atomicVsMutex.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/atomic_flag.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/atomic_flag.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/atomics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/atomics.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/bindImpl.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/bindImpl.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/conditional.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/conditional.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/newLambda.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/newLambda.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/objectModel01.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/objectModel01.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/pv.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/pv.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/rwlock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/rwlock.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/stdtls.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/stdtls.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/testSetDifference.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/testSetDifference.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/testStringCow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/testStringCow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/testTemplate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/testTemplate.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/testTraits.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/testTraits.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/testVariadic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/testVariadic.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/threadFuture.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/threadFuture.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/threadMutex.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/threadMutex.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/typeDeductionForAutoCpp17.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/typeDeductionForAutoCpp17.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/typeDeductionForInitializerlist.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/typeDeductionForInitializerlist.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/usec11.c" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/usec11.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/usefuture.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/usefuture.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/usehashmap.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/usehashmap.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/usehashset.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/usehashset.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/usemultiset.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/usemultiset.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/usepackagedtask.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/usepackagedtask.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/usepromise.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/usepromise.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/clang/userDefinedLiteral.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/postcpp11/userDefinedLiteral.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/SConscript" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/SConscript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/TemplateMetaProgramming.md" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/TemplateMetaProgramming.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/WhyEnumClass.md" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/WhyEnumClass.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/closure.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/closure.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/fileToString.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/fileToString.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/getStackTrace.h" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/getStackTrace.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/hideFunction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/hideFunction.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/initialization_paramList.md" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/initialization_paramList.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/objectModel01.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/objectModel01.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/objectModelBehaviorAndPitfalls.md" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/objectModelBehaviorAndPitfalls.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/pointerAdjustment.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/pointerAdjustment.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/printFormatTime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/printFormatTime.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/printMap.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/printMap.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/staticCheckBaseDerive.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/staticCheckBaseDerive.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/templateContainer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/templateContainer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/testExprTemplate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/testExprTemplate.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/testMetaProgramming.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/testMetaProgramming.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/testNewClosure.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/testNewClosure.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/testPointer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/testPointer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/testPosixspawn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/testPosixspawn.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/testStdThread.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/testStdThread.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/testStdThreadExit.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/testStdThreadExit.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/typeDeductionForConst.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/typeDeductionForConst.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/typeDeductionForConst2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/typeDeductionForConst2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/typeDeductionForRefMember.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/typeDeductionForRefMember.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/virtual01.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/virtual01.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/virtual02.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/virtual02.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/virtual03.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/virtual03.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/virtual04.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/virtual04.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/virtualInheritance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/virtualInheritance.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/cpp/virtual和static关键字的陷阱.md" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/virtual和static关键字的陷阱.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/arrayPartitionZeros.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/arrayPartitionZeros.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/arrayRecursive.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/arrayRecursive.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/banker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/banker.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/banker.txt" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/banker.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/base10Tobase2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/base10Tobase2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/bsf.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/bsf.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/bt.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/bt.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/btPreorderToPostOrder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/btPreorderToPostOrder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/bt_basic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/bt_basic.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/busMatrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/busMatrix.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/crc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/crc.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/findArrayMajority.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/findArrayMajority.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/kmerge.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/kmerge.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/kmp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/kmp.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/kruskal.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/kruskal.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/listCompare.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/listCompare.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/listFindReverseKth.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/listFindReverseKth.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/listPartition.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/listPartition.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/listPartitionArray.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/listPartitionArray.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/listPrintReverse.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/listPrintReverse.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/listRemoveDup.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/listRemoveDup.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/listRemoveMin.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/listRemoveMin.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/listRemoveRange.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/listRemoveRange.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/listReverse.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/listReverse.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/listReverseArray.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/listReverseArray.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/listShift.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/listShift.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/listSplitEvenOdd.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/listSplitEvenOdd.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/lru.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/lru.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/prim.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/prim.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/queueCheckBrace.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/queueCheckBrace.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/roundRobinDeque.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/roundRobinDeque.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/roundrobinArrayQueue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/roundrobinArrayQueue.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/roundrobinQueue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/roundrobinQueue.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/sqrt.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/sqrt.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/stackExp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/stackExp.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/threadedBt.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/threadedBt.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/topologicalSort.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/topologicalSort.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/ds/validateSearchPath.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/datastructure/validateSearchPath.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/linker/SConscript" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/linker/SConscript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/linker/a.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/linker/a.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/linker/b.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/linker/b.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/linker/bar1.c" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/linker/bar1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/linker/bar2.c" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/linker/bar2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/linker/d.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/linker/d.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/linker/doubledefine.h" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/linker/doubledefine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/linker/doubledefine01.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/linker/doubledefine01.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/linker/doubledefine02.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/linker/doubledefine02.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/linker/doubledefinemain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/linker/doubledefinemain.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/linker/foo1.c" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/linker/foo1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/linker/foo2.c" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/linker/foo2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/linker/makelib.sh" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/linker/makelib.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/linux/SConscript" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/linux/SConscript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/linux/client.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/linux/client.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/linux/server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/linux/server.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/linux/testAioNotify.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/linux/testAioNotify.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/linux/testAioQuery.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/linux/testAioQuery.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/linux/testEpoll.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/linux/testEpoll.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/linux/testcwd.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/linux/testcwd.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/linux/unixDomainSocket.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/linux/unixDomainSocket.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/posix/SConscript" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/posix/SConscript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/posix/testAlarm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/posix/testAlarm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/posix/testAlarmFork.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/posix/testAlarmFork.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/posix/testLibEv.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/posix/testLibEv.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/posix/testLibEvent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/posix/testLibEvent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/posix/testLibEventHttp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/posix/testLibEventHttp.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/posix/testPipeAlarm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/posix/testPipeAlarm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/posix/testPipeEv.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/posix/testPipeEv.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/posix/testPoll.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/posix/testPoll.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/posix/testSelect.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/posix/testSelect.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/posix/testdup.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/posix/testdup.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/posix/threads_cacheline.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/posix/threads_cacheline.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/posix/threads_lock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/posix/threads_lock.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/posix/threads_omp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/posix/threads_omp.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/PthreadShare.md" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/PthreadShare.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/SConscript" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/SConscript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/producerConsumer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/producerConsumer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/testPthread.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/testPthread.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/testPthreadCancel.c" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/testPthreadCancel.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/testPthreadCancelCpp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/testPthreadCancelCpp.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/testPthreadCancelCppStd.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/testPthreadCancelCppStd.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/testPthreadCancelUnwind.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/testPthreadCancelUnwind.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/testPthreadCond.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/testPthreadCond.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/testPthreadExit.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/testPthreadExit.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/testPthreadJoin.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/testPthreadJoin.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/testPthreadMutex.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/testPthreadMutex.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/testPthreadReturn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/testPthreadReturn.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/testRWlock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/testRWlock.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/useTlsCheck.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/useTlsCheck.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/useTlsCreate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/useTlsCreate.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/useTlsCreate.h" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/useTlsCreate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lang/multiplex/pthread/usetls.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/usetls.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/spark_remote/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark_remote/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark_remote/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark_remote/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/streamlog.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark_remote/src/main/scala/streamlog.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -77,6 +221,7 @@
     <session id="-451817951">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="cpp" value="1" />
           <entry key="java" value="2" />
           <entry key="py" value="2" />
           <entry key="scala" value="3" />
@@ -85,6 +230,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="C++" value="1" />
           <entry key="JAVA" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="1" />
@@ -103,16 +249,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="cpp" value="27" />
           <entry key="py" value="29" />
-          <entry key="scala" value="232" />
+          <entry key="scala" value="244" />
           <entry key="txt" value="2" />
           <entry key="xml" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="C++" value="27" />
           <entry key="PLAIN_TEXT" value="31" />
-          <entry key="Scala" value="232" />
+          <entry key="Scala" value="244" />
           <entry key="XML" value="23" />
         </counts>
       </usages-collector>
@@ -129,11 +277,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/streamsocket.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+            <state relative-caret-position="405">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -150,11 +298,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todo.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+              <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -164,6 +312,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>object</find>
+      <find>class.for</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -203,6 +352,7 @@
         <option value="$PROJECT_DIR$/spark_remote/src/main/scala/streamlog.scala" />
         <option value="$PROJECT_DIR$/spark_remote/pom.xml" />
         <option value="$PROJECT_DIR$/spark_remote/src/main/scala/streamsocket.scala" />
+        <option value="$PROJECT_DIR$/m.cpp" />
       </list>
     </option>
   </component>
@@ -225,6 +375,17 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="spark_remote" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spark_remote" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spark_remote" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="jar" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
       </expand>
       <select />
@@ -253,32 +414,6 @@
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -287,7 +422,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534837611951" />
+    <property name="SearchEverywhereHistoryKey" value="Class.forName&#9;null&#9;null" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534852911139" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -311,7 +447,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TCPOnStreaming">
+  <component name="RunManager" selected="Application.streamsocket">
     <configuration default="true" type="tests" factoryName="Unittests">
       <module name="mytest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -448,7 +584,28 @@
       <option name="project" value="LOCAL" />
       <updated>1534759177197</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ok">
+      <created>1534837680912</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1534837680912</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ok">
+      <created>1534837779658</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1534837779658</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ok">
+      <created>1534839537080</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1534839537080</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -477,7 +634,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32961586" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32953367" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.4580311" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50027823" side_tool="true" weight="0.5030979" />
       <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.4986088" visible="true" weight="0.33678755" />
@@ -616,13 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mr/src/main/java/map4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -646,11 +796,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/streamsocket.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        <state relative-caret-position="405">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/m.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
         </state>
       </provider>
     </entry>
