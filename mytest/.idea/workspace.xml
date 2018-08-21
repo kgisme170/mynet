@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../linux/3p/SConscript" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/SConscript" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linux/3p/buildmpi.sh" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/buildmpi.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linux/3p/buildopengl.sh" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/buildopengl.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linux/3p/mpi_init.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/mpi_init.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linux/3p/mpi_usage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/mpi_usage.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linux/3p/testleveldb.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/testleveldb.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linux/3p/testlibxml2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/testlibxml2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linux/3p/testlz4.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/testlz4.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linux/3p/testopengl.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/testopengl.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linux/3p/testsnappy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/testsnappy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linux/3p/testzstd.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/testzstd.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local_test/src/main/scala/actor01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/src/main/scala/actor01.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,7 +25,7 @@
     <session id="-1902443170">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.7" value="1" />
@@ -43,7 +35,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="3" />
-          <entry key="java" value="6" />
+          <entry key="java" value="7" />
           <entry key="json" value="1" />
           <entry key="scala" value="22" />
           <entry key="txt" value="1" />
@@ -53,7 +45,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="7" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Scala" value="22" />
@@ -64,17 +56,17 @@
         <counts>
           <entry key="dummy" value="1" />
           <entry key="java" value="84" />
-          <entry key="scala" value="1610" />
+          <entry key="scala" value="1953" />
           <entry key="txt" value="81" />
-          <entry key="xml" value="3" />
+          <entry key="xml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="84" />
           <entry key="PLAIN_TEXT" value="82" />
-          <entry key="Scala" value="1610" />
-          <entry key="XML" value="3" />
+          <entry key="Scala" value="1953" />
+          <entry key="XML" value="14" />
         </counts>
       </usages-collector>
     </session>
@@ -129,40 +121,58 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/streamlog.scala">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="22" selection-start-line="22" selection-end-line="25" selection-end-column="26" />
+            <state relative-caret-position="322">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/streamsocket.scala">
+        <entry file="file://$PROJECT_DIR$/local_test/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="347">
+              <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/local_test/src/main/scala/actor01.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spark_remote/pom.xml">
+        <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/streamlog.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="149">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/todo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+            <state relative-caret-position="299">
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mr/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -200,7 +210,6 @@
         <option value="$PROJECT_DIR$/local_test/src/main/scala/ch20.scala" />
         <option value="$PROJECT_DIR$/local_test/src/main/scala/ch21.scala" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/local_test/pom.xml" />
         <option value="$PROJECT_DIR$/spark_remote/src/main/java/myjava.java" />
         <option value="$PROJECT_DIR$/spark_remote/src/main/java/testMap.java" />
         <option value="$PROJECT_DIR$/spark_remote/src/main/scala/textFile.scala" />
@@ -213,20 +222,14 @@
         <option value="$PROJECT_DIR$/spark_remote/src/main/scala/streamsocket.scala" />
         <option value="$PROJECT_DIR$/m.cpp" />
         <option value="$PROJECT_DIR$/todo.txt" />
+        <option value="$PROJECT_DIR$/local_test/pom.xml" />
+        <option value="$PROJECT_DIR$/local_test/src/main/scala/actor01.scala" />
       </list>
     </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mytest" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="spark_remote" type="9519ce18:MavenProjectsStructure$ProjectNode" />
@@ -238,14 +241,7 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spark_remote" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spark_remote" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="jar" type="36feed69:MavenProjectsStructure$PluginNode" />
+          <item name="mytest" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
@@ -265,14 +261,37 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="local_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="mr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="mr" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="mr" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -283,10 +302,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534853740394" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534886460012" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -307,7 +326,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.streamsocket">
+  <component name="RunManager" selected="Application.actor01">
     <configuration default="true" type="tests" factoryName="Unittests">
       <module name="mytest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -324,7 +343,13 @@
     </configuration>
     <configuration name="TCPOnStreaming" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="TCPOnStreaming" />
-      <module name="myspark-1" />
+      <module name="spark_remote" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="actor01" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="actor01" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -382,6 +407,7 @@
       <item itemvalue="Application.sqlSession" />
       <item itemvalue="Application.jdbcMysql" />
       <item itemvalue="Application.streamsocket" />
+      <item itemvalue="Application.actor01" />
       <item itemvalue="Application.textFile" />
       <item itemvalue="Application.hiveCtx" />
       <item itemvalue="Application.aggregate" />
@@ -499,9 +525,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="80" y="23" width="1840" height="1057" extended-state="6" />
+    <frame x="67" y="27" width="1837" height="940" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21523915" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20494105" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -518,8 +545,8 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32953367" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49443826" weight="0.4580311" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5066741" side_tool="true" visible="true" weight="0.33678755" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49332592" visible="true" weight="0.33678755" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49916527" weight="0.32953367" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49332592" weight="0.33678755" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" sideWeight="0.49916527" visible="true" weight="0.32953104" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -527,7 +554,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.32925472" />
+      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.32902864" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -622,7 +649,6 @@
         <state relative-caret-position="-288" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local_test/pom.xml" />
     <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/aggregate.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -632,14 +658,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="322">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mr/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="322">
           <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
@@ -670,8 +696,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/streamlog.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" selection-start-line="22" selection-end-line="25" selection-end-column="26" />
+        <state relative-caret-position="149">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -679,23 +705,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/m.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/m.cpp" />
     <entry file="file://$PROJECT_DIR$/todo.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+        <state relative-caret-position="299">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="77" column="20" selection-start-line="77" selection-start-column="20" selection-end-line="77" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mr/src/main/java/WordCount3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local_test/src/main/scala/actor01.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -752,12 +793,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>hadoopmr</last-edited>
+          <last-edited>mr</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -781,7 +821,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.38850576" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
