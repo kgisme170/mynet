@@ -5,10 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../linux/3p/SConscript" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/SConscript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/3p/buildmpi.sh" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/buildmpi.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/3p/buildopengl.sh" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/buildopengl.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/3p/mpi_init.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/mpi_init.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/3p/mpi_usage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/mpi_usage.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/3p/testleveldb.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/testleveldb.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/3p/testlibxml2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/testlibxml2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/3p/testlz4.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/testlz4.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/3p/testopengl.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/testopengl.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/3p/testsnappy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/testsnappy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/3p/testzstd.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/3p/testzstd.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/producerConsumer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/multiplex/pthread/producerConsumer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test/cpp/precpp11/initialization_paramList.md" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/initialization_paramList.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_test/cpp/precpp11/objectModelBehaviorAndPitfalls.md" beforeDir="false" afterPath="$PROJECT_DIR$/local_test/cpp/precpp11/objectModelBehaviorAndPitfalls.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -103,14 +112,14 @@
           <entry key="cpp" value="27" />
           <entry key="py" value="29" />
           <entry key="scala" value="244" />
-          <entry key="txt" value="2" />
+          <entry key="txt" value="8" />
           <entry key="xml" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="C++" value="27" />
-          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="PLAIN_TEXT" value="37" />
           <entry key="Scala" value="244" />
           <entry key="XML" value="23" />
         </counts>
@@ -152,8 +161,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="15" selection-end-column="34" />
+            <state relative-caret-position="225">
+              <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -198,12 +207,12 @@
         <option value="$PROJECT_DIR$/spark_remote/src/main/scala/hiveCtx.scala" />
         <option value="$PROJECT_DIR$/spark_remote/src/main/scala/sqlSession.scala" />
         <option value="$PROJECT_DIR$/spark_remote/src/main/scala/jdbcMysql.scala" />
-        <option value="$PROJECT_DIR$/todo.txt" />
         <option value="$PROJECT_DIR$/local_test/src/main/python/sendudp.py" />
         <option value="$PROJECT_DIR$/spark_remote/src/main/scala/streamlog.scala" />
         <option value="$PROJECT_DIR$/spark_remote/pom.xml" />
         <option value="$PROJECT_DIR$/spark_remote/src/main/scala/streamsocket.scala" />
         <option value="$PROJECT_DIR$/m.cpp" />
+        <option value="$PROJECT_DIR$/todo.txt" />
       </list>
     </option>
   </component>
@@ -274,7 +283,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534853429839" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534853740394" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -463,7 +472,21 @@
       <option name="project" value="LOCAL" />
       <updated>1534852969759</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ok">
+      <created>1534853489776</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1534853489776</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ok">
+      <created>1534853603399</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1534853603399</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -493,9 +516,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32953367" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.4580311" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="8" sideWeight="0.5016685" side_tool="true" visible="true" weight="0.33678755" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4983315" visible="true" weight="0.33678755" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49443826" weight="0.4580311" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5066741" side_tool="true" visible="true" weight="0.33678755" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.49332592" visible="true" weight="0.33678755" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49916527" weight="0.32953367" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
@@ -671,8 +694,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/todo.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="225">
+          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
         </state>
       </provider>
     </entry>
