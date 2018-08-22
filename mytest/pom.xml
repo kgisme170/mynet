@@ -14,5 +14,6 @@
         <module>java_local</module>
         <module>cpp</module>
         <module>python</module>
+        <module>utilities</module>
     </modules>
 </project>
