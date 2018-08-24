@@ -14,9 +14,5 @@
         <module name="spark_remote" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="mr" target="1.5" />
-      <module name="spark-local-scala" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
