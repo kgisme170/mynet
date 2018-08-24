@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	struct msghdr msg;
 	struct iovec iov[1];
 	char buf [100];
-	char  *testmsg = "test msg.\n";
+	char testmsg[] = "test msg.\n";
 
 	union {  //对齐
 		struct cmsghdr cm;

@@ -1,6 +1,9 @@
 #include <iostream>
 #include <deque>
+#include <limits>
 using namespace std;
+const int INT_MAX = numeric_limits<std::int32_t>::max();
+const int INT_MIN = numeric_limits<std::int32_t>::min();
 /*功能: 广度优先构造并遍历
  */
 class testLeaf{
