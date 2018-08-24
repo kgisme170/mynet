@@ -11,11 +11,6 @@ object streamsocket {
     val conf = new SparkConf().setAppName("TCPOnStreaming example").setMaster("local[4]")
     val sc = new SparkContext(conf)
     val ssc = new StreamingContext(sc,Seconds(5))
-
-
-    //set the Checkpoint directory
-    ssc.checkpoint("/Users/x/temp")
-
     //get the socket Streaming data
     val socketStreaming = ssc.socketTextStream("master",7000)
 

@@ -18,6 +18,33 @@ object streamlog {
     val words = lines.flatMap(_.split(" "))
     //统计单词出现次数
     val wordCounts = words.map(x => (x, 1)).reduceByKey(_ + _)
+
+    //set the Checkpoint directory
+    ssc.checkpoint("/Users/x/temp")
+    val wins = lines.window(Seconds(30), Seconds(10))
+    val winCount = wins.count()
+
+    val myDStream = lines.map(k=>(k,1))
+    /*
+    val countDS = myDStream.reduceByKeyAndWindow(
+      {(x,y)=>x+y},
+      {(x,y)=>x-y},
+      Seconds(30),
+      Seconds(10))
+    */
+    val dsCount = myDStream.countByValueAndWindow(Seconds(30),Seconds(10))
+    //updateStateByKey? SequenceFile foreachRDD // ~路徑判斷 cogroup
+    //getOrCreate檢查點
+    //monit工具
+    //獨立集群 提交驅動器程序時候 --supervise
+    //spark-submit --deploy-mode cluster --supervise --master spark://..... App.jar
+    //spark-submit --conf spark.executor.exraJavaOptions=-XX:+UserConcMarkSweepGC App.jar
+    def createStreamingContext()={
+      val sc = new SparkContex(conf)
+      val ssc = new StreamingContext(sc, Seconds(1))
+      ssc.checkpoint(dir)
+    }
+    StreamingContext.getOrCreate("dir, ")
     //打印结果
     wordCounts.print()
     //启动Spark Streaming
