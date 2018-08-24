@@ -7,7 +7,7 @@ using namespace std;
 typedef int T;
 typedef vector<T> Sqlist;
 void removeIndex(Sqlist& l,size_t from, size_t to){
-    if(from <0 || to < 0 || from > to || from >= l.size())return;
+    if(from > to || from >= l.size())return;
     for(size_t i=0;i<l.size()-to-1;++i){
         cout<<from+i<<'\n';
         l[from+i]=l[to+i+1];
