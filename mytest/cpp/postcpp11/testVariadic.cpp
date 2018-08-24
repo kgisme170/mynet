@@ -17,14 +17,14 @@ template<typename Head, typename...Tail>
 Head sumAll(Head&& h, Tail&&...tail){
     return h+sumAll(forward<Tail>(tail)...);
 }
-
+/*
 template<typename Head, typename...Tail>
 Head sum(Head&&h, Tail&&... tail){
     Head r=h;
     (int[]){(r+=tail,0)...};
     return r;
 }
-
+*/
 //template<size_t index, typename...Tail>//模板
 //struct typeList;
 template<size_t index, typename Head, typename...Tail>
