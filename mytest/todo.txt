@@ -13,3 +13,4 @@ hive多个客户端，共享数据和udf
 集群提交任务
 
 https://dzone.com/articles/hadoop-word-count-program-innbspscala
+META-INF\services\java.sql.Driver
