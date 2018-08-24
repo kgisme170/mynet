@@ -5,12 +5,151 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/linux/cdev/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/cdev/demo.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/jni/SConscript" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/jni/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/jni/cpp2java.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/jni/cpp2java.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/jni/cpp2java.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/jni/impl.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/jni/libusejclass.jnilib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/jni/usejclass.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/memleak/memleak_demo.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/module/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/module/hellomod.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/module/memtest.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/module/mylist.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/module/pageInit.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/module/phymem.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/module/print_pid.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/os/mapfile.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/os/memexample.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/os/sigcont.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/os/useasm.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/os/useclone.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/os/usefork.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/os/usemmap.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/os/usevfork.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/usethrift/gen.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/usethrift/student.thrift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/usethrift/studentclient.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/usethrift/studentserver.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/usethrift/worker.thrift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/usethrift/workerclient.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/hadoopmr.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/src/main/java/WordCount1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/src/main/java/WordCount2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/src/main/java/WordCount3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/src/main/java/WordCount4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/src/main/java/map4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mr/src/main/java/reduce4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/adminClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/ch0102.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/ide/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/ide/.idea/libraries/audience_annotations_0_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/ide/.idea/libraries/zookeeper_3_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/ide/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/ide/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/ide/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/ide/.idea/thriftCompiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/ide/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/ide/src/com/company/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/ide/src/com/company/primary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/ide/zktest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/masterWatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/vp.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/workerWatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/zk01.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zk/zk02.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/cdev/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/cdev/demo.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/jni/SConscript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/jni/build.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/jni/cpp2java.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/jni/impl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/jni/usejclass.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/memleak/memleak_demo.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/module/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/module/hellomod.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/module/memtest.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/module/mylist.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/module/pageInit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/module/phymem.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/module/print_pid.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/os/mapfile.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/os/memexample.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/os/sigcont.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/os/useasm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/os/useclone.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/os/usefork.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/os/usemmap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/os/usevfork.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/usethrift/gen.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/usethrift/student.thrift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/usethrift/studentclient.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/usethrift/studentserver.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/usethrift/worker.thrift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linux/usethrift/workerclient.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mr/hadoopmr.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mr/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mr/src/main/java/WordCount1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mr/src/main/java/WordCount2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mr/src/main/java/WordCount3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mr/src/main/java/WordCount4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mr/src/main/java/map4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mr/src/main/java/reduce4.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/postcpp11/SConscript" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/postcpp11/SConscript" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/precpp11/SConscript" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/precpp11/SConscript" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/precpp11/testNewClosure.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/precpp11/testStdThread.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/postcpp11/testStdThread.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp/precpp11/testStdThreadExit.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/postcpp11/testStdThreadExit.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/ExamplesMakefile" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/ExamplesMakefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/SConscript" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/SConscript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/buildexample.sh" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/buildexample.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/embed.pb.cc" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/embed.pb.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/embed.pb.h" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/embed.pb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/embed.proto" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/embed.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/examples.grpc.pb.cc" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/examples.grpc.pb.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/examples.grpc.pb.h" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/examples.grpc.pb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/examples.pb.cc" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/examples.pb.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/examples.pb.h" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/examples.pb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/examples.proto" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/examples.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/examples_client.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/examples_client.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/examples_server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/examples_server.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/hello.data" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/hello.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/hello.pb.cc" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/hello.pb.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/hello.pb.h" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/hello.pb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/hello.proto" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/hello.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/pb_embed.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/pb_embed.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/pb_hello.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/pb_hello.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/pb_hello_stream.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/pb_hello_stream.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/pb_serialize.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/pb_serialize.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/pytest.pb.cc" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/pytest.pb.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/pytest.pb.h" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/pytest.pb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/pytest.proto" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/pytest.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/pytest.py" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/pytest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/serialize.pb.cc" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/serialize.pb.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/serialize.pb.h" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/serialize.pb.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/grpc/serialize.proto" beforeDir="false" afterPath="$PROJECT_DIR$/linux/grpc/serialize.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/adminClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/build.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/ch0102.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/ide/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/ide/.idea/libraries/audience_annotations_0_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/ide/.idea/libraries/zookeeper_3_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/ide/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/ide/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/ide/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/ide/.idea/thriftCompiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/ide/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/ide/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/ide/src/com/company/primary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/ide/zktest.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/masterWatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/vp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/workerWatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/zk01.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zk/zk02.c" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -82,22 +221,22 @@
     <session id="-451817951">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="SConscript" value="3" />
+          <entry key="SConscript" value="9" />
           <entry key="SConstruct" value="1" />
           <entry key="c" value="6" />
-          <entry key="cpp" value="4" />
+          <entry key="cpp" value="10" />
           <entry key="java" value="3" />
           <entry key="py" value="2" />
           <entry key="scala" value="3" />
-          <entry key="sh" value="1" />
+          <entry key="sh" value="2" />
           <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C++" value="10" />
+          <entry key="C++" value="16" />
           <entry key="JAVA" value="3" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="PLAIN_TEXT" value="13" />
           <entry key="Python" value="1" />
           <entry key="Scala" value="3" />
           <entry key="XML" value="8" />
@@ -116,23 +255,23 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="SConscript" value="5" />
-          <entry key="SConstruct" value="166" />
+          <entry key="SConscript" value="10" />
+          <entry key="SConstruct" value="191" />
           <entry key="c" value="31" />
-          <entry key="cpp" value="38" />
+          <entry key="cpp" value="44" />
           <entry key="java" value="6" />
           <entry key="py" value="29" />
           <entry key="scala" value="244" />
           <entry key="sh" value="12" />
-          <entry key="txt" value="11" />
+          <entry key="txt" value="23" />
           <entry key="xml" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C++" value="69" />
+          <entry key="C++" value="75" />
           <entry key="JAVA" value="6" />
-          <entry key="PLAIN_TEXT" value="223" />
+          <entry key="PLAIN_TEXT" value="265" />
           <entry key="Scala" value="244" />
           <entry key="XML" value="62" />
         </counts>
@@ -141,56 +280,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/todo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cpp/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cpp/SConstruct">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cpp/precpp11/SConscript">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cpp/postcpp11/SConscript">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/streaming/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="65" selection-start-line="65" selection-end-line="66" selection-end-column="17" />
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -205,6 +299,7 @@
       <find>specs</find>
       <find>shared</find>
       <find>Std</find>
+      <find>std</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/java_local</dir>
@@ -217,10 +312,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/local_test/src/main/scala/ch0304.scala" />
-        <option value="$PROJECT_DIR$/local_test/src/main/scala/ch0506.scala" />
-        <option value="$PROJECT_DIR$/local_test/src/main/scala/ch06.scala" />
-        <option value="$PROJECT_DIR$/local_test/src/main/scala/ch07.scala" />
         <option value="$PROJECT_DIR$/local_test/src/main/scala/ch08.scala" />
         <option value="$PROJECT_DIR$/local_test/src/main/scala/ch09.scala" />
         <option value="$PROJECT_DIR$/local_test/src/main/scala/ch10.scala" />
@@ -256,7 +347,6 @@
         <option value="$PROJECT_DIR$/scala_local/src/main/scala/kill.scala" />
         <option value="$PROJECT_DIR$/scala_local/src/main/scala/stop.scala" />
         <option value="$PROJECT_DIR$/scala_local/pom.xml" />
-        <option value="$PROJECT_DIR$/todo.txt" />
         <option value="$PROJECT_DIR$/cpp/linker/foo2.c" />
         <option value="$PROJECT_DIR$/utilities/splitFile.sh" />
         <option value="$PROJECT_DIR$/spark_remote/pom.xml" />
@@ -265,9 +355,14 @@
         <option value="$PROJECT_DIR$/cpp/pom.xml" />
         <option value="$PROJECT_DIR$/cpp/precpp11/templateContainer.cpp" />
         <option value="$PROJECT_DIR$/cpp/postcpp11/pv.cpp" />
-        <option value="$PROJECT_DIR$/cpp/SConstruct" />
-        <option value="$PROJECT_DIR$/cpp/precpp11/SConscript" />
         <option value="$PROJECT_DIR$/cpp/postcpp11/SConscript" />
+        <option value="$PROJECT_DIR$/cpp/datastructure/kruskal.cpp" />
+        <option value="$PROJECT_DIR$/cpp/datastructure/SConscript" />
+        <option value="$PROJECT_DIR$/cpp/datastructure/listRemoveRange.cpp" />
+        <option value="$PROJECT_DIR$/cpp/postcpp11/atomic_flag.cpp" />
+        <option value="$PROJECT_DIR$/cpp/precpp11/SConscript" />
+        <option value="$PROJECT_DIR$/cpp/SConstruct" />
+        <option value="$PROJECT_DIR$/todo.txt" />
       </list>
     </option>
   </component>
@@ -277,15 +372,6 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mytest" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mytest" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
@@ -312,22 +398,6 @@
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="cpp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="postcpp11" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="streaming" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -339,7 +409,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535085869936" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535106369343" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -583,7 +653,63 @@
       <option name="project" value="LOCAL" />
       <updated>1535085668499</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="ok">
+      <created>1535085902147</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1535085902147</updated>
+    </task>
+    <task id="LOCAL-00021" summary="ok">
+      <created>1535086317827</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1535086317827</updated>
+    </task>
+    <task id="LOCAL-00022" summary="ok">
+      <created>1535088445413</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1535088445413</updated>
+    </task>
+    <task id="LOCAL-00023" summary="ok">
+      <created>1535088647572</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1535088647572</updated>
+    </task>
+    <task id="LOCAL-00024" summary="ok">
+      <created>1535094210071</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1535094210071</updated>
+    </task>
+    <task id="LOCAL-00025" summary="ok">
+      <created>1535094413938</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1535094413938</updated>
+    </task>
+    <task id="LOCAL-00026" summary="ok">
+      <created>1535105250983</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1535105250983</updated>
+    </task>
+    <task id="LOCAL-00027" summary="ok">
+      <created>1535105785075</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1535105785076</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView">
@@ -597,7 +723,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="80" y="23" width="1840" height="1057" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21968855" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -614,10 +739,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32953367" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4890511" visible="true" weight="0.5678756" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4890511" weight="0.5678756" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50645703" side_tool="true" weight="0.3868521" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49276975" weight="0.33678755" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49410444" weight="0.32869786" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49410444" weight="0.32869786" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" sideWeight="0.49276975" visible="true" weight="0.33678755" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -627,6 +752,32 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.32925472" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -640,47 +791,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spark_remote/src/main/java/testMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_test/src/main/scala/ch20.scala" />
-    <entry file="file://$PROJECT_DIR$/local_test/src/main/scala/ch21.scala" />
-    <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/textFile.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test2.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar!/scala/collection/immutable/List.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/hiveCtx.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/jdbcMysql.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="41" column="4" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/sqlSession.scala" />
     <entry file="file://$PROJECT_DIR$/spark_remote/src/main/python/ch01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-288" />
@@ -861,27 +971,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="65" selection-start-line="65" selection-end-line="66" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cpp/precpp11/templateContainer.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -903,24 +992,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/SConstruct">
+    <entry file="file://$PROJECT_DIR$/cpp/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/datastructure/kruskal.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/datastructure/listRemoveRange.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="72" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/datastructure/SConscript">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cpp/precpp11/SConscript">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="105">
+          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cpp/postcpp11/SConscript">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+        <state relative-caret-position="465">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/postcpp11/atomic_flag.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="65" selection-start-line="65" selection-end-line="66" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/SConstruct">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/3p/testopengl.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/3p/SConscript">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/3p/buildmpi.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/3p/mpi_init.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/3p/mpi_usage.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>

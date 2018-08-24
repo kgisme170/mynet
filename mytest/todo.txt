@@ -14,3 +14,6 @@ hive多个客户端，共享数据和udf
 
 https://dzone.com/articles/hadoop-word-count-program-innbspscala
 META-INF\services\java.sql.Driver
+
+grpc
+gtest
