@@ -4,7 +4,7 @@
 #include<unordered_map>
 using namespace std;
 
-template <template <typename T, typename Alloc=std::allocator<T>> class T, typename Elem>
+template <template <typename T, typename Alloc=std::allocator<T> > class T, typename Elem>
 void f(){
     T<Elem> t;
     t.push_back(1);

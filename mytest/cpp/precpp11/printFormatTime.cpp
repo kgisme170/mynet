@@ -4,7 +4,7 @@
 #include <fstream>
 using namespace std;
 string f(){
-    char *wday[] = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
+    char wday[][4] = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
     time_t timep;
     struct tm *p;
     time(&timep);

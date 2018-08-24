@@ -15,4 +15,3 @@ env.Program(target='testPthreadJoin',            source='testPthreadJoin.cpp',  
 env.Program(target='producerConsumer',           source='producerConsumer.cpp',        LIBS=['pthread'])
 env.Program(target='usetls',                     source='usetls.cpp',                  LIBS=['pthread'])
 env.Program(target='useTlsCheck',                source=['useTlsCheck.cpp', 'useTlsCreate.cpp'], LIBS=['pthread'])
-env.Program(target='testRWlock',                 source=['testRWlock.cpp'],            LIBS=['pthread'])

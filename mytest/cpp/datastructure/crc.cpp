@@ -11,7 +11,7 @@ void inputBinary(const char* print, char* buf){
         bool ok = true;
         for(size_t i=0;i<len;++i){
             if(buf[i]!='1' && buf[i]!='0'){
-                printf("buf[%u]=%c不符合条件\n", i, buf[i]);
+                printf("buf[%lu]=%c不符合条件\n", i, buf[i]);
                 ok = false;
                 break;
             }

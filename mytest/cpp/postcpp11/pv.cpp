@@ -26,33 +26,33 @@ void P(Semaphore& s){s.Wait();}
 void V(Semaphore& s){s.Signal();}
 
 const size_t n = 10;
-Semaphore full(0);//满缓冲区数目
-Semaphore empty(n);//空缓冲区数目
+Semaphore Full(0);//满缓冲区数目
+Semaphore Empty(n);//空缓冲区数目
 Semaphore m(1);//对有界缓冲区进行操作的互斥信号量
 mutex mCout;//对cout保护
 void print(const string& s){
     unique_lock<mutex> _(mCout);
     cout<<s<<'\n';
 }
-Producer(){
+void Producer(){
     while(true){
         //Produce an item
-        P(empty);//申请一个空缓冲区
+        P(Empty);//申请一个空缓冲区
         P(m);//申请使用缓冲池
         //将产品放入缓冲区
         V(m);//释放信号量
-        V(full);//增加一个满缓冲区
+        V(Full);//增加一个满缓冲区
         print("生产者");
         this_thread::sleep_for(1s);
     }
 }
-Consumer(){
+void Consumer(){
     while(true){
-        P(full);//申请一个满缓冲区
+        P(Full);//申请一个满缓冲区
         P(m);//申请使用缓冲池
         //取出产品
         V(m);
-        V(empty);//增加一个空缓冲区
+        V(Empty);//增加一个空缓冲区
         //Consume the item
         print("消费者");
         this_thread::sleep_for(1s);

@@ -1,0 +1,15 @@
+import os,sys
+env = Environment(ENV = {'PATH' : os.environ['PATH']})
+env.Append(CXXFLAGS="-Wall")
+env.Append(CXXFLAGS="-Werror")
+env.SConscript(dirs=['postcpp11'])
+env.SConscript(dirs=['precpp11'])
+env.SConscript(dirs=['linker'])
+env.SConscript(dirs=['datastructure'])
+env.SConscript(dirs=['multiplex/posix'])
+env.SConscript(dirs=['multiplex/pthread'])
+
+if sys.platform.find('linux')==0:
+    env.SConscript(dirs=['multiplex/linux', 'linux'])
+else:
+    env.SConscript(dirs=['3p'])

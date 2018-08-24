@@ -15,7 +15,7 @@ struct edge{
     }
 };
 struct connectedComponents{//连通分量
-    set<set<size_t>> data;
+    set<set<size_t> > data;
     connectedComponents(const set<size_t>& vSet){
         for(auto v:vSet){
             set<size_t> s;

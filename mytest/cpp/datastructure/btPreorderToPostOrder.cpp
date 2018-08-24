@@ -19,7 +19,7 @@ void convert(int pre[], int post[], size_t len){
     change(pre, post, 0, len-1, 0, len-1);
 }
 int main(){
-    size_t len = 7;
+    const size_t len = 7;
     int pre[len]={1,2,3,4,5,6,7};
     int post[len];
     convert(pre, post ,len);

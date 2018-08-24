@@ -4,7 +4,7 @@
 #include<thread>
 using namespace std;
 atomic<bool> ready(false);
-atomic_flag winner(ATOMIC_FLAG_INIT);
+atomic_flag winner = ATOMIC_FLAG_INIT;
 void tf(int id){
     while(!ready){
         this_thread::yield();

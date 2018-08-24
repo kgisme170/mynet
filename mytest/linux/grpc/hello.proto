@@ -1,0 +1,7 @@
+syntax="proto2";
+message hello
+{
+    required int32 f1=1;
+    required int32 f2=2;
+    optional int32 f3=3;
+}

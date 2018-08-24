@@ -15,5 +15,6 @@
         <module>cpp</module>
         <module>python</module>
         <module>utilities</module>
+        <module>streaming</module>
     </modules>
 </project>
