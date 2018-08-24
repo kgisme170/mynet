@@ -4,5 +4,7 @@ env.SConscript(dirs=['postcpp11'])
 env.SConscript(dirs=['precpp11'])
 env.SConscript(dirs=['linker'])
 env.SConscript(dirs=['datastructure'])
+env.SConscript(dirs=['multiplex/posix'])
+
 if sys.platform.find('linux')==0:
-    env.SConscript(dirs=['multiplex/linux','multiplex/posix','multiplex/pthread'])
+    env.SConscript(dirs=['multiplex/linux', 'multiplex/pthread', 'linux'])
