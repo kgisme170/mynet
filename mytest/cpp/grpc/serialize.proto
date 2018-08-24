@@ -1,0 +1,8 @@
+syntax="proto2";
+package lm;
+message hello
+{
+    optional int32 id=1;
+    required string str=2[default="abc"];
+    optional int32 op=3 [default=15];
+}
