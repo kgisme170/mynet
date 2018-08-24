@@ -14,11 +14,11 @@
         <module name="scala_local" />
         <module name="spark_remote" />
         <module name="streaming" />
-        <module name="utilities" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mr" target="1.5" />
+      <module name="utilities" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
