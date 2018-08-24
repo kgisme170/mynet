@@ -1,5 +1,7 @@
 import os,sys
 env = Environment(ENV = {'PATH' : os.environ['PATH']})
+env.Append(CXXFLAGS="-Wall")
+env.Append(CXXFLAGS="-Werror")
 env.SConscript(dirs=['postcpp11'])
 env.SConscript(dirs=['precpp11'])
 env.SConscript(dirs=['linker'])

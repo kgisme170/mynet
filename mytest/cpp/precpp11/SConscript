@@ -6,7 +6,6 @@ ODPS_SRC=env['ENV']['ODPS_SRC']
 env.Program(target='closure', source='closure.cpp')
 env.Program(target='fileToString', source='fileToString.cpp')
 env.Program(target='hideFunction', source='hideFunction.cpp')
-env.Program(target='objectModel01', source='objectModel01.cpp')
 env.Program(target='pointerAdjustment', source='pointerAdjustment.cpp')
 env.Program(target='printFormatTime', source='printFormatTime.cpp')
 env.Program(target='printMap', source='printMap.cpp')
