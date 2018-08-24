@@ -1,0 +1,8 @@
+import os,sys
+env = Environment(ENV = {'PATH' : os.environ['PATH']})
+env.SConscript(dirs=['postcpp11'])
+env.SConscript(dirs=['precpp11'])
+env.SConscript(dirs=['linker'])
+env.SConscript(dirs=['datastructure'])
+if sys.platform.find('linux')==0:
+    env.SConscript(dirs=['multiplex/linux','multiplex/posix','multiplex/pthread'])
