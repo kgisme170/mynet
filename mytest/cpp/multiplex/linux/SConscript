@@ -8,6 +8,11 @@ env.Program(target='client'          ,source='client.cpp')
 env.Program(target='server'          ,source='server.cpp')
 env.Program(target='testcwd'         ,source='testcwd.cpp')
 env.Program(target='testEpoll'       ,source='testEpoll.cpp')
+
+env.Program(target='testLibEv'       ,source='testLibEv.cpp', LIBS='ev')
+#env.Program(target='testLibEvent'    ,source='testLibEvent.cpp', LIBS='event')
+#env.Program(target='testLibEventHttp',source='testLibEventHttp.cpp')
+
 env.Program(target='testAioQuery'    ,source='testAioQuery.cpp',   LIBS=['pthread','aio'])
 env.Program(target='testAioNotify'   ,source='testAioNotify.cpp',  LIBS=['pthread','aio'])
 env.Program(target='unixDomainSocket',source='unixDomainSocket.cpp')
