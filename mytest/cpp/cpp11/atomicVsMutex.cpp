@@ -5,8 +5,10 @@
 #include<chrono>
 #include<limits>
 using namespace std;
+#ifndef INT_MAX
 const int INT_MAX = numeric_limits<std::int32_t>::max();
 const int INT_MIN = numeric_limits<std::int32_t>::min();
+#endif
 using std::chrono::steady_clock;
 //CRC算法
 const size_t LOOP_COUNT = 12500000;
