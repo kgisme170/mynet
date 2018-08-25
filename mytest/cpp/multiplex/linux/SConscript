@@ -10,6 +10,7 @@ env.Program(target='testcwd'         ,source='testcwd.cpp')
 env.Program(target='testEpoll'       ,source='testEpoll.cpp')
 
 env.Program(target='testLibEv'       ,source='testLibEv.cpp', LIBS='ev')
+env.Program(target='testPipeEv'      ,source='testPipeEv.cpp',LIBS='ev')
 env.Program(target='testLibEvent'    ,source='testLibEvent.cpp', LIBS='event')
 env.Program(target='testLibEventHttp',source='testLibEventHttp.cpp', LIBS='event')
 
