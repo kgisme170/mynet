@@ -24,7 +24,7 @@ public class WordCount2 extends Configured implements Tool {
         private Text word = new Text();
 
         public void map(LongWritable key, Text value,
-                        OutputCollector<Text, intwritable> output,
+                        OutputCollector<Text, IntWritable> output,
                         Reporter reporter) throws IOException {
 
             String line = value.toString();
@@ -39,7 +39,7 @@ public class WordCount2 extends Configured implements Tool {
     // Reducer class that just emits the sum of the input values.
 
     public static class Reduce extends MapReduceBase implements Reducer<Text, IntWritable, Text, IntWritable> {
-        public void reduce(Text key, Iterator values,
+        public void reduce(Text key, Iterator<IntWritable> values,
                            OutputCollector<Text, IntWritable> output,
                            Reporter reporter) throws IOException {
             int sum = 0;
@@ -58,7 +58,7 @@ public class WordCount2 extends Configured implements Tool {
 
     public int run(String[] args) throws Exception {
 
-        JobConf conf = new JobConf(getConf(), WordCount.class);
+        JobConf conf = new JobConf(getConf(), WordCount2.class);
         conf.setJobName("wordcount");
 
         // the keys are words (strings)
@@ -71,7 +71,7 @@ public class WordCount2 extends Configured implements Tool {
         conf.setCombinerClass(Reduce.class);
         conf.setReducerClass(Reduce.class);
 
-        List other_args = new ArrayList();
+        List other_args = new ArrayList<String>();
         for (int i = 0; i < args.length; ++i) {
             try {
                 if ("-m".equals(args[i])) {
@@ -96,15 +96,15 @@ public class WordCount2 extends Configured implements Tool {
                     other_args.size() + " instead of 2.");
             return printUsage();
         }
-        FileInputFormat.setInputPaths(conf, other_args.get(0));
-        FileOutputFormat.setOutputPath(conf, new Path(other_args.get(1)));
+        FileInputFormat.setInputPaths(conf, new Path((String)other_args.get(0)));
+        FileOutputFormat.setOutputPath(conf, new Path((String)other_args.get(1)));
 
         JobClient.runJob(conf);
         return 0;
     }
 
     public static void main(String[] args) throws Exception {
-        int res = ToolRunner.run(new Configuration(), new WordCount(), args);
+        int res = ToolRunner.run(new Configuration(), new WordCount2(), args);
         System.exit(res);
     }
 }

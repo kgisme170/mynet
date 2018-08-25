@@ -1,5 +1,3 @@
-package org.apache.hadoop.examples;
-
 import java.io.IOException;
 import java.util.StringTokenizer;
 
@@ -87,7 +85,7 @@ public class WordCount3 {
       System.exit(2);
     }
     Job job =new Job(conf, "word count");    //设置一个用户定义的job名称
-    job.setJarByClass(WordCount.class);
+    job.setJarByClass(WordCount3.class);
     job.setMapperClass(TokenizerMapper.class);    //为job设置Mapper类
     job.setCombinerClass(IntSumReducer.class);    //为job设置Combiner类
     job.setReducerClass(IntSumReducer.class);    //为job设置Reducer类

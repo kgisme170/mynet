@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cpp" />
         <module name="java_local" />
+        <module name="java_mr" />
         <module name="local_test" />
         <module name="myspark-1" />
         <module name="python" />

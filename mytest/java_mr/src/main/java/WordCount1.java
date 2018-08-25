@@ -1,5 +1,3 @@
-package org.myorg;
-
 import java.io.IOException;
 import java.util.*;
 
@@ -36,7 +34,7 @@ public class WordCount1 {
   }
 
   public static void main(String[] args) throws Exception {
-    JobConf conf = new JobConf(WordCount.class);
+    JobConf conf = new JobConf(WordCount1.class);
     conf.setJobName("wordcount");
 
     conf.setOutputKeyClass(Text.class);
