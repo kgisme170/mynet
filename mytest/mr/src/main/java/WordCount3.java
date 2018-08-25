@@ -18,7 +18,7 @@ import org.apache.hadoop.util.GenericOptionsParser;
  * 描述：WordCount explains by York
   * @author Hadoop Dev Group
  */
-public class WordCount {
+public class WordCount3 {
     /**
      * 建立Mapper类TokenizerMapper继承自泛型类Mapper
      * Mapper类:实现了Map功能基类
