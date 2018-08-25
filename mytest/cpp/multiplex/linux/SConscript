@@ -17,3 +17,5 @@ env.Program(target='testLibEventHttp',source='testLibEventHttp.cpp', LIBS='event
 env.Program(target='testAioQuery'    ,source='testAioQuery.cpp',   LIBS=['pthread','aio'])
 env.Program(target='testAioNotify'   ,source='testAioNotify.cpp',  LIBS=['pthread','aio'])
 env.Program(target='unixDomainSocket',source='unixDomainSocket.cpp')
+
+env.Program(target='testRWlock',source='testRWlock.cpp', LIBS='pthread')
