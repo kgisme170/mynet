@@ -1,7 +1,7 @@
 #1. Env setttings
 import os
 env=Environment(ENV=os.environ)
-env.Append(CXXFLAGS="--std=c++1z")
+env.Append(CXXFLAGS="--std=c++11")
 #2. Targetsenv.Program(target='arrayPartitionZeros', source='arrayPartitionZeros.cpp')
 env.Program(target='arrayRecursive', source='arrayRecursive.cpp')
 env.Program(target='banker', source='banker.cpp')
@@ -15,7 +15,7 @@ env.Program(target='crc', source='crc.cpp')
 env.Program(target='findArrayMajority', source='findArrayMajority.cpp')
 env.Program(target='kmerge', source='kmerge.cpp')
 env.Program(target='kmp', source='kmp.cpp')
-env.Program(target='kruscal', source='kruscal.cpp')
+env.Program(target='kruskal', source='kruskal.cpp')
 env.Program(target='listCompare', source='listCompare.cpp')
 env.Program(target='listFindReverseKth', source='listFindReverseKth.cpp')
 env.Program(target='listPartition', source='listPartition.cpp')
