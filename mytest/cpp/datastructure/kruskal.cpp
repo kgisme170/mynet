@@ -10,7 +10,7 @@ struct edge{
     size_t v1;
     size_t v2;
     size_t weight;
-    bool operator<(const edge& e){
+    bool operator<(const edge& e) const{
         return weight<e.weight;
     }
 };
