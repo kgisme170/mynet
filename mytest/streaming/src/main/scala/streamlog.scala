@@ -1,4 +1,4 @@
-import org.apache.spark.SparkConf
+import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
 object streamlog {
@@ -39,12 +39,15 @@ object streamlog {
     //獨立集群 提交驅動器程序時候 --supervise
     //spark-submit --deploy-mode cluster --supervise --master spark://..... App.jar
     //spark-submit --conf spark.executor.exraJavaOptions=-XX:+UserConcMarkSweepGC App.jar
+    val conf = new SparkConf()
+    val dir = "/tmp"
     def createStreamingContext()={
-      val sc = new SparkContex(conf)
+      val sc = new SparkContext(conf)
       val ssc = new StreamingContext(sc, Seconds(1))
       ssc.checkpoint(dir)
+      ssc
     }
-    StreamingContext.getOrCreate("dir, ")
+    StreamingContext.getOrCreate(dir,createStreamingContext)
     //打印结果
     wordCounts.print()
     //启动Spark Streaming
