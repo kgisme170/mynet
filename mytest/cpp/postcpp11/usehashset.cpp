@@ -4,14 +4,15 @@
 using namespace std;
 struct node{
     size_t value;
+    bool operator == (const node& n) const {return value == n.value;}
 };
 struct myhash{
-    size_t operator()(const node& n)const{
+    size_t operator()(const node& n){
         return (size_t)n.value;
     }
 };
 size_t h(const node& n){
-    return (size_t)n.value;
+    return n.value;
 }
 int main(){
     unordered_set<node, myhash> s;
