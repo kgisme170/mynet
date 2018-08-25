@@ -12,7 +12,6 @@
         <module>spark_remote</module>
         <module>scala_local</module>
         <module>java_local</module>
-        <module>cpp</module>
         <module>python</module>
         <module>utilities</module>
         <module>streaming</module>

@@ -19,7 +19,7 @@
                 <executions>
                     <execution>
                         <id>build</id>
-                        <phase>validate</phase>
+                        <phase>compile</phase>
                         <goals>
                             <goal>exec</goal>
                         </goals>
