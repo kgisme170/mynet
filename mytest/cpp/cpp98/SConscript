@@ -1,7 +1,7 @@
 #1. Env setttings
 import os
 env=Environment(ENV=os.environ)
-env.Append(CXXFLAGS="--std=c++1z")
+env.Append(CXXFLAGS="--std=c++98")
 #2. Targets
 env.Program(target='closure', source='closure.cpp')
 env.Program(target='fileToString', source='fileToString.cpp')
@@ -9,7 +9,6 @@ env.Program(target='hideFunction', source='hideFunction.cpp')
 env.Program(target='pointerAdjustment', source='pointerAdjustment.cpp')
 env.Program(target='printFormatTime', source='printFormatTime.cpp')
 env.Program(target='staticCheckBaseDerive', source='staticCheckBaseDerive.cpp')
-env.Program(target='templateContainer', source='templateContainer.cpp')
 env.Program(target='testExprTemplate', source='testExprTemplate.cpp')
 env.Program(target='testMetaProgramming', source='testMetaProgramming.cpp')
 env.Program(target='testPointer', source='testPointer.cpp')

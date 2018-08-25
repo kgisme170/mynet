@@ -2,8 +2,8 @@ import os,sys
 env = Environment(ENV = {'PATH' : os.environ['PATH']})
 env.Append(CXXFLAGS="-Wall")
 env.Append(CXXFLAGS="-Werror")
-env.SConscript(dirs=['postcpp11'])
-env.SConscript(dirs=['precpp11'])
+env.SConscript(dirs=['cpp98'])
+env.SConscript(dirs=['cpp11'])
 env.SConscript(dirs=['linker'])
 env.SConscript(dirs=['datastructure'])
 env.SConscript(dirs=['multiplex/posix'])
@@ -14,3 +14,4 @@ if sys.platform.find('linux')==0:
 else:
     env.SConscript(dirs=['3p'])
     env.SConscript(dirs=['grpc'])
+    env.SConscript(dirs=['cpp14'])

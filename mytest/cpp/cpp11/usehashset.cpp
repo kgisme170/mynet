@@ -7,7 +7,7 @@ struct node{
     bool operator == (const node& n) const {return value == n.value;}
 };
 struct myhash{
-    size_t operator()(const node& n){
+    size_t operator()(const node& n) const {
         return (size_t)n.value;
     }
 };

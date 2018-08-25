@@ -1,0 +1,19 @@
+#1. Env setttings
+import os
+env=Environment(ENV=os.environ)
+env.Append(CXXFLAGS="--std=c++1z")
+#2. Targets
+env.Program(target='atomics', source='atomics.cpp')
+env.Program(target='bindImpl', source='bindImpl.cpp')
+env.Program(target='conditional', source='conditional.cpp')
+env.Program(target='newLambda', source='newLambda.cpp')
+env.Program(target='pv', source='pv.cpp')
+env.Program(target='testStdThread', source='testStdThread.cpp')
+env.Program(target='threadFuture', source='threadFuture.cpp')
+env.Program(target='typeDeductionForAutoCpp17', source='typeDeductionForAutoCpp17.cpp')
+env.Program(target='typeDeductionForInitializerlist', source='typeDeductionForInitializerlist.cpp')
+env.Program(target='usepackagedtask', source='usepackagedtask.cpp')
+env.Program(target='usepromise', source='usepromise.cpp')
+env.Program(target='usechashset', source='usechashset.cpp')
+env.Program(target='userDefinedLiteral', source='userDefinedLiteral.cpp')
+env.Program(target='userc11.c', source='usec11.c')
