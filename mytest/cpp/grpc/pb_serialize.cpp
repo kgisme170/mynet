@@ -12,18 +12,9 @@ void f(const char* fn){
         cerr<<"Failed to parse:<<"<<fn<<endl;
     }
     cout<<boolalpha;
-    cout<<"msg.has_id="<<msg.has_id()<<endl;
-    if(msg.has_id()){
-        cout<<msg.id()<<endl;
-    }
-    cout<<"msg.has_str="<<msg.has_str()<<endl;
-    if(msg.has_str()){
-        cout<<msg.str()<<endl;
-    }
-    cout<<"msg.has_op="<<msg.has_op()<<endl;
-    if(msg.has_op()){
-        cout<<msg.op()<<endl;
-    }
+    cout<<msg.id()<<endl;
+    cout<<msg.str()<<endl;
+    cout<<msg.op()<<endl;
 }
 int main(){
     hello msg1;

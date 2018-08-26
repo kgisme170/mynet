@@ -1,5 +1,5 @@
 #!/bin/bash
-protoc --cpp_out=./ examples.proto
+#protoc --cpp_out=./ examples.proto
 protoc --cpp_out=./ hello.proto
 protoc --cpp_out=./ embed.proto
 protoc --cpp_out=./ serialize.proto

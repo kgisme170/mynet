@@ -7,7 +7,6 @@ from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
 from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
-from google.protobuf import descriptor_pb2
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -19,9 +18,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='pytest.proto',
   package='',
   syntax='proto2',
+  serialized_options=None,
   serialized_pb=_b('\n\x0cpytest.proto\"\xc8\x01\n\x06Person\x12\x0c\n\x04name\x18\x01 \x02(\t\x12\n\n\x02id\x18\x02 \x02(\x05\x12\r\n\x05\x65mail\x18\x03 \x01(\t\x12\"\n\x05phone\x18\x04 \x03(\x0b\x32\x13.Person.PhoneNumber\x1a\x44\n\x0bPhoneNumber\x12\x0e\n\x06number\x18\x01 \x02(\t\x12%\n\x04type\x18\x02 \x01(\x0e\x32\x11.Person.PhoneType:\x04home\"+\n\tPhoneType\x12\n\n\x06mobile\x10\x00\x12\x08\n\x04home\x10\x01\x12\x08\n\x04work\x10\x02')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -33,19 +32,19 @@ _PERSON_PHONETYPE = _descriptor.EnumDescriptor(
   values=[
     _descriptor.EnumValueDescriptor(
       name='mobile', index=0, number=0,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='home', index=1, number=1,
-      options=None,
+      serialized_options=None,
       type=None),
     _descriptor.EnumValueDescriptor(
       name='work', index=2, number=2,
-      options=None,
+      serialized_options=None,
       type=None),
   ],
   containing_type=None,
-  options=None,
+  serialized_options=None,
   serialized_start=174,
   serialized_end=217,
 )
@@ -65,21 +64,21 @@ _PERSON_PHONENUMBER = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='type', full_name='Person.PhoneNumber.type', index=1,
       number=2, type=14, cpp_type=8, label=1,
       has_default_value=True, default_value=1,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
   nested_types=[],
   enum_types=[
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto2',
   extension_ranges=[],
@@ -102,28 +101,28 @@ _PERSON = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='id', full_name='Person.id', index=1,
       number=2, type=5, cpp_type=1, label=2,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='email', full_name='Person.email', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='phone', full_name='Person.phone', index=3,
       number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -131,7 +130,7 @@ _PERSON = _descriptor.Descriptor(
   enum_types=[
     _PERSON_PHONETYPE,
   ],
-  options=None,
+  serialized_options=None,
   is_extendable=False,
   syntax='proto2',
   extension_ranges=[],
@@ -146,6 +145,7 @@ _PERSON_PHONENUMBER.containing_type = _PERSON
 _PERSON.fields_by_name['phone'].message_type = _PERSON_PHONENUMBER
 _PERSON_PHONETYPE.containing_type = _PERSON
 DESCRIPTOR.message_types_by_name['Person'] = _PERSON
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Person = _reflection.GeneratedProtocolMessageType('Person', (_message.Message,), dict(
 
