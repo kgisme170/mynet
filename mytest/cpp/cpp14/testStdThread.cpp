@@ -1,6 +1,8 @@
 #include<thread>
 #include<iostream>
 #include<chrono>
+#include<mutex>
+#include<condition_variable>
 using namespace std;
 mutex mtx;
 condition_variable cv;
