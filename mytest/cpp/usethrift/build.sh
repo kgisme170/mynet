@@ -1,9 +1,14 @@
 #!/bin/bash
-sudo yum remove thrift
-sudo yum remove thrift-devel
-wget https://mirrors.cnnic.cn/apache/thrift/0.10.0/thrift-0.10.0.tar.gz
-tar xvf thrift-0.10.0.tar.gz 
-cd thrift-0.10.0/
-./configure --with-lua=no --with-ruby=no
-make -j4
-sudo make install
+mkdir -p build
+thrift -r --gen cpp -o build worker.thrift
+thrift -r --gen cpp -o build student.thrift
+
+GEN="build/gen-cpp"
+#INCLUDE="-I/usr/local/include/thrift -I$GEN"
+#LIB="-L /usr/local/lib -lthrift -lthriftnb -levent"
+#CXX="g++"
+#$CXX workerclient.cpp $GEN/MyManager.cpp -o build/MyManager_client $INCLUDE $LINKPATH $LIB
+#$CXX $GEN/MyManager_server.skeleton.cpp $GEN/MyManager.cpp -o build/MyManager_server $INCLUDE $LIB
+
+#$CXX studentclient.cpp $GEN/Serv.cpp $GEN/student_types.cpp -o build/Student_client $INCLUDE $LIB
+#$CXX studentserver.cpp $GEN/Serv.cpp $GEN/student_types.cpp -o build/Student_server $INCLUDE $LIB
