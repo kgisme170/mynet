@@ -1,0 +1,3 @@
+hadoop jar /home/a/Downloads/mynet/mytest/java_mr/target/java_mr-1.0-SNAPSHOT.jar w1 war-and-peace-input war-and-peace-output-1
+hadoop jar /home/a/Downloads/mynet/mytest/java_mr/target/java_mr-1.0-SNAPSHOT.jar w1_args war-and-peace-input war-and-peace-output-2 -m 3 -r 2
+hadoop jar /home/a/Downloads/mynet/mytest/java_mr/target/java_mr-1.0-SNAPSHOT.jar w2 war-and-peace-input war-and-peace-output-1
