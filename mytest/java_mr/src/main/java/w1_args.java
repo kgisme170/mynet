@@ -29,7 +29,7 @@ public class w1_args extends Configured implements Tool {
     public int run(String[] args) throws Exception {
 
         JobConf conf = new JobConf(getConf(), w1_args.class);
-        conf.setJobName("-----------w2----------");
+        conf.setJobName("-----------w1_args----------");
 
         // the keys are words (strings)
         conf.setOutputKeyClass(Text.class);
