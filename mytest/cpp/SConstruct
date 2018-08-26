@@ -8,10 +8,9 @@ env.SConscript(dirs=['linker'])
 env.SConscript(dirs=['datastructure'])
 env.SConscript(dirs=['multiplex/posix'])
 env.SConscript(dirs=['multiplex/pthread'])
-
+env.SConscript(dirs=['protobuf'])
 if sys.platform.find('linux')==0:
     env.SConscript(dirs=['multiplex/linux'])
 else:
     env.SConscript(dirs=['3p'])
-    env.SConscript(dirs=['grpc'])
     env.SConscript(dirs=['cpp14'])
