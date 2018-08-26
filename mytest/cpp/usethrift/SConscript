@@ -1,7 +1,10 @@
 import os
 env=Environment(ENV=os.environ)
-env.Append(CXXFLAGS="--std=c++11 -I/usr/local/include -Ibuild/gen-cpp")
+LINKFLAGS=['thrift', 'thriftnb', 'event']
+env.Append(CXXFLAGS="--std=c++11")
+env.Append(CXXFLAGS="-I/usr/local/include")
 
-env.Program(target='MyManager_client',source=['build/gen-cpp/MyManager.cpp','workerclient.cpp'], LIBS=['thrift', 'thriftnb', 'event'])
-env.Program(target='MyManager_server',source=['build/gen-cpp/MyManager_server.skeleton.cpp', 'build/gen-cpp/MyManager.cpp'], LIBS=['thrift', 'thriftnb', 'event'])
+GEN="build/gen-cpp"
+env.Program(target='MyManager_client',source=["%s/MyManager.cpp" % GEN,'workerclient.cpp'], LIBS=LINKFLAGS)
+env.Program(target='MyManager_server',source=['%s/MyManager_server.skeleton.cpp' % GEN, '%s/MyManager.cpp' % GEN], LIBS=LINKFLAGS)
 
