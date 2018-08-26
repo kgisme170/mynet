@@ -1,0 +1,10 @@
+import os
+env=Environment(ENV=os.environ)
+env.Program(target='mapfile', source='mapfile.c')
+env.Program(target='sigcont', source='sigcont.c')
+env.Program(target='useasm', source='useasm.c')
+env.Program(target='useclone', source='useclone.c')
+env.Program(target='usefork', source='usefork.c')
+env.Program(target='usemmap', source='usemmap.c')
+env.Program(target='usevfork', source='usevfork.c')
+env.Program(target='memexample', source='memexample.cpp')

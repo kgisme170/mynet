@@ -12,7 +12,7 @@ int main(){
                          :"=r"(output)
                          :"0"(output),"g"(input));
     printf("%d, %d, %d\n", input, output, eax);
-
+/*
     int flag;
     __asm__ ("pushfl;"
              "popl %0"
@@ -29,6 +29,6 @@ int main(){
              "popl %0"
              :"=g"(flag));
     printf("标志寄存器的值=0x%x\n",flag);//‭001001000110‬
-
+*/
     return 0;
 }
