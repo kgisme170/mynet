@@ -4,16 +4,16 @@
  * DO NOT EDIT UNLESS YOU ARE SURE THAT YOU KNOW WHAT YOU ARE DOING
  *  @generated
  */
-#include "MyManager.h"
-
-namespace worker {
+#include "Serv.h"
 
 
-MyManager_ping_args::~MyManager_ping_args() throw() {
+
+
+Serv_put_args::~Serv_put_args() throw() {
 }
 
 
-uint32_t MyManager_ping_args::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t Serv_put_args::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   apache::thrift::protocol::TInputRecursionTracker tracker(*iprot);
   uint32_t xfer = 0;
@@ -32,7 +32,20 @@ uint32_t MyManager_ping_args::read(::apache::thrift::protocol::TProtocol* iprot)
     if (ftype == ::apache::thrift::protocol::T_STOP) {
       break;
     }
-    xfer += iprot->skip(ftype);
+    switch (fid)
+    {
+      case 1:
+        if (ftype == ::apache::thrift::protocol::T_STRUCT) {
+          xfer += this->s.read(iprot);
+          this->__isset.s = true;
+        } else {
+          xfer += iprot->skip(ftype);
+        }
+        break;
+      default:
+        xfer += iprot->skip(ftype);
+        break;
+    }
     xfer += iprot->readFieldEnd();
   }
 
@@ -41,10 +54,14 @@ uint32_t MyManager_ping_args::read(::apache::thrift::protocol::TProtocol* iprot)
   return xfer;
 }
 
-uint32_t MyManager_ping_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t Serv_put_args::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
   apache::thrift::protocol::TOutputRecursionTracker tracker(*oprot);
-  xfer += oprot->writeStructBegin("MyManager_ping_args");
+  xfer += oprot->writeStructBegin("Serv_put_args");
+
+  xfer += oprot->writeFieldBegin("s", ::apache::thrift::protocol::T_STRUCT, 1);
+  xfer += this->s.write(oprot);
+  xfer += oprot->writeFieldEnd();
 
   xfer += oprot->writeFieldStop();
   xfer += oprot->writeStructEnd();
@@ -52,14 +69,18 @@ uint32_t MyManager_ping_args::write(::apache::thrift::protocol::TProtocol* oprot
 }
 
 
-MyManager_ping_pargs::~MyManager_ping_pargs() throw() {
+Serv_put_pargs::~Serv_put_pargs() throw() {
 }
 
 
-uint32_t MyManager_ping_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t Serv_put_pargs::write(::apache::thrift::protocol::TProtocol* oprot) const {
   uint32_t xfer = 0;
   apache::thrift::protocol::TOutputRecursionTracker tracker(*oprot);
-  xfer += oprot->writeStructBegin("MyManager_ping_pargs");
+  xfer += oprot->writeStructBegin("Serv_put_pargs");
+
+  xfer += oprot->writeFieldBegin("s", ::apache::thrift::protocol::T_STRUCT, 1);
+  xfer += (*(this->s)).write(oprot);
+  xfer += oprot->writeFieldEnd();
 
   xfer += oprot->writeFieldStop();
   xfer += oprot->writeStructEnd();
@@ -67,11 +88,11 @@ uint32_t MyManager_ping_pargs::write(::apache::thrift::protocol::TProtocol* opro
 }
 
 
-MyManager_ping_result::~MyManager_ping_result() throw() {
+Serv_put_result::~Serv_put_result() throw() {
 }
 
 
-uint32_t MyManager_ping_result::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t Serv_put_result::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   apache::thrift::protocol::TInputRecursionTracker tracker(*iprot);
   uint32_t xfer = 0;
@@ -90,7 +111,20 @@ uint32_t MyManager_ping_result::read(::apache::thrift::protocol::TProtocol* ipro
     if (ftype == ::apache::thrift::protocol::T_STOP) {
       break;
     }
-    xfer += iprot->skip(ftype);
+    switch (fid)
+    {
+      case 0:
+        if (ftype == ::apache::thrift::protocol::T_I32) {
+          xfer += iprot->readI32(this->success);
+          this->__isset.success = true;
+        } else {
+          xfer += iprot->skip(ftype);
+        }
+        break;
+      default:
+        xfer += iprot->skip(ftype);
+        break;
+    }
     xfer += iprot->readFieldEnd();
   }
 
@@ -99,23 +133,28 @@ uint32_t MyManager_ping_result::read(::apache::thrift::protocol::TProtocol* ipro
   return xfer;
 }
 
-uint32_t MyManager_ping_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
+uint32_t Serv_put_result::write(::apache::thrift::protocol::TProtocol* oprot) const {
 
   uint32_t xfer = 0;
 
-  xfer += oprot->writeStructBegin("MyManager_ping_result");
+  xfer += oprot->writeStructBegin("Serv_put_result");
 
+  if (this->__isset.success) {
+    xfer += oprot->writeFieldBegin("success", ::apache::thrift::protocol::T_I32, 0);
+    xfer += oprot->writeI32(this->success);
+    xfer += oprot->writeFieldEnd();
+  }
   xfer += oprot->writeFieldStop();
   xfer += oprot->writeStructEnd();
   return xfer;
 }
 
 
-MyManager_ping_presult::~MyManager_ping_presult() throw() {
+Serv_put_presult::~Serv_put_presult() throw() {
 }
 
 
-uint32_t MyManager_ping_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
+uint32_t Serv_put_presult::read(::apache::thrift::protocol::TProtocol* iprot) {
 
   apache::thrift::protocol::TInputRecursionTracker tracker(*iprot);
   uint32_t xfer = 0;
@@ -134,7 +173,20 @@ uint32_t MyManager_ping_presult::read(::apache::thrift::protocol::TProtocol* ipr
     if (ftype == ::apache::thrift::protocol::T_STOP) {
       break;
     }
-    xfer += iprot->skip(ftype);
+    switch (fid)
+    {
+      case 0:
+        if (ftype == ::apache::thrift::protocol::T_I32) {
+          xfer += iprot->readI32((*(this->success)));
+          this->__isset.success = true;
+        } else {
+          xfer += iprot->skip(ftype);
+        }
+        break;
+      default:
+        xfer += iprot->skip(ftype);
+        break;
+    }
     xfer += iprot->readFieldEnd();
   }
 
@@ -143,18 +195,19 @@ uint32_t MyManager_ping_presult::read(::apache::thrift::protocol::TProtocol* ipr
   return xfer;
 }
 
-void MyManagerClient::ping()
+int32_t ServClient::put(const Student& s)
 {
-  send_ping();
-  recv_ping();
+  send_put(s);
+  return recv_put();
 }
 
-void MyManagerClient::send_ping()
+void ServClient::send_put(const Student& s)
 {
   int32_t cseqid = 0;
-  oprot_->writeMessageBegin("ping", ::apache::thrift::protocol::T_CALL, cseqid);
+  oprot_->writeMessageBegin("put", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  MyManager_ping_pargs args;
+  Serv_put_pargs args;
+  args.s = &s;
   args.write(oprot_);
 
   oprot_->writeMessageEnd();
@@ -162,7 +215,7 @@ void MyManagerClient::send_ping()
   oprot_->getTransport()->flush();
 }
 
-void MyManagerClient::recv_ping()
+int32_t ServClient::recv_put()
 {
 
   int32_t rseqid = 0;
@@ -182,20 +235,25 @@ void MyManagerClient::recv_ping()
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  if (fname.compare("ping") != 0) {
+  if (fname.compare("put") != 0) {
     iprot_->skip(::apache::thrift::protocol::T_STRUCT);
     iprot_->readMessageEnd();
     iprot_->getTransport()->readEnd();
   }
-  MyManager_ping_presult result;
+  int32_t _return;
+  Serv_put_presult result;
+  result.success = &_return;
   result.read(iprot_);
   iprot_->readMessageEnd();
   iprot_->getTransport()->readEnd();
 
-  return;
+  if (result.__isset.success) {
+    return _return;
+  }
+  throw ::apache::thrift::TApplicationException(::apache::thrift::TApplicationException::MISSING_RESULT, "put failed: unknown result");
 }
 
-bool MyManagerProcessor::dispatchCall(::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, const std::string& fname, int32_t seqid, void* callContext) {
+bool ServProcessor::dispatchCall(::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, const std::string& fname, int32_t seqid, void* callContext) {
   ProcessMap::iterator pfn;
   pfn = processMap_.find(fname);
   if (pfn == processMap_.end()) {
@@ -214,37 +272,38 @@ bool MyManagerProcessor::dispatchCall(::apache::thrift::protocol::TProtocol* ipr
   return true;
 }
 
-void MyManagerProcessor::process_ping(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
+void ServProcessor::process_put(int32_t seqid, ::apache::thrift::protocol::TProtocol* iprot, ::apache::thrift::protocol::TProtocol* oprot, void* callContext)
 {
   void* ctx = NULL;
   if (this->eventHandler_.get() != NULL) {
-    ctx = this->eventHandler_->getContext("MyManager.ping", callContext);
+    ctx = this->eventHandler_->getContext("Serv.put", callContext);
   }
-  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "MyManager.ping");
+  ::apache::thrift::TProcessorContextFreer freer(this->eventHandler_.get(), ctx, "Serv.put");
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preRead(ctx, "MyManager.ping");
+    this->eventHandler_->preRead(ctx, "Serv.put");
   }
 
-  MyManager_ping_args args;
+  Serv_put_args args;
   args.read(iprot);
   iprot->readMessageEnd();
   uint32_t bytes = iprot->getTransport()->readEnd();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postRead(ctx, "MyManager.ping", bytes);
+    this->eventHandler_->postRead(ctx, "Serv.put", bytes);
   }
 
-  MyManager_ping_result result;
+  Serv_put_result result;
   try {
-    iface_->ping();
+    result.success = iface_->put(args.s);
+    result.__isset.success = true;
   } catch (const std::exception& e) {
     if (this->eventHandler_.get() != NULL) {
-      this->eventHandler_->handlerError(ctx, "MyManager.ping");
+      this->eventHandler_->handlerError(ctx, "Serv.put");
     }
 
     ::apache::thrift::TApplicationException x(e.what());
-    oprot->writeMessageBegin("ping", ::apache::thrift::protocol::T_EXCEPTION, seqid);
+    oprot->writeMessageBegin("put", ::apache::thrift::protocol::T_EXCEPTION, seqid);
     x.write(oprot);
     oprot->writeMessageEnd();
     oprot->getTransport()->writeEnd();
@@ -253,40 +312,41 @@ void MyManagerProcessor::process_ping(int32_t seqid, ::apache::thrift::protocol:
   }
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->preWrite(ctx, "MyManager.ping");
+    this->eventHandler_->preWrite(ctx, "Serv.put");
   }
 
-  oprot->writeMessageBegin("ping", ::apache::thrift::protocol::T_REPLY, seqid);
+  oprot->writeMessageBegin("put", ::apache::thrift::protocol::T_REPLY, seqid);
   result.write(oprot);
   oprot->writeMessageEnd();
   bytes = oprot->getTransport()->writeEnd();
   oprot->getTransport()->flush();
 
   if (this->eventHandler_.get() != NULL) {
-    this->eventHandler_->postWrite(ctx, "MyManager.ping", bytes);
+    this->eventHandler_->postWrite(ctx, "Serv.put", bytes);
   }
 }
 
-::boost::shared_ptr< ::apache::thrift::TProcessor > MyManagerProcessorFactory::getProcessor(const ::apache::thrift::TConnectionInfo& connInfo) {
-  ::apache::thrift::ReleaseHandler< MyManagerIfFactory > cleanup(handlerFactory_);
-  ::boost::shared_ptr< MyManagerIf > handler(handlerFactory_->getHandler(connInfo), cleanup);
-  ::boost::shared_ptr< ::apache::thrift::TProcessor > processor(new MyManagerProcessor(handler));
+::boost::shared_ptr< ::apache::thrift::TProcessor > ServProcessorFactory::getProcessor(const ::apache::thrift::TConnectionInfo& connInfo) {
+  ::apache::thrift::ReleaseHandler< ServIfFactory > cleanup(handlerFactory_);
+  ::boost::shared_ptr< ServIf > handler(handlerFactory_->getHandler(connInfo), cleanup);
+  ::boost::shared_ptr< ::apache::thrift::TProcessor > processor(new ServProcessor(handler));
   return processor;
 }
 
-void MyManagerConcurrentClient::ping()
+int32_t ServConcurrentClient::put(const Student& s)
 {
-  int32_t seqid = send_ping();
-  recv_ping(seqid);
+  int32_t seqid = send_put(s);
+  return recv_put(seqid);
 }
 
-int32_t MyManagerConcurrentClient::send_ping()
+int32_t ServConcurrentClient::send_put(const Student& s)
 {
   int32_t cseqid = this->sync_.generateSeqId();
   ::apache::thrift::async::TConcurrentSendSentry sentry(&this->sync_);
-  oprot_->writeMessageBegin("ping", ::apache::thrift::protocol::T_CALL, cseqid);
+  oprot_->writeMessageBegin("put", ::apache::thrift::protocol::T_CALL, cseqid);
 
-  MyManager_ping_pargs args;
+  Serv_put_pargs args;
+  args.s = &s;
   args.write(oprot_);
 
   oprot_->writeMessageEnd();
@@ -297,7 +357,7 @@ int32_t MyManagerConcurrentClient::send_ping()
   return cseqid;
 }
 
-void MyManagerConcurrentClient::recv_ping(const int32_t seqid)
+int32_t ServConcurrentClient::recv_put(const int32_t seqid)
 {
 
   int32_t rseqid = 0;
@@ -326,7 +386,7 @@ void MyManagerConcurrentClient::recv_ping(const int32_t seqid)
         iprot_->readMessageEnd();
         iprot_->getTransport()->readEnd();
       }
-      if (fname.compare("ping") != 0) {
+      if (fname.compare("put") != 0) {
         iprot_->skip(::apache::thrift::protocol::T_STRUCT);
         iprot_->readMessageEnd();
         iprot_->getTransport()->readEnd();
@@ -335,13 +395,19 @@ void MyManagerConcurrentClient::recv_ping(const int32_t seqid)
         using ::apache::thrift::protocol::TProtocolException;
         throw TProtocolException(TProtocolException::INVALID_DATA);
       }
-      MyManager_ping_presult result;
+      int32_t _return;
+      Serv_put_presult result;
+      result.success = &_return;
       result.read(iprot_);
       iprot_->readMessageEnd();
       iprot_->getTransport()->readEnd();
 
-      sentry.commit();
-      return;
+      if (result.__isset.success) {
+        sentry.commit();
+        return _return;
+      }
+      // in a bad state, don't commit
+      throw ::apache::thrift::TApplicationException(::apache::thrift::TApplicationException::MISSING_RESULT, "put failed: unknown result");
     }
     // seqid != rseqid
     this->sync_.updatePending(fname, mtype, rseqid);
@@ -351,5 +417,5 @@ void MyManagerConcurrentClient::recv_ping(const int32_t seqid)
   } // end while(true)
 }
 
-} // namespace
+
 
