@@ -16,4 +16,3 @@ if sys.platform.find('linux')==0:
     env.SConscript(dirs=['multiplex/linux'])
 else:
     env.SConscript(dirs=['3p'])
-    env.SConscript(dirs=['cpp14'])
