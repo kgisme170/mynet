@@ -1,0 +1,7 @@
+#1. Env setttings
+import os
+env=Environment(ENV=os.environ)
+env.Append(CXXFLAGS="--std=c++1z")
+#2. Targets
+env.Program(target='rwlock', source='rwlock.cpp', LIBS='pthread')
+env.Program(target='typeDeductionForAutoCpp17', source='typeDeductionForAutoCpp17.cpp')
