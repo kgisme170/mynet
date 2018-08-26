@@ -14,6 +14,7 @@ env.SConscript(dirs=['grpc'])
 env.SConscript(dirs=['protobuf'])
 env.SConscript(dirs=['usethrift'])
 env.SConscript(dirs=['os'])
+env.SConscript(dirs=['jni'])
 
 if sys.platform.find('linux')==0:
     env.SConscript(dirs=['multiplex/linux'])

@@ -19,9 +19,10 @@ int printStackTrace(JNIEnv *env) {
     env->DeleteLocalRef(cls);
     return 0;
 }
+char option[] = "-Djava.class.path=.";
 int main(){
     JavaVMOption options[1];
-    options[0].optionString = "-Djava.class.path=.";
+    options[0].optionString = option;
     JavaVMInitArgs vm_args = {0};
     vm_args.version = JNI_VERSION_1_6;
     vm_args.nOptions = 1;
