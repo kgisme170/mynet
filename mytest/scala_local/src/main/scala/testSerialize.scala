@@ -1,5 +1,5 @@
 //命令行下面可以用scala -nc执行
-object Main extends App {
+object testSerialize extends App {
     @SerialVersionUID(43L) class p(val a:Int=14,val b:Double=3.0) extends Serializable{
     }
     import java.io._
