@@ -1,4 +1,0 @@
-*.zip
-dist/spark/hw/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip
-dist/spark/hw/target/streams/compile/compileIncremental/$global/streams/out
-dist/spark/hw/target/streams/compile/packageBin/$global/streams/inputs
