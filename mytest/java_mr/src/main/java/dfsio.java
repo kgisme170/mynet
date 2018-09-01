@@ -1,17 +1,10 @@
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-
 import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FSDataOutputStream;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
+
+import java.io.*;
+
 public class dfsio {
     Configuration conf = new Configuration();
     FileSystem fs;
@@ -20,6 +13,41 @@ public class dfsio {
         conf.addResource(new Path("/etc/hadoop/conf/core-site.xml"));
         conf.addResource(new Path("/etc/hadoop/conf/hdfs-site.xml"));
         fs = FileSystem.get(conf);
+    }
+
+    public static void main(String[] args) {
+        try {
+            if (args.length < 1) {
+                System.out.println("需要参数 [put/delete/mkdir] 目录或者文件名");
+                return;
+            }
+            dfsio dfs = new dfsio();
+            if (args[0].equals("put")) {
+                if (args.length != 3) {
+                    System.out.println("put 需要2个参数 [from] [to]");
+                    return;
+                }
+                dfs.put(args[1], args[2]);
+            }
+            if (args[0].equals("delete")) {
+                if (args.length != 2) {
+                    System.out.println("delete 需要1个参数 [文件名]");
+                    return;
+                }
+                dfs.delete(args[1]);
+            }
+            if (args[0].equals("mkdir")) {
+                if (args.length != 2) {
+                    System.out.println("mkdir 需要1个参数 [目录名]");
+                    return;
+                }
+                dfs.mkdir(args[1]);
+            }
+        } catch (IOException e) {
+            System.out.println("获得异常");
+            e.printStackTrace();
+        }
+        System.out.println("成功");
     }
 
     public void put(String from, String to) throws IOException {
@@ -61,40 +89,5 @@ public class dfsio {
             return;
         }
         fs.mkdirs(path);
-    }
-
-    public static void main(String[] args) {
-        try {
-            if (args.length < 1) {
-                System.out.println("需要参数 [put/delete/mkdir] 目录或者文件名");
-                return;
-            }
-            dfsio dfs = new dfsio();
-            if (args[0].equals("put")) {
-                if (args.length != 3) {
-                    System.out.println("put 需要2个参数 [from] [to]");
-                    return;
-                }
-                dfs.put(args[1], args[2]);
-            }
-            if (args[0].equals("delete")) {
-                if (args.length != 2) {
-                    System.out.println("delete 需要1个参数 [文件名]");
-                    return;
-                }
-                dfs.delete(args[1]);
-            }
-            if (args[0].equals("mkdir")) {
-                if (args.length != 2) {
-                    System.out.println("mkdir 需要1个参数 [目录名]");
-                    return;
-                }
-                dfs.mkdir(args[1]);
-            }
-        } catch (IOException e) {
-            System.out.println("获得异常");
-            e.printStackTrace();
-        }
-        System.out.println("成功");
     }
 }
