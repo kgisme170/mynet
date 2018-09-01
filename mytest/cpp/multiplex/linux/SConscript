@@ -1,8 +1,6 @@
 #1. Env setttings
 import os
 env=Environment(ENV=os.environ)
-env.Append(CCFLAGS="-g")
-linuxlibs  = ['jvm','double-conversion']
 #2. Targets
 env.Program(target='client'          ,source='client.cpp')
 env.Program(target='server'          ,source='server.cpp')
