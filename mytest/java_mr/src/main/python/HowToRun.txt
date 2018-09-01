@@ -1,0 +1,1 @@
+hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-2.8.4.jar -file ./mapper.py -mapper ./mapper.py  -file ./reducer.py -reducer ./reducer.py -input war-and-peace-input/war-and-peace.txt -output war-and-peace-output-20
