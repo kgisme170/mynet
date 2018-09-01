@@ -18,7 +18,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="cpp" target="1.5" />
       <module name="mr" target="1.5" />
       <module name="utilities" target="1.5" />
     </bytecodeTargetLevel>
