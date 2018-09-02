@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/changemakepair.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/changemakepair.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/hadoop.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/hadoop.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/hive.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/hive.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/java.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/java.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/java1.8.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/java1.8.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/runJps.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/runJps.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/scala.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/scala.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/spark.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/spark.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/splitFile.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/splitFile.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/startHdfs.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/startHdfs.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/startYarn.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/startYarn.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/stopHdfs.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/stopHdfs.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/stopYarn.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/stopYarn.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/testYarn.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/testYarn.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/zk.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/zk.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_remote/src/main/scala/mailFilter.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,10 +34,10 @@
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -68,11 +53,11 @@
           <entry key="json" value="1" />
           <entry key="makefile" value="1" />
           <entry key="py" value="2" />
-          <entry key="scala" value="35" />
+          <entry key="scala" value="38" />
           <entry key="sh" value="9" />
           <entry key="thrift" value="6" />
           <entry key="txt" value="5" />
-          <entry key="xml" value="20" />
+          <entry key="xml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -84,8 +69,8 @@
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="38" />
           <entry key="Python" value="1" />
-          <entry key="Scala" value="35" />
-          <entry key="XML" value="20" />
+          <entry key="Scala" value="38" />
+          <entry key="XML" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -97,7 +82,7 @@
           <entry key="cpp" value="1384" />
           <entry key="dummy" value="1" />
           <entry key="java" value="2931" />
-          <entry key="scala" value="2107" />
+          <entry key="scala" value="3268" />
           <entry key="sh" value="479" />
           <entry key="thrift" value="13" />
           <entry key="txt" value="105" />
@@ -110,7 +95,7 @@
           <entry key="C++" value="1388" />
           <entry key="JAVA" value="2931" />
           <entry key="PLAIN_TEXT" value="583" />
-          <entry key="Scala" value="2107" />
+          <entry key="Scala" value="3268" />
           <entry key="XML" value="76" />
         </counts>
       </usages-collector>
@@ -178,104 +163,33 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java_mr/src/main/cpp/dfsio.c">
+        <entry file="file://$PROJECT_DIR$/java_mr/src/main/cpp/build.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java_mr/src/main/cpp/w.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java_mr/src/main/cpp/build.sh">
+        <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/mailFilter.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/dfsio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            <state relative-caret-position="299">
+              <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#567#698#0" expanded="true" />
-                <element signature="e#567#698#0" expanded="true" />
+                <element signature="e#0#80#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/grep.java">
+        <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/accumulator.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#796#933#0" expanded="true" />
-                <element signature="e#796#933#0" expanded="true" />
-                <element signature="e#449#473#1" expanded="true" />
-                <element signature="e#1040#1123#0" expanded="true" />
-                <element signature="e#1040#1123#0" expanded="true" />
-                <element signature="e#1074#1102#1" expanded="true" />
-                <element signature="e#1169#1197#0" expanded="true" />
-                <element signature="e#1169#1197#0" expanded="true" />
-                <element signature="e#1149#1177#1" expanded="true" />
-                <element signature="e#1244#1275#0" expanded="true" />
-                <element signature="e#1244#1275#0" expanded="true" />
-                <element signature="e#1157#1250#1" expanded="true" />
-                <element signature="e#1305#1376#0" expanded="true" />
-                <element signature="e#1305#1376#0" expanded="true" />
-                <element signature="e#1466#1513#0" expanded="true" />
-                <element signature="e#1466#1513#0" expanded="true" />
-                <element signature="e#1527#1573#0" expanded="true" />
-                <element signature="e#1527#1573#0" expanded="true" />
-                <element signature="e#1587#1632#0" expanded="true" />
-                <element signature="e#1587#1632#0" expanded="true" />
-                <element signature="e#1705#1765#0" expanded="true" />
-                <element signature="e#1705#1765#0" expanded="true" />
-                <element signature="e#1779#1816#0" expanded="true" />
-                <element signature="e#1779#1816#0" expanded="true" />
-                <element signature="e#1830#1877#0" expanded="true" />
-                <element signature="e#1830#1877#0" expanded="true" />
-                <element signature="e#1994#2052#0" expanded="true" />
-                <element signature="e#1994#2052#0" expanded="true" />
-                <element signature="e#2066#2109#0" expanded="true" />
-                <element signature="e#2066#2109#0" expanded="true" />
-                <element signature="e#2123#2151#0" expanded="true" />
-                <element signature="e#2123#2151#0" expanded="true" />
-                <element signature="e#2238#2309#0" expanded="true" />
-                <element signature="e#2238#2309#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="69">
+              <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="33" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/w2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/HowToRun.txt">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -302,6 +216,8 @@
       <find>interator</find>
       <find>scala-library</find>
       <find>org.scala-lang</find>
+      <find>parquet</find>
+      <find>par</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/java_local</dir>
@@ -314,8 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scala_local/src/main/scala/kill.scala" />
-        <option value="$PROJECT_DIR$/scala_local/src/main/scala/stop.scala" />
         <option value="$PROJECT_DIR$/scala_local/pom.xml" />
         <option value="$PROJECT_DIR$/cpp/linker/foo2.c" />
         <option value="$PROJECT_DIR$/utilities/splitFile.sh" />
@@ -365,6 +279,8 @@
         <option value="$PROJECT_DIR$/java_mr/src/main/java/dfsio.java" />
         <option value="$PROJECT_DIR$/java_mr/src/main/java/grep.java" />
         <option value="$PROJECT_DIR$/java_mr/src/main/cpp/build.sh" />
+        <option value="$PROJECT_DIR$/spark_remote/src/main/scala/accumulator.scala" />
+        <option value="$PROJECT_DIR$/spark_remote/src/main/scala/mailFilter.scala" />
       </list>
     </option>
   </component>
@@ -398,6 +314,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -408,36 +327,28 @@
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java_mr" type="462c0819:PsiDirectoryNode" />
+              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java_mr" type="462c0819:PsiDirectoryNode" />
+              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java_mr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java_mr" type="462c0819:PsiDirectoryNode" />
+              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="cpp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java_mr" type="462c0819:PsiDirectoryNode" />
+              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
@@ -448,14 +359,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535888350667" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535898337706" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -565,20 +473,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00013" summary="ok">
-      <created>1534903253708</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1534903253708</updated>
-    </task>
-    <task id="LOCAL-00014" summary="ok">
-      <created>1534903263330</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1534903263330</updated>
     </task>
     <task id="LOCAL-00015" summary="ok">
       <created>1535081359261</created>
@@ -909,7 +803,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535888287830</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="ok">
+      <created>1535890947123</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1535890947123</updated>
+    </task>
+    <task id="LOCAL-00063" summary="ok">
+      <created>1535890960677</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1535890960677</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TodoView">
@@ -923,8 +831,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1837" height="942" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21953958" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22290848" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -942,7 +851,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4885921" weight="0.44753477" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5086255" side_tool="true" weight="0.33581164" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.4924875" weight="0.3283767" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="10" sideWeight="0.49137452" visible="true" weight="0.29456383" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49137452" visible="true" weight="0.29329962" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -994,11 +903,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/linux/module/mylist.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/cdev/demo.c" />
-    <entry file="file://$PROJECT_DIR$/linux/os/SConscript" />
     <entry file="file://$PROJECT_DIR$/cpp/os/useasm.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1099,13 +1003,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/actor02.scala" />
-    <entry file="file://$PROJECT_DIR$/spark_remote/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="107" lean-forward="true" selection-start-line="81" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/actor01.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1128,13 +1025,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java_mr/src/main/cpp/dfsio.cpp" />
-    <entry file="file://$PROJECT_DIR$/java_mr/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java_mr/src/main/scala/wc01.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
@@ -1162,25 +1052,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/HowToRun.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/w1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/dfsio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#567#698#0" expanded="true" />
-            <element signature="e#567#698#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1198,6 +1073,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java_mr/src/main/cpp/dfsio.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/dfsio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/grep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/w2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -1205,47 +1107,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/grep.java">
+    <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/HowToRun.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/jsoncsv.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#796#933#0" expanded="true" />
-            <element signature="e#796#933#0" expanded="true" />
-            <element signature="e#449#473#1" expanded="true" />
-            <element signature="e#1040#1123#0" expanded="true" />
-            <element signature="e#1040#1123#0" expanded="true" />
-            <element signature="e#1074#1102#1" expanded="true" />
-            <element signature="e#1169#1197#0" expanded="true" />
-            <element signature="e#1169#1197#0" expanded="true" />
-            <element signature="e#1149#1177#1" expanded="true" />
-            <element signature="e#1244#1275#0" expanded="true" />
-            <element signature="e#1244#1275#0" expanded="true" />
-            <element signature="e#1157#1250#1" expanded="true" />
-            <element signature="e#1305#1376#0" expanded="true" />
-            <element signature="e#1305#1376#0" expanded="true" />
-            <element signature="e#1466#1513#0" expanded="true" />
-            <element signature="e#1466#1513#0" expanded="true" />
-            <element signature="e#1527#1573#0" expanded="true" />
-            <element signature="e#1527#1573#0" expanded="true" />
-            <element signature="e#1587#1632#0" expanded="true" />
-            <element signature="e#1587#1632#0" expanded="true" />
-            <element signature="e#1705#1765#0" expanded="true" />
-            <element signature="e#1705#1765#0" expanded="true" />
-            <element signature="e#1779#1816#0" expanded="true" />
-            <element signature="e#1779#1816#0" expanded="true" />
-            <element signature="e#1830#1877#0" expanded="true" />
-            <element signature="e#1830#1877#0" expanded="true" />
-            <element signature="e#1994#2052#0" expanded="true" />
-            <element signature="e#1994#2052#0" expanded="true" />
-            <element signature="e#2066#2109#0" expanded="true" />
-            <element signature="e#2066#2109#0" expanded="true" />
-            <element signature="e#2123#2151#0" expanded="true" />
-            <element signature="e#2123#2151#0" expanded="true" />
-            <element signature="e#2238#2309#0" expanded="true" />
-            <element signature="e#2238#2309#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="23">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1256,17 +1124,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java_mr/src/main/cpp/dfsio.c">
+    <entry file="file://$PROJECT_DIR$/java_mr/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="119">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark_remote/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1840">
+          <caret line="107" lean-forward="true" selection-start-line="81" selection-end-line="107" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java_mr/src/main/cpp/build.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/accumulator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/mailFilter.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

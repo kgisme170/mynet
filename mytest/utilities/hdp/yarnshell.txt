@@ -1,0 +1,4 @@
+$ export YARN_DS=/usr/hdp/current/hadoop-yarn-client/hadoop-yarn-applications-distributedshell.jar
+$ alias yarnshell='yarn org.apache.hadoop.yarn.applications.distributedshell.Client -jar $YARN_DS'
+$ yarnshell -shell_command uptime
+

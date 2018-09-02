@@ -1,0 +1,9 @@
+hdfs fsck /
+hdfs balance
+hdfs balance -threshold 5
+dfsadmin -setBalancerBandwidth xxx
+hdfs dfsadmin -safemode enter
+hdfs dfsadmin -safemode leave
+hdfs dfsadmin -safemode get
+hdfs secondarynamenode -checkpoint force
+
