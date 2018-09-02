@@ -21,10 +21,6 @@
       <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/stopYarn.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/stopYarn.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/testYarn.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/testYarn.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/zk.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/zk.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/learn/ambari.txt" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hdp/ambari.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/learn/import-options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hdp/import-options.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/learn/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hdp/options.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/learn/sqoop.txt" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hdp/sqoop.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,7 +43,7 @@
     <session id="-1902443170">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="2" />
@@ -203,7 +199,7 @@
         <entry file="file://$PROJECT_DIR$/java_mr/src/main/cpp/build.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
-              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -459,7 +455,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535888272954" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535888350667" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -569,20 +565,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00011" summary="ok">
-      <created>1534886766584</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1534886766584</updated>
-    </task>
-    <task id="LOCAL-00012" summary="ok">
-      <created>1534886903145</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1534886903145</updated>
     </task>
     <task id="LOCAL-00013" summary="ok">
       <created>1534903253708</created>
@@ -913,7 +895,21 @@
       <option name="project" value="LOCAL" />
       <updated>1535882468236</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="ok">
+      <created>1535888278415</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1535888278416</updated>
+    </task>
+    <task id="LOCAL-00061" summary="ok">
+      <created>1535888287830</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1535888287830</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1270,7 +1266,7 @@
     <entry file="file://$PROJECT_DIR$/java_mr/src/main/cpp/build.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
         </state>
       </provider>
     </entry>
