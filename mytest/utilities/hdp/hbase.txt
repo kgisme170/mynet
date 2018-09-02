@@ -1,0 +1,11 @@
+$ echo "put 'apple','8-May-15','price:open','126.56'"|hbase shell
+$ hbase shell
+
+hbase> create 'apple','price','volume'
+hbase> put 'apple','6-May-15','price:open','126.56'
+hbase> put 'apple','6-May-15','price:high','128.63'
+hbase> put 'apple','6-May-15','price:low','125.32'
+hbase> scan 'appl'
+hbase> get 'apple','5-May-15',{COLUMN=>'price:low'}
+hbase> get 'apple','6-May-15',{COLUMN=>['price:open','price:low']}
+
