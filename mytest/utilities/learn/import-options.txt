@@ -1,0 +1,7 @@
+export                                                                                                                                                                                        
+--connect                                                                                                                                                                                     
+jdbc:mysql://localhost/world                                                                                                                                                                  
+--username                                                                                                                                                                                    
+sqoop                                                                                                                                                                                         
+--password                                                                                                                                                                                    
+sqoop                                

@@ -1,0 +1,4 @@
+root
+修改ambari的admin用户的密码，使得网页可以登陆ambari
+ambari-admin-password-reset
+

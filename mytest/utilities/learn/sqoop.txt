@@ -1,0 +1,63 @@
+mysql无法用客户端登陆
+1. 停止mysqld服务并修改/etc/my.cnf
+systemctl stop mysqld.service                                                                                                                                                          
+vi /etc/my.cnf                                                                                                                                                                         
+
+2. 加上一行skip-grant-tables                
+重启服务
+
+3. 这就使得root不必密码登陆
+systemctl start mysqld.service                                                                                                                                                         
+mysql -u root                                                                                                                                                                          
+
+4. 修改root的密码，并增加sqoop用户极其权限
+vi /etc/my.cnf                                                                                                                                                                         
+mysql -u root                                                                                                                                                                          
+mysql -u root -p                                                                                                                                                                       
+修改完之后恢复/etc/my.cnf                                                       
+重启mysql
+systemctl stop mysqld.service                                                                                                                                                          
+systemctl start mysqld.service                                                                                                                                                         
+
+5. 然后
+mysql> create database world;
+mysql> use world;
+mysql> source world_innodb.sql;
+
+mysql> grant all privileges on world.* to 'sqoop'@'localhost' identified by 'sqoop'
+mysql> grant all privileges on world.* to 'sqoop'@'10.%.%.%' identified by 'sqoop'
+mysql> quit;
+
+验证用sqoop用户登陆mysql -u sqoop -p
+mysql> use world;
+
+-----------mysql数据导出到sqoop
+6. hdfs: 准备sqoop导出数据的目录
+hdfs dfs -mkdir /sqoop-mysql-import                                                                                                                                                    
+
+7. root操作
+sqoop import --connect jdbc:mysql://localhost/world --username sqoop --password sqoop --table Country -m 1 --target-dir /sqoop-mysql-import/country
+sqoop --options-file options.txt -table CountryLanguage -m 1 --target-dir /sqoop-mysql-import/countrylanguage
+
+# 带select的命令
+sqoop --options-file options.txt -m 1 --target-dir /sqoop-mysql-import/canada-city --query "select id,name from City where CountryCode='CAN' and \$CONDITIONS"
+
+# 带split的命令
+sqoop --options-file options.txt -m 1 --target-dir /sqoop-mysql-import/canada-city --query "select id,name from City where CountryCode='CAN' and \$CONDITIONS" --split-by ID
+
+然后可以看到这些数据
+hdfs dfs -ls /sqoop-mysql-import                                                                                                                                                       
+hdfs dfs -ls /sqoop-mysql-import/country                                                                                                                                               
+hdfs dfs -ls /sqoop-mysql-import/country/part-m-00000                                                                                                                                  
+hdfs dfs -cat /sqoop-mysql-import/country/part-m-00000                                                                                                                                 
+hdfs dfs -rm -r -skipTrash /sqoop-mysql-import/canada-city                      
+
+-----------mysql从sqoop导入
+mysql建立两个表，数据表和staging表
+mysql> create table cityexport (id int(11) not null auto_increment primary key,name char(35) not null default '',countrycode char(3) not null default '',district char(20) not null default ''
+,population int(11) not null default '0');
+mysql> create table cityexportstaging (id int(11) not null auto_increment primary key,name char(35) not null default '',countrycode char(3) not null default '',district char(20) not null default ''
+,population int(11) not null default '0');
+
+root用户执行:
+sqoop --options-file import-options.txt --table cityexport --staging-table cityexportstaging --clear-staging-table -m 4 --export-dir /sqoop-mysql-import/city
