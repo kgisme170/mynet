@@ -4,38 +4,27 @@
     <bookmark url="file://$PROJECT_DIR$/spark_remote/src/main/java/testMap.java" line="16" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="ok">
-      <change afterPath="$PROJECT_DIR$/utilities/learn/ambari.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/learn/import-options.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/learn/options.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/learn/sqoop.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_mr/src/main/cpp/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/java_mr/src/main/cpp/build.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/bootstrap.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/bootstrap.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/changemakepair.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/changemakepair.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/config/core-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopConfig/core-site.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/config/hadoop-env.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopConfig/hadoop-env.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/config/hdfs-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopConfig/hdfs-site.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/config/mapred-env.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopConfig/mapred-env.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/config/mapred-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopConfig/mapred-site.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/config/yarn-env.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopConfig/yarn-env.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/config/yarn-site.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopConfig/yarn-site.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/hadoop.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/hadoop.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/hive.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/hive.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/java.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/java.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/java1.8.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/java1.8.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/pig.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/pig.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/runJps.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/runJps.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/scala.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/scala.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/spark.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/spark.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/splitFile.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/splitFile.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/startHdfs.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/startHdfs.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/startYarn.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/startYarn.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/stopHdfs.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/stopHdfs.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/stopYarn.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/stopYarn.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/testYarn.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/testYarn.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/zk.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/zk.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/changemakepair.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/changemakepair.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/hadoop.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/hadoop.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/hive.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/hive.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/java.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/java.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/java1.8.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/java1.8.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/runJps.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/runJps.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/scala.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/scala.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/spark.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/spark.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/splitFile.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/splitFile.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/startHdfs.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/startHdfs.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/startYarn.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/startYarn.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/stopHdfs.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/stopHdfs.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/stopYarn.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/stopYarn.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/testYarn.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/testYarn.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/hadoopRun/zk.sh" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hadoopRun/zk.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/learn/ambari.txt" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hdp/ambari.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/learn/import-options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hdp/import-options.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/learn/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hdp/options.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/learn/sqoop.txt" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/hdp/sqoop.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -213,8 +202,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java_mr/src/main/cpp/build.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="230">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -470,7 +459,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535881187719" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535887076715" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -580,13 +569,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00010" summary="ok">
-      <created>1534853603399</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1534853603399</updated>
     </task>
     <task id="LOCAL-00011" summary="ok">
       <created>1534886766584</created>
@@ -924,7 +906,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535818133040</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="ok">
+      <created>1535882468236</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1535882468236</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TodoView">
@@ -957,7 +946,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4885921" weight="0.44753477" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5086255" side_tool="true" weight="0.33581164" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.4924875" weight="0.3283767" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="10" sideWeight="0.49137452" visible="true" weight="0.5233881" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" sideWeight="0.49137452" visible="true" weight="0.29456383" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1280,8 +1269,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java_mr/src/main/cpp/build.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="230">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
         </state>
       </provider>
     </entry>

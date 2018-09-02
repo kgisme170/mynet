@@ -1,0 +1,12 @@
+root:
+$ wget http://files.grouplens.org/datasets/movielens/ml-100k.zip
+$ unzip ml-100k.zip
+$ cd ml-100k
+
+hive> create table u_data(userid int,movieid int,rating int, unixtime string)row format delimited fields terminated by '\t' stored as textfile;
+hive> cload data local inpath './u.data' overwrite into table u_data;
+hive> ccreate table u_data_new(userid int,movieid int,rating int, weekday int)row format delimited fields terminated by '\t' stored as textfile;
+hive> cinsert overwrite table u_data_new select transform(userid, movieid,rating,unixtime) using 'python weekday_mapper.py' as(userid, movieid,rating, weekday) from u_data;
+hive> cselect weekday, count(*) from u_data_new group by weekday;
+
+$ hive -e 'drop table u_data_new'
