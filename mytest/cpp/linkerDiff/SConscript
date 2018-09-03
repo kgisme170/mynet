@@ -3,7 +3,7 @@ import os
 env=Environment(ENV=os.environ, STATIC_AND_SHARED_OBJECTS_ARE_THE_SAME = 'yes')
 env.Append(LIBPATH=".")
 #2. Targets
-singleton=env.Object('singleton.cpp')
+singleton=env.Object('singleton.cpp',CXXFLAGS="-fPIC")
 singletonMain=env.Object('singletonMain.cpp')
 env.Program('singletonFromObject',source=[singleton, singletonMain])
 
