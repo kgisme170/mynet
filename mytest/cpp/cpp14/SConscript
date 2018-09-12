@@ -5,7 +5,6 @@ env.Append(CXXFLAGS="--std=c++14")
 #2. Targets
 #env.Program(target='atomics', source='atomics.cpp',LIBS='pthread')
 env.Program(target='bindImpl', source='bindImpl.cpp')
-env.Program(target='conditional', source='conditional.cpp',LIBS='pthread')
 env.Program(target='newLambda', source='newLambda.cpp')
 env.Program(target='pv', source='pv.cpp',LIBS='pthread')
 env.Program(target='testStdThread', source='testStdThread.cpp',LIBS='pthread')
