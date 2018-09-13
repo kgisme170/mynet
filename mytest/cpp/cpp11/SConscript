@@ -5,6 +5,8 @@ env.Append(CXXFLAGS="--std=c++11")
 #2. Targets
 env.Program(target='atomicVsMutex', source='atomicVsMutex.cpp', LIBS='pthread')
 env.Program(target='atomic_flag', source='atomic_flag.cpp', LIBS='pthread')
+env.Program(target='decl',        source='decl.cpp')
+env.Program(target='noexcept',    source='noexcept.cpp')
 env.Program(target='objectModel01', source='objectModel01.cpp')
 env.Program(target='stdtls', source='stdtls.cpp', LIBS='pthread')
 env.Program(target='templateContainer', source='templateContainer.cpp')
