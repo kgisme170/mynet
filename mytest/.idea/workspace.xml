@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spark_remote/src/main/scala/mailFilter.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linux/testshare.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/SConscript" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/SConscript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp14/SConscript" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp14/SConscript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp14/conditional.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/conditional.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,19 +39,21 @@
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Makefile" value="4" />
-          <entry key="SConscript" value="11" />
+          <entry key="SConscript" value="14" />
           <entry key="SConstruct" value="2" />
-          <entry key="c" value="10" />
+          <entry key="c" value="11" />
           <entry key="class" value="7" />
-          <entry key="cpp" value="9" />
+          <entry key="cpp" value="30" />
           <entry key="h" value="3" />
           <entry key="java" value="41" />
           <entry key="json" value="1" />
@@ -55,6 +61,7 @@
           <entry key="py" value="2" />
           <entry key="scala" value="38" />
           <entry key="sh" value="9" />
+          <entry key="testString01" value="1" />
           <entry key="thrift" value="6" />
           <entry key="txt" value="5" />
           <entry key="xml" value="22" />
@@ -63,11 +70,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="1" />
-          <entry key="C++" value="22" />
+          <entry key="C++" value="44" />
           <entry key="CLASS" value="7" />
           <entry key="JAVA" value="41" />
           <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="38" />
+          <entry key="PLAIN_TEXT" value="42" />
           <entry key="Python" value="1" />
           <entry key="Scala" value="38" />
           <entry key="XML" value="22" />
@@ -76,10 +83,10 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Makefile" value="20" />
-          <entry key="SConscript" value="392" />
+          <entry key="SConscript" value="394" />
           <entry key="SConstruct" value="18" />
           <entry key="c" value="4" />
-          <entry key="cpp" value="1384" />
+          <entry key="cpp" value="2755" />
           <entry key="dummy" value="1" />
           <entry key="java" value="2931" />
           <entry key="scala" value="3268" />
@@ -92,9 +99,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="445" />
-          <entry key="C++" value="1388" />
+          <entry key="C++" value="2759" />
           <entry key="JAVA" value="2931" />
-          <entry key="PLAIN_TEXT" value="583" />
+          <entry key="PLAIN_TEXT" value="585" />
           <entry key="Scala" value="3268" />
           <entry key="XML" value="76" />
         </counts>
@@ -163,31 +170,51 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java_mr/src/main/cpp/build.sh">
+        <entry file="file://$PROJECT_DIR$/linux/testshare.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/mailFilter.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#80#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="368">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/accumulator.scala">
+        <entry file="file://$PROJECT_DIR$/cpp/cpp11/atomic_flag.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="33" />
+            <state relative-caret-position="851">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp/cpp11/atomicVsMutex.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="851">
+              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp/cpp14/usec11.c">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp/cpp14/SConscript">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cpp/cpp11/SConscript">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -218,6 +245,8 @@
       <find>org.scala-lang</find>
       <find>parquet</find>
       <find>par</find>
+      <find>mutex</find>
+      <find>condition</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/java_local</dir>
@@ -230,12 +259,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scala_local/pom.xml" />
-        <option value="$PROJECT_DIR$/cpp/linker/foo2.c" />
-        <option value="$PROJECT_DIR$/utilities/splitFile.sh" />
-        <option value="$PROJECT_DIR$/spark_remote/pom.xml" />
-        <option value="$PROJECT_DIR$/streaming/pom.xml" />
-        <option value="$PROJECT_DIR$/java_local/src/main/java/testvolatile.java" />
         <option value="$PROJECT_DIR$/cpp/precpp11/templateContainer.cpp" />
         <option value="$PROJECT_DIR$/cpp/postcpp11/pv.cpp" />
         <option value="$PROJECT_DIR$/cpp/datastructure/kruskal.cpp" />
@@ -281,6 +304,12 @@
         <option value="$PROJECT_DIR$/java_mr/src/main/cpp/build.sh" />
         <option value="$PROJECT_DIR$/spark_remote/src/main/scala/accumulator.scala" />
         <option value="$PROJECT_DIR$/spark_remote/src/main/scala/mailFilter.scala" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/atomic_flag.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/testVariadic.cpp" />
+        <option value="$PROJECT_DIR$/linux/testshare.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp14/conditional.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp14/SConscript" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/SConscript" />
       </list>
     </option>
   </component>
@@ -314,9 +343,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -327,43 +355,24 @@
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
+              <item name="cpp11" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535898337706" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536630567809" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -830,10 +839,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1837" height="942" extended-state="6" />
-    <editor active="true" />
+    <frame x="67" y="25" width="1853" height="958" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22290848" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22927101" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -848,10 +856,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32869786" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4885921" weight="0.44753477" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4885921" weight="0.267658" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5086255" side_tool="true" weight="0.33581164" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.4924875" weight="0.3283767" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49137452" visible="true" weight="0.29329962" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" sideWeight="0.49137452" visible="true" weight="0.29120198" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -859,7 +867,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.19146547" />
+      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.19143017" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -903,81 +911,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cpp/os/useasm.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/cdev/Makefile" />
-    <entry file="file://$PROJECT_DIR$/linux/memleak/memleak_demo.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/module/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp98/SConscript">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/jni/cpp2java.java" />
-    <entry file="file://$PROJECT_DIR$/linux/jni/cpp2java.class" />
-    <entry file="file://$PROJECT_DIR$/linux/jni/usejclass.cpp" />
-    <entry file="file://$PROJECT_DIR$/linux/jni/impl.c" />
-    <entry file="file://$PROJECT_DIR$/linux/jni/build.sh" />
-    <entry file="file://$PROJECT_DIR$/linux/jni/SConscript" />
-    <entry file="file://$PROJECT_DIR$/cpp/jni/SConscript">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/SConstruct">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/jni/cpp2java.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/jni/impl.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/jni/cpp2java.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/jni/usejclass.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-897">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/WordCount1.java" />
-    <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/WordCount2.java" />
-    <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/WordCount3.java" />
     <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/TokenizerMapper.java" />
     <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/IntSumReducer.java" />
     <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/WordCount4.java" />
@@ -1084,9 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1094,9 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1141,7 +1068,7 @@
     <entry file="file://$PROJECT_DIR$/java_mr/src/main/cpp/build.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1155,10 +1082,116 @@
     <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/mailFilter.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#80#0" expanded="true" />
-          </folding>
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/Makefile.testString01">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/objectModel01.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/stdtls.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/templateContainer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/testSetDifference.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/testStdThreadExit.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/testStringCow.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/testTemplate.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/testTraits.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/testVariadic.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/threadMutex.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-759" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/typeDeductionForInitializerlist.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/usefuture.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="5" lean-forward="true" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp17/typeDeductionForAutoCpp17.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp14/conditional.cpp" />
+    <entry file="file://$PROJECT_DIR$/linux/testshare.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/atomic_flag.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/atomicVsMutex.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp14/usec11.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp14/SConscript">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/SConscript">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
         </state>
       </provider>
     </entry>
