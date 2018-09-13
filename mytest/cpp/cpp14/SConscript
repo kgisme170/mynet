@@ -4,6 +4,7 @@ env=Environment(ENV=os.environ)
 env.Append(CXXFLAGS="--std=c++14")
 #2. Targets
 #env.Program(target='atomics', source='atomics.cpp',LIBS='pthread')
+env.Program(target='autoReturn', source='autoReturn.cpp')
 env.Program(target='bindImpl', source='bindImpl.cpp')
 env.Program(target='decltypeAuto', source='decltypeAuto.cpp')
 env.Program(target='newLambda', source='newLambda.cpp')

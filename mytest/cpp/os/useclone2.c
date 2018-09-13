@@ -1,4 +1,4 @@
-// #define _GNU_SOURCE   // needed if compiled as C instead of C++
+#define _GNU_SOURCE   // needed if compiled as C instead of C++
 #include <stdio.h>
 #include <sched.h>
 #include <unistd.h>

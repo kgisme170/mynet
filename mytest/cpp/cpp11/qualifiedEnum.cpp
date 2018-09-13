@@ -11,7 +11,7 @@ public:
     static A f(A a){
         return (A)(a + A::u);
     }
-};
+};}
 int main(){
     using namespace m;
     my::A r=my::f(my::u);
