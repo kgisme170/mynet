@@ -2,6 +2,7 @@
 import os
 env=Environment(ENV=os.environ)
 #2. Targets
+env.Program(target='testCondWait',               source='testCondWait.cpp',            LIBS=['pthread'])
 env.Program(target='testPthread',                source='testPthread.cpp',             LIBS=['pthread'])
 env.Program(target='testPthreadReturn',          source='testPthreadReturn.cpp',       LIBS=['pthread'])
 env.Program(target='testPthreadCancel',          source='testPthreadCancel.c',         LIBS=['pthread'])

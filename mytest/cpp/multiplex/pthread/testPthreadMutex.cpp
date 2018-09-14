@@ -3,7 +3,7 @@
 #include<cassert>
 #include<iostream>
 using namespace std;
-pthread_mutex_t mt;
+pthread_mutex_t mt=PTHREAD_MUTEX_INITIALIZER;
 pthread_t tid[2];
 char msg1[]="thread1";
 char msg2[]="thread2";

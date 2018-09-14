@@ -8,7 +8,7 @@ const size_t bufferSize = 8;
 dataType buffer[bufferSize];
 pthread_cond_t notempty;//队列非空
 pthread_cond_t notfull;//队列未满
-pthread_mutex_t lk;
+pthread_mutex_t lk=PTHREAD_MUTEX_INITIALIZER;
 size_t readpos,writepos;
 void init(){
     readpos=0;
