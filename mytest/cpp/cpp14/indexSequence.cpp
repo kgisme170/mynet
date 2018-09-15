@@ -30,5 +30,5 @@ constexpr std::array<int, N> make_inc_array() {
 constexpr auto a = make_inc_array<100>(); // [1, 2, ..., 100]
 
 int main() {
-        for(int itr = 0; itr < 100; ++itr) printf("%d ", constArr[itr]);
+    for(int itr = 0; itr < 100; ++itr) printf("%d ", a[itr]);
 }
