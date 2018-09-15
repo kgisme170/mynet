@@ -115,10 +115,29 @@ public:
         print();
 
         while(!U.empty()){
-            set<E> se(U.begin(),U.end(),less<E>());
-            se.begin()->print();
-            break;
-            //copy(U.begin(),U.end(),_U.begin());
+            cout<<"\n进入while\n";
+            set<E> se(U.begin(),U.end(),less<E>());//U的元素进行排序
+            auto small = se.begin();
+            small->print();
+            S.insert(*small);
+            U.erase(*small);
+            print();
+            //c的所有邻近点
+            cout<<"更新距离\n";
+            auto& q = mElements[small->vertex];
+            for(const E& e: q){
+                if (S.find(e)!=S.end()){
+                    continue;
+                }
+                auto newDistance = e.distance + small->distance;
+                auto p = U.find(e);
+                auto oldDistance = p->distance;
+                if(newDistance<oldDistance){
+                    U.erase(e);
+                    U.insert(E(e.vertex, newDistance));
+                }
+            }
+            print();
         }
     }
 };
