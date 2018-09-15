@@ -40,7 +40,7 @@ struct E{
     size_t distance;
     E(char v, size_t d):vertex(v),distance(d){}
     bool operator==(const E& e)const{
-        return vertex < e.vertex;
+        return vertex == e.vertex;
     }
     void print()const{
         cout<<'('<<vertex<<',';
@@ -76,8 +76,9 @@ class graph{//dj{//无向图Dijkstra
         element(char f,char t,size_t d):
             from(f),to(t),distance(d){}
     };
-    edgeMap mElements;
+    edgeMap mElements;//边的集合
     edgeSet S, U;
+    unordered_set<char> vSet;//顶点集合
     void print(){
         for(auto& s:S){s.print();}
         cout<<'\n';
@@ -87,9 +88,14 @@ class graph{//dj{//无向图Dijkstra
 public:
     graph(const vector<edge>& v){
         for(const auto& e:v){
-            mElements[get<0>(e)].push_back({get<1>(e),get<2>(e)});
-            mElements[get<1>(e)].push_back({get<0>(e),get<2>(e)});
-            U.insert(E(get<0>(e), numeric_limits<unsigned long>::max()));
+            auto& v0=get<0>(e);
+            auto& v1=get<1>(e);
+            auto& d=get<2>(e);
+
+            mElements[v0].push_back({v1,d});
+            mElements[v1].push_back({v0,d});
+            vSet.insert(v0);
+            vSet.insert(v1);
         }
     }
     void calculate(char v){
@@ -98,13 +104,25 @@ public:
             cout<<"没有顶点"<<v<<endl;
             return;
         }
-
         S.insert(E(v,0));
+
         auto& q = it->second;
-        for(const E& e:q){
+        cout<<v<<"的邻接顶点个数="<<q.size()<<endl;
+        for(E& e:q){
             U.insert(e);
         }
+        for(char c:vSet){
+            if(c==v)continue;
+            if(U.find(E(c,0))==U.end()){
+                cout<<"不相邻顶点"<<c<<endl;
+                U.insert(E(c,numeric_limits<unsigned long>::max()));
+            }
+        }
+        cout<<"----------\n";
         print();
+
+        do{
+        }while(false);
     }
 };
 int main(){
