@@ -1,3 +1,4 @@
+#include<algorithm>
 #include<iostream>
 #include<vector>
 #include<map>
@@ -5,21 +6,10 @@
 #include<cstdlib>
 #include<unordered_map>
 #include<unordered_set>
+#include<set>
 #include<tuple>
 #include<limits>
 using namespace std;
-/*
-struct vertex{
-    char _v;
-    vertex(char v):_v(v){}
-};
-using element=pair<vertex, size_t>;
-auto cmp=[](const element& e1, const element& e2){
-    return e1.second<e2.second;
-};
-using Queue=priority_queue<element, std::vector<element>, decltype(cmp)>;
-*/
-
 using edge=tuple<char,char,size_t>;
 vector<edge> input={
     {'a','b',12},
@@ -39,7 +29,13 @@ struct E{
     char vertex;
     size_t distance;
     E(char v, size_t d):vertex(v),distance(d){}
-    bool operator==(const E& e)const{
+    E(const E& e):vertex(e.vertex),distance(e.distance){}
+    E& operator=(const E& e){
+        vertex = e.vertex;
+        distance = e.distance;
+        return *this;
+    }
+    bool operator==(const E& e)const{//set的检查
         return vertex == e.vertex;
     }
     void print()const{
@@ -52,18 +48,15 @@ struct E{
         cout<<')';
     }
 };
-/*
-template<class C>
-using Container = C<E>;
-void print(const Container& c){
-    for(auto& e : c)e.print();
-}*/
 template<>
 struct std::hash<E> {
     std::size_t operator()(const E& e) const {
         return e.vertex;
     }
 };
+bool operator<(const E& e1,const E& e2){
+    return e1.distance < e2.distance;
+}
 
 using edgeQueue=deque<E>;
 using edgeMap=unordered_map<char, edgeQueue>;
@@ -80,6 +73,7 @@ class graph{//dj{//无向图Dijkstra
     edgeSet S, U;
     unordered_set<char> vSet;//顶点集合
     void print(){
+        cout<<"----------\n";
         for(auto& s:S){s.print();}
         cout<<'\n';
         for(auto& u:U){u.print();}
@@ -118,11 +112,14 @@ public:
                 U.insert(E(c,numeric_limits<unsigned long>::max()));
             }
         }
-        cout<<"----------\n";
         print();
 
-        do{
-        }while(false);
+        while(!U.empty()){
+            set<E> se(U.begin(),U.end(),less<E>());
+            se.begin()->print();
+            break;
+            //copy(U.begin(),U.end(),_U.begin());
+        }
     }
 };
 int main(){
