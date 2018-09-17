@@ -11,7 +11,7 @@ public class MyServer {
             new AdditionService.Processor<AdditionServiceHandler>(new AdditionServiceHandler());
         try {
             TServerTransport serverTransport = new TServerSocket(9090);
-            TServer server = new TSimpleServer(new Args(serverTransport).processor(processor).protocolFactory(new TBinaryProtocol.Factory(true, true)));
+            TServer server = new TSimpleServer(new Args(serverTransport).processor(processor));//.protocolFactory(new TBinaryProtocol.Factory(true, true)));
 
             // Use this for a multithreaded server
             // TServer server = new TThreadPoolServer(new TThreadPoolServer.Args(serverTransport).processor(processor));
