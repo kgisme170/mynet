@@ -5,7 +5,6 @@ env.Append(CXXFLAGS="--std=c++98")
 #2. Targets
 env.Program(target='arrayRef', source='arrayRef.cpp')
 env.Program(target='closure', source='closure.cpp')
-env.Program(target='fcntlMonitor', source='fcntlMonitor.cpp')
 env.Program(target='fileToString', source='fileToString.cpp')
 env.Program(target='hideFunction', source='hideFunction.cpp')
 env.Program(target='pointerAdjustment', source='pointerAdjustment.cpp')
