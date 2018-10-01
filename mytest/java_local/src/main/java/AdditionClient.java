@@ -11,7 +11,7 @@ public class AdditionClient {
             TTransport transport = new TSocket("localhost", 9090);
             transport.open();
             AdditionService.Client client = new AdditionService.Client(new TBinaryProtocol(transport));
-            client.ping(2012);
+            //client.ping(2012);
             System.out.println(client.add(100, 200));
             transport.close();
         } catch (TTransportException e) {
