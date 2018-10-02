@@ -1,16 +1,12 @@
-import os,sys,subprocess
-def runCmd(cmd) :
-    res = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    sout ,serr = res.communicate()
-    return res.returncode
+import os,sys
 env = Environment(ENV = {'PATH' : os.environ['PATH']})
 env.Append(CXXFLAGS="-Wall")
 env.Append(CXXFLAGS="-Werror")
-if runCmd("testcpp.sh 11") == 0:
+if os.system("./testcpp.sh 11") == 0:
     env.SConscript(dirs=['cpp11'])
-if runCmd("testcpp.sh 14") == 0:
+if os.system("./testcpp.sh 14") == 0:
     env.SConscript(dirs=['cpp14'])
-if runCmd("testcpp.sh 17") == 0:
+if os.system("./testcpp.sh 17") == 0:
     env.SConscript(dirs=['cpp17'])
 env.SConscript(dirs=['cpp98'])
 env.SConscript(dirs=['datastructure'])
