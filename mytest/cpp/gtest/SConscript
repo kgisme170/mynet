@@ -2,5 +2,6 @@
 import os
 env=Environment(ENV=os.environ)
 #2. Targets
-env.Program(target='gtest01', source='gtest01.cpp', LIBS=['gtest', 'gtest_main', 'pthread'])
-env.Program(target='gtest02', source='gtest02.cpp', LIBS=['gtest', 'pthread'])
+env.Program(target='gtest01_setup', source='gtest01_setup.cpp', LIBS=['gtest', 'gtest_main', 'pthread'])
+env.Program(target='gtest02_envThrowFormat', source='gtest02_envThrowFormat.cpp', LIBS=['gtest', 'pthread'])
+env.Program(target='gtest03_valueTypeParam', source='gtest03_valueTypeParam.cpp', LIBS=['gtest', 'gtest_main', 'pthread'])
