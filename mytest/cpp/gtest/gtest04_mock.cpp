@@ -11,8 +11,3 @@ public:
 class MyImpl:IMy{
     MOCK_METHOD0(getString, string());
 };
-int main(int argc, char* argv[]){
-    testing::InitGoogleMock(&argc, argv);
-    cout<<"gtest04_mock\n";
-    return EXIT_SUCCESS;
-}
