@@ -46,4 +46,15 @@ TEST(t2,case4){
     rp = p2;
     EXPECT_EQ(2,*pi);
     delete p2;
+
+    int a=4;
+    int b=5;
+    EXPECT_CALL(mock,add()).Times(1).WillOnce(DoAll(Assign(&a,b),Return(1)));
+    mock.add();
+    EXPECT_EQ(5,a);
+    Sequence s1, s2;
+    EXPECT_CALL(mock, getS()).InSequence(s1, s2).WillOnce(ReturnNull());
+    EXPECT_CALL(mock, add()).InSequence(s1).WillOnce(Return(6));
+    mock.getS();
+    mock.add();
 }
