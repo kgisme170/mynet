@@ -6,3 +6,4 @@ env.Program(target='gtest01_setup', source='gtest01_setup.cpp', LIBS=['gtest', '
 env.Program(target='gtest02_envThrowFormat', source='gtest02_envThrowFormat.cpp', LIBS=['gtest', 'pthread'])
 env.Program(target='gtest03_valueTypeParam', source='gtest03_valueTypeParam.cpp', LIBS=['gtest', 'pthread'])
 env.Program(target='gtest04_mock', source='gtest04_mock.cpp', LIBS=['gmock_main', 'gmock', 'gtest', 'pthread'])
+env.Program(target='gtest05_mock', source='gtest05_mock.cpp', LIBS=['gmock_main', 'gmock', 'gtest', 'pthread'])

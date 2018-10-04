@@ -2,8 +2,21 @@
 #include <gmock/gmock.h>
 #include <iostream>
 #include <string>
+#include <gtest/internal/gtest-port.h>
 using namespace std;
 using namespace testing;
+int DieInDebugElse1(int* sideeffect) {
+    if (sideeffect) *sideeffect = 1;
+#ifndef NDEBUG
+    GTEST_LOG_(FATAL)<<"debug death inside DieInDebugElse12()";
+#endif  // NDEBUG
+    return 12;
+}
+TEST(a,c){
+    int sideeffect = 0;
+    EXPECT_DEBUG_DEATH(DieInDebugElse1(&sideeffect), "death");
+}
+
 class IMy{
 public:
     ~IMy(){}
@@ -63,10 +76,12 @@ TEST(t2,case1){
 }
 TEST(t2,case2){
     Impl2 mock;
+    EXPECT_CALL(mock,add).Times(AtMost(1));
+    EXPECT_CALL(mock,set(Not(HasSubstr("bb")))).Times(Between(1,5));
+    EXPECT_CALL(mock,get).Times(Exactly(0));
     EXPECT_CALL(mock,minus(AllOf(Gt(5),Ne(10))));
     mock.minus(6);
-    EXPECT_CALL(mock,set(Not(HasSubstr("bb"))));
+    //EXPECT_CALL(mock,set(Not(HasSubstr("bb"))));//最后一个有效
     mock.set("aa");
-    //mock.set("bb");
+    //mock.set("cc");
 }
-//ResultOf Pointee
