@@ -9,4 +9,4 @@ int main(){
     return 0;
 }
 EOF
-g++ $TESTFILE -std=c++${CPPVER} -c -o /tmp/test98.o > /dev/null 2>&1
+g++ $TESTFILE -std=c++${CPPVER} -c -o /tmp/test${CPPVER}.o > /dev/null 2>&1
