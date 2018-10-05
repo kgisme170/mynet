@@ -12,6 +12,7 @@ public:
     virtual int& getRef()=0;
     virtual int*& getPointerRef()=0;
     virtual void setParam(int* pi)=0;
+    virtual void f()=0;
 };
 class Impl2:public If2{
 public:
@@ -21,6 +22,7 @@ public:
     MOCK_METHOD0(getRef, int&());
     MOCK_METHOD0(getPointerRef, int*&());
     MOCK_METHOD1(setParam, void(int*));
+    void f(){}
 };
 //ResultOf Pointee
 TEST(t2,case3){
