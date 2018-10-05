@@ -8,15 +8,19 @@ class If2{
 public:
     virtual char* getS()=0;
     virtual int add()=0;
+    virtual int add2(int)=0;
     virtual int& getRef()=0;
     virtual int*& getPointerRef()=0;
+    virtual void setParam(int* pi)=0;
 };
 class Impl2:public If2{
 public:
     MOCK_METHOD0(getS, char*());
     MOCK_METHOD0(add, int());
+    MOCK_METHOD1(add2, int(int));
     MOCK_METHOD0(getRef, int&());
     MOCK_METHOD0(getPointerRef, int*&());
+    MOCK_METHOD1(setParam, void(int*));
 };
 //ResultOf Pointee
 TEST(t2,case3){
@@ -57,4 +61,17 @@ TEST(t2,case4){
     EXPECT_CALL(mock, add()).InSequence(s1).WillOnce(Return(6));
     mock.getS();
     mock.add();
+
+    EXPECT_CALL(mock, setParam(_)).Times(AtLeast(1))
+        .WillOnce(DoAll(SetArgumentPointee<0>(5),Return()));//Side effect
+    mock.setParam(&a);
+    EXPECT_EQ(5,a);
+
+    ON_CALL(mock, add2(_)).WillByDefault(Return(120));
+    ON_CALL(mock, add2(0)).WillByDefault(Return(10));
+    ON_CALL(mock, add2(Gt(0))).WillByDefault(Return(20));
+    EXPECT_CALL(mock,add2(_)).Times(AnyNumber());
+    EXPECT_EQ(10,mock.add2(0));
+    EXPECT_EQ(20,mock.add2(1));
+    EXPECT_EQ(120,mock.add2(-1));
 }
