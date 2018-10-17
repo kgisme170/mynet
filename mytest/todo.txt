@@ -17,3 +17,12 @@ META-INF\services\java.sql.Driver
 grpc
 
 spark-submit --jars streaming/target/streaming-1.0-SNAPSHOT.jar --class structstream streaming/target/streaming-1.0-SNAHOT.jar
+
+启动集群:
+1. 启动Master
+$SPARK_HOME/sbin/start-master.sh
+
+2. 启动工作节点
+$SPARK_HOME/sbin/spark-clas org.apache.spark.deploy.worker.Worker<Spark-Master> &
+
+这个Spark-Master就是Spark URL，在用户界面顶端出现的Spark Master at:
