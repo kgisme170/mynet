@@ -13,14 +13,14 @@ object streamlog {
     // Create the FileInputDStream on the directory and use the
     // stream to count words in new files created
     //如果目录中有新创建的文件，则读取
-    val lines = ssc.textFileStream("/Users/x/temp")
+    val lines = ssc.textFileStream("/tmp/tmp1")
     //分割为单词
     val words = lines.flatMap(_.split(" "))
     //统计单词出现次数
     val wordCounts = words.map(x => (x, 1)).reduceByKey(_ + _)
 
     //set the Checkpoint directory
-    ssc.checkpoint("/Users/x/temp")
+    ssc.checkpoint("/tmp")
     val wins = lines.window(Seconds(30), Seconds(10))
     val winCount = wins.count()
 
