@@ -5,7 +5,7 @@ object ch2 extends App{
   var sparkConf = new SparkConf()
     .setAppName("myapp")
     .setMaster("local[4]")
-    //.setJars(Array("."))
+    //.setJars(Array("."))//会在当前目录寻找一个叫做/jars的目录，然后继续找执行的jar包
     .set("spark.executor.memory", "1g")
   println("创建streaming context")
   val streamCtx = new StreamingContext(sparkConf, Seconds(2))
