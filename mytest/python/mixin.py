@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 class foobase:
     def hello(self):
         print 'base hello'

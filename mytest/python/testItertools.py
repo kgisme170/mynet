@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import itertools
 for e in itertools.repeat('a',8):
     print e

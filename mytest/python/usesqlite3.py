@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import sqlite3
 from pprint import pprint
 conn=sqlite3.connect('d:\\mytestdb')

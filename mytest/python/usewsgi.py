@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import wsgiref
 from wsgiref.simple_server import make_server
 def application(environ, start_response):

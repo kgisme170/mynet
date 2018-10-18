@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 class m(object):
     def set_age(self,a):
         self._age=a

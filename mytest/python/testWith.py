@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 class Context(object):
     def __init__(self):
         print("my is init")

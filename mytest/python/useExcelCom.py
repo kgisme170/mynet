@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import win32com.client as win32
 from Tkinter import Tk
 from tkMessageBox import showwarning

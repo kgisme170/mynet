@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import hashlib
 import base64
 md5=hashlib.md5()

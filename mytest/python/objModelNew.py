@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 class A(object): # 从object继承的新的对象模型，继承类广度优先搜索父类的方法
     def f(self):
         print 'A f'

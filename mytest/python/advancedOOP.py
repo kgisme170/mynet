@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from types import MethodType
 class My(object):
 #    __slots__=('name','age')

@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import re
 #print re.match("?([0-9]{2})*","a123456").group()
 print re.match("([0-9]{2})*","123456").groups()

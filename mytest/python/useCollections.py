@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 from collections import namedtuple,deque,defaultdict,OrderedDict,Counter
 p=namedtuple('Point',['x','y'])
 print p

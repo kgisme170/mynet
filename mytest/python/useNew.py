@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*- 
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 #网上看到object这个基本类型的定义__new__这个基本类型的方法是@staticmethod
 #class object:
 #    @staticmethod

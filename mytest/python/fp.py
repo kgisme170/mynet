@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import functools
 l=map(lambda x:x*x,range(1,20))
 print l

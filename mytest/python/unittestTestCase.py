@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import unittest
 class mytest(unittest.TestCase):
     def __init__(self,methodName='runTest'):
