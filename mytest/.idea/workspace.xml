@@ -4,9 +4,13 @@
     <bookmark url="file://$PROJECT_DIR$/spark_remote/src/main/java/testMap.java" line="16" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cpp/cpp14/autoReturn.cpp" afterDir="false" />
+    <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="ok">
+      <change afterPath="$PROJECT_DIR$/streaming/src/main/scala/useFlume.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/streaming/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,72 +39,75 @@
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.15" value="3" />
-          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="4" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="3" />
           <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Makefile" value="4" />
-          <entry key="SConscript" value="26" />
-          <entry key="SConstruct" value="2" />
+          <entry key="SConscript" value="29" />
+          <entry key="SConstruct" value="4" />
           <entry key="c" value="13" />
           <entry key="class" value="7" />
-          <entry key="cpp" value="43" />
-          <entry key="h" value="3" />
-          <entry key="java" value="41" />
+          <entry key="cpp" value="54" />
+          <entry key="h" value="4" />
+          <entry key="java" value="43" />
           <entry key="json" value="1" />
           <entry key="makefile" value="1" />
           <entry key="py" value="2" />
-          <entry key="scala" value="38" />
-          <entry key="sh" value="9" />
+          <entry key="scala" value="47" />
+          <entry key="sh" value="12" />
           <entry key="testString01" value="1" />
           <entry key="thrift" value="6" />
-          <entry key="txt" value="5" />
-          <entry key="xml" value="22" />
+          <entry key="txt" value="6" />
+          <entry key="xml" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Bash" value="1" />
-          <entry key="C++" value="59" />
+          <entry key="Bash" value="4" />
+          <entry key="C++" value="71" />
           <entry key="CLASS" value="7" />
-          <entry key="JAVA" value="41" />
+          <entry key="JAVA" value="43" />
           <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="54" />
+          <entry key="PLAIN_TEXT" value="60" />
           <entry key="Python" value="1" />
-          <entry key="Scala" value="38" />
-          <entry key="XML" value="22" />
+          <entry key="Scala" value="47" />
+          <entry key="XML" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Makefile" value="20" />
-          <entry key="SConscript" value="485" />
-          <entry key="SConstruct" value="18" />
+          <entry key="SConscript" value="611" />
+          <entry key="SConstruct" value="146" />
           <entry key="c" value="5" />
-          <entry key="cpp" value="7435" />
+          <entry key="cpp" value="12961" />
           <entry key="dummy" value="1" />
-          <entry key="java" value="2931" />
-          <entry key="scala" value="3268" />
-          <entry key="sh" value="479" />
+          <entry key="java" value="3585" />
+          <entry key="scala" value="5231" />
+          <entry key="sh" value="560" />
           <entry key="thrift" value="13" />
-          <entry key="txt" value="105" />
-          <entry key="xml" value="76" />
+          <entry key="txt" value="415" />
+          <entry key="xml" value="78" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="445" />
-          <entry key="C++" value="7440" />
-          <entry key="JAVA" value="2931" />
-          <entry key="PLAIN_TEXT" value="676" />
-          <entry key="Scala" value="3268" />
-          <entry key="XML" value="76" />
+          <entry key="Bash" value="526" />
+          <entry key="C++" value="12966" />
+          <entry key="JAVA" value="3585" />
+          <entry key="PLAIN_TEXT" value="1240" />
+          <entry key="Scala" value="5231" />
+          <entry key="XML" value="78" />
         </counts>
       </usages-collector>
     </session>
@@ -165,7 +172,94 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utilities/sparkConfig/runFlume.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/useFlume.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/streaming/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-244">
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/streamlog.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="927">
+              <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/streaming/src/main/java/ch1Java.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="713">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/ch1.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/ch31.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -195,6 +289,8 @@
       <find>condition</find>
       <find>template&lt;templ</find>
       <find>make_index_sequence</find>
+      <find>local[</find>
+      <find>Accumulators</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/java_local</dir>
@@ -207,28 +303,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cpp/usethrift/student.thrift" />
-        <option value="$PROJECT_DIR$/cpp/usethrift/worker.thrift" />
-        <option value="$PROJECT_DIR$/cpp/usethrift/build.sh" />
-        <option value="$PROJECT_DIR$/cpp/grpc/SConscript" />
-        <option value="$PROJECT_DIR$/cpp/usethrift/SConscript" />
-        <option value="$PROJECT_DIR$/linux/os/SConscript" />
-        <option value="$PROJECT_DIR$/cpp/os/useasm.c" />
-        <option value="$PROJECT_DIR$/linux/module/Makefile" />
-        <option value="$PROJECT_DIR$/cpp/jni/usejclass.cpp" />
-        <option value="$PROJECT_DIR$/cpp/jni/SConscript" />
-        <option value="$PROJECT_DIR$/cpp/SConstruct" />
-        <option value="$PROJECT_DIR$/java_mr/src/main/java/WordCount1.java" />
-        <option value="$PROJECT_DIR$/java_mr/src/main/java/w1.java" />
-        <option value="$PROJECT_DIR$/java_mr/src/main/java/WordCount2.java" />
-        <option value="$PROJECT_DIR$/java_mr/src/main/java/WordCount3.java" />
-        <option value="$PROJECT_DIR$/java_mr/src/main/java/w2.java" />
-        <option value="$PROJECT_DIR$/spark_remote/src/main/java/aggregate_.java" />
-        <option value="$PROJECT_DIR$/java_mr/src/main/scala/wc01.scala" />
-        <option value="$PROJECT_DIR$/java_mr/src/main/java/w1_args.java" />
-        <option value="$PROJECT_DIR$/java_mr/pom.xml" />
-        <option value="$PROJECT_DIR$/java_mr/src/main/cpp/dfsio.cpp" />
-        <option value="$PROJECT_DIR$/java_mr/src/main/python/mapper.py" />
         <option value="$PROJECT_DIR$/java_mr/src/main/java/HowToRun.txt" />
         <option value="$PROJECT_DIR$/java_mr/src/main/python/HowToRun.txt" />
         <option value="$PROJECT_DIR$/java_mr/src/main/cpp/w.cpp" />
@@ -258,12 +332,44 @@
         <option value="$PROJECT_DIR$/cpp/cpp17/useVariadic.cpp" />
         <option value="$PROJECT_DIR$/cpp/cpp14/indexSequence.cpp" />
         <option value="$PROJECT_DIR$/cpp/datastructure/dj.cpp" />
+        <option value="$PROJECT_DIR$/cpp/gtest/gtest02.cpp" />
+        <option value="$PROJECT_DIR$/cpp/gtest/gtest01.cpp" />
+        <option value="$PROJECT_DIR$/cpp/gtest/gtest03.cpp" />
+        <option value="$PROJECT_DIR$/cpp/gtest/gtest03_valueTypeParam.cpp" />
+        <option value="$PROJECT_DIR$/cpp/gtest/SConscript" />
+        <option value="$PROJECT_DIR$/cpp/gtest/gtest04_mock.cpp" />
+        <option value="$PROJECT_DIR$/cpp/gtest/gtest05_mock.cpp" />
+        <option value="$PROJECT_DIR$/cpp/testcpp.sh" />
+        <option value="$PROJECT_DIR$/cpp/SConstruct" />
+        <option value="$PROJECT_DIR$/cpp/testgmock.sh" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/structstream.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/streamsocket.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/ch2.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/streamlog.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/ch1.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/java/ch1java.java" />
+        <option value="$PROJECT_DIR$/streaming/src/main/java/ch1Java.java" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/ch31.scala" />
+        <option value="$PROJECT_DIR$/todo.txt" />
+        <option value="$PROJECT_DIR$/utilities/sparkConfig/runFlume.sh" />
+        <option value="$PROJECT_DIR$/streaming/pom.xml" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/useFlume.scala" />
       </list>
     </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="streaming" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="streaming" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -281,6 +387,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -288,18 +396,50 @@
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538410451820" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539993497263" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -324,39 +464,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.wc01">
-    <configuration name="actor01" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="actor01" />
-      <module name="scala_local" />
+  <component name="RunManager" selected="Application.useFlume">
+    <configuration name="ch1" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="ch1" />
+      <module name="streaming" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pingpong" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="pingpong" />
-      <module name="scala_local" />
+    <configuration name="ch2" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="ch2" />
+      <module name="streaming" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sql" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="sql" />
-      <module name="spark_remote" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spark_remote" />
+    <configuration name="ch31" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="ch31" />
+      <module name="streaming" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testvolatile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="testvolatile" />
-      <module name="java_local" />
+    <configuration name="streamsocket" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="streamsocket" />
+      <module name="streaming" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="wc01" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="wc01" />
-      <module name="java_mr" />
+    <configuration name="useFlume" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="useFlume" />
+      <module name="streaming" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -376,19 +515,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.testvolatile" />
-      <item itemvalue="Application.sql" />
-      <item itemvalue="Application.pingpong" />
-      <item itemvalue="Application.actor01" />
-      <item itemvalue="Application.wc01" />
+      <item itemvalue="Application.streamsocket" />
+      <item itemvalue="Application.ch2" />
+      <item itemvalue="Application.ch1" />
+      <item itemvalue="Application.ch31" />
+      <item itemvalue="Application.useFlume" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.wc01" />
-        <item itemvalue="Application.actor01" />
-        <item itemvalue="Application.pingpong" />
-        <item itemvalue="Application.sql" />
-        <item itemvalue="Application.testvolatile" />
+        <item itemvalue="Application.useFlume" />
+        <item itemvalue="Application.ch31" />
+        <item itemvalue="Application.ch1" />
+        <item itemvalue="Application.ch2" />
+        <item itemvalue="Application.streamsocket" />
       </list>
     </recent_temporary>
   </component>
@@ -409,160 +548,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00029" summary="ok">
-      <created>1535114427563</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1535114427563</updated>
-    </task>
-    <task id="LOCAL-00030" summary="ok">
-      <created>1535254841438</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1535254841438</updated>
-    </task>
-    <task id="LOCAL-00031" summary="ok">
-      <created>1535254858776</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1535254858776</updated>
-    </task>
-    <task id="LOCAL-00032" summary="ok">
-      <created>1535255370580</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1535255370580</updated>
-    </task>
-    <task id="LOCAL-00033" summary="ok">
-      <created>1535255382571</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1535255382571</updated>
-    </task>
-    <task id="LOCAL-00034" summary="ok">
-      <created>1535256889163</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1535256889163</updated>
-    </task>
-    <task id="LOCAL-00035" summary="ok">
-      <created>1535258236040</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1535258236040</updated>
-    </task>
-    <task id="LOCAL-00036" summary="ok">
-      <created>1535258868825</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1535258868825</updated>
-    </task>
-    <task id="LOCAL-00037" summary="ok">
-      <created>1535259324380</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1535259324380</updated>
-    </task>
-    <task id="LOCAL-00038" summary="ok">
-      <created>1535259535591</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1535259535591</updated>
-    </task>
-    <task id="LOCAL-00039" summary="ok">
-      <created>1535260747579</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1535260747579</updated>
-    </task>
-    <task id="LOCAL-00040" summary="ok">
-      <created>1535260844900</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1535260844900</updated>
-    </task>
-    <task id="LOCAL-00041" summary="ok">
-      <created>1535269180734</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1535269180734</updated>
-    </task>
-    <task id="LOCAL-00042" summary="ok">
-      <created>1535270291827</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1535270291827</updated>
-    </task>
-    <task id="LOCAL-00043" summary="ok">
-      <created>1535270321562</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1535270321562</updated>
-    </task>
-    <task id="LOCAL-00044" summary="ok">
-      <created>1535277595169</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1535277595169</updated>
-    </task>
-    <task id="LOCAL-00045" summary="ok">
-      <created>1535776444614</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1535776444614</updated>
-    </task>
-    <task id="LOCAL-00046" summary="ok">
-      <created>1535780451048</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1535780451049</updated>
-    </task>
-    <task id="LOCAL-00047" summary="ok">
-      <created>1535780457404</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1535780457404</updated>
-    </task>
-    <task id="LOCAL-00048" summary="ok">
-      <created>1535783141701</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1535783141701</updated>
-    </task>
-    <task id="LOCAL-00049" summary="ok">
-      <created>1535783152778</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1535783152778</updated>
-    </task>
-    <task id="LOCAL-00050" summary="ok">
-      <created>1535788308068</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1535788308069</updated>
     </task>
     <task id="LOCAL-00051" summary="ok">
       <created>1535788675282</created>
@@ -753,7 +738,161 @@
       <option name="project" value="LOCAL" />
       <updated>1537029647985</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="ok">
+      <created>1538410471746</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1538410471746</updated>
+    </task>
+    <task id="LOCAL-00079" summary="ok">
+      <created>1538446157151</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1538446157151</updated>
+    </task>
+    <task id="LOCAL-00080" summary="ok">
+      <created>1538471195505</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1538471195505</updated>
+    </task>
+    <task id="LOCAL-00081" summary="ok">
+      <created>1538472183630</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1538472183630</updated>
+    </task>
+    <task id="LOCAL-00082" summary="ok">
+      <created>1538505909474</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1538505909477</updated>
+    </task>
+    <task id="LOCAL-00083" summary="ok">
+      <created>1538536303558</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1538536303559</updated>
+    </task>
+    <task id="LOCAL-00084" summary="ok">
+      <created>1538606526311</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1538606526313</updated>
+    </task>
+    <task id="LOCAL-00085" summary="ok">
+      <created>1538609736004</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1538609736005</updated>
+    </task>
+    <task id="LOCAL-00086" summary="ok">
+      <created>1538626307576</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1538626307576</updated>
+    </task>
+    <task id="LOCAL-00087" summary="ok">
+      <created>1538689615160</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1538689615160</updated>
+    </task>
+    <task id="LOCAL-00088" summary="ok">
+      <created>1538695804216</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1538695804216</updated>
+    </task>
+    <task id="LOCAL-00089" summary="ok">
+      <created>1538701301142</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1538701301142</updated>
+    </task>
+    <task id="LOCAL-00090" summary="ok">
+      <created>1538701352166</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1538701352166</updated>
+    </task>
+    <task id="LOCAL-00091" summary="ok">
+      <created>1538701634001</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1538701634001</updated>
+    </task>
+    <task id="LOCAL-00092" summary="ok">
+      <created>1539789502236</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1539789502247</updated>
+    </task>
+    <task id="LOCAL-00093" summary="ok">
+      <created>1539791919577</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1539791919577</updated>
+    </task>
+    <task id="LOCAL-00094" summary="ok">
+      <created>1539792643954</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1539792643955</updated>
+    </task>
+    <task id="LOCAL-00095" summary="ok">
+      <created>1539954173200</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1539954173200</updated>
+    </task>
+    <task id="LOCAL-00096" summary="ok">
+      <created>1539954223117</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1539954223117</updated>
+    </task>
+    <task id="LOCAL-00097" summary="ok">
+      <created>1539955518498</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1539955518498</updated>
+    </task>
+    <task id="LOCAL-00098" summary="ok">
+      <created>1539955896059</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1539955896059</updated>
+    </task>
+    <task id="LOCAL-00099" summary="ok">
+      <created>1539965226891</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1539965226892</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TodoView">
@@ -766,9 +905,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="958" extended-state="6" />
+    <frame x="67" y="25" width="1837" height="949" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23260991" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25547445" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -778,15 +918,15 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49354294" weight="0.2920354" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49017406" weight="0.2920354" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32869786" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.48792812" weight="0.4622057" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.51207185" side_tool="true" weight="0.4323641" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.48680517" weight="0.39190897" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.51319486" side_tool="true" weight="0.39190897" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.4924875" weight="0.3283767" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="10" sideWeight="0.49073553" visible="true" weight="0.27757126" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49073553" visible="true" weight="0.25313282" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -794,7 +934,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.19143017" />
+      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.19258843" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -838,149 +978,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/dfsio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/grep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/w2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/HowToRun.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/jsoncsv.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java_mr/src/main/cpp/w.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java_mr/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark_remote/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1840">
-          <caret line="107" lean-forward="true" selection-start-line="81" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java_mr/src/main/cpp/build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/accumulator.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/mailFilter.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/Makefile.testString01">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/objectModel01.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/stdtls.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/templateContainer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/testSetDifference.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/testStdThreadExit.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/testStringCow.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/testTemplate.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/testTraits.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/testVariadic.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/threadMutex.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-759" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/typeDeductionForInitializerlist.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/usefuture.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="5" lean-forward="true" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp17/typeDeductionForAutoCpp17.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cpp/cpp14/conditional.cpp" />
     <entry file="file://$PROJECT_DIR$/cpp/cpp14/usec11.c" />
     <entry file="file://$PROJECT_DIR$/cpp/cpp11/atomicVsMutex.cpp">
@@ -1004,13 +1001,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/autoReturn.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/autoReturn.cpp" />
     <entry file="file://$PROJECT_DIR$/cpp/cpp11/qualifiedEnum.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1058,13 +1049,7 @@
         <state relative-caret-position="-138" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp98/fcntlMonitor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp98/fcntlMonitor.cpp" />
     <entry file="file://$PROJECT_DIR$/cpp/os/usePipe.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -1100,24 +1085,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp17/SConscript">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cpp/cpp17/useVariadic.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/grpc/SConscript">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -1144,6 +1115,189 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="146" column="13" lean-forward="true" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp17/SConscript">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" lean-forward="true" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/gtest/gtest01.cpp" />
+    <entry file="file://$PROJECT_DIR$/cpp/gtest/gtest02.cpp" />
+    <entry file="file://$PROJECT_DIR$/cpp/gtest/gtest03.cpp" />
+    <entry file="file://$PROJECT_DIR$/cpp/gtest/gtest03_valueTypeParam.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-690">
+          <caret selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/include/gmock/gmock-generated-function-mockers.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-983">
+          <caret line="48" column="6" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/testcpp.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/gtest/SConscript">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="108" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/gtest/gtest04_mock.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/gtest/gtest05_mock.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1541">
+          <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/testgmock.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/structstream.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/ch2.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/gtest/gtest01_setup.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/gtest/gtest02_envThrowFormat.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="72" selection-start-line="72" selection-end-line="76" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/streamsocket.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/SConstruct">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/grpc/SConscript">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/streamlog.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="927">
+          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/java/ch1Java.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/ch1.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/ch31.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilities/sparkConfig/runFlume.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-244">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/useFlume.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
