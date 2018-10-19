@@ -2,8 +2,6 @@ spark-submit --driver-class-path /home/a/.m2/repository/mysql/mysql-connector-ja
 ---------------------问题
 elephant bird->pb
 
-streamsocket.scala
-
 $SPARK_HOME/sbin/start-thrift-server.sh --master sparkMaster
 beeline
 
@@ -15,8 +13,6 @@ hive多个客户端，共享数据和udf
 https://dzone.com/articles/hadoop-word-count-program-innbspscala
 META-INF\services\java.sql.Driver
 grpc
-
-spark-submit --jars streaming/target/streaming-1.0-SNAPSHOT.jar --class structstream streaming/target/streaming-1.0-SNAHOT.jar
 
 启动集群:
 1. 启动Master
