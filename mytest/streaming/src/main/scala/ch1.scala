@@ -9,8 +9,8 @@ object ch1
   def main(args:Array[String])
   {
     val sc = new StreamingContext(new SparkConf().setMaster("local").setAppName("socketstream"),Seconds(10))
-    val mystreamRDD = sc.socketTextStream("www.baidu.com",80)
-    mystreamRDD.print()
+    val ms = sc.socketTextStream("www.baidu.com",80)
+    ms.print()
     sc.start()
     sc.awaitTermination()
   }
