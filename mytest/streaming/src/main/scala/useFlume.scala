@@ -17,7 +17,6 @@ object useFlume {
     addresses(0) = new InetSocketAddress("localhost", 4949)
     addresses(1) = new InetSocketAddress("localhost", 4950)
     val flumeStream = FlumeUtils.createPollingStream(ctx, addresses, StorageLevel.MEMORY_AND_DISK_SER_2, 1000, 1)
-    //val os = new ObjectOutputStream(Console.out)
     flumeStream.foreachRDD((rdd: RDD[SparkFlumeEvent]) => {
       val array = rdd.collect()
       println("开始打印-----")
