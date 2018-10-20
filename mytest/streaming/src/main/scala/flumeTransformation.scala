@@ -11,7 +11,11 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
 object flumeTransformation {
   def main(args: Array[String]): Unit = {
     println("创建Spark配置")
-    val conf = new SparkConf().setAppName("Apache log transformer").setMaster("local[4]")
+    val conf = new SparkConf()
+      .setAppName("Apache log transformer")
+      .setMaster("local[4]")
+      .set("spark.executor.memory", "1g")
+      .set("spark.storage.memoryFraction", "0.4") // 40%内存给RDD
     val ctx = new StreamingContext(conf, Seconds(10))
     val addresses = new Array[InetSocketAddress](1)
     addresses(0) = new InetSocketAddress("localhost", 4949)
