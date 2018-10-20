@@ -1,13 +1,16 @@
 import akka.actor._
 
-case class CreateChild (name: String)
-case class Name (name: String)
+case class CreateChild(name: String)
+
+case class Name(name: String)
 
 class Child extends Actor {
   var name = "No name"
+
   override def postStop: Unit = {
     println(s"D'oh! They killed me ($name): ${self.path}")
   }
+
   def receive = {
     case Name(name) => this.name = name
     case _ => println(s"Child $name got message.")
@@ -19,15 +22,15 @@ class Parent extends Actor {
     case CreateChild(name) =>
       // Parent creates a new Child here
       println(s"Parent about to create Child ($name) ...")
-      val child = context.actorOf(Props[Child], name=s"$name")
+      val child = context.actorOf(Props[Child], name = s"$name")
       child ! Name(name)
     case _ => println(s"Parent got some other message.")
   }
 }
 
-object children extends App{
+object children extends App {
   val actorSystem = ActorSystem("ParentChildTest")
-  val parent = actorSystem.actorOf(Props[Parent], name="Parent")
+  val parent = actorSystem.actorOf(Props[Parent], name = "Parent")
 
   // send messages to Parent to create to child actors
   parent ! CreateChild("XiaoMing")

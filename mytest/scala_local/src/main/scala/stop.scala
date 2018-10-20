@@ -1,10 +1,9 @@
 import akka.actor._
 import akka.pattern.gracefulStop
-import scala.concurrent.{Await, ExecutionContext, Future}
-import scala.concurrent.duration._
-import scala.language.postfixOps
 
-case object TestActorStop
+import scala.concurrent.duration._
+import scala.concurrent.{Await, Future}
+import scala.language.postfixOps
 
 class TestActor extends Actor {
   def receive = {
@@ -12,12 +11,17 @@ class TestActor extends Actor {
       context.stop(self)
     case _ => println("TestActor got message")
   }
-  override def postStop {println("TestActor: postStop")}
+
+  override def postStop {
+    println("TestActor: postStop")
+  }
 }
 
-object stop extends App{
+case object TestActorStop
+
+object stop extends App {
   val system = ActorSystem("GracefulStopTest")
-  val testActor = system.actorOf(Props[TestActor], name="TestActor")
+  val testActor = system.actorOf(Props[TestActor], name = "TestActor")
   // try to stop the actor graceful
   try {
     val stopped: Future[Boolean] = gracefulStop(testActor, 2 seconds, TestActorStop)

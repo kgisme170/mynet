@@ -4,21 +4,24 @@ import org.apache.spark.api.java.function.Function2;
 import org.apache.spark.api.java.function.PairFunction;
 import org.apache.spark.storage.StorageLevel;
 import org.apache.spark.streaming.Durations;
-import org.apache.spark.streaming.api.java.*;
+import org.apache.spark.streaming.api.java.JavaDStream;
+import org.apache.spark.streaming.api.java.JavaPairDStream;
+import org.apache.spark.streaming.api.java.JavaReceiverInputDStream;
+import org.apache.spark.streaming.api.java.JavaStreamingContext;
 import scala.Tuple2;
 
 import java.util.Arrays;
 import java.util.Iterator;
 
 public class ch1Java {
-    public static void main(String[] s){
+    public static void main(String[] s) {
         System.out.println("spark 配置");
         SparkConf conf = new SparkConf();
         conf.setAppName("第一个JavaStream程序").setMaster("local[4]");
         System.out.println("创建stream context");
         JavaStreamingContext ctx = new JavaStreamingContext(conf, Durations.seconds(2));
         JavaReceiverInputDStream<String> lines =
-                ctx.socketTextStream("localhost",9087, StorageLevel.MEMORY_AND_DISK_SER_2());
+                ctx.socketTextStream("localhost", 9087, StorageLevel.MEMORY_AND_DISK_SER_2());
         JavaDStream<String> words = lines.flatMap(new FlatMapFunction<String, String>() {
             @Override
             public Iterator<String> call(String s) throws Exception {
@@ -41,7 +44,7 @@ public class ch1Java {
         ctx.start();
         try {
             ctx.awaitTermination();
-        }catch(InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }

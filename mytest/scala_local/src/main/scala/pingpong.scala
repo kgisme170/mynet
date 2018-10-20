@@ -1,20 +1,15 @@
 import akka.actor._
 
-case object PingMessage
-case object PongMessage
-case object StartMessage
-case object StopMessage
-
-class Ping(pong: ActorRef) extends Actor{
+class Ping(pong: ActorRef) extends Actor {
   var count = 0
-  def incrementAndPrint {count += 1; println(s"$count:ping")}
+
   def receive = {
     case StartMessage =>
       incrementAndPrint
       pong ! PongMessage
     case PingMessage =>
       incrementAndPrint
-      if(count > 99) {
+      if (count > 99) {
         sender ! StopMessage
         println("ping stopped")
         context.stop(self)
@@ -23,10 +18,15 @@ class Ping(pong: ActorRef) extends Actor{
         sender ! PongMessage
     case _ => println("Ping got unexpected information")
   }
+
+  def incrementAndPrint {
+    count += 1; println(s"$count:ping")
+  }
 }
 
 class Pong extends Actor {
   var count = 0
+
   def receive = {
     case StopMessage =>
       println("pong stopped")
@@ -39,9 +39,17 @@ class Pong extends Actor {
   }
 }
 
-object pingpong extends App{
+case object PingMessage
+
+case object PongMessage
+
+case object StartMessage
+
+case object StopMessage
+
+object pingpong extends App {
   val system = ActorSystem("PingPongTest")
-  val pongActor = system.actorOf(Props[Pong], name="pong")
+  val pongActor = system.actorOf(Props[Pong], name = "pong")
   val pingActor = system.actorOf(Props(new Ping(pongActor)),
     name = "ping")
   pingActor ! StartMessage

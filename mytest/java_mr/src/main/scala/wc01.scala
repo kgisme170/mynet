@@ -44,4 +44,5 @@ object wc01 {
       output.collect(key, new IntWritable(sum.get()))
     }
   }
+
 }

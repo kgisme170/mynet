@@ -1,150 +1,147 @@
 object ch10 extends App {
 
-    trait _Logger {
-        def log(m: String)
+  val acct = new SavingsAccount with ConsoleLogger
+  val acct1 = new SavingsAccount with TimestampLogger with ShortLogger
+  val acct2 = new SavingsAccount with ShortLogger with TimestampLogger
+  val a3 = new {
+    val filename = "myapp.log"
+  } with SavingsAccount with f1
+  val a4 = new SavingsAccount with f2 {
+    val filename = "myapp.log"
+  }
+
+  trait _Logger {
+    def log(m: String)
+  }
+
+  trait Logger {
+    def log(msg: String) {
+      println(msg)
     }
+  }
+  acct.log("ab")
 
-    class _ConsoleLogger extends _Logger {
-        override def log(m: String) {
-            println(m)
-        }
+  trait ConsoleLogger extends Logger {
+    override def log(msg: String) {
+      println(msg)
     }
+  }
 
-    trait Logger {
-        def log(msg: String) {
-            println(msg)
-        }
+  trait TimestampLogger extends Logger {
+    override def log(msg: String) {
+      super.log(new java.util.Date() + " " + msg)
     }
+  }
 
-    trait ConsoleLogger extends Logger {
-        override def log(msg: String) {
-            println(msg)
-        }
+  trait ShortLogger extends Logger {
+    val maxLength = 15
+
+    override def log(msg: String) {
+      super.log(
+        if (msg.length <= maxLength) msg else msg.substring(0, maxLength - 3) + "..."
+      )
     }
+  }
 
-    class Account
+  trait l1 {
+    def log(msg: String)
+  }
+  acct1.log("ab")
+  acct2.log("ab")
 
-    class SavingsAccount(val balance: Int = 3) extends Account with Logger {
-        def withdraw(amount: Double) {
-            if (amount > balance) log("Insufficient funds")
-        }
+  trait l2 extends l1 {
+    abstract override def log(msg: String) {
+      super.log(new java.util.Date() + " " + msg)
     }
+  }
 
-    val acct = new SavingsAccount with ConsoleLogger
-    acct.log("ab")
+  trait l3 {
+    val maxLength = 15
 
-    trait TimestampLogger extends Logger {
-        override def log(msg: String) {
-            super.log(new java.util.Date() + " " + msg)
-        }
+    def log(msg: String)
+
+    def info(msg: String) {
+      log("INFO: " + msg)
     }
+  }
 
-    trait ShortLogger extends Logger {
-        val maxLength = 15
+  trait l5 extends Logger {
+    val maxLength: Int
 
-        override def log(msg: String) {
-            super.log(
-                if (msg.length <= maxLength) msg else msg.substring(0, maxLength - 3) + "..."
-            )
-        }
+    override def log(msg: String) {
+      super.log(
+        if (msg.length <= maxLength) msg else msg.substring(0, maxLength - 3) + "..."
+      )
     }
+  }
 
-    val acct1 = new SavingsAccount with TimestampLogger with ShortLogger
-    val acct2 = new SavingsAccount with ShortLogger with TimestampLogger
-    acct1.log("ab")
-    acct2.log("ab")
+  trait f1 extends Logger {
+    val filename: String
+    val out = new PrintStream(filename)
 
-    trait l1 {
-        def log(msg: String)
+    override def log(msg: String) {
+      out.println(msg);
+      out.flush()
     }
+  }
 
-    trait l2 extends l1 {
-        abstract override def log(msg: String) {
-            super.log(new java.util.Date() + " " + msg)
-        }
+  trait f2 extends Logger {
+    lazy val out = new PrintStream(filename)
+    val filename: String
+
+    override def log(msg: String) {
+      out.println(msg)
     }
+  }
 
-    trait l3 {
-        val maxLength = 15
-
-        def log(msg: String)
-
-        def info(msg: String) {
-            log("INFO: " + msg)
-        }
+  trait LoggerException extends Exception with Logger {
+    def log() {
+      log(getMessage())
     }
+  }
 
-    class s2 extends Account with l3 {
-        val balance = 10
+  import java.io._
 
-        override def log(msg: String) {
-            println(msg)
-        }
+  trait selfType1 extends Logger {
+    this: Exception =>
+    def log() {
+      log(getMessage())
     }
+  }
 
-    trait l5 extends Logger {
-        val maxLength: Int
-
-        override def log(msg: String) {
-            super.log(
-                if (msg.length <= maxLength) msg else msg.substring(0, maxLength - 3) + "..."
-            )
-        }
+  trait selfType2 extends Logger {
+    this: {def getMessage(): String} =>
+    def log() {
+      log(getMessage())
     }
+  }
 
-    class s3 extends Account with ConsoleLogger with l5 {
-        val maxLength = 20
+  class _ConsoleLogger extends _Logger {
+    override def log(m: String) {
+      println(m)
     }
+  }
 
-    import java.io._
+  class Account
 
-    trait f1 extends Logger {
-        val filename: String
-        val out = new PrintStream(filename)
-
-        override def log(msg: String) {
-            out.println(msg);
-            out.flush()
-        }
+  class SavingsAccount(val balance: Int = 3) extends Account with Logger {
+    def withdraw(amount: Double) {
+      if (amount > balance) log("Insufficient funds")
     }
+  }
 
-    val a3 = new {
-        val filename = "myapp.log"
-    } with SavingsAccount with f1
+  class s2 extends Account with l3 {
+    val balance = 10
 
-    trait f2 extends Logger {
-        val filename: String
-        lazy val out = new PrintStream(filename)
-
-        override def log(msg: String) {
-            out.println(msg)
-        }
+    override def log(msg: String) {
+      println(msg)
     }
+  }
 
-    val a4 = new SavingsAccount with f2 {
-        val filename = "myapp.log"
-    }
+  class s3 extends Account with ConsoleLogger with l5 {
+    val maxLength = 20
+  }
 
-    trait LoggerException extends Exception with Logger {
-        def log() {
-            log(getMessage())
-        }
-    }
-
-    class UnhappyException extends IOException with LoggerException
-
-    trait selfType1 extends Logger {
-        this: Exception =>
-        def log() {
-            log(getMessage())
-        }
-    }
-
-    trait selfType2 extends Logger {
-        this: {def getMessage(): String} =>
-        def log() {
-            log(getMessage())
-        }
-    }
+  class UnhappyException extends IOException with LoggerException
 
 }

@@ -1,5 +1,5 @@
-import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
+import org.apache.spark.{SparkConf, SparkContext}
 
 object streamlog {
   def main(args: Array[String]) {
@@ -24,7 +24,7 @@ object streamlog {
     val wins = lines.window(Seconds(30), Seconds(10))
     val winCount = wins.count()
 
-    val myDStream = lines.map(k=>(k,1))
+    val myDStream = lines.map(k => (k, 1))
     /*
     val countDS = myDStream.reduceByKeyAndWindow(
       {(x,y)=>x+y},
@@ -32,7 +32,7 @@ object streamlog {
       Seconds(30),
       Seconds(10))
     */
-    val dsCount = myDStream.countByValueAndWindow(Seconds(30),Seconds(10))
+    val dsCount = myDStream.countByValueAndWindow(Seconds(30), Seconds(10))
     //updateStateByKey? SequenceFile foreachRDD // ~路徑判斷 cogroup
     //getOrCreate檢查點
     //monit工具
@@ -41,13 +41,15 @@ object streamlog {
     //spark-submit --conf spark.executor.exraJavaOptions=-XX:+UserConcMarkSweepGC App.jar
     val conf = new SparkConf()
     val dir = "/tmp"
-    def createStreamingContext()={
+
+    def createStreamingContext() = {
       val sc = new SparkContext(conf)
       val ssc = new StreamingContext(sc, Seconds(1))
       ssc.checkpoint(dir)
       ssc
     }
-    StreamingContext.getOrCreate(dir,createStreamingContext)
+
+    StreamingContext.getOrCreate(dir, createStreamingContext)
     //打印结果
     wordCounts.print()
     //启动Spark Streaming

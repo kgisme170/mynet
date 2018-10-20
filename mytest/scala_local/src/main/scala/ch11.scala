@@ -7,6 +7,15 @@ object ch11 extends App {
   val a1 = 1
   print(-a1 toString)
   println(1 :: 2 :: Nil)
+  val c1 = new Complex(1, 2)
+  val c2 = new Complex(2, -3)
+  val sum = c1 + c2
+  val result = Delta(3, 3) * Delta(4, 4)
+  val Number(n) = "1729"
+  println("(" + c1 + ")+ (" + c2 + ")=" + sum)
+  var Complex(a, b) = c1 + c2
+  println(a)
+  println(b)
 
   class Complex(val real: Int, val imaginary: Int) {
     def +(operand: Complex): Complex = {
@@ -18,30 +27,20 @@ object ch11 extends App {
     }
   }
 
-  object Complex {
-    def unapply(input: Complex) = Some((input.real, input.imaginary))
-  }
-
-  val c1 = new Complex(1, 2)
-  val c2 = new Complex(2, -3)
-  val sum = c1 + c2
-  println("(" + c1 + ")+ (" + c2 + ")=" + sum)
-  var Complex(a, b) = c1 + c2
-  println(a)
-  println(b)
-
   class Delta(val x: Int, val y: Int) {
     def *(operand: Delta): Int = {
       x * operand.x + y * operand.y
     }
   }
 
+  object Complex {
+    def unapply(input: Complex) = Some((input.real, input.imaginary))
+  }
+  println(result)
+
   object Delta {
     def apply(x: Int, y: Int) = new Delta(x, y)
   }
-
-  val result = Delta(3, 3) * Delta(4, 4)
-  println(result)
 
   object Number {
     def unapply(input: String): Option[Int] =
@@ -55,8 +54,6 @@ object ch11 extends App {
   object IsCompound {
     def unapply(input: String) = input.contains(" ")
   }
-
-  val Number(n) = "1729"
   println(n)
 
   object Name {

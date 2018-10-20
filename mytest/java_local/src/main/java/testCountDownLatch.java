@@ -1,20 +1,21 @@
-import java.util.concurrent.*;
-public class testCountDownLatch{
-    public static void main(String args[]){
+import java.util.concurrent.CountDownLatch;
+
+public class testCountDownLatch {
+    public static void main(String args[]) {
         final CountDownLatch latch = new CountDownLatch(2);
-        new Thread(){
-            public void run(){
+        new Thread() {
+            public void run() {
                 latch.countDown();
             }
         }.start();
-        new Thread(){
-            public void run(){
+        new Thread() {
+            public void run() {
                 latch.countDown();
             }
         }.start();
-        try{
+        try {
             latch.await();
-        }catch(InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }

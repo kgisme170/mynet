@@ -1,10 +1,14 @@
-object ch07 extends App{}
-package object people{
-    val defaultName="John Q.Public"
+  class Person {
+    var name = defaultName
+  }object ch07 extends App {}
+
+package object people {
+  val defaultName = "John Q.Public"
 }
-package people{
-    class Person{
-        var name=defaultName
-    }
+package people {
+
+
+
 }
-package my.you.he{}
+
+package my.you.he {}

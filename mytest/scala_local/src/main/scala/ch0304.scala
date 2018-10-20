@@ -32,49 +32,43 @@ object ch0304 extends App {
   val matrix = Array.ofDim[Double](3, 4)
   matrix(2)(3) = 42
   println(matrix)
-  var triangle = new Array[Array[Int]](10)
+  val command = ArrayBuffer("ls", "-al", "/home/my")
   for (i <- 0 until triangle.length)
     triangle(i) = new Array[Int](i + 1)
 
   import scala.collection.JavaConversions.bufferAsJavaList
   import scala.collection.mutable.ArrayBuffer
-
-  val command = ArrayBuffer("ls", "-al", "/home/my")
   val pb = new ProcessBuilder(command)
-
-  import scala.collection._
-  import scala.collection.JavaConversions.asScalaBuffer
-  import scala.collection.mutable.Buffer
-
   val cmd: Buffer[String] = pb.command()
-  var scores = immutable.SortedMap("Alice" -> 10, "Bob" -> 3, "Cindy" -> 8)
-  var s2 = Map("Alice" -> 10)
+
+  import scala.collection.JavaConversions.asScalaBuffer
+  import scala.collection._
+  import scala.collection.mutable.Buffer
   val s3 = mutable.HashMap[String, Int]()
+  val s4 = s3 + ("my" -> 8)
+  val props: scala.collection.Map[String, String] = System.getProperties()
+  val attrs = Map(FAMILY -> "Serif", SIZE -> 12)
   println(s2.getOrElse("bob", 0))
   s3 += ("Bob" -> 10, "Fred" -> 7)
-  val s4 = s3 + ("my" -> 8)
+  val t = (2, 3, 4)
   println(scores.keySet)
   for (v <- scores.values) println(v)
   for ((k, v) <- scores) printf("%s,%d\n", k, v)
 
   import scala.collection.JavaConversions.mapAsScalaMap
-
-  var s5: mutable.Map[String, Int] = new java.util.TreeMap[String, Int]
+  val (first, second, _) = t
 
   import scala.collection.JavaConversions.propertiesAsScalaMap
+  val symbols = Array(1, 2, 3)
 
-  val props: scala.collection.Map[String, String] = System.getProperties()
-
-  import scala.collection.JavaConversions.mapAsJavaMap
   import java.awt.font.TextAttribute._
-
-  val attrs = Map(FAMILY -> "Serif", SIZE -> 12)
+  val counts = Array(3, 4, 5)
   //val font=new java.awt.Font(attrs)
   println((2, 4, 6)._2)
-  val t = (2, 3, 4)
-  val (first, second, _) = t
+  var triangle = new Array[Array[Int]](10)
+  var scores = immutable.SortedMap("Alice" -> 10, "Bob" -> 3, "Cindy" -> 8)
   println(first)
-  val symbols = Array(1, 2, 3)
-  val counts = Array(3, 4, 5)
+  var s2 = Map("Alice" -> 10)
+  var s5: mutable.Map[String, Int] = new java.util.TreeMap[String, Int]
   println(symbols.zip(counts))
 }

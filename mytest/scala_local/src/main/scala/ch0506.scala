@@ -1,26 +1,42 @@
 object ch0506 extends App {
+
+  val fred = new Person()
+  val obj = new p4("my", 2)
+  myCounter.increment
+  println(myCounter.current)
+  val chatter = new Network
+  val myFace = new Network
+  fred.age = 30
+  val fred2 = chatter.join("Fred")
+  val wilma = chatter.join("wilma")
+  val a = Account(3)
+  println(obj.description)
+
+  import scala.collection.mutable._
+  val b = Account(4)
+  val c = Account(30)
+  var myCounter = new Counter
+
   class Counter {
     private var value = 0
+
     def increment() {
       value += 1
     }
+
     def current = value
   }
 
-  var myCounter = new Counter
-  myCounter.increment
-  println(myCounter.current)
-
   class Person {
     private var privateAge = 0
+
     def age = privateAge
+
     def age_=(newValue: Int) {
       if (newValue > privateAge) privateAge = newValue
     }
   }
-
-  val fred = new Person()
-  fred.age = 30
+  fred2.contacts += wilma
 
   class p3 {
     private var name = ""
@@ -45,16 +61,7 @@ object ch0506 extends App {
     def description = name + age
   }
 
-  val obj = new p4("my", 2)
-  println(obj.description)
-
-  import scala.collection.mutable._
-
   class Network {
-
-    class Member(val name: String) {
-      val contacts = new ArrayBuffer[Member]
-    }
 
     private val members = new ArrayBuffer[Member]
 
@@ -64,13 +71,13 @@ object ch0506 extends App {
       members += m
       m
     }
-  }
 
-  val chatter = new Network
-  val myFace = new Network
-  val fred2 = chatter.join("Fred")
-  val wilma = chatter.join("wilma")
-  fred2.contacts += wilma
+    class Member(val name: String) {
+      val contacts = new ArrayBuffer[Member]
+    }
+  }
+  println(a.deposit(20))
+  println(a.id)
 
   class Account(val Id: Int, initialBalance: Double = 1) {
     val id = Account.newUniqueNumber()
@@ -80,25 +87,19 @@ object ch0506 extends App {
       balance += amount
     }
   }
+  println(b.id)
 
   object Account {
     private var lastNumber = 0
+
+    def apply(initialBalance: Double) = {
+      new Account(newUniqueNumber(), initialBalance)
+    }
 
     private def newUniqueNumber() = {
       lastNumber += 1;
       lastNumber
     }
-
-    def apply(initialBalance: Double) = {
-      new Account(newUniqueNumber(), initialBalance)
-    }
   }
-
-  val a = Account(3)
-  println(a.deposit(20))
-  println(a.id)
-  val b = Account(4)
-  println(b.id)
-  val c = Account(30)
   println(c.id)
 }

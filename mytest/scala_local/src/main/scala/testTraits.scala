@@ -1,29 +1,29 @@
 object testTraits extends App {
 
-    trait Service {
-        def doAction(): Unit
-    }
+  val s = new ServiceImpl with BeforeServiceAspect with AfterServiceAspect
 
-    trait BeforeServiceAspect extends Service {
-        abstract override def doAction(): Unit = {
-            println("before doAction ... ")
-            super.doAction();
-        }
-    }
+  trait Service {
+    def doAction(): Unit
+  }
 
-    trait AfterServiceAspect extends Service {
-        abstract override def doAction(): Unit = {
-            super.doAction();
-            println("after doAction ... ");
-        }
+  trait BeforeServiceAspect extends Service {
+    abstract override def doAction(): Unit = {
+      println("before doAction ... ")
+      super.doAction();
     }
+  }
 
-    class ServiceImpl extends Service {
-        override def doAction() {
-            println("do job");
-        }
+  trait AfterServiceAspect extends Service {
+    abstract override def doAction(): Unit = {
+      super.doAction();
+      println("after doAction ... ");
     }
+  }
 
-    val s = new ServiceImpl with BeforeServiceAspect with AfterServiceAspect
-    s.doAction
+  class ServiceImpl extends Service {
+    override def doAction() {
+      println("do job");
+    }
+  }
+  s.doAction
 }
