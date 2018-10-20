@@ -1,0 +1,35 @@
+在flume 的conf 文件夹下新建 配置文件 avro.conf
+其内容如下：
+
+a1.sources = r1
+a1.sinks = k1
+a1.channels = c1
+
+# Describe/configure the source
+a1.sources.r1.type= avro
+a1.sources.r1.channels = c1
+a1.sources.r1.bind = 0.0.0.0
+a1.sources.r1.port = 4141
+
+# Describe the sink
+a1.sinks.k1.type= logger
+
+# Use a channel which buffers events in memory
+a1.channels.c1.type= memory
+a1.channels.c1.capacity = 1000
+a1.channels.c1.transactionCapacity = 100
+
+# Bind the source and sink to the channel
+a1.sources.r1.channels = c1
+a1.sinks.k1.channel = c1
+
+然后启动flume的这个avro服务器端的监听
+flume-ng agent --conf /home/a/Downloads/apache-flume-1.8.0-bin/conf -f avro.conf -n a1 -Dflume.root.logger=INFO,console
+
+创建一个数据采集的对象
+echo "hello world" > ~test.log
+
+启动flume的avro客户端，读取数据对象，并传送给服务器的source
+flume-ng avro-client -c /opt/apps/flume/conf -H `hostname` -p 4141 -F /opt/apps/flume/conf/test.log
+
+现在，服务器端的flume-ng agent在命令行下就会打印hello world
