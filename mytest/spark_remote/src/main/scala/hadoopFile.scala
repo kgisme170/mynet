@@ -5,10 +5,6 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkConf
 object hadoopFile extends App {
-  /*def oldApi(): Unit ={
-    import org.apache.hadoop.mapreduce.lib.input.KeyValueTextInputFormat
-    val input = sc.hadoopFile[Text,Text,KeyValueTextInputFormat]("test.json").map{case(x,y)=>(x.toString,y.toString)}
-  }*/
   val conf = new SparkConf().setMaster("local").setAppName("My App")
   val sc = new SparkContext(conf)
   val job = new Job()

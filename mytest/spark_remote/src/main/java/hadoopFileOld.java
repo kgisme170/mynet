@@ -6,7 +6,7 @@ import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import scala.Tuple2;
-public class hadoopFile_ {
+public class hadoopFileOld {
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("wordCount").setMaster("local");
         JavaSparkContext sc = new JavaSparkContext(conf);

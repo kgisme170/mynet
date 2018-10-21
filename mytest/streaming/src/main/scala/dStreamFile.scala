@@ -1,3 +1,6 @@
+import org.apache.hadoop.conf.Configuration
+import org.apache.hadoop.io._
+import org.apache.hadoop.mapred.{JobConf, TextOutputFormat}
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
@@ -11,6 +14,10 @@ object dStreamFile extends App {
   val countEachWord = words.reduceByKey(_ + _)
 
   data.saveAsTextFiles("/home/a/resultDir/data-", ".txt")
+  val hConf = new JobConf(new Configuration())
+  val oldClassOutput = classOf[TextOutputFormat[Text, Text]]
+
+  //
   countEachWord.print()
   ctx.start()
   ctx.awaitTermination()
