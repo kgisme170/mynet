@@ -2,7 +2,7 @@ import org.apache.spark.SparkConf
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
 object ch2 extends App {
-  val streamCtx = new StreamingContext(sparkConf, Seconds(2))
+  val streamCtx = new StreamingContext(new SparkConf().setMaster("local[4]").setAppName("ch2"), Seconds(2))
   println("创建streaming context")
   val lines = streamCtx.socketTextStream("localhost", 9087)
   val words = lines.flatMap(x => x.split(" "))
