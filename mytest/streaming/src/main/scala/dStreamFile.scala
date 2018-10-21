@@ -13,10 +13,16 @@ object dStreamFile extends App {
   val words = flatData.map((_, 1))
   val countEachWord = words.reduceByKey(_ + _)
 
-  data.saveAsTextFiles("/home/a/resultDir/data-", ".txt")
+  //data.saveAsTextFiles("/home/a/resultDir/data-", ".txt") 本地用户执行这一句
   val hConf = new JobConf(new Configuration())
   val oldClassOutput = classOf[TextOutputFormat[Text, Text]]
-
+  countEachWord.saveAsHadoopFiles(//hdfs用户
+    "hdfs://localhost:9000/myResult/data-",
+    "",
+    classOf[Text],
+    classOf[Text],
+    oldClassOutput,
+    hConf)
   //
   countEachWord.print()
   ctx.start()
