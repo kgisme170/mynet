@@ -10,6 +10,7 @@ object dStreamFile extends App {
   val words = flatData.map((_, 1))
   val countEachWord = words.reduceByKey(_ + _)
 
+  data.saveAsTextFiles("/home/a/resultDir/data-", ".txt")
   countEachWord.print()
   ctx.start()
   ctx.awaitTermination()

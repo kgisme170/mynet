@@ -1,7 +1,7 @@
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
-object streamsocket {
+object streamSocket {
   def main(args: Array[String]) {
     //Logger.getLogger("org.apache.spark").setLevel(Level.ERROR)
     //Logger.getLogger("org.eclipse.jetty.Server").setLevel(Level.OFF)
