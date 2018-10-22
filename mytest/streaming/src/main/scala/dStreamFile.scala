@@ -23,7 +23,6 @@ object dStreamFile extends App {
     classOf[Text],
     oldClassOutput,
     hConf)
-  //
   countEachWord.print()
   ctx.start()
   ctx.awaitTermination()
