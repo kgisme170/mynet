@@ -1,26 +1,19 @@
-import org.apache.spark.SparkContext
-import org.apache.spark.SparkConf
-import org.apache.spark.sql._
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.spark.sql.{SparkSession, _}
 import org.apache.spark.sql.types._
 
-case class Customer(customer_id: Int, name: String, city: String, state: String, zip_code: String)
-case class C(id: Int, name: String, age: Int)
 object sql extends App {
-  println("1.---------------------")
+
   val conf = new SparkConf().setMaster("local").setAppName("My App")
-  println("2.---------------------")
   val sc = new SparkContext(conf)
-  println("3.---------------------")
-  val sqlContext = new SQLContext(sc)
-  println("4.---------------------")
+
+  println("1.---------------------")
   val mySpark = SparkSession
     .builder()
     .appName("Spark SQL basic example")
     .config("spark.some.config.option", "some-value")
     .getOrCreate()
-  println("5.---------------------")
-  import mySpark.implicits._// RDDs 到 DataFrames 的隐式转换
+  println("2.---------------------")
 
   def test01() {
     println("6.---------------------")
@@ -43,13 +36,16 @@ object sql extends App {
     dfCustomers.groupBy("zip_code").count().show()
     println("14.---------------------")
   }
+  println("4.---------------------")
+
   def test02() {
     // 用编程的方式指定模式
     val sqlContext = new org.apache.spark.sql.SQLContext(sc)
     val rddCustomers = sc.textFile("customers.txt")
     val rowRDD = rddCustomers.map(_.split(",")).map(p => Row(p(0).trim, p(1), p(2), p(3), p(4))) // 将RDD（rddCustomers）记录转化成Row。
 
-    val schemaString = "customer_id name city state zip_code"// 用字符串编码模式
+    val schemaString = "customer_id name city state zip_code"
+    // 用字符串编码模式
     val schema = StructType(schemaString.split(" ").map(fieldName => StructField(fieldName, StringType, true))) // 用模式字符串生成模式对象
 
     val dfCustomers = sqlContext.createDataFrame(rowRDD, schema)
@@ -63,6 +59,11 @@ object sql extends App {
     val customersByCity = sqlContext.sql("SELECT name,zip_code FROM customers ORDER BY zip_code")
     customersByCity.map(t => t(0) + "," + t(1)).collect().foreach(println)
   }
+  println("5.---------------------")
+
+  import mySpark.implicits._
+  // RDDs 到 DataFrames 的隐式转换
+
   def test03() {
     val arr = Array("1,tom,12", "2,tomas,13", "3,tomasLee,14")
     val rdd1 = sc.makeRDD(arr)
@@ -74,5 +75,10 @@ object sql extends App {
     df.printSchema
     df.show
   }
+
+  case class Customer(customer_id: Int, name: String, city: String, state: String, zip_code: String)
+
+  case class C(id: Int, name: String, age: Int)
+
   test03
 }
