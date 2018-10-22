@@ -23,7 +23,17 @@ object dStreamFile extends App {
     classOf[Text],
     oldClassOutput,
     hConf)
+  val newClassOutput = classOf[org.apache.hadoop.mapreduce.lib.output.TextOutputFormat[Text,Text]]
+  countEachWord.saveAsNewAPIHadoopFiles("hdfs://localhost:9000/myNewResult/data-",
+    "",
+    classOf[Text],
+    classOf[Text],
+    newClassOutput,
+    hConf)
+  //下面一句会在第二个文件开始抛出异常
+  countEachWord.saveAsObjectFiles("hdfs://localhost:9000/myObject12/data-", "")
   countEachWord.print()
+  countEachWord.foreachRDD(d=>d.foreach(tup=>System.out.println("Key="+tup._1+", Value="+tup._2)))
   ctx.start()
   ctx.awaitTermination()
 }
