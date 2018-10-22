@@ -22,7 +22,7 @@ spark广播变量org.apache.spark.broadcast/Accumulators
 $SPARK_HOME/sbin/start-master.sh
 
 2. 启动工作节点
-$SPARK_HOME/sbin/spark-clas org.apache.spark.deploy.worker.Worker<Spark-Master> &
+$SPARK_HOME/sbin/spark-class org.apache.spark.deploy.worker.Worker<Spark-Master> &
 
 这个Spark-Master就是Spark URL，在用户界面顶端出现的Spark Master at:
 ---------------------
@@ -38,7 +38,7 @@ https://spark.apache.org/docs/latest/api/python/
 
 3. spark-scala api的各种RDD类型
 https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.rdd.RDD
-3.1 jdbc RDD
+3.1 JDBC-RDD
 https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.rdd.JdbcRDD
 
 4. spark-java api的各种RDD类型
