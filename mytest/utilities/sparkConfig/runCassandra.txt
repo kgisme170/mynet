@@ -1,0 +1,16 @@
+配置
+export CASSANDRA_HOME=
+启动
+$CASSANDRA_HOME/bin/Cassandra
+运行
+$CASSANDRA_HOME/bin/cqlsh
+执行
+create keyspace logdata with replication={'class':'SimpleStrategy','replication_factor':1};
+create table logdata.apachelogdata(ip text primary key, client text, user text, date text, method text, request text,protocal text, respcode text,size text);
+select * from logdata.apachelogdata;
+
+下载java文件存放在$CASSANDRA_HOME/lib
+Spark-cassandra连接器http://central.maven.org/maven2/com/datastax/spark/spark-cassandra-connector_2.10/2.0.9/
+
+a@ubuntu:~$ cqlsh
+Connection error: ('Unable to connect to any servers', {'127.0.0.1': error(111, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})
