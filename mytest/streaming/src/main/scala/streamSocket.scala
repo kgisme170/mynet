@@ -6,14 +6,11 @@ object streamSocket {
     //Logger.getLogger("org.apache.spark").setLevel(Level.ERROR)
     //Logger.getLogger("org.eclipse.jetty.Server").setLevel(Level.OFF)
     val conf = new SparkConf().setAppName("TCPOnStreaming example").setMaster("local[4]")
-    //val sc = new SparkContext(conf)//不能再创建SparkContext
+    //conf.setJars(Array("."))//会在当前目录寻找一个叫做/jars的目录，然后继续找执行的jar包
     val ssc = new StreamingContext(conf, Seconds(2))
-    //get the socket Streaming data
     val socketStreaming = ssc.socketTextStream("localhost", 9087)
-    //hostname不能是master
     val data = socketStreaming.flatMap(x => x.split(" ")).map(x => (x, 1))
     data.reduceByKey(_ + _).print()
-
     ssc.start()
     ssc.awaitTermination()
   }

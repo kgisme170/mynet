@@ -1,6 +1,6 @@
 import org.apache.spark.{SparkConf, SparkContext}
 
-object readHdfs {
+object hdfsIo {
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().set("spark.master", "local").set("spark.app.name", "spark demo")
     val sc = new SparkContext(conf);

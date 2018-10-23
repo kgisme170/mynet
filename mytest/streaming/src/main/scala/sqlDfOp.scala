@@ -1,7 +1,7 @@
 import org.apache.spark.SparkConf
 import org.apache.spark.sql._
 
-object firstSql extends App {
+object sqlDfOp extends App {
   val dir = System.getProperty("user.dir")
   println(dir)
   val conf = new SparkConf().setAppName("spark sql")

@@ -6,7 +6,7 @@ import org.apache.spark.storage.StorageLevel
 import org.apache.spark.streaming.flume._
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
-object useFlume {
+object flumeDualSocket {
   def main(args: Array[String]): Unit = {
     println("创建配置")
     val conf = new SparkConf()

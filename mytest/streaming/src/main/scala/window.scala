@@ -1,7 +1,7 @@
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.apache.spark.{SparkConf, SparkContext}
 
-object streamLog {
+object window {
   def main(args: Array[String]) {
     val sparkConf = new SparkConf().setAppName("WordCount").setMaster("local[2]")
     val ssc = new StreamingContext(sparkConf, Seconds(5))

@@ -3,7 +3,7 @@ import org.apache.spark.sql._
 import org.apache.spark.sql.types._
 
 import org.apache.spark.sql.types.StructType
-object secondSql extends App {
+object sqlDfRf extends App {
   val conf = new SparkConf().setAppName("spark sql")
     .set("spark.sql.warehouse.dir", System.getProperty("user.dir"))
     .setMaster("local[4]");
