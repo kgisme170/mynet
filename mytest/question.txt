@@ -78,3 +78,38 @@ Spark dataFrame doesn't have createGlobalTempView() function?
 I'm using spark2.3 and scala 2.11. I created dataFrame and can use createOrReplaceTempView() function. But seems createGlobalTempView() function is missing, intellij says it can't find such method, nor could the intellisense give me the list. So I wish to know if this method is obsoleted?
 
 Thanks!
+
+----------
+
+Spark sql programmatic schema throws exception:
+
+I'm trying to use "Programmatically Specifying the Schema"(http://spark.apache.org/docs/latest/sql-programming-guide.html).
+I have this my.txt file as input:
+
+    "A", 1, 2
+    "B", 2, 3
+    "B", 13,6
+    "C", 3, 4
+
+Then I have a spark program to read and interpret it:
+
+    val rowRdd = spark.sparkContext.textFile("my.txt")
+    .map(_.split(","))
+    .map(a => Row(a(0), a(1).trim.toInt, a(2).trim.toInt))
+    val schema = StructType("a b c".split(" ")
+    .map(f => StructField(f, StringType, nullable = true)))
+    spark.createDataFrame(rowRdd, schema).createOrReplaceTempView("people")
+    spark.sql("select * from people").show()
+
+When running with spark-submit, it gives exception:
+
+    java.lang.RuntimeException: Error while encoding: java.lang.RuntimeException: java.lang.Integer is not a valid external type for schema of string
+    if (assertnotnull(input[0, org.apache.spark.sql.Row, true], top level row object).isNullAt) null else staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, validateexternaltype(getexternalrowfield(assertnotnull(input[0, org.apache.spark.sql.Row, true], top level row object), 0, a), StringType), true) AS a#0
+    +- if (assertnotnull(input[0, org.apache.spark.sql.Row, true], top level row object).isNullAt) null else staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, validateexternaltype(getexternalrowfield(assertnotnull(input[0, org.apache.spark.sql.Row, true], top level row object), 0, a), StringType), true)
+       :- assertnotnull(input[0, org.apache.spark.sql.Row, true], top level row object).isNullAt
+       :  :- assertnotnull(input[0, org.apache.spark.sql.Row, true], top level row object)
+       :  :  +- input[0, org.apache.spark.sql.Row, true]
+       :  +- 0
+    ... ...(many lines)
+
+Where did I get wrong in my program and how to fix it? Thanks a lot.
