@@ -18,5 +18,11 @@ object firstSql extends App {
   df.printSchema()
   println("查看Name列")
   df.select("Name").show()
-  //df.select($"Name", $"No_Of_Supervisors".gt(3)).show()
+  import spark.implicits._// This import is needed to use the $-notation
+  df.select($"Name", $"No_Of_Supervisors".gt(3)).show()
+  df.groupBy("Name").count().show()
+  df.filter($"No_Of_Supervisors">2).show()
+  df.createOrReplaceTempView("people")
+  spark.sql("select * from people").show()
+  //这个语句找不到? df.createGlobalTempView("people")
 }

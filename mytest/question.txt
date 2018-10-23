@@ -72,3 +72,9 @@ Then the program will report error:
     +- Relation[_corrupt_record#0] json
 
 I wish to know why this happens? A none standard json file without double [] will work(one object one line), but a more standardized formatted json will be a "corrupt record"?
+
+----------
+Spark dataFrame doesn't have createGlobalTempView() function?
+I'm using spark2.3 and scala 2.11. I created dataFrame and can use createOrReplaceTempView() function. But seems createGlobalTempView() function is missing, intellij says it can't find such method, nor could the intellisense give me the list. So I wish to know if this method is obsoleted?
+
+Thanks!
