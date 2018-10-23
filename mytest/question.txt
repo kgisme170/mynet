@@ -1,0 +1,74 @@
+Spark dataframe requires json file as one object in one line?
+
+I'm new to spark and trying to use spark to read json file like this. Using spark 2.3 and scala 2.11 on ubuntu18.04, java1.8:
+
+cat my.json:
+
+    { "Name":"A", "No_Of_Emp":1, "No_Of_Supervisors":2}
+    { "Name":"B", "No_Of_Emp":2, "No_Of_Supervisors":3}
+    { "Name":"C", "No_Of_Emp":13,"No_Of_Supervisors":6}
+
+And my scala code is:
+
+    val dir = System.getProperty("user.dir")
+    val conf = new SparkConf().setAppName("spark sql")
+    .set("spark.sql.warehouse.dir", dir)
+    .setMaster("local[4]");
+    val spark = SparkSession.builder().config(conf).getOrCreate()
+    val df = spark.read.json("my.json")
+    df.show()
+    df.printSchema()
+    df.select("Name").show()
+
+OK, everything is fine. But if I change the json file to be multiline, standard json format:
+
+    [
+        {
+          "Name": "A",
+          "No_Of_Emp": 1,
+          "No_Of_Supervisors": 2
+        },
+        {
+          "Name": "B",
+          "No_Of_Emp": 2,
+          "No_Of_Supervisors": 3
+        },
+        {
+          "Name": "C",
+          "No_Of_Emp": 13,
+          "No_Of_Supervisors": 6
+        }
+    ]
+
+Then the program will report error:
+
+    +--------------------+
+    |     _corrupt_record|
+    +--------------------+
+    |                   [|
+    |                   {|
+    |        "Name": "A",|
+    |      "No_Of_Emp"...|
+    |      "No_Of_Supe...|
+    |                  },|
+    |                   {|
+    |        "Name": "B",|
+    |      "No_Of_Emp"...|
+    |      "No_Of_Supe...|
+    |                  },|
+    |                   {|
+    |        "Name": "C",|
+    |      "No_Of_Emp"...|
+    |      "No_Of_Supe...|
+    |                   }|
+    |                   ]|
+    +--------------------+
+
+    root
+     |-- _corrupt_record: string (nullable = true)
+
+    Exception in thread "main" org.apache.spark.sql.AnalysisException: cannot resolve '`Name`' given input columns: [_corrupt_record];;
+    'Project ['Name]
+    +- Relation[_corrupt_record#0] json
+
+I wish to know why this happens? A none standard json file without double [] will work(one object one line), but a more standardized formatted json will be a "corrupt record"?
