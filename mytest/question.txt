@@ -8,14 +8,11 @@ First, here's employee.json file:
     {"name":"Justin", "salary":3500}
     {"name":"Berta", "salary":4000}
 
-Then scala code: https://github.com/apache/spark/blob/master/examples/src/main/scala/org/apache/spark/examples/sql/UserDefinedTypedAggregation.scala
-I'm compressing code lines here:
+Then scala code:
 
     import org.apache.spark.SparkConf
-    import org.apache.spark.sql.{Encoder, Encoders, SparkSession}
-    import org.apache.spark.sql.expressions.Aggregator
-
-    object sqlAggregation extends App{
+    import org.apache.spark.sql._
+    object sqlDfRf {
       val conf = new SparkConf().setAppName("spark sql")
         .set("spark.sql.warehouse.dir", System.getProperty("user.dir"))
         .setMaster("local[4]");
@@ -23,57 +20,22 @@ I'm compressing code lines here:
         .builder()
         .config(conf)
         .getOrCreate()
-
-      case class Employee(name: String, salary: Long)
-      case class Average(var sum: Long, var count: Long)
-
-      object MyAverage extends Aggregator[Employee, Average, Double] {
-        // A zero value for this aggregation. Should satisfy the property that any b + zero = b
-        def zero: Average = Average(0L, 0L)
-        def reduce(buffer: Average, employee: Employee): Average = {
-          buffer.sum += employee.salary
-          buffer.count += 1
-          buffer
-        }
-        def merge(b1: Average, b2: Average): Average = {
-          b1.sum += b2.sum
-          b1.count += b2.count
-          b1
-        }
-
-        def finish(reduction: Average): Double = reduction.sum.toDouble / reduction.count
-        def bufferEncoder: Encoder[Average] = Encoders.product
-        def outputEncoder: Encoder[Double] = Encoders.scalaDouble
+      def main(args: Array[String]) {
+        val df = spark.read.option("multiLine", true).json("employees.json")
+        spark.sql("create database people")
+        df.write.bucketBy(42,"name").sortBy("salary").saveAsTable("people.bucket")
+        df.write.partitionBy("salary").format("parquet").save("3.parquet")
+        println("1st result")
+        spark.sql("select a,b from parquet.`people.db/bucket`").show() // exception!
+        println("2nd result")
+        spark.sql("select a,b from parquet.`3.parquet`").show() // exception!
       }
-      import spark.implicits._
-      val ds = spark.read.json("employees.json").as[Employee]
-      ds.show()
-      // Convert the function to a `TypedColumn` and give it a name
-      val averageSalary = MyAverage.toColumn.name("average_salary")
-      val result = ds.select(averageSalary)
-      result.show()
     }
 
-But on spark-submit, it gives below exception:
+Both spark.sql("select...") statement will throw exception like this:
 
-    18/10/24 19:10:53 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-    +-------+------+
-    |   name|salary|
-    +-------+------+
-    |Michael|  3000|
-    |   Andy|  4500|
-    | Justin|  3500|
-    |  Berta|  4000|
-    +-------+------+
+    Exception in thread "main" org.apache.spark.sql.AnalysisException: cannot resolve '`a`' given input columns: [name, salary]; line 1 pos 7;
+    'Project ['a, 'b]
+    +- Relation[name#0,salary#1] parquet
 
-    Exception in thread "main" java.lang.NoSuchMethodError: org.apache.spark.sql.Dataset.select(Lorg/apache/spark/sql/TypedColumn;Lorg/apache/spark/sql/Encoder;)Lorg/apache/spark/sql/Dataset;
-            at sqlAggregation$.delayedEndpoint$sqlAggregation$1(sqlAggregation.scala:51)
-            at sqlAggregation$delayedInit$body.apply(sqlAggregation.scala:5)
-            at scala.Function0$class.apply$mcV$sp(Function0.scala:34)
-            at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)
-            at scala.App$$anonfun$main$1.apply(App.scala:76)
-            at scala.App$$anonfun$main$1.apply(App.scala:76)
-            at scala.collection.immutable.List.foreach(List.scala:381)
-            ... ...
-
-Dont' know where the real problem resides in, as I am trying the official spark example. Anything to fix here?
+        at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)

@@ -22,4 +22,12 @@ object sqlParquet {
   {"a":"A","b":"1","c":"2"}
   */
   df.select("a", "b", "c").write.save(pFile)
+  val df2 = spark.read.option("multiLine", true).json("employees.json")
+  spark.sql("create database people")
+  df2.write.bucketBy(42, "name").sortBy("salary").saveAsTable("people.bucket")
+  df2.write.partitionBy("salary").format("parquet").save("4.parquet")
+  println("1st result")
+  spark.sql("select * from parquet.`people.db/bucket`").show()
+  println("2nd result")
+  spark.sql("select * from parquet.`4.parquet`").show()
 }
