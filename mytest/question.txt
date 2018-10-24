@@ -1,115 +1,79 @@
-Spark dataframe requires json file as one object in one line?
+I'm using spark2.3.1 and scala2.12, referring to this page:
+https://github.com/apache/spark/blob/master/examples/src/main/scala/org/apache/spark/examples/sql/UserDefinedTypedAggregation.scala
 
-I'm new to spark and trying to use spark to read json file like this. Using spark 2.3 and scala 2.11 on ubuntu18.04, java1.8:
+First, here's employee.json file:
 
-cat my.json:
+    {"name":"Michael", "salary":3000}
+    {"name":"Andy", "salary":4500}
+    {"name":"Justin", "salary":3500}
+    {"name":"Berta", "salary":4000}
 
-    { "Name":"A", "No_Of_Emp":1, "No_Of_Supervisors":2}
-    { "Name":"B", "No_Of_Emp":2, "No_Of_Supervisors":3}
-    { "Name":"C", "No_Of_Emp":13,"No_Of_Supervisors":6}
+Then scala code: https://github.com/apache/spark/blob/master/examples/src/main/scala/org/apache/spark/examples/sql/UserDefinedTypedAggregation.scala
+I'm compressing code lines here:
 
-And my scala code is:
+    import org.apache.spark.SparkConf
+    import org.apache.spark.sql.{Encoder, Encoders, SparkSession}
+    import org.apache.spark.sql.expressions.Aggregator
 
-    val dir = System.getProperty("user.dir")
-    val conf = new SparkConf().setAppName("spark sql")
-    .set("spark.sql.warehouse.dir", dir)
-    .setMaster("local[4]");
-    val spark = SparkSession.builder().config(conf).getOrCreate()
-    val df = spark.read.json("my.json")
-    df.show()
-    df.printSchema()
-    df.select("Name").show()
+    object sqlAggregation extends App{
+      val conf = new SparkConf().setAppName("spark sql")
+        .set("spark.sql.warehouse.dir", System.getProperty("user.dir"))
+        .setMaster("local[4]");
+      val spark = SparkSession
+        .builder()
+        .config(conf)
+        .getOrCreate()
 
-OK, everything is fine. But if I change the json file to be multiline, standard json format:
+      case class Employee(name: String, salary: Long)
+      case class Average(var sum: Long, var count: Long)
 
-    [
-        {
-          "Name": "A",
-          "No_Of_Emp": 1,
-          "No_Of_Supervisors": 2
-        },
-        {
-          "Name": "B",
-          "No_Of_Emp": 2,
-          "No_Of_Supervisors": 3
-        },
-        {
-          "Name": "C",
-          "No_Of_Emp": 13,
-          "No_Of_Supervisors": 6
+      object MyAverage extends Aggregator[Employee, Average, Double] {
+        // A zero value for this aggregation. Should satisfy the property that any b + zero = b
+        def zero: Average = Average(0L, 0L)
+        def reduce(buffer: Average, employee: Employee): Average = {
+          buffer.sum += employee.salary
+          buffer.count += 1
+          buffer
         }
-    ]
+        def merge(b1: Average, b2: Average): Average = {
+          b1.sum += b2.sum
+          b1.count += b2.count
+          b1
+        }
 
-Then the program will report error:
+        def finish(reduction: Average): Double = reduction.sum.toDouble / reduction.count
+        def bufferEncoder: Encoder[Average] = Encoders.product
+        def outputEncoder: Encoder[Double] = Encoders.scalaDouble
+      }
+      import spark.implicits._
+      val ds = spark.read.json("employees.json").as[Employee]
+      ds.show()
+      // Convert the function to a `TypedColumn` and give it a name
+      val averageSalary = MyAverage.toColumn.name("average_salary")
+      val result = ds.select(averageSalary)
+      result.show()
+    }
 
-    +--------------------+
-    |     _corrupt_record|
-    +--------------------+
-    |                   [|
-    |                   {|
-    |        "Name": "A",|
-    |      "No_Of_Emp"...|
-    |      "No_Of_Supe...|
-    |                  },|
-    |                   {|
-    |        "Name": "B",|
-    |      "No_Of_Emp"...|
-    |      "No_Of_Supe...|
-    |                  },|
-    |                   {|
-    |        "Name": "C",|
-    |      "No_Of_Emp"...|
-    |      "No_Of_Supe...|
-    |                   }|
-    |                   ]|
-    +--------------------+
+But on spark-submit, it gives below exception:
 
-    root
-     |-- _corrupt_record: string (nullable = true)
+    18/10/24 19:10:53 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+    +-------+------+
+    |   name|salary|
+    +-------+------+
+    |Michael|  3000|
+    |   Andy|  4500|
+    | Justin|  3500|
+    |  Berta|  4000|
+    +-------+------+
 
-    Exception in thread "main" org.apache.spark.sql.AnalysisException: cannot resolve '`Name`' given input columns: [_corrupt_record];;
-    'Project ['Name]
-    +- Relation[_corrupt_record#0] json
+    Exception in thread "main" java.lang.NoSuchMethodError: org.apache.spark.sql.Dataset.select(Lorg/apache/spark/sql/TypedColumn;Lorg/apache/spark/sql/Encoder;)Lorg/apache/spark/sql/Dataset;
+            at sqlAggregation$.delayedEndpoint$sqlAggregation$1(sqlAggregation.scala:51)
+            at sqlAggregation$delayedInit$body.apply(sqlAggregation.scala:5)
+            at scala.Function0$class.apply$mcV$sp(Function0.scala:34)
+            at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)
+            at scala.App$$anonfun$main$1.apply(App.scala:76)
+            at scala.App$$anonfun$main$1.apply(App.scala:76)
+            at scala.collection.immutable.List.foreach(List.scala:381)
+            ... ...
 
-I wish to know why this happens? A none standard json file without double [] will work(one object one line), but a more standardized formatted json will be a "corrupt record"?
-
-----------
-Spark dataFrame doesn't have createGlobalTempView() function?
-I'm using spark2.3 and scala 2.11. I created dataFrame and can use createOrReplaceTempView() function. But seems createGlobalTempView() function is missing, intellij says it can't find such method, nor could the intellisense give me the list. So I wish to know if this method is obsoleted?
-
-Thanks!
-
-----------
-
-Spark sql programmatic schema throws exception:
-
-I'm trying to use "Programmatically Specifying the Schema"(http://spark.apache.org/docs/latest/sql-programming-guide.html).
-I have this my.txt file as input:
-
-    "A", 1, 2
-    "B", 2, 3
-    "B", 13,6
-    "C", 3, 4
-
-Then I have a spark program to read and interpret it:
-
-    val rowRdd = spark.sparkContext.textFile("my.txt")
-    .map(_.split(","))
-    .map(a => Row(a(0), a(1).trim.toInt, a(2).trim.toInt))
-    val schema = StructType("a b c".split(" ")
-    .map(f => StructField(f, StringType, nullable = true)))
-    spark.createDataFrame(rowRdd, schema).createOrReplaceTempView("people")
-    spark.sql("select * from people").show()
-
-When running with spark-submit, it gives exception:
-
-    java.lang.RuntimeException: Error while encoding: java.lang.RuntimeException: java.lang.Integer is not a valid external type for schema of string
-    if (assertnotnull(input[0, org.apache.spark.sql.Row, true], top level row object).isNullAt) null else staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, validateexternaltype(getexternalrowfield(assertnotnull(input[0, org.apache.spark.sql.Row, true], top level row object), 0, a), StringType), true) AS a#0
-    +- if (assertnotnull(input[0, org.apache.spark.sql.Row, true], top level row object).isNullAt) null else staticinvoke(class org.apache.spark.unsafe.types.UTF8String, StringType, fromString, validateexternaltype(getexternalrowfield(assertnotnull(input[0, org.apache.spark.sql.Row, true], top level row object), 0, a), StringType), true)
-       :- assertnotnull(input[0, org.apache.spark.sql.Row, true], top level row object).isNullAt
-       :  :- assertnotnull(input[0, org.apache.spark.sql.Row, true], top level row object)
-       :  :  +- input[0, org.apache.spark.sql.Row, true]
-       :  +- 0
-    ... ...(many lines)
-
-Where did I get wrong in my program and how to fix it? Thanks a lot.
+Dont' know where the real problem resides in, as I am trying the official spark example. Anything to fix here?

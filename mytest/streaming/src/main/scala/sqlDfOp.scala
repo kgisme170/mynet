@@ -11,7 +11,7 @@ object sqlDfOp extends App {
     .builder()
     .config(conf)
     .getOrCreate()
-  val df = spark.read.json("my.json")
+  val df = spark.read.option("multiLine", true).json("my.json")
   println("查看表")
   df.show()
   println("查看schema")
@@ -24,5 +24,5 @@ object sqlDfOp extends App {
   df.filter($"No_Of_Supervisors">2).show()
   df.createOrReplaceTempView("people")
   spark.sql("select * from people").show()
-  //这个语句找不到? df.createGlobalTempView("people")
+  //df.createGlobalTempView("people")
 }

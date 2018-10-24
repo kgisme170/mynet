@@ -14,3 +14,9 @@ Spark-cassandra连接器http://central.maven.org/maven2/com/datastax/spark/spark
 
 a@ubuntu:~$ cqlsh
 Connection error: ('Unable to connect to any servers', {'127.0.0.1': error(111, "Tried connecting to [('127.0.0.1', 9042)]. Last error: Connection refused")})
+
+==> cassandra
+To have launchd start cassandra now and restart at login:
+  brew services start cassandra
+Or, if you don't want/need a background service you can just run:
+  cassandra -f
