@@ -9,3 +9,8 @@ hdfs dfs -put my.json /user/hdfs/
 
 提交作业
 spark-submit --class sqlBasics --master yarn-client target/streaming-1.0-SNAPSHOT.jar
+
+spark-submit的时候--supervise自动重启
+--master yarn-cluster导致
+Exception in thread "main" org.apache.spark.SparkException: Application application_1540395675708_0004 finished with failed status
+	at org.apache.spark.deploy.yarn.Client.run(Client.scala:1132)
