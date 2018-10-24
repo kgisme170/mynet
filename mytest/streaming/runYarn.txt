@@ -1,0 +1,11 @@
+首先把spark的jar包打包成一个文件，上传hdfs
+jar cv0f spark-libs.jar -C $SPARK_HOME/jars/ .
+hdfs dfs -put spark-libs.jar /
+然后spark的配置文件加上这个jar的路径，使得yarn可以找到
+spark.yarn.jars=hdfs:///*.jar
+
+把数据文件也上传hdfs，使得yarn能够找到
+hdfs dfs -put my.json /user/hdfs/
+
+提交作业
+spark-submit --class sqlBasics --master yarn-client target/streaming-1.0-SNAPSHOT.jar
