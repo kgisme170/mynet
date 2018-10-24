@@ -3,7 +3,7 @@ import java.sql.{DriverManager, ResultSet}
 import org.apache.spark.rdd.JdbcRDD
 import org.apache.spark.{SparkConf, SparkContext}
 
-object ch31 extends App {
+object jdbcRdd extends App {
   val conf = new SparkConf().setMaster("local[4]").setAppName("ch31");
   val ctx = new SparkContext(conf);
   val rdd = new JdbcRDD(ctx, () =>

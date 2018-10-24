@@ -54,7 +54,7 @@ object sqlDfRf {
     spark.range(10).write.parquet(dataDir)
     sql(s"CREATE EXTERNAL TABLE hive_ints3(value string) STORED AS PARQUET LOCATION '$dataDir'")
     println("result 4")
-    sql("SELECT * FROM hive_ints3").show()
+    sql("SELECT * FROM hive_ints3").show()//empty
 
     spark.stop()
   }
