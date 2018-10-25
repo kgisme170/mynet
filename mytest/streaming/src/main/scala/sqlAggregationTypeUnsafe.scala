@@ -12,7 +12,7 @@ object sqlAggregationTypeUnsafe extends App {
     .config(conf)
     .getOrCreate()
   val df = spark.read.json("employees.json")
-
+  df.createOrReplaceTempView("employees")
   spark.udf.register("myAverage", MyAverage)
   val result = spark.sql("SELECT myAverage(salary) as average_salary FROM employees")
   df.createOrReplaceTempView("employees")
