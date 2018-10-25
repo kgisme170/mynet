@@ -23,37 +23,11 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.7.7</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.51</version>
+        </dependency>
     </dependencies>
-<!-->
-    <build>
-      <plugins>
-          <plugin>
-              <groupId>org.apache.thrift.tools</groupId>
-              <artifactId>maven-thrift-plugin</artifactId>
-              <version>0.1.11</version>
-              <configuration>
-                  <thriftExecutable>/usr/local/bin/thrift</thriftExecutable>
-                  <thriftSourceRoot>src/main/java/thrift</thriftSourceRoot>
-                  <outputDirectory>src/main/java/gen-java</outputDirectory>
-              </configuration>
-              <executions>
-                  <execution>
-                      <id>thrift-sources</id>
-                      <phase>generate-sources</phase>
-                      <goals>
-                          <goal>compile</goal>
-                      </goals>
-                  </execution>
-              </executions>
-          </plugin>
-      </plugins>
-    </build>
-    <repositories>
-        <repository>
-            <id>Maven Central Repository</id>
-            <name>Maven Central Repository</name>
-            <url>http://central.maven.org/maven2/</url>
-        </repository>
-    </repositories>
-<-->
 </project>
