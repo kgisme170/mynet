@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cpp" />
         <module name="java_local" />
         <module name="java_mr" />
         <module name="local_test" />
@@ -18,6 +17,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cpp" target="1.5" />
       <module name="mr" target="1.5" />
       <module name="utilities" target="1.5" />
     </bytecodeTargetLevel>

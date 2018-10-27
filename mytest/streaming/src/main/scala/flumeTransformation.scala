@@ -24,7 +24,7 @@ object flumeTransformation {
     val newDStream = flumeStream.flatMap { x => transformLogData(new String(x.event.getBody.array())) }
     //newDStream.filter(x => x._1.equals("method") && x._2.contains("GET")).count().print()
     //newDStream.filter(x => x._1.contains("request")).map(x => (x._2, 1)).reduceByKey(_ + _).print(100)
-    printLogValues(newDStream, ctx)
+    printLogValues(newDStream)
     println("打印 window 结果")
     val wStream = newDStream.window(Seconds(40), Seconds(20))
     val localhost = wStream.filter(x => x._1.contains("IP")).map(x => (x._2, 1))
@@ -42,7 +42,7 @@ object flumeTransformation {
     ctx.awaitTermination()
   }
 
-  def printLogValues(stream: DStream[(String, String)], ctx: StreamingContext): Unit = {
+  def printLogValues(stream: DStream[(String, String)]): Unit = {
     stream.foreachRDD((rdd: RDD[(String, String)]) => {
       val a = rdd.collect()
       println("开始打印")

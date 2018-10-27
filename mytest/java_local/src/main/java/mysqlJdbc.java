@@ -27,7 +27,7 @@ public class mysqlJdbc {
                 while (rs.next()) {
                     System.out.print(rs.getInt("id") + "  ");
                     System.out.print(rs.getString("name") + "  ");
-                    System.out.println("");
+                    System.out.println();
                 }
             }
             System.out.println("ok");
