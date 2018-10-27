@@ -1,5 +1,5 @@
 object ch10 extends App {
-
+  import java.io._
   val acct = new SavingsAccount with ConsoleLogger
   val acct1 = new SavingsAccount with TimestampLogger with ShortLogger
   val acct2 = new SavingsAccount with ShortLogger with TimestampLogger

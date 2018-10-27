@@ -1,5 +1,5 @@
 object ch09 extends App {
-
+  import java.io._
   import scala.io.Source
 
   def readFile() {

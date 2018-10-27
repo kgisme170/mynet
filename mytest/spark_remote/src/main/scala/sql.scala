@@ -14,7 +14,7 @@ object sql extends App {
     .config("spark.some.config.option", "some-value")
     .getOrCreate()
   println("2.---------------------")
-
+  import mySpark.implicits._
   def test01() {
     println("6.---------------------")
     val dfCustomers = sc.textFile("customers.txt").map(_.split(","))

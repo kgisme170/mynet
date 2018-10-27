@@ -1,6 +1,6 @@
 //命令行下面可以用scala -nc执行
 object testSerialize extends App {
-
+  import java.io._
   val out = new ObjectOutputStream(new FileOutputStream("my.obj"))
 
   import java.io._
