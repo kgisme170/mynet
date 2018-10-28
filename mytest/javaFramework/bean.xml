@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+            http://www.springframework.org/schema/aop
+            http://www.springframework.org/schema/aop/spring-aop.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd"
+>
+    <bean id="car" class="my.Car"/>
+    <bean id="logger" class="my.CarLogger" />
+    <aop:config>
+        <aop:aspect ref="logger">
+            <aop:pointcut expression="execution(* my.Car.go(..))" id="go"/>
+            <!-- around和before/after不能并存
+            <aop:before pointcut-ref="go" method="beforeRun" />
+            <aop:after pointcut-ref="go" method="afterRun" />-->
+            <aop:around pointcut-ref="go" method="aroundRun"></aop:around>
+        </aop:aspect>
+    </aop:config>
+    <!-- 开启Ioc注解扫描 -->
+    <context:component-scan base-package="my"></context:component-scan>
+</beans>

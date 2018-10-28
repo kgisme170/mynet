@@ -16,5 +16,6 @@
         <module>utilities</module>
         <module>streaming</module>
         <module>java_mr</module>
+        <module>javaFramework</module>
     </modules>
 </project>
