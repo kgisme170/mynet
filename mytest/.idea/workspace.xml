@@ -1,16 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/spark_remote/src/main/java/testMap.java" line="16" mnemonic="9" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="ok">
-      <change afterPath="$PROJECT_DIR$/streaming/src/main/scala/useFlume.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+    <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/streaming/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaFramework/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/application.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaFramework/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaFramework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/CarApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/CarApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/CarLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/CarLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/PersonApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/PersonApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/PersonLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/PersonLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/UserServiceApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/UserServiceApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_local/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/AdditionClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/AdditionClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/AdditionServiceHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/AdditionServiceHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/ArrayIocTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/ArrayIocTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/MyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/MyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/add.thrift" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/add.thrift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/gen-java/AdditionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/gen-java/AdditionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/mysqlJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/mysqlJdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/runIocTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/runIocTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/testComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/testComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/testCountDownLatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/testCountDownLatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/testFastJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/testFastJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/testvolatile.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/testvolatile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_mr/java_mr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/java_mr.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_mr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_mr/src/main/cpp/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/cpp/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_mr/src/main/cpp/dfsio.c" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/cpp/dfsio.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_mr/src/main/cpp/w.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/cpp/w.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_mr/src/main/java/HowToRun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/java/HowToRun.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_mr/src/main/java/dfsio.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/java/dfsio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_mr/src/main/java/grep.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/java/grep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_mr/src/main/java/w1.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/java/w1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_mr/src/main/java/w1_args.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/java/w1_args.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_mr/src/main/java/w2.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/java/w2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_mr/src/main/python/HowToRun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/python/HowToRun.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_mr/src/main/python/mapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/python/mapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_mr/src/main/python/reducer.py" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/python/reducer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_mr/src/main/scala/wc01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/scala/wc01.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/actor01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/actor01.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch0102.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch0102.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch0304.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch0304.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch0506.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch0506.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch06.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch06.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch08.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch08.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch09.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch09.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch10.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch10.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch11.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch11.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch12.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch12.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch13.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch13.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch14.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch14.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch17.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch17.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch18.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch18.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/children.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/children.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/kill.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/kill.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/pingPong.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/pingPong.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/serverSend.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/serverSend.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/stop.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/stop.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/testPq.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/testPq.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/testSerialize.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/testSerialize.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/testTraits.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/testTraits.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/hydra.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/hydra.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/thriftCompiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/thriftCompiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/buildrun.sh" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/buildrun.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/customers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/customers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/emptyLines.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/emptyLines.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/myspark1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/myspark1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/sample.csv" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/sample.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/spark_remote.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/spark_remote.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/java/aggregateJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/java/aggregateJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/java/checkDeleteDir.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/java/checkDeleteDir.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/java/counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/java/counter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/java/hadoopFileOld.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/java/hadoopFileOld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/java/saveTextFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/java/saveTextFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/java/testMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/java/testMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/python/ch01.py" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/python/ch01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/accumulator.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/accumulator.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/action.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/action.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/aggregate.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/aggregate.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/hadoopFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/hadoopFile.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/hiveCtx.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/hiveCtx.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/jdbcMysql.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/jdbcMysql.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/jsoncsv.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/jsoncsv.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/mailFilter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/mailFilter.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/partitionCombine.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/partitionCombine.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/partitions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/partitions.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/sequenceFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/sequenceFile.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/sql.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/sql.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/textFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/textFile.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/useJdbcRdd.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/useJdbcRdd.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark_remote/test2.json" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/test2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/employees.json" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/employees.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/kv1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/kv1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/my.json" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/my.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/my.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/my.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/people.ext" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/people.ext" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/runYarn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/runYarn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/java/ch1Java.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/java/ch1Java.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/java/clientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/java/clientApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/java/readApacheLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/java/readApacheLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/python/testStream.py" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/python/testStream.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/flumeDualSocket.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/flumeDualSocket.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/flumeSql.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/flumeSql.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/flumeTransformation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/flumeTransformation.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/graphX1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/graphX1.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/hdfsIo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/hdfsIo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/jdbcRdd.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/jdbcRdd.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/persist.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/persist.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/sqlAggregation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/sqlAggregation.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/sqlAggregationTypeUnsafe.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/sqlAggregationTypeUnsafe.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/sqlBasics.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/sqlBasics.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/sqlDfRf.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/sqlDfRf.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/sqlParquet.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/sqlParquet.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/sqlProgrammaticSchema.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/sqlProgrammaticSchema.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/streamSocket.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/streamSocket.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/structStream.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/structStream.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/window.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/window.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/streaming/streaming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/streaming.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,6 +147,7 @@
     <ignored path="$PROJECT_DIR$/utilities/target/" />
     <ignored path="$PROJECT_DIR$/streaming/target/" />
     <ignored path="$PROJECT_DIR$/java_mr/target/" />
+    <ignored path="$PROJECT_DIR$/javaFramework/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,21 +158,23 @@
     <session id="-1902443170">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="4" />
           <entry key="project.open.time.15" value="4" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.17" value="3" />
-          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.17" value="4" />
+          <entry key="project.open.time.18" value="3" />
           <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -57,31 +184,34 @@
           <entry key="SConstruct" value="4" />
           <entry key="c" value="13" />
           <entry key="class" value="7" />
+          <entry key="conf" value="1" />
           <entry key="cpp" value="54" />
+          <entry key="flumeAvro" value="1" />
           <entry key="h" value="4" />
-          <entry key="java" value="43" />
-          <entry key="json" value="1" />
+          <entry key="java" value="56" />
+          <entry key="json" value="7" />
           <entry key="makefile" value="1" />
           <entry key="py" value="2" />
-          <entry key="scala" value="47" />
-          <entry key="sh" value="12" />
+          <entry key="scala" value="110" />
+          <entry key="sh" value="13" />
           <entry key="testString01" value="1" />
           <entry key="thrift" value="6" />
-          <entry key="txt" value="6" />
-          <entry key="xml" value="24" />
+          <entry key="txt" value="13" />
+          <entry key="xml" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Bash" value="4" />
+          <entry key="Bash" value="5" />
           <entry key="C++" value="71" />
           <entry key="CLASS" value="7" />
-          <entry key="JAVA" value="43" />
-          <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="60" />
+          <entry key="HOCON" value="1" />
+          <entry key="JAVA" value="56" />
+          <entry key="JSON" value="7" />
+          <entry key="PLAIN_TEXT" value="68" />
           <entry key="Python" value="1" />
-          <entry key="Scala" value="47" />
-          <entry key="XML" value="24" />
+          <entry key="Scala" value="110" />
+          <entry key="XML" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -90,24 +220,28 @@
           <entry key="SConscript" value="611" />
           <entry key="SConstruct" value="146" />
           <entry key="c" value="5" />
+          <entry key="conf" value="25" />
           <entry key="cpp" value="12961" />
           <entry key="dummy" value="1" />
-          <entry key="java" value="3585" />
-          <entry key="scala" value="5231" />
-          <entry key="sh" value="560" />
+          <entry key="java" value="4891" />
+          <entry key="json" value="112" />
+          <entry key="scala" value="10801" />
+          <entry key="sh" value="624" />
           <entry key="thrift" value="13" />
-          <entry key="txt" value="415" />
-          <entry key="xml" value="78" />
+          <entry key="txt" value="2908" />
+          <entry key="xml" value="457" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="526" />
+          <entry key="Bash" value="590" />
           <entry key="C++" value="12966" />
-          <entry key="JAVA" value="3585" />
-          <entry key="PLAIN_TEXT" value="1240" />
-          <entry key="Scala" value="5231" />
-          <entry key="XML" value="78" />
+          <entry key="HOCON" value="25" />
+          <entry key="JAVA" value="4891" />
+          <entry key="JSON" value="112" />
+          <entry key="PLAIN_TEXT" value="3733" />
+          <entry key="Scala" value="10801" />
+          <entry key="XML" value="457" />
         </counts>
       </usages-collector>
     </session>
@@ -173,88 +307,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/todo.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utilities/sparkConfig/runFlume.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/useFlume.scala">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/streaming/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-244">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/streamlog.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="927">
-              <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/streaming/src/main/java/ch1Java.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/ch1.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/ch31.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="337">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -270,11 +327,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>object</find>
-      <find>class.for</find>
-      <find>customers.txt</find>
-      <find>specs</find>
-      <find>shared</find>
       <find>Std</find>
       <find>std</find>
       <find>has_id</find>
@@ -291,6 +343,20 @@
       <find>make_index_sequence</find>
       <find>local[</find>
       <find>Accumulators</find>
+      <find>foreachRDD</find>
+      <find>.textFile</find>
+      <find>textFileStream</find>
+      <find>saveAsHadoop</find>
+      <find>dataRdd</find>
+      <find>saveAsNew</find>
+      <find>SparkSession</find>
+      <find>registerTempTable</find>
+      <find>def main</find>
+      <find>9000</find>
+      <find>fastjson</find>
+      <find>zstd</find>
+      <find>dir</find>
+      <find>alchim</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/java_local</dir>
@@ -303,73 +369,63 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java_mr/src/main/java/HowToRun.txt" />
-        <option value="$PROJECT_DIR$/java_mr/src/main/python/HowToRun.txt" />
-        <option value="$PROJECT_DIR$/java_mr/src/main/cpp/w.cpp" />
-        <option value="$PROJECT_DIR$/java_mr/src/main/java/dfsio.java" />
-        <option value="$PROJECT_DIR$/java_mr/src/main/java/grep.java" />
-        <option value="$PROJECT_DIR$/java_mr/src/main/cpp/build.sh" />
-        <option value="$PROJECT_DIR$/spark_remote/src/main/scala/accumulator.scala" />
-        <option value="$PROJECT_DIR$/spark_remote/src/main/scala/mailFilter.scala" />
-        <option value="$PROJECT_DIR$/cpp/cpp11/atomic_flag.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp11/testVariadic.cpp" />
-        <option value="$PROJECT_DIR$/linux/testshare.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp14/conditional.cpp" />
-        <option value="$PROJECT_DIR$/cpp/datastructure/SConscript" />
-        <option value="$PROJECT_DIR$/cpp/cpp11/qualifiedEnum.cpp" />
-        <option value="$PROJECT_DIR$/cpp/os/useclone2.c" />
-        <option value="$PROJECT_DIR$/cpp/cpp11/autoReturn.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp14/autoReturn.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp11/cas.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp11/SConscript" />
-        <option value="$PROJECT_DIR$/cpp/os/usePipe.cpp" />
-        <option value="$PROJECT_DIR$/cpp/os/SConscript" />
-        <option value="$PROJECT_DIR$/cpp/cpp98/arrayRef.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp98/SConscript" />
-        <option value="$PROJECT_DIR$/cpp/cpp98/fcntlMonitor.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp14/SConscript" />
-        <option value="$PROJECT_DIR$/cpp/cpp17/SConscript" />
-        <option value="$PROJECT_DIR$/cpp/cpp17/useVariadic.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp14/indexSequence.cpp" />
-        <option value="$PROJECT_DIR$/cpp/datastructure/dj.cpp" />
-        <option value="$PROJECT_DIR$/cpp/gtest/gtest02.cpp" />
-        <option value="$PROJECT_DIR$/cpp/gtest/gtest01.cpp" />
-        <option value="$PROJECT_DIR$/cpp/gtest/gtest03.cpp" />
-        <option value="$PROJECT_DIR$/cpp/gtest/gtest03_valueTypeParam.cpp" />
-        <option value="$PROJECT_DIR$/cpp/gtest/SConscript" />
-        <option value="$PROJECT_DIR$/cpp/gtest/gtest04_mock.cpp" />
-        <option value="$PROJECT_DIR$/cpp/gtest/gtest05_mock.cpp" />
-        <option value="$PROJECT_DIR$/cpp/testcpp.sh" />
-        <option value="$PROJECT_DIR$/cpp/SConstruct" />
-        <option value="$PROJECT_DIR$/cpp/testgmock.sh" />
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/structstream.scala" />
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/streamsocket.scala" />
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/ch2.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/structStream.scala" />
+        <option value="$PROJECT_DIR$/spark_remote/src/main/scala/hadoopFile.scala" />
+        <option value="$PROJECT_DIR$/spark_remote/src/main/java/hadoopFileOld.java" />
+        <option value="$PROJECT_DIR$/spark_remote/src/main/java/saveTextFile.java" />
+        <option value="$PROJECT_DIR$/spark_remote/src/main/java/aggregateJava.java" />
         <option value="$PROJECT_DIR$/streaming/src/main/scala/streamlog.scala" />
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/ch1.scala" />
-        <option value="$PROJECT_DIR$/streaming/src/main/java/ch1java.java" />
-        <option value="$PROJECT_DIR$/streaming/src/main/java/ch1Java.java" />
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/ch31.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/streamLog.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/readHdfs.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/dStreamFile.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/my.json" />
         <option value="$PROJECT_DIR$/todo.txt" />
-        <option value="$PROJECT_DIR$/utilities/sparkConfig/runFlume.sh" />
+        <option value="$PROJECT_DIR$/utilities/sparkConfig/runCassandra.txt" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/firstSql.scala" />
+        <option value="$PROJECT_DIR$/streaming/my.txt" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/secondSql.scala" />
+        <option value="$PROJECT_DIR$/question.txt" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/streamSocket.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/persist.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/hdfsIo.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/window.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/flumeDualSocket.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/sqlDfRf.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/sqlDfOp.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/flumeTransformation.scala" />
+        <option value="$PROJECT_DIR$/streaming/src/main/scala/flumeSql.scala" />
+        <option value="$PROJECT_DIR$/streaming/my.json" />
+        <option value="$PROJECT_DIR$/streaming/runYarn.txt" />
+        <option value="$PROJECT_DIR$/java_local/src/main/java/testPq_.java" />
+        <option value="$PROJECT_DIR$/java_local/src/main/java/testComparator.java" />
+        <option value="$PROJECT_DIR$/java_local/src/main/java/testFasJson.java" />
+        <option value="$PROJECT_DIR$/java_local/src/main/java/testFastJson.java" />
+        <option value="$PROJECT_DIR$/java_local/pom.xml" />
+        <option value="$PROJECT_DIR$/java_local/src/main/java/ArrayIocTest.java" />
+        <option value="$PROJECT_DIR$/java_local/src/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/java_local/src/main/java/runIocTest.java" />
+        <option value="$PROJECT_DIR$/spark_remote/src/main/scala/sql.scala" />
+        <option value="$PROJECT_DIR$/scala_local/src/main/scala/ch07.scala" />
+        <option value="$PROJECT_DIR$/scala_local/src/main/scala/ch0304.scala" />
+        <option value="$PROJECT_DIR$/scala_local/src/main/scala/ch09.scala" />
+        <option value="$PROJECT_DIR$/scala_local/src/main/scala/ch10.scala" />
+        <option value="$PROJECT_DIR$/scala_local/src/main/scala/testSerialize.scala" />
+        <option value="$PROJECT_DIR$/scala_local/pom.xml" />
         <option value="$PROJECT_DIR$/streaming/pom.xml" />
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/useFlume.scala" />
+        <option value="$PROJECT_DIR$/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/scala_local/src/main/scala/ch06.scala" />
+        <option value="$PROJECT_DIR$/scala_local/src/main/scala/actor01.scala" />
+        <option value="$PROJECT_DIR$/scala_local/src/main/scala/kill.scala" />
+        <option value="$PROJECT_DIR$/scala_local/src/main/scala/pingPong.scala" />
+        <option value="$PROJECT_DIR$/scala_local/src/main/scala/stop.scala" />
+        <option value="$PROJECT_DIR$/scala_local/src/main/scala/children.scala" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="streaming" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="streaming" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -387,7 +443,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -396,60 +452,30 @@
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="streaming" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="streaming" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="streaming" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="streaming" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="streaming" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539993497263" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540826778143" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.27900288" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/utilities" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/java_local" />
+      <recent name="$PROJECT_DIR$/java_local/src/main/java" />
+      <recent name="$PROJECT_DIR$/streaming" />
+      <recent name="$PROJECT_DIR$/utilities" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -464,31 +490,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.useFlume">
-    <configuration name="ch1" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="ch1" />
+  <component name="RunManager" selected="Application.runIocTest">
+    <configuration name="firstSql" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="firstSql" />
       <module name="streaming" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ch2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="ch2" />
+    <configuration name="readHdfs" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="readHdfs" />
       <module name="streaming" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ch31" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="ch31" />
-      <module name="streaming" />
+    <configuration name="runIocTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="runIocTest" />
+      <module name="java_local" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="streamsocket" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="streamsocket" />
-      <module name="streaming" />
+    <configuration name="testFastJson" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testFastJson" />
+      <module name="java_local" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -515,19 +541,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.streamsocket" />
-      <item itemvalue="Application.ch2" />
-      <item itemvalue="Application.ch1" />
-      <item itemvalue="Application.ch31" />
       <item itemvalue="Application.useFlume" />
+      <item itemvalue="Application.readHdfs" />
+      <item itemvalue="Application.firstSql" />
+      <item itemvalue="Application.testFastJson" />
+      <item itemvalue="Application.runIocTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.runIocTest" />
+        <item itemvalue="Application.testFastJson" />
+        <item itemvalue="Application.firstSql" />
+        <item itemvalue="Application.readHdfs" />
         <item itemvalue="Application.useFlume" />
-        <item itemvalue="Application.ch31" />
-        <item itemvalue="Application.ch1" />
-        <item itemvalue="Application.ch2" />
-        <item itemvalue="Application.streamsocket" />
       </list>
     </recent_temporary>
   </component>
@@ -548,230 +574,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00051" summary="ok">
-      <created>1535788675282</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1535788675282</updated>
-    </task>
-    <task id="LOCAL-00052" summary="ok">
-      <created>1535788955274</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1535788955274</updated>
-    </task>
-    <task id="LOCAL-00053" summary="ok">
-      <created>1535793817340</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1535793817340</updated>
-    </task>
-    <task id="LOCAL-00054" summary="ok">
-      <created>1535808833981</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1535808833981</updated>
-    </task>
-    <task id="LOCAL-00055" summary="ok">
-      <created>1535808847589</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1535808847590</updated>
-    </task>
-    <task id="LOCAL-00056" summary="ok">
-      <created>1535817713394</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1535817713394</updated>
-    </task>
-    <task id="LOCAL-00057" summary="ok">
-      <created>1535817725980</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1535817725980</updated>
-    </task>
-    <task id="LOCAL-00058" summary="ok">
-      <created>1535818133039</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1535818133040</updated>
-    </task>
-    <task id="LOCAL-00059" summary="ok">
-      <created>1535882468236</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1535882468236</updated>
-    </task>
-    <task id="LOCAL-00060" summary="ok">
-      <created>1535888278415</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1535888278416</updated>
-    </task>
-    <task id="LOCAL-00061" summary="ok">
-      <created>1535888287830</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1535888287830</updated>
-    </task>
-    <task id="LOCAL-00062" summary="ok">
-      <created>1535890947123</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1535890947123</updated>
-    </task>
-    <task id="LOCAL-00063" summary="ok">
-      <created>1535890960677</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1535890960677</updated>
-    </task>
-    <task id="LOCAL-00064" summary="ok">
-      <created>1536770213764</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1536770213765</updated>
-    </task>
-    <task id="LOCAL-00065" summary="ok">
-      <created>1536770254557</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1536770254557</updated>
-    </task>
-    <task id="LOCAL-00066" summary="ok">
-      <created>1536770813009</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1536770813009</updated>
-    </task>
-    <task id="LOCAL-00067" summary="ok">
-      <created>1536863305326</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1536863305346</updated>
-    </task>
-    <task id="LOCAL-00068" summary="ok">
-      <created>1536864900847</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1536864900847</updated>
-    </task>
-    <task id="LOCAL-00069" summary="ok">
-      <created>1536865056971</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1536865056971</updated>
-    </task>
-    <task id="LOCAL-00070" summary="ok">
-      <created>1536867103114</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1536867103114</updated>
-    </task>
-    <task id="LOCAL-00071" summary="ok">
-      <created>1536867344002</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1536867344002</updated>
-    </task>
-    <task id="LOCAL-00072" summary="ok">
-      <created>1536868340958</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1536868340958</updated>
-    </task>
-    <task id="LOCAL-00073" summary="ok">
-      <created>1536868767142</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1536868767142</updated>
-    </task>
-    <task id="LOCAL-00074" summary="ok">
-      <created>1536982890881</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1536982890881</updated>
-    </task>
-    <task id="LOCAL-00075" summary="ok">
-      <created>1536984593237</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1536984593237</updated>
-    </task>
-    <task id="LOCAL-00076" summary="ok">
-      <created>1537021323416</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1537021323416</updated>
-    </task>
-    <task id="LOCAL-00077" summary="ok">
-      <created>1537029647985</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1537029647985</updated>
-    </task>
-    <task id="LOCAL-00078" summary="ok">
-      <created>1538410471746</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1538410471746</updated>
-    </task>
-    <task id="LOCAL-00079" summary="ok">
-      <created>1538446157151</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1538446157151</updated>
-    </task>
-    <task id="LOCAL-00080" summary="ok">
-      <created>1538471195505</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1538471195505</updated>
-    </task>
-    <task id="LOCAL-00081" summary="ok">
-      <created>1538472183630</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1538472183630</updated>
-    </task>
-    <task id="LOCAL-00082" summary="ok">
-      <created>1538505909474</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1538505909477</updated>
     </task>
     <task id="LOCAL-00083" summary="ok">
       <created>1538536303558</created>
@@ -892,7 +694,231 @@
       <option name="project" value="LOCAL" />
       <updated>1539965226892</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="ok">
+      <created>1539993518656</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1539993518656</updated>
+    </task>
+    <task id="LOCAL-00101" summary="ok">
+      <created>1539994483394</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1539994483394</updated>
+    </task>
+    <task id="LOCAL-00102" summary="ok">
+      <created>1540007945887</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1540007945887</updated>
+    </task>
+    <task id="LOCAL-00103" summary="ok">
+      <created>1540024177229</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1540024177230</updated>
+    </task>
+    <task id="LOCAL-00104" summary="ok">
+      <created>1540024933608</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1540024933608</updated>
+    </task>
+    <task id="LOCAL-00105" summary="ok">
+      <created>1540039898888</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1540039898888</updated>
+    </task>
+    <task id="LOCAL-00106" summary="ok">
+      <created>1540049697356</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1540049697356</updated>
+    </task>
+    <task id="LOCAL-00107" summary="ok">
+      <created>1540050303506</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1540050303506</updated>
+    </task>
+    <task id="LOCAL-00108" summary="ok">
+      <created>1540094080609</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1540094080609</updated>
+    </task>
+    <task id="LOCAL-00109" summary="ok">
+      <created>1540094421915</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1540094421915</updated>
+    </task>
+    <task id="LOCAL-00110" summary="ok">
+      <created>1540095744251</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1540095744251</updated>
+    </task>
+    <task id="LOCAL-00111" summary="ok">
+      <created>1540140592878</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1540140592878</updated>
+    </task>
+    <task id="LOCAL-00112" summary="ok">
+      <created>1540222290400</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1540222290401</updated>
+    </task>
+    <task id="LOCAL-00113" summary="ok">
+      <created>1540223347351</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1540223347351</updated>
+    </task>
+    <task id="LOCAL-00114" summary="ok">
+      <created>1540227918716</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1540227918716</updated>
+    </task>
+    <task id="LOCAL-00115" summary="ok">
+      <created>1540228038412</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1540228038412</updated>
+    </task>
+    <task id="LOCAL-00116" summary="ok">
+      <created>1540228347237</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1540228347237</updated>
+    </task>
+    <task id="LOCAL-00117" summary="ok">
+      <created>1540258482830</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1540258482831</updated>
+    </task>
+    <task id="LOCAL-00118" summary="ok">
+      <created>1540307352450</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1540307352450</updated>
+    </task>
+    <task id="LOCAL-00119" summary="ok">
+      <created>1540308986776</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1540308986776</updated>
+    </task>
+    <task id="LOCAL-00120" summary="ok">
+      <created>1540312870175</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1540312870175</updated>
+    </task>
+    <task id="LOCAL-00121" summary="ok">
+      <created>1540313546191</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1540313546191</updated>
+    </task>
+    <task id="LOCAL-00122" summary="ok">
+      <created>1540398196697</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1540398196698</updated>
+    </task>
+    <task id="LOCAL-00123" summary="ok">
+      <created>1540400028519</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1540400028519</updated>
+    </task>
+    <task id="LOCAL-00124" summary="ok">
+      <created>1540485561988</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1540485561989</updated>
+    </task>
+    <task id="LOCAL-00125" summary="ok">
+      <created>1540485647715</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1540485647715</updated>
+    </task>
+    <task id="LOCAL-00126" summary="ok">
+      <created>1540651444654</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1540651444658</updated>
+    </task>
+    <task id="LOCAL-00127" summary="ok">
+      <created>1540652146420</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1540652146420</updated>
+    </task>
+    <task id="LOCAL-00128" summary="ok">
+      <created>1540652436167</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1540652436167</updated>
+    </task>
+    <task id="LOCAL-00129" summary="ok">
+      <created>1540657460534</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1540657460534</updated>
+    </task>
+    <task id="LOCAL-00130" summary="ok">
+      <created>1540745440491</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1540745440492</updated>
+    </task>
+    <task id="LOCAL-00131" summary="ok">
+      <created>1540826520252</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1540826520256</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TodoView">
@@ -905,10 +931,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1837" height="949" extended-state="6" />
+    <frame x="67" y="25" width="1853" height="958" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25547445" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20367278" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -918,15 +944,15 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49017406" weight="0.2920354" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.61213136" weight="0.3630731" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32869786" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.48680517" weight="0.39190897" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.51319486" side_tool="true" weight="0.39190897" />
-      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.4924875" weight="0.3283767" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49073553" visible="true" weight="0.25313282" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49749583" weight="0.3283767" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.6911519" visible="true" weight="0.40272614" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.30884808" side_tool="true" visible="true" weight="0.40272614" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.4885921" weight="0.32713756" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.47968838" weight="0.27509293" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -934,7 +960,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.19258843" />
+      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.19421257" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -978,326 +1004,321 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cpp/cpp14/conditional.cpp" />
-    <entry file="file://$PROJECT_DIR$/cpp/cpp14/usec11.c" />
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/atomicVsMutex.cpp">
+    <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/w1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        <state relative-caret-position="-694">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/atomic_flag.cpp">
+    <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/w2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="-648">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/linux/testshare.cpp">
+    <entry file="file://$PROJECT_DIR$/java_mr/src/main/scala/wc01.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="-391">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/autoReturn.cpp" />
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/qualifiedEnum.cpp">
+    <entry file="file://$PROJECT_DIR$/utilities/hadoopConfig/hdfs-site.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        <state relative-caret-position="-331">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/os/useclone.c">
+    <entry file="file://$PROJECT_DIR$/test.json" />
+    <entry file="file://$PROJECT_DIR$/test2.json" />
+    <entry file="file://$PROJECT_DIR$/utilities/sparkConfig/runCassandra.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1058">
-          <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+        <state relative-caret-position="368">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/os/useclone2.c">
+    <entry file="file://$PROJECT_DIR$/todo.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        <state relative-caret-position="-17">
+          <caret line="66" column="7" lean-forward="true" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp14/autoReturn.cpp">
+    <entry file="file://$PROJECT_DIR$/streaming/my.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="69">
+          <caret line="3" column="8" selection-end-line="3" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/SConscript">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/os/SConscript">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp17/rwlock.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp98/fcntlMonitor.cpp" />
-    <entry file="file://$PROJECT_DIR$/cpp/os/usePipe.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp98/SConscript">
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/ch2.scala" />
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/ch1.scala" />
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/persist.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp14/SConscript">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp98/arrayRef.cpp">
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/hdfsIo.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/cas.cpp">
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/window.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/structStream.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/streamSocket.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/ch31.scala" />
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/flumeDualSocket.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/sqlDfOp.scala" />
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/sqlDfRf.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/question.txt" />
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/graphX1.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/runYarn.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/sqlBasics.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/flumeSql.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/my.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp17/useVariadic.cpp">
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/flumeTransformation.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        <state relative-caret-position="488">
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp14/indexSequence.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11/usehashset.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-483" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/datastructure/SConscript">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/datastructure/dj.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="146" column="13" lean-forward="true" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp17/SConscript">
+    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/testComparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="8" lean-forward="true" selection-end-line="8" />
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/gtest/gtest01.cpp" />
-    <entry file="file://$PROJECT_DIR$/cpp/gtest/gtest02.cpp" />
-    <entry file="file://$PROJECT_DIR$/cpp/gtest/gtest03.cpp" />
-    <entry file="file://$PROJECT_DIR$/cpp/gtest/gtest03_valueTypeParam.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-690">
-          <caret selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/include/gmock/gmock-generated-function-mockers.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-983">
-          <caret line="48" column="6" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/testcpp.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/gtest/SConscript">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="108" selection-start-line="8" selection-start-column="69" selection-end-line="8" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/gtest/gtest04_mock.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/gtest/gtest05_mock.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1541">
-          <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/testgmock.sh">
+    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/testFastJson.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <caret line="103" column="15" selection-start-line="103" selection-start-column="15" selection-end-line="103" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/structstream.scala">
+    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/AdditionClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/ch2.scala">
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch07.scala" />
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch0304.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-359">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/gtest/gtest01_setup.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/gtest/gtest02_envThrowFormat.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="72" selection-start-line="72" selection-end-line="76" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/streamsocket.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/SConstruct">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/grpc/SConscript">
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch09.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <caret line="116" column="15" lean-forward="true" selection-start-line="116" selection-start-column="15" selection-end-line="116" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/streamlog.scala">
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch10.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="927">
-          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="23">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/java/ch1Java.java">
+    <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/sql.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/testSerialize.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java_local/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/ArrayIocTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="713">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/ch1.scala">
+    <entry file="file://$PROJECT_DIR$/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark_remote/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2461">
+          <caret line="107" selection-start-line="81" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaFramework/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/runIocTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/ch31.scala">
+    <entry file="file://$PROJECT_DIR$/streaming/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="593">
+          <caret line="55" column="11" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scala_local/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/stop.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todo.txt">
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/pingPong.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="1311">
+          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utilities/sparkConfig/runFlume.sh">
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/kill.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/pom.xml">
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/children.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="1081">
+          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/useFlume.scala">
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/actor01.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch06.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -1310,7 +1331,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.27900288" />
               </list>
             </option>
           </splitter-proportions>
@@ -1318,11 +1339,11 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Python</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.27900288" />
               </list>
             </option>
           </splitter-proportions>
@@ -1330,11 +1351,11 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>scala-sdk-2.10.6</last-edited>
+          <last-edited>scala-sdk-2.11.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.27900288" />
               </list>
             </option>
           </splitter-proportions>
@@ -1346,7 +1367,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.27900288" />
               </list>
             </option>
           </splitter-proportions>
@@ -1359,7 +1380,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1383,7 +1403,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.27900288" />
               </list>
             </option>
           </splitter-proportions>

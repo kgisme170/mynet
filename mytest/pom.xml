@@ -9,13 +9,13 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>spark_remote</module>
-        <module>scala_local</module>
-        <module>java_local</module>
+        <module>spark/spark_remote</module>
+        <module>spark/streaming</module>
+        <module>scala/scala_local</module>
         <module>python</module>
         <module>utilities</module>
-        <module>streaming</module>
-        <module>java_mr</module>
-        <module>javaFramework</module>
+        <module>java/java_local</module>
+        <module>java/java_mr</module>
+        <module>java/javaFramework</module>
     </modules>
 </project>
