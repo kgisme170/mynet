@@ -1,9 +1,10 @@
-object color extends Enumeration {
-  type color = Value
-  val Red, Yellow = Value
-}
-
 object ch06 extends App {
+
+  object color extends Enumeration {
+    type color = Value
+    val Red, Yellow = Value
+  }
+
   def doWhat(c: color.color) = {
     if (c == color.Red) "Stop"
     else "Start"

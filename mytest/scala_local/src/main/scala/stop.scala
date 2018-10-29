@@ -5,21 +5,22 @@ import scala.concurrent.duration._
 import scala.concurrent.{Await, Future}
 import scala.language.postfixOps
 
-class TestActor extends Actor {
-  def receive = {
-    case TestActorStop =>
-      context.stop(self)
-    case _ => println("TestActor got message")
-  }
-
-  override def postStop {
-    println("TestActor: postStop")
-  }
-}
-
-case object TestActorStop
-
 object stop extends App {
+
+  class TestActor extends Actor {
+    def receive = {
+      case TestActorStop =>
+        context.stop(self)
+      case _ => println("TestActor got message")
+    }
+
+    override def postStop {
+      println("TestActor: postStop")
+    }
+  }
+
+  case object TestActorStop
+
   val system = ActorSystem("GracefulStopTest")
   val testActor = system.actorOf(Props[TestActor], name = "TestActor")
   // try to stop the actor graceful
