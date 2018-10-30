@@ -2,139 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaFramework/application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/application.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaFramework/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/bean.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaFramework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/CarApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/CarApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/CarLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/CarLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/PersonApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/PersonApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/PersonLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/PersonLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/UserServiceApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/UserServiceApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaFramework/src/main/java/my/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/javaFramework/src/main/java/my/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_local/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/AdditionClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/AdditionClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/AdditionServiceHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/AdditionServiceHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/ArrayIocTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/ArrayIocTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/MyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/MyServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/add.thrift" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/add.thrift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/gen-java/AdditionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/gen-java/AdditionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/mysqlJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/mysqlJdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/runIocTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/runIocTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/testComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/testComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/testCountDownLatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/testCountDownLatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/testFastJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/testFastJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_local/src/main/java/testvolatile.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/testvolatile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_mr/java_mr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/java_mr.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_mr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_mr/src/main/cpp/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/cpp/build.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_mr/src/main/cpp/dfsio.c" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/cpp/dfsio.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_mr/src/main/cpp/w.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/cpp/w.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_mr/src/main/java/HowToRun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/java/HowToRun.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_mr/src/main/java/dfsio.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/java/dfsio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_mr/src/main/java/grep.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/java/grep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_mr/src/main/java/w1.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/java/w1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_mr/src/main/java/w1_args.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/java/w1_args.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_mr/src/main/java/w2.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/java/w2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_mr/src/main/python/HowToRun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/python/HowToRun.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_mr/src/main/python/mapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/python/mapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_mr/src/main/python/reducer.py" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/python/reducer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_mr/src/main/scala/wc01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_mr/src/main/scala/wc01.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/actor01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/actor01.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch0102.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch0102.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch0304.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch0304.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch0506.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch0506.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch06.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch06.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch08.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch08.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch09.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch09.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch10.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch10.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch11.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch11.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch12.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch12.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch13.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch13.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch14.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch14.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch17.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch17.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch18.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/ch18.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/children.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/children.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/kill.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/kill.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/pingPong.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/pingPong.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/serverSend.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/serverSend.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/stop.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/stop.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/testPq.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/testPq.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/testSerialize.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/testSerialize.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/testTraits.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/testTraits.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/hydra.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/hydra.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/thriftCompiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/thriftCompiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/buildrun.sh" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/buildrun.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/customers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/customers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/emptyLines.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/emptyLines.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/myspark1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/myspark1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/sample.csv" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/sample.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/spark_remote.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/spark_remote.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/java/aggregateJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/java/aggregateJava.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/java/checkDeleteDir.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/java/checkDeleteDir.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/java/counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/java/counter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/java/hadoopFileOld.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/java/hadoopFileOld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/java/saveTextFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/java/saveTextFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/java/testMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/java/testMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/python/ch01.py" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/python/ch01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/accumulator.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/accumulator.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/action.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/action.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/aggregate.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/aggregate.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/hadoopFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/hadoopFile.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/hiveCtx.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/hiveCtx.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/jdbcMysql.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/jdbcMysql.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/jsoncsv.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/jsoncsv.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/mailFilter.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/mailFilter.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/partitionCombine.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/partitionCombine.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/partitions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/partitions.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/sequenceFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/sequenceFile.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/sql.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/sql.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/textFile.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/textFile.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/src/main/scala/useJdbcRdd.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/useJdbcRdd.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/test.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark_remote/test2.json" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/test2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/employees.json" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/employees.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/kv1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/kv1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/my.json" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/my.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/my.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/my.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/people.ext" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/people.ext" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/runYarn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/runYarn.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/java/ch1Java.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/java/ch1Java.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/java/clientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/java/clientApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/java/readApacheLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/java/readApacheLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/python/testStream.py" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/python/testStream.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/flumeDualSocket.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/flumeDualSocket.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/flumeSql.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/flumeSql.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/flumeTransformation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/flumeTransformation.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/graphX1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/graphX1.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/hdfsIo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/hdfsIo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/jdbcRdd.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/jdbcRdd.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/persist.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/persist.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/sqlAggregation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/sqlAggregation.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/sqlAggregationTypeUnsafe.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/sqlAggregationTypeUnsafe.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/sqlBasics.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/sqlBasics.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/sqlDfRf.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/sqlDfRf.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/sqlParquet.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/sqlParquet.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/sqlProgrammaticSchema.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/sqlProgrammaticSchema.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/streamSocket.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/streamSocket.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/structStream.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/structStream.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/src/main/scala/window.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/scala/window.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/streaming/streaming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/streaming.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_local/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala/scala_local/src/main/scala/testTraits.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/scala_local/src/main/scala/testTraits.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark/spark_remote/buildrun.sh" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/buildrun.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark/spark_remote/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/spark/spark_remote/src/main/scala/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark/streaming/src/main/python/testStream.py" beforeDir="false" afterPath="$PROJECT_DIR$/spark/streaming/src/main/python/testStream.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -148,6 +23,12 @@
     <ignored path="$PROJECT_DIR$/streaming/target/" />
     <ignored path="$PROJECT_DIR$/java_mr/target/" />
     <ignored path="$PROJECT_DIR$/javaFramework/target/" />
+    <ignored path="$PROJECT_DIR$/java/java_mr/target/" />
+    <ignored path="$PROJECT_DIR$/java/java_local/target/" />
+    <ignored path="$PROJECT_DIR$/scala/scala_local/target/" />
+    <ignored path="$PROJECT_DIR$/spark/streaming/target/" />
+    <ignored path="$PROJECT_DIR$/java/javaFramework/target/" />
+    <ignored path="$PROJECT_DIR$/spark/spark_remote/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,13 +39,13 @@
     <session id="-1902443170">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="3" />
-          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="4" />
           <entry key="project.open.time.15" value="4" />
           <entry key="project.open.time.16" value="1" />
@@ -174,7 +55,7 @@
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="29" />
+          <entry key="project.opened" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -183,12 +64,12 @@
           <entry key="SConscript" value="29" />
           <entry key="SConstruct" value="4" />
           <entry key="c" value="13" />
-          <entry key="class" value="7" />
+          <entry key="class" value="8" />
           <entry key="conf" value="1" />
           <entry key="cpp" value="54" />
           <entry key="flumeAvro" value="1" />
           <entry key="h" value="4" />
-          <entry key="java" value="56" />
+          <entry key="java" value="63" />
           <entry key="json" value="7" />
           <entry key="makefile" value="1" />
           <entry key="py" value="2" />
@@ -197,21 +78,21 @@
           <entry key="testString01" value="1" />
           <entry key="thrift" value="6" />
           <entry key="txt" value="13" />
-          <entry key="xml" value="34" />
+          <entry key="xml" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="5" />
           <entry key="C++" value="71" />
-          <entry key="CLASS" value="7" />
+          <entry key="CLASS" value="8" />
           <entry key="HOCON" value="1" />
-          <entry key="JAVA" value="56" />
+          <entry key="JAVA" value="63" />
           <entry key="JSON" value="7" />
           <entry key="PLAIN_TEXT" value="68" />
           <entry key="Python" value="1" />
           <entry key="Scala" value="110" />
-          <entry key="XML" value="34" />
+          <entry key="XML" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -223,13 +104,13 @@
           <entry key="conf" value="25" />
           <entry key="cpp" value="12961" />
           <entry key="dummy" value="1" />
-          <entry key="java" value="4891" />
+          <entry key="java" value="5708" />
           <entry key="json" value="112" />
           <entry key="scala" value="10801" />
           <entry key="sh" value="624" />
           <entry key="thrift" value="13" />
           <entry key="txt" value="2908" />
-          <entry key="xml" value="457" />
+          <entry key="xml" value="528" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -237,11 +118,11 @@
           <entry key="Bash" value="590" />
           <entry key="C++" value="12966" />
           <entry key="HOCON" value="25" />
-          <entry key="JAVA" value="4891" />
+          <entry key="JAVA" value="5708" />
           <entry key="JSON" value="112" />
           <entry key="PLAIN_TEXT" value="3733" />
           <entry key="Scala" value="10801" />
-          <entry key="XML" value="457" />
+          <entry key="XML" value="528" />
         </counts>
       </usages-collector>
     </session>
@@ -307,11 +188,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/javaFramework/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="161">
+              <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/java_local/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testJetty.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#437#976#0" expanded="true" />
+                <element signature="e#455#975#0" expanded="true" />
+                <element signature="e#437#976#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -327,7 +232,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Std</find>
       <find>std</find>
       <find>has_id</find>
       <find>LINKFLAGS</find>
@@ -357,6 +261,7 @@
       <find>zstd</find>
       <find>dir</find>
       <find>alchim</find>
+      <find>package</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/java_local</dir>
@@ -369,17 +274,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/structStream.scala" />
-        <option value="$PROJECT_DIR$/spark_remote/src/main/scala/hadoopFile.scala" />
-        <option value="$PROJECT_DIR$/spark_remote/src/main/java/hadoopFileOld.java" />
-        <option value="$PROJECT_DIR$/spark_remote/src/main/java/saveTextFile.java" />
-        <option value="$PROJECT_DIR$/spark_remote/src/main/java/aggregateJava.java" />
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/streamlog.scala" />
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/streamLog.scala" />
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/readHdfs.scala" />
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/dStreamFile.scala" />
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/my.json" />
-        <option value="$PROJECT_DIR$/todo.txt" />
         <option value="$PROJECT_DIR$/utilities/sparkConfig/runCassandra.txt" />
         <option value="$PROJECT_DIR$/streaming/src/main/scala/firstSql.scala" />
         <option value="$PROJECT_DIR$/streaming/my.txt" />
@@ -420,12 +314,40 @@
         <option value="$PROJECT_DIR$/scala_local/src/main/scala/stop.scala" />
         <option value="$PROJECT_DIR$/scala_local/src/main/scala/children.scala" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/java/javaFramework/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java_local/src/main/java/annoDefinition.java" />
+        <option value="$PROJECT_DIR$/java/java_local/src/main/java/annoUse.java" />
+        <option value="$PROJECT_DIR$/java/java_local/src/main/java/annoTest.java" />
+        <option value="$PROJECT_DIR$/java/java_mr/pom.xml" />
+        <option value="$PROJECT_DIR$/scala/scala_local/pom.xml" />
+        <option value="$PROJECT_DIR$/spark/streaming/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java_local/src/main/java/testOverride.java" />
+        <option value="$PROJECT_DIR$/spark/spark_remote/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java_local/src/main/java/testJetty.java" />
+        <option value="$PROJECT_DIR$/java/java_local/pom.xml" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="java_local" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="java_local" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -443,8 +365,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -452,16 +375,57 @@
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java_local" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java_local" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java_local" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java_local" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java_local" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540826778143" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540901675240" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -490,17 +454,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.runIocTest">
-    <configuration name="firstSql" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="firstSql" />
-      <module name="streaming" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="readHdfs" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="readHdfs" />
-      <module name="streaming" />
+  <component name="RunManager" selected="Application.testJetty">
+    <configuration name="annoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="annoTest" />
+      <module name="java_local" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -519,9 +476,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="useFlume" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="useFlume" />
-      <module name="streaming" />
+    <configuration name="testJetty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testJetty" />
+      <module name="java_local" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testOverride" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testOverride" />
+      <module name="java_local" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -541,19 +505,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.useFlume" />
-      <item itemvalue="Application.readHdfs" />
-      <item itemvalue="Application.firstSql" />
       <item itemvalue="Application.testFastJson" />
       <item itemvalue="Application.runIocTest" />
+      <item itemvalue="Application.annoTest" />
+      <item itemvalue="Application.testOverride" />
+      <item itemvalue="Application.testJetty" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.testJetty" />
+        <item itemvalue="Application.testOverride" />
+        <item itemvalue="Application.annoTest" />
         <item itemvalue="Application.runIocTest" />
         <item itemvalue="Application.testFastJson" />
-        <item itemvalue="Application.firstSql" />
-        <item itemvalue="Application.readHdfs" />
-        <item itemvalue="Application.useFlume" />
       </list>
     </recent_temporary>
   </component>
@@ -574,41 +538,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00083" summary="ok">
-      <created>1538536303558</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1538536303559</updated>
-    </task>
-    <task id="LOCAL-00084" summary="ok">
-      <created>1538606526311</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1538606526313</updated>
-    </task>
-    <task id="LOCAL-00085" summary="ok">
-      <created>1538609736004</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1538609736005</updated>
-    </task>
-    <task id="LOCAL-00086" summary="ok">
-      <created>1538626307576</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1538626307576</updated>
-    </task>
-    <task id="LOCAL-00087" summary="ok">
-      <created>1538689615160</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1538689615160</updated>
     </task>
     <task id="LOCAL-00088" summary="ok">
       <created>1538695804216</created>
@@ -918,7 +847,42 @@
       <option name="project" value="LOCAL" />
       <updated>1540826520256</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="ok">
+      <created>1540826964467</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1540826964467</updated>
+    </task>
+    <task id="LOCAL-00133" summary="ok">
+      <created>1540831958894</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1540831958895</updated>
+    </task>
+    <task id="LOCAL-00134" summary="ok">
+      <created>1540832634028</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1540832634035</updated>
+    </task>
+    <task id="LOCAL-00135" summary="ok">
+      <created>1540832728849</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1540832728849</updated>
+    </task>
+    <task id="LOCAL-00136" summary="ok">
+      <created>1540897113936</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1540897113936</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TodoView">
@@ -932,9 +896,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="958" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20367278" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2754591" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -944,15 +907,15 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.61213136" weight="0.3630731" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6037841" weight="0.36183396" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49749583" weight="0.3283767" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.6911519" visible="true" weight="0.40272614" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.30884808" side_tool="true" visible="true" weight="0.40272614" />
-      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.4885921" weight="0.32713756" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.47968838" weight="0.27509293" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5269894" side_tool="true" visible="true" weight="0.27385378" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4823133" weight="0.3261694" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.6855871" weight="0.40272614" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" sideWeight="0.47301057" visible="true" weight="0.27385378" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1004,227 +967,31 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/w1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-694">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java_mr/src/main/java/w2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java_mr/src/main/scala/wc01.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utilities/hadoopConfig/hdfs-site.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-331">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.json" />
-    <entry file="file://$PROJECT_DIR$/test2.json" />
-    <entry file="file://$PROJECT_DIR$/utilities/sparkConfig/runCassandra.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="66" column="7" lean-forward="true" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/my.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="8" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/ch2.scala" />
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/ch1.scala" />
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/persist.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/hdfsIo.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/window.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/structStream.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/streamSocket.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/window.scala" />
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/structStream.scala" />
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/streamSocket.scala" />
     <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/ch31.scala" />
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/flumeDualSocket.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/flumeDualSocket.scala" />
     <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/sqlDfOp.scala" />
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/sqlDfRf.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/sqlDfRf.scala" />
     <entry file="file://$PROJECT_DIR$/question.txt" />
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/graphX1.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/runYarn.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/sqlBasics.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/flumeSql.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/my.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/flumeTransformation.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="44" column="20" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/testComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/testFastJson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="103" column="15" selection-start-line="103" selection-start-column="15" selection-end-line="103" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/AdditionClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/graphX1.scala" />
+    <entry file="file://$PROJECT_DIR$/streaming/runYarn.txt" />
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/sqlBasics.scala" />
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/flumeSql.scala" />
+    <entry file="file://$PROJECT_DIR$/streaming/my.json" />
+    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/flumeTransformation.scala" />
+    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/testComparator.java" />
+    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/testFastJson.java" />
+    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/AdditionClient.java" />
     <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch07.scala" />
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch0304.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-359">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch09.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="116" column="15" lean-forward="true" selection-start-line="116" selection-start-column="15" selection-end-line="116" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch10.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/sql.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/testSerialize.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java_local/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/ArrayIocTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch0304.scala" />
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch09.scala" />
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch10.scala" />
+    <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/sql.scala" />
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/testSerialize.scala" />
+    <entry file="file://$PROJECT_DIR$/java_local/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/ArrayIocTest.java" />
     <entry file="file://$PROJECT_DIR$/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1232,93 +999,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spark_remote/pom.xml">
+    <entry file="file://$PROJECT_DIR$/spark_remote/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/javaFramework/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/runIocTest.java" />
+    <entry file="file://$PROJECT_DIR$/streaming/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/scala_local/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/stop.scala" />
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/pingPong.scala" />
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/kill.scala" />
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/children.scala" />
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/actor01.scala" />
+    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch06.scala" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2461">
-          <caret line="107" selection-start-line="81" selection-end-line="107" />
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javaFramework/pom.xml">
+    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/annoUse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        <state relative-caret-position="92">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/runIocTest.java">
+    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/annoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="207">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/streaming/pom.xml">
+    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testOverride.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="55" column="11" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scala_local/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/stop.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="389">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#357#365#0" expanded="true" />
+            <element signature="e#357#365#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/pingPong.scala">
+    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/annoDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+        <state relative-caret-position="230">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/kill.scala">
+    <entry file="file://$PROJECT_DIR$/spark/streaming/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="322">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/children.scala">
+    <entry file="file://$PROJECT_DIR$/scala/scala_local/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+        <state relative-caret-position="92">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/actor01.scala">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.4.12.v20180830/jetty-server-9.4.12.v20180830.jar!/org/eclipse/jetty/server/handler/AbstractHandler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="249">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch06.scala">
+    <entry file="jar:///usr/lib/jvm/jdk1.8.0/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="170">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/spark/spark_remote/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="437">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java_mr/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testJetty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#437#976#0" expanded="true" />
+            <element signature="e#455#975#0" expanded="true" />
+            <element signature="e#437#976#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/javaFramework/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java_local/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>
