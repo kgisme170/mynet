@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/src/main/scala/testFunc.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_11_1_0_4_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_5_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_6_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scalactic_scalactic_2_11_3_0_4_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scalactic_scalactic_2_11_3_0_5_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scalatest_scalatest_2_11_3_0_4_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scalatest_scalatest_2_11_3_0_5_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala/useSbt/.idea/modules/root-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/.idea/modules/root-build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala/useSbt/.idea/modules/usesbt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/.idea/modules/usesbt.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scala/useSbt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala/useSbt/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala/useSbt/project/Dependencies.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/project/Dependencies.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala/useSbt/project/assembly.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/project/assembly.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala/useSbt/src/main/scala/testFunc.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/src/main/scala/testFunc.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -426,7 +417,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540995012440" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540995324116" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />

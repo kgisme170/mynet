@@ -12,18 +12,16 @@ object testFunc extends App{
   })("aaa", 10)
 
   println(value)
-  def withRetry[T](initIntervalMs: Int, maxRetryTimes: Int, actionName: String = "Anonymous")(work: => T)(cleanUp: => Unit): T = {
+  def withRetry[T](ms: Int, maxRetryTimes: Int, actionName: String = "MyAction")(work: => T)(cleanUp: => Unit): T = {
+    val again = ms.toLong
     def retry(iteration: Int): T = {
       try work
       catch {
         case e: Throwable if iteration < maxRetryTimes =>
-          val backoff = (Math.pow(2, iteration) * initIntervalMs).toLong
-          println(s"Failed to run action $actionName: $e, attempt: $iteration, will try again after: $backoff ms")
-          //          logWarning(s"Failed to run action $actionName: $e, attempt: $iteration, will try again after: $backoff ms")
-          Thread.sleep(backoff)
+          println(s"运行失败 $actionName: $e, 第 $iteration 次, 等待并重试: $again(ms)")
+          Thread.sleep(again)
           retry(iteration + 1)
-        case e: Throwable =>
-          throw e
+        case e: Throwable => throw e
       } finally {
         cleanUp
       }
@@ -31,5 +29,5 @@ object testFunc extends App{
 
     retry(0)
   }
-  withRetry(500, 3, "test"){println("开始工作")}{println("清理完毕")}
+  withRetry(500, 3, "testAction"){println("开始工作")}{println("清理完毕")}
 }
