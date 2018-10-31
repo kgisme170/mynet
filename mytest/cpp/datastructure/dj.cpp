@@ -48,9 +48,8 @@ struct E{
         cout<<')';
     }
 };
-template<>
-struct std::hash<E> {
-    std::size_t operator()(const E& e) const {
+struct MyHash{
+    size_t operator()(const E& e) const {
         return e.vertex;
     }
 };
@@ -60,7 +59,7 @@ bool operator<(const E& e1,const E& e2){
 
 using edgeQueue=deque<E>;
 using edgeMap=unordered_map<char, edgeQueue>;
-using edgeSet=unordered_set<E>;
+using edgeSet=unordered_set<E, MyHash>;
 class graph{//dj{//无向图Dijkstra
     struct element{
         char from;
