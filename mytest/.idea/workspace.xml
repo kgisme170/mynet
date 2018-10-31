@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/testMeta/src/main/java/MetaIni.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud/testMeta/src/main/java/MetaIni.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,6 +23,7 @@
     <ignored path="$PROJECT_DIR$/spark/streaming/target/" />
     <ignored path="$PROJECT_DIR$/java/javaFramework/target/" />
     <ignored path="$PROJECT_DIR$/spark/spark_remote/target/" />
+    <ignored path="$PROJECT_DIR$/cloud/testMeta/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,23 +127,27 @@
           <entry key="SConscript" value="13" />
           <entry key="SConstruct" value="2" />
           <entry key="c" value="6" />
+          <entry key="class" value="5" />
           <entry key="cpp" value="12" />
-          <entry key="java" value="5" />
+          <entry key="java" value="8" />
+          <entry key="json" value="1" />
           <entry key="py" value="2" />
           <entry key="scala" value="3" />
           <entry key="sh" value="2" />
-          <entry key="xml" value="10" />
+          <entry key="xml" value="12" />
           <entry key="yaml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="C++" value="18" />
-          <entry key="JAVA" value="5" />
+          <entry key="CLASS" value="5" />
+          <entry key="JAVA" value="8" />
+          <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="18" />
           <entry key="Python" value="1" />
           <entry key="Scala" value="3" />
-          <entry key="XML" value="10" />
+          <entry key="XML" value="12" />
           <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
@@ -162,21 +168,23 @@
           <entry key="SConstruct" value="199" />
           <entry key="c" value="31" />
           <entry key="cpp" value="48" />
-          <entry key="java" value="77" />
+          <entry key="java" value="2178" />
+          <entry key="json" value="71" />
           <entry key="py" value="29" />
           <entry key="scala" value="244" />
           <entry key="sh" value="12" />
           <entry key="txt" value="24" />
-          <entry key="xml" value="88" />
+          <entry key="xml" value="188" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="C++" value="79" />
-          <entry key="JAVA" value="77" />
+          <entry key="JAVA" value="2178" />
+          <entry key="JSON" value="71" />
           <entry key="PLAIN_TEXT" value="280" />
           <entry key="Scala" value="244" />
-          <entry key="XML" value="88" />
+          <entry key="XML" value="188" />
         </counts>
       </usages-collector>
     </session>
@@ -184,40 +192,58 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utilities/hadoopRun/startHdfs.sh">
+        <entry file="file://$PROJECT_DIR$/cloud/testMeta/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utilities/hadoopRun/bootstrap.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+            <state relative-caret-position="149">
+              <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/java_local/pom.xml">
+        <entry file="file://$PROJECT_DIR$/cloud/testMeta/src/main/java/MetaIni.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="467">
+              <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/YamlTesting.java">
+        <entry file="file://$PROJECT_DIR$/testArray.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="195">
+              <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testFastJson.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/openservices/ots-legacy/1.1.2/ots-legacy-1.1.2.jar!/com/aliyun/openservices/ots/OTSClient.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="254" column="21" selection-start-line="254" selection-start-column="21" selection-end-line="254" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -233,7 +259,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>std</find>
       <find>has_id</find>
       <find>LINKFLAGS</find>
       <find>Wrong</find>
@@ -263,6 +288,7 @@
       <find>dir</find>
       <find>alchim</find>
       <find>package</find>
+      <find>ListTables</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/java_local</dir>
@@ -275,11 +301,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/secondSql.scala" />
-        <option value="$PROJECT_DIR$/question.txt" />
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/streamSocket.scala" />
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/persist.scala" />
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/hdfsIo.scala" />
         <option value="$PROJECT_DIR$/streaming/src/main/scala/window.scala" />
         <option value="$PROJECT_DIR$/streaming/src/main/scala/flumeDualSocket.scala" />
         <option value="$PROJECT_DIR$/streaming/src/main/scala/sqlDfRf.scala" />
@@ -311,7 +332,6 @@
         <option value="$PROJECT_DIR$/scala_local/src/main/scala/pingPong.scala" />
         <option value="$PROJECT_DIR$/scala_local/src/main/scala/stop.scala" />
         <option value="$PROJECT_DIR$/scala_local/src/main/scala/children.scala" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/java/javaFramework/pom.xml" />
         <option value="$PROJECT_DIR$/java/java_local/src/main/java/annoDefinition.java" />
         <option value="$PROJECT_DIR$/java/java_local/src/main/java/annoUse.java" />
@@ -326,6 +346,12 @@
         <option value="$PROJECT_DIR$/java/java_local/pom.xml" />
         <option value="$PROJECT_DIR$/java/java_local/src/main/java/YamlTesting.java" />
         <option value="$PROJECT_DIR$/java/java_local/src/main/java/User.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud/testMeta/src/main/java/readIni.java" />
+        <option value="$PROJECT_DIR$/cloud/testMeta/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java_local/src/main/java/testFastJson.java" />
+        <option value="$PROJECT_DIR$/testArray.json" />
+        <option value="$PROJECT_DIR$/cloud/testMeta/src/main/java/MetaIni.java" />
       </list>
     </option>
   </component>
@@ -369,20 +395,37 @@
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java_local" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="testMeta" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java_local" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="testMeta" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="testMeta" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="testMeta" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -391,8 +434,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540982298347" />
+    <property name="SearchEverywhereHistoryKey" value="testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540989792718" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Global Libraries" />
@@ -421,7 +464,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.YamlTesting">
+  <component name="RunManager" selected="Application.MetaIni">
     <configuration default="true" type="tests" factoryName="Unittests">
       <module name="mytest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -436,6 +479,13 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="MetaIni" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MetaIni" />
+      <module name="testMeta" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="YamlTesting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="YamlTesting" />
       <module name="java_local" />
@@ -445,13 +495,6 @@
     </configuration>
     <configuration name="annoTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="annoTest" />
-      <module name="java_local" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="runIocTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="runIocTest" />
       <module name="java_local" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -519,19 +562,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.runIocTest" />
       <item itemvalue="Application.annoTest" />
       <item itemvalue="Application.testOverride" />
       <item itemvalue="Application.testJetty" />
       <item itemvalue="Application.YamlTesting" />
+      <item itemvalue="Application.MetaIni" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MetaIni" />
         <item itemvalue="Application.YamlTesting" />
         <item itemvalue="Application.testJetty" />
         <item itemvalue="Application.testOverride" />
         <item itemvalue="Application.annoTest" />
-        <item itemvalue="Application.runIocTest" />
       </list>
     </recent_temporary>
   </component>
@@ -552,20 +595,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00089" summary="ok">
-      <created>1538701301142</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1538701301142</updated>
-    </task>
-    <task id="LOCAL-00090" summary="ok">
-      <created>1538701352166</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1538701352166</updated>
     </task>
     <task id="LOCAL-00091" summary="ok">
       <created>1538701634001</created>
@@ -896,7 +925,21 @@
       <option name="project" value="LOCAL" />
       <updated>1540973909923</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="ok">
+      <created>1540982434866</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1540982434866</updated>
+    </task>
+    <task id="LOCAL-00139" summary="ok">
+      <created>1540989715966</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1540989715966</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TodoView">
@@ -910,6 +953,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-114" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1656017" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -921,7 +965,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6037841" weight="0.29430053" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6037841" weight="0.46321243" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -981,15 +1025,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/flumeDualSocket.scala" />
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/sqlDfOp.scala" />
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/sqlDfRf.scala" />
-    <entry file="file://$PROJECT_DIR$/question.txt" />
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/graphX1.scala" />
-    <entry file="file://$PROJECT_DIR$/streaming/runYarn.txt" />
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/sqlBasics.scala" />
-    <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/flumeSql.scala" />
-    <entry file="file://$PROJECT_DIR$/streaming/my.json" />
     <entry file="file://$PROJECT_DIR$/streaming/src/main/scala/flumeTransformation.scala" />
     <entry file="file://$PROJECT_DIR$/java_local/src/main/java/testComparator.java" />
     <entry file="file://$PROJECT_DIR$/java_local/src/main/java/testFastJson.java" />
@@ -1020,13 +1055,6 @@
     <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/children.scala" />
     <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/actor01.scala" />
     <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch06.scala" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/annoUse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -1045,6 +1073,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#357#365#0" expanded="true" />
+            <element signature="e#357#365#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1099,27 +1135,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utilities/hadoopRun/bootstrap.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/java_local/src/user.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/YamlTesting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1148,10 +1167,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/openservices/ots-legacy/1.1.2/ots-legacy-1.1.2.jar!/com/aliyun/openservices/ots/model/Row.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/YamlTesting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java/java_local/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        <state relative-caret-position="447">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilities/hadoopRun/bootstrap.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilities/hadoopRun/startHdfs.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/openservices/ots-legacy/1.1.2/ots-legacy-1.1.2.jar!/com/aliyun/openservices/ots/model/ColumnValue.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-431">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/openservices/ots-legacy/1.1.2/ots-legacy-1.1.2.jar!/com/aliyun/openservices/ots/OTSClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="254" column="21" selection-start-line="254" selection-start-column="21" selection-end-line="254" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testArray.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testFastJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/testMeta/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="39" column="20" lean-forward="true" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/testMeta/src/main/java/MetaIni.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
