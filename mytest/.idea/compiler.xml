@@ -10,7 +10,6 @@
         <module name="java_mr" />
         <module name="javaFramework" />
         <module name="local_test" />
-        <module name="myspark-1" />
         <module name="python" />
         <module name="scala_local" />
         <module name="spark_remote" />
@@ -20,6 +19,7 @@
     <bytecodeTargetLevel>
       <module name="cpp" target="1.5" />
       <module name="mr" target="1.5" />
+      <module name="myspark-1" target="1.8" />
       <module name="utilities" target="1.5" />
     </bytecodeTargetLevel>
   </component>
