@@ -1,8 +1,5 @@
 import java.io.*;
 import java.util.*;
-
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.aliyun.openservices.ots.OTSClient;
 import com.aliyun.openservices.ots.model.*;
@@ -62,11 +59,11 @@ public class MetaIni {
         System.out.println("输入配置文件名:");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
-        String s = reader.readLine();//不能使用~
-        File f = new File(s);
-        System.out.println(f.exists());
-        MetaIni meta = new MetaIni(s);
-        meta.ListProjects();
+            String s = reader.readLine();//不能使用~
+            File f = new File(s);
+            System.out.println(f.exists());
+            MetaIni meta = new MetaIni(s);
+            meta.ListProjects();
         } catch (IOException e) {
             e.printStackTrace();
         }
