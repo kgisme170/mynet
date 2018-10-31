@@ -1,4 +1,5 @@
 #include<iostream>
+#include<memory>
 using namespace std;
 struct Foo : public std::enable_shared_from_this<Foo> {
     int m_i;
