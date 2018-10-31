@@ -30,4 +30,12 @@ object ch01 extends App {
   } finally {
     println("結束");
   }
+
+  val s = "Store"
+  val a = s.mkString(",")
+  val b = a.toBuffer
+  b += '1'
+  b += ('1', '2', '3')
+  b ++= Array('6', '7')
+  for (c <- b) print(c)
 }
