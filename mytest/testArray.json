@@ -1,0 +1,14 @@
+{
+  "mode": 2,
+  "machine": {"m1": {
+    "location": "localhost",
+    "quota": 1,
+    "others": []}},
+  "root": "---",
+  "createTime": 1494476711,
+  "lastModified": 1539935772,
+  "user": "user1",
+  "location": "localhost",
+  "user": "me",
+  "name": "admin_task_project",
+  "reserved": {}}

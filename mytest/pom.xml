@@ -17,5 +17,6 @@
         <module>java/java_local</module>
         <module>java/java_mr</module>
         <module>java/javaFramework</module>
+        <module>cloud/testMeta</module>
     </modules>
 </project>

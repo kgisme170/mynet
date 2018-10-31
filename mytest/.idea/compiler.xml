@@ -14,6 +14,7 @@
         <module name="scala_local" />
         <module name="spark_remote" />
         <module name="streaming" />
+        <module name="testMeta" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
