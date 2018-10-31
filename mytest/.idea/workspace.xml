@@ -2,58 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/hydra.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__ch_qos_logback_logback_classic_1_1_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__ch_qos_logback_logback_core_1_1_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__com_alibaba_dataos_dataos_common_0_0_1_SNAPSHOT_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__com_aliyun_dplus_dp_spec_error_0_1_3_SNAPSHOT_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__com_aliyun_openservices_ots_legacy_1_1_1_SNAPSHOT_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_annotations_2_9_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_core_2_9_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_databind_2_9_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__com_google_code_gson_gson_2_2_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__com_google_protobuf_protobuf_java_2_4_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__com_lmax_disruptor_3_0_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__commons_logging_commons_logging_1_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__joda_time_joda_time_2_9_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_apache_commons_commons_collections4_4_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_apache_commons_commons_lang3_3_7_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_apache_httpcomponents_httpasyncclient_4_0_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_apache_httpcomponents_httpclient_4_3_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_apache_httpcomponents_httpcore_4_3_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_apache_httpcomponents_httpcore_nio_4_3_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_apache_logging_log4j_log4j_api_2_0_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_apache_logging_log4j_log4j_core_2_0_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_apache_logging_log4j_log4j_slf4j_impl_2_0_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_jdom_jdom_1_1_3_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_projectlombok_lombok_1_16_20_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_11_1_0_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scala_lang_scala_library_2_11_11_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_11_11_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scalactic_scalactic_2_11_3_0_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scalatest_scalatest_2_11_3_0_4_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_slf4j_jcl_over_slf4j_1_7_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_slf4j_log4j_over_slf4j_1_7_5_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_slf4j_slf4j_api_1_7_7_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_springframework_spring_aop_4_3_12_RELEASE_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_springframework_spring_beans_4_3_12_RELEASE_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_springframework_spring_context_4_3_12_RELEASE_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_springframework_spring_core_4_3_12_RELEASE_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_springframework_spring_expression_4_3_12_RELEASE_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_springframework_spring_web_4_3_12_RELEASE_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/modules/root-build.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/project/Dependencies.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scala/useSbt/project/assembly.sbt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_akka/test_akka.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scala/useSbt/src/main/scala/testFunc.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/java_local/src/main/java/testPwd.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/testPwd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scala_lang_modules_scala_parser_combinators_2_11_1_0_4_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_5_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_6_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scalactic_scalactic_2_11_3_0_4_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scalactic_scalactic_2_11_3_0_5_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scalatest_scalatest_2_11_3_0_4_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/.idea/libraries/sbt__org_scalatest_scalatest_2_11_3_0_5_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala/useSbt/.idea/modules/root-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/.idea/modules/root-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala/useSbt/.idea/modules/usesbt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/.idea/modules/usesbt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala/useSbt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala/useSbt/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala/useSbt/project/Dependencies.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/project/Dependencies.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala/useSbt/project/assembly.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/project/assembly.sbt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -250,7 +210,7 @@
         <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testPwd.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -258,8 +218,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scala/useSbt/build.sbt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="195">
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -466,7 +426,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540993615303" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540995012440" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -626,13 +586,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00094" summary="ok">
-      <created>1539792643954</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1539792643955</updated>
     </task>
     <task id="LOCAL-00095" summary="ok">
       <created>1539954173200</created>
@@ -970,7 +923,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540992123512</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="ok">
+      <created>1540993756089</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1540993756089</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1298,14 +1258,14 @@
     <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testPwd.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scala/useSbt/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="195">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>

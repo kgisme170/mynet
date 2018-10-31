@@ -15,10 +15,10 @@ lazy val root = (project in file(".")).
     aggregate in assembly := false,
     libraryDependencies += scalaTest % Test,
     libraryDependencies += ("com.aliyun.openservices" % "ots-legacy" % "1.1.1-SNAPSHOT")
-      .exclude("joda-time", "joda-time")
-      .exclude("commons-codec", "commons-codec"),
-    libraryDependencies += "joda-time" % "joda-time" % "2.9.1",
-    libraryDependencies += "com.alibaba.dataos" % "dataos-common" % "0.0.1-SNAPSHOT"
+      .exclude("commons-codec", "commons-codec")
+      .exclude("joda-time", "joda-time"),
+    libraryDependencies += "com.alibaba.dataos" % "dataos-common" % "0.0.1-SNAPSHOT",
+    libraryDependencies += "joda-time" % "joda-time" % "2.9.1"
   )
 
 assemblyOption in assembly := (assemblyOption in assembly).value.copy(prependShellScript = Some(defaultUniversalScript(shebang = true)))
