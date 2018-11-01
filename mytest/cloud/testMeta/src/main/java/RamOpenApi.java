@@ -3,7 +3,11 @@ import com.aliyuncs.exceptions.ClientException;
 import com.aliyuncs.profile.DefaultProfile;
 import com.aliyuncs.profile.IClientProfile;
 import com.aliyuncs.ram.model.v20150501.*;
-//https://help.aliyun.com/document_detail/62184.html 是openapi的sdk文档，不包含innerapi
+/*
+    https://help.aliyun.com/document_detail/62184.html 是openapi的sdk文档，不包含innerapi
+    http://ramdoc.alibaba.net/doc/cloud-product-join-ram-guide/support-ram/tech/sts-token.html
+ */
+
 public class RamOpenApi {
 
     public static void main(String[] args) {
