@@ -11,6 +11,7 @@
         <module name="javaFramework" />
         <module name="local_test" />
         <module name="python" />
+        <module name="scala_lang" />
         <module name="spark_remote" />
         <module name="streaming" />
       </profile>

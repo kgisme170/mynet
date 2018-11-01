@@ -1,9 +1,11 @@
 object ch17 extends App {
 
-  val strv = "123"
-  val intv = 123
-  val strTest = new Test[String](strv)
-  val intTest = new Test[Int](intv)
+  val sV = "123"
+  val iV = 123
+  val strTest = new Test[String](sV)
+  val intTest = new Test[Int](iV)
+  var a = "Red"
+  var b = "Green"
   val p = new Pair(a, b)
   strTest.check
   intTest.check
@@ -14,9 +16,7 @@ object ch17 extends App {
   val bo = Array("Hello", "Fred").corresponds(Array(5, 4))(_.length == _)
   val c1: Consumer[Animal, Bird] = new Consumer[Animal, Bird]()
   val c2: Consumer[Bird, Animal] = c1
-  var a = "Red"
   println(p.smaller)
-  var b = "Green"
   p1.replaceFirst("ok")
 
   //5 times println("HI")

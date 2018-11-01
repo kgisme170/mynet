@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f7cd1130-1c69-464a-bf38-56c69b65af3d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../scala_lang/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_lang/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../scala_lang/scala.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/scala_compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/actor01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/actor01.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/ch01.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch0102.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/ch0102.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch0304.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/ch0304.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch0506.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/ch0506.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch06.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/ch06.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch08.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/ch08.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch09.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/ch09.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch10.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/ch10.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch11.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/ch11.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch12.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/ch12.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch13.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/ch13.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch14.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/ch14.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch17.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/ch17.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/ch18.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/ch18.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/children.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/children.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/kill.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/kill.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/pingPong.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/pingPong.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/serverSend.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/serverSend.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/stop.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/stop.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/testPq.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/testPq.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/testSerialize.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/testSerialize.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala_local/src/main/scala/testTraits.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../scala_lang/src/main/scala/testTraits.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/hydra.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/hydra.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__ch_qos_logback_logback_classic_1_1_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__ch_qos_logback_logback_classic_1_1_2_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__ch_qos_logback_logback_core_1_1_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__ch_qos_logback_logback_core_1_1_2_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__com_alibaba_dataos_dataos_common_0_0_1_SNAPSHOT_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__com_alibaba_dataos_dataos_common_0_0_1_SNAPSHOT_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__com_aliyun_dplus_dp_spec_error_0_1_3_SNAPSHOT_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__com_aliyun_dplus_dp_spec_error_0_1_3_SNAPSHOT_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__com_aliyun_openservices_ots_legacy_1_1_1_SNAPSHOT_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__com_aliyun_openservices_ots_legacy_1_1_1_SNAPSHOT_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_annotations_2_9_4_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_annotations_2_9_4_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_core_2_9_4_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_core_2_9_4_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_databind_2_9_4_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__com_fasterxml_jackson_core_jackson_databind_2_9_4_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__com_google_code_gson_gson_2_2_4_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__com_google_code_gson_gson_2_2_4_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__com_google_protobuf_protobuf_java_2_4_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__com_google_protobuf_protobuf_java_2_4_1_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__com_lmax_disruptor_3_0_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__com_lmax_disruptor_3_0_1_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__commons_logging_commons_logging_1_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__commons_logging_commons_logging_1_2_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__joda_time_joda_time_2_9_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__joda_time_joda_time_2_9_1_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_apache_commons_commons_collections4_4_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_apache_commons_commons_collections4_4_1_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_apache_commons_commons_lang3_3_7_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_apache_commons_commons_lang3_3_7_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_apache_httpcomponents_httpasyncclient_4_0_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_apache_httpcomponents_httpasyncclient_4_0_2_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_apache_httpcomponents_httpclient_4_3_5_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_apache_httpcomponents_httpclient_4_3_5_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_apache_httpcomponents_httpcore_4_3_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_apache_httpcomponents_httpcore_4_3_2_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_apache_httpcomponents_httpcore_nio_4_3_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_apache_httpcomponents_httpcore_nio_4_3_2_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_apache_logging_log4j_log4j_api_2_0_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_apache_logging_log4j_log4j_api_2_0_2_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_apache_logging_log4j_log4j_core_2_0_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_apache_logging_log4j_log4j_core_2_0_2_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_apache_logging_log4j_log4j_slf4j_impl_2_0_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_apache_logging_log4j_log4j_slf4j_impl_2_0_2_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_jdom_jdom_1_1_3_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_jdom_jdom_1_1_3_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_projectlombok_lombok_1_16_20_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_projectlombok_lombok_1_16_20_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_6_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_scala_lang_modules_scala_xml_2_11_1_0_6_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_scala_lang_scala_library_2_11_11_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_scala_lang_scala_library_2_11_11_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_11_11_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_scala_lang_scala_reflect_2_11_11_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_scalactic_scalactic_2_11_3_0_5_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_scalactic_scalactic_2_11_3_0_5_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_scalatest_scalatest_2_11_3_0_5_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_scalatest_scalatest_2_11_3_0_5_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_slf4j_jcl_over_slf4j_1_7_5_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_slf4j_jcl_over_slf4j_1_7_5_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_slf4j_log4j_over_slf4j_1_7_5_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_slf4j_log4j_over_slf4j_1_7_5_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_slf4j_slf4j_api_1_7_7_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_slf4j_slf4j_api_1_7_7_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_springframework_spring_aop_4_3_12_RELEASE_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_springframework_spring_aop_4_3_12_RELEASE_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_springframework_spring_beans_4_3_12_RELEASE_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_springframework_spring_beans_4_3_12_RELEASE_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_springframework_spring_context_4_3_12_RELEASE_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_springframework_spring_context_4_3_12_RELEASE_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_springframework_spring_core_4_3_12_RELEASE_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_springframework_spring_core_4_3_12_RELEASE_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_springframework_spring_expression_4_3_12_RELEASE_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_springframework_spring_expression_4_3_12_RELEASE_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/libraries/sbt__org_springframework_spring_web_4_3_12_RELEASE_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/libraries/sbt__org_springframework_spring_web_4_3_12_RELEASE_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/modules/root-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/modules/root-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/modules/usesbt.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/modules/usesbt.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/sbt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/scala_compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/project/Dependencies.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/project/Dependencies.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/project/assembly.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/project/assembly.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/project/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/project/build.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/useSbt/src/main/scala/testFunc.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../useSbt/src/main/scala/testFunc.scala" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-827562993">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="1853" />
+    <option name="height" value="958" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/IdeaProjects/mytest2" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7cd1130-1c69-464a-bf38-56c69b65af3d" name="Default Changelist" comment="" />
+      <created>1541086626119</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1541086626119</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1853" height="958" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24986088" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.10.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

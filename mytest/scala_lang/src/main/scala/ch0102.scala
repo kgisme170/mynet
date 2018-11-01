@@ -1,14 +1,18 @@
 object ch0102 extends App {
   lazy val words = scala.io.Source.fromFile("/tmp/entsafeinstall.log").mkString
+  var s = 8 * 5 + 2
   println(s)
-  s = 3
   println('a', "a".toUpperCase)
   println(1.toString())
   println(1.to(10))
   println(3.+(5))
   val x: BigDecimal = 1234235390 //为什么不能用更大的数值
+  println()
+  var c = 3
   c += 1
   println(c)
+  var r = 3
+
   val v = for (i <- 1 to 10) yield i * 2
   println(x * x * x)
 
@@ -34,9 +38,6 @@ object ch0102 extends App {
   }
 
   println(s)
-  var s = 8 * 5 + 2
-  println(dis)
-  //val f=io.StdIn.readFloat()
   for (ch <- "hello") print(ch)
 
   import scala.util.control.Breaks._
@@ -52,11 +53,6 @@ object ch0102 extends App {
   println()
 
   for (i <- 1 to 3; from = 4 - i; j <- from to 3) printf("%d,", i * j)
-  println()
-  var c = 3
-  println(v)
-  var r = 3
-
   println(ab(-34))
   var dis = {
     val x = 3;

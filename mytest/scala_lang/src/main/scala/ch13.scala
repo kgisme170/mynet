@@ -19,14 +19,7 @@ object ch13 extends App {
   println(sum(l))
   val s = Set(1, 2, 3, 4, 5, 6)
   val weekday = scala.collection.mutable.LinkedHashSet("Mo", "Tu", "We", "Th", "Fr")
-  while (cur != Nil && cur.next != Nil) {
-    cur.next = cur.next.next
-    cur = cur.next
-  }
-  println("------")
-  lst.foreach(println _)
-  println("------")
-  cur.foreach(println _) //?collection is iterator, cur points to the end
+
   println("------")
   val digits = Set(1, 7, 2, 9)
   s.foreach(println _)

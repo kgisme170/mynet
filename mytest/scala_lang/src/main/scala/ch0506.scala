@@ -1,4 +1,8 @@
 object ch0506 extends App {
+  import scala.collection.mutable._
+  val b = Account(4)
+  val c = Account(30)
+  var myCounter = new Counter
 
   val fred = new Person()
   val obj = new p4("my", 2)
@@ -11,11 +15,6 @@ object ch0506 extends App {
   val wilma = chatter.join("wilma")
   val a = Account(3)
   println(obj.description)
-
-  import scala.collection.mutable._
-  val b = Account(4)
-  val c = Account(30)
-  var myCounter = new Counter
 
   class Counter {
     private var value = 0

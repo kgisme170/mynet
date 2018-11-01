@@ -35,8 +35,6 @@ object ch0304 extends App {
   matrix(2)(3) = 42
   println(matrix)
   val command = ArrayBuffer("ls", "-al", "/home/my")
-  for (i <- 0 until triangle.length)
-    triangle(i) = new Array[Int](i + 1)
 
   import scala.collection.JavaConversions.bufferAsJavaList
   import scala.collection.mutable.ArrayBuffer
@@ -46,9 +44,9 @@ object ch0304 extends App {
 
   val s3 = mutable.HashMap[String, Int]()
   val s4 = s3 + ("my" -> 8)
-  println(s2.getOrElse("bob", 0))
   s3 += ("Bob" -> 10, "Fred" -> 7)
   val t = (2, 3, 4)
+  var scores = immutable.SortedMap("Alice" -> 10, "Bob" -> 3, "Cindy" -> 8)
   println(scores.keySet)
   for (v <- scores.values) println(v)
   for ((k, v) <- scores) printf("%s,%d\n", k, v)
@@ -60,9 +58,11 @@ object ch0304 extends App {
   val counts = Array(3, 4, 5)
   println((2, 4, 6)._2)
   var triangle = new Array[Array[Int]](10)
-  var scores = immutable.SortedMap("Alice" -> 10, "Bob" -> 3, "Cindy" -> 8)
+  for (i <- 0 until triangle.length)
+    triangle(i) = new Array[Int](i + 1)
   println(first)
   var s2 = Map("Alice" -> 10)
+  println(s2.getOrElse("bob", 0))
   var s5: mutable.Map[String, Int] = new java.util.TreeMap[String, Int]
   println(symbols.zip(counts))
 }
