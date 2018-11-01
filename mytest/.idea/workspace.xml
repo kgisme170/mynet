@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="ok">
+    <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/testMeta/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/testMeta/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/testMeta/.idea/sbt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/testMeta/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/testMeta/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/testMeta/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/testMeta/src/main/java/MetaIni.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud/testMeta/src/main/java/RamOpenApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_local/src/main/java/runIocTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/main/java/runIocTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -137,7 +131,7 @@
           <entry key="c" value="6" />
           <entry key="class" value="12" />
           <entry key="cpp" value="12" />
-          <entry key="java" value="19" />
+          <entry key="java" value="21" />
           <entry key="json" value="1" />
           <entry key="log" value="1" />
           <entry key="properties" value="2" />
@@ -145,7 +139,7 @@
           <entry key="sbt" value="1" />
           <entry key="scala" value="3" />
           <entry key="sh" value="2" />
-          <entry key="xml" value="18" />
+          <entry key="xml" value="19" />
           <entry key="yaml" value="2" />
         </counts>
       </usages-collector>
@@ -153,14 +147,14 @@
         <counts>
           <entry key="C++" value="18" />
           <entry key="CLASS" value="12" />
-          <entry key="JAVA" value="19" />
+          <entry key="JAVA" value="21" />
           <entry key="JSON" value="1" />
           <entry key="Manifest" value="2" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="Properties" value="2" />
           <entry key="Python" value="1" />
           <entry key="Scala" value="3" />
-          <entry key="XML" value="18" />
+          <entry key="XML" value="19" />
           <entry key="YAML" value="2" />
           <entry key="sbt" value="1" />
         </counts>
@@ -184,7 +178,7 @@
           <entry key="SConstruct" value="199" />
           <entry key="c" value="31" />
           <entry key="cpp" value="48" />
-          <entry key="java" value="4707" />
+          <entry key="java" value="4760" />
           <entry key="json" value="83" />
           <entry key="py" value="29" />
           <entry key="sbt" value="1" />
@@ -197,7 +191,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="C++" value="79" />
-          <entry key="JAVA" value="4707" />
+          <entry key="JAVA" value="4760" />
           <entry key="JSON" value="83" />
           <entry key="PLAIN_TEXT" value="280" />
           <entry key="Scala" value="244" />
@@ -209,11 +203,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="300">
+              <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testFastJsonComplex.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/runIocTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -229,7 +244,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>scala-library</find>
       <find>org.scala-lang</find>
       <find>parquet</find>
       <find>par</find>
@@ -259,6 +273,7 @@
       <find>test_akka</find>
       <find>.load</find>
       <find>setUserId</find>
+      <find>applicationContext.xml</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/java_local</dir>
@@ -271,7 +286,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/streaming/runYarn.txt" />
         <option value="$PROJECT_DIR$/java_local/src/main/java/testPq_.java" />
         <option value="$PROJECT_DIR$/java_local/src/main/java/testComparator.java" />
         <option value="$PROJECT_DIR$/java_local/src/main/java/testFasJson.java" />
@@ -322,6 +336,7 @@
         <option value="$PROJECT_DIR$/cloud/testMeta/pom.xml" />
         <option value="$PROJECT_DIR$/cloud/testMeta/src/main/java/RamOpenApi.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java_local/src/main/java/runIocTest.java" />
       </list>
     </option>
   </component>
@@ -348,10 +363,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1440" />
-    <option name="y" value="-114" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="x" value="1942" />
+    <option name="y" value="-65" />
+    <option name="width" value="1361" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -362,7 +377,17 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="mytest" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="mytest" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -371,6 +396,41 @@
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java_local" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java_local" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java_local" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java_local" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -378,8 +438,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541074196627" />
+    <property name="SearchEverywhereHistoryKey" value="System.getProperty&#9;ACTION&#9;null&#10;testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541074712804" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -408,7 +468,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RamOpenApi">
+  <component name="RunManager" selected="Application.runIocTest">
     <configuration default="true" type="tests" factoryName="Unittests">
       <module name="mytest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -423,13 +483,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="MetaIni" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MetaIni" />
-      <module name="testMeta" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RamOpenApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RamOpenApi" />
       <module name="testMeta" />
@@ -440,6 +493,13 @@
     <configuration name="RamServiceSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RamServiceSample" />
       <module name="testMeta" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="runIocTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="runIocTest" />
+      <module name="java_local" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -459,19 +519,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MetaIni" />
       <item itemvalue="Application.testPwd" />
       <item itemvalue="Application.testFastJsonComplex" />
       <item itemvalue="Application.RamServiceSample" />
       <item itemvalue="Application.RamOpenApi" />
+      <item itemvalue="Application.runIocTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.runIocTest" />
         <item itemvalue="Application.RamOpenApi" />
         <item itemvalue="Application.RamServiceSample" />
         <item itemvalue="Application.testFastJsonComplex" />
         <item itemvalue="Application.testPwd" />
-        <item itemvalue="Application.MetaIni" />
       </list>
     </recent_temporary>
   </component>
@@ -492,13 +552,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00100" summary="ok">
-      <created>1539993518656</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1539993518656</updated>
     </task>
     <task id="LOCAL-00101" summary="ok">
       <created>1539994483394</created>
@@ -836,7 +889,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541074030667</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="ok">
+      <created>1541074213051</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1541074213051</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TodoView">
@@ -862,14 +922,14 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6027689" weight="0.25181347" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6027689" weight="0.15958549" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49749583" weight="0.32738853" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.31576145" side_tool="true" weight="0.36787564" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.48189563" weight="0.32331607" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.68423855" visible="true" weight="0.49326426" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.68423855" visible="true" weight="0.15336788" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.47231096" weight="0.2373057" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
@@ -922,20 +982,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/annoUse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/annoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testOverride.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
@@ -1115,16 +1161,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testFastJsonComplex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/java_local/src/testArray.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1275,8 +1311,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="300">
+          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testFastJsonComplex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/runIocTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
         </state>
       </provider>
     </entry>
