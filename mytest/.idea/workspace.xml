@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="ok">
-      <change afterPath="$PROJECT_DIR$/java/java_local/src/main/java/testFastJsonComplex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala/useSbt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testArray.json" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/testArray.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/testMeta/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/testMeta/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/testMeta/.idea/sbt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/testMeta/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/testMeta/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/testMeta/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/testMeta/src/main/java/MetaIni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud/testMeta/src/main/java/RamOpenApi.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -126,32 +131,36 @@
     <session id="-451817951">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="MF" value="2" />
           <entry key="SConscript" value="13" />
           <entry key="SConstruct" value="2" />
           <entry key="c" value="6" />
-          <entry key="class" value="6" />
+          <entry key="class" value="12" />
           <entry key="cpp" value="12" />
-          <entry key="java" value="11" />
+          <entry key="java" value="19" />
           <entry key="json" value="1" />
           <entry key="log" value="1" />
+          <entry key="properties" value="2" />
           <entry key="py" value="2" />
           <entry key="sbt" value="1" />
           <entry key="scala" value="3" />
           <entry key="sh" value="2" />
-          <entry key="xml" value="12" />
+          <entry key="xml" value="18" />
           <entry key="yaml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="C++" value="18" />
-          <entry key="CLASS" value="6" />
-          <entry key="JAVA" value="11" />
+          <entry key="CLASS" value="12" />
+          <entry key="JAVA" value="19" />
           <entry key="JSON" value="1" />
+          <entry key="Manifest" value="2" />
           <entry key="PLAIN_TEXT" value="19" />
+          <entry key="Properties" value="2" />
           <entry key="Python" value="1" />
           <entry key="Scala" value="3" />
-          <entry key="XML" value="12" />
+          <entry key="XML" value="18" />
           <entry key="YAML" value="2" />
           <entry key="sbt" value="1" />
         </counts>
@@ -164,8 +173,9 @@
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -174,24 +184,24 @@
           <entry key="SConstruct" value="199" />
           <entry key="c" value="31" />
           <entry key="cpp" value="48" />
-          <entry key="java" value="3289" />
+          <entry key="java" value="4707" />
           <entry key="json" value="83" />
           <entry key="py" value="29" />
           <entry key="sbt" value="1" />
           <entry key="scala" value="244" />
           <entry key="sh" value="12" />
           <entry key="txt" value="24" />
-          <entry key="xml" value="188" />
+          <entry key="xml" value="273" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="C++" value="79" />
-          <entry key="JAVA" value="3289" />
+          <entry key="JAVA" value="4707" />
           <entry key="JSON" value="83" />
           <entry key="PLAIN_TEXT" value="280" />
           <entry key="Scala" value="244" />
-          <entry key="XML" value="188" />
+          <entry key="XML" value="273" />
           <entry key="sbt" value="1" />
         </counts>
       </usages-collector>
@@ -199,32 +209,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/java_local/src/testArray.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testFastJsonComplex.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            <state relative-caret-position="285">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -240,9 +229,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>LINKFLAGS</find>
-      <find>Wrong</find>
-      <find>interator</find>
       <find>scala-library</find>
       <find>org.scala-lang</find>
       <find>parquet</find>
@@ -270,6 +256,9 @@
       <find>package</find>
       <find>ListTables</find>
       <find>user.yaml</find>
+      <find>test_akka</find>
+      <find>.load</find>
+      <find>setUserId</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/java_local</dir>
@@ -282,9 +271,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/flumeTransformation.scala" />
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/flumeSql.scala" />
-        <option value="$PROJECT_DIR$/streaming/my.json" />
         <option value="$PROJECT_DIR$/streaming/runYarn.txt" />
         <option value="$PROJECT_DIR$/java_local/src/main/java/testPq_.java" />
         <option value="$PROJECT_DIR$/java_local/src/main/java/testComparator.java" />
@@ -323,9 +309,7 @@
         <option value="$PROJECT_DIR$/java/java_local/pom.xml" />
         <option value="$PROJECT_DIR$/java/java_local/src/main/java/YamlTesting.java" />
         <option value="$PROJECT_DIR$/java/java_local/src/main/java/User.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cloud/testMeta/src/main/java/readIni.java" />
-        <option value="$PROJECT_DIR$/cloud/testMeta/pom.xml" />
         <option value="$PROJECT_DIR$/java/java_local/src/main/java/testFastJson.java" />
         <option value="$PROJECT_DIR$/testArray.json" />
         <option value="$PROJECT_DIR$/cloud/testMeta/src/main/java/MetaIni.java" />
@@ -333,6 +317,11 @@
         <option value="$PROJECT_DIR$/scala/useSbt/build.sbt" />
         <option value="$PROJECT_DIR$/java/java_local/src/testArray.json" />
         <option value="$PROJECT_DIR$/java/java_local/src/main/java/testFastJsonComplex.java" />
+        <option value="$PROJECT_DIR$/cloud/testMeta/src/main/java/RamServiceSample.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/cloud/testMeta/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud/testMeta/src/main/java/RamOpenApi.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -345,11 +334,20 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="scala_local" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1440" />
     <option name="y" value="-114" />
     <option name="width" value="1920" />
@@ -364,40 +362,14 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java_local" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java_local" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java_local" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -407,13 +379,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541049171817" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541074196627" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27900288" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -436,7 +408,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.testFastJsonComplex">
+  <component name="RunManager" selected="Application.RamOpenApi">
     <configuration default="true" type="tests" factoryName="Unittests">
       <module name="mytest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -458,22 +430,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="YamlTesting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="YamlTesting" />
-      <module name="java_local" />
+    <configuration name="RamOpenApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RamOpenApi" />
+      <module name="testMeta" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RamServiceSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RamServiceSample" />
+      <module name="testMeta" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="testFastJsonComplex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="testFastJsonComplex" />
-      <module name="java_local" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testJetty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="testJetty" />
       <module name="java_local" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -487,19 +459,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.testJetty" />
-      <item itemvalue="Application.YamlTesting" />
       <item itemvalue="Application.MetaIni" />
       <item itemvalue="Application.testPwd" />
       <item itemvalue="Application.testFastJsonComplex" />
+      <item itemvalue="Application.RamServiceSample" />
+      <item itemvalue="Application.RamOpenApi" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RamOpenApi" />
+        <item itemvalue="Application.RamServiceSample" />
         <item itemvalue="Application.testFastJsonComplex" />
         <item itemvalue="Application.testPwd" />
         <item itemvalue="Application.MetaIni" />
-        <item itemvalue="Application.YamlTesting" />
-        <item itemvalue="Application.testJetty" />
       </list>
     </recent_temporary>
   </component>
@@ -520,41 +492,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00095" summary="ok">
-      <created>1539954173200</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1539954173200</updated>
-    </task>
-    <task id="LOCAL-00096" summary="ok">
-      <created>1539954223117</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1539954223117</updated>
-    </task>
-    <task id="LOCAL-00097" summary="ok">
-      <created>1539955518498</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1539955518498</updated>
-    </task>
-    <task id="LOCAL-00098" summary="ok">
-      <created>1539955896059</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1539955896059</updated>
-    </task>
-    <task id="LOCAL-00099" summary="ok">
-      <created>1539965226891</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1539965226892</updated>
     </task>
     <task id="LOCAL-00100" summary="ok">
       <created>1539993518656</created>
@@ -864,7 +801,42 @@
       <option name="project" value="LOCAL" />
       <updated>1540993756089</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="ok">
+      <created>1541049520911</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1541049520912</updated>
+    </task>
+    <task id="LOCAL-00145" summary="ok">
+      <created>1541059717618</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1541059717618</updated>
+    </task>
+    <task id="LOCAL-00146" summary="ok">
+      <created>1541064040702</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1541064040702</updated>
+    </task>
+    <task id="LOCAL-00147" summary="ok">
+      <created>1541073223867</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1541073223868</updated>
+    </task>
+    <task id="LOCAL-00148" summary="ok">
+      <created>1541074030667</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1541074030667</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="TodoView">
@@ -878,8 +850,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-114" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16719915" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24068157" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -889,15 +862,15 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6027689" weight="0.46217617" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6027689" weight="0.25181347" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49749583" weight="0.32738853" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.31522897" side_tool="true" visible="true" weight="0.49326426" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.31576145" side_tool="true" weight="0.36787564" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.48189563" weight="0.32331607" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.68477106" visible="true" weight="0.49326426" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.47231096" weight="0.3388601" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.68423855" visible="true" weight="0.49326426" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.47231096" weight="0.2373057" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -905,7 +878,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.12886049" />
+      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.17944622" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -949,31 +922,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch0304.scala" />
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch09.scala" />
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch10.scala" />
-    <entry file="file://$PROJECT_DIR$/spark_remote/src/main/scala/sql.scala" />
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/testSerialize.scala" />
-    <entry file="file://$PROJECT_DIR$/java_local/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/ArrayIocTest.java" />
-    <entry file="file://$PROJECT_DIR$/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark_remote/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/javaFramework/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/runIocTest.java" />
-    <entry file="file://$PROJECT_DIR$/streaming/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/scala_local/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/stop.scala" />
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/pingPong.scala" />
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/kill.scala" />
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/children.scala" />
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/actor01.scala" />
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch06.scala" />
     <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/annoUse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -1129,20 +1077,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/aliyun-openservices-ots.log" />
-    <entry file="file://$PROJECT_DIR$/cloud/testMeta/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/testMeta/src/main/java/MetaIni.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scala/useSbt/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1167,28 +1101,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/openservices/ots-legacy/1.1.2/ots-legacy-1.1.2.jar!/com/aliyun/openservices/ots/OTSClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="254" column="21" selection-start-line="254" selection-start-column="21" selection-end-line="254" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.51/fastjson-1.2.51.jar!/com/alibaba/fastjson/JSONObject.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="272" column="22" lean-forward="true" selection-start-line="272" selection-start-column="11" selection-end-line="272" selection-end-column="22" />
-          <folding>
-            <element signature="e#7729#7730#0" expanded="true" />
-            <element signature="e#7769#7770#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1199,6 +1115,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testFastJsonComplex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java/java_local/src/testArray.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1206,13 +1132,151 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testFastJsonComplex.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-ram/2.0.7/aliyun-java-sdk-ram-2.0.7.jar!/com/aliyuncs/ram/model/v20150501/AddUserToGroupRequest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+        <state relative-caret-position="360">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-ram/2.0.7/aliyun-java-sdk-ram-2.0.7.jar!/com/aliyuncs/ram/model/v20150501/AddUserToGroupResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-ram/2.0.7/aliyun-java-sdk-ram-2.0.7-sources.jar!/com/aliyuncs/ram/model/v20150501/AddUserToGroupRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-core/3.2.8/aliyun-java-sdk-core-3.2.8.jar!/META-INF/maven/com.aliyun/aliyun-java-sdk-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-737">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-core/3.2.8/aliyun-java-sdk-core-3.2.8.jar!/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-core/3.2.8/aliyun-java-sdk-core-3.2.8.jar!/META-INF/maven/com.aliyun/aliyun-java-sdk-core/pom.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-ram/3.0.0/aliyun-java-sdk-ram-3.0.0.jar!/com/aliyuncs/ram/transform/v20150501/AddUserToGroupResponseUnmarshaller.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-ram/2.0.7/aliyun-java-sdk-ram-2.0.7-sources.jar!/com/aliyuncs/ram/model/v20150501/AddUserToGroupResponse.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-ram/2.0.7/aliyun-java-sdk-ram-2.0.7-sources.jar!/com/aliyuncs/ram/model/v20150501/ClearAccountAliasRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-ram/3.0.0/aliyun-java-sdk-ram-3.0.0.jar!/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-ram/3.0.0/aliyun-java-sdk-ram-3.0.0.jar!/META-INF/maven/com.aliyun/aliyun-java-sdk-ram/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-217">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-ram/3.0.0/aliyun-java-sdk-ram-3.0.0.jar!/META-INF/maven/com.aliyun/aliyun-java-sdk-ram/pom.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/openservices/ots-legacy/1.1.2/ots-legacy-1.1.2.jar!/com/aliyun/openservices/ots/OTSClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/openservices/ots-legacy/1.1.2/ots-legacy-1.1.2-sources.jar!/com/aliyun/openservices/ots/OTSClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="57" selection-start-line="57" selection-end-line="59" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
           <folding>
+            <element signature="e#11961#11965#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-ram/3.0.0/aliyun-java-sdk-ram-3.0.0.jar!/com/aliyuncs/ram/model/v20150501/GetUserRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/testMeta/src/main/java/MetaIni.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/testMeta/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/testMeta/src/main/java/RamOpenApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#2879#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-ims/1.0.0/aliyun-java-sdk-ims-1.0.0.jar!/com/aliyuncs/ims/model/v20170430/CreateUserRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1935">
+          <caret line="156" column="23" selection-start-line="156" selection-start-column="23" selection-end-line="156" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-ram/3.0.0/aliyun-java-sdk-ram-3.0.0-sources.jar!/com/aliyuncs/ram/model/v20150501/GetUserRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -1245,7 +1309,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>scala-sdk-2.11.5</last-edited>
+          <last-edited>scala-sdk-2.11.11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

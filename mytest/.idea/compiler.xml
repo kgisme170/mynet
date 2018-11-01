@@ -13,7 +13,6 @@
         <module name="python" />
         <module name="spark_remote" />
         <module name="streaming" />
-        <module name="testMeta" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +20,7 @@
       <module name="mr" target="1.5" />
       <module name="myspark-1" target="1.8" />
       <module name="scala_local" target="1.8" />
+      <module name="testMeta" target="1.5" />
       <module name="utilities" target="1.5" />
     </bytecodeTargetLevel>
   </component>
