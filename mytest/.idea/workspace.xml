@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
+    <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="ok">
+      <change afterPath="$PROJECT_DIR$/java/java_local/src/main/java/testFastJsonComplex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scala/useSbt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala/useSbt/src/main/scala/testFunc.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala/useSbt/src/main/scala/testFunc.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testArray.json" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/src/testArray.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -128,9 +129,9 @@
           <entry key="SConscript" value="13" />
           <entry key="SConstruct" value="2" />
           <entry key="c" value="6" />
-          <entry key="class" value="5" />
+          <entry key="class" value="6" />
           <entry key="cpp" value="12" />
-          <entry key="java" value="9" />
+          <entry key="java" value="11" />
           <entry key="json" value="1" />
           <entry key="log" value="1" />
           <entry key="py" value="2" />
@@ -144,8 +145,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="C++" value="18" />
-          <entry key="CLASS" value="5" />
-          <entry key="JAVA" value="9" />
+          <entry key="CLASS" value="6" />
+          <entry key="JAVA" value="11" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="Python" value="1" />
@@ -157,13 +158,14 @@
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="6" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -172,8 +174,8 @@
           <entry key="SConstruct" value="199" />
           <entry key="c" value="31" />
           <entry key="cpp" value="48" />
-          <entry key="java" value="2293" />
-          <entry key="json" value="71" />
+          <entry key="java" value="3289" />
+          <entry key="json" value="83" />
           <entry key="py" value="29" />
           <entry key="sbt" value="1" />
           <entry key="scala" value="244" />
@@ -185,8 +187,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="C++" value="79" />
-          <entry key="JAVA" value="2293" />
-          <entry key="JSON" value="71" />
+          <entry key="JAVA" value="3289" />
+          <entry key="JSON" value="83" />
           <entry key="PLAIN_TEXT" value="280" />
           <entry key="Scala" value="244" />
           <entry key="XML" value="188" />
@@ -198,49 +200,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testPwd.java">
+        <entry file="file://$PROJECT_DIR$/java/java_local/src/testArray.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scala/useSbt/build.sbt">
+        <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testFastJsonComplex.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+            <state relative-caret-position="427">
+              <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
               <folding>
-                <element signature="e#0#21#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testArray.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testFastJson.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/openservices/ots-legacy/1.1.2/ots-legacy-1.1.2.jar!/com/aliyun/openservices/ots/OTSClient.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="254" column="21" selection-start-line="254" selection-start-column="21" selection-end-line="254" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -265,7 +240,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>has_id</find>
       <find>LINKFLAGS</find>
       <find>Wrong</find>
       <find>interator</find>
@@ -295,6 +269,7 @@
       <find>alchim</find>
       <find>package</find>
       <find>ListTables</find>
+      <find>user.yaml</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/java_local</dir>
@@ -307,8 +282,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/sqlDfRf.scala" />
-        <option value="$PROJECT_DIR$/streaming/src/main/scala/sqlDfOp.scala" />
         <option value="$PROJECT_DIR$/streaming/src/main/scala/flumeTransformation.scala" />
         <option value="$PROJECT_DIR$/streaming/src/main/scala/flumeSql.scala" />
         <option value="$PROJECT_DIR$/streaming/my.json" />
@@ -358,6 +331,8 @@
         <option value="$PROJECT_DIR$/cloud/testMeta/src/main/java/MetaIni.java" />
         <option value="$PROJECT_DIR$/java/java_local/src/main/java/testPwd.java" />
         <option value="$PROJECT_DIR$/scala/useSbt/build.sbt" />
+        <option value="$PROJECT_DIR$/java/java_local/src/testArray.json" />
+        <option value="$PROJECT_DIR$/java/java_local/src/main/java/testFastJsonComplex.java" />
       </list>
     </option>
   </component>
@@ -375,10 +350,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1545" />
-    <option name="y" value="-30" />
-    <option name="width" value="1361" />
-    <option name="height" value="877" />
+    <option name="x" value="1440" />
+    <option name="y" value="-114" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -401,13 +376,28 @@
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="useSbt" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java_local" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java_local" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java_local" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -417,7 +407,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540995324116" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541049171817" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -446,7 +436,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.testPwd">
+  <component name="RunManager" selected="Application.testFastJsonComplex">
     <configuration default="true" type="tests" factoryName="Unittests">
       <module name="mytest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -475,15 +465,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testJetty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="testJetty" />
+    <configuration name="testFastJsonComplex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testFastJsonComplex" />
       <module name="java_local" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testOverride" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="testOverride" />
+    <configuration name="testJetty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testJetty" />
       <module name="java_local" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -496,67 +486,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="test_akka" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="test_akka" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.testOverride" />
       <item itemvalue="Application.testJetty" />
       <item itemvalue="Application.YamlTesting" />
       <item itemvalue="Application.MetaIni" />
       <item itemvalue="Application.testPwd" />
+      <item itemvalue="Application.testFastJsonComplex" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.testFastJsonComplex" />
         <item itemvalue="Application.testPwd" />
         <item itemvalue="Application.MetaIni" />
         <item itemvalue="Application.YamlTesting" />
         <item itemvalue="Application.testJetty" />
-        <item itemvalue="Application.testOverride" />
       </list>
     </recent_temporary>
   </component>
@@ -934,10 +877,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1545" y="-30" width="1361" height="877" extended-state="0" />
-    <editor active="true" />
+    <frame x="1440" y="-114" width="1920" height="1057" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23578468" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16719915" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -947,15 +889,15 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6037841" weight="0.46242037" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6027689" weight="0.46217617" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49749583" weight="0.32738853" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5269894" side_tool="true" visible="true" weight="0.27385378" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4823133" weight="0.32356688" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.6855871" weight="0.49426752" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="10" sideWeight="0.47301057" visible="true" weight="0.4165605" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.31522897" side_tool="true" visible="true" weight="0.49326426" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.48189563" weight="0.32331607" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.68477106" visible="true" weight="0.49326426" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.47231096" weight="0.3388601" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -963,7 +905,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.18347232" />
+      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.12886049" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -1007,8 +949,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java_local/src/main/java/AdditionClient.java" />
-    <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch07.scala" />
     <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch0304.scala" />
     <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch09.scala" />
     <entry file="file://$PROJECT_DIR$/scala_local/src/main/scala/ch10.scala" />
@@ -1153,16 +1093,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/YamlTesting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/java_local/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
@@ -1198,6 +1128,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/logs/aliyun-openservices-ots.log" />
+    <entry file="file://$PROJECT_DIR$/cloud/testMeta/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/testMeta/src/main/java/MetaIni.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scala/useSbt/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testPwd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/YamlTesting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="109" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="109" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/openservices/ots-legacy/1.1.2/ots-legacy-1.1.2.jar!/com/aliyun/openservices/ots/OTSClient.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -1212,53 +1181,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testArray.json">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.51/fastjson-1.2.51.jar!/com/alibaba/fastjson/JSONObject.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        <state relative-caret-position="164">
+          <caret line="272" column="22" lean-forward="true" selection-start-line="272" selection-start-column="11" selection-end-line="272" selection-end-column="22" />
+          <folding>
+            <element signature="e#7729#7730#0" expanded="true" />
+            <element signature="e#7769#7770#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testFastJson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        <state relative-caret-position="210">
+          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/aliyun-openservices-ots.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/testMeta/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/testMeta/src/main/java/MetaIni.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="1" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testPwd.java">
+    <entry file="file://$PROJECT_DIR$/java/java_local/src/testArray.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scala/useSbt/build.sbt">
+    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testFastJsonComplex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        <state relative-caret-position="427">
+          <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
