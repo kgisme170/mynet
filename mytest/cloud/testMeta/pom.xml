@@ -36,6 +36,16 @@
         </dependency>
 -->
         <dependency>
+            <groupId>com.alibaba.aliyunid</groupId>
+            <artifactId>aliyunid.client.java</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aliyun</groupId>
+            <artifactId>aliyun-java-sdk-ims</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
             <groupId>com.aliyun</groupId>
             <artifactId>aliyun-java-sdk-ram</artifactId>
             <version>3.0.0</version>
@@ -43,7 +53,7 @@
         <dependency>
             <groupId>com.aliyun</groupId>
             <artifactId>aliyun-java-sdk-core</artifactId>
-            <version>3.2.8</version>
+            <version>3.5.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
         <!-- commons-codec 跟 spark 环境提供的版本冲突-->
