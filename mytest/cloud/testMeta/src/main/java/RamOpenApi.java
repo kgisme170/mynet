@@ -1,36 +1,56 @@
-import com.aliyuncs.DefaultAcsClient;
-import com.aliyuncs.exceptions.ClientException;
-import com.aliyuncs.profile.DefaultProfile;
-import com.aliyuncs.profile.IClientProfile;
-import com.aliyuncs.ram.model.v20150501.*;
 /*
     https://help.aliyun.com/document_detail/62184.html 是openapi的sdk文档，不包含innerapi
     http://ramdoc.alibaba.net/doc/cloud-product-join-ram-guide/support-ram/tech/sts-token.html
  */
 
+import com.alibaba.aliyunid.client.AliyunidClient;
+import com.alibaba.aliyunid.client.exception.OAuthException;
+import com.alibaba.aliyunid.client.model.OAuthPair;
+import com.aliyuncs.DefaultAcsClient;
+import com.aliyuncs.exceptions.ClientException;
+import com.aliyuncs.exceptions.ServerException;
+import com.aliyuncs.ims.model.v20170430.GetUserResponse;
+import com.aliyuncs.profile.DefaultProfile;
+import com.aliyuncs.ims.model.v20170430.GetUserRequest;
+import com.aliyuncs.profile.IClientProfile;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.*;
+
 public class RamOpenApi {
-
-    public static void main(String[] args) {
-        if (args.length != 4) {
-            System.out.println("运行参数有3个: [regionId], [accessKeyId], [secret]");
-        }
-        String regionId = args[1];
-        String accessKeyId = args[2];
-        String secret = args[3];
-        IClientProfile profile = DefaultProfile.getProfile(regionId, accessKeyId, secret);
-        DefaultAcsClient client = new DefaultAcsClient(profile);
-        final CreateUserRequest request = new CreateUserRequest();
-        request.setUserName("ramtest001");
+    public static void main2(String fileName) {
+        Properties p = new Properties();
         try {
-            final CreateUserResponse response = client.getAcsResponse(request);
+            p.load(new FileInputStream(fileName));
+            final String regionId = (String) p.get("regionId");
+            final String accessKeyId = (String) p.get("accessKeyId");
+            final String secret = (String) p.get("secret");
+            final String userId = (String) p.get("userId");
+            Map<String, String> imsMap = new HashMap<>();
+            imsMap.put("Ims", "ims.aliyuncs.com");
+            IClientProfile profile = DefaultProfile.getProfile(regionId, imsMap,
+                    accessKeyId,
+                    secret);
+            DefaultAcsClient client = new DefaultAcsClient(profile);
 
-            System.out.println("UserName: " + response.getUser().getUserName());
-            System.out.println("CreateTime: " + response.getUser().getCreateDate());
+            final GetUserRequest request = new GetUserRequest();
+            request.setUserId(userId);
+            final GetUserResponse response = client.getAcsResponse(request);
+            System.out.println(response.getUser().getTenantId());
+        } catch (IOException e) {
+            System.out.println("ini文件不存在:" + fileName);
+            System.exit(1);
+        } catch (ServerException e) {
+            e.printStackTrace();
         } catch (ClientException e) {
-            System.out.println("Failed.");
-            System.out.println("Error code: " + e.getErrCode());
-            System.out.println("Error message: " + e.getErrMsg());
+            e.printStackTrace();
+            System.out.println("===============");
+            System.out.println("ErrorCode:" + e.getErrCode());
+            System.out.println("ErrorMessage:" + e.getErrMsg());
         }
-
+    }
+    public static void main(String [] args){
+        RamOpenApi.main2(args[1]);
     }
 }
