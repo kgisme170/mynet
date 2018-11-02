@@ -1,7 +1,7 @@
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class testvolatile {
+public class testVolatile {
     public static CountDownLatch l = new CountDownLatch(10);
 
     public static void main(String[] args) throws InterruptedException {
