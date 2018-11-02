@@ -17,29 +17,41 @@ public class Api01 {
     public String another() {
         return "another!";
     }
-    class Person{
-        String name = "abc";
-        @JSONField(name="NAME")
-        public String getname() {return name;}
-        @JSONField(name="ID")
-        public void setname(String value) {this.name = name;}
 
-        int id=3;
-        @JSONField(name="ID")
-        public int getid() {return id;}
-        @JSONField(name="ID")
-        public void setid(int value) {this.id = id;}
+    class Person {
+        String name = "abc";
+
+        @JSONField(name = "NAME")
+        public String getname() {
+            return name;
+        }
+
+        @JSONField(name = "ID")
+        public void setname(String value) {
+            this.name = name;
+        }
+
+        int id = 3;
+
+        @JSONField(name = "ID")
+        public int getid() {
+            return id;
+        }
+
+        @JSONField(name = "ID")
+        public void setid(int value) {
+            this.id = id;
+        }
 
     }
+
     @RequestMapping("/api01")
     public String api01() {
 
         try {
             return JSONObject.toJSONString(new Person());
-        }catch(Exception e){
+        } catch (Exception e) {
             return "mapper exception";
         }
-        //return "api02";
     }
-
 }
