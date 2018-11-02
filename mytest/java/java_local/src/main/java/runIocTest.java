@@ -1,8 +1,6 @@
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
-import static java.lang.System.getProperty;
-
 public class runIocTest {
     public static void main(String[] args) {
         String fileName = "../../src/applicationContext.xml";
