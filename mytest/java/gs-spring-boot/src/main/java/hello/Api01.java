@@ -8,6 +8,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 public class Api01 {
 
+    @RequestMapping("/")
+    public String index() {
+        return "Greetings from Spring Boot!";
+    }
+
+    @RequestMapping("/another")
+    public String another() {
+        return "another!";
+    }
     class Person{
         String name = "abc";
         @JSONField(name="NAME")
@@ -23,7 +32,7 @@ public class Api01 {
 
     }
     @RequestMapping("/api01")
-    public String index() {
+    public String api01() {
 
         try {
             return JSONObject.toJSONString(new Person());
