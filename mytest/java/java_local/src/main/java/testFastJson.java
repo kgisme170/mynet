@@ -1,4 +1,8 @@
 import com.alibaba.fastjson.*;
+import com.alibaba.fastjson.annotation.JSONField;
+import com.alibaba.fastjson.serializer.SerializerFeature;
+
+import java.util.Date;
 
 public class testFastJson {
     private static final String JSON_OBJ_STR = "{\"studentName\":\"lily\",\"studentAge\":12}";
@@ -106,6 +110,29 @@ public class testFastJson {
     }
 
     public static void main(String[] args) {
-        new testFastJson().f();
+        class Person{
+            String name = "abc";
+            @JSONField(name="NAME")
+            public String getname() {return name;}
+            @JSONField(name="ID")
+            public void setname(String value) {this.name = name;}
+
+            int id=3;
+            @JSONField(name="ID")
+            public int getid() {return id;}
+            @JSONField(name="ID")
+            public void setid(int value) {this.id = id;}
+
+        }
+        Person p = new Person();
+        System.out.println(p);
+        String s = JSONObject.toJSONString(p, SerializerFeature.WriteClassName);
+        String s1 = JSONObject.toJSONString(p);
+        long millis = 1324138987429L;
+        Date date = new Date(millis);
+        System.out.println(JSONObject.toJSONString(date));
+        System.out.println(s);
+        System.out.println(s1);
+        //new testFastJson().f();
     }
 }
