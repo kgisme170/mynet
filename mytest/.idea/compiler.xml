@@ -11,7 +11,7 @@
         <module name="java_mr" />
         <module name="javaFramework" />
         <module name="local_test" />
-        <module name="scala_lang" />
+        <module name="scala" />
         <module name="spark_remote" />
         <module name="streaming" />
         <module name="useMybatis" />

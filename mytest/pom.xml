@@ -11,7 +11,7 @@
     <modules>
         <module>spark/spark_remote</module>
         <module>spark/streaming</module>
-        <module>scala_lang</module>
+        <module>scala</module>
         <module>java/java_local</module>
         <module>java/java_mr</module>
         <module>java/javaFramework</module>
