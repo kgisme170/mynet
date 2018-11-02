@@ -13,7 +13,7 @@
         <module>spark/streaming</module>
         <module>scala</module>
         <module>java/java_local</module>
-        <module>java/java_mr</module>
+        <module>hadoop/mr</module>
         <module>java/springIocAop</module>
         <module>java/gs-spring-boot</module>
         <module>java/useMybatis</module>

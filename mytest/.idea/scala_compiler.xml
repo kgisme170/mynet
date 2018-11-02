@@ -7,6 +7,6 @@
         <parameter value="$PROJECT_DIR$/local_test/target/.scala_dependencies" />
       </parameters>
     </profile>
-    <profile name="Maven 2" modules="scala,spark_remote,streaming,java_mr" />
+    <profile name="Maven 2" modules="scala,spark_remote,streaming,mr" />
   </component>
 </project>

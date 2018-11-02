@@ -8,12 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="gs-spring-boot" />
         <module name="java_local" />
-        <module name="java_mr" />
+        <module name="mr" />
+        <module name="scala" />
         <module name="spark_remote" />
         <module name="springIocAop" />
         <module name="streaming" />
         <module name="useMybatis" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="java_local" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

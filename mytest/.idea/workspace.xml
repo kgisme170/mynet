@@ -1,24 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="ok">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_local/java_local.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/java_local.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_mr/java_mr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/java_mr.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_mr/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_mr/src/main/cpp/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/src/main/cpp/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_mr/src/main/cpp/dfsio.c" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/src/main/cpp/dfsio.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_mr/src/main/cpp/w.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/src/main/cpp/w.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_mr/src/main/java/HowToRun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/src/main/java/HowToRun.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_mr/src/main/java/dfsio.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/src/main/java/dfsio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_mr/src/main/java/grep.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/src/main/java/grep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_mr/src/main/java/w1.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/src/main/java/w1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_mr/src/main/java/w1_args.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/src/main/java/w1_args.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_mr/src/main/java/w2.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/src/main/java/w2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_mr/src/main/python/HowToRun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/src/main/python/HowToRun.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_mr/src/main/python/mapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/src/main/python/mapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_mr/src/main/python/reducer.py" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/src/main/python/reducer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_mr/src/main/scala/wc01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/src/main/scala/wc01.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/springIocAop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/springIocAop/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/springIocAop/springIocAop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java/springIocAop/springIocAop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/CarApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/CarApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/CarLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/CarLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/PersonApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/PersonApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/PersonLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/PersonLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/UserServiceApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/UserServiceApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/springIocAop/src/main/java/my/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/useMybatis/src/mapper/UserMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/adminClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/adminClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/ch0102.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/ch0102.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/ide/.idea/description.html" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/ide/.idea/description.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/ide/.idea/libraries/audience_annotations_0_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/ide/.idea/libraries/audience_annotations_0_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/ide/.idea/libraries/zookeeper_3_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/ide/.idea/libraries/zookeeper_3_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/ide/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/ide/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/ide/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/ide/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/ide/.idea/project-template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/ide/.idea/project-template.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/ide/.idea/thriftCompiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/ide/.idea/thriftCompiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/ide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/ide/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/ide/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/ide/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/ide/src/com/company/primary.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/ide/src/com/company/primary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/ide/zktest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/ide/zktest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/masterWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/masterWatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/vp.c" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/vp.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/workerWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/workerWatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/zk01.c" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/zk01.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zk/zk02.c" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/zk/zk02.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,9 +57,8 @@
     <ignored path="$PROJECT_DIR$/python/target/" />
     <ignored path="$PROJECT_DIR$/utilities/target/" />
     <ignored path="$PROJECT_DIR$/streaming/target/" />
-    <ignored path="$PROJECT_DIR$/java_mr/target/" />
     <ignored path="$PROJECT_DIR$/springIocAop/target/" />
-    <ignored path="$PROJECT_DIR$/java/java_mr/target/" />
+    <ignored path="$PROJECT_DIR$/java/mr/target/" />
     <ignored path="$PROJECT_DIR$/java/java_local/target/" />
     <ignored path="$PROJECT_DIR$/scala/scala_local/target/" />
     <ignored path="$PROJECT_DIR$/spark/streaming/target/" />
@@ -43,6 +69,7 @@
     <ignored path="$PROJECT_DIR$/java/gs-sprint-boot/target/" />
     <ignored path="$PROJECT_DIR$/java/gs-spring-boot/target/" />
     <ignored path="$PROJECT_DIR$/java/useMybatis/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop/mr/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,16 +180,16 @@
           <entry key="gradle" value="1" />
           <entry key="html" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="58" />
+          <entry key="java" value="59" />
           <entry key="json" value="1" />
           <entry key="log" value="1" />
           <entry key="properties" value="6" />
-          <entry key="py" value="2" />
+          <entry key="py" value="3" />
           <entry key="sbt" value="1" />
           <entry key="scala" value="3" />
           <entry key="sh" value="2" />
-          <entry key="txt" value="3" />
-          <entry key="xml" value="44" />
+          <entry key="txt" value="6" />
+          <entry key="xml" value="60" />
           <entry key="yaml" value="3" />
         </counts>
       </usages-collector>
@@ -173,29 +200,29 @@
           <entry key="Groovy" value="1" />
           <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="58" />
+          <entry key="JAVA" value="59" />
           <entry key="JSON" value="1" />
           <entry key="Manifest" value="2" />
-          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="PLAIN_TEXT" value="27" />
           <entry key="Properties" value="6" />
           <entry key="Python" value="1" />
           <entry key="Scala" value="3" />
-          <entry key="XML" value="44" />
+          <entry key="XML" value="60" />
           <entry key="YAML" value="3" />
           <entry key="sbt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="7" />
+          <entry key="project.open.time.1" value="9" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -213,7 +240,7 @@
           <entry key="scala" value="244" />
           <entry key="sh" value="12" />
           <entry key="txt" value="26" />
-          <entry key="xml" value="418" />
+          <entry key="xml" value="454" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -225,7 +252,7 @@
           <entry key="PLAIN_TEXT" value="282" />
           <entry key="Properties" value="45" />
           <entry key="Scala" value="244" />
-          <entry key="XML" value="418" />
+          <entry key="XML" value="454" />
           <entry key="sbt" value="1" />
         </counts>
       </usages-collector>
@@ -233,90 +260,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+        <entry file="file://$PROJECT_DIR$/java/springIocAop/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="423" column="34" selection-start-line="423" selection-start-column="34" selection-end-line="423" selection-end-column="34" />
-              <folding>
-                <element signature="e#17731#17735#0" expanded="true" />
-                <element signature="e#17763#17767#0" expanded="true" />
-                <element signature="e#17772#17776#0" expanded="true" />
-                <element signature="e#17805#17809#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="195">
+              <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="134" selection-start-line="4" selection-start-column="134" selection-end-line="4" selection-end-column="134" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/scala_compiler.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/java_local/java_local.iml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/java_local/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="373">
               <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/useMybatis/src/main/java/my/mapper/UserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/useMybatis/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -333,7 +290,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>textFileStream</find>
       <find>saveAsHadoop</find>
       <find>dataRdd</find>
       <find>saveAsNew</find>
@@ -363,9 +319,11 @@
       <find>scala_lang</find>
       <find>System.</find>
       <find>.class.getResource</find>
+      <find>java_mr</find>
     </findStrings>
     <replaceStrings>
       <replace>scala</replace>
+      <replace>mr</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/java_local</dir>
@@ -378,7 +336,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cloud/testMeta/pom.xml" />
         <option value="$PROJECT_DIR$/cloud/testMeta/src/main/java/RamOpenApi.java" />
         <option value="$PROJECT_DIR$/java/java_local/src/main/java/runIocTest.java" />
         <option value="$PROJECT_DIR$/scala/pom.xml" />
@@ -387,7 +344,6 @@
         <option value="$PROJECT_DIR$/scala/src/main/scala/ch0102.scala" />
         <option value="$PROJECT_DIR$/scala/src/main/scala/ch0304.scala" />
         <option value="$PROJECT_DIR$/scala/src/main/scala/ch0506.scala" />
-        <option value="$PROJECT_DIR$/java/java_mr/pom.xml" />
         <option value="$PROJECT_DIR$/spark/spark_remote/pom.xml" />
         <option value="$PROJECT_DIR$/spark/streaming/pom.xml" />
         <option value="$PROJECT_DIR$/java/gs-sprint-boot/pom.xml" />
@@ -421,14 +377,16 @@
         <option value="$PROJECT_DIR$/java/useMybatis/src/main/java/my/beans/UserBean.java" />
         <option value="$PROJECT_DIR$/java/useMybatis/src/main/java/my/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/scala/pom.xml" />
-        <option value="$PROJECT_DIR$/.idea/scala_compiler.xml" />
         <option value="$PROJECT_DIR$/java/springIocAop/src/main/java/my/PersonApp.java" />
         <option value="$PROJECT_DIR$/java/java_local/pom.xml" />
-        <option value="$PROJECT_DIR$/java/springIocAop/pom.xml" />
+        <option value="$PROJECT_DIR$/java/mr/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
         <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/scala_compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
         <option value="$PROJECT_DIR$/.idea/encodings.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/java/springIocAop/pom.xml" />
       </list>
     </option>
   </component>
@@ -445,15 +403,6 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="scala" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="scala" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
@@ -473,6 +422,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -484,8 +435,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -496,12 +445,19 @@
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="java_local" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springIocAop" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -512,7 +468,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="System.getProperty&#9;ACTION&#9;null&#10;testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541199728977" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541200713997" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -541,7 +497,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UserServiceApp">
+  <component name="RunManager" selected="Application.UserService">
     <configuration name="CarApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="my.CarApp" />
       <module name="springIocAop" />
@@ -618,10 +574,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UserService" />
         <item itemvalue="Application.UserServiceApp" />
         <item itemvalue="Application.CarApp" />
         <item itemvalue="Application.PersonApp" />
-        <item itemvalue="Application.UserService" />
         <item itemvalue="Application.testDruid" />
       </list>
     </recent_temporary>
@@ -643,27 +599,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00117" summary="ok">
-      <created>1540258482830</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1540258482831</updated>
-    </task>
-    <task id="LOCAL-00118" summary="ok">
-      <created>1540307352450</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1540307352450</updated>
-    </task>
-    <task id="LOCAL-00119" summary="ok">
-      <created>1540308986776</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1540308986776</updated>
     </task>
     <task id="LOCAL-00120" summary="ok">
       <created>1540312870175</created>
@@ -987,7 +922,28 @@
       <option name="project" value="LOCAL" />
       <updated>1541199507990</updated>
     </task>
-    <option name="localTasksCounter" value="166" />
+    <task id="LOCAL-00166" summary="ok">
+      <created>1541199856470</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1541199856470</updated>
+    </task>
+    <task id="LOCAL-00167" summary="ok">
+      <created>1541199959329</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1541199959329</updated>
+    </task>
+    <task id="LOCAL-00168" summary="ok">
+      <created>1541200157009</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1541200157009</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1014,7 +970,7 @@
     <frame x="77" y="23" width="1363" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2702498" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27781984" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1028,7 +984,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49749583" weight="0.32642487" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49749583" weight="0.32611465" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.31576145" side_tool="true" weight="0.36787564" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.48189563" weight="0.3210191" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.68423855" visible="true" weight="0.45477706" />
@@ -1084,60 +1040,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Hashtable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="455" column="26" selection-start-line="455" selection-start-column="26" selection-end-line="455" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/gs-spring-boot/application.properties" />
-    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testFastJson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/gs-spring-boot/gradlew.bat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/gs-spring-boot/gradle/wrapper/gradle-wrapper.properties" />
-    <entry file="file://$PROJECT_DIR$/java/gs-spring-boot/src/main/java/hello/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/gs-spring-boot/src/main/resources/templates/hello.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/gs-spring-boot/src/main/java/hello/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/gs-spring-boot/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testDerby.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/java_local/src/main/java/testPg.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -1242,29 +1144,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="423" column="34" selection-start-line="423" selection-start-column="34" selection-end-line="423" selection-end-column="34" />
-          <folding>
-            <element signature="e#17731#17735#0" expanded="true" />
-            <element signature="e#17763#17767#0" expanded="true" />
-            <element signature="e#17772#17776#0" expanded="true" />
-            <element signature="e#17805#17809#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useMybatis/src/main/java/my/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/useMybatis/src/main/java/my/beans/UserBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1278,26 +1157,6 @@
           <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useMybatis/src/main/java/my/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useMybatis/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/scala_compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/java_local/java_local.iml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/java/springIocAop/application.xml" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.1.RELEASE/spring-context-5.1.1.RELEASE.jar!/org/springframework/context/support/FileSystemXmlApplicationContext.class">
@@ -1342,45 +1201,118 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/springIocAop/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/java/java_local/java_local.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/java_local/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/utilities/hdp/ambari.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/utilities/hdp/weekday_mapper.py" />
+    <entry file="file://$PROJECT_DIR$/utilities/hdp/hbase.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilities/hdp/import-options.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/mr/pom.xml" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        <state relative-caret-position="225">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+    <entry file="file://$PROJECT_DIR$/java/useMybatis/src/main/java/my/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useMybatis/src/main/java/my/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="134" selection-start-line="4" selection-start-column="134" selection-end-line="4" selection-end-column="134" />
+        <state relative-caret-position="300">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+    <entry file="file://$PROJECT_DIR$/java/useMybatis/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+        <state relative-caret-position="270">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        <state relative-caret-position="90">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/sbt.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="96" selection-start-line="4" selection-start-column="96" selection-end-line="4" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/thriftCompiler.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="435" column="54" selection-start-line="435" selection-start-column="54" selection-end-line="435" selection-end-column="54" />
+          <folding>
+            <element signature="e#20588#20592#0" expanded="true" />
+            <element signature="e#20620#20624#0" expanded="true" />
+            <element signature="e#20629#20633#0" expanded="true" />
+            <element signature="e#20662#20666#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/scala_compiler.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="65" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/java_local/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/springIocAop/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
