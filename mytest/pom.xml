@@ -16,5 +16,6 @@
         <module>java/java_mr</module>
         <module>java/javaFramework</module>
         <module>java/gs-spring-boot</module>
+        <module>java/useMybatis</module>
     </modules>
 </project>
