@@ -9,14 +9,11 @@
         <module name="gs-spring-boot" />
         <module name="java_local" />
         <module name="java_mr" />
-        <module name="javaFramework" />
-        <module name="local_test" />
-        <module name="scala" />
         <module name="spark_remote" />
+        <module name="springIocAop" />
         <module name="streaming" />
         <module name="useMybatis" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
   </component>
 </project>
