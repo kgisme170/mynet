@@ -35,3 +35,47 @@ public class testPg {
         }
     }
 }
+/*
+安装和初始化postgre sql
+brew install postgresql
+initdb /usr/local/var/postgres
+pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
+createdb
+
+初始化用户和口令
+psql
+>
+x=# CREATE USER postgres WITH PASSWORD 'password';
+CREATE ROLE
+x=# DROP DATABASE postgres;
+DROP DATABASE
+x=# CREATE DATABASE postgres OWNER postgres;
+CREATE DATABASE
+x=# GRANT ALL PRIVILEGES ON DATABASE postgres to postgres;
+GRANT
+x=# ALTER ROLE postgres CREATEDB;
+ALTER ROLE
+x=# \q
+
+建立表的数据:
+psql -U postgres -d postgres
+>
+postgres=> CREATE TABLE COMPANY(
+postgres(>    ID INT PRIMARY KEY     NOT NULL,
+postgres(>    NAME           TEXT    NOT NULL,
+postgres(>    AGE            INT     NOT NULL,
+postgres(>    ADDRESS        CHAR(50),
+postgres(>    SALARY         REAL,
+postgres(>    JOIN_DATE  DATE
+postgres(> );
+CREATE TABLE
+postgres=> INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY,JOIN_DATE) VALUES (1, 'Paul', 32, 'California', 20000.00 ,'2001-07-13');
+INSERT 0 1
+postgres=> INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,JOIN_DATE) VALUES (2, 'Allen', 25, 'Texas', '2007-12-13');
+INSERT 0 1
+
+postgres=> INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY,JOIN_DATE) VALUES (4, 'Mark', 25, 'Rich-Mond ', 65000.00, '2007-12-13' ), (5, 'David', 27, 'Texas', 85000.00 , '2007-12-13');
+
+\l看到所有的db
+\d看到当前所有的表
+ */
