@@ -15,6 +15,6 @@
         <module>java/java_local</module>
         <module>java/java_mr</module>
         <module>java/javaFramework</module>
-        <module>java/gs-sprint-boot</module>
+        <module>java/gs-spring-boot</module>
     </modules>
 </project>
