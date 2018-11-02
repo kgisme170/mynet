@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/scala_lang/scala.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scala_lang/scala_lang.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark/spark_remote/myspark1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark/spark_remote/spark_remote.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark/streaming/streaming.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/gs-sprint-boot/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/gs-sprint-boot/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/gs-sprint-boot/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/gs-sprint-boot/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/gs-sprint-boot/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/gs-sprint-boot/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/gs-sprint-boot/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/gs-sprint-boot/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/gs-sprint-boot/src/main/java/hello/Api01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/gs-sprint-boot/src/main/java/hello/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/gs-sprint-boot/src/main/java/hello/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/gs-sprint-boot/src/test/java/hello/HelloControllerIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/gs-sprint-boot/src/test/java/hello/HelloControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,6 +41,7 @@
     <ignored path="$PROJECT_DIR$/cloud/testMeta/target/" />
     <ignored path="$PROJECT_DIR$/scala/target/" />
     <ignored path="$PROJECT_DIR$/scala_lang/target/" />
+    <ignored path="$PROJECT_DIR$/java/gs-sprint-boot/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +149,7 @@
           <entry key="class" value="12" />
           <entry key="cpp" value="12" />
           <entry key="iml" value="2" />
-          <entry key="java" value="21" />
+          <entry key="java" value="23" />
           <entry key="json" value="1" />
           <entry key="log" value="1" />
           <entry key="properties" value="2" />
@@ -144,7 +157,8 @@
           <entry key="sbt" value="1" />
           <entry key="scala" value="3" />
           <entry key="sh" value="2" />
-          <entry key="xml" value="19" />
+          <entry key="txt" value="1" />
+          <entry key="xml" value="20" />
           <entry key="yaml" value="2" />
         </counts>
       </usages-collector>
@@ -153,14 +167,14 @@
           <entry key="C++" value="18" />
           <entry key="CLASS" value="12" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="21" />
+          <entry key="JAVA" value="23" />
           <entry key="JSON" value="1" />
           <entry key="Manifest" value="2" />
-          <entry key="PLAIN_TEXT" value="19" />
+          <entry key="PLAIN_TEXT" value="20" />
           <entry key="Properties" value="2" />
           <entry key="Python" value="1" />
           <entry key="Scala" value="3" />
-          <entry key="XML" value="19" />
+          <entry key="XML" value="20" />
           <entry key="YAML" value="2" />
           <entry key="sbt" value="1" />
         </counts>
@@ -214,6 +228,38 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-535">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/gs-sprint-boot/src/main/java/hello/Api01.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/gs-sprint-boot/src/main/java/hello/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/gs-sprint-boot/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -339,15 +385,24 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="gs-spring-boot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="gs-spring-boot" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="1853" />
-    <option name="height" value="958" />
+    <option name="x" value="1826" />
+    <option name="y" value="9" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -382,6 +437,46 @@
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gs-sprint-boot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gs-sprint-boot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gs-sprint-boot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gs-sprint-boot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gs-sprint-boot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hello" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -390,7 +485,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="System.getProperty&#9;ACTION&#9;null&#10;testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541125309937" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541128878169" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -419,16 +514,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ch01 (1)">
-    <configuration name="RamOpenApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RamOpenApi" />
-      <module name="testMeta" />
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hello.Application" />
+      <module name="gs-spring-boot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hello.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RamServiceSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RamServiceSample" />
+    <configuration name="RamOpenApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RamOpenApi" />
       <module name="testMeta" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -503,19 +604,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.RamServiceSample" />
       <item itemvalue="Application.RamOpenApi" />
       <item itemvalue="Application.runIocTest" />
       <item itemvalue="Application.ch01" />
       <item itemvalue="Application.ch01 (1)" />
+      <item itemvalue="Application.Application" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application" />
         <item itemvalue="Application.ch01 (1)" />
         <item itemvalue="Application.ch01" />
         <item itemvalue="Application.runIocTest" />
         <item itemvalue="Application.RamOpenApi" />
-        <item itemvalue="Application.RamServiceSample" />
       </list>
     </recent_temporary>
   </component>
@@ -536,13 +637,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00103" summary="ok">
-      <created>1540024177229</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1540024177230</updated>
     </task>
     <task id="LOCAL-00104" summary="ok">
       <created>1540024933608</created>
@@ -880,7 +974,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541088202908</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="ok">
+      <created>1541125472769</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1541125472770</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TodoView">
@@ -905,15 +1006,15 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6027689" weight="0.3804213" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6027689" weight="0.3803109" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49749583" weight="0.32738853" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.31576145" side_tool="true" weight="0.36787564" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.48189563" weight="0.32331607" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.68423855" visible="true" weight="0.5668394" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.47231096" weight="0.2746114" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.68423855" weight="0.50362694" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" sideWeight="0.47231096" visible="true" weight="0.2746114" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -965,16 +1066,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/java_local/src/testArray.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-ram/2.0.7/aliyun-java-sdk-ram-2.0.7.jar!/com/aliyuncs/ram/model/v20150501/AddUserToGroupRequest.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-ram/2.0.7/aliyun-java-sdk-ram-2.0.7.jar!/com/aliyuncs/ram/model/v20150501/AddUserToGroupResponse.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-ram/2.0.7/aliyun-java-sdk-ram-2.0.7-sources.jar!/com/aliyuncs/ram/model/v20150501/AddUserToGroupRequest.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-core/3.2.8/aliyun-java-sdk-core-3.2.8.jar!/META-INF/maven/com.aliyun/aliyun-java-sdk-core/pom.xml" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-core/3.2.8/aliyun-java-sdk-core-3.2.8.jar!/META-INF/MANIFEST.MF" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-core/3.2.8/aliyun-java-sdk-core-3.2.8.jar!/META-INF/maven/com.aliyun/aliyun-java-sdk-core/pom.properties" />
@@ -1137,6 +1228,30 @@
     <entry file="file://$PROJECT_DIR$/spark/spark_remote/spark_remote.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-535">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/gs-sprint-boot/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/gs-sprint-boot/src/main/java/hello/Api01.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/gs-sprint-boot/src/main/java/hello/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1161,7 +1276,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Python</last-edited>
+          <last-edited>Invalid</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1197,7 +1312,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>spark_remote</last-edited>
+          <last-edited>streaming</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1222,7 +1337,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: ant:ant:1.6.5</last-edited>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
