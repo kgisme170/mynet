@@ -10,9 +10,11 @@
         <module name="java_local" />
         <module name="mr" />
         <module name="scala" />
+        <module name="serialize" />
         <module name="spark_remote" />
         <module name="springIocAop" />
         <module name="streaming" />
+        <module name="useDb" />
         <module name="useHibernate" />
         <module name="useMybatis" />
       </profile>

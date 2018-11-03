@@ -17,7 +17,7 @@ env.SConscript(dirs=['linkerDiff'])
 env.SConscript(dirs=['linkerDynamic'])
 env.SConscript(dirs=['multiplex/posix'])
 env.SConscript(dirs=['multiplex/pthread'])
-env.SConscript(dirs=['os'])
+env.SConscript(dirs=['sysv'])
 env.SConscript(dirs=['protobuf'])
 env.SConscript(dirs=['usethrift'])
 

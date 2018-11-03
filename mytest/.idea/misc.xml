@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/java/gs-sprint-boot/pom.xml" />
         <option value="$PROJECT_DIR$/java/useHibernate/pom.xml" />
+        <option value="$PROJECT_DIR$/java/useDb/pom.xml" />
+        <option value="$PROJECT_DIR$/java/serialize/pom.xml" />
       </list>
     </option>
   </component>

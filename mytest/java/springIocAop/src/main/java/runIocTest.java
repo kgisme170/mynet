@@ -4,7 +4,7 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 public class runIocTest {
     public static void main(String[] args) {
         String fileName = "../../src/applicationContext.xml";
-        String s = testFastJsonComplex.class.getResource(".") + fileName;
+        String s = runIocTest.class.getResource(".") + fileName;
         ApplicationContext factory = new FileSystemXmlApplicationContext(s);
         ArrayIocTest test = (ArrayIocTest) factory.getBean("arrayIocTest");
         test.testData();
