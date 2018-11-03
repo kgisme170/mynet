@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/java/useHibernate/pom.xml" />
         <option value="$PROJECT_DIR$/java/useDb/pom.xml" />
         <option value="$PROJECT_DIR$/java/serialize/pom.xml" />
+        <option value="$PROJECT_DIR$/java/useAnnotation/pom.xml" />
       </list>
     </option>
   </component>
