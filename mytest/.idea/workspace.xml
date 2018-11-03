@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/java/useKafka/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/gs-spring-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/gs-spring-boot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/java_local/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/java_local/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/serialize/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/serialize/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/springIocAop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/springIocAop/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useAnnotation/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/useAnnotation/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useDb/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/useDb/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useHibernate/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/useHibernate/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useJetty/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/useJetty/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useMybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/useMybatis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useThrift/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/useThrift/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_local/java_local.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_local/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_local/src/main/java/testComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/testComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_local/src/main/java/testCountDownLatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/testCountDownLatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_local/src/main/java/testOverride.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/testOverride.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_local/src/main/java/testPwd.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/testPwd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/java_local/src/main/java/testVolatile.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/testVolatile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,6 +45,7 @@
     <ignored path="$PROJECT_DIR$/java/useThrift/target/" />
     <ignored path="$PROJECT_DIR$/java/useJetty/target/" />
     <ignored path="$PROJECT_DIR$/java/useKafka/target/" />
+    <ignored path="$PROJECT_DIR$/java/jLang/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +165,7 @@
           <entry key="scala" value="3" />
           <entry key="sh" value="2" />
           <entry key="txt" value="6" />
-          <entry key="xml" value="79" />
+          <entry key="xml" value="81" />
           <entry key="yaml" value="3" />
         </counts>
       </usages-collector>
@@ -185,7 +183,7 @@
           <entry key="Properties" value="6" />
           <entry key="Python" value="1" />
           <entry key="Scala" value="3" />
-          <entry key="XML" value="79" />
+          <entry key="XML" value="81" />
           <entry key="YAML" value="3" />
           <entry key="sbt" value="1" />
         </counts>
@@ -218,7 +216,7 @@
           <entry key="scala" value="244" />
           <entry key="sh" value="12" />
           <entry key="txt" value="26" />
-          <entry key="xml" value="497" />
+          <entry key="xml" value="603" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -230,7 +228,7 @@
           <entry key="PLAIN_TEXT" value="286" />
           <entry key="Properties" value="45" />
           <entry key="Scala" value="244" />
-          <entry key="XML" value="497" />
+          <entry key="XML" value="603" />
           <entry key="sbt" value="1" />
         </counts>
       </usages-collector>
@@ -251,19 +249,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/java_local/pom.xml">
+        <entry file="file://$PROJECT_DIR$/java/jLang/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" selection-start-line="10" selection-end-line="12" selection-end-column="17" />
+            <state relative-caret-position="255">
+              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/useThrift/pom.xml">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="351">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -338,7 +336,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java/gs-sprint-boot/src/main/resources/static/f.txt" />
         <option value="$PROJECT_DIR$/java/gs-sprint-boot/src/main/resources/g.txt" />
         <option value="$PROJECT_DIR$/java/gs-spring-boot/application.properties" />
         <option value="$PROJECT_DIR$/java/gs-spring-boot/src/main/resources/templates/index.html" />
@@ -363,7 +360,6 @@
         <option value="$PROJECT_DIR$/java/useMybatis/src/main/java/my/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/scala/pom.xml" />
         <option value="$PROJECT_DIR$/java/mr/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.idea/compiler.xml" />
         <option value="$PROJECT_DIR$/.idea/scala_compiler.xml" />
         <option value="$PROJECT_DIR$/.idea/modules.xml" />
@@ -389,6 +385,8 @@
         <option value="$PROJECT_DIR$/java/useKafka/pom.xml" />
         <option value="$PROJECT_DIR$/java/useMybatis/pom.xml" />
         <option value="$PROJECT_DIR$/java/useThrift/pom.xml" />
+        <option value="$PROJECT_DIR$/java/jLang/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -444,17 +442,6 @@
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="useThrift" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
               <item name="spark" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -478,7 +465,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="System.getProperty&#9;ACTION&#9;null&#10;testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541229669321" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541230033532" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -603,13 +590,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00125" summary="ok">
-      <created>1540485647715</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1540485647715</updated>
     </task>
     <task id="LOCAL-00126" summary="ok">
       <created>1540651444654</created>
@@ -947,7 +927,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541229460713</updated>
     </task>
-    <option name="localTasksCounter" value="174" />
+    <task id="LOCAL-00174" summary="ok">
+      <created>1541229686833</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1541229686833</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -989,10 +976,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49749583" weight="0.32611465" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.31576145" side_tool="true" weight="0.36787564" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.31642696" side_tool="true" weight="0.45477706" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.48189563" weight="0.3210191" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.68423855" weight="0.45477706" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.47231096" visible="true" weight="0.34394905" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.68357307" visible="true" weight="0.45477706" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.5987888" weight="0.34394905" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1044,20 +1031,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/utilities/hdp/hbase.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/utilities/hdp/import-options.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/java/mr/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/useMybatis/src/main/java/my/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1378,6 +1355,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java/useThrift/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java/java_local/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1385,10 +1369,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/useThrift/pom.xml">
+    <entry file="file://$PROJECT_DIR$/java/jLang/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="255">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
@@ -1445,7 +1436,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>java_local</last-edited>
+          <last-edited>jLang</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

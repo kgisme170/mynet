@@ -9,13 +9,20 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>hadoop/mr</module>
+        <module>java/gs-spring-boot</module>
+        <module>java/jLang</module>
+        <module>java/serialize</module>
+        <module>java/springIocAop</module>
+        <module>java/useAnnotation</module>
+        <module>java/useDb</module>
+        <module>java/useHibernate</module>
+        <module>java/useJetty</module>
+        <module>java/useKafka</module>
+        <module>java/useMybatis</module>
+        <module>java/useThrift</module>
+        <module>scala</module>
         <module>spark/spark_remote</module>
         <module>spark/streaming</module>
-        <module>scala</module>
-        <module>java/java_local</module>
-        <module>hadoop/mr</module>
-        <module>java/springIocAop</module>
-        <module>java/gs-spring-boot</module>
-        <module>java/useMybatis</module>
     </modules>
 </project>
