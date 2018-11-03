@@ -17,6 +17,7 @@
         <module name="useAnnotation" />
         <module name="useDb" />
         <module name="useHibernate" />
+        <module name="useJetty" />
         <module name="useMybatis" />
         <module name="useThrift" />
       </profile>
