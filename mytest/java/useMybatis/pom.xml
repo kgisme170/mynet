@@ -9,7 +9,9 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
     <artifactId>useMybatis</artifactId>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->

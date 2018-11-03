@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/java/useAnnotation/pom.xml" />
         <option value="$PROJECT_DIR$/java/useThrift/pom.xml" />
         <option value="$PROJECT_DIR$/java/useJetty/pom.xml" />
+        <option value="$PROJECT_DIR$/java/useKafka/pom.xml" />
       </list>
     </option>
   </component>
