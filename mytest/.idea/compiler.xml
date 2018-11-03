@@ -18,6 +18,7 @@
         <module name="useDb" />
         <module name="useHibernate" />
         <module name="useMybatis" />
+        <module name="useThrift" />
       </profile>
     </annotationProcessing>
   </component>
