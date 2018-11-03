@@ -5,7 +5,9 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class CarApp {
     public static void main(String[] args) {
-        ApplicationContext context = new FileSystemXmlApplicationContext("bean.xml");
+        String fileName = "../../../src/bean.xml";
+        String s = UserServiceApp.class.getResource(".") + fileName;
+        ApplicationContext context = new FileSystemXmlApplicationContext(s);
         Car car = (Car) context.getBean("car");
         car.go();
     }
