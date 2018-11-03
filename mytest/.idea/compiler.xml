@@ -19,6 +19,7 @@
         <module name="useJetty" />
         <module name="useKafka" />
         <module name="useMybatis" />
+        <module name="useSlf4j" />
         <module name="useThrift" />
       </profile>
     </annotationProcessing>

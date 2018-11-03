@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/java/useThrift/pom.xml" />
         <option value="$PROJECT_DIR$/java/useJetty/pom.xml" />
         <option value="$PROJECT_DIR$/java/useKafka/pom.xml" />
+        <option value="$PROJECT_DIR$/java/useSlf4j/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
