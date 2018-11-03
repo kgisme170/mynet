@@ -11,6 +11,7 @@ import my.mapper.UserMapper;
 public class UserService {
 
     public static void main(String[] args) {
+        System.out.println("enter main");
         insertUser();
 //        deleteUser();
 //        selectUserById();
@@ -22,13 +23,19 @@ public class UserService {
      * 新增用户
      */
     private static void insertUser() {
+        System.out.println("enter 1");
         SqlSession session = DBTools.getSession();
+        System.out.println("enter 2");
         UserMapper mapper = session.getMapper(UserMapper.class);
+        System.out.println("enter 3");
         UserBean user = new UserBean("懿", "1314520", 7000.0);
+        System.out.println("enter 4");
         try {
             mapper.insertUser(user);
+            System.out.println("5");
             System.out.println(user.toString());
             session.commit();
+            System.out.println("6");
         } catch (Exception e) {
             e.printStackTrace();
             session.rollback();
