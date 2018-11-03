@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/java/useMybatis/mybatis.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/useHibernate/src/main/java/ManageEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useHibernate/src/main/java/ManageEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useHibernate/src/main/java/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/useMybatis/src/main/java/my/service/UserService.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -147,7 +148,7 @@
           <entry key="gradle" value="1" />
           <entry key="html" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="83" />
+          <entry key="java" value="84" />
           <entry key="json" value="1" />
           <entry key="log" value="1" />
           <entry key="properties" value="6" />
@@ -167,7 +168,7 @@
           <entry key="Groovy" value="1" />
           <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="83" />
+          <entry key="JAVA" value="84" />
           <entry key="JSON" value="1" />
           <entry key="Manifest" value="2" />
           <entry key="PLAIN_TEXT" value="28" />
@@ -199,7 +200,7 @@
           <entry key="c" value="31" />
           <entry key="cpp" value="48" />
           <entry key="html" value="50" />
-          <entry key="java" value="6131" />
+          <entry key="java" value="6135" />
           <entry key="json" value="83" />
           <entry key="properties" value="45" />
           <entry key="py" value="29" />
@@ -214,7 +215,7 @@
         <counts>
           <entry key="C++" value="79" />
           <entry key="HTML" value="50" />
-          <entry key="JAVA" value="6131" />
+          <entry key="JAVA" value="6135" />
           <entry key="JSON" value="83" />
           <entry key="PLAIN_TEXT" value="286" />
           <entry key="Properties" value="45" />
@@ -227,11 +228,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/useHibernate/src/main/java/ManageEmployee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="170">
+              <caret line="105" column="10" selection-start-line="105" selection-start-column="10" selection-end-line="105" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -239,23 +240,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/jLang/pom.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/useHibernate/src/main/java/Employee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/useMybatis/src/main/java/my/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="378">
+              <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -300,8 +289,8 @@
       <find>java_mr</find>
       <find>(User)</find>
       <find>spring</find>
-      <find>Session</find>
       <find>dialect</find>
+      <find>Session</find>
     </findStrings>
     <replaceStrings>
       <replace>scala</replace>
@@ -337,7 +326,6 @@
         <option value="$PROJECT_DIR$/java/useMybatis/src/mybatis.cfg.xml" />
         <option value="$PROJECT_DIR$/java/useMybatis/src/main/java/my/mybatis.cfg.xml" />
         <option value="$PROJECT_DIR$/java/useMybatis/src/main/java/my/tools/DBTools.java" />
-        <option value="$PROJECT_DIR$/java/useMybatis/src/main/java/my/service/UserService.java" />
         <option value="$PROJECT_DIR$/java/useMybatis/src/main/java/my/beans/UserBean.java" />
         <option value="$PROJECT_DIR$/java/useMybatis/src/main/java/my/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/scala/pom.xml" />
@@ -347,7 +335,6 @@
         <option value="$PROJECT_DIR$/.idea/modules.xml" />
         <option value="$PROJECT_DIR$/.idea/encodings.xml" />
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/java/useHibernate/src/main/java/Employee.java" />
         <option value="$PROJECT_DIR$/java/useHibernate/src/main/java/Employee.hbm.xml" />
         <option value="$PROJECT_DIR$/java/springIocAop/src/main/java/my/PersonApp.java" />
         <option value="$PROJECT_DIR$/java/springIocAop/src/main/java/my/UserServiceApp.java" />
@@ -368,7 +355,9 @@
         <option value="$PROJECT_DIR$/java/jLang/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/java/useHibernate/src/main/java/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/java/useMybatis/src/main/java/my/service/UserService.java" />
         <option value="$PROJECT_DIR$/java/useHibernate/src/main/java/ManageEmployee.java" />
+        <option value="$PROJECT_DIR$/java/useHibernate/src/main/java/Employee.java" />
       </list>
     </option>
   </component>
@@ -388,11 +377,11 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="useJetty" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="useMybatis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="useJetty" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="useMybatis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -477,7 +466,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="System.getProperty&#9;ACTION&#9;null&#10;testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541231688573" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541232646469" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -602,20 +591,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00127" summary="ok">
-      <created>1540652146420</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1540652146420</updated>
-    </task>
-    <task id="LOCAL-00128" summary="ok">
-      <created>1540652436167</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1540652436167</updated>
     </task>
     <task id="LOCAL-00129" summary="ok">
       <created>1540657460534</created>
@@ -946,7 +921,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541230080621</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="ok">
+      <created>1541231802772</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1541231802772</updated>
+    </task>
+    <task id="LOCAL-00177" summary="ok">
+      <created>1541231908750</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1541231908750</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -971,8 +960,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="75" y="23" width="1363" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28160486" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28160486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -982,7 +972,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6027689" visible="true" weight="0.31082803" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6027689" weight="0.31082803" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -990,7 +980,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.31642696" side_tool="true" weight="0.45477706" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.48189563" weight="0.3210191" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.68357307" weight="0.3808917" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.5987888" weight="0.34394905" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.5987888" visible="true" weight="0.34394905" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1111,31 +1101,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/useHibernate/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useHibernate/src/main/java/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-          <folding>
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java/useHibernate/src/main/java/Employee.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1325,16 +1290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/useMybatis/src/main/java/my/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/useKafka/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
@@ -1370,13 +1325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/jLang/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/useHibernate/src/main/java/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1384,13 +1332,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/useHibernate/src/main/java/ManageEmployee.java">
+    <entry file="file://$PROJECT_DIR$/java/jLang/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="255">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useMybatis/src/main/java/my/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useHibernate/src/main/java/ManageEmployee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="105" column="10" selection-start-line="105" selection-start-column="10" selection-end-line="105" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useHibernate/src/main/java/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
         </state>
       </provider>
     </entry>
