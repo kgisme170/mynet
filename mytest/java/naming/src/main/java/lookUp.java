@@ -9,7 +9,7 @@ public class lookUp {
         env.put(Context.INITIAL_CONTEXT_FACTORY, "com.sun.jndi.fscontext.RefFSContextFactory");
         env.put(Context.PROVIDER_URL, "file:///");
 
-        String name = "/tmp";
+        String name = "/Users/x/Downloads/derby-driver.jar";
         try {
             Context ctx = new InitialContext(env);
 

@@ -13,6 +13,7 @@
         <module name="scala" />
         <module name="serialize" />
         <module name="spark_remote" />
+        <module name="springDb" />
         <module name="streaming" />
         <module name="useAnnotation" />
         <module name="useDb" />
