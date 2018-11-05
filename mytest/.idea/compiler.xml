@@ -9,6 +9,7 @@
         <module name="gs-spring-boot" />
         <module name="jLang" />
         <module name="mr" />
+        <module name="naming" />
         <module name="scala" />
         <module name="serialize" />
         <module name="spark_remote" />

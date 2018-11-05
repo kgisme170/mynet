@@ -24,5 +24,6 @@
         <module>scala</module>
         <module>spark/spark_remote</module>
         <module>spark/streaming</module>
+        <module>java/naming</module>
     </modules>
 </project>
