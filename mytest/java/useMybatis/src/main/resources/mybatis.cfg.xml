@@ -31,9 +31,9 @@
         </environment>
     </environments>
     <mappers>
-        <!-- 告知映射文件方式1，一个一个的配置
-        <mapper resource="my/mapper/UserMapper.xml"/>-->
-        <!-- 告知映射文件方式2，自动扫描包内的Mapper接口与配置文件 -->
-        <package name="my/mapper"/>
+        <!-- 告知映射文件方式1，一个一个的配置-->
+        <mapper resource="my/mapper/UserMapper.xml"/>
+        <!-- 告知映射文件方式2，自动扫描包内的Mapper接口与配置文件
+        <package name="my/mapper"/>-->
     </mappers>
 </configuration>

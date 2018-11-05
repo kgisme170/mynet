@@ -78,4 +78,12 @@ postgres=> INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY,JOIN_DATE) VALUES (4,
 
 \l看到所有的db
 \d看到当前所有的表
+
+---------------------
+注意要保证
+$cat /etc/hosts
+127.0.0.1   localhost
+255.255.255.255 broadcasthost  #有这一行
+::1             localhost #可选
+
  */

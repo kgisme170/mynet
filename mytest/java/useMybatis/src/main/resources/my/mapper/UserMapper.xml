@@ -16,7 +16,7 @@
 
 
     <insert id="insertUser" useGeneratedKeys="true" keyProperty="id">
-        insert into t_user (username,password,account) values (#{username},#{password},#{account})
+        insert into t_user (id, username,password,account) values (#{id},#{username},#{password},#{account})
     </insert>
 
     <update id="updateUser" >

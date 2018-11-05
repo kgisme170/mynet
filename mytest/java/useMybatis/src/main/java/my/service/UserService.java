@@ -12,23 +12,19 @@ public class UserService {
 
     public static void main(String[] args) {
         System.out.println("enter main");
-        insertUser();
+        //insertUser();
 //        deleteUser();
 //        selectUserById();
-//        selectAllUser();
+        selectAllUser();
     }
 
-
-    /**
-     * 新增用户
-     */
     private static void insertUser() {
         System.out.println("enter 1");
         SqlSession session = DBTools.getSession();
         System.out.println("enter 2");
         UserMapper mapper = session.getMapper(UserMapper.class);
         System.out.println("enter 3");
-        UserBean user = new UserBean("懿", "1314520", 7000.0);
+        UserBean user = new UserBean(20, "懿", "1314520", 7000.0);
         System.out.println("enter 4");
         try {
             mapper.insertUser(user);
@@ -42,9 +38,6 @@ public class UserService {
         }
     }
 
-    /**
-     * 删除用户
-     */
     private static void deleteUser() {
         SqlSession session = DBTools.getSession();
         UserMapper mapper = session.getMapper(UserMapper.class);
@@ -58,9 +51,6 @@ public class UserService {
     }
 
 
-    /**
-     * 根据id查询用户
-     */
     private static void selectUserById() {
         SqlSession session = DBTools.getSession();
         UserMapper mapper = session.getMapper(UserMapper.class);
@@ -75,9 +65,6 @@ public class UserService {
         }
     }
 
-    /**
-     * 查询所有的用户
-     */
     private static void selectAllUser() {
         SqlSession session = DBTools.getSession();
         UserMapper mapper = session.getMapper(UserMapper.class);
