@@ -7,6 +7,15 @@ import org.hibernate.Transaction;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+/*
+由于employee采用generated id，默认的名字在postgres里面是hibernate_sequence
+CREATE SEQUENCE hibernate_sequence
+INCREMENT 1
+MINVALUE 1
+MAXVALUE 9223372036854775807
+START 1
+CACHE 1;
+ */
 public class ManageEmployee {
     private static SessionFactory factory;
 
@@ -22,11 +31,9 @@ public class ManageEmployee {
         /* Add few employee records in database */
         Integer empID1 = ME.addEmployee("Zara", "Ali", 1000);
         Integer empID2 = ME.addEmployee("Daisy", "Das", 5000);
-        Integer empID3 = ME.addEmployee("John", "Paul", 10000);
-
         /* List down all the employees */
         ME.listEmployees();
-
+        System.out.println("==============");
         /* Update employee's records */
         ME.updateEmployee(empID1, 5000);
 
@@ -58,6 +65,7 @@ public class ManageEmployee {
 
     /* Method to  READ all the employees */
     public void listEmployees() {
+        System.out.println("开始listEmployees");
         Session session = factory.openSession();
         Transaction tx = null;
         try {
@@ -77,6 +85,7 @@ public class ManageEmployee {
         } finally {
             session.close();
         }
+        System.out.println("结束listEmployees");
     }
 
     /* Method to UPDATE salary for an employee */
@@ -85,8 +94,7 @@ public class ManageEmployee {
         Transaction tx = null;
         try {
             tx = session.beginTransaction();
-            Employee employee =
-                    (Employee) session.get(Employee.class, EmployeeID);
+            Employee employee = session.get(Employee.class, EmployeeID);
             employee.setSalary(salary);
             session.update(employee);
             tx.commit();
@@ -104,8 +112,7 @@ public class ManageEmployee {
         Transaction tx = null;
         try {
             tx = session.beginTransaction();
-            Employee employee =
-                    (Employee) session.get(Employee.class, EmployeeID);
+            Employee employee = session.get(Employee.class, EmployeeID);
             session.delete(employee);
             tx.commit();
         } catch (HibernateException e) {
