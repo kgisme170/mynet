@@ -1,37 +1,35 @@
 package my.service;
-
 import java.util.List;
-
 import org.apache.ibatis.session.SqlSession;
 
 import my.beans.UserBean;
 import my.tools.DBTools;
 import my.mapper.UserMapper;
-
+/*
+create table t_user(
+id SERIAL PRIMARY KEY,
+username VARCHAR(20) default NULL,
+password VARCHAR(20) default NULL,
+account double precision);
+ */
 public class UserService {
 
     public static void main(String[] args) {
         System.out.println("enter main");
-        //insertUser();
+        insertUser();
 //        deleteUser();
 //        selectUserById();
-        selectAllUser();
+        //selectAllUser();
     }
 
     private static void insertUser() {
-        System.out.println("enter 1");
         SqlSession session = DBTools.getSession();
-        System.out.println("enter 2");
         UserMapper mapper = session.getMapper(UserMapper.class);
-        System.out.println("enter 3");
-        UserBean user = new UserBean(20, "懿", "1314520", 7000.0);
-        System.out.println("enter 4");
+        UserBean user = new UserBean("懿", "1314520", 7000.0);
         try {
             mapper.insertUser(user);
-            System.out.println("5");
             System.out.println(user.toString());
             session.commit();
-            System.out.println("6");
         } catch (Exception e) {
             e.printStackTrace();
             session.rollback();
