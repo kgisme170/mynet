@@ -18,6 +18,12 @@
             <artifactId>org.springframework.jdbc</artifactId>
             <version>3.2.2.RELEASE</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-expression -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-expression</artifactId>
+            <version>5.1.2.RELEASE</version>
+        </dependency>
 
     </dependencies>
 </project>
