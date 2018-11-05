@@ -13,7 +13,7 @@
         <module>java/gs-spring-boot</module>
         <module>java/jLang</module>
         <module>java/serialize</module>
-        <module>java/springIocAop</module>
+        <module>java/IocAop</module>
         <module>java/useAnnotation</module>
         <module>java/useDb</module>
         <module>java/useHibernate</module>
