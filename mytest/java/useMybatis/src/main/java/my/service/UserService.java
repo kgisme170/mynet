@@ -50,7 +50,6 @@ public class UserService {
         }
     }
 
-
     private static void selectUserById() {
         SqlSession session = DBTools.getSession();
         UserMapper mapper = session.getMapper(UserMapper.class);
