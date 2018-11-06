@@ -1,0 +1,70 @@
+启动集群:
+1. 启动Master
+$SPARK_HOME/sbin/start-master.sh
+
+2. 启动工作节点
+$SPARK_HOME/sbin/spark-class org.apache.spark.deploy.worker.Worker<Spark-Master> &
+
+这个Spark-Master就是Spark URL，在用户界面顶端出现的Spark Master at:
+---------------------
+启动streaming:
+spark-submit --class structstream streaming/target/streaming-1.0-SNAPSHOT.jar
+---------------------
+
+参考文档
+1. 配置信息
+https://spark.apache.org/docs/latest/configuration.html
+2. python api
+https://spark.apache.org/docs/latest/api/python/
+
+3. spark-scala api的各种RDD类型
+https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.rdd.RDD
+3.1 JDBC-RDD
+https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.rdd.JdbcRDD
+
+4. spark-java api的各种RDD类型
+https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.api.java.package
+
+5. spark-scala核心工具包
+https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.package
+6. Accumulator
+https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.Accumulator
+7. io
+https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.io.package
+8. scheduler
+https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.scheduler.package
+9. serializer
+https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.serializer.package
+10. storage
+https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.storage.package
+11. streaming
+https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.streaming.package
+https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.streaming.api.java.package
+
+12. ml
+https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.ml.package
+https://spark.apache.org/docs/latest/ml-guide.html
+
+13. sql
+https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.sql.package
+https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.sql.hive.package
+https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.sql.sources.package
+
+14. graph
+https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.graphx.package
+
+15. shuffle behavior
+https://spark.apache.org/docs/latest/configuration.html#shuffle-behavior
+
+16. flume
+https://flume.apache.org/FlumeUserGuide.html
+
+17. apache samples
+https://flume.apache.org/FlumeUserGuide.html
+
+18. flume的包
+http://central.maven.org/maven2/org/apache/spark/spark-streaming-flume_2.10/2.0.2/
+http://central.maven.org/maven2/org/apache/spark/spark-streaming-flume-sink_2.10/2.0.2/
+
+19. 使用jdbc
+spark-submit --driver-class-path /home/a/.m2/repository/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar --jars target/myspark-1-1.0-SNAPSHOT.jar --class jdbcMysql target/myspark-1-1.0-SNAPSHOT.jar

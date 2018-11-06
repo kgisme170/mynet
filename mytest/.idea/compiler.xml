@@ -18,6 +18,7 @@
         <module name="streaming" />
         <module name="useAnnotation" />
         <module name="useDb" />
+        <module name="useDbcp" />
         <module name="useHibernate" />
         <module name="useJetty" />
         <module name="useKafka" />

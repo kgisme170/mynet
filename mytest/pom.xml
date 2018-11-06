@@ -26,5 +26,6 @@
         <module>spark/streaming</module>
         <module>java/naming</module>
         <module>java/springDb</module>
+        <module>java/useDbcp</module>
     </modules>
 </project>
