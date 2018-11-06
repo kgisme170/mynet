@@ -27,5 +27,6 @@
         <module>java/naming</module>
         <module>java/springDb</module>
         <module>java/useDbcp</module>
+        <module>java/useDubbo</module>
     </modules>
 </project>

@@ -11,4 +11,4 @@ $SPARK_HOME/sbin/spark-class org.apache.spark.deploy.worker.Worker<Spark-Master>
 spark-submit --driver-class-path /home/a/.m2/repository/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar --jars target/myspark-1-1.0-SNAPSHOT.jar --class jdbcMysql target/myspark-1-1.0-SNAPSHOT.jar
 
 4. useKafka
-5. dbcp, druid, dubbo
+5. dubbo
