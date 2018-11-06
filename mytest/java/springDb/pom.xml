@@ -24,6 +24,11 @@
             <artifactId>spring-expression</artifactId>
             <version>5.1.2.RELEASE</version>
         </dependency>
-
     </dependencies>
+    <repositories>
+        <repository>
+            <id>aliyunmaven</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+        </repository>
+    </repositories>
 </project>
