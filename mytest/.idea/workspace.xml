@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/java/cacheStorage/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/cacheStorage/src/main/java/cacheRow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/cacheStorage/src/main/java/cacheStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/useKafka/src/main/java/testKafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useKafka/src/main/java/testKafka.java" afterDir="false" />
     </list>
@@ -213,7 +208,7 @@
           <entry key="c" value="31" />
           <entry key="cpp" value="48" />
           <entry key="html" value="50" />
-          <entry key="java" value="8252" />
+          <entry key="java" value="8289" />
           <entry key="json" value="83" />
           <entry key="properties" value="91" />
           <entry key="py" value="29" />
@@ -228,7 +223,7 @@
         <counts>
           <entry key="C++" value="79" />
           <entry key="HTML" value="50" />
-          <entry key="JAVA" value="8252" />
+          <entry key="JAVA" value="8289" />
           <entry key="JSON" value="83" />
           <entry key="PLAIN_TEXT" value="361" />
           <entry key="Properties" value="91" />
@@ -271,11 +266,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/java/useKafka/src/main/java/testKafka.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+            <state relative-caret-position="270">
+              <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1166#1182#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -542,7 +536,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="insertUser&#9;PSI&#9;JAVA://my.service.UserService#insertUser&#10;System.getProperty&#9;ACTION&#9;null&#10;testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541593971699" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541594236006" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -678,20 +672,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00158" summary="ok">
-      <created>1541157609273</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1541157609273</updated>
-    </task>
-    <task id="LOCAL-00159" summary="ok">
-      <created>1541165661314</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1541165661314</updated>
     </task>
     <task id="LOCAL-00160" summary="ok">
       <created>1541166435997</created>
@@ -1022,7 +1002,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541582633698</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="fix mybatis">
+      <created>1541593979831</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1541593979832</updated>
+    </task>
+    <task id="LOCAL-00208" summary="fix mybatis">
+      <created>1541593999981</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1541593999981</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1059,15 +1053,15 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5921193" visible="true" weight="0.36050954" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5883919" visible="true" weight="0.36050954" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.6064009" weight="0.3249052" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.40788072" side_tool="true" visible="true" weight="0.36050954" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4744409" weight="0.31847134" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.67625135" weight="0.41528663" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.39510116" weight="0.3566879" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.4116081" side_tool="true" visible="true" weight="0.36050954" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.47018105" weight="0.31847134" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.6746539" weight="0.41528663" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.39350373" weight="0.3566879" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1426,11 +1420,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/useKafka/src/main/java/testKafka.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        <state relative-caret-position="270">
+          <caret line="26" column="76" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1166#1182#0" expanded="true" />
           </folding>
         </state>
       </provider>
