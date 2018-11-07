@@ -542,7 +542,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="insertUser&#9;PSI&#9;JAVA://my.service.UserService#insertUser&#10;System.getProperty&#9;ACTION&#9;null&#10;testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541593923693" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541593971699" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
