@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/java/useSlf4j/pom.xml" />
         <option value="$PROJECT_DIR$/java/IocAop/pom.xml" />
         <option value="$PROJECT_DIR$/java/useDruid/pom.xml" />
+        <option value="$PROJECT_DIR$/java/cacheStorage/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
