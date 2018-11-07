@@ -26,4 +26,6 @@ object ch02 extends App {
   println
   val t1 = (1,2,"hello")
   println(t1._1)
+
+  List(1, 2, 3) foreach { _ => println("Hi") }
 }

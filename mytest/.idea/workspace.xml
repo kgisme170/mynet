@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/fscontext_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_52.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_53.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_54.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_55.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/useDruid/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useKafka/src/main/java/testKafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useKafka/src/main/java/testKafka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/useDb/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/useDb/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch02.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch02.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,6 +45,7 @@
     <ignored path="$PROJECT_DIR$/java/useDbcp/target/" />
     <ignored path="$PROJECT_DIR$/java/useDubbo/target/" />
     <ignored path="$PROJECT_DIR$/spark/scalaLang/target/" />
+    <ignored path="$PROJECT_DIR$/java/useDruid/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +166,7 @@
           <entry key="scala" value="3" />
           <entry key="sh" value="2" />
           <entry key="txt" value="8" />
-          <entry key="xml" value="127" />
+          <entry key="xml" value="130" />
           <entry key="yaml" value="3" />
         </counts>
       </usages-collector>
@@ -184,7 +184,7 @@
           <entry key="Properties" value="10" />
           <entry key="Python" value="1" />
           <entry key="Scala" value="3" />
-          <entry key="XML" value="127" />
+          <entry key="XML" value="130" />
           <entry key="YAML" value="3" />
           <entry key="sbt" value="1" />
         </counts>
@@ -216,10 +216,10 @@
           <entry key="properties" value="91" />
           <entry key="py" value="29" />
           <entry key="sbt" value="1" />
-          <entry key="scala" value="244" />
+          <entry key="scala" value="394" />
           <entry key="sh" value="12" />
           <entry key="txt" value="101" />
-          <entry key="xml" value="787" />
+          <entry key="xml" value="794" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -230,8 +230,8 @@
           <entry key="JSON" value="83" />
           <entry key="PLAIN_TEXT" value="361" />
           <entry key="Properties" value="91" />
-          <entry key="Scala" value="244" />
-          <entry key="XML" value="787" />
+          <entry key="Scala" value="394" />
+          <entry key="XML" value="794" />
           <entry key="sbt" value="1" />
         </counts>
       </usages-collector>
@@ -242,17 +242,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch02.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="240">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/useKafka/src/main/java/testKafka.java">
+        <entry file="file://$PROJECT_DIR$/java/useDruid/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+            <state relative-caret-position="240">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/jLang/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/useDb/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -317,8 +335,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java/useHibernate/src/main/java/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/java/useHibernate/src/main/java/Employee.java" />
         <option value="$PROJECT_DIR$/java/useSlf4j/pom.xml" />
         <option value="$PROJECT_DIR$/java/useSlf4j/src/main/java/useSlf.java" />
         <option value="$PROJECT_DIR$/java/useMybatis/src/postgre.properties" />
@@ -366,8 +382,10 @@
         <option value="$PROJECT_DIR$/spark/scalaLang/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/java/naming/src/main/java/lookUp.java" />
-        <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch02.scala" />
         <option value="$PROJECT_DIR$/java/useKafka/src/main/java/testKafka.java" />
+        <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch02.scala" />
+        <option value="$PROJECT_DIR$/java/useDb/pom.xml" />
+        <option value="$PROJECT_DIR$/java/useDruid/pom.xml" />
       </list>
     </option>
   </component>
@@ -424,66 +442,13 @@
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="useKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="useDb" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="useKafka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="useKafka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="useKafka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="scalaLang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="scalaLang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="scalaLang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="scalaLang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="useDruid" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -507,7 +472,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="insertUser&#9;PSI&#9;JAVA://my.service.UserService#insertUser&#10;System.getProperty&#9;ACTION&#9;null&#10;testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541581729485" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541582605250" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -536,7 +501,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.testKafka">
+  <component name="RunManager" selected="Application.ch02">
     <configuration default="true" type="tests" factoryName="Unittests">
       <module name="jLang" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -615,8 +580,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.testKafka" />
         <item itemvalue="Application.ch02" />
+        <item itemvalue="Application.testKafka" />
         <item itemvalue="Application.Consumer" />
         <item itemvalue="Application.Provider" />
         <item itemvalue="Application.MyDBCPDataSource" />
@@ -640,13 +605,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00156" summary="ok">
-      <created>1541144695137</created>
-      <option name="number" value="00156" />
-      <option name="presentableId" value="LOCAL-00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1541144695137</updated>
     </task>
     <task id="LOCAL-00157" summary="ok">
       <created>1541145169089</created>
@@ -984,7 +942,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541520885505</updated>
     </task>
-    <option name="localTasksCounter" value="205" />
+    <task id="LOCAL-00205" summary="fix mybatis">
+      <created>1541581794317</created>
+      <option name="number" value="00205" />
+      <option name="presentableId" value="LOCAL-00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1541581794318</updated>
+    </task>
+    <option name="localTasksCounter" value="206" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1021,15 +986,15 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5962942" visible="true" weight="0.36156765" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.59584665" visible="true" weight="0.36062175" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.6064009" weight="0.3249052" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.40370578" side_tool="true" visible="true" weight="0.36062175" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.47838295" weight="0.3198483" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.6771477" weight="0.4159292" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.64907354" weight="0.2907712" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.40415335" side_tool="true" visible="true" weight="0.36062175" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4771033" weight="0.31917098" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.6767838" weight="0.41554403" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.6485623" weight="0.29015544" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1112,27 +1077,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/useMybatis/src/main/resources/my/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/jLang/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/naming/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/useDb/src/main/java/testPg.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1367,17 +1311,38 @@
     <entry file="file://$PROJECT_DIR$/python/test.conf">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch02.scala">
+    <entry file="file://$PROJECT_DIR$/java/useKafka/src/main/java/testKafka.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="315">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/useKafka/src/main/java/testKafka.java">
+    <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch02.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+        <state relative-caret-position="240">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useDb/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useDruid/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>

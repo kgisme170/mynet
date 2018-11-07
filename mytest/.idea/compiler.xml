@@ -19,6 +19,7 @@
         <module name="useAnnotation" />
         <module name="useDb" />
         <module name="useDbcp" />
+        <module name="useDruid" />
         <module name="useDubbo" />
         <module name="useHibernate" />
         <module name="useJetty" />
