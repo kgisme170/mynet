@@ -1,71 +1,39 @@
 import kafka.admin.AdminUtils;
-import kafka.server.ConfigType;
+import kafka.utils.ZKStringSerializer$;
 import kafka.utils.ZkUtils;
-import org.apache.kafka.common.security.JaasUtils;
-
-import java.util.Iterator;
-import java.util.Map;
+import org.I0Itec.zkclient.ZkClient;
+import org.I0Itec.zkclient.ZkConnection;
 import java.util.Properties;
 
 public class testKafka {
-    ZkUtils zkUtils = null;
-
-    public testKafka() {
-        zkUtils = ZkUtils.apply("localhost:2181", 30000, 30000, JaasUtils.isZkSecurityEnabled());
-    }
-
-    @Override
-    protected void finalize() {
-        zkUtils.close();
-    }
-
-    public void createTopic(String topic, int partition, int replica, Properties properties) {
-        try {
-            if (!AdminUtils.topicExists(zkUtils, topic)) {
-                AdminUtils.createTopic(zkUtils, topic, partition, replica,
-                        properties, AdminUtils.createTopic$default$6());
-            } else {
-                System.out.println("创建主题失败");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void modifyTopicConfig(String topic, Properties properties) {
-        try {
-            Properties curProp = AdminUtils.fetchEntityConfig(zkUtils,
-                    ConfigType.Topic(), topic);
-            curProp.putAll(properties);
-            AdminUtils.changeTopicConfig(zkUtils, topic, curProp);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void addPartition(String topic, String partitionName) {
-        //AdminUtils.addPartitions(zkUtils,topic,1,
-        //        "1:1,1:1", 1, AdminUtils.addPartitions$default$6());
-    }
-
-    public void deleteTopic(String topic) {
-        AdminUtils.deleteTopic(zkUtils, topic);
-    }
-
-    public void showTopic(String topic) {
-        Properties properties = AdminUtils.fetchEntityConfig(zkUtils,
-                ConfigType.Topic(), topic);
-        Iterator it = properties.entrySet().iterator();
-        while (it.hasNext()) {
-            Map.Entry entry = (Map.Entry) it.next();
-            Object key = entry.getKey();
-            Object value = entry.getValue();
-            System.out.println(key + ":" + value);
-        }
-    }
-
     public static void main(String[] args) {
-        testKafka t = new testKafka();
-        t.createTopic("myTopic", 1, 1, null);
+        ZkClient zkClient = null;
+        try {
+            String zookeeperHosts = "localhost:2181"; // 如有多个zk，用逗号隔开 String zookeeperHosts = "192.168.20.1:2181,192.168.20.2:2181";
+            int sessionTimeOutInMs = 15 * 1000; // 15 secs
+            int connectionTimeOutInMs = 10 * 1000; // 10 secs
+
+            zkClient = new ZkClient(zookeeperHosts, sessionTimeOutInMs, connectionTimeOutInMs, ZKStringSerializer$.MODULE$);
+            ZkUtils zkUtils = new ZkUtils(zkClient, new ZkConnection(zookeeperHosts), false);
+
+            String topicName = "test01";
+            int noOfPartitions = 2;
+            int noOfReplication = 1;
+            Properties topicConfiguration = new Properties();
+
+            AdminUtils.createTopic(zkUtils, topicName, noOfPartitions, noOfReplication, topicConfiguration, null);
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            if (zkClient != null) {
+                zkClient.close();
+            }
+        }
     }
 }
+/*
+kafka-console-producer.sh --broker-list localhost:9092 --topic test
+kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+kafka_2.11-2.0.0/bin/kafka-topics.sh --list --zookeeper localhost:2181
+ */
