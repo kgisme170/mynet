@@ -5,7 +5,7 @@ public class cacheStorage {
     public cacheStorage(List<cacheRow> list){
         metaRowMap = new HashMap<>();
         for(cacheRow row : list){
-            metaRowMap.put(row.projectName, row);
+            //metaRowMap.put(row.projectName, row);
         }
     }
     public cacheStorage(Map<String, cacheRow> map){
