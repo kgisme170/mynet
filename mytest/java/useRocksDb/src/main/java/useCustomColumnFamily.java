@@ -22,7 +22,7 @@ public class useCustomColumnFamily {
         final Options options = new Options();
         options.setCreateIfMissing(true);
         List<byte[]> cfs = RocksDB.listColumnFamilies(options, path);
-        List<ColumnFamilyDescriptor> columnFamilyDescriptors = new ArrayList<>();
+        List<ColumnFamilyDescriptor> columnFamilyDescriptors = new ArrayList<ColumnFamilyDescriptor>();
         if (cfs.size() > 0) {
             System.out.println("文件已存在cfs.size() = " + cfs.size());
             for (byte[] cf : cfs) {
@@ -33,7 +33,7 @@ public class useCustomColumnFamily {
             columnFamilyDescriptors.add(new ColumnFamilyDescriptor(RocksDB.DEFAULT_COLUMN_FAMILY, new ColumnFamilyOptions()));
         }
 
-        List<ColumnFamilyHandle> columnFamilyHandles = new ArrayList<>();
+        List<ColumnFamilyHandle> columnFamilyHandles = new ArrayList<ColumnFamilyHandle>();
         DBOptions dbOptions = new DBOptions();
         dbOptions.setCreateIfMissing(true);
         rocksDB = RocksDB.open(dbOptions, path, columnFamilyDescriptors, columnFamilyHandles);
@@ -62,11 +62,11 @@ public class useCustomColumnFamily {
 
     private void printData(String[] allKeys) throws RocksDBException {
         System.out.println("printData");
-        List<byte[]> keys = new ArrayList<>();
+        List<byte[]> keys = new ArrayList<byte[]>();
         for (String k : allKeys) {
             keys.add(k.getBytes());
         }
-        List<ColumnFamilyHandle> handleList = new ArrayList<>();
+        List<ColumnFamilyHandle> handleList = new ArrayList<ColumnFamilyHandle>();
         handleList.add(columnFamilyHandle);
         handleList.add(columnFamilyHandle);
         Map<byte[], byte[]> valueMap = rocksDB.multiGet(handleList, keys);

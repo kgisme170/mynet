@@ -43,7 +43,7 @@ public class useDefaultColumnFamily {
     }
 
     private void printData(String[] allKeys) throws RocksDBException {
-        List<byte[]> keys = new ArrayList<>();
+        List<byte[]> keys = new ArrayList<byte[]>();
         for (String k : allKeys) {
             keys.add(k.getBytes());
         }

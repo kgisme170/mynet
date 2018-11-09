@@ -4,13 +4,8 @@ import kafka.utils.ZkUtils;
 import org.I0Itec.zkclient.ZkClient;
 import org.I0Itec.zkclient.ZkConnection;
 import org.apache.kafka.clients.consumer.*;
-import org.apache.kafka.common.serialization.StringDeserializer;
-import org.apache.log4j.BasicConfigurator;
-
 import java.util.Arrays;
 import java.util.Properties;
-
-import static org.apache.kafka.common.resource.ResourceType.TOPIC;
 
 public class testKafka {
     public static void main(String[] args) {
@@ -24,7 +19,7 @@ public class testKafka {
         props.put("session.timeout.ms", "30000");
         props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
-        KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props);
+        KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(props);
         consumer.subscribe(Arrays.asList("test"));
         while (true) {
             System.out.println("while");

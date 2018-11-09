@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/useKafka/src/main/java/testKafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useKafka/src/main/java/testKafka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/useRocksDb/src/main/java/useCustomColumnFamily.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useRocksDb/src/main/java/useCustomColumnFamily.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/useRocksDb/src/main/java/useDefaultColumnFamily.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useRocksDb/src/main/java/useDefaultColumnFamily.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -154,7 +157,7 @@
           <entry key="gradle" value="1" />
           <entry key="html" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="151" />
+          <entry key="java" value="154" />
           <entry key="json" value="1" />
           <entry key="log" value="1" />
           <entry key="properties" value="10" />
@@ -174,7 +177,7 @@
           <entry key="Groovy" value="1" />
           <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="151" />
+          <entry key="JAVA" value="154" />
           <entry key="JSON" value="1" />
           <entry key="Manifest" value="2" />
           <entry key="PLAIN_TEXT" value="31" />
@@ -209,7 +212,7 @@
           <entry key="cpp" value="48" />
           <entry key="dummy" value="1" />
           <entry key="html" value="50" />
-          <entry key="java" value="10128" />
+          <entry key="java" value="10131" />
           <entry key="json" value="83" />
           <entry key="properties" value="91" />
           <entry key="py" value="29" />
@@ -224,7 +227,7 @@
         <counts>
           <entry key="C++" value="79" />
           <entry key="HTML" value="50" />
-          <entry key="JAVA" value="10128" />
+          <entry key="JAVA" value="10131" />
           <entry key="JSON" value="83" />
           <entry key="PLAIN_TEXT" value="374" />
           <entry key="Properties" value="91" />
@@ -236,7 +239,46 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/useKafka/src/main/java/testKafka.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="81" selection-start-line="21" selection-start-column="81" selection-end-line="21" selection-end-column="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/useRocksDb/src/main/java/useDefaultColumnFamily.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/useRocksDb/src/main/java/useCustomColumnFamily.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="68" column="78" selection-start-line="68" selection-start-column="78" selection-end-line="68" selection-end-column="78" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#833#857#0" expanded="true" />
+                <element signature="e#1379#1399#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -327,14 +369,11 @@
         <option value="$PROJECT_DIR$/java/naming/src/main/java/lookUp.java" />
         <option value="$PROJECT_DIR$/java/useDruid/pom.xml" />
         <option value="$PROJECT_DIR$/java/useDb/pom.xml" />
-        <option value="$PROJECT_DIR$/java/useKafka/src/main/java/testKafka.java" />
         <option value="$PROJECT_DIR$/java/cacheStorage/pom.xml" />
         <option value="$PROJECT_DIR$/java/cacheStorage/src/main/java/cacheStorage.java" />
         <option value="$PROJECT_DIR$/java/cacheStorage/src/main/java/cacheRow.java" />
         <option value="$PROJECT_DIR$/java/useRocksDb/pom.xml" />
         <option value="$PROJECT_DIR$/java/useRocksDb/src/main/java/useCustomClumnFamily.java" />
-        <option value="$PROJECT_DIR$/java/useRocksDb/src/main/java/useDefaultColumnFamily.java" />
-        <option value="$PROJECT_DIR$/java/useRocksDb/src/main/java/useCustomColumnFamily.java" />
         <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch02.scala" />
         <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch03.scala" />
         <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/testTraitsAop.scala" />
@@ -347,6 +386,9 @@
         <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorChildren.scala" />
         <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorPingPong.scala" />
         <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorStop.scala" />
+        <option value="$PROJECT_DIR$/java/useKafka/src/main/java/testKafka.java" />
+        <option value="$PROJECT_DIR$/java/useRocksDb/src/main/java/useDefaultColumnFamily.java" />
+        <option value="$PROJECT_DIR$/java/useRocksDb/src/main/java/useCustomColumnFamily.java" />
       </list>
     </option>
   </component>
@@ -362,11 +404,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="useDb" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="mytest" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="useDb" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="mytest" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -397,7 +439,7 @@
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -421,7 +463,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="insertUser&#9;PSI&#9;JAVA://my.service.UserService#insertUser&#10;System.getProperty&#9;ACTION&#9;null&#10;testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541767094073" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541767493285" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
@@ -546,13 +588,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00167" summary="ok">
-      <created>1541199959329</created>
-      <option name="number" value="00167" />
-      <option name="presentableId" value="LOCAL-00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1541199959329</updated>
     </task>
     <task id="LOCAL-00168" summary="ok">
       <created>1541200157009</created>
@@ -890,7 +925,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541766855479</updated>
     </task>
-    <option name="localTasksCounter" value="216" />
+    <task id="LOCAL-00216" summary="scala">
+      <created>1541767120887</created>
+      <option name="number" value="00216" />
+      <option name="presentableId" value="LOCAL-00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1541767120887</updated>
+    </task>
+    <option name="localTasksCounter" value="217" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -915,8 +957,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-114" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24068157" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24068157" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -926,15 +969,15 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5638978" weight="0.29844558" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5633653" visible="true" weight="0.29844558" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.60596377" weight="0.32435232" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.6112886" side_tool="true" visible="true" weight="0.37512952" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.43663472" side_tool="true" visible="true" weight="0.29844558" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.442492" weight="0.31813473" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.67199147" weight="0.27253887" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.3887114" visible="true" weight="0.37512952" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.3887114" weight="0.37512952" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1153,16 +1196,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/useKafka/src/main/java/testKafka.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/useSlf4j/src/main/java/useSlf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1222,16 +1255,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/useRocksDb/src/main/java/useDefaultColumnFamily.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="80" column="1" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/cacheStorage/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1243,16 +1266,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useRocksDb/src/main/java/useCustomColumnFamily.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1368,6 +1381,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java/useKafka/src/main/java/testKafka.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="81" selection-start-line="21" selection-start-column="81" selection-end-line="21" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useRocksDb/src/main/java/useDefaultColumnFamily.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useRocksDb/src/main/java/useCustomColumnFamily.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="68" column="78" selection-start-line="68" selection-start-column="78" selection-end-line="68" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#833#857#0" expanded="true" />
+            <element signature="e#1379#1399#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -1421,7 +1466,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>useThrift</last-edited>
+          <last-edited>useKafka</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
