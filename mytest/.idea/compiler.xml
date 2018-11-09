@@ -16,6 +16,7 @@
         <module name="spark_remote" />
         <module name="springDb" />
         <module name="streaming" />
+        <module name="use3p" />
         <module name="useAnnotation" />
         <module name="useDb" />
         <module name="useDbcp" />
@@ -31,6 +32,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="_3p" target="1.5" />
       <module name="cacheStorage" target="1.5" />
       <module name="java_local" target="1.5" />
       <module name="scala" target="1.8" />

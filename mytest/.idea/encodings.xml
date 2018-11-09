@@ -6,7 +6,7 @@
     <file url="file://$PROJECT_DIR$/java/gs-spring-boot" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java/jLang" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java/serialize" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java/springIocAop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/useAnnotation" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java/useAnnotation" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java/useDb" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java/useHibernate" charset="UTF-8" />
@@ -16,5 +16,12 @@
     <file url="file://$PROJECT_DIR$/java/useThrift" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spark/spark_remote" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spark/streaming" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/use3p/useAnnotation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/use3p/useDb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/use3p/useHibernate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/use3p/useJetty" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/use3p/useKafka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/use3p/useMybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/use3p/useThrift" charset="UTF-8" />
   </component>
 </project>
