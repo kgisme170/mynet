@@ -11,15 +11,13 @@
     <modules>
         <module>hadoop/mr</module>
         <module>java/useAnnotation</module>
-        <module>java/gs-spring-boot</module>
         <module>java/jLang</module>
         <module>java/serialize</module>
-        <module>java/IocAop</module>
         <module>spark/spark_remote</module>
         <module>spark/streaming</module>
         <module>java/naming</module>
-        <module>java/springDb</module>
         <module>spark/scalaLang</module>
         <module>use3p</module>
+        <module>spring</module>
     </modules>
 </project>
