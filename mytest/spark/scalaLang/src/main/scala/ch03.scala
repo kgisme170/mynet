@@ -1,4 +1,4 @@
-object ch0102 extends App {
+object ch03 extends App {
   lazy val words = scala.io.Source.fromFile("/tmp/entsafeinstall.log").mkString
   var s = 8 * 5 + 2
   println(s)

@@ -1,4 +1,4 @@
-object ch0506 extends App {
+object ch05 extends App {
   import scala.collection.mutable._
   val b = Account(4)
   val c = Account(30)

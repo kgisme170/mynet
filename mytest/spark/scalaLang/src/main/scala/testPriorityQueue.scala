@@ -1,4 +1,4 @@
-object testPq extends App {
+object testPriorityQueue extends App {
 
   import scala.util.Sorting
 

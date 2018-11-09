@@ -1,4 +1,4 @@
-object testTraits extends App {
+object testTraitsAop extends App {
 
   val s = new ServiceImpl with BeforeServiceAspect with AfterServiceAspect
 
@@ -25,5 +25,6 @@ object testTraits extends App {
       println("do job");
     }
   }
+
   s.doAction
 }

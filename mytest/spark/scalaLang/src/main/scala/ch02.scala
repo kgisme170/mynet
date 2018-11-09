@@ -22,10 +22,13 @@ object ch02 extends App {
   val bigData2 = scala.collection.mutable.Map("a1" -> 1, "a2" -> 2, "a3" -> 3)
   bigData2 += ("a4" -> 4)
   bigData2 += ("a4" -> 4)
-  for(d<-bigData2)println(d)
+  for (d <- bigData2) println(d)
   println
-  val t1 = (1,2,"hello")
+  val t1 = (1, 2, "hello")
   println(t1._1)
 
   List(1, 2, 3) foreach { _ => println("Hi") }
+  val t2 = (1, 3, "ab")
+  println(t2._3)
+  println(List(1, 2, 4, 4).fold(0) { (sum, i) => sum + i })
 }

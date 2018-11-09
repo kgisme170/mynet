@@ -5,7 +5,7 @@ import scala.concurrent.duration._
 import scala.concurrent.{Await, Future}
 import scala.language.postfixOps
 
-object stop extends App {
+object actorStop extends App {
 
   class TestActor extends Actor {
     def receive = {

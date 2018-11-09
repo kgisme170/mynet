@@ -1,6 +1,6 @@
 import java.nio.Buffer
 
-object ch0304 extends App {
+object ch04 extends App {
   val nums = new Array[Int](10)
   val n2 = Array(1, 3, 5, 7)
   val n3 = Array(1.0, 3.0, 5, 7)
