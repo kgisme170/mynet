@@ -31,6 +31,10 @@ public class testReflection {
         System.out.println(msg);
         for (Method m : mList) {
             System.out.println(m.getName() + "_" + m.getParameterCount());
+            Class[] parameterTypes = m.getParameterTypes();
+            for(Class c : parameterTypes){
+                System.out.println(c.getName());
+            }
         }
     }
 
@@ -72,13 +76,14 @@ public class testReflection {
 
     class You{
         public You(String s){}
+        public void f(String s, int i){}
     }
 
     public static void main(String[] args)  throws NoSuchMethodException {
         try {
             testReflection test = new testReflection();
-            test.CheckClass(String.class);//公有函数，包括父类的
-            test.CheckClass(My.class);//本类的，包括私有和公有
+            //test.CheckClass(String.class);//公有函数，包括父类的
+            test.CheckClass(You.class);//本类的，包括私有和公有
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -90,6 +95,8 @@ public class testReflection {
             }
         }
         Constructor constructor =
-                You.class.getConstructor(String.class);//NoSuchMethodException?
+                You.class.getConstructor(testReflection.class, String.class);
+
+        Method m = You.class.getMethod("f", new Class[]{String.class, int.class});
     }
 }
