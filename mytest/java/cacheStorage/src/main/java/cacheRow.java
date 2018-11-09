@@ -11,63 +11,72 @@ import org.rocksdb.RocksDB;
 import org.rocksdb.RocksDBException;
 import org.rocksdb.RocksIterator;
 public class cacheRow {
-    private static final String dbPath = "/tmp/data02/";
-    private static final Options options;
     static {
         RocksDB.loadLibrary();
-        options = new Options();
-        options.setCreateIfMissing(true);
     }
 
     RocksDB rocksDB;
-
-    //  RocksDB.DEFAULT_COLUMN_FAMILY
-    public void testDefaultColumnFamily() throws RocksDBException {
-        rocksDB = RocksDB.open(options, dbPath);
-
-        {
-            System.out.println("开始打印ColumnFamilies");
-            List<byte[]> cfs = RocksDB.listColumnFamilies(options, dbPath);
-            for (byte[] cf : cfs) {
-                System.out.println(new String(cf));
-            }
-            System.out.println("结束打印ColumnFamilies");
+    private void listColumnFamilies(Options options, String path) throws RocksDBException {
+        System.out.println("开始打印ColumnFamilies");
+        List<byte[]> cfs = RocksDB.listColumnFamilies(options, path);
+        for (byte[] cf : cfs) {
+            System.out.println(new String(cf));
         }
-
-        byte[] helloKey = "Hello".getBytes();
-        byte[] helloValue = "World".getBytes();
-        rocksDB.put(helloKey, helloValue);
-        byte[] getValue = rocksDB.get(helloKey);
+        System.out.println("结束打印ColumnFamilies");
+    }
+    private void putData(String key, String value) throws RocksDBException {
+        rocksDB.put(key.getBytes(), value.getBytes());
+    }
+    private void removeData(String key) throws RocksDBException {
+        rocksDB.remove(key.getBytes());
+    }
+    private void printData(String key) throws RocksDBException {
+        byte[] getValue = rocksDB.get(key.getBytes());
         System.out.println(new String(getValue));
-
-        rocksDB.put("SecondKey".getBytes(), "SecondValue".getBytes());
-
+    }
+    private void printData(String [] allKeys) throws RocksDBException {
         List<byte[]> keys = new ArrayList<>();
-        keys.add(helloKey);
-        keys.add("SecondKey".getBytes());
-
-        Map<byte[], byte[]> valueMap = rocksDB.multiGet(keys);
-        for(Map.Entry<byte[], byte[]> entry : valueMap.entrySet()) {
-            System.out.println(new String(entry.getKey()) + ":" + new String(entry.getValue()));
+        for(String k : allKeys){
+            keys.add(k.getBytes());
         }
+        Map<byte[], byte[]> valueMap = rocksDB.multiGet(keys);
+        for(Map.Entry<byte[], byte[]> entry: valueMap.entrySet()){
+            System.out.println(new String(entry.getKey() + ":" + new String(entry.getValue())));
+        }
+    }
 
+    private void printAllData(){
+        System.out.println("开始打印所有数据");
         RocksIterator it = rocksDB.newIterator();
         for(it.seekToFirst(); it.isValid(); it.next()) {
-            System.out.println("it helloKey:" + new String(it.key()) + ", it helloValue:" + new String(it.value()));
+            System.out.println("Key:" + new String(it.key()) + ", Value:" + new String(it.value()));
         }
-        rocksDB.remove(helloKey);
-        System.out.println("after remove helloKey:" + new String(helloKey));
+        System.out.println("结束打印所有数据");
+    }
 
-        it = rocksDB.newIterator();
-        for(it.seekToFirst(); it.isValid(); it.next()) {
-            System.out.println("it helloKey:" + new String(it.key()) + ", it helloValue:" + new String(it.value()));
-        }
+    public void testDefaultColumnFamily() throws RocksDBException {
+        final String dbPath = "/tmp/data02/";
+        final Options options = new Options();
+        options.setCreateIfMissing(true);
+        rocksDB = RocksDB.open(options, dbPath);
+        listColumnFamilies(options,dbPath);
+        putData("Hello", "World");
+        printData("Hello");
+        putData("SecondKey", "SecondValue");
+        printData(new String[]{"Hello", "SecondKey"});
+
+        printAllData();
+        removeData("Hello");
+        printAllData();
     }
 
     public void testCertainColumnFamily() throws RocksDBException {
         String table = "CertainColumnFamilyTest";
         String key = "certainKey";
         String value = "certainValue";
+        final String dbPath = "/tmp/data03/";
+        final Options options = new Options();
+        options.setCreateIfMissing(true);
 
         List<ColumnFamilyDescriptor> columnFamilyDescriptors = new ArrayList<>();
 
@@ -102,6 +111,7 @@ public class cacheRow {
 
         rocksDB.put(columnFamilyHandle, "SecondKey".getBytes(), "SecondValue".getBytes());
 
+        //printData(new String[]{key, "SecondKey"});
         List<byte[]> keys = new ArrayList<>();
         keys.add(key.getBytes());
         keys.add("SecondKey".getBytes());
@@ -119,14 +129,14 @@ public class cacheRow {
 
         RocksIterator it = rocksDB.newIterator(columnFamilyHandle);
         for(it.seekToFirst(); it.isValid(); it.next()) {
-            System.out.println(new String(it.key()) + ":" + new String(it.value()));
+            System.out.println(new String(it.key()) + "=>" + new String(it.value()));
         }
         columnFamilyHandle.close();
     }
 
     public static void main(String[] args) throws RocksDBException {
         cacheRow test = new cacheRow();
-        if(args.length>=2) {
+        if(args.length<=1) {
             test.testCertainColumnFamily();
         }else{
             test.testDefaultColumnFamily();
