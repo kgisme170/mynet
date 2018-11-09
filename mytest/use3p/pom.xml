@@ -11,6 +11,7 @@
 
     <artifactId>use3p</artifactId>
     <modules>
+        <module>serialize</module>
         <module>useDb</module>
         <module>useHibernate</module>
         <module>useJetty</module>

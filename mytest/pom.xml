@@ -12,7 +12,6 @@
         <module>hadoop/mr</module>
         <module>java/useAnnotation</module>
         <module>java/jLang</module>
-        <module>java/serialize</module>
         <module>spark/spark_remote</module>
         <module>spark/streaming</module>
         <module>java/naming</module>
