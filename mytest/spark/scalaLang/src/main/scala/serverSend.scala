@@ -8,7 +8,6 @@ object serverSend {
     val in = s.getInputStream
     val out = s.getOutputStream
     while (s.isConnected) {
-      val buffer = Array[Byte](4)
       Thread.sleep(1000) // wait for 1000 millisecond
       out.write("Pong".getBytes)
     }
@@ -18,7 +17,7 @@ object serverSend {
     val server = new ServerSocket(9999)
     while (true) {
       val s: Socket = server.accept()
-      future {
+      Future {
         handleClient(s)
       }
     }

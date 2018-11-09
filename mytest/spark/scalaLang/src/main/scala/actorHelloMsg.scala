@@ -1,6 +1,6 @@
 import akka.actor.{Actor, ActorSystem, Props}
 
-object actor01 extends App {
+object actorHelloMsg extends App {
 
   class HelloActor extends Actor {
     override def receive = {

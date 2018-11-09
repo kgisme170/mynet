@@ -1,6 +1,6 @@
 import akka.actor._
 
-object children extends App {
+object actorChildren extends App {
 
   case class CreateChild(name: String)
 

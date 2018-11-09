@@ -1,6 +1,6 @@
 import akka.actor._
 
-object pingPong extends App {
+object actorPingPong extends App {
 
   class Ping(pong: ActorRef) extends Actor {
     var count = 0

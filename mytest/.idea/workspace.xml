@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch0102.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch03.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch02.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch02.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch0304.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch04.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch0506.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch05.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/testPq.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/testPriorityQueue.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/testSerialize.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/testSerialize.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/testTraits.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/testTraitsAop.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/actor01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorHelloMsg.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/children.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorChildren.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/kill.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorKill.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/pingPong.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorPingPong.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/serverSend.scala" beforeDir="false" afterPath="$PROJECT_DIR$/spark/scalaLang/src/main/scala/serverSend.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -168,7 +165,7 @@
           <entry key="properties" value="10" />
           <entry key="py" value="3" />
           <entry key="sbt" value="1" />
-          <entry key="scala" value="10" />
+          <entry key="scala" value="16" />
           <entry key="sh" value="2" />
           <entry key="txt" value="8" />
           <entry key="xml" value="137" />
@@ -188,7 +185,7 @@
           <entry key="PLAIN_TEXT" value="31" />
           <entry key="Properties" value="10" />
           <entry key="Python" value="1" />
-          <entry key="Scala" value="10" />
+          <entry key="Scala" value="16" />
           <entry key="XML" value="137" />
           <entry key="YAML" value="3" />
           <entry key="sbt" value="1" />
@@ -222,7 +219,7 @@
           <entry key="properties" value="91" />
           <entry key="py" value="29" />
           <entry key="sbt" value="1" />
-          <entry key="scala" value="489" />
+          <entry key="scala" value="501" />
           <entry key="sh" value="12" />
           <entry key="txt" value="108" />
           <entry key="xml" value="803" />
@@ -236,7 +233,7 @@
           <entry key="JSON" value="83" />
           <entry key="PLAIN_TEXT" value="369" />
           <entry key="Properties" value="91" />
-          <entry key="Scala" value="489" />
+          <entry key="Scala" value="501" />
           <entry key="XML" value="803" />
           <entry key="sbt" value="1" />
         </counts>
@@ -246,10 +243,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/testSerialize.scala">
+        <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorStop.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="450">
+              <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -314,13 +311,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java/useHibernate/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/java/useHibernate/src/main/java/ManageEmployee.java" />
-        <option value="$PROJECT_DIR$/java/useMybatis/src/main/resources/my/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/java/useMybatis/src/main/java/my/service/UserService.java" />
-        <option value="$PROJECT_DIR$/java/jLang/src/main/java/lookUp.java" />
-        <option value="$PROJECT_DIR$/java/jLang/pom.xml" />
-        <option value="$PROJECT_DIR$/java/useDb/src/main/java/testPg.java" />
         <option value="$PROJECT_DIR$/java/springDb/src/main/java/rawJdbc.java" />
         <option value="$PROJECT_DIR$/java/springDb/src/main/java/IUserDAO.java" />
         <option value="$PROJECT_DIR$/java/springDb/src/main/java/User.java" />
@@ -365,6 +355,13 @@
         <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/testTraitsAop.scala" />
         <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/testPriorityQueue.scala" />
         <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/testSerialize.scala" />
+        <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/stop.scala" />
+        <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/serverSend.scala" />
+        <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorHelloMsg.scala" />
+        <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorKill.scala" />
+        <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorChildren.scala" />
+        <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorPingPong.scala" />
+        <option value="$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorStop.scala" />
       </list>
     </option>
   </component>
@@ -469,7 +466,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="insertUser&#9;PSI&#9;JAVA://my.service.UserService#insertUser&#10;System.getProperty&#9;ACTION&#9;null&#10;testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541766564480" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541766832757" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
@@ -594,13 +591,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00165" summary="ok">
-      <created>1541199507990</created>
-      <option name="number" value="00165" />
-      <option name="presentableId" value="LOCAL-00165" />
-      <option name="project" value="LOCAL" />
-      <updated>1541199507990</updated>
     </task>
     <task id="LOCAL-00166" summary="ok">
       <created>1541199856470</created>
@@ -938,7 +928,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541764888476</updated>
     </task>
-    <option name="localTasksCounter" value="214" />
+    <task id="LOCAL-00214" summary="rocksdb">
+      <created>1541766699108</created>
+      <option name="number" value="00214" />
+      <option name="presentableId" value="LOCAL-00214" />
+      <option name="project" value="LOCAL" />
+      <updated>1541766699108</updated>
+    </task>
+    <option name="localTasksCounter" value="215" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -975,15 +972,15 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5638978" visible="true" weight="0.29844558" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5638978" weight="0.29844558" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.60596377" weight="0.32435232" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.43610224" side_tool="true" visible="true" weight="0.29844558" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.6112886" side_tool="true" visible="true" weight="0.37512952" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.442492" weight="0.31813473" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.67199147" weight="0.27253887" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.38924387" weight="0.37512952" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.3887114" visible="true" weight="0.37512952" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1067,41 +1064,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/useDubbo/src/main/java/api/DemoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useDubbo/src/main/java/provider/DemoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useDubbo/src/main/resources/provider.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useDubbo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/useDubbo/src/main/java/provider/Provider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1360,13 +1322,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/children.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch05.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1005">
@@ -1413,6 +1368,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/serverSend.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorHelloMsg.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorKill.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorChildren.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorPingPong.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/actorStop.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
         </state>
       </provider>
     </entry>

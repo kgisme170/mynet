@@ -1,6 +1,6 @@
 import akka.actor._
 
-object kill extends App {
+object actorKill extends App {
 
   val system = ActorSystem("KillTestSystem")
   val number5 = system.actorOf(Props[Number5], name = "Number5")
@@ -26,6 +26,7 @@ object kill extends App {
       println("Number 5::postRestart called")
     }
   }
+
   number5 ! "hello"
   number5 ! Kill
 }
