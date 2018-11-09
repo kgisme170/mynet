@@ -32,7 +32,7 @@ public class testReflection {
         for (Method m : mList) {
             System.out.println(m.getName() + "_" + m.getParameterCount());
             Class[] parameterTypes = m.getParameterTypes();
-            for(Class c : parameterTypes){
+            for (Class c : parameterTypes) {
                 System.out.println(c.getName());
             }
         }
@@ -71,32 +71,54 @@ public class testReflection {
             return 1;
         }
 
-        public My(String _){}
+        public My(String _) {
+        }
     }
 
-    class You{
-        public You(String s){}
-        public void f(String s, int i){}
+    public class You {
+        public You(String s) {
+        }
+
+        public void f(String s, int i) {
+            System.out.println(i + 100);
+        }
     }
 
-    public static void main(String[] args)  throws NoSuchMethodException {
+    public static void main(String[] args) throws NoSuchMethodException {
+        /*
         try {
             testReflection test = new testReflection();
-            //test.CheckClass(String.class);//公有函数，包括父类的
+            test.CheckClass(String.class);//公有函数，包括父类的
             test.CheckClass(You.class);//本类的，包括私有和公有
         } catch (Exception e) {
             e.printStackTrace();
         }
         Constructor[] constructors = You.class.getConstructors();
-        for(Constructor constructor: constructors){
+        for (Constructor constructor : constructors) {
             Class[] parameterTypes = constructor.getParameterTypes();
-            for(Class c: parameterTypes){
+            for (Class c : parameterTypes) {
                 System.out.println(c.getName());//print java.lang.String
             }
         }
+        */
+
         Constructor constructor =
                 You.class.getConstructor(testReflection.class, String.class);
-
-        Method m = You.class.getMethod("f", new Class[]{String.class, int.class});
+        try {
+            You y = (You)constructor.newInstance("xzy");
+            System.out.println("ok");
+            y.f("xyz",2);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        /*
+        Method m1 = You.class.getMethod("f", new Class[]{String.class, int.class});
+        Method m2 = You.class.getMethod("f", String.class, int.class);
+        You y = new testReflection().new You("abc");
+        try {
+            m2.invoke(y, "xyz", 3);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }*/
     }
 }
