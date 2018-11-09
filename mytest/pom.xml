@@ -10,12 +10,8 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>hadoop/mr</module>
-        <module>java/useAnnotation</module>
-        <module>java/jLang</module>
-        <module>spark/spark_remote</module>
-        <module>spark/streaming</module>
-        <module>java/naming</module>
-        <module>spark/scalaLang</module>
+        <module>java</module>
+        <module>spark</module>
         <module>use3p</module>
         <module>spring</module>
     </modules>

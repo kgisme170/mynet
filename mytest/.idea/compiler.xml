@@ -10,7 +10,6 @@
         <module name="IocAop" />
         <module name="jLang" />
         <module name="mr" />
-        <module name="naming" />
         <module name="scalaLang" />
         <module name="serialize" />
         <module name="spark_remote" />
@@ -35,9 +34,16 @@
     <bytecodeTargetLevel>
       <module name="_3p" target="1.5" />
       <module name="cacheStorage" target="1.5" />
+      <module name="gs-spring-boot" target="1.8" />
       <module name="java_local" target="1.5" />
+      <module name="naming" target="1.5" />
       <module name="scala" target="1.8" />
       <module name="springIocAop" target="1.5" />
+      <module name="useAnnotation" target="1.5" />
+      <module name="useDbcp" target="1.5" />
+      <module name="useDubbo" target="1.5" />
+      <module name="useMybatis" target="1.5" />
+      <module name="useRocksDb" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
