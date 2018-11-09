@@ -1,5 +1,7 @@
+package mypackage;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -32,7 +34,15 @@ public class testReflection {
         }
     }
 
+    public testReflection() {
+    }
+
     public void CheckClass(Class c) {
+        System.out.println("=====================");
+        System.out.println("类名" + c.getName());
+        System.out.println(c.getPackage().getName());
+        int modifiers = c.getModifiers();
+        System.out.println(Modifier.isProtected(modifiers));
         printMethods(getMethods(c), "getMethod===========================");
         printMethods(getDeclaredMethods(c), "getDeclaredMethods===============");
     }
@@ -56,9 +66,15 @@ public class testReflection {
         private int g() {
             return 1;
         }
+
+        public My(String _){}
     }
 
-    public static void main(String[] args) {
+    class You{
+        public You(String s){}
+    }
+
+    public static void main(String[] args)  throws NoSuchMethodException {
         try {
             testReflection test = new testReflection();
             test.CheckClass(String.class);//公有函数，包括父类的
@@ -66,5 +82,14 @@ public class testReflection {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        Constructor[] constructors = You.class.getConstructors();
+        for(Constructor constructor: constructors){
+            Class[] parameterTypes = constructor.getParameterTypes();
+            for(Class c: parameterTypes){
+                System.out.println(c.getName());//print java.lang.String
+            }
+        }
+        Constructor constructor =
+                You.class.getConstructor(String.class);//NoSuchMethodException?
     }
 }
