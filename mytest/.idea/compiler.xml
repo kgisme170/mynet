@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cacheStorage" />
         <module name="gs-spring-boot" />
         <module name="IocAop" />
         <module name="jLang" />
@@ -26,11 +25,13 @@
         <module name="useJetty" />
         <module name="useKafka" />
         <module name="useMybatis" />
+        <module name="useRocksDb" />
         <module name="useSlf4j" />
         <module name="useThrift" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cacheStorage" target="1.5" />
       <module name="java_local" target="1.5" />
       <module name="scala" target="1.8" />
       <module name="springIocAop" target="1.5" />

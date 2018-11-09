@@ -28,5 +28,6 @@
         <module>java/useDbcp</module>
         <module>java/useDubbo</module>
         <module>spark/scalaLang</module>
+        <module>java/useRocksDb</module>
     </modules>
 </project>
