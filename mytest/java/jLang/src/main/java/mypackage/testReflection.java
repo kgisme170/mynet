@@ -85,9 +85,8 @@ public class testReflection {
     }
 
     public static void main(String[] args) throws NoSuchMethodException {
-        /*
+        testReflection test = new testReflection();
         try {
-            testReflection test = new testReflection();
             test.CheckClass(String.class);//公有函数，包括父类的
             test.CheckClass(You.class);//本类的，包括私有和公有
         } catch (Exception e) {
@@ -100,18 +99,15 @@ public class testReflection {
                 System.out.println(c.getName());//print java.lang.String
             }
         }
-        */
-
         Constructor constructor =
                 You.class.getConstructor(testReflection.class, String.class);
         try {
-            You y = (You)constructor.newInstance("xzy");
+            You y = (You)constructor.newInstance(test, "xzy");
             System.out.println("ok");
             y.f("xyz",2);
         }catch(Exception e){
             e.printStackTrace();
         }
-        /*
         Method m1 = You.class.getMethod("f", new Class[]{String.class, int.class});
         Method m2 = You.class.getMethod("f", String.class, int.class);
         You y = new testReflection().new You("abc");
@@ -119,6 +115,6 @@ public class testReflection {
             m2.invoke(y, "xyz", 3);
         } catch (Exception e) {
             e.printStackTrace();
-        }*/
+        }
     }
 }
