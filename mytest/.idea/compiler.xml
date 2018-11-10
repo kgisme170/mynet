@@ -24,6 +24,7 @@
         <module name="useJetty" />
         <module name="useJunit" />
         <module name="useKafka" />
+        <module name="useMaven" />
         <module name="useMybatis" />
         <module name="useRocksDb" />
         <module name="useSlf4j" />

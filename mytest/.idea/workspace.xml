@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/java/useJunit/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/useJunit/src/main/resources/resource01.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/useJunit/src/test/java/test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/useJunit/src/main/java/my/myClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/useMaven/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/useMaven/src/main/java/useMaven.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/useJunit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/useJunit/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/useJunit/src/test/java/test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useJunit/src/test/java/test01.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,6 +73,7 @@
     <ignored path="$PROJECT_DIR$/spark/target/" />
     <ignored path="$PROJECT_DIR$/hadoop/target/" />
     <ignored path="$PROJECT_DIR$/java/useJunit/target/" />
+    <ignored path="$PROJECT_DIR$/java/useMaven/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +185,7 @@
           <entry key="gradle" value="1" />
           <entry key="html" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="160" />
+          <entry key="java" value="162" />
           <entry key="json" value="1" />
           <entry key="log" value="1" />
           <entry key="properties" value="10" />
@@ -191,7 +194,7 @@
           <entry key="scala" value="16" />
           <entry key="sh" value="2" />
           <entry key="txt" value="10" />
-          <entry key="xml" value="158" />
+          <entry key="xml" value="161" />
           <entry key="yaml" value="3" />
         </counts>
       </usages-collector>
@@ -202,14 +205,14 @@
           <entry key="Groovy" value="1" />
           <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="160" />
+          <entry key="JAVA" value="162" />
           <entry key="JSON" value="1" />
           <entry key="Manifest" value="2" />
           <entry key="PLAIN_TEXT" value="33" />
           <entry key="Properties" value="10" />
           <entry key="Python" value="1" />
           <entry key="Scala" value="16" />
-          <entry key="XML" value="158" />
+          <entry key="XML" value="161" />
           <entry key="YAML" value="3" />
           <entry key="sbt" value="1" />
         </counts>
@@ -237,7 +240,7 @@
           <entry key="cpp" value="48" />
           <entry key="dummy" value="1" />
           <entry key="html" value="50" />
-          <entry key="java" value="13180" />
+          <entry key="java" value="13573" />
           <entry key="json" value="83" />
           <entry key="properties" value="91" />
           <entry key="py" value="29" />
@@ -245,19 +248,19 @@
           <entry key="scala" value="501" />
           <entry key="sh" value="12" />
           <entry key="txt" value="124" />
-          <entry key="xml" value="930" />
+          <entry key="xml" value="1030" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="C++" value="79" />
           <entry key="HTML" value="50" />
-          <entry key="JAVA" value="13180" />
+          <entry key="JAVA" value="13573" />
           <entry key="JSON" value="83" />
           <entry key="PLAIN_TEXT" value="385" />
           <entry key="Properties" value="91" />
           <entry key="Scala" value="501" />
-          <entry key="XML" value="930" />
+          <entry key="XML" value="1030" />
           <entry key="sbt" value="1" />
         </counts>
       </usages-collector>
@@ -265,33 +268,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/useJunit/src/main/java/my/myClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/useJunit/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/test01.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#110#111#0" expanded="true" />
-                <element signature="e#143#144#0" expanded="true" />
-                <element signature="e#317#318#0" expanded="true" />
-                <element signature="e#348#349#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="11" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/useJunit/src/main/resources/resource01.txt">
+        <entry file="file://$PROJECT_DIR$/java/useMaven/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="20" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/useMaven/src/main/java/useMaven.java">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -355,10 +360,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java/useDbcp/src/main/java/MyDBCPDataSource.java" />
-        <option value="$PROJECT_DIR$/todo.txt" />
-        <option value="$PROJECT_DIR$/java/useDubbo/src/main/java/api/DemoService.java" />
-        <option value="$PROJECT_DIR$/java/useDubbo/src/main/java/DemoServiceImpl.java" />
         <option value="$PROJECT_DIR$/java/useDubbo/src/main/java/provider/DemoServiceImpl.java" />
         <option value="$PROJECT_DIR$/java/useDubbo/src/main/java/provider/Provider.java" />
         <option value="$PROJECT_DIR$/java/useDubbo/src/main/resources/provider.xml" />
@@ -404,8 +405,12 @@
         <option value="$PROJECT_DIR$/java/jLang/src/main/java/mypackage/testReflection.java" />
         <option value="$PROJECT_DIR$/java/jLang/src/main/java/testSet.java" />
         <option value="$PROJECT_DIR$/java/pom.xml" />
-        <option value="$PROJECT_DIR$/java/useJunit/pom.xml" />
         <option value="$PROJECT_DIR$/java/useJunit/src/test/java/test01.java" />
+        <option value="$PROJECT_DIR$/java/useMaven/pom.xml" />
+        <option value="$PROJECT_DIR$/java/useJunit/pom.xml" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/main/java/myClass.java" />
+        <option value="$PROJECT_DIR$/java/useMaven/src/main/java/useMaven.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/main/java/my/myClass.java" />
       </list>
     </option>
   </component>
@@ -426,6 +431,15 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="useJunit" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="useMaven" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="useMaven" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -477,7 +491,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="useJunit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
@@ -485,8 +499,18 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="useJunit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="useMaven" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -510,7 +534,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="insertUser&#9;PSI&#9;JAVA://my.service.UserService#insertUser&#10;System.getProperty&#9;ACTION&#9;null&#10;testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541850443146" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541853749968" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
@@ -543,7 +567,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.test01">
+  <component name="RunManager" selected="Application.useMaven">
     <configuration default="true" type="tests" factoryName="Unittests">
       <module name="jLang" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -558,13 +582,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="ch02" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="ch02" />
-      <module name="scalaLang" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="testDerby" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="testDerby" />
       <module name="java_local" />
@@ -572,16 +589,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testReflection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mypackage.testReflection" />
+    <configuration name="testSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testSet" />
       <module name="jLang" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="testSet" />
-      <module name="jLang" />
+    <configuration name="useMaven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="useMaven" />
+      <module name="useMaven" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -604,21 +621,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test01.testMain02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="useJunit" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test01" />
+      <option name="METHOD_NAME" value="testMain02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.testDerby" />
-      <item itemvalue="Application.ch02" />
-      <item itemvalue="Application.testReflection" />
       <item itemvalue="Application.testSet" />
       <item itemvalue="JUnit.test01.testMain" />
       <item itemvalue="JUnit.test01" />
+      <item itemvalue="JUnit.test01.testMain02" />
+      <item itemvalue="Application.useMaven" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.useMaven" />
         <item itemvalue="JUnit.test01" />
+        <item itemvalue="JUnit.test01.testMain02" />
         <item itemvalue="JUnit.test01.testMain" />
         <item itemvalue="Application.testSet" />
-        <item itemvalue="Application.testReflection" />
-        <item itemvalue="Application.ch02" />
       </list>
     </recent_temporary>
   </component>
@@ -639,13 +666,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00182" summary="ok">
-      <created>1541261960620</created>
-      <option name="number" value="00182" />
-      <option name="presentableId" value="LOCAL-00182" />
-      <option name="project" value="LOCAL" />
-      <updated>1541261960620</updated>
     </task>
     <task id="LOCAL-00183" summary="ok">
       <created>1541262218877</created>
@@ -983,18 +1003,46 @@
       <option name="project" value="LOCAL" />
       <updated>1541820371399</updated>
     </task>
-    <option name="localTasksCounter" value="231" />
+    <task id="LOCAL-00231" summary="java">
+      <created>1541850473985</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1541850473985</updated>
+    </task>
+    <option name="localTasksCounter" value="232" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HelloControllerIT_getHello - 2018.11.02 at 15h 10m 56s.xml">
-      <configuration name="HelloControllerIT.getHello" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HelloControllerIT_getHello - 2018.11.02 at 15h 11m 17s.xml">
-      <configuration name="HelloControllerIT.getHello" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HelloControllerTest_getHello - 2018.11.02 at 15h 11m 27s.xml">
       <configuration name="HelloControllerTest.getHello" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test01_testMain - 2018.11.10 at 19h 45m 56s.xml">
+      <configuration name="test01.testMain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test01 - 2018.11.10 at 19h 47m 26s.xml">
+      <configuration name="test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test01_testMain - 2018.11.10 at 19h 48m 28s.xml">
+      <configuration name="test01.testMain" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test01_testMain02 - 2018.11.10 at 19h 49m 16s.xml">
+      <configuration name="test01.testMain02" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test01 - 2018.11.10 at 19h 50m 05s.xml">
+      <configuration name="test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test01 - 2018.11.10 at 19h 50m 18s.xml">
+      <configuration name="test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test01 - 2018.11.10 at 19h 50m 32s.xml">
+      <configuration name="test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test01 - 2018.11.10 at 19h 51m 20s.xml">
+      <configuration name="test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="test01 - 2018.11.10 at 19h 52m 05s.xml">
+      <configuration name="test01" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1010,7 +1058,7 @@
     <frame x="72" y="23" width="1368" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20889895" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20889895" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1019,15 +1067,15 @@
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5617678" weight="0.29808918" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32866243" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.561086" visible="true" weight="0.29808918" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.60596377" weight="0.32435232" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.61689293" side_tool="true" weight="0.4611465" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49472097" weight="0.32356688" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.43891403" side_tool="true" weight="0.29808918" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.442492" weight="0.31592357" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.6666667" visible="true" weight="0.2700637" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.6666667" weight="0.2700637" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.3831071" weight="0.3745223" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
@@ -1115,15 +1163,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/useDb/src/main/java/testDerby.java" />
-    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/StorageUpdate.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/2.0.0/kafka-clients-2.0.0.jar!/org/apache/kafka/common/resource/ResourceType.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/2.0.0/kafka-clients-2.0.0.jar!/org/apache/kafka/clients/consumer/ConsumerConfig.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1380,24 +1419,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/useJunit/pom.xml">
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/test01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        <state relative-caret-position="239">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/test01.java">
+    <entry file="file://$PROJECT_DIR$/java/useJunit/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#110#111#0" expanded="true" />
-            <element signature="e#143#144#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useMaven/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useMaven/src/main/java/useMaven.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/main/java/my/myClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -1454,7 +1512,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>mytest (1)</last-edited>
+          <last-edited>useJunit</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
