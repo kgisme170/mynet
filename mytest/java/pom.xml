@@ -11,5 +11,6 @@
     <modules>
         <module>useAnnotation</module>
         <module>jLang</module>
+        <module>useJunit</module>
     </modules>
 </project>

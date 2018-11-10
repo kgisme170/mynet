@@ -22,6 +22,7 @@
         <module name="useDubbo" />
         <module name="useHibernate" />
         <module name="useJetty" />
+        <module name="useJunit" />
         <module name="useKafka" />
         <module name="useMybatis" />
         <module name="useRocksDb" />
