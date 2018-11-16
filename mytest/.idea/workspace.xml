@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/useStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/jLang/src/main/java/useOptional.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/testVolatile.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/testVolatile.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -181,7 +180,7 @@
           <entry key="gradle" value="1" />
           <entry key="html" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="176" />
+          <entry key="java" value="177" />
           <entry key="json" value="1" />
           <entry key="log" value="1" />
           <entry key="properties" value="16" />
@@ -201,7 +200,7 @@
           <entry key="Groovy" value="1" />
           <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="176" />
+          <entry key="JAVA" value="177" />
           <entry key="JSON" value="1" />
           <entry key="Manifest" value="2" />
           <entry key="PLAIN_TEXT" value="33" />
@@ -236,7 +235,7 @@
           <entry key="cpp" value="48" />
           <entry key="dummy" value="1" />
           <entry key="html" value="50" />
-          <entry key="java" value="17643" />
+          <entry key="java" value="17846" />
           <entry key="json" value="83" />
           <entry key="properties" value="111" />
           <entry key="py" value="29" />
@@ -251,7 +250,7 @@
         <counts>
           <entry key="C++" value="79" />
           <entry key="HTML" value="50" />
-          <entry key="JAVA" value="17643" />
+          <entry key="JAVA" value="17846" />
           <entry key="JSON" value="83" />
           <entry key="PLAIN_TEXT" value="395" />
           <entry key="Properties" value="111" />
@@ -265,28 +264,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/useStream.java">
+        <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/testVolatile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="22" column="92" selection-start-line="22" selection-start-column="92" selection-end-line="22" selection-end-column="92" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2666#2667#0" expanded="true" />
-                <element signature="e#2708#2709#0" expanded="true" />
-                <element signature="e#2967#2968#0" expanded="true" />
-                <element signature="e#3010#3011#0" expanded="true" />
-                <element signature="e#3057#3058#0" expanded="true" />
-                <element signature="e#3099#3100#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/useOptional.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+            <state relative-caret-position="470">
+              <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -351,7 +332,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/scala/pom.xml" />
         <option value="$PROJECT_DIR$/spark/scalaLang/pom.xml" />
         <option value="$PROJECT_DIR$/java/naming/src/main/java/lookUp.java" />
@@ -402,6 +382,7 @@
         <option value="$PROJECT_DIR$/java/jLang/src/main/java/useCallable.java" />
         <option value="$PROJECT_DIR$/java/jLang/src/main/java/useOptional.java" />
         <option value="$PROJECT_DIR$/java/concurrent/src/main/java/useStream.java" />
+        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/testVolatile.java" />
       </list>
     </option>
   </component>
@@ -423,9 +404,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1783" />
-    <option name="y" value="-32" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="74" />
+    <option name="y" value="23" />
     <option name="width" value="1361" />
     <option name="height" value="877" />
   </component>
@@ -531,7 +512,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="insertUser&#9;PSI&#9;JAVA://my.service.UserService#insertUser&#10;System.getProperty&#9;ACTION&#9;null&#10;testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542360155219" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542362470295" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
@@ -564,7 +545,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.useStream">
+  <component name="RunManager" selected="Application.testVolatile">
     <configuration default="true" type="tests" factoryName="Unittests">
       <module name="jLang" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -579,16 +560,16 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="mapSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mapSet" />
-      <module name="jLang" />
+    <configuration name="testDerby" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testDerby" />
+      <module name="java_local" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testDerby" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="testDerby" />
-      <module name="java_local" />
+    <configuration name="testVolatile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testVolatile" />
+      <module name="concurrent" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -652,18 +633,18 @@
       <item itemvalue="Application.testDerby" />
       <item itemvalue="Maven.prd" />
       <item itemvalue="Application.useThread" />
-      <item itemvalue="Application.mapSet" />
       <item itemvalue="Application.useCallable" />
       <item itemvalue="Application.useOptional" />
       <item itemvalue="Application.useStream" />
+      <item itemvalue="Application.testVolatile" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.testVolatile" />
         <item itemvalue="Application.useStream" />
         <item itemvalue="Application.useOptional" />
         <item itemvalue="Application.useCallable" />
         <item itemvalue="Application.useThread" />
-        <item itemvalue="Application.mapSet" />
       </list>
     </recent_temporary>
   </component>
@@ -684,13 +665,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00188" summary="ok">
-      <created>1541345976215</created>
-      <option name="number" value="00188" />
-      <option name="presentableId" value="LOCAL-00188" />
-      <option name="project" value="LOCAL" />
-      <updated>1541345976216</updated>
     </task>
     <task id="LOCAL-00189" summary="ok">
       <created>1541346323856</created>
@@ -1028,7 +1002,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542339877133</updated>
     </task>
-    <option name="localTasksCounter" value="237" />
+    <task id="LOCAL-00237" summary="java">
+      <created>1542360180736</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1542360180736</updated>
+    </task>
+    <option name="localTasksCounter" value="238" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1073,10 +1054,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1783" y="-32" width="1361" height="877" extended-state="0" />
+    <frame x="74" y="23" width="1361" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21455649" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21455649" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1086,7 +1067,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3284974" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.561086" visible="true" weight="0.2955414" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.561086" weight="0.2955414" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1094,7 +1075,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.43891403" side_tool="true" weight="0.29808918" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.442492" weight="0.3133758" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.6666667" weight="0.26943004" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.3831071" weight="0.30318472" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.3831071" visible="true" weight="0.30318472" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1152,13 +1133,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch02.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/testTraitsAop.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -1455,7 +1429,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/useStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
+        <state relative-caret-position="-447">
           <caret line="22" column="92" selection-start-line="22" selection-start-column="92" selection-end-line="22" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1466,6 +1440,13 @@
             <element signature="e#3057#3058#0" expanded="true" />
             <element signature="e#3099#3100#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/testVolatile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
         </state>
       </provider>
     </entry>

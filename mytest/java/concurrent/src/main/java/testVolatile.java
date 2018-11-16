@@ -1,6 +1,25 @@
+import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader;
+
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;
+class Singleton {
+    private volatile static Singleton instance = null;
 
+    private Singleton() {
+    }
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            synchronized (Singleton.class) {
+                if (instance == null) {
+                    instance = new Singleton();
+                }
+            }
+        }
+        return instance;
+    }
+    public void print(){System.out.println(Singleton.class.getName());}
+}
 public class testVolatile {
     public static CountDownLatch l = new CountDownLatch(10);
 
@@ -17,6 +36,7 @@ public class testVolatile {
             }.start();
         }
         l.await();
-        System.out.print(count);
+        System.out.println(count);
+        Singleton.getInstance().print();
     }
 }
