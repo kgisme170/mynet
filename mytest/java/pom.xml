@@ -13,5 +13,6 @@
         <module>jLang</module>
         <module>useJunit</module>
         <module>useMaven</module>
+        <module>concurrent</module>
     </modules>
 </project>
