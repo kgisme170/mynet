@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/java/jLang/src/main/java/useCallable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/useStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/jLang/src/main/java/useOptional.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
@@ -68,6 +69,7 @@
     <ignored path="$PROJECT_DIR$/hadoop/target/" />
     <ignored path="$PROJECT_DIR$/java/useJunit/target/" />
     <ignored path="$PROJECT_DIR$/java/useMaven/target/" />
+    <ignored path="$PROJECT_DIR$/java/concurrent/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +181,7 @@
           <entry key="gradle" value="1" />
           <entry key="html" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="172" />
+          <entry key="java" value="176" />
           <entry key="json" value="1" />
           <entry key="log" value="1" />
           <entry key="properties" value="16" />
@@ -188,7 +190,7 @@
           <entry key="scala" value="16" />
           <entry key="sh" value="2" />
           <entry key="txt" value="10" />
-          <entry key="xml" value="165" />
+          <entry key="xml" value="166" />
           <entry key="yaml" value="3" />
         </counts>
       </usages-collector>
@@ -199,14 +201,14 @@
           <entry key="Groovy" value="1" />
           <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="172" />
+          <entry key="JAVA" value="176" />
           <entry key="JSON" value="1" />
           <entry key="Manifest" value="2" />
           <entry key="PLAIN_TEXT" value="33" />
           <entry key="Properties" value="16" />
           <entry key="Python" value="1" />
           <entry key="Scala" value="16" />
-          <entry key="XML" value="165" />
+          <entry key="XML" value="166" />
           <entry key="YAML" value="3" />
           <entry key="sbt" value="1" />
         </counts>
@@ -234,7 +236,7 @@
           <entry key="cpp" value="48" />
           <entry key="dummy" value="1" />
           <entry key="html" value="50" />
-          <entry key="java" value="14928" />
+          <entry key="java" value="17643" />
           <entry key="json" value="83" />
           <entry key="properties" value="111" />
           <entry key="py" value="29" />
@@ -249,7 +251,7 @@
         <counts>
           <entry key="C++" value="79" />
           <entry key="HTML" value="50" />
-          <entry key="JAVA" value="14928" />
+          <entry key="JAVA" value="17643" />
           <entry key="JSON" value="83" />
           <entry key="PLAIN_TEXT" value="395" />
           <entry key="Properties" value="111" />
@@ -263,22 +265,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/useCallable.java">
+        <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/useStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+            <state relative-caret-position="129">
+              <caret line="22" column="92" selection-start-line="22" selection-start-column="92" selection-end-line="22" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2666#2667#0" expanded="true" />
+                <element signature="e#2708#2709#0" expanded="true" />
+                <element signature="e#2967#2968#0" expanded="true" />
+                <element signature="e#3010#3011#0" expanded="true" />
+                <element signature="e#3057#3058#0" expanded="true" />
+                <element signature="e#3099#3100#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/testCountDownLatch.java">
+        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/useOptional.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="165">
+              <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -343,8 +351,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java/gs-spring-boot/pom.xml" />
-        <option value="$PROJECT_DIR$/java/springDb/pom.xml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/scala/pom.xml" />
         <option value="$PROJECT_DIR$/spark/scalaLang/pom.xml" />
@@ -394,6 +400,8 @@
         <option value="$PROJECT_DIR$/java/jLang/src/main/java/mapSet.java" />
         <option value="$PROJECT_DIR$/java/jLang/src/main/java/useThread.java" />
         <option value="$PROJECT_DIR$/java/jLang/src/main/java/useCallable.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/useOptional.java" />
+        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/useStream.java" />
       </list>
     </option>
   </component>
@@ -411,22 +419,13 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="useMaven" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="useMaven" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="79" />
-    <option name="y" value="23" />
+    <option name="x" value="1783" />
+    <option name="y" value="-32" />
     <option name="width" value="1361" />
     <option name="height" value="877" />
   </component>
@@ -460,6 +459,36 @@
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -502,7 +531,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="insertUser&#9;PSI&#9;JAVA://my.service.UserService#insertUser&#10;System.getProperty&#9;ACTION&#9;null&#10;testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542339840530" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542360155219" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
@@ -535,7 +564,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.useCallable">
+  <component name="RunManager" selected="Application.useStream">
     <configuration default="true" type="tests" factoryName="Unittests">
       <module name="jLang" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -571,9 +600,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="useMaven" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="useMaven" />
-      <module name="useMaven" />
+    <configuration name="useOptional" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="useOptional" />
+      <module name="jLang" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="useStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="useStream" />
+      <module name="concurrent" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -581,14 +617,6 @@
     <configuration name="useThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="useThread" />
       <module name="concurrent" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="useJunit" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test01" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -623,19 +651,19 @@
     <list>
       <item itemvalue="Application.testDerby" />
       <item itemvalue="Maven.prd" />
-      <item itemvalue="Application.useMaven" />
-      <item itemvalue="JUnit.test01" />
       <item itemvalue="Application.useThread" />
       <item itemvalue="Application.mapSet" />
       <item itemvalue="Application.useCallable" />
+      <item itemvalue="Application.useOptional" />
+      <item itemvalue="Application.useStream" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.useStream" />
+        <item itemvalue="Application.useOptional" />
         <item itemvalue="Application.useCallable" />
         <item itemvalue="Application.useThread" />
         <item itemvalue="Application.mapSet" />
-        <item itemvalue="Application.useMaven" />
-        <item itemvalue="JUnit.test01" />
       </list>
     </recent_temporary>
   </component>
@@ -656,13 +684,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
-    </task>
-    <task id="LOCAL-00187" summary="ok">
-      <created>1541307780290</created>
-      <option name="number" value="00187" />
-      <option name="presentableId" value="LOCAL-00187" />
-      <option name="project" value="LOCAL" />
-      <updated>1541307780291</updated>
     </task>
     <task id="LOCAL-00188" summary="ok">
       <created>1541345976215</created>
@@ -1000,7 +1021,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542337260985</updated>
     </task>
-    <option name="localTasksCounter" value="236" />
+    <task id="LOCAL-00236" summary="java">
+      <created>1542339877133</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1542339877133</updated>
+    </task>
+    <option name="localTasksCounter" value="237" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1045,10 +1073,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="79" y="23" width="1361" height="877" extended-state="6" />
+    <frame x="1783" y="-32" width="1361" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21455649" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21455649" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1058,15 +1086,15 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3284974" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.561086" visible="true" weight="0.2955414" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.561086" visible="true" weight="0.2955414" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49472097" weight="0.32356688" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.43891403" side_tool="true" weight="0.29808918" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.442492" weight="0.31464967" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.442492" weight="0.3133758" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.6666667" weight="0.26943004" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.3831071" weight="0.3044586" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.3831071" weight="0.30318472" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1124,27 +1152,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch05.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1005">
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch04.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch03.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spark/scalaLang/src/main/scala/ch02.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -1391,17 +1398,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/mapSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/useThread.java">
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/useThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
@@ -1415,19 +1412,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/testCountDownLatch.java">
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/mapSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="405">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/useCallable.java">
+    <entry file="file://$PROJECT_DIR$/java/concurrent/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/useCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/testCountDownLatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/useOptional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/useStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="22" column="92" selection-start-line="22" selection-start-column="92" selection-end-line="22" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2666#2667#0" expanded="true" />
+            <element signature="e#2708#2709#0" expanded="true" />
+            <element signature="e#2967#2968#0" expanded="true" />
+            <element signature="e#3010#3011#0" expanded="true" />
+            <element signature="e#3057#3058#0" expanded="true" />
+            <element signature="e#3099#3100#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1485,7 +1522,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>jLang</last-edited>
+          <last-edited>concurrent</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
