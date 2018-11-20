@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/mytest.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/jLang/src/main/java/useFinal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/jLang/src/main/java/useThreadLocal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
@@ -267,58 +262,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/testVolatile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/useFinal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#118#126#0" expanded="true" />
-                <element signature="e#241#242#0" expanded="true" />
-                <element signature="e#269#270#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/useThreadLocal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-              <folding>
-                <element signature="e#200#355#0" expanded="true" />
-                <element signature="e#354#355#0" expanded="true" />
-                <element signature="e#389#390#0" expanded="true" />
-                <element signature="e#426#427#0" expanded="true" />
-                <element signature="e#534#702#0" expanded="true" />
-                <element signature="e#701#702#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -487,6 +431,36 @@
               <item name="mytest" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="mytest" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="concurrent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="mytest" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="mytest" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="concurrent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="mytest" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="mytest" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="concurrent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="mytest" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="mytest" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="concurrent" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="mytest" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="mytest" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="jLang" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -600,7 +574,7 @@
     <property name="SearchEverywhereHistoryKey" value="insertUser&#9;PSI&#9;JAVA://my.service.UserService#insertUser&#10;System.getProperty&#9;ACTION&#9;null&#10;testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542380429126" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542697432825" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
@@ -614,11 +588,11 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/java/concurrent/src/main/java" />
       <recent name="$PROJECT_DIR$/java/useMaven/src/main" />
       <recent name="$PROJECT_DIR$/java/useMybatis/src/main/resources/my/mapper" />
       <recent name="$PROJECT_DIR$/java/useMybatis/src/main/resources" />
       <recent name="$PROJECT_DIR$/java/useMybatis/src/main/java/my/mapper" />
-      <recent name="$PROJECT_DIR$/java/useMybatis/src/main/java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -754,14 +728,7 @@
       <option name="presentableId" value="Default" />
       <updated>1534638569943</updated>
       <workItem from="1542379895697" duration="152000" />
-      <workItem from="1542380053825" duration="330000" />
-    </task>
-    <task id="LOCAL-00189" summary="ok">
-      <created>1541346323856</created>
-      <option name="number" value="00189" />
-      <option name="presentableId" value="LOCAL-00189" />
-      <option name="project" value="LOCAL" />
-      <updated>1541346323856</updated>
+      <workItem from="1542380053825" duration="1567000" />
     </task>
     <task id="LOCAL-00190" summary="ok">
       <created>1541387899008</created>
@@ -1099,7 +1066,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542360180736</updated>
     </task>
-    <option name="localTasksCounter" value="238" />
+    <task id="LOCAL-00238" summary="java">
+      <created>1542380455662</created>
+      <option name="number" value="00238" />
+      <option name="presentableId" value="LOCAL-00238" />
+      <option name="project" value="LOCAL" />
+      <updated>1542380455663</updated>
+    </task>
+    <option name="localTasksCounter" value="239" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1135,7 +1109,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="482000" />
+    <option name="totallyTimeSpent" value="1719000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1147,10 +1121,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="28" width="1920" height="921" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="28" width="1904" height="905" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21794872" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21982759" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1168,7 +1141,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.43891403" side_tool="true" weight="0.29808918" />
       <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.442492" weight="0.31322208" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.6666667" weight="0.2682927" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="10" sideWeight="0.3831071" visible="true" weight="0.28626445" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" sideWeight="0.3831071" visible="true" weight="0.35910878" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24986088" />
@@ -1177,7 +1150,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.12660256" />
+      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.12769397" />
       <window_info anchor="right" id="Database" order="8" />
     </layout>
   </component>
@@ -1507,7 +1480,7 @@
     <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/useFinal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#118#126#0" expanded="true" />
@@ -1517,10 +1490,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/useThreadLocal.java">
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/useThreadLocal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="e#200#355#0" expanded="true" />
             <element signature="e#354#355#0" expanded="true" />
