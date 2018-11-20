@@ -7,6 +7,7 @@ import java.math.BigInteger;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 enum Status {
     SCUUESS("1", "成功"), FAILED("2", "失败");
@@ -184,7 +185,7 @@ public class core1 {
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
         }
-
+        Set<String> s1 = ConcurrentHashMap.newKeySet();
     }
 
     public void test01(Map<String, String> map, List<String> list, String s) {
