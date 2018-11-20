@@ -2,12 +2,17 @@ import javafx.util.Pair;
 
 import java.io.IOException;
 import java.io.Serializable;
+import java.io.UnsupportedEncodingException;
 import java.lang.reflect.*;
 import java.math.BigInteger;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.ReadWriteLock;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 enum Status {
     SCUUESS("1", "成功"), FAILED("2", "失败");
@@ -105,7 +110,7 @@ class ProxyFactory {
     }
 }
 
-public class core1 {
+public class useFinal {
     @SafeVarargs
     public static <T> void addAll(Collection<T> coll, T... ts) {
 
@@ -131,6 +136,16 @@ public class core1 {
     }
     public static void main(String[] args) {
         String h = "hello";
+        String h1 = "你好哦!";
+        try {
+            System.out.println(new String(h.getBytes("UTF-8"), "UTF-8").length());
+            System.out.println(new String(h.getBytes("UTF-16"), "UTF-16").length());
+            System.out.println(new String(h1.getBytes("UTF-8"), "UTF-8").length());
+            System.out.println(new String(h1.getBytes("UTF-16"), "UTF-16").length());
+        }catch(UnsupportedEncodingException e){
+            e.printStackTrace();
+        }
+        System.out.println();
         System.out.println(h.codePointCount(0, h.length()));
         System.out.println(h.length());
         System.out.println(Status.SCUUESS.getValue());
@@ -186,6 +201,7 @@ public class core1 {
             e.printStackTrace();
         }
         Set<String> s1 = ConcurrentHashMap.newKeySet();
+        System.out.println(h.getBytes().length);
     }
 
     public void test01(Map<String, String> map, List<String> list, String s) {
@@ -195,5 +211,29 @@ public class core1 {
     public Map<Integer, String> test02() {
         System.out.println("Demo.test02()");
         return null;
+    }
+
+
+    private int Accounts[] = new int[]{};
+    private void DoTransfer(int from, int to, double amount){}
+    public void Transfer(int from, int to, double amount) {
+        ReentrantLock locker = new ReentrantLock();
+        Condition sufficientFunds = locker.newCondition();//条件对象，
+        locker.lock();
+        try {
+            while (Accounts[from] < amount) {
+                sufficientFunds.await();
+                //等待有足够的钱
+            }
+            DoTransfer(from, to, amount);
+            sufficientFunds.signalAll();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            locker.unlock();
+        }
+
+        ReadWriteLock l = new ReentrantReadWriteLock(); //从读写锁创建锁
+        l.writeLock().lock();
     }
 }
