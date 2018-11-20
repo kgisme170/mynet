@@ -138,7 +138,7 @@ public class useFinal {
         String h = "hello";
         String h1 = "你好哦!";
         try {
-            System.out.println(new String(h.getBytes("UTF-8"), "UTF-8").length());
+            System.out.println(new String(h.getBytes("UTF-8"), "UTF-8").getBytes("UTF-16").length);
             System.out.println(new String(h.getBytes("UTF-16"), "UTF-16").length());
             System.out.println(new String(h1.getBytes("UTF-8"), "UTF-8").length());
             System.out.println(new String(h1.getBytes("UTF-16"), "UTF-16").length());
@@ -202,6 +202,11 @@ public class useFinal {
         }
         Set<String> s1 = ConcurrentHashMap.newKeySet();
         System.out.println(h.getBytes().length);
+
+        String h2 = "hello实验";
+        System.out.println(h2.codePointCount(0,h.length())); //7
+        System.out.println(h2.getBytes().length); //11
+        System.out.println("水".getBytes().length);//3
     }
 
     public void test01(Map<String, String> map, List<String> list, String s) {
