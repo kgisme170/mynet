@@ -23,7 +23,7 @@ public class useLock {
             e.printStackTrace();
         }
     }
-!
+
     public static void main(String[] args){
         useLock lock = new useLock();
         lock.TryLock();
