@@ -20,5 +20,6 @@
         <module>useDubbo</module>
         <module>useSlf4j</module>
         <module>useRocksDb</module>
+        <module>useCurator</module>
     </modules>
 </project>
