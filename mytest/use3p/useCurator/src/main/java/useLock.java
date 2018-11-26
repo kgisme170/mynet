@@ -10,7 +10,7 @@ public class useLock {
     private static CuratorFramework client;
     private static String lockName = "/you/ok1/ok2/ok3";
 
-    public useLock() {
+    static {
         String hosts = "localhost:2181";
         RetryPolicy retryPolicy = new ExponentialBackoffRetry(1000, 3);
         client = CuratorFrameworkFactory.newClient(hosts, retryPolicy);
@@ -38,7 +38,6 @@ public class useLock {
     }
 
     public static void main(String[] args) {
-        useLock u = new useLock();
         Thread t1 = new Thread(() -> {
             doWithLock();
         }, "t1");
