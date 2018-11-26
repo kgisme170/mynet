@@ -27,5 +27,10 @@ public class useLock {
     public static void main(String[] args){
         useLock lock = new useLock();
         lock.TryLock();
+        lock.TryLock();
+        lock.TryLock();
+        lock.TryLock();//可重入的锁
+        lock.TryLock();
+        lock.TryLock();
     }
 }

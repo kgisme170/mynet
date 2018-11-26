@@ -110,7 +110,7 @@ class ProxyFactory {
     }
 }
 
-public class useFinal {
+public class core1 {
     @SafeVarargs
     public static <T> void addAll(Collection<T> coll, T... ts) {
 
@@ -217,7 +217,6 @@ public class useFinal {
         System.out.println("Demo.test02()");
         return null;
     }
-
 
     private int Accounts[] = new int[]{};
     private void DoTransfer(int from, int to, double amount){}
