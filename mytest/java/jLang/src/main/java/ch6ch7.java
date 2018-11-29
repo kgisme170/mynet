@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-public class useNewTime {
+public class ch6ch7 {
     public static void main(String[] args){
         Instant start = Instant.now();
         Instant end = Instant.now();
