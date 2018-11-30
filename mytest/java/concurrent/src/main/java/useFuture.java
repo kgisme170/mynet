@@ -1,7 +1,7 @@
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class useCallable {
+public class useFuture {
     static class myThread implements Callable<Integer> {
         private static AtomicInteger i = new AtomicInteger(0);
 
