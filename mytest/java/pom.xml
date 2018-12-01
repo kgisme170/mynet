@@ -14,5 +14,6 @@
         <module>useJunit</module>
         <module>useMaven</module>
         <module>concurrent</module>
+        <module>useXml</module>
     </modules>
 </project>

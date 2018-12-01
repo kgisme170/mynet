@@ -31,6 +31,7 @@
         <module name="useRocksDb" />
         <module name="useSlf4j" />
         <module name="useThrift" />
+        <module name="useXml" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
