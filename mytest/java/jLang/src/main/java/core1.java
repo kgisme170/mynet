@@ -54,30 +54,6 @@ class StaticProxy implements IUserDao {
     }
 }
 
-class ProxyFactory {
-    private Object target;
-
-    public ProxyFactory(Object obj) {
-        target = obj;
-    }
-
-    public Object getInstance() {
-        return Proxy.newProxyInstance(
-                target.getClass().getClassLoader(),
-                target.getClass().getInterfaces(),
-                new InvocationHandler() {
-                    @Override
-                    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-                        System.out.println("Before");
-                        //System.out.println("proxy="+proxy.toString());
-                        Object o = method.invoke(target, args);
-                        System.out.println("After");
-                        return o;
-                    }
-                }
-        );
-    }
-}
 
 public class core1 {
     @SafeVarargs
@@ -125,9 +101,9 @@ public class core1 {
         assert x < 0;
         IUserDao d = new UserDao();
         new StaticProxy(d).save();
-        IUserDao dao = (IUserDao) new ProxyFactory(d).getInstance();
-        System.out.println(dao.getClass());
-        dao.save();
+        //IUserDao dao = (IUserDao) new ProxyFactory(d).getInstance();
+        //System.out.println(dao.getClass());
+        //dao.save();
         Set<String> s1 = ConcurrentHashMap.newKeySet();
         System.out.println(s1);
     }
