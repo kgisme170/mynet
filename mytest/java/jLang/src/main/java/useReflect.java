@@ -1,28 +1,16 @@
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
-final class useSet{
-    private final Set<String> store = new HashSet<String>();
-    public useSet(){
-        store.add("abc");
-        store.add("xyz");
+public class useReflect {
+    public void test01(Map<String, String> m, List<String> l, String s) {
+
     }
-    public void insert(String s){
-        store.add(s);
-    }
-}
-public class useFinal {
     public static void main(String [] args){
-        useSet us = new useSet();
-        us.insert("kk");
-
         try {
-            Method m2 = useFinal.class.getMethod("test01", Map.class, List.class, String.class);
+            Method m2 = useReflect.class.getMethod("test01", Map.class, List.class, String.class);
             Type[] t = m2.getGenericParameterTypes();
             System.out.println(t.length);
             for (Type paramType : t) {
