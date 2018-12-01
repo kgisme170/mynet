@@ -19,29 +19,6 @@ public class core1 {
     }
 
     public static void main(String[] args) {
-        int i = 0b1000010 & 0b1000;
-        System.out.println(LocalDate.now());
-        System.out.printf("%tc\n", new Date());
-        System.out.printf("%1$s\n", new Date());
-        try {
-            Scanner c = new Scanner(Paths.get("/tmp/file1.txt"));
-            System.out.println(c.next());
-        } catch (IOException e) {
-        }
-        BigInteger b = BigInteger.TEN;
-        BigInteger b2 = BigInteger.valueOf(232432);
-        System.out.println(b.add(b2));
-        int[] a = new int[]{4, 1, 2, 3};
-        int[] a2 = Arrays.copyOf(a, a.length);
-        Arrays.sort(a2);
-        System.out.println(Arrays.toString(a));
-
-        int[][] a3 = (int[][]) Array.newInstance(a.getClass(), a.length);
-        int[] a4 = (int[]) Array.newInstance(int.class, a.length);
-
-        int x = 1;
-        assert x < 0;
-        Set<String> s1 = ConcurrentHashMap.newKeySet();
     }
 
     private int Accounts[] = new int[]{};
@@ -65,5 +42,7 @@ public class core1 {
 
         ReadWriteLock l = new ReentrantReadWriteLock(); //从读写锁创建锁
         l.writeLock().lock();
+
+        //jdk 1.8 Channel???????
     }
 }
