@@ -1,4 +1,6 @@
+import java.io.Serializable;
 import java.util.*;
+class interval<T extends Comparable & Serializable> implements Serializable { }
 
 class Base{
     int mI;
@@ -18,6 +20,11 @@ class TMy<T>{
     }
 }
 public class useCovariant {
+    public static void printCollection(Collection<?> collection){
+        for(Object obj:collection){
+            System.out.println(obj);
+        }
+    }
     public static void main(String[] args){
         List<Base> listB = new ArrayList<Base>();
         List<Derived> listD = new ArrayList<Derived>();
@@ -38,5 +45,12 @@ public class useCovariant {
         my.g(listD);
         my.h(listD);
 
+        System.out.println();
+        List<Integer> listInteger =new ArrayList<Integer>();
+        List<String> listString =new ArrayList<String>();
+        printCollection(listInteger);
+        printCollection(listString);
+        Vector<? extends Number> x = new Vector<Integer>();//这是正确的
+        Vector<? super Integer> y = new Vector<Number>();//这是正确的
     }
 }

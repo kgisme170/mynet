@@ -12,77 +12,21 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-interface myInterface {
-    default void f() {
-    }
-}
-
-interface youInterface {
-}
-
-interface IUserDao {
-    void save();
-}
-
-class me implements myInterface, youInterface {
-
-}
-
-class interval<T extends Comparable & Serializable> implements Serializable {
-
-}
-
-class UserDao implements IUserDao {
-    @Override
-    public void save() {
-        System.out.println("save");
-    }
-}
-
-class StaticProxy implements IUserDao {
-    IUserDao instance;
-
-    public StaticProxy(IUserDao obj) {
-        instance = obj;
-    }
-
-    @Override
-    public void save() {
-        System.out.println("Before");
-        instance.save();
-        System.out.println("After");
-    }
-}
-
-
 public class core1 {
     @SafeVarargs
     public static <T> void addAll(Collection<T> coll, T... ts) {
 
     }
 
-    public static void main2(String[] args) throws Exception{
-        List<Integer> listInteger =new ArrayList<Integer>();
-        List<String> listString =new ArrayList<String>();
-        printCollection(listInteger);
-        printCollection(listString);
-        Vector<? extends Number> x = new Vector<Integer>();//这是正确的
-        Vector<? super Integer> y = new Vector<Number>();//这是正确的
-    }
-    public static void printCollection(Collection<?> collection){
-        for(Object obj:collection){
-            System.out.println(obj);
-        }
-    }
     public static void main(String[] args) {
         int i = 0b1000010 & 0b1000;
-        Scanner s = new Scanner(System.in);
+        System.out.println(LocalDate.now());
         System.out.printf("%tc\n", new Date());
         System.out.printf("%1$s\n", new Date());
         try {
             Scanner c = new Scanner(Paths.get("/tmp/file1.txt"));
+            System.out.println(c.next());
         } catch (IOException e) {
-            //e.printStackTrace();
         }
         BigInteger b = BigInteger.TEN;
         BigInteger b2 = BigInteger.valueOf(232432);
@@ -91,21 +35,13 @@ public class core1 {
         int[] a2 = Arrays.copyOf(a, a.length);
         Arrays.sort(a2);
         System.out.println(Arrays.toString(a));
-        //System.out.printf("Input:" + s.nextInt());
 
-        System.out.println(LocalDate.now());
         int[][] a3 = (int[][]) Array.newInstance(a.getClass(), a.length);
         int[] a4 = (int[]) Array.newInstance(int.class, a.length);
 
         int x = 1;
         assert x < 0;
-        IUserDao d = new UserDao();
-        new StaticProxy(d).save();
-        //IUserDao dao = (IUserDao) new ProxyFactory(d).getInstance();
-        //System.out.println(dao.getClass());
-        //dao.save();
         Set<String> s1 = ConcurrentHashMap.newKeySet();
-        System.out.println(s1);
     }
 
     private int Accounts[] = new int[]{};
