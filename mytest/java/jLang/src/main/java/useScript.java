@@ -1,23 +1,31 @@
+import javax.annotation.processing.Processor;
 import javax.script.ScriptEngine;
 
 import javax.script.*;
 import javax.tools.JavaCompiler;
+import com.sun.tools.javac.file.*;
+import javax.tools.StandardJavaFileManager;
 import javax.tools.ToolProvider;
 import java.io.*;
 import java.util.*;
+import java.util.concurrent.Callable;
+
 import static java.lang.System.*;
 public class useScript {
+    static String fn = System.getProperty("user.dir") + "/java/jLang/src/main/java/useReflect.java";
+    static JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
+
     public static void main(String args[]) {
+        f1();
+        f2();
+    }
+
+    public static void f1() {
         ScriptEngineManager manager = new ScriptEngineManager();
-        // 得到所有的脚本引擎工厂
 
         List<ScriptEngineFactory> factories = manager.getEngineFactories();
-        // 这是Java SE 5 和Java SE 6的新For语句语法
-
         for (ScriptEngineFactory factory : factories) {
-            // 打印脚本信息
-
-            out.printf("Name: %s%n" +
+            out.printf("脚本引擎: %s%n" +
                             "Version: %s%n" +
                             "Language name: %s%n" +
                             "Language version: %s%n" +
@@ -31,7 +39,6 @@ public class useScript {
                     factory.getExtensions(),
                     factory.getMimeTypes(),
                     factory.getNames());
-            // 得到当前的脚本引擎
 
             ScriptEngine engine = factory.getScriptEngine();
             try {
@@ -49,7 +56,7 @@ public class useScript {
                 engine.eval("function greeter(how){this.how=how}");
                 engine.eval("greeter.prototype.welcome = function(whom){return this.how +'.'+whom+'!'}");
                 Object you = engine.eval(("new greeter('you')"));
-                try {//接口之间如何互转?
+                try {
                     result = ((Invocable) engine).invokeMethod(you, "welcome", "world");
                     System.out.println(result);
                 } catch (NoSuchMethodException e) {
@@ -70,16 +77,50 @@ public class useScript {
             } catch (ScriptException e) {
                 e.printStackTrace();
             }
-            JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
-            try {
-                OutputStream outStream = new FileOutputStream("core3.class");
-                OutputStream errStream = new BufferedOutputStream(System.err);
-                int result = compiler.run(null, outStream, errStream, "-sourcepath", "src",
-                        System.getProperty("user.dir") + "/java/jLang/src/main/java/useReflect.java");
-                System.out.println(result);
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
+        }
+    }
+
+    public static void f2() {
+        System.out.println("f2");
+        try {
+            OutputStream outStream = new FileOutputStream("core3.class");
+            OutputStream errStream = new BufferedOutputStream(System.err);
+            int result = compiler.run(null, outStream, errStream, "-sourcepath", "src", fn);
+            System.out.println(result);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        StandardJavaFileManager fileManager = compiler.getStandardFileManager(null, null, null);
+        String[] as = new String[]{fn};
+        List<String> list = Arrays.asList(as);
+        Iterable fileObjects = fileManager.getJavaFileObjectsFromStrings(list);
+        System.out.println("2");
+        for (Iterator it = fileObjects.iterator(); it.hasNext(); it.next()) {
+            System.out.println("for loop");
+        }
+        Callable<Boolean> task = new JavaCompiler.CompilationTask() {
+            @Override
+            public void setProcessors(Iterable<? extends Processor> processors) {
+
             }
+
+            @Override
+            public void setLocale(Locale locale) {
+
+            }
+
+            @Override
+            public Boolean call() {
+                return true;
+            }
+        };
+        try {
+            if (!task.call()) {
+                System.out.println("call not ok");
+            }
+            System.out.println("call ok");
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }
