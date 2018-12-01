@@ -1,8 +1,13 @@
 import java.util.*;
+import java.util.function.Consumer;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.counting;
+import static java.util.stream.Collectors.groupingByConcurrent;
+import static java.util.stream.Collectors.toSet;
 
 public class useStream {
     public static void main(String[] args) {
@@ -55,6 +60,10 @@ public class useStream {
         Stream.generate(new Random()::nextInt).limit(8).forEach(System.out::println);
         System.out.println();
         Stream.generate(() -> (int) (System.nanoTime() % 100)).limit(8).forEach(System.out::println);
+        Stream<Double> sd = Stream.generate(Math::random);//0-1之间的小数
+        for (Double db : sd.limit(10).collect(Collectors.toSet())) {
+            System.out.println(db);
+        }
 
         Stream.generate(new Supplier<Integer>() {
             @Override
@@ -92,5 +101,63 @@ public class useStream {
                 .stream()
                 .collect(Collectors.partitioningBy(x -> x.getAge() < 18));
         map2.forEach((k, v) -> System.out.println(v.size()));
+
+        Locale locale = new Locale("en", "US", "WIN");
+        System.out.println("step1");
+        System.out.println(locale.getLanguage());
+        {
+            Stream<Locale> sl = Stream.of(Locale.getAvailableLocales());
+            Map<String, List<Locale>> map1 = sl.collect(Collectors.groupingBy(Locale::getCountry));
+            for (Map.Entry<String, List<Locale>> e : map1.entrySet()) {
+                System.out.println(e.getKey());
+                System.out.println(e.getValue());
+            }
+        }
+        System.out.println("step2");
+        {
+            Stream<Locale> sl = Stream.of(Locale.getAvailableLocales());
+            Map<String, List<Locale>> map3 = sl.collect(Collectors.groupingBy(Locale::getCountry));
+        }
+        System.out.println("step3");
+        {
+            Stream<Locale> sl = Stream.of(Locale.getAvailableLocales());
+            Map<Boolean, List<Locale>> map4 = sl.collect(Collectors.partitioningBy(lo -> lo.getLanguage().equals("en")));
+        }
+        System.out.println("step4");
+        System.out.println("step3");
+        {
+            Stream<Locale> sl = Stream.of(Locale.getAvailableLocales());
+            Map<String, Set<Locale>> map5 = sl.collect(Collectors.groupingBy(Locale::getCountry, toSet()));
+        }
+        Stream<Double> s1 = Stream.generate(Math::random);
+        Stream<String> s2 = Stream.generate(() -> "echo");
+        Stream<Integer> si = Stream.iterate(1, n1 -> n1 + 1);//OK
+        IntStream intStream = IntStream.iterate(1, n2 -> n2 + 1);
+
+        String[] words = new String[]{"Hello", "World"};
+        Stream<String> s3 = Stream.of(words)
+                .flatMap(str -> Arrays.stream(str.split("")))
+                .distinct();
+        s3.forEach(System.out::print);
+        //List<String> a = s3.collect(Collectors.toList());//已经是terminate状态
+
+        Arrays.stream("abc".split("")).forEach(System.out::println);//first
+        Arrays.stream("abc".split("")).peek(new Consumer<String>() {//second
+            @Override
+            public void accept(String s) {
+                System.out.println(s);
+            }
+        }).count();
+        Optional<String> optional = Arrays.stream("xyzabc".split("")).max(String::compareToIgnoreCase);
+        System.out.println(os);
+        System.out.println(Arrays.stream("xyzabc".split("")).findFirst());
+        System.out.println(Arrays.stream(new int[]{2,4,6,8}).allMatch(x->x%2==0));
+        IntSummaryStatistics iss = Arrays.stream(new String[]{"abc","zed","hello"}).collect(Collectors.summarizingInt(String::length));
+        System.out.println(iss.getSum() + ", " + iss.getAverage() + ", " + iss.getCount() + ", " + iss.getMax());
+        Integer[] ia = Stream.of(1,3,5,7).toArray(Integer[]::new);
+
+        Map<Integer, Long> m = Arrays.asList(new String[]{"abc","zed","hello"}).parallelStream()
+                .collect(groupingByConcurrent(String::length, counting()));
+        System.out.println(m);
     }
 }

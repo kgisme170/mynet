@@ -1,5 +1,7 @@
 import java.io.*;
-
+class base implements Serializable{
+    protected String field = "xyz";
+}
 class c1 extends base implements Serializable {
     private String name = "name";
     private int age = 12;
