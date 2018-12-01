@@ -52,32 +52,32 @@ public class useScript {
                 try {//接口之间如何互转?
                     result = ((Invocable) engine).invokeMethod(you, "welcome", "world");
                     System.out.println(result);
-                }catch(NoSuchMethodException e){
+                } catch (NoSuchMethodException e) {
                     e.printStackTrace();
                 }
                 try {
-                    Reader reader = new FileReader("my.js");
+                    Reader reader = new FileReader(System.getProperty("user.dir") + "/java/jLang/src/main/java/my.js");
                     CompiledScript script = null;
-                    if(engine instanceof Compilable){
-                        script = ((Compilable)engine).compile(reader);
+                    if (engine instanceof Compilable) {
+                        script = ((Compilable) engine).compile(reader);
                     }
-                    if(script!=null){
+                    if (script != null) {
                         script.eval();
                     }
-                }catch(FileNotFoundException e){
+                } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 }
-                //engine.getContext().setWriter(new PrintWriter(new StringWriter(), true));
-                //engine.eval("out.println(\"hello\")");
-            }catch(ScriptException e){
+            } catch (ScriptException e) {
                 e.printStackTrace();
             }
             JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
             try {
                 OutputStream outStream = new FileOutputStream("core3.class");
                 OutputStream errStream = new BufferedOutputStream(System.err);
-                int result = compiler.run(null, outStream, errStream, "-sourcepath", "src", "core3.java");
-            } catch(FileNotFoundException e){
+                int result = compiler.run(null, outStream, errStream, "-sourcepath", "src",
+                        System.getProperty("user.dir") + "/java/jLang/src/main/java/useReflect.java");
+                System.out.println(result);
+            } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
         }
