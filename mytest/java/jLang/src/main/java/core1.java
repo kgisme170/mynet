@@ -1,5 +1,3 @@
-import javafx.util.Pair;
-
 import java.io.IOException;
 import java.io.Serializable;
 import java.io.UnsupportedEncodingException;
@@ -14,48 +12,19 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-enum Status {
-    SCUUESS("1", "成功"), FAILED("2", "失败");
-
-    public String value;
-    public String desc;
-
-    private Status(String value, String desc) {
-        this.value = value;
-        this.desc = desc;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
-    }
-
-    public String getDesc() {
-        return desc;
-    }
-
-    public void setDesc(String desc) {
-        this.desc = desc;
-    }
-
-}
-
-interface myit {
+interface myInterface {
     default void f() {
     }
 }
 
-interface youit {
+interface youInterface {
 }
 
 interface IUserDao {
     void save();
 }
 
-class me implements myit, youit {
+class me implements myInterface, youInterface {
 
 }
 
@@ -116,11 +85,6 @@ public class core1 {
 
     }
 
-    public static void print1(Pair<? extends me, String> p) {
-    }
-
-    public static void print2(Pair<? super me, String> p) {
-    }
     public static void main2(String[] args) throws Exception{
         List<Integer> listInteger =new ArrayList<Integer>();
         List<String> listString =new ArrayList<String>();
@@ -135,24 +99,6 @@ public class core1 {
         }
     }
     public static void main(String[] args) {
-        String h = "hello";
-        String h1 = "你好哦!";
-        try {
-            System.out.println(new String(h.getBytes("UTF-8"), "UTF-8").getBytes("UTF-16").length);
-            System.out.println(new String(h.getBytes("UTF-16"), "UTF-16").length());
-            System.out.println(new String(h1.getBytes("UTF-8"), "UTF-8").length());
-            System.out.println(new String(h1.getBytes("UTF-16"), "UTF-16").length());
-        }catch(UnsupportedEncodingException e){
-            e.printStackTrace();
-        }
-        System.out.println();
-        System.out.println(h.codePointCount(0, h.length()));
-        System.out.println(h.length());
-        System.out.println(Status.SCUUESS.getValue());
-        System.out.println(Status.SCUUESS.getDesc());
-        System.out.println(Status.FAILED.getValue());
-        System.out.println(Status.FAILED.getDesc());
-
         int i = 0b1000010 & 0b1000;
         Scanner s = new Scanner(System.in);
         System.out.printf("%tc\n", new Date());
@@ -171,7 +117,6 @@ public class core1 {
         System.out.println(Arrays.toString(a));
         //System.out.printf("Input:" + s.nextInt());
 
-        Map<Status, String> m = new HashMap<Status, String>();
         System.out.println(LocalDate.now());
         int[][] a3 = (int[][]) Array.newInstance(a.getClass(), a.length);
         int[] a4 = (int[]) Array.newInstance(int.class, a.length);
@@ -183,39 +128,8 @@ public class core1 {
         IUserDao dao = (IUserDao) new ProxyFactory(d).getInstance();
         System.out.println(dao.getClass());
         dao.save();
-        try {
-            Method m2 = useFinal.class.getMethod("test01", Map.class, List.class, String.class);
-            Type[] t = m2.getGenericParameterTypes();
-            System.out.println(t.length);
-            for (Type paramType : t) {
-                System.out.println("#" + paramType);
-                if (paramType instanceof ParameterizedType) {
-                    //获取泛型中的具体信息
-                    Type[] genericTypes = ((ParameterizedType) paramType).getActualTypeArguments();
-                    for (Type genericType : genericTypes) {
-                        System.out.println("泛型类型参数：" + genericType);
-                    }
-                }
-            }
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
-        }
         Set<String> s1 = ConcurrentHashMap.newKeySet();
-        System.out.println(h.getBytes().length);
-
-        String h2 = "hello实验";
-        System.out.println(h2.codePointCount(0,h.length())); //7
-        System.out.println(h2.getBytes().length); //11
-        System.out.println("水".getBytes().length);//3
-    }
-
-    public void test01(Map<String, String> map, List<String> list, String s) {
-        System.out.println("Demo.test01()");
-    }
-
-    public Map<Integer, String> test02() {
-        System.out.println("Demo.test02()");
-        return null;
+        System.out.println(s1);
     }
 
     private int Accounts[] = new int[]{};
