@@ -54,8 +54,7 @@ class MyContentHandler implements ContentHandler {
     }
 
     @Override
-    public void processingInstruction(String target, String data)
-            throws SAXException {
+    public void processingInstruction(String target, String data) throws SAXException {
         System.out.println("processingInstruction target: " + target);
     }
 
