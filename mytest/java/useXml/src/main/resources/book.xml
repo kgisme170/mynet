@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <bookshelf>
-    <book ISBN="c01" press="AD press">
+    <book ISBN="c01">
         <name>Oracle</name>
         <Author>Smith</Author>
         <price>32.00</price>
+        <no>1</no>
     </book>
-    <book ISBN="b11" press="XY press">
+    <book ISBN="b11">
         <name>Android</name>
-        <Author>Smith</Author>
+        <Author>Very</Author>
         <price>35.00</price>
+        <no>2</no>
+    </book>
+    <book ISBN="a32">
+        <name>ok</name>
+        <Author>vvvv</Author>
+        <price>33.00</price>
+        <no>3</no>
     </book>
 </bookshelf>

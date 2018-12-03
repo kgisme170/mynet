@@ -17,7 +17,32 @@ public class useDom {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
         Document document = builder.parse(currentPath + "/book.xml");
+        Element e = document.getDocumentElement();//root
+        System.out.println(e.getNodeName());
+        Node f = document.getFirstChild();
+        System.out.println(f.getNodeName());
         test(document);
+        System.out.println("----------------");
+        Node firstChild = document.getFirstChild();
+
+        NodeList list = firstChild.getChildNodes();
+        int length = list.getLength();
+        for (int i = 0; i < length; ++i) {
+            System.out.println("begin+++++++++++");
+            System.out.println(list.item(i).getNodeName() + '_' + list.item(i).getTextContent() + '_' + list.item(i).getLocalName());
+            System.out.println("end-------------");
+        }
+        System.out.println("----------------");
+
+        System.out.println(firstChild.getChildNodes().getLength());
+        System.out.println(firstChild.getNodeType());
+        System.out.println(firstChild.getNodeName());
+
+        System.out.println("----------------");
+        Node root = document.getDocumentElement();
+        System.out.println(root.getChildNodes().getLength());
+        System.out.println(root.getNodeType());
+        System.out.println(root.getNodeName());
     }
 
     public static void iterate(Node node) {
