@@ -9,9 +9,8 @@ import java.util.*;
 
 public class NIOServer {
     private Selector selector;
-    private ByteBuffer readBuffer = ByteBuffer.allocate(1024);//调整缓存的大小可以看到打印输出的变化
-    private ByteBuffer sendBuffer = ByteBuffer.allocate(1024);//调整缓存的大小可以看到打印输出的变化
-
+    private ByteBuffer readBuffer = ByteBuffer.allocate(1024);
+    private ByteBuffer sendBuffer = ByteBuffer.allocate(1024);
     String str;
 
     public void start() throws IOException {
@@ -31,51 +30,38 @@ public class NIOServer {
                     continue;
                 }
                 if (key.isAcceptable()) {
-                    accept(key);
+                    ServerSocketChannel ss = (ServerSocketChannel) key.channel();
+                    SocketChannel clientChannel = ss.accept();
+                    clientChannel.configureBlocking(false);
+                    clientChannel.register(selector, SelectionKey.OP_READ);
+                    System.out.println("客户端已经连接: " + clientChannel.getRemoteAddress());
                 } else if (key.isReadable()) {
-                    read(key);
+                    SocketChannel socketChannel = (SocketChannel) key.channel();
+                    this.readBuffer.clear();
+                    int numRead;
+                    try {
+                        numRead = socketChannel.read(this.readBuffer);
+                    } catch (IOException e) {
+                        key.cancel();
+                        socketChannel.close();
+                        return;
+                    }
+                    str = new String(readBuffer.array(), 0, numRead);
+                    System.out.println(str);
+                    socketChannel.register(selector, SelectionKey.OP_WRITE);
                 } else if (key.isWritable()) {
-                    write(key);
+                    SocketChannel channel = (SocketChannel) key.channel();
+                    System.out.println("写入:" + str);
+
+                    sendBuffer.clear();
+                    sendBuffer.put(str.getBytes());
+                    sendBuffer.flip();
+                    channel.write(sendBuffer);
+                    channel.register(selector, SelectionKey.OP_READ);
                 }
                 keyIterator.remove(); //该事件已经处理，可以丢弃
             }
         }
-    }
-
-    private void accept(SelectionKey key) throws IOException {
-        ServerSocketChannel ssc = (ServerSocketChannel) key.channel();
-        SocketChannel clientChannel = ssc.accept();
-        clientChannel.configureBlocking(false);
-        clientChannel.register(selector, SelectionKey.OP_READ);
-        System.out.println("客户端已经连接: " + clientChannel.getRemoteAddress());
-    }
-
-    private void write(SelectionKey key) throws IOException {
-        SocketChannel channel = (SocketChannel) key.channel();
-        System.out.println("写入:" + str);
-
-        sendBuffer.clear();
-        sendBuffer.put(str.getBytes());
-        sendBuffer.flip();
-        channel.write(sendBuffer);
-        channel.register(selector, SelectionKey.OP_READ);
-    }
-
-    private void read(SelectionKey key) throws IOException {
-        SocketChannel socketChannel = (SocketChannel) key.channel();
-        this.readBuffer.clear();
-        int numRead;
-        try {
-            numRead = socketChannel.read(this.readBuffer);
-        } catch (IOException e) {
-            key.cancel();
-            socketChannel.close();
-            return;
-        }
-
-        str = new String(readBuffer.array(), 0, numRead);
-        System.out.println(str);
-        socketChannel.register(selector, SelectionKey.OP_WRITE);
     }
 
     public static void main(String[] args) throws IOException {
