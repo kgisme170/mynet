@@ -34,14 +34,6 @@
         <module name="useXml" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="_3p" target="1.5" />
-      <module name="cacheStorage" target="1.5" />
-      <module name="java_local" target="1.5" />
-      <module name="naming" target="1.5" />
-      <module name="scala" target="1.8" />
-      <module name="springIocAop" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
