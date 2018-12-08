@@ -1,8 +1,8 @@
 import java.io.*;
 
 class MyClass01 implements Serializable {
-    public static final MyClass01 m1 = new MyClass01(1);
-    public static final MyClass01 m2 = new MyClass01(2);
+    public static final MyClass01 M_1 = new MyClass01(1);
+    public static final MyClass01 M_2 = new MyClass01(2);
     private static final long serialVersionUID = -1428732219630860994L;
 
     private MyClass01(int i) {
@@ -14,13 +14,14 @@ class MyClass01 implements Serializable {
     public int getI() {
         return mI;
     }
-
+    final int i1 = 1;
+    final int i2 = 2;
     protected Object readResolve() throws ObjectStreamException {
         System.out.println("Serialization reflects into here");
-        if (mI == 1) {
-            return m1;
-        } else if (mI == 2) {
-            return m2;
+        if (mI == i1) {
+            return M_1;
+        } else if (mI == i2) {
+            return M_2;
         }
         throw new ObjectStreamException(){};
     }
@@ -31,7 +32,7 @@ class MyClass01 implements Serializable {
  */
 public class StaticSerialization {
     public static void main(String[] args) {
-        MyClass01 m1 = MyClass01.m1;
+        MyClass01 m1 = MyClass01.M_1;
         try {
             ObjectOutputStream oss = new ObjectOutputStream(new FileOutputStream("MyClass01.data"));
             oss.writeObject(m1);

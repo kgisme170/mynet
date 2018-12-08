@@ -16,8 +16,9 @@ public class UseThread {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        Thread[] t = new Thread[4];
-        for (int i = 0; i < 4; ++i) {
+        final int iThread = 4;
+        Thread[] t = new Thread[iThread];
+        for (int i = 0; i < iThread; ++i) {
             t[i] = new MyThread();
             t[i].setDaemon(true);
             t[i].start();

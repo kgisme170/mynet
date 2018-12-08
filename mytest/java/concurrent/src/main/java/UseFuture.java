@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @author liming.glm
  */
 public class UseFuture {
-    static class myThread implements Callable<Integer> {
+    static class MyThread implements Callable<Integer> {
         private static AtomicInteger i = new AtomicInteger(0);
 
         @Override
@@ -21,8 +21,8 @@ public class UseFuture {
 
     public static void main(String[] args) {
         // FutureTask继承了Runnable和Future接口
-        FutureTask<Integer> futureTask1 = new FutureTask<>(new myThread());
-        FutureTask<Integer> futureTask2 = new FutureTask<>(new myThread());
+        FutureTask<Integer> futureTask1 = new FutureTask<>(new MyThread());
+        FutureTask<Integer> futureTask2 = new FutureTask<>(new MyThread());
         new Thread(futureTask1, "有返回值的thread").start();
         //主线程会等待所有start的子线程，除非子线程setDaemon
 
@@ -37,8 +37,8 @@ public class UseFuture {
 
         ExecutorService pool = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
         System.out.println("开始submit");
-        Future f1 = pool.submit(new myThread());
-        Future f2 = pool.submit(new myThread());
+        Future f1 = pool.submit(new MyThread());
+        Future f2 = pool.submit(new MyThread());
         System.out.println("--------------等待submit的对象");
 
         try {

@@ -11,7 +11,7 @@ import java.util.concurrent.Callable;
  */
 public class UseCompiler {
     public static void main(String [] args) {
-        String fn = System.getProperty("user.dir") + "/java/jLang/src/main/java/useReflect.java";
+        String fn = System.getProperty("user.dir") + "/java/jLang/src/main/java/UseReflect.java";
         JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
 
         try {

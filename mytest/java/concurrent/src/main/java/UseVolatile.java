@@ -27,11 +27,12 @@ public class UseVolatile {
 
     public static void main(String[] args) throws InterruptedException {
         final AtomicInteger count = new AtomicInteger(0);
-        for (int i = 0; i < 10; ++i) {
+        final int iThread = 10;
+        for (int i = 0; i < iThread; ++i) {
             new Thread() {
                 @Override
                 public void run() {
-                    for (int c = 0; c < 100; ++c) {
+                    for (int c = 0; c < iThread * iThread; ++c) {
                         count.incrementAndGet();
                     }
                     l.countDown();

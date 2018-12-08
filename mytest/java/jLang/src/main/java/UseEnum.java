@@ -5,7 +5,14 @@ import java.util.Map;
  */
 public class UseEnum {
     enum Status {
+        /**
+         * 测试
+         */
         SCUUESS("1", "成功"),
+
+        /**
+         * 测试
+         */
         FAILED("2", "失败");
 
         public String value;

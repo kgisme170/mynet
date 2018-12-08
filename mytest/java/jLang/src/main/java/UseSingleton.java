@@ -4,7 +4,7 @@ import java.io.*;
 import java.lang.reflect.Constructor;
 
 class S1 {
-    public static final S1 instance = new S1();
+    public static final S1 INSTANCE = new S1();
 
     private S1() {
     }
@@ -16,13 +16,13 @@ class S1 {
 }
 
 class S2 {
-    private static final S2 instance = new S2();
+    private static final S2 INSTANCE = new S2();
 
     private S2() {
     }
 
     public static S2 getInstance() {
-        return instance;
+        return INSTANCE;
     }
 
     @Override
@@ -71,6 +71,9 @@ class S3  extends BaseClass{
  */
 enum S4 {
     instance;
+    /**
+     * 测试
+     */
     int value;
 
     public int getValue() {
@@ -80,12 +83,6 @@ enum S4 {
     public void setValue(int value) {
         this.value = value;
     }
-    /**
-     * 相当于有一个这样的函数
-    @Override
-    protected Object readResolve() {
-        return instance;
-    }*/
 }
 
 /**
@@ -93,15 +90,15 @@ enum S4 {
  */
 public class UseSingleton {
     public static void main(String[] args) {
-        System.out.println(S1.instance);
+        System.out.println(S1.INSTANCE);
         System.out.println(S2.getInstance());
         System.out.println(S3.getInstance());
         // 无法阻止反射多个实例
         try {
-            Constructor ctor = S1.instance.getClass().getDeclaredConstructor(new Class[0]);
+            Constructor ctor = S1.INSTANCE.getClass().getDeclaredConstructor(new Class[0]);
             ctor.setAccessible(true);
-            S1 s1_ = (S1)ctor.newInstance();
-            if (s1_ == S1.instance) {
+            S1 s1 = (S1)ctor.newInstance();
+            if (s1 == S1.INSTANCE) {
                 System.out.println("Same");
             } else {
                 System.out.println("New");
@@ -123,9 +120,9 @@ public class UseSingleton {
 
             ByteArrayInputStream bais = new ByteArrayInputStream(b);
             ObjectInputStream ois = new ObjectInputStream(bais);
-            S3 s3_ = (S3)ois.readObject();
+            S3 s31 = (S3)ois.readObject();
             System.out.println(s3.getValue());
-            System.out.println(s3_.getValue());
+            System.out.println(s31.getValue());
             ois.close();
             bais.close();
             oos.close();
@@ -148,9 +145,9 @@ public class UseSingleton {
 
             ByteArrayInputStream bais = new ByteArrayInputStream(b);
             ObjectInputStream ois = new ObjectInputStream(bais);
-            S4 s4_ = (S4)ois.readObject();
+            S4 s41 = (S4)ois.readObject();
             System.out.println(s4.getValue());
-            System.out.println(s4_.getValue());
+            System.out.println(s41.getValue());
             ois.close();
             bais.close();
             oos.close();

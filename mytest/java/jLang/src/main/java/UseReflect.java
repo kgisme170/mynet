@@ -6,13 +6,13 @@ import java.util.Map;
 /**
  * @author liming.gong
  */
-public class useReflect {
+public class UseReflect {
     public void test01(Map<String, String> m, List<String> l, String s) {
 
     }
     public static void main(String [] args){
         try {
-            Method m2 = useReflect.class.getMethod("test01", Map.class, List.class, String.class);
+            Method m2 = UseReflect.class.getMethod("test01", Map.class, List.class, String.class);
             Type[] t = m2.getGenericParameterTypes();
             System.out.println(t.length);
             for (Type paramType : t) {

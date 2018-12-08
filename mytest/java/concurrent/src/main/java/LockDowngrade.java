@@ -14,26 +14,26 @@ public class LockDowngrade {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        new LockDowngrade().Transfer(1, 2, 3);
+        new LockDowngrade().transfer(1, 2, 3);
         new CachedData().processCachedData();
         new ReadWriteLockTest().testLockDowngrading();
     }
 
-    private int[] Accounts = new int[]{3, 4, 5};
+    private int[] accounts = new int[]{3, 4, 5};
 
-    private void DoTransfer(int from, int to, double amount) {
+    private void doTransfer(int from, int to, double amount) {
     }
 
-    public void Transfer(int from, int to, double amount) {
+    public void transfer(int from, int to, double amount) {
         ReentrantLock locker = new ReentrantLock();
         Condition sufficientFunds = locker.newCondition();
         //条件对象，
         locker.lock();
         try {
-            while (Accounts[from] < amount) {
+            while (accounts[from] < amount) {
                 sufficientFunds.await();
             }
-            DoTransfer(from, to, amount);
+            doTransfer(from, to, amount);
             sufficientFunds.signalAll();
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -119,7 +119,8 @@ class ReadWriteLockTest {
         ThreadPoolExecutor executor = new ThreadPoolExecutor(
                 10, 10, 100,
                 TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(10));
-        for (int i = 0; i < 2; i++) {
+        final int iThread = 2;
+        for (int i = 0; i < iThread; i++) {
             int finalI = i;
             executor.execute(new Thread(new Runnable() {
                 @Override

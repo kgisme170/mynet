@@ -7,8 +7,8 @@ import java.util.Queue;
 public class TestComparator {
     private int population;
 
-    public TestComparator(String _n, int _p) {
-        population = _p;
+    public TestComparator(String n1, int p1) {
+        population = p1;
     }
 
     public static void main(String[] args) {

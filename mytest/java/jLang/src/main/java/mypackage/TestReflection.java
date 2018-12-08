@@ -47,7 +47,7 @@ public class TestReflection {
     public TestReflection() {
     }
 
-    public void CheckClass(Class c) {
+    public void checkClass(Class c) {
         System.out.println("=====================");
         System.out.println("类名" + c.getName());
         System.out.println(c.getPackage().getName());
@@ -77,7 +77,7 @@ public class TestReflection {
             return 1;
         }
 
-        public My(String _) {
+        public My(String s) {
         }
     }
 
@@ -94,9 +94,9 @@ public class TestReflection {
         TestReflection test = new TestReflection();
         try {
             //公有函数，包括父类的
-            test.CheckClass(String.class);
+            test.checkClass(String.class);
             //本类的，包括私有和公有
-            test.CheckClass(You.class);
+            test.checkClass(You.class);
         } catch (Exception e) {
             e.printStackTrace();
         }

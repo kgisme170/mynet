@@ -8,7 +8,7 @@ class Base{
 class Derived extends Base{
     String name;
 }
-class TMy<T>{
+class YouGeneric<T>{
     public void f(List<T> items){
 
     }
@@ -33,7 +33,7 @@ public class UseCovariant {
         List<Base> listB = new ArrayList<Base>();
         List<Derived> listD = new ArrayList<Derived>();
 
-        TMy<Base> myB = new TMy<Base>();
+        YouGeneric<Base> myB = new YouGeneric<Base>();
         myB.f(listB);
         myB.g(listB);
         myB.h(listB);
@@ -43,7 +43,7 @@ public class UseCovariant {
         myB.g(listD);
         //myB.h(listD);//
 
-        TMy<Derived> my = new TMy<Derived>();
+        YouGeneric<Derived> my = new YouGeneric<Derived>();
         //my.f(listB);//必须完全匹配
         //my.g(listB);//Provider(src)应该传入extend类型
         my.h(listB);

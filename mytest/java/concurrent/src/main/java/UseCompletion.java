@@ -6,6 +6,7 @@ import static java.util.concurrent.Executors.newCachedThreadPool;
  * @author liming.glm
  */
 public class UseCompletion {
+    final int iQueue = 10;
     public static void main(String[] args) {
         UseCompletion uc = new UseCompletion();
         uc.f1();
@@ -15,7 +16,7 @@ public class UseCompletion {
     public void f1() {
         ExecutorService exec = newCachedThreadPool();
         BlockingDeque<Future<Integer>> queue = new LinkedBlockingDeque<>();
-        for (int i = 0; i < 10; ++i) {
+        for (int i = 0; i < iQueue; ++i) {
             queue.add(exec.submit(new MyTask()));
         }
         int sum = 0;
@@ -33,12 +34,12 @@ public class UseCompletion {
     public void f2() {
         ExecutorService exec = newCachedThreadPool();
         CompletionService<Integer> queue = new ExecutorCompletionService<>(exec);
-        for (int i = 0; i < 10; ++i) {
+        for (int i = 0; i < iQueue; ++i) {
             queue.submit(new MyTask());
         }
         int sum = 0;
         try {
-            for (int i = 0; i < 10; ++i) {
+            for (int i = 0; i < iQueue; ++i) {
                 sum += queue.take().get();
             }
         } catch (Exception e) {

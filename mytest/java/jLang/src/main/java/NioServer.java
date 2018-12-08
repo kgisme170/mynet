@@ -9,7 +9,7 @@ import java.util.*;
 /**
  * @author liming.gong
  */
-public class NIOServer {
+public class NioServer {
     private Selector selector;
     private ByteBuffer readBuffer = ByteBuffer.allocate(1024);
     private ByteBuffer sendBuffer = ByteBuffer.allocate(1024);
@@ -68,6 +68,6 @@ public class NIOServer {
 
     public static void main(String[] args) throws IOException {
         System.out.println("服务启动...");
-        new NIOServer().start();
+        new NioServer().start();
     }
 }
