@@ -1,11 +1,11 @@
 import java.io.*;
 
-class my implements Serializable {
-    public static final my m1 = new my(1);
-    public static final my m2 = new my(2);
+class MyClass01 implements Serializable {
+    public static final MyClass01 m1 = new MyClass01(1);
+    public static final MyClass01 m2 = new MyClass01(2);
     private static final long serialVersionUID = -1428732219630860994L;
 
-    private my(int i) {
+    private MyClass01(int i) {
         mI = i;
     }
 
@@ -31,13 +31,13 @@ class my implements Serializable {
  */
 public class StaticSerialization {
     public static void main(String[] args) {
-        my m1 = my.m1;
+        MyClass01 m1 = MyClass01.m1;
         try {
-            ObjectOutputStream oss = new ObjectOutputStream(new FileOutputStream("my.data"));
+            ObjectOutputStream oss = new ObjectOutputStream(new FileOutputStream("MyClass01.data"));
             oss.writeObject(m1);
             oss.close();
-            ObjectInputStream ois = new ObjectInputStream(new FileInputStream("my.data"));
-            my m2 = (my) ois.readObject();
+            ObjectInputStream ois = new ObjectInputStream(new FileInputStream("MyClass01.data"));
+            MyClass01 m2 = (MyClass01) ois.readObject();
             System.out.println(m2 == m1);
             System.out.println(m1.getI());
             System.out.println(m2.getI());
