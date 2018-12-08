@@ -1,7 +1,8 @@
 interface MyIt<T> {
     /**
      * 测试
-     * T 代表返回值
+     * @return
+     * T: 代表返回值
      */
     T f();
 }

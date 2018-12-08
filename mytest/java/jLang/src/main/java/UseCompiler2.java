@@ -68,6 +68,7 @@ class MapClassLoader extends ClassLoader {
  * @author liming.gong
  */
 public class UseCompiler2 {
+    public final static String CLASS_PREFIX = "x.";
     public static void main(String [] args) {
         JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
         final List<ByteArrayJavaClass> classFileObjects = new ArrayList<>();
@@ -81,7 +82,7 @@ public class UseCompiler2 {
                     JavaFileObject.Kind kind,
                     FileObject sibling) throws IOException {
                 System.out.println("Enter getJavaFileForOutput");
-                if (className.startsWith("x.")) {
+                if (className.startsWith(CLASS_PREFIX)) {
                     ByteArrayJavaClass fileObject = new ByteArrayJavaClass(className);
                     classFileObjects.add(fileObject);
                     System.out.println("Enter x");
