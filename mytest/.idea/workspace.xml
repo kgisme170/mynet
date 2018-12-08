@@ -6,24 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/LockDowngrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/LockDowngrade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/UseCompletion.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseCompletion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/UseFuture.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseFuture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/UseStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/UseThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/UseThreadLocal.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseThreadLocal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/UseVolatile.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseVolatile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/NIOServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/NioServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/StaticSerialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/StaticSerialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/TestComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/TestComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/UseCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseCompiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/UseCovariant.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseCovariant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/UseEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/UseForName.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseForName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/UseGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseGeneric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/UseSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/mypackage/TestReflection.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/mypackage/TestReflection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/useReflect.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseReflect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/gs-spring-boot/src/main/java/hello/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/gs-spring-boot/src/main/java/hello/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/springDb/src/main/java/IUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springDb/src/main/java/IUserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/springDb/src/main/java/RawJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springDb/src/main/java/RawJdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/springDb/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springDb/src/main/java/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/springDb/src/main/java/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springDb/src/main/java/UserDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/use3p/useCurator/src/main/java/UseLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useCurator/src/main/java/UseLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/use3p/useDb/src/main/java/MysqlJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useDb/src/main/java/MysqlJdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/use3p/useDb/src/main/java/UsePostgreSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useDb/src/main/java/UsePostgreSql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/use3p/useHibernate/src/main/java/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useHibernate/src/main/java/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/use3p/useHibernate/src/main/java/ManageEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useHibernate/src/main/java/ManageEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/tools/DBTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/tools/DbTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/use3p/useThrift/src/main/java/AdditionClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useThrift/src/main/java/AdditionClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/use3p/useThrift/src/main/java/MyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useThrift/src/main/java/MyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/use3p/useThrift/src/main/java/gen-java/AdditionService.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -204,7 +202,7 @@
           <entry key="gradle" value="1" />
           <entry key="html" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="439" />
+          <entry key="java" value="457" />
           <entry key="js" value="1" />
           <entry key="json" value="1" />
           <entry key="log" value="1" />
@@ -228,7 +226,7 @@
           <entry key="Groovy" value="1" />
           <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="439" />
+          <entry key="JAVA" value="457" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="1" />
           <entry key="Manifest" value="2" />
@@ -265,9 +263,9 @@
           <entry key="SConstruct" value="203" />
           <entry key="c" value="31" />
           <entry key="cpp" value="48" />
-          <entry key="dummy" value="160" />
+          <entry key="dummy" value="161" />
           <entry key="html" value="50" />
-          <entry key="java" value="32678" />
+          <entry key="java" value="32842" />
           <entry key="js" value="34" />
           <entry key="json" value="83" />
           <entry key="properties" value="111" />
@@ -284,10 +282,10 @@
         <counts>
           <entry key="C++" value="79" />
           <entry key="HTML" value="50" />
-          <entry key="JAVA" value="32678" />
+          <entry key="JAVA" value="32842" />
           <entry key="JSON" value="83" />
           <entry key="JavaScript" value="34" />
-          <entry key="PLAIN_TEXT" value="554" />
+          <entry key="PLAIN_TEXT" value="555" />
           <entry key="Properties" value="111" />
           <entry key="Scala" value="501" />
           <entry key="XML" value="1179" />
@@ -299,133 +297,97 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseThreadLocal.java">
+        <entry file="file://$PROJECT_DIR$/use3p/useThrift/src/main/java/MyServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state relative-caret-position="165">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/use3p/useDb/src/main/java/MysqlJdbc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/use3p/useRocksDb/src/main/java/UseCustomColumnFamily.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="43" column="58" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/use3p/useRocksDb/src/main/java/UseDefaultColumnFamily.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/use3p/useHibernate/src/main/java/Employee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+              <folding>
+                <element signature="e#579#580#0" expanded="true" />
+                <element signature="e#622#623#0" expanded="true" />
+                <element signature="e#737#738#0" expanded="true" />
+                <element signature="e#778#779#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/use3p/useHibernate/src/main/java/ManageEmployee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="98" selection-start-line="98" selection-end-line="98" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/mypackage/TestReflection.java">
+        <entry file="file://$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/tools/DbTools.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="90">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseVolatile.java">
+        <entry file="file://$PROJECT_DIR$/use3p/useCurator/src/main/java/UseLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#859#1125#0" expanded="true" />
-                <element signature="e#1124#1125#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="158">
+              <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/LockDowngrade.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/TestComparator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#220#221#0" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseCompiler2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1040#1041#0" expanded="true" />
-                <element signature="e#1069#1070#0" expanded="true" />
-                <element signature="e#1101#1102#0" expanded="true" />
-                <element signature="e#1144#1145#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseGeneric.java">
+        <entry file="file://$PROJECT_DIR$/use3p/useDb/src/main/java/UsePostgreSql.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseSingleton.java">
+        <entry file="file://$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/mapper/UserMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1256#1257#0" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
-                <element signature="e#1323#1324#0" expanded="true" />
-                <element signature="e#1357#1358#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseEnum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding>
-                <element signature="e#459#460#0" expanded="true" />
-                <element signature="e#495#496#0" expanded="true" />
-                <element signature="e#541#542#0" expanded="true" />
-                <element signature="e#583#584#0" expanded="true" />
-                <element signature="e#618#619#0" expanded="true" />
-                <element signature="e#653#654#0" expanded="true" />
-                <element signature="e#697#698#0" expanded="true" />
-                <element signature="e#737#738#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/StaticSerialization.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-              <folding>
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#374#375#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="332">
+              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -498,26 +460,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/use3p/serialize/src/main/java/UseFastJson.java" />
-        <option value="$PROJECT_DIR$/use3p/useHibernate/src/main/java/Employee.java" />
-        <option value="$PROJECT_DIR$/use3p/useKafka/src/main/java/UseKafka.java" />
-        <option value="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/beans/UserBean.java" />
-        <option value="$PROJECT_DIR$/use3p/useJetty/src/main/java/testJetty.java" />
-        <option value="$PROJECT_DIR$/use3p/useHibernate/src/main/java/ManageEmployee.java" />
-        <option value="$PROJECT_DIR$/use3p/useDubbo/src/main/java/provider/Provider.java" />
-        <option value="$PROJECT_DIR$/use3p/useDubbo/src/main/java/provider/DemoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/use3p/useDubbo/src/main/java/consumer1/Consumer.java" />
-        <option value="$PROJECT_DIR$/use3p/useDubbo/src/main/java/api/DemoService.java" />
-        <option value="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/tools/DBTools.java" />
-        <option value="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/service/UserService.java" />
-        <option value="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/use3p/useRocksDb/src/main/java/useCustomColumnFamily.java" />
         <option value="$PROJECT_DIR$/use3p/useRocksDb/src/main/java/UseCustomColumnFamily.java" />
         <option value="$PROJECT_DIR$/use3p/useRocksDb/src/main/java/UseDefaultColumnFamily.java" />
         <option value="$PROJECT_DIR$/use3p/useSlf4j/src/main/java/UseSlf.java" />
-        <option value="$PROJECT_DIR$/use3p/useThrift/src/main/java/AdditionClient.java" />
         <option value="$PROJECT_DIR$/use3p/useThrift/src/main/java/AdditionServiceHandler.java" />
-        <option value="$PROJECT_DIR$/use3p/useThrift/src/main/java/MyServer.java" />
         <option value="$PROJECT_DIR$/hadoop/mr/src/main/java/dfsio.java" />
         <option value="$PROJECT_DIR$/java/useXml/src/main/java/UseStax.java" />
         <option value="$PROJECT_DIR$/java/jLang/src/main/java/TestSet.java" />
@@ -549,6 +496,21 @@
         <option value="$PROJECT_DIR$/java/jLang/src/main/java/UseSingleton.java" />
         <option value="$PROJECT_DIR$/java/concurrent/src/main/java/UseThreadLocal.java" />
         <option value="$PROJECT_DIR$/java/jLang/src/main/java/mypackage/TestReflection.java" />
+        <option value="$PROJECT_DIR$/spring/gs-spring-boot/src/main/java/hello/HelloController.java" />
+        <option value="$PROJECT_DIR$/spring/springDb/src/main/java/RawJdbc.java" />
+        <option value="$PROJECT_DIR$/spring/springDb/src/main/java/IUserDAO.java" />
+        <option value="$PROJECT_DIR$/spring/springDb/src/main/java/User.java" />
+        <option value="$PROJECT_DIR$/spring/springDb/src/main/java/UserDAOImpl.java" />
+        <option value="$PROJECT_DIR$/use3p/useThrift/src/main/java/gen-java/AdditionService.java" />
+        <option value="$PROJECT_DIR$/use3p/useThrift/src/main/java/AdditionClient.java" />
+        <option value="$PROJECT_DIR$/use3p/useThrift/src/main/java/MyServer.java" />
+        <option value="$PROJECT_DIR$/use3p/useDb/src/main/java/MysqlJdbc.java" />
+        <option value="$PROJECT_DIR$/use3p/useHibernate/src/main/java/Employee.java" />
+        <option value="$PROJECT_DIR$/use3p/useCurator/src/main/java/UseLock.java" />
+        <option value="$PROJECT_DIR$/use3p/useDb/src/main/java/UsePostgreSql.java" />
+        <option value="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/use3p/useHibernate/src/main/java/ManageEmployee.java" />
+        <option value="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/tools/DbTools.java" />
       </list>
     </option>
   </component>
@@ -605,6 +567,95 @@
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="use3p" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="use3p" type="462c0819:PsiDirectoryNode" />
+              <item name="useMybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="use3p" type="462c0819:PsiDirectoryNode" />
+              <item name="useMybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="use3p" type="462c0819:PsiDirectoryNode" />
+              <item name="useMybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="use3p" type="462c0819:PsiDirectoryNode" />
+              <item name="useMybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="use3p" type="462c0819:PsiDirectoryNode" />
+              <item name="useMybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="my" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="use3p" type="462c0819:PsiDirectoryNode" />
+              <item name="useMybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="my" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="use3p" type="462c0819:PsiDirectoryNode" />
+              <item name="useMybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="my" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="use3p" type="462c0819:PsiDirectoryNode" />
+              <item name="useMybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="my" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="use3p" type="462c0819:PsiDirectoryNode" />
+              <item name="useMybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="my" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -645,7 +696,7 @@
     <property name="SearchEverywhereHistoryKey" value="insertUser&#9;PSI&#9;JAVA://my.service.UserService#insertUser&#10;System.getProperty&#9;ACTION&#9;null&#10;testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544268730393" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544269277213" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
@@ -681,7 +732,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UseThreadLocal">
+  <component name="RunManager" selected="Application.testJetty">
     <configuration default="true" type="tests" factoryName="Unittests">
       <module name="jLang" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -695,13 +746,6 @@
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
-    </configuration>
-    <configuration name="TestUtf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestUtf" />
-      <module name="jLang" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="UseCovariant" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UseCovariant" />
@@ -738,6 +782,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testJetty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testJetty" />
+      <module name="useJetty" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="prd" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -768,19 +819,19 @@
     <list>
       <item itemvalue="Application.UseDerby" />
       <item itemvalue="Maven.prd" />
-      <item itemvalue="Application.TestUtf" />
       <item itemvalue="Application.UseForName" />
       <item itemvalue="Application.UseCovariant" />
       <item itemvalue="Application.UseSingleton" />
       <item itemvalue="Application.UseThreadLocal" />
+      <item itemvalue="Application.testJetty" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.testJetty" />
         <item itemvalue="Application.UseThreadLocal" />
         <item itemvalue="Application.UseSingleton" />
         <item itemvalue="Application.UseCovariant" />
         <item itemvalue="Application.UseForName" />
-        <item itemvalue="Application.TestUtf" />
       </list>
     </recent_temporary>
   </component>
@@ -803,13 +854,6 @@
       <updated>1534638569943</updated>
       <workItem from="1542379895697" duration="152000" />
       <workItem from="1542380053825" duration="2786000" />
-    </task>
-    <task id="LOCAL-00236" summary="java">
-      <created>1542339877133</created>
-      <option name="number" value="00236" />
-      <option name="presentableId" value="LOCAL-00236" />
-      <option name="project" value="LOCAL" />
-      <updated>1542339877133</updated>
     </task>
     <task id="LOCAL-00237" summary="java">
       <created>1542360180736</created>
@@ -1147,7 +1191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544267168084</updated>
     </task>
-    <option name="localTasksCounter" value="285" />
+    <task id="LOCAL-00285" summary="java">
+      <created>1544268785483</created>
+      <option name="number" value="00285" />
+      <option name="presentableId" value="LOCAL-00285" />
+      <option name="project" value="LOCAL" />
+      <updated>1544268785483</updated>
+    </task>
+    <option name="localTasksCounter" value="286" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1196,9 +1247,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="68" y="23" width="1363" height="877" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22710069" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22710069" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1206,7 +1256,7 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Inspection Results" order="0" visible="true" weight="0.42165604" />
+      <window_info anchor="bottom" id="Inspection Results" order="0" visible="true" weight="0.42165604" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32738853" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.561086" weight="0.3057325" />
@@ -1281,136 +1331,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/use3p/serialize/src/main/java/UseFastJson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="151" column="1" selection-start-line="151" selection-start-column="1" selection-end-line="151" selection-end-column="1" />
-          <folding>
-            <element signature="e#5094#5095#0" expanded="true" />
-            <element signature="e#5137#5138#0" expanded="true" />
-            <element signature="e#5222#5223#0" expanded="true" />
-            <element signature="e#5270#5271#0" expanded="true" />
-            <element signature="e#5365#5366#0" expanded="true" />
-            <element signature="e#5406#5407#0" expanded="true" />
-            <element signature="e#5486#5487#0" expanded="true" />
-            <element signature="e#5530#5531#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useKafka/src/main/java/UseKafka.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useJetty/src/main/java/testJetty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useHibernate/src/main/java/ManageEmployee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useHibernate/src/main/java/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-74">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useDubbo/src/main/java/provider/Provider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useDubbo/src/main/java/provider/DemoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useDubbo/src/main/java/consumer1/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useDubbo/src/main/java/api/DemoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/beans/UserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="80" column="1" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/tools/DBTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding>
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#815#816#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useRocksDb/src/main/java/UseCustomColumnFamily.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useRocksDb/src/main/java/UseDefaultColumnFamily.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/use3p/useSlf4j/src/main/java/UseSlf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useThrift/src/main/java/AdditionClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1438,13 +1362,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useThrift/src/main/java/MyServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1594,13 +1511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseCompletion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -1705,20 +1615,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseSingleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1256#1257#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1323#1324#0" expanded="true" />
-            <element signature="e#1357#1358#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseThreadLocal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1730,6 +1626,156 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseSingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1256#1257#0" expanded="true" />
+            <element signature="e#1284#1285#0" expanded="true" />
+            <element signature="e#1323#1324#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseCompletion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring/gs-spring-boot/src/main/java/hello/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring/springDb/src/main/java/RawJdbc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring/springDb/src/main/java/IUserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring/springDb/src/main/java/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use3p/useThrift/src/main/java/gen-java/AdditionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4039">
+          <caret line="476" column="7" selection-start-line="476" selection-start-column="7" selection-end-line="476" selection-end-column="7" />
+          <folding>
+            <element signature="e#19704#19705#0" expanded="true" />
+            <element signature="e#19756#19757#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring/springDb/src/main/java/UserDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use3p/useThrift/src/main/java/AdditionClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use3p/useThrift/src/main/java/MyServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use3p/useDb/src/main/java/MysqlJdbc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use3p/useRocksDb/src/main/java/UseCustomColumnFamily.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="43" column="58" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use3p/useRocksDb/src/main/java/UseDefaultColumnFamily.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use3p/useHibernate/src/main/java/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+          <folding>
+            <element signature="e#579#580#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use3p/useCurator/src/main/java/UseLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use3p/useDb/src/main/java/UsePostgreSql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use3p/useHibernate/src/main/java/ManageEmployee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/tools/DbTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>

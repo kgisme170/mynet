@@ -3,7 +3,7 @@ import java.util.List;
 import org.apache.ibatis.session.SqlSession;
 
 import my.beans.UserBean;
-import my.tools.DBTools;
+import my.tools.DbTools;
 import my.mapper.UserMapper;
 /*
 create table t_user(
@@ -27,7 +27,7 @@ public class UserService {
     }
 
     private static void insertUser() {
-        SqlSession session = DBTools.getSession();
+        SqlSession session = DbTools.getSession();
         UserMapper mapper = session.getMapper(UserMapper.class);
         UserBean user = new UserBean("懿", "1314520", 7000.0);
         try {
@@ -41,7 +41,7 @@ public class UserService {
     }
 
     private static void deleteUser() {
-        SqlSession session = DBTools.getSession();
+        SqlSession session = DbTools.getSession();
         UserMapper mapper = session.getMapper(UserMapper.class);
         try {
             mapper.deleteUser(1);
@@ -53,7 +53,7 @@ public class UserService {
     }
 
     private static void selectUserById() {
-        SqlSession session = DBTools.getSession();
+        SqlSession session = DbTools.getSession();
         UserMapper mapper = session.getMapper(UserMapper.class);
         try {
             UserBean user = mapper.selectUserById(2);
@@ -67,7 +67,7 @@ public class UserService {
     }
 
     private static void selectAllUser() {
-        SqlSession session = DBTools.getSession();
+        SqlSession session = DbTools.getSession();
         UserMapper mapper = session.getMapper(UserMapper.class);
         try {
             List<UserBean> user = mapper.selectAllUser();

@@ -7,9 +7,8 @@ import java.util.Map;
 /**
  * @author liming.glm
  */
-@Controller // 需要对应的html template
+@Controller
 public class HelloController {
-    // inject via application.properties
     @Value("${welcome.message:No suche message}")
     private String message = "Hello World";
 

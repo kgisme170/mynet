@@ -6,7 +6,7 @@ import java.sql.Statement;
  * @author liming.glm
  */
 public class UsePostgreSql {
-    public static void main(String args[]) {
+    public static void main(String [] args) {
         try {
             Class.forName("org.postgresql.Driver");
             Connection conn = DriverManager.getConnection(

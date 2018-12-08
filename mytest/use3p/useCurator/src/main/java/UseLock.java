@@ -22,7 +22,8 @@ public class UseLock {
     public static void doWithLock() {
         InterProcessMutex lock = new InterProcessMutex(client, lockName);
         try {
-            if (lock.acquire(3000, TimeUnit.SECONDS)) {
+            final int time = 3000
+            if (lock.acquire(time, TimeUnit.SECONDS)) {
                 System.out.println(Thread.currentThread().getName() + " hold lock");
                 Thread.sleep(3000);
             } else {

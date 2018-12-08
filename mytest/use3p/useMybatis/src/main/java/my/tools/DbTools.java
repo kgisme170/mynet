@@ -9,7 +9,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 /**
  * @author liming.glm
  */
-public class DBTools {
+public class DbTools {
     public static SqlSessionFactory sessionFactory;
 
     static {

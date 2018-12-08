@@ -22,7 +22,9 @@ public class MysqlJdbc {
                 ResultSetMetaData rsmd = rs.getMetaData();
                 int columns = rsmd.getColumnCount();
                 for (int i = 1; i <= columns; i++) {
-                    if (i > 1) System.out.print(";");
+                    if (i > 1) {
+                        System.out.print(";");
+                    }
                     System.out.print(rsmd.getColumnName(i) + " ");
                 }
                 System.out.println("\n_______\n");

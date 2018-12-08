@@ -1,6 +1,8 @@
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-
+/**
+ * @author liming.glm
+ */
 public class RawJdbc {
     public static void main(String[] args) {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();

@@ -30,25 +30,24 @@ public class ManageEmployee {
             System.err.println("Failed to create sessionFactory object." + ex);
             throw new ExceptionInInitializerError(ex);
         }
-        ManageEmployee ME = new ManageEmployee();
+        ManageEmployee manageEmployee = new ManageEmployee();
 
         /* Add few employee records in database */
-        Integer empID1 = ME.addEmployee("Zara", "Ali", 1000);
-        Integer empID2 = ME.addEmployee("Daisy", "Das", 5000);
+        Integer empID1 = manageEmployee.addEmployee("Zara", "Ali", 1000);
+        Integer empID2 = manageEmployee.addEmployee("Daisy", "Das", 5000);
         /* List down all the employees */
-        ME.listEmployees();
+        manageEmployee.listEmployees();
         System.out.println("==============");
         /* Update employee's records */
-        ME.updateEmployee(empID1, 5000);
+        manageEmployee.updateEmployee(empID1, 5000);
 
         /* Delete an employee from the database */
-        ME.deleteEmployee(empID2);
+        manageEmployee.deleteEmployee(empID2);
 
         /* List down new list of the employees */
-        ME.listEmployees();
+        manageEmployee.listEmployees();
     }
 
-    /* Method to CREATE an employee in the database */
     public Integer addEmployee(String fname, String lname, int salary) {
         Session session = factory.openSession();
         Transaction tx = null;
@@ -96,13 +95,12 @@ public class ManageEmployee {
         System.out.println("结束listEmployees");
     }
 
-    /* Method to UPDATE salary for an employee */
-    public void updateEmployee(Integer EmployeeID, int salary) {
+    public void updateEmployee(Integer employeeID, int salary) {
         Session session = factory.openSession();
         Transaction tx = null;
         try {
             tx = session.beginTransaction();
-            Employee employee = session.get(Employee.class, EmployeeID);
+            Employee employee = session.get(Employee.class, employeeID);
             employee.setSalary(salary);
             session.update(employee);
             tx.commit();
@@ -116,13 +114,12 @@ public class ManageEmployee {
         }
     }
 
-    /* Method to DELETE an employee from the records */
-    public void deleteEmployee(Integer EmployeeID) {
+    public void deleteEmployee(Integer employeeID) {
         Session session = factory.openSession();
         Transaction tx = null;
         try {
             tx = session.beginTransaction();
-            Employee employee = session.get(Employee.class, EmployeeID);
+            Employee employee = session.get(Employee.class, employeeID);
             session.delete(employee);
             tx.commit();
         } catch (HibernateException e) {

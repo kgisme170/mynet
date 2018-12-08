@@ -2,31 +2,31 @@
  * @author liming.glm
  */
 public class User {
-    private int Id;
-    private String Username;
-    private String Password;
+    private int id;
+    private String username;
+    private String password;
 
     public int getId() {
-        return Id;
+        return id;
     }
 
     public void setId(int i) {
-        Id = i;
+        id = i;
     }
 
     public String getUsername() {
-        return Username;
+        return username;
     }
 
     public void setUsername(String u) {
-        Username = u;
+        username = u;
     }
 
     public String getPassword() {
-        return Password;
+        return password;
     }
 
     public void setPassword(String p) {
-        Password = p;
+        password = p;
     }
 }

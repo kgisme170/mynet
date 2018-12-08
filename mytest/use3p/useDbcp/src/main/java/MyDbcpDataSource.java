@@ -7,11 +7,11 @@ import java.util.Properties;
 /**
  * @author liming.glm
  */
-public class MyDBCPDataSource {
+public class MyDbcpDataSource {
     private static BasicDataSource getDBCPDataSource() {
         Properties properties = new Properties();
         try {
-            properties.load(MyDBCPDataSource.class.getResourceAsStream("dbcp.properties"));
+            properties.load(MyDbcpDataSource.class.getResourceAsStream("dbcp.properties"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -34,7 +34,7 @@ public class MyDBCPDataSource {
     }
 
     public static void main(String[] args) {
-        BasicDataSource dataSource = MyDBCPDataSource.getDBCPDataSource();
+        BasicDataSource dataSource = MyDbcpDataSource.getDBCPDataSource();
         System.out.println("连接池的容量" + dataSource.getNumActive());
         Connection conn = null;
         Statement sm = null;
