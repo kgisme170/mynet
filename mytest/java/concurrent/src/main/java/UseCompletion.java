@@ -3,7 +3,6 @@ import org.apache.commons.lang3.concurrent.BasicThreadFactory;
 import java.util.Random;
 import java.util.concurrent.*;
 
-// import static java.util.concurrent.Executors.newCachedThreadPool;
 /**
  * @author liming.glm
  */
@@ -16,7 +15,11 @@ public class UseCompletion {
     }
 
     public void f1() {
-        // ExecutorService exec = newCachedThreadPool();
+        /**
+         * 不推荐的做法是 import static java.util.concurrent.Executors.newCachedThreadPool
+         * 然后 ExecutorService exec = newCachedThreadPool();
+         */
+
         ScheduledExecutorService exec = new ScheduledThreadPoolExecutor(1,
                 new BasicThreadFactory.Builder().namingPattern("UserCompletion-thread-pool-%d").daemon(true).build());
         BlockingDeque<Future<Integer>> queue = new LinkedBlockingDeque<>();

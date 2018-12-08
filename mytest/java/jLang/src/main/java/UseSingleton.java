@@ -70,7 +70,11 @@ class S3  extends BaseClass{
  * enum 风格singleton
  */
 enum S4 {
+    /**
+     * Singleton声明
+     */
     instance;
+
     /**
      * 测试
      */
