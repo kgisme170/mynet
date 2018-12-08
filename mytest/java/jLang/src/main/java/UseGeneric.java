@@ -25,6 +25,7 @@ class MyPair<K, V> {
         System.out.println(t);
     }
 }
+
 class MyGeneric {
     public <T> void f() {
         System.out.println("hello");
@@ -34,6 +35,10 @@ class MyGeneric {
         System.out.println(p);
     }
 }
+
+/**
+ * @author liming.gong
+ */
 public class UseGeneric {
     public static void main(String[] args) {
         MyIt i = new MyCls();

@@ -6,6 +6,9 @@ class C{
     }
     public C(){System.out.println("default ctor");}
 }
+/**
+ * @author liming.gong
+ */
 public class UseForName {
     public static void main(String[] args) {
         try {

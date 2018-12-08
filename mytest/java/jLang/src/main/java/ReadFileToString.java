@@ -6,7 +6,9 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
+/**
+ * @author liming.gong
+ */
 public class ReadFileToString {
     public static void main(String [] args) throws IOException {
         String fileContent="";

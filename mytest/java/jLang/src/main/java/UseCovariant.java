@@ -19,6 +19,10 @@ class TMy<T>{
 
     }
 }
+
+/**
+ * @author liming.gong
+ */
 public class UseCovariant {
     public static void printCollection(Collection<?> collection){
         for(Object obj:collection){

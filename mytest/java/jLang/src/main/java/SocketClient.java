@@ -9,7 +9,9 @@ import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
-
+/**
+ * @author liming.gong
+ */
 public class SocketClient {
     ByteBuffer writeBuffer = ByteBuffer.allocate(1024);
     ByteBuffer readBuffer = ByteBuffer.allocate(1024);
@@ -44,7 +46,7 @@ public class SocketClient {
                     socketChannel.write(writeBuffer);
                     socketChannel.register(selector, SelectionKey.OP_READ);
 
-                } else if (key.isReadable()) {//读取数据
+                } else if (key.isReadable()) {
                     System.out.print("获取数据");
                     SocketChannel client = (SocketChannel) key.channel();
                     readBuffer.clear();

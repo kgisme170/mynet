@@ -1,7 +1,9 @@
 import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
-
+/**
+ * @author liming.gong
+ */
 public class TestComparator {
     private int population;
 

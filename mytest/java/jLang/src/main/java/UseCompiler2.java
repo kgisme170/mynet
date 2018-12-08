@@ -64,7 +64,9 @@ class MapClassLoader extends ClassLoader {
         return cl;
     }
 }
-
+/**
+ * @author liming.gong
+ */
 public class UseCompiler2 {
     public static void main(String args[]) {
         JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();

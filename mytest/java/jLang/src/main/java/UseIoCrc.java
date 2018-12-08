@@ -4,7 +4,9 @@ import java.nio.channels.FileChannel;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.zip.CRC32;
-
+/**
+ * @author liming.gong
+ */
 public class UseIoCrc {
     public static long checkBufferedInputStream(Path fileName) {
         try (InputStream in = new BufferedInputStream(Files.newInputStream(fileName))) {

@@ -17,11 +17,18 @@ class my implements Serializable {
 
     protected Object readResolve() throws ObjectStreamException {
         System.out.println("Serialization reflects into here");
-        if (mI == 1) return m1;
-        if (mI == 2) return m2;
+        if (mI == 1) {
+            return m1;
+        } else if (mI == 2) {
+            return m2;
+        }
         throw new ObjectStreamException(){};
     }
 }
+
+/**
+ * @author liming.gong
+ */
 public class StaticSerialization {
     public static void main(String[] args) {
         my m1 = my.m1;

@@ -2,7 +2,9 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import java.util.Hashtable;
-
+/**
+ * @author liming.gong
+ */
 public class LookUp {
     public static void main(String[] args) {
         Hashtable<String, String> env = new Hashtable<String, String>();

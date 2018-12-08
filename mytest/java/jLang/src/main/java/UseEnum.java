@@ -1,9 +1,12 @@
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * @author liming.gong
+ */
 public class UseEnum {
     enum Status {
-        SCUUESS("1", "成功"), FAILED("2", "失败");
+        SCUUESS("1", "成功"),
+        FAILED("2", "失败");
 
         public String value;
         public String desc;

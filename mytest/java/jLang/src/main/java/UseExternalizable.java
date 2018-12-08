@@ -34,7 +34,9 @@ class NoCtor implements Externalizable { // Serializable {//Serializable不需�
         //Externalizable先调用默认构造函数，如果没有则报异常
     }
 }
-
+/**
+ * @author liming.gong
+ */
 public class UseExternalizable {
     public static void main(String[] args) {
         try {

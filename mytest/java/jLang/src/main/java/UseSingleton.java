@@ -89,6 +89,9 @@ enum S4 {
     }*/
 }
 
+/**
+ * @author liming.gong
+ */
 public class UseSingleton {
     public static void main(String[] args) {
         System.out.println(S1.instance);

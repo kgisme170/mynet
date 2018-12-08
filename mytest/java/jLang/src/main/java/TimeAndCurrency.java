@@ -8,7 +8,9 @@ import java.time.format.TextStyle;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-
+/**
+ * @author liming.gong
+ */
 public class TimeAndCurrency {
     public static void main(String[] args) {
         Instant start = Instant.now();
@@ -27,7 +29,9 @@ public class TimeAndCurrency {
         ZonedDateTime zdt2 = ZonedDateTime.of(
                 LocalDate.of(1999, 9, 9),
                 LocalTime.of(9, 9, 9),
-                ZoneId.of("America/New_York")).plus(Period.ofDays(7));//day-light saving works. Don't use Duration.ofDays
+                ZoneId.of("America/New_York")).plus(Period.ofDays(7));
+        //day-light saving works. Don't use Duration.ofDays
+
         System.out.println(zdt2);
         DateTimeFormatter fmt = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.LONG);
         String sf = fmt.format(zdt);

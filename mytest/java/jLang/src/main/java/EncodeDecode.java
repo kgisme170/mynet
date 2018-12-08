@@ -1,7 +1,9 @@
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
 import java.nio.charset.*;
-
+/**
+ * @author liming.gong
+ */
 public class EncodeDecode {
     public static void main(String[] args) {
         Charset charset = StandardCharsets.UTF_8;

@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * @author liming.gong
+ */
 public class WildCard {
     List<?> myList = null;
     WildCard(List<String> l) {

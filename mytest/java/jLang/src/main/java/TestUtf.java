@@ -1,5 +1,7 @@
 import java.io.UnsupportedEncodingException;
-
+/**
+ * @author liming.gong
+ */
 public class TestUtf {
     public static void main(String[] args) {
         try {

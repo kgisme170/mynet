@@ -3,7 +3,9 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.List;
 import java.util.Map;
-
+/**
+ * @author liming.gong
+ */
 public class useReflect {
     public void test01(Map<String, String> m, List<String> l, String s) {
 

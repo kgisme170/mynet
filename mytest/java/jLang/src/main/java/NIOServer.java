@@ -6,7 +6,9 @@ import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.*;
-
+/**
+ * @author liming.gong
+ */
 public class NIOServer {
     private Selector selector;
     private ByteBuffer readBuffer = ByteBuffer.allocate(1024);

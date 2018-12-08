@@ -2,6 +2,7 @@ import java.io.*;
 class Base1 implements Serializable{
     protected String field = "xyz";
 }
+
 class Derived1 extends Base1 implements Serializable {
     private String name = "name";
     private int age = 12;
@@ -35,6 +36,9 @@ class Derived1 extends Base1 implements Serializable {
     }
 }
 
+/**
+ * @author liming.gong
+ */
 public class UseSerializable {
     public static void main(String[] args) {
         try {
