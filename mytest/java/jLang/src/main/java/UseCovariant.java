@@ -38,7 +38,9 @@ public class UseCovariant {
         myB.g(listB);
         myB.h(listB);
         //myB.f(listD);//必须完全匹配
-        myB.g(listD);//Consumer(dest)应该传入super类型
+
+        //Consumer(dest)应该传入super类型
+        myB.g(listD);
         //myB.h(listD);//
 
         TMy<Derived> my = new TMy<Derived>();
@@ -54,7 +56,7 @@ public class UseCovariant {
         List<String> listString =new ArrayList<String>();
         printCollection(listInteger);
         printCollection(listString);
-        Vector<? extends Number> x = new Vector<Integer>();//这是正确的
-        Vector<? super Integer> y = new Vector<Number>();//这是正确的
+        Vector<? extends Number> x = new Vector<Integer>();
+        Vector<? super Integer> y = new Vector<Number>();
     }
 }

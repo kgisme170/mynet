@@ -1,7 +1,13 @@
 import java.io.*;
 
 class NoCtor implements Externalizable { // Serializable {//Serializable不需要调用构造函数
+    /**
+     *
+     */
     private String name;
+    /**
+     *
+     */
     private int age;
 
     @Override

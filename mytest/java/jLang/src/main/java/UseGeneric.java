@@ -1,4 +1,7 @@
 interface MyIt<T> {
+    /**
+     * 测试
+     */
     T f();
 }
 class MyCls implements MyIt<String> {

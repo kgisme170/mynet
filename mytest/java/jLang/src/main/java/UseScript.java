@@ -9,7 +9,7 @@ import static java.lang.System.*;
  * @author liming.gong
  */
 public class UseScript {
-    public static void main(String args[]) {
+    public static void main(String [] args) {
         ScriptEngineManager manager = new ScriptEngineManager();
 
         List<ScriptEngineFactory> factories = manager.getEngineFactories();

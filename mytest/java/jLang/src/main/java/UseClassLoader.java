@@ -1,7 +1,9 @@
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-
+/**
+ * @author liming.gong
+ */
 public class UseClassLoader {
     public static void main(String [] args) {
         new MyClassLoader().findClass("BasicTypes");

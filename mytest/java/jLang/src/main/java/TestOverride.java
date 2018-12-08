@@ -1,9 +1,16 @@
 interface IMy{
+    /**
+     * 测试
+     */
     void f();
 }
 class Father {
     void g(){}
 }
+
+/**
+ * @author liming.gong
+ */
 public class TestOverride extends Father implements IMy{
     @Override
     public void f() {

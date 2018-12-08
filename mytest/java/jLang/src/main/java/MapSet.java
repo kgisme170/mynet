@@ -8,14 +8,14 @@ import java.util.stream.Collectors;
  */
 public class MapSet {
     public static void main(String[] args) {
-        Map<String, Set<String>> map = new HashMap<>();
+        Map<String, Set<String>> map = new HashMap<>(0);
         Set<String> set = new HashSet<>();
         set.add("user1");
         set.add("user2");
         map.put("key1", set);
 
-        Map<String, Set<String>> map2 = new HashMap<>();
-        Map<String, Set<String>> map3 = new HashMap<>();
+        Map<String, Set<String>> map2 = new HashMap<>(0);
+        Map<String, Set<String>> map3 = new HashMap<>(0);
 
         // 只拷贝了reference
         map2.putAll(map);

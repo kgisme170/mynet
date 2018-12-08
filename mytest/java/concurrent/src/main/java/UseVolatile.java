@@ -29,6 +29,7 @@ public class UseVolatile {
         final AtomicInteger count = new AtomicInteger(0);
         for (int i = 0; i < 10; ++i) {
             new Thread() {
+                @Override
                 public void run() {
                     for (int c = 0; c < 100; ++c) {
                         count.incrementAndGet();

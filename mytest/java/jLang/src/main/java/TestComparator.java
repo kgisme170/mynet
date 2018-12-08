@@ -13,12 +13,19 @@ public class TestComparator {
 
     public static void main(String[] args) {
         Comparator<TestComparator> order = new Comparator<TestComparator>() {
+            @Override
             public int compare(TestComparator o1, TestComparator o2) {
                 int p1 = o1.getPopulation();
                 int p2 = o2.getPopulation();
-                if (p1 > p2) return 1;
-                else if (p1 < p2) return -1;
-                else return 0;
+                if (p1 > p2) {
+                    return 1;
+                }
+                else if (p1 < p2) {
+                    return -1;
+                }
+                else {
+                    return 0;
+                }
             }
         };
         TestComparator t1 = new TestComparator("t1", 1);

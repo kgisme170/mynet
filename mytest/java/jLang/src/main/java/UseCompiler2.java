@@ -68,7 +68,7 @@ class MapClassLoader extends ClassLoader {
  * @author liming.gong
  */
 public class UseCompiler2 {
-    public static void main(String args[]) {
+    public static void main(String [] args) {
         JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
         final List<ByteArrayJavaClass> classFileObjects = new ArrayList<>();
         DiagnosticCollector<JavaFileObject> diagnosticCollector = new DiagnosticCollector<>();
@@ -108,7 +108,7 @@ public class UseCompiler2 {
         }
 
         // 从编译好的结果中提取Class信息
-        Map<String, byte[]> byteCodeMap = new HashMap<>();
+        Map<String, byte[]> byteCodeMap = new HashMap<>(0);
         for (ByteArrayJavaClass cl : classFileObjects) {
             byteCodeMap.put(cl.getName().substring(1), cl.getBytes());
             ClassLoader loader = new MapClassLoader(byteCodeMap);

@@ -81,8 +81,7 @@ enum S4 {
         this.value = value;
     }
     /**
-     * 相当于有一个这样的函数 */
-    /*
+     * 相当于有一个这样的函数
     @Override
     protected Object readResolve() {
         return instance;

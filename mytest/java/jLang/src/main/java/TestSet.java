@@ -14,6 +14,16 @@ public class TestSet {
         public int compareTo(Object o) {
             return mI - ((My) o).mI;
         }
+
+        @Override
+        public int hashCode() {
+            return mI;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            return mI == ((My)o).mI;
+        }
     }
 
     public static void main(String[] args) {

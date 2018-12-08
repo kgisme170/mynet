@@ -2,7 +2,13 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 interface Person{
+    /**
+     * 测试
+     */
     void sing();
+    /**
+     * 测试
+     */
     void dance();
 }
 class Star implements Person{
@@ -40,7 +46,9 @@ class ProxyFactory {
         );
     }
 }
-
+/**
+ * @author liming.gong
+ */
 public class UseClassProxy {
     public static void main(String[] args) {
         Person s = new Star();

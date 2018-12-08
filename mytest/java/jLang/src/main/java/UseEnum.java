@@ -38,7 +38,7 @@ public class UseEnum {
         System.out.println(Status.SCUUESS.getDesc());
         System.out.println(Status.FAILED.getValue());
         System.out.println(Status.FAILED.getDesc());
-        Map<Status, String> m = new HashMap<Status, String>();
+        Map<Status, String> m = new HashMap<>(0);
         System.out.println(m);
     }
 }

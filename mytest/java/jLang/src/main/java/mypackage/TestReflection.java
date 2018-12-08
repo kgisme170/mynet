@@ -6,9 +6,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
-
+/**
+ * @author liming.gong
+ */
 public class TestReflection {
-    // 去除Object基类的方法
+    /** 去除Object基类的方法
+     *
+     * @param
+     * @return
+     */
     private List<Method> getMethods(Class c) {
         Method[] cMethods = c.getMethods();
         Method[] oMethods = Object.class.getMethods();
@@ -87,8 +93,10 @@ public class TestReflection {
     public static void main(String[] args) throws NoSuchMethodException {
         TestReflection test = new TestReflection();
         try {
-            test.CheckClass(String.class);//公有函数，包括父类的
-            test.CheckClass(You.class);//本类的，包括私有和公有
+            //公有函数，包括父类的
+            test.CheckClass(String.class);
+            //本类的，包括私有和公有
+            test.CheckClass(You.class);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -96,7 +104,8 @@ public class TestReflection {
         for (Constructor constructor : constructors) {
             Class[] parameterTypes = constructor.getParameterTypes();
             for (Class c : parameterTypes) {
-                System.out.println(c.getName());//print java.lang.String
+                //print java.lang.String
+                System.out.println(c.getName());
             }
         }
         Constructor constructor =

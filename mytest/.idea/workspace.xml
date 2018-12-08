@@ -5,78 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/java/useAnnotation/src/main/java/AnnotationUse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hadoop/mr/src/main/java/dfsio.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/src/main/java/dfsio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/lockDowngrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/LockDowngrade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/testCountDownLatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseCountDownLatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/testVolatile.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseVolatile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/useCompletion.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseCompletion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/useFuture.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseFuture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/useStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/useThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/useThreadLocal.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseThreadLocal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/useThreadPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseThreadPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/useTimerTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseTimerTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useAnnotation/src/main/java/annoDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useAnnotation/src/main/java/AnnotationDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useAnnotation/src/main/java/annoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useAnnotation/src/main/java/AnnotationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useAnnotation/src/main/java/annoUse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useJunit/src/main/java/my/myClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useJunit/src/main/java/my/MyJunit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useMaven/src/main/java/useMaven.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useMaven/src/main/java/UseMaven.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useXml/src/main/java/useDom.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useXml/src/main/java/UseDom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useXml/src/main/java/useJaxb.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useXml/src/main/java/UseJaxb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useXml/src/main/java/useJaxp.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useXml/src/main/java/UseJaxp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useXml/src/main/java/useSax.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useXml/src/main/java/UseSax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useXml/src/main/java/useStAX.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useXml/src/main/java/UseStax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useXml/src/main/java/useTransform.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useXml/src/main/java/UseTransform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useXml/src/main/java/useXerces.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useXml/src/main/java/UseXerces.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/IocAop/src/main/java/ArrayIocTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/IocAop/src/main/java/ArrayIocTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/CarApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/CarApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/CarLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/CarLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/PersonApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/PersonApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/PersonLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/PersonLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/UserServiceApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/UserServiceApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/IocAop/src/main/java/my/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/IocAop/src/main/java/runIocTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/IocAop/src/main/java/RunIocTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/gs-spring-boot/src/main/java/hello/Api01.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/gs-spring-boot/src/main/java/hello/Api01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/gs-spring-boot/src/main/java/hello/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/gs-spring-boot/src/main/java/hello/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/gs-spring-boot/src/main/java/hello/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/gs-spring-boot/src/main/java/hello/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/springDb/src/main/java/IUserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springDb/src/main/java/IUserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/springDb/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springDb/src/main/java/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/springDb/src/main/java/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springDb/src/main/java/UserDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/springDb/src/main/java/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springDb/src/main/java/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/springDb/src/main/java/rawJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springDb/src/main/java/RawJdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/serialize/src/main/java/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/serialize/src/main/java/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/serialize/src/main/java/YamlTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/serialize/src/main/java/YamlTesting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/serialize/src/main/java/testFastJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/serialize/src/main/java/UseFastJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/serialize/src/main/java/testFastJsonComplex.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/serialize/src/main/java/UseFastJsonComplex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useCurator/src/main/java/useLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useCurator/src/main/java/UseLock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useDb/src/main/java/mysqlJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useDb/src/main/java/MysqlJdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useDb/src/main/java/testDerby.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useDb/src/main/java/UseDerby.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useDb/src/main/java/testPg.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useDb/src/main/java/UsePostgreSql.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useDbcp/src/main/java/MyDBCPDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useDbcp/src/main/java/MyDBCPDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useDruid/src/main/java/testDruid.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useDruid/src/main/java/UseDruid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useDubbo/src/main/java/api/DemoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useDubbo/src/main/java/api/DemoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useDubbo/src/main/java/consumer1/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useDubbo/src/main/java/consumer1/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useDubbo/src/main/java/provider/DemoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useDubbo/src/main/java/provider/DemoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useDubbo/src/main/java/provider/Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useDubbo/src/main/java/provider/Provider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useHibernate/src/main/java/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useHibernate/src/main/java/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useHibernate/src/main/java/ManageEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useHibernate/src/main/java/ManageEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useJetty/src/main/java/testJetty.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useJetty/src/main/java/testJetty.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useKafka/src/main/java/testKafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useKafka/src/main/java/UseKafka.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/beans/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/beans/UserBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/tools/DBTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/tools/DBTools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useRocksDb/src/main/java/useCustomColumnFamily.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useRocksDb/src/main/java/UseCustomColumnFamily.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useRocksDb/src/main/java/useDefaultColumnFamily.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useRocksDb/src/main/java/UseDefaultColumnFamily.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useSlf4j/src/main/java/useSlf.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useSlf4j/src/main/java/UseSlf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useThrift/src/main/java/AdditionClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useThrift/src/main/java/AdditionClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useThrift/src/main/java/AdditionServiceHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useThrift/src/main/java/AdditionServiceHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useThrift/src/main/java/MyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useThrift/src/main/java/MyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/LockDowngrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/LockDowngrade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/UseCountDownLatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseCountDownLatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/UseStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/UseVolatile.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseVolatile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/MapSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/MapSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/TestComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/TestComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/TestOverride.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/TestOverride.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/TestSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/TestSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/TestUtf.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/TestUtf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/UseClassLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseClassLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/UseClassProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseClassProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/UseCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseCompiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/UseCompiler2.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseCompiler2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/UseCovariant.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseCovariant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/UseEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/UseExternalizable.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseExternalizable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/UseGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseGeneric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/UseScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/UseSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/jLang/src/main/java/mypackage/TestReflection.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/jLang/src/main/java/mypackage/TestReflection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/useXml/src/main/java/UseStax.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/useXml/src/main/java/UseStax.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -257,7 +206,7 @@
           <entry key="gradle" value="1" />
           <entry key="html" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="398" />
+          <entry key="java" value="421" />
           <entry key="js" value="1" />
           <entry key="json" value="1" />
           <entry key="log" value="1" />
@@ -281,7 +230,7 @@
           <entry key="Groovy" value="1" />
           <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="398" />
+          <entry key="JAVA" value="421" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="1" />
           <entry key="Manifest" value="2" />
@@ -320,7 +269,7 @@
           <entry key="cpp" value="48" />
           <entry key="dummy" value="158" />
           <entry key="html" value="50" />
-          <entry key="java" value="31894" />
+          <entry key="java" value="32109" />
           <entry key="js" value="34" />
           <entry key="json" value="83" />
           <entry key="properties" value="111" />
@@ -337,7 +286,7 @@
         <counts>
           <entry key="C++" value="79" />
           <entry key="HTML" value="50" />
-          <entry key="JAVA" value="31894" />
+          <entry key="JAVA" value="32109" />
           <entry key="JSON" value="83" />
           <entry key="JavaScript" value="34" />
           <entry key="PLAIN_TEXT" value="552" />
@@ -352,94 +301,110 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/service/UserService.java">
+        <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="80" column="1" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
+            <state relative-caret-position="135">
+              <caret line="149" column="5" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/use3p/useMybatis/src/main/java/my/tools/DBTools.java">
+        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseExternalizable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+            <state relative-caret-position="120">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
               <folding>
-                <element signature="e#764#765#0" expanded="true" />
-                <element signature="e#815#816#0" expanded="true" />
+                <element signature="e#239#240#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/use3p/useRocksDb/src/main/java/UseCustomColumnFamily.java">
+        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/mypackage/TestReflection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="16">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#2150#2151#0" expanded="true" />
+                <element signature="e#2182#2183#0" expanded="true" />
+                <element signature="e#2280#2281#0" expanded="true" />
+                <element signature="e#2312#2313#0" expanded="true" />
+                <element signature="e#2466#2467#0" expanded="true" />
+                <element signature="e#2517#2518#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/use3p/useRocksDb/src/main/java/UseDefaultColumnFamily.java">
+        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/MapSet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
+            <state relative-caret-position="195">
+              <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseCompiler2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="110" column="57" selection-start-line="110" selection-start-column="57" selection-end-line="110" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1040#1041#0" expanded="true" />
+                <element signature="e#1069#1070#0" expanded="true" />
+                <element signature="e#1101#1102#0" expanded="true" />
+                <element signature="e#1144#1145#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseForName.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
               <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/use3p/useSlf4j/src/main/java/UseSlf.java">
+        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/TestUtf.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+            <state relative-caret-position="165">
+              <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/use3p/useThrift/src/main/java/AdditionClient.java">
+        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseCovariant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <state relative-caret-position="272">
+              <caret line="59" column="57" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/use3p/useThrift/src/main/java/AdditionServiceHandler.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/use3p/useThrift/src/main/java/MyServer.java">
+        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseClassProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="18" lean-forward="true" selection-start-line="15" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring/gs-spring-boot/src/main/java/hello/Api01.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hadoop/mr/src/main/java/dfsio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            <state relative-caret-position="182">
+              <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -457,7 +422,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>src</find>
       <find>iterate</find>
       <find>#text</find>
       <find>书</find>
@@ -487,6 +451,7 @@
       <find>sleepRunnable</find>
       <find>useMaven</find>
       <find>testFastJson</find>
+      <find>hashCode</find>
     </findStrings>
     <replaceStrings>
       <replace>scala</replace>
@@ -511,28 +476,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java/useXml/src/main/java/UseXerces.java" />
-        <option value="$PROJECT_DIR$/spring/IocAop/src/main/java/RunIocTest.java" />
-        <option value="$PROJECT_DIR$/spring/gs-spring-boot/src/main/java/hello/Api01.java" />
-        <option value="$PROJECT_DIR$/spring/gs-spring-boot/src/main/java/hello/Application.java" />
-        <option value="$PROJECT_DIR$/spring/gs-spring-boot/src/main/java/hello/HelloController.java" />
-        <option value="$PROJECT_DIR$/spring/IocAop/src/main/java/my/Car.java" />
-        <option value="$PROJECT_DIR$/spring/IocAop/src/main/java/my/CarApp.java" />
-        <option value="$PROJECT_DIR$/spring/IocAop/src/main/java/my/CarLogger.java" />
-        <option value="$PROJECT_DIR$/spring/IocAop/src/main/java/my/Person.java" />
-        <option value="$PROJECT_DIR$/spring/IocAop/src/main/java/my/PersonApp.java" />
-        <option value="$PROJECT_DIR$/spring/IocAop/src/main/java/my/PersonLogger.java" />
-        <option value="$PROJECT_DIR$/spring/IocAop/src/main/java/my/UserServiceApp.java" />
-        <option value="$PROJECT_DIR$/spring/IocAop/src/main/java/my/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/spring/IocAop/src/main/java/my/UserService.java" />
-        <option value="$PROJECT_DIR$/spring/IocAop/src/main/java/ArrayIocTest.java" />
-        <option value="$PROJECT_DIR$/spring/springDb/src/main/java/IUserDAO.java" />
-        <option value="$PROJECT_DIR$/spring/springDb/src/main/java/User.java" />
-        <option value="$PROJECT_DIR$/spring/springDb/src/main/java/UserDAOImpl.java" />
-        <option value="$PROJECT_DIR$/spring/springDb/src/main/java/UserTest.java" />
-        <option value="$PROJECT_DIR$/use3p/serialize/src/main/java/testFastJsonComplex.java" />
-        <option value="$PROJECT_DIR$/use3p/serialize/src/main/java/testFastJson.java" />
-        <option value="$PROJECT_DIR$/use3p/useDruid/src/main/java/UseDruid.java" />
         <option value="$PROJECT_DIR$/use3p/useDbcp/src/main/java/MyDBCPDataSource.java" />
         <option value="$PROJECT_DIR$/use3p/useDb/src/main/java/UsePostgreSql.java" />
         <option value="$PROJECT_DIR$/use3p/useDb/src/main/java/UseDerby.java" />
@@ -562,6 +505,28 @@
         <option value="$PROJECT_DIR$/use3p/useThrift/src/main/java/AdditionServiceHandler.java" />
         <option value="$PROJECT_DIR$/use3p/useThrift/src/main/java/MyServer.java" />
         <option value="$PROJECT_DIR$/hadoop/mr/src/main/java/dfsio.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/TestComparator.java" />
+        <option value="$PROJECT_DIR$/java/useXml/src/main/java/UseStax.java" />
+        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/UseVolatile.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/TestSet.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/UseCompiler.java" />
+        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/UseCountDownLatch.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/UseScript.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/UseSingleton.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/UseGeneric.java" />
+        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/LockDowngrade.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/TestOverride.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/UseClassLoader.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/UseClassProxy.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/mypackage/TestReflection.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/TestUtf.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/UseCovariant.java" />
+        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/UseStream.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/UseExternalizable.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/MapSet.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/UseCompiler2.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/UseEnum.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/UseForName.java" />
       </list>
     </option>
   </component>
@@ -618,46 +583,6 @@
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="mr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="mr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="mr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
-              <item name="mr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -698,7 +623,7 @@
     <property name="SearchEverywhereHistoryKey" value="insertUser&#9;PSI&#9;JAVA://my.service.UserService#insertUser&#10;System.getProperty&#9;ACTION&#9;null&#10;testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544265973787" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544267140467" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
@@ -734,7 +659,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UseXerces">
+  <component name="RunManager" selected="Application.TestUtf">
     <configuration default="true" type="tests" factoryName="Unittests">
       <module name="jLang" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -756,8 +681,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StaticSerialization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StaticSerialization" />
+    <configuration name="TestUtf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestUtf" />
       <module name="jLang" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -766,6 +691,13 @@
     <configuration name="UseDerby" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UseDerby" />
       <module name="useDb" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UseForName" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UseForName" />
+      <module name="jLang" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -780,13 +712,6 @@
     <configuration name="UseXerces" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UseXerces" />
       <module name="useXml" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WildCard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WildCard" />
-      <module name="jLang" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -821,19 +746,19 @@
     <list>
       <item itemvalue="Application.UseDerby" />
       <item itemvalue="Maven.prd" />
-      <item itemvalue="Application.WildCard" />
-      <item itemvalue="Application.StaticSerialization" />
       <item itemvalue="Application.UseThreadPool" />
       <item itemvalue="Application.AnnotationTest" />
       <item itemvalue="Application.UseXerces" />
+      <item itemvalue="Application.TestUtf" />
+      <item itemvalue="Application.UseForName" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestUtf" />
+        <item itemvalue="Application.UseForName" />
         <item itemvalue="Application.UseXerces" />
         <item itemvalue="Application.AnnotationTest" />
         <item itemvalue="Application.UseThreadPool" />
-        <item itemvalue="Application.StaticSerialization" />
-        <item itemvalue="Application.WildCard" />
       </list>
     </recent_temporary>
   </component>
@@ -856,13 +781,6 @@
       <updated>1534638569943</updated>
       <workItem from="1542379895697" duration="152000" />
       <workItem from="1542380053825" duration="2786000" />
-    </task>
-    <task id="LOCAL-00234" summary="java">
-      <created>1542008907769</created>
-      <option name="number" value="00234" />
-      <option name="presentableId" value="LOCAL-00234" />
-      <option name="project" value="LOCAL" />
-      <updated>1542008907769</updated>
     </task>
     <task id="LOCAL-00235" summary="java">
       <created>1542337260984</created>
@@ -1200,7 +1118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544263545092</updated>
     </task>
-    <option name="localTasksCounter" value="283" />
+    <task id="LOCAL-00283" summary="java">
+      <created>1544266216499</created>
+      <option name="number" value="00283" />
+      <option name="presentableId" value="LOCAL-00283" />
+      <option name="project" value="LOCAL" />
+      <updated>1544266216499</updated>
+    </task>
+    <option name="localTasksCounter" value="284" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1251,7 +1176,7 @@
     <frame x="68" y="23" width="1363" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22710069" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22710069" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1259,17 +1184,17 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32953367" />
+      <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.42165604" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" visible="true" weight="0.32738853" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32738853" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.561086" weight="0.3057325" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49472097" weight="0.3227848" />
+      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49472097" weight="0.32229298" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5344436" side_tool="true" weight="0.30318472" />
-      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.442492" weight="0.30828026" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6666667" weight="0.2639327" />
+      <window_info active="true" anchor="bottom" id="Messages" order="9" sideWeight="0.442492" visible="true" weight="0.30828026" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6666667" weight="0.26369426" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.46555638" weight="0.3057325" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="13" />
@@ -1334,167 +1259,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/useXml/src/main/java/UseSax.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useXml/src/main/java/UseStax.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useXml/src/main/java/UseTransform.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useXml/src/main/java/UseXerces.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/IocAop/src/main/java/RunIocTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/gs-spring-boot/src/main/java/hello/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/gs-spring-boot/src/main/java/hello/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/IocAop/src/main/java/my/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/IocAop/src/main/java/my/CarApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/IocAop/src/main/java/my/CarLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/IocAop/src/main/java/my/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/IocAop/src/main/java/my/PersonApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/IocAop/src/main/java/my/PersonLogger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/IocAop/src/main/java/my/UserServiceApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/IocAop/src/main/java/my/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/IocAop/src/main/java/my/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/IocAop/src/main/java/ArrayIocTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/springDb/src/main/java/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/springDb/src/main/java/IUserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/springDb/src/main/java/UserDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/springDb/src/main/java/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useDruid/src/main/java/UseDruid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useDbcp/src/main/java/MyDBCPDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="72" column="1" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/use3p/useDb/src/main/java/UsePostgreSql.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -1680,10 +1444,17 @@
     <entry file="file://$PROJECT_DIR$/use3p/useThrift/src/main/java/AdditionServiceHandler.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useThrift/src/main/java/MyServer.java">
+    <entry file="file://$PROJECT_DIR$/java/useMaven/src/main/java/UseMaven.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" lean-forward="true" selection-start-line="15" selection-end-line="18" />
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop/mr/src/main/java/dfsio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1697,10 +1468,221 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop/mr/src/main/java/dfsio.java">
+    <entry file="file://$PROJECT_DIR$/use3p/useThrift/src/main/java/MyServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
+        <state relative-caret-position="195">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/TestComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="e#1342#1343#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useXml/src/main/java/UseStax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseVolatile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/TestSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseCompiler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseCountDownLatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+          <folding>
+            <element signature="e#220#347#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
+            <element signature="e#343#448#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseScript.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseSingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="83" column="18" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseGeneric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="41" selection-start-line="41" selection-end-line="43" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/LockDowngrade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
           <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/TestOverride.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseClassProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="50" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseCovariant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="59" column="57" selection-start-line="59" selection-start-column="57" selection-end-line="59" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="149" column="5" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseExternalizable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding>
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/mypackage/TestReflection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#2150#2151#0" expanded="true" />
+            <element signature="e#2182#2183#0" expanded="true" />
+            <element signature="e#2280#2281#0" expanded="true" />
+            <element signature="e#2312#2313#0" expanded="true" />
+            <element signature="e#2466#2467#0" expanded="true" />
+            <element signature="e#2517#2518#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/MapSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseCompiler2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="110" column="57" selection-start-line="110" selection-start-column="57" selection-end-line="110" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1040#1041#0" expanded="true" />
+            <element signature="e#1069#1070#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
+            <element signature="e#1144#1145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/TestUtf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseForName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
         </state>
       </provider>
     </entry>

@@ -57,13 +57,15 @@ public class UseStream {
         IntStream.range(1, 10).skip(3).limit(3).forEach(System.out::println);
         System.out.println("--------------");
         Stream.of(new Integer[]{1, 22, 3, 14, 5})
-                .sorted((a, b) -> (b.compareTo(a)))//逆序
+                .sorted((a, b) -> (b.compareTo(a)))
                 .forEach(System.out::println);
         System.out.println();
         Stream.generate(new Random()::nextInt).limit(8).forEach(System.out::println);
         System.out.println();
         Stream.generate(() -> (int) (System.nanoTime() % 100)).limit(8).forEach(System.out::println);
-        Stream<Double> sd = Stream.generate(Math::random);//0-1之间的小数
+
+        //0-1之间的小数
+        Stream<Double> sd = Stream.generate(Math::random);
         for (Double db : sd.limit(10).collect(Collectors.toSet())) {
             System.out.println(db);
         }
@@ -134,7 +136,7 @@ public class UseStream {
         }
         Stream<Double> s1 = Stream.generate(Math::random);
         Stream<String> s2 = Stream.generate(() -> "echo");
-        Stream<Integer> si = Stream.iterate(1, n1 -> n1 + 1);//OK
+        Stream<Integer> si = Stream.iterate(1, n1 -> n1 + 1);
         IntStream intStream = IntStream.iterate(1, n2 -> n2 + 1);
 
         String[] words = new String[]{"Hello", "World"};
@@ -144,8 +146,8 @@ public class UseStream {
         s3.forEach(System.out::print);
         //List<String> a = s3.collect(Collectors.toList());//已经是terminate状态
 
-        Arrays.stream("abc".split("")).forEach(System.out::println);//first
-        Arrays.stream("abc".split("")).peek(new Consumer<String>() {//second
+        Arrays.stream("abc".split("")).forEach(System.out::println);
+        Arrays.stream("abc".split("")).peek(new Consumer<String>() {
             @Override
             public void accept(String s) {
                 System.out.println(s);

@@ -24,6 +24,7 @@ public class UseStax {
             XMLEventReader eventReader = factory.createXMLEventReader(reader);
             XMLEventReader filteredEventReader =
                     factory.createFilteredReader(eventReader, new EventFilter() {
+                        @Override
                         public boolean accept(XMLEvent event) {
                             boolean ipi = event.isProcessingInstruction();
                             if (ipi) {

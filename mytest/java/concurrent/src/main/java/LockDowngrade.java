@@ -4,7 +4,9 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.*;
-
+/**
+ * @author liming.gong
+ */
 public class LockDowngrade {
     @SafeVarargs
     public static <T> void addAll(Collection<T> coll, T... ts) {
