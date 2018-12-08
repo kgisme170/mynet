@@ -1,5 +1,7 @@
 import java.util.List;
-
+/**
+ * @author liming.glm
+ */
 public interface IUserDAO {
 
     void addUser(User user);

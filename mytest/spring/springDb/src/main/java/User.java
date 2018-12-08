@@ -1,3 +1,6 @@
+/**
+ * @author liming.glm
+ */
 public class User {
     private int Id;
     private String Username;

@@ -4,7 +4,9 @@ import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 
 import java.io.*;
-
+/**
+ * @author liming.glm
+ */
 public class dfsio {
     Configuration conf = new Configuration();
     FileSystem fs;

@@ -6,7 +6,9 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
-
+/**
+ * @author liming.glm
+ */
 public class DBTools {
     public static SqlSessionFactory sessionFactory;
 
@@ -22,7 +24,11 @@ public class DBTools {
 
     }
 
-    //创建能执行映射文件中sql的sqlSession
+    /**
+     * 创建能执行映射文件中sql的sqlSession
+     *
+     * @return
+     */
     public static SqlSession getSession() {
         return sessionFactory.openSession();
     }

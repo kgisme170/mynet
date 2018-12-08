@@ -1,7 +1,9 @@
 package my.mapper;
 import java.util.List;
 import my.beans.UserBean;
-
+/**
+ * @author liming.glm
+ */
 public interface UserMapper {
     /**
      * 新增用戶
@@ -9,9 +11,9 @@ public interface UserMapper {
      * @return
      * @throws Exception
      */
-    public int insertUser(UserBean user) throws Exception;
-    public int updateUser (UserBean user,int id) throws Exception;
-    public int deleteUser(int id) throws Exception;
-    public UserBean selectUserById(int id) throws Exception;
-    public List<UserBean> selectAllUser() throws Exception;
+    int insertUser(UserBean user) throws Exception;
+    int updateUser (UserBean user,int id) throws Exception;
+    int deleteUser(int id) throws Exception;
+    UserBean selectUserById(int id) throws Exception;
+    List<UserBean> selectAllUser() throws Exception;
 }

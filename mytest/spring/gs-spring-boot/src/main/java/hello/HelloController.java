@@ -4,7 +4,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.Map;
-
+/**
+ * @author liming.glm
+ */
 @Controller // 需要对应的html template
 public class HelloController {
     // inject via application.properties

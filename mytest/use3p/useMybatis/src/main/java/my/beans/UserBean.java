@@ -1,7 +1,9 @@
 package my.beans;
 import java.io.Serializable;
-
-public class UserBean implements Serializable{
+/**
+ * @author liming.glm
+ */
+public class UserBean implements Serializable {
 
     private static final long serialVersionUID = 1L;
     private Integer id;
@@ -65,8 +67,4 @@ public class UserBean implements Serializable{
         return "UserBean [id=" + id + ", username=" + username + ", password="
                 + password + ", account=" + account + "]";
     }
-
-
-
-
 }

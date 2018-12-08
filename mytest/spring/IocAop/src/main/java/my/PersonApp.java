@@ -1,6 +1,8 @@
 package my;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
-
+/**
+ * @author liming.glm
+ */
 public class PersonApp {
     public static void main(String[] args) {
         String fileName = "../../../src/application.xml";

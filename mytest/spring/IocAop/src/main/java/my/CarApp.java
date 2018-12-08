@@ -2,7 +2,9 @@ package my;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
-
+/**
+ * @author liming.glm
+ */
 public class CarApp {
     public static void main(String[] args) {
         String fileName = "../../../src/bean.xml";

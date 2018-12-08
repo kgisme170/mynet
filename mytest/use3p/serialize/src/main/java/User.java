@@ -1,4 +1,7 @@
 import java.util.Map;
+/**
+ * @author liming.glm
+ */
 public class User {
     private String name;
     private int age;

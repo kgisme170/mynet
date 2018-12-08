@@ -1,5 +1,10 @@
 package my;
-
+/**
+ * @author liming.glm
+ */
 public interface UserService {
-    public void save();
+    /**
+     * 保存
+     */
+    void save();
 }

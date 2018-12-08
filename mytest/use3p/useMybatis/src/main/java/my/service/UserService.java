@@ -12,6 +12,10 @@ username VARCHAR(20) default NULL,
 password VARCHAR(20) default NULL,
 account double precision);
  */
+
+/**
+ * @author liming.glm
+ */
 public class UserService {
 
     public static void main(String[] args) {

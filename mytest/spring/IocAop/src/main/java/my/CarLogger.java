@@ -1,7 +1,9 @@
 package my;
 
 import org.aspectj.lang.ProceedingJoinPoint;
-
+/**
+ * @author liming.glm
+ */
 public class CarLogger {
 
     public void beforeRun() {
@@ -11,7 +13,11 @@ public class CarLogger {
     public void afterRun() {
         System.out.println("car is running");
     }
-    //在bean.xml中，或者用aroundRun，或者用beforeRun+AfterRun
+
+    /** 在bean.xml中，或者用aroundRun，或者用beforeRun+AfterRun
+     *
+     * @param joinpoint
+     */
     public void aroundRun(ProceedingJoinPoint joinpoint) {
         System.out.println("car is going to run");
         try {

@@ -3,7 +3,9 @@ import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.transport.TSocket;
 import org.apache.thrift.transport.TTransport;
 import org.apache.thrift.transport.TTransportException;
-
+/**
+ * @author liming.glm
+ */
 public class AdditionClient {
     public static void main(String[] args) {
         try {

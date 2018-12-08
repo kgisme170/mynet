@@ -16,6 +16,10 @@ MAXVALUE 9223372036854775807
 START 1
 CACHE 1;
  */
+
+/**
+ * @author liming.glm
+ */
 public class ManageEmployee {
     private static SessionFactory factory;
 
@@ -55,7 +59,9 @@ public class ManageEmployee {
             employeeID = (Integer) session.save(employee);
             tx.commit();
         } catch (HibernateException e) {
-            if (tx != null) tx.rollback();
+            if (tx != null) {
+                tx.rollback();
+            }
             e.printStackTrace();
         } finally {
             session.close();
@@ -80,7 +86,9 @@ public class ManageEmployee {
             }
             tx.commit();
         } catch (HibernateException e) {
-            if (tx != null) tx.rollback();
+            if (tx != null) {
+                tx.rollback();
+            }
             e.printStackTrace();
         } finally {
             session.close();
@@ -99,7 +107,9 @@ public class ManageEmployee {
             session.update(employee);
             tx.commit();
         } catch (HibernateException e) {
-            if (tx != null) tx.rollback();
+            if (tx != null) {
+                tx.rollback();
+            }
             e.printStackTrace();
         } finally {
             session.close();
@@ -116,7 +126,9 @@ public class ManageEmployee {
             session.delete(employee);
             tx.commit();
         } catch (HibernateException e) {
-            if (tx != null) tx.rollback();
+            if (tx != null) {
+                tx.rollback();
+            }
             e.printStackTrace();
         } finally {
             session.close();

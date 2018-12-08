@@ -1,8 +1,9 @@
 package my;
 
 import org.springframework.stereotype.Component;
-
-//定义Spring的bean
+/**
+ * @author liming.glm
+ */
 @Component("person")
 public class Person {
     public void run() {

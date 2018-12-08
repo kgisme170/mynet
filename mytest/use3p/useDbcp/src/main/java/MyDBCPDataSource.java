@@ -4,7 +4,9 @@ import org.apache.commons.pool.impl.GenericObjectPool;
 import java.io.IOException;
 import java.sql.*;
 import java.util.Properties;
-
+/**
+ * @author liming.glm
+ */
 public class MyDBCPDataSource {
     private static BasicDataSource getDBCPDataSource() {
         Properties properties = new Properties();

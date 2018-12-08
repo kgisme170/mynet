@@ -2,6 +2,9 @@ package consumer1;
 
 import api.DemoService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+/**
+ * @author liming.glm
+ */
 public class Consumer {
     public static void main(String[] args) {
         //测试常规服务

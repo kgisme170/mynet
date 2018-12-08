@@ -1,5 +1,6 @@
-import org.apache.thrift.TException;
-
+/**
+ * @author liming.glm
+ */
 public class AdditionServiceHandler implements AdditionService.Iface {
     @Override
     public int add(int n1, int n2) {
