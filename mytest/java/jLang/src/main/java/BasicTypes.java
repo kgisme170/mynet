@@ -10,6 +10,15 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class BasicTypes {
+    public void f() {
+        System.out.println("BasicTypes.f()");
+    }
+
+    /**
+     * PL+代表非字母都当成是分隔符, \\PN+非数字 \\PZ+非分隔符, \\PS+非符号
+     */
+    static Set<String> pt = Pattern.compile("\\PL+").splitAsStream("ab cd ef:gh,xy").collect(Collectors.toSet());
+
     public static void main(String[] args) {
         int i = 0b1000010 & 0b1000;
         System.out.println(i);
@@ -28,9 +37,8 @@ public class BasicTypes {
         assert x < 0;
         Set<String> s1 = ConcurrentHashMap.newKeySet();
 
-        for (String sp : Pattern.compile("\\PL+").splitAsStream("ab cd ef:gh,xy").collect(Collectors.toSet())) {
+        for (String sp : pt) {
             System.out.println(sp);
-            // PL+代表非字母都当成是分隔符, \\PN+非数字 \\PZ+非分隔符, \\PS+非符号
         }
     }
 }

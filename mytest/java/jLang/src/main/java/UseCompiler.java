@@ -1,11 +1,6 @@
 import javax.annotation.processing.Processor;
-import javax.tools.JavaCompiler;
-import javax.tools.StandardJavaFileManager;
-import javax.tools.ToolProvider;
-import java.io.BufferedOutputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
+import javax.tools.*;
+import java.io.*;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
@@ -56,5 +51,13 @@ public class UseCompiler {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        // test
+        JavaFileManager jfm = new ForwardingJavaFileManager<JavaFileManager>(fileManager) {
+            @Override
+            public JavaFileObject getJavaFileForOutput(Location location, final String className, JavaFileObject.Kind kind, FileObject sibling) throws IOException {
+                return null;
+            }
+        };
     }
 }
