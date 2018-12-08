@@ -13,7 +13,10 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import org.apache.hadoop.mapreduce.lib.partition.HashPartitioner;
 import java.io.IOException;
-public class counter {
+/**
+ * @author liming.glm
+ */
+public class Counter {
     public static String inputFile = "customers.txt";
     public static String outputDir = "myResult";
 
@@ -47,7 +50,7 @@ public class counter {
                 fs.delete(p, true);
             }
             Job job = Job.getInstance();
-            job.setJarByClass(counter.class);
+            job.setJarByClass(Counter.class);
             FileInputFormat.setInputPaths(job, new Path(inputFile));
             job.setInputFormatClass(TextInputFormat.class);
             job.setMapperClass(MyMapper.class);

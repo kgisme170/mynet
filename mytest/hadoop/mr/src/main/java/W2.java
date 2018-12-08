@@ -11,17 +11,20 @@ import org.apache.hadoop.util.GenericOptionsParser;
 
 import java.io.IOException;
 import java.util.StringTokenizer;
-
-public class w2 {
+/**
+ * @author liming.glm
+ */
+public class W2 {
     public static void main(String[] args) throws Exception {
         Configuration conf = new Configuration();
         String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
-        if (otherArgs.length != 2) {
-            System.err.println("Usage: w2 <in> <out>");
+        final int len = 2;
+        if (otherArgs.length != len) {
+            System.err.println("Usage: W2 <in> <out>");
             System.exit(2);
         }
-        Job job = new Job(conf, "-------------w2-------------");
-        job.setJarByClass(w2.class);
+        Job job = new Job(conf, "-------------W2-------------");
+        job.setJarByClass(W2.class);
         job.setMapperClass(TokenizerMapper.class);
         job.setCombinerClass(IntSumReducer.class);
         job.setReducerClass(IntSumReducer.class);
@@ -33,15 +36,16 @@ public class w2 {
     }
 
     public static class TokenizerMapper extends Mapper<Object, Text, Text, IntWritable> {
-        private final static IntWritable one = new IntWritable(1);
+        private final static IntWritable ONE = new IntWritable(1);
         private Text word = new Text();
 
+        @Override
         public void map(Object key, Text value, Context context
         ) throws IOException, InterruptedException {
             StringTokenizer itr = new StringTokenizer(value.toString());
             while (itr.hasMoreTokens()) {
                 word.set(itr.nextToken());
-                context.write(word, one);
+                context.write(word, ONE);
             }
         }
     }
@@ -49,6 +53,7 @@ public class w2 {
     public static class IntSumReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
         private IntWritable result = new IntWritable();
 
+        @Override
         public void reduce(Text key, Iterable<IntWritable> values, Context context
         ) throws IOException, InterruptedException {
             int sum = 0;

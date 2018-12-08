@@ -6,7 +6,10 @@ import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function2;
 import scala.Tuple2;
-public class saveTextFile {
+/**
+ * @author liming.glm
+ */
+public class SaveTextFile {
     public static void main(String[] args) {
         System.out.println("hw");
         SparkConf conf = new SparkConf().setAppName("wordCount").setMaster("local");
@@ -22,7 +25,7 @@ public class saveTextFile {
             }
         });
         String dir = "myResult";
-        checkDeleteDir.checkExistenceAndDelete(dir);
+        CheckDeleteDir.checkExistenceAndDelete(dir);
         counts.saveAsTextFile(dir);
     }
 }

@@ -68,7 +68,6 @@ public class ManageEmployee {
         return employeeID;
     }
 
-    /* Method to  READ all the employees */
     public void listEmployees() {
         System.out.println("开始listEmployees");
         Session session = factory.openSession();

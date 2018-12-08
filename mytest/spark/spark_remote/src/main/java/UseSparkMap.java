@@ -5,8 +5,10 @@ import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import scala.Tuple2;
-
-public class testMap {
+/**
+ * @author liming.glm
+ */
+public class UseSparkMap {
     public static void main(String[] args) {
         System.out.println("hw");
         SparkConf conf = new SparkConf().setAppName("wordCount").setMaster("local");
@@ -16,7 +18,7 @@ public class testMap {
         JavaPairRDD<String, Integer> counts = words.mapToPair((String s) -> new Tuple2(s, 1)).
                 reduceByKey((Object integer, Object integer2)-> (Integer)integer + (Integer)integer2);
         String dir = "myResult";
-        checkDeleteDir.checkExistenceAndDelete(dir);
+        CheckDeleteDir.checkExistenceAndDelete(dir);
         counts.saveAsTextFile(dir);
     }
 }

@@ -1,9 +1,12 @@
 import java.io.*;
-
-public class readApacheLog {
+/**
+ * @author liming.glm
+ */
+public class ReadApacheLog {
     public static void main(String[] args) {
-        if (args.length != 2) {
-            System.out.println("Usage - java readApacheLog <读取log文件> <间隔写入的log文件,用于flume>");
+        final int len = 2;
+        if (args.length != len) {
+            System.out.println("Usage - java ReadApacheLog <读取log文件> <间隔写入的log文件,用于flume>");
             System.exit(0);
         }
         File read = new File(args[0]);

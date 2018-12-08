@@ -13,23 +13,25 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.StringTokenizer;
-
-public class w1_args extends Configured implements Tool {
+/**
+ * @author liming.glm
+ */
+public class W1Args extends Configured implements Tool {
     static int printUsage() {
-        System.out.println("w2 [-m #mappers ] [-r #reducers] input_file output_file");
+        System.out.println("W1Args [-m #mappers ] [-r #reducers] input_file output_file");
         ToolRunner.printGenericCommandUsage(System.out);
         return -1;
     }
 
     public static void main(String[] args) throws Exception {
-        int res = ToolRunner.run(new Configuration(), new w1_args(), args);
+        int res = ToolRunner.run(new Configuration(), new W1Args(), args);
         System.exit(res);
     }
 
+    @Override
     public int run(String[] args) throws Exception {
-
-        JobConf conf = new JobConf(getConf(), w1_args.class);
-        conf.setJobName("-----------w1_args----------");
+        JobConf conf = new JobConf(getConf(), W1Args.class);
+        conf.setJobName("-----------W1Args----------");
 
         // the keys are words (strings)
         conf.setOutputKeyClass(Text.class);
@@ -41,7 +43,7 @@ public class w1_args extends Configured implements Tool {
         conf.setCombinerClass(Reduce.class);
         conf.setReducerClass(Reduce.class);
 
-        List other_args = new ArrayList<String>();
+        List otherArgs = new ArrayList<String>();
         for (int i = 0; i < args.length; ++i) {
             try {
                 if ("-m".equals(args[i])) {
@@ -49,7 +51,7 @@ public class w1_args extends Configured implements Tool {
                 } else if ("-r".equals(args[i])) {
                     conf.setNumReduceTasks(Integer.parseInt(args[++i]));
                 } else {
-                    other_args.add(args[i]);
+                    otherArgs.add(args[i]);
                 }
             } catch (NumberFormatException except) {
                 System.out.println("ERROR: Integer expected instead of " + args[i]);
@@ -61,22 +63,24 @@ public class w1_args extends Configured implements Tool {
             }
         }
         // Make sure there are exactly 2 parameters left.
-        if (other_args.size() != 2) {
+        final int len = 2;
+        if (otherArgs.size() != len) {
             System.out.println("ERROR: Wrong number of parameters: " +
-                    other_args.size() + " instead of 2.");
+                    otherArgs.size() + " instead of 2.");
             return printUsage();
         }
-        FileInputFormat.setInputPaths(conf, new Path((String) other_args.get(0)));
-        FileOutputFormat.setOutputPath(conf, new Path((String) other_args.get(1)));
+        FileInputFormat.setInputPaths(conf, new Path((String) otherArgs.get(0)));
+        FileOutputFormat.setOutputPath(conf, new Path((String) otherArgs.get(1)));
 
         JobClient.runJob(conf);
         return 0;
     }
 
     public static class MapClass extends MapReduceBase implements Mapper<LongWritable, Text, Text, IntWritable> {
-        private final static IntWritable one = new IntWritable(1);
+        private final static IntWritable ONE = new IntWritable(1);
         private Text word = new Text();
 
+        @Override
         public void map(LongWritable key, Text value,
                         OutputCollector<Text, IntWritable> output,
                         Reporter reporter) throws IOException {
@@ -84,12 +88,13 @@ public class w1_args extends Configured implements Tool {
             StringTokenizer itr = new StringTokenizer(line);
             while (itr.hasMoreTokens()) {
                 word.set(itr.nextToken());
-                output.collect(word, one);
+                output.collect(word, ONE);
             }
         }
     }
 
     public static class Reduce extends MapReduceBase implements Reducer<Text, IntWritable, Text, IntWritable> {
+        @Override
         public void reduce(Text key, Iterator<IntWritable> values,
                            OutputCollector<Text, IntWritable> output,
                            Reporter reporter) throws IOException {

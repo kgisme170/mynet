@@ -7,40 +7,46 @@ import java.io.*;
 /**
  * @author liming.glm
  */
-public class dfsio {
+public class DfsIo {
     Configuration conf = new Configuration();
     FileSystem fs;
 
-    public dfsio() throws IOException {
+    public DfsIo() throws IOException {
         conf.addResource(new Path("/etc/hadoop/conf/core-site.xml"));
         conf.addResource(new Path("/etc/hadoop/conf/hdfs-site.xml"));
         fs = FileSystem.get(conf);
     }
+    final static String PUT = "put";
+    final static String DELETE = "delete";
+    final static String MKDIR = "mkdir";
+    final static int PUT_LENGTH = 3;
+    final static int DELETE_LENGTH = 2;
+    final static int MKDIR_LENGTH = 1;
 
     public static void main(String[] args) {
         try {
             if (args.length < 1) {
-                System.out.println("需要参数 [put/delete/mkdir] 目录或者文件名");
+                System.out.println("需要参数 [PUT/delete/mkdir] 目录或者文件名");
                 return;
             }
-            dfsio dfs = new dfsio();
-            if (args[0].equals("put")) {
-                if (args.length != 3) {
-                    System.out.println("put 需要2个参数 [from] [to]");
+            DfsIo dfs = new DfsIo();
+            if (PUT.equals(args[0])) {
+                if (args.length != PUT_LENGTH) {
+                    System.out.println("PUT 需要2个参数 [from] [to]");
                     return;
                 }
                 dfs.put(args[1], args[2]);
             }
-            if (args[0].equals("delete")) {
-                if (args.length != 2) {
-                    System.out.println("delete 需要1个参数 [文件名]");
+            if (DELETE.equals(args[0])) {
+                if (args.length != DELETE_LENGTH) {
+                    System.out.println("DELETE 需要1个参数 [文件名]");
                     return;
                 }
                 dfs.delete(args[1]);
             }
-            if (args[0].equals("mkdir")) {
-                if (args.length != 2) {
-                    System.out.println("mkdir 需要1个参数 [目录名]");
+            if (MKDIR.equals(args[0])) {
+                if (args.length != MKDIR_LENGTH) {
+                    System.out.println("MKDIR 需要1个参数 [目录名]");
                     return;
                 }
                 dfs.mkdir(args[1]);
@@ -54,7 +60,8 @@ public class dfsio {
 
     public void put(String from, String to) throws IOException {
         String fileName = from.substring(from.lastIndexOf('/') + 1);
-        if (to.charAt(to.length() - 1) == '/') {
+        final char slash = '/';
+        if (to.charAt(to.length() - 1) == slash) {
             to = to + fileName;
         } else {
             to = to + '/' + fileName;

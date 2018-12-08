@@ -1,5 +1,8 @@
 import java.io.File;
-public class checkDeleteDir {
+/**
+ * @author liming.glm
+ */
+public class CheckDeleteDir {
     static void deleteDir(File dir) {
         for (File f : dir.listFiles()) {
             if (f.isDirectory()) {

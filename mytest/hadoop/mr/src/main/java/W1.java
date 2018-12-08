@@ -7,12 +7,13 @@ import org.apache.hadoop.mapred.*;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.StringTokenizer;
-
-public class w1 {
-
+/**
+ * @author liming.glm
+ */
+public class W1 {
     public static void main(String[] args) throws Exception {
-        JobConf conf = new JobConf(w1.class);
-        conf.setJobName("----------------w1---------------");
+        JobConf conf = new JobConf(W1.class);
+        conf.setJobName("----------------W1---------------");
 
         conf.setOutputKeyClass(Text.class);
         conf.setOutputValueClass(IntWritable.class);
@@ -31,20 +32,22 @@ public class w1 {
     }
 
     public static class Map extends MapReduceBase implements Mapper<LongWritable, Text, Text, IntWritable> {
-        private final static IntWritable one = new IntWritable(1);
+        private final static IntWritable ONE = new IntWritable(1);
         private Text word = new Text();
 
+        @Override
         public void map(LongWritable key, Text value, OutputCollector<Text, IntWritable> output, Reporter reporter) throws IOException {
             String line = value.toString();
             StringTokenizer tokenizer = new StringTokenizer(line);
             while (tokenizer.hasMoreTokens()) {
                 word.set(tokenizer.nextToken());
-                output.collect(word, one);
+                output.collect(word, ONE);
             }
         }
     }
 
     public static class Reduce extends MapReduceBase implements Reducer<Text, IntWritable, Text, IntWritable> {
+        @Override
         public void reduce(Text key, Iterator<IntWritable> values, OutputCollector<Text, IntWritable> output, Reporter reporter) throws IOException {
             int sum = 0;
             while (values.hasNext()) {

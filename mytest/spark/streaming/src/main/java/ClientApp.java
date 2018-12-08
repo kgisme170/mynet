@@ -4,8 +4,10 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-
-public class clientApp {
+/**
+ * @author liming.glm
+ */
+public class ClientApp {
     public static void main(String[] args) {
         try {
             System.out.println("Defining new Socket");

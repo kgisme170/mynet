@@ -9,7 +9,7 @@ import org.eclipse.jetty.server.handler.AbstractHandler;
 /**
  * @author liming.glm
  */
-public class testJetty {
+public class UseJetty {
     public static void main(String[] args) throws Exception {
         Server server = new Server(8080);
         server.setHandler(new AbstractHandler() {
@@ -18,7 +18,7 @@ public class testJetty {
                 httpServletResponse.setContentType("text/html;charset=utf-8");
                 httpServletResponse.setStatus(HttpServletResponse.SC_OK);
                 request.setHandled(true);
-                httpServletResponse.getWriter().println("<h1>testJetty</h1>");
+                httpServletResponse.getWriter().println("<h1>UseJetty</h1>");
             }
         });
         server.start();

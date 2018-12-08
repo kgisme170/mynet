@@ -12,8 +12,10 @@ import scala.Tuple2;
 
 import java.util.Arrays;
 import java.util.Iterator;
-
-public class ch1Java {
+/**
+ * @author liming.glm
+ */
+public class Ch1Java {
     public static void main(String[] s) {
         System.out.println("spark 配置");
         SparkConf conf = new SparkConf();
@@ -40,7 +42,7 @@ public class ch1Java {
                 return integer + integer2;
             }
         });
-        wordCounts.print(10);//打印最前面10个词语
+        wordCounts.print(10);
         ctx.start();
         try {
             ctx.awaitTermination();

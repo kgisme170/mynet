@@ -17,7 +17,11 @@ class AvgCount{
     public int num;
     public double avg(){return total/(double)num;}
 }
-public class aggregateJava {
+
+/**
+ * @author liming.glm
+ */
+public class AggregateJava {
     public static void main(String[] args) {
         Function2<AvgCount, Integer, AvgCount> addAndCount = (AvgCount avgCount, Integer integer) -> {
             avgCount.total += integer;
