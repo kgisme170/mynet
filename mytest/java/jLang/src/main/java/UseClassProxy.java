@@ -41,7 +41,7 @@ class ProxyFactory {
     }
 }
 
-public class useClassProxy {
+public class UseClassProxy {
     public static void main(String[] args) {
         Person s = new Star();
         ProxyFactory pf = new ProxyFactory(s);

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class testSet {
+public class TestSet {
     static class My implements Comparable {
         private int mI;
 

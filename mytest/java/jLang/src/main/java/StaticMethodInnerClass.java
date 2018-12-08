@@ -1,11 +1,11 @@
-public class staticMethodInnerClass {
+public class StaticMethodInnerClass {
     public static void main(String[] args) {
         f();
     }
 
     public static void f() {
-        staticMethodInnerClass s = new staticMethodInnerClass();
-        staticMethodInnerClass.A a = s.new A();
+        StaticMethodInnerClass s = new StaticMethodInnerClass();
+        StaticMethodInnerClass.A a = s.new A();
 
         B b = new B();
         System.out.println("ok");

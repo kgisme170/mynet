@@ -5,7 +5,7 @@ import java.io.*;
 import java.util.*;
 
 import static java.lang.System.*;
-public class useScript {
+public class UseScript {
     public static void main(String args[]) {
         ScriptEngineManager manager = new ScriptEngineManager();
 

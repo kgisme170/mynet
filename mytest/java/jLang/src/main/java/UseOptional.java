@@ -1,7 +1,7 @@
 import java.util.Locale;
 import java.util.Optional;
 
-public class useOptional {
+public class UseOptional {
     public static class User{
         private String name = "name";
         private int age = 20;
@@ -21,10 +21,10 @@ public class useOptional {
 
     public static void main(String [] args){
         User u = new User();
-        useOptional.f(Optional.of(u));
-        useOptional.f(Optional.ofNullable(null));
+        UseOptional.f(Optional.of(u));
+        UseOptional.f(Optional.ofNullable(null));
 
-        Optional<Double> d = Optional.of(-4.0).flatMap(useOptional::inverse).flatMap(useOptional::squareRoot);
+        Optional<Double> d = Optional.of(-4.0).flatMap(UseOptional::inverse).flatMap(UseOptional::squareRoot);
         System.out.println();
         System.out.println(d);
         System.out.println(Locale.getDefault().getDisplayName());

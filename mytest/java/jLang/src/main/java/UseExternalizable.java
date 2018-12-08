@@ -1,6 +1,6 @@
 import java.io.*;
 
-class noCtor implements Externalizable { // Serializable {//Serializable不需要调用构造函数
+class NoCtor implements Externalizable { // Serializable {//Serializable不需要调用构造函数
     private String name;
     private int age;
 
@@ -9,13 +9,13 @@ class noCtor implements Externalizable { // Serializable {//Serializable不需�
         return "name = " + name + ", age = " + age;
     }
 
-    public noCtor() { // Externalizable 需要一个public默认构造函数
+    public NoCtor() { // Externalizable 需要一个public默认构造函数
         name = "a";
         age = 1;
         System.out.println("默认构造");
     }
 
-    public noCtor(String n, int a) {
+    public NoCtor(String n, int a) {
         name = n;
         age = a;
         System.out.println("有参构造");
@@ -35,10 +35,10 @@ class noCtor implements Externalizable { // Serializable {//Serializable不需�
     }
 }
 
-public class useExternalizable {
+public class UseExternalizable {
     public static void main(String[] args) {
         try {
-            noCtor n = new noCtor("abc", 12);
+            NoCtor n = new NoCtor("abc", 12);
             System.out.println(n);
             ByteArrayOutputStream out = new ByteArrayOutputStream();
             ObjectOutputStream oos = new ObjectOutputStream(out);
@@ -48,7 +48,7 @@ public class useExternalizable {
             ByteArrayInputStream in = new ByteArrayInputStream(out.toByteArray());
             ObjectInputStream ois = new ObjectInputStream(in);
 
-            noCtor n1 = (noCtor) ois.readObject();
+            NoCtor n1 = (NoCtor) ois.readObject();
             System.out.println(n1);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();

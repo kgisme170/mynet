@@ -10,7 +10,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
 
-public class socketClient {
+public class SocketClient {
     ByteBuffer writeBuffer = ByteBuffer.allocate(1024);
     ByteBuffer readBuffer = ByteBuffer.allocate(1024);
 
@@ -59,7 +59,7 @@ public class socketClient {
     public static void main(String[] args) throws IOException {
         System.out.println(args.length);
         if (args.length == 1) {
-            new socketClient().start();
+            new SocketClient().start();
         } else {
             try {
                 Socket socket = new Socket("127.0.0.1", 8001);

@@ -22,7 +22,7 @@ class my implements Serializable {
         throw new ObjectStreamException(){};
     }
 }
-public class staticSerialization {
+public class StaticSerialization {
     public static void main(String[] args) {
         my m1 = my.m1;
         try {

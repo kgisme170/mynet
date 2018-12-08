@@ -1,8 +1,8 @@
 import java.io.*;
-class base implements Serializable{
+class Base1 implements Serializable{
     protected String field = "xyz";
 }
-class c1 extends base implements Serializable {
+class Derived1 extends Base1 implements Serializable {
     private String name = "name";
     private int age = 12;
 
@@ -29,20 +29,20 @@ class c1 extends base implements Serializable {
             e.printStackTrace();
         }
     }
-
+    @Override
     public String toString() {
         return "field = " + field + ", name = " + name + ", age = " + age;
     }
 }
 
-public class useSerializable {
+public class UseSerializable {
     public static void main(String[] args) {
         try {
             File f = new File("file.dat");
             ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream(f));
-            os.writeObject(new c1());
+            os.writeObject(new Base1());
             ObjectInputStream is = new ObjectInputStream(new FileInputStream(f));
-            c1 c = (c1) is.readObject();
+            Base1 c = (Base1) is.readObject();
             System.out.println(c);
         } catch (FileNotFoundException e) {
             e.printStackTrace();

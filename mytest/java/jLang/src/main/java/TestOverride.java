@@ -1,10 +1,11 @@
 interface IMy{
     void f();
 }
-class father{
+class Father {
     void g(){}
 }
-public class testOverride extends father implements IMy{
+public class TestOverride extends Father implements IMy{
+    @Override
     public void f() {
         System.out.println("f");
     }
@@ -13,7 +14,7 @@ public class testOverride extends father implements IMy{
         System.out.println("child");
     }
     public static void main(String[] args){
-        father f = new testOverride();
+        Father f = new TestOverride();
         f.g();
         ((IMy)f).f();
     }

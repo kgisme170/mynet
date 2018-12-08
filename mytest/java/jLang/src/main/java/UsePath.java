@@ -8,15 +8,17 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
-public class usePath {
+public class UsePath {
     public static void main(String[] args) {
         try {
             System.out.println(System.getProperty("user.dir"));
             System.out.println(System.getProperty("java.class.path"));
-            URL url = new usePath().getClass().getClassLoader().getResource("");
+            URL url = new UsePath().getClass().getClassLoader().getResource("");
             System.out.println(url);
             String path = url.getPath();
-            System.out.println(path);//print null
+            System.out.println(path);
+            //print null
+
             String fn = path + "my.txt";
             List<String> ls = Files.readAllLines(Paths.get(fn));
             ls.forEach(System.out::println);

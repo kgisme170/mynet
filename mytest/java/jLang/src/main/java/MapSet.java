@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class mapSet {
+public class MapSet {
     public static void main(String[] args) {
         Map<String, Set<String>> map = new HashMap<>();
         Set<String> set = new HashSet<>();

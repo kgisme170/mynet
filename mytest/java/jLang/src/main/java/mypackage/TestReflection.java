@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
-public class testReflection {
+public class TestReflection {
     // 去除Object基类的方法
     private List<Method> getMethods(Class c) {
         Method[] cMethods = c.getMethods();
@@ -38,7 +38,7 @@ public class testReflection {
         }
     }
 
-    public testReflection() {
+    public TestReflection() {
     }
 
     public void CheckClass(Class c) {
@@ -85,7 +85,7 @@ public class testReflection {
     }
 
     public static void main(String[] args) throws NoSuchMethodException {
-        testReflection test = new testReflection();
+        TestReflection test = new TestReflection();
         try {
             test.CheckClass(String.class);//公有函数，包括父类的
             test.CheckClass(You.class);//本类的，包括私有和公有
@@ -100,7 +100,7 @@ public class testReflection {
             }
         }
         Constructor constructor =
-                You.class.getConstructor(testReflection.class, String.class);
+                You.class.getConstructor(TestReflection.class, String.class);
         try {
             You y = (You)constructor.newInstance(test, "xzy");
             System.out.println("ok");
@@ -110,7 +110,7 @@ public class testReflection {
         }
         Method m1 = You.class.getMethod("f", new Class[]{String.class, int.class});
         Method m2 = You.class.getMethod("f", String.class, int.class);
-        You y = new testReflection().new You("abc");
+        You y = new TestReflection().new You("abc");
         try {
             m2.invoke(y, "xyz", 3);
         } catch (Exception e) {

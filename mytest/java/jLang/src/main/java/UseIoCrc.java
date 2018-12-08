@@ -5,7 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.zip.CRC32;
 
-public class useIoCrc {
+public class UseIoCrc {
     public static long checkBufferedInputStream(Path fileName) {
         try (InputStream in = new BufferedInputStream(Files.newInputStream(fileName))) {
             CRC32 crc = new CRC32();

@@ -1,14 +1,14 @@
-interface myIt<T> {
+interface MyIt<T> {
     T f();
 }
-class myCls implements myIt<String> {
+class MyCls implements MyIt<String> {
     @Override
     public String f() {
         return "hw";
     }
 }
-class myPair<K, V> {
-    public myPair(K k, V v) {
+class MyPair<K, V> {
+    public MyPair(K k, V v) {
         this.k = k;
         this.v = v;
     }
@@ -25,24 +25,24 @@ class myPair<K, V> {
         System.out.println(t);
     }
 }
-class myGeneric {
+class MyGeneric {
     public <T> void f() {
         System.out.println("hello");
     }
 
-    public static void f(myPair<? extends Object, ? extends Object> p) {
+    public static void f(MyPair<? extends Object, ? extends Object> p) {
         System.out.println(p);
     }
 }
-public class useGeneric {
+public class UseGeneric {
     public static void main(String[] args) {
-        myIt i = new myCls();
+        MyIt i = new MyCls();
         System.out.println(i.f());
-        myPair mp = new myPair<Integer, Long>(2, 3L);
+        MyPair mp = new MyPair<Integer, Long>(2, 3L);
         System.out.println(mp);
         mp.f("abc");
-        myGeneric m = new myGeneric();
+        MyGeneric m = new MyGeneric();
         m.f();
-        myGeneric.f(new myPair("abc", new Integer(2)));
+        MyGeneric.f(new MyPair("abc", new Integer(2)));
     }
 }

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-public class timeAndCurrency {
+public class TimeAndCurrency {
     public static void main(String[] args) {
         Instant start = Instant.now();
         Instant end = Instant.now();

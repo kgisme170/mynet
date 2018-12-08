@@ -66,6 +66,9 @@ class S3  extends BaseClass{
     }
 }
 
+/**
+ * enum 风格singleton
+ */
 enum S4 {
     instance;
     int value;
@@ -78,15 +81,15 @@ enum S4 {
         this.value = value;
     }
     /**
-     * 相当于有一个这样的函数
-     *
+     * 相当于有一个这样的函数 */
+    /*
     @Override
     protected Object readResolve() {
         return instance;
     }*/
 }
 
-public class useSingleton {
+public class UseSingleton {
     public static void main(String[] args) {
         System.out.println(S1.instance);
         System.out.println(S2.getInstance());

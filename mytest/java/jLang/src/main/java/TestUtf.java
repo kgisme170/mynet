@@ -1,6 +1,6 @@
 import java.io.UnsupportedEncodingException;
 
-public class testUtf {
+public class TestUtf {
     public static void main(String[] args) {
         try {
             // new String(getBytes("UTF-8"), "UTF-8") 等于什么也没有做

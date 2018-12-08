@@ -1,6 +1,6 @@
 import java.io.Serializable;
 import java.util.*;
-class interval<T extends Comparable & Serializable> implements Serializable { }
+class Interval<T extends Comparable & Serializable> implements Serializable { }
 
 class Base{
     int mI;
@@ -19,7 +19,7 @@ class TMy<T>{
 
     }
 }
-public class useCovariant {
+public class UseCovariant {
     public static void printCollection(Collection<?> collection){
         for(Object obj:collection){
             System.out.println(obj);
