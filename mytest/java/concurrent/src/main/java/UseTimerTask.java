@@ -5,6 +5,7 @@ import java.util.TimerTask;
  */
 public class UseTimerTask {
     public static void main(String[] args) {
+        /*
         Timer timer = new Timer(true);
         TimerTask task1 = new TimerTask() {
             @Override
@@ -32,6 +33,6 @@ public class UseTimerTask {
             Thread.sleep(10000);
         } catch (Exception ex) {
             timer.cancel(); // 只要有一个task失败了，所有task都中止
-        }
+        }*/
     }
 }

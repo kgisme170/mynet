@@ -1,8 +1,7 @@
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
+
 import java.util.Collection;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
 /**
  * @author liming.gong
@@ -116,13 +115,19 @@ class ReadWriteLockTest {
     public void testLockDowngrading() throws InterruptedException {
         CountDownLatch start = new CountDownLatch(1);
         CountDownLatch end = new CountDownLatch(2);
+
+        ThreadFactory namedThreadFactory = new ThreadFactoryBuilder().setNameFormat("LockDowngrade").build();
         ThreadPoolExecutor executor = new ThreadPoolExecutor(
-                10, 10, 100,
-                TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(10));
+                10,
+                10,
+                100,
+                TimeUnit.SECONDS,
+                new ArrayBlockingQueue<Runnable>(10),
+                namedThreadFactory);
         final int iThread = 2;
         for (int i = 0; i < iThread; i++) {
             int finalI = i;
-            executor.execute(new Thread(new Runnable() {
+            executor.execute(new Runnable() {
                 @Override
                 public void run() {
                     Thread.currentThread().setName("thread-" + finalI);
@@ -138,7 +143,7 @@ class ReadWriteLockTest {
                         end.countDown();
                     }
                 }
-            }));
+            });
         }
         start.countDown();
         end.await();

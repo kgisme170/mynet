@@ -1,7 +1,9 @@
+import org.apache.commons.lang3.concurrent.BasicThreadFactory;
+
 import java.util.Random;
 import java.util.concurrent.*;
 
-import static java.util.concurrent.Executors.newCachedThreadPool;
+// import static java.util.concurrent.Executors.newCachedThreadPool;
 /**
  * @author liming.glm
  */
@@ -14,7 +16,9 @@ public class UseCompletion {
     }
 
     public void f1() {
-        ExecutorService exec = newCachedThreadPool();
+        // ExecutorService exec = newCachedThreadPool();
+        ScheduledExecutorService exec = new ScheduledThreadPoolExecutor(1,
+                new BasicThreadFactory.Builder().namingPattern("UserCompletion-thread-pool-%d").daemon(true).build());
         BlockingDeque<Future<Integer>> queue = new LinkedBlockingDeque<>();
         for (int i = 0; i < iQueue; ++i) {
             queue.add(exec.submit(new MyTask()));
@@ -32,7 +36,10 @@ public class UseCompletion {
     }
 
     public void f2() {
-        ExecutorService exec = newCachedThreadPool();
+        // ExecutorService exec = newCachedThreadPool();
+        ScheduledExecutorService exec = new ScheduledThreadPoolExecutor(1,
+                new BasicThreadFactory.Builder().namingPattern("UserCompletion-thread-pool-%d").daemon(true).build());
+
         CompletionService<Integer> queue = new ExecutorCompletionService<>(exec);
         for (int i = 0; i < iQueue; ++i) {
             queue.submit(new MyTask());
