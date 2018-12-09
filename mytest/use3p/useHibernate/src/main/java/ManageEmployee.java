@@ -18,7 +18,7 @@ CACHE 1;
  */
 
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class ManageEmployee {
     private static SessionFactory factory;

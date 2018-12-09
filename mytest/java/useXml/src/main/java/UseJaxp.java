@@ -8,7 +8,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.io.StringReader;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseJaxp {
     public static void main(String[] args) {

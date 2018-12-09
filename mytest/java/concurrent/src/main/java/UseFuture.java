@@ -3,7 +3,7 @@ import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseFuture {
     static class MyThread implements Callable<Integer> {

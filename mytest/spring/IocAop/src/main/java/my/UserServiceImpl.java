@@ -2,7 +2,7 @@ package my;
 
 import org.springframework.stereotype.Service;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 @Service("userService")
 public class UserServiceImpl implements UserService {

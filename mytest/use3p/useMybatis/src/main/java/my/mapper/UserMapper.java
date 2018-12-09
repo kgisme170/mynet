@@ -2,7 +2,7 @@ package my.mapper;
 import java.util.List;
 import my.beans.UserBean;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public interface UserMapper {
     /**

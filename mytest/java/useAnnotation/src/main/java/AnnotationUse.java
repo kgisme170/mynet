@@ -1,5 +1,5 @@
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class AnnotationUse {
     @AnnotationDefinition(id="2", description = "abc")

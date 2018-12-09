@@ -1,5 +1,5 @@
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class AdditionServiceHandler implements AdditionService.Iface {
     @Override

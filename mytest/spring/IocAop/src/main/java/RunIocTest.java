@@ -1,7 +1,7 @@
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class RunIocTest {
     public static void main(String[] args) {

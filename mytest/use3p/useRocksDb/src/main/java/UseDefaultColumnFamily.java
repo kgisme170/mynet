@@ -7,7 +7,7 @@ import org.rocksdb.RocksDB;
 import org.rocksdb.RocksDBException;
 import org.rocksdb.RocksIterator;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseDefaultColumnFamily {
     static {

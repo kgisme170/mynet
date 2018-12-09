@@ -4,7 +4,7 @@ import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseVolatile {
     final static int I_THREAD = 10;

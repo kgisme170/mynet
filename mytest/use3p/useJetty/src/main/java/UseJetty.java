@@ -7,7 +7,7 @@ import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.handler.AbstractHandler;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseJetty {
     public static void main(String[] args) throws Exception {

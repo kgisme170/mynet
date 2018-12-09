@@ -2,7 +2,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 
 import java.sql.*;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseDruid {
     public static void main(String[] args) {

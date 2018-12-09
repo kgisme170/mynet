@@ -7,7 +7,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class DbTools {
     public static SqlSessionFactory sessionFactory;

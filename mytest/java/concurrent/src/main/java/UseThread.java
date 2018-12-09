@@ -1,5 +1,5 @@
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseThread {
     static class MyThread extends Thread {

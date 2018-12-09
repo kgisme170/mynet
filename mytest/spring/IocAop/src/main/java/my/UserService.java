@@ -1,6 +1,6 @@
 package my;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public interface UserService {
     /**

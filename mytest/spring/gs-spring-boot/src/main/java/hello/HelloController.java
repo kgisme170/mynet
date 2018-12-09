@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.Map;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 @Controller
 public class HelloController {

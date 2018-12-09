@@ -2,7 +2,7 @@ import java.io.StringReader;
 import javax.xml.bind.*;
 import javax.xml.transform.stream.StreamSource;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseJaxb {
     public static void main(String[] args) {

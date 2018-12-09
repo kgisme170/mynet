@@ -1,6 +1,6 @@
 package my;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class Car {
     public void go() {

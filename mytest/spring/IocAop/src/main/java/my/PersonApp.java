@@ -1,7 +1,7 @@
 package my;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class PersonApp {
     public static void main(String[] args) {

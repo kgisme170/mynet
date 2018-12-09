@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.Properties;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class MyDbcpDataSource {
     private static BasicDataSource getDBCPDataSource() {

@@ -7,7 +7,7 @@ import org.apache.kafka.clients.consumer.*;
 import java.util.Arrays;
 import java.util.Properties;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseKafka {
     public static void main(String[] args) {

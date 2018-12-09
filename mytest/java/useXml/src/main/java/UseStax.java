@@ -7,7 +7,7 @@ import java.net.URI;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseStax {
     static String currentPath = Thread.currentThread().getContextClassLoader().getResource("").toString();

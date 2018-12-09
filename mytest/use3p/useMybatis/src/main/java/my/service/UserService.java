@@ -14,7 +14,7 @@ account double precision);
  */
 
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UserService {
 

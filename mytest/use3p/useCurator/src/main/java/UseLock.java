@@ -6,7 +6,7 @@ import org.apache.curator.retry.ExponentialBackoffRetry;
 
 import java.util.concurrent.TimeUnit;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseLock {
     private static CuratorFramework client;

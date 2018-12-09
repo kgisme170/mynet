@@ -1,6 +1,6 @@
 import java.util.List;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public interface IUserDAO {
     /**

@@ -3,7 +3,7 @@ import org.xml.sax.*;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseSax {
     static String currentPath = Thread.currentThread().getContextClassLoader().getResource("").toString();

@@ -2,7 +2,7 @@ package my;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class CarLogger {
 

@@ -1,6 +1,6 @@
 import my.*;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseMaven {
     public static void main(String [] args){

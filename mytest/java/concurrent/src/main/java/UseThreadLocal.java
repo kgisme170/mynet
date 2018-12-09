@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseThreadLocal {
     private static final AtomicInteger NEXT_ID = new AtomicInteger(0);

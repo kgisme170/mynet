@@ -1,6 +1,6 @@
 import java.sql.*;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class MysqlJdbc {
 

@@ -4,7 +4,7 @@ import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 import java.net.URI;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseTransform {
     static String currentPath = Thread.currentThread().getContextClassLoader().getResource("").toString();

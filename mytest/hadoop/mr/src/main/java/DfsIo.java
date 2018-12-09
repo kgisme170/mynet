@@ -5,7 +5,7 @@ import org.apache.hadoop.fs.Path;
 
 import java.io.*;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class DfsIo {
     Configuration conf = new Configuration();

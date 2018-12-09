@@ -1,7 +1,7 @@
 import java.util.Timer;
 import java.util.TimerTask;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseTimerTask {
     public static void main(String[] args) {

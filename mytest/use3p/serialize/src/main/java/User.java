@@ -1,6 +1,6 @@
 import java.util.Map;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class User {
     private String name;

@@ -1,7 +1,7 @@
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class RawJdbc {
     public static void main(String[] args) {

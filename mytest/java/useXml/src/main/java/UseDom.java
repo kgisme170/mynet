@@ -9,7 +9,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseDom {
     static String currentPath = Thread.currentThread().getContextClassLoader().getResource("").toString();

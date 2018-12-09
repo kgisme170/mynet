@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseDerby {
     public static void main(String[] args) {

@@ -7,7 +7,7 @@ import java.net.URISyntaxException;
 import java.util.Scanner;
 import java.util.Set;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseFastJsonComplex {
     public static void main(String[] args) {

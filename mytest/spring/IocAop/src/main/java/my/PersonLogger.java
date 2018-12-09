@@ -4,7 +4,7 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 @Component("personLogger")
 @Aspect

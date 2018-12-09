@@ -3,7 +3,7 @@ import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import java.util.concurrent.*;
 
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseCountDownLatch {
     public static void main(String [] args) {

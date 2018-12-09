@@ -12,7 +12,7 @@ import org.apache.hadoop.util.GenericOptionsParser;
 import java.io.IOException;
 import java.util.StringTokenizer;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class W2 {
     public static void main(String[] args) throws Exception {

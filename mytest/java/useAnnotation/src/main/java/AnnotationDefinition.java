@@ -3,7 +3,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)

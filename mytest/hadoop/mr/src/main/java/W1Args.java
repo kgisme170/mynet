@@ -14,7 +14,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.StringTokenizer;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class W1Args extends Configured implements Tool {
     static int printUsage() {

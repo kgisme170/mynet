@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.concurrent.*;
 
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseCompletion {
     final int iQueue = 10;

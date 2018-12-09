@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.StringTokenizer;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class W1 {
     public static void main(String[] args) throws Exception {

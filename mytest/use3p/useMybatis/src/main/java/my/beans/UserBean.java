@@ -1,7 +1,7 @@
 package my.beans;
 import java.io.Serializable;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UserBean implements Serializable {
 

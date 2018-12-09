@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class AnnotationTest {
     public static void main(String [] args) {

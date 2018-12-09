@@ -1,6 +1,6 @@
 import java.io.File;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class CheckDeleteDir {
     static void deleteDir(File dir) {

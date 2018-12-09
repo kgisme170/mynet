@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import static java.util.concurrent.Executors.*;
 import static java.util.concurrent.Executors.newScheduledThreadPool;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseThreadPool implements Callable<Integer>{
     private static AtomicInteger i = new AtomicInteger(0);

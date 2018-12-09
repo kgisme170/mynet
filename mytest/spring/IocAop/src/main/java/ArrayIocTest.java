@@ -2,7 +2,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class ArrayIocTest {
     private List<String> list;

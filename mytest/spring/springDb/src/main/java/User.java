@@ -1,5 +1,5 @@
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class User {
     private int id;

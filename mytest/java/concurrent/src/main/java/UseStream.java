@@ -9,7 +9,7 @@ import static java.util.stream.Collectors.counting;
 import static java.util.stream.Collectors.groupingByConcurrent;
 import static java.util.stream.Collectors.toSet;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseStream {
     public static void main(String[] args) {

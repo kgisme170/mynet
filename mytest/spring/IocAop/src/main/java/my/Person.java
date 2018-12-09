@@ -2,7 +2,7 @@ package my;
 
 import org.springframework.stereotype.Component;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 @Component("person")
 public class Person {

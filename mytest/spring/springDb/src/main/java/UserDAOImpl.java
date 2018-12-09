@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UserDAOImpl extends JdbcDaoSupport implements IUserDAO {
     @Override

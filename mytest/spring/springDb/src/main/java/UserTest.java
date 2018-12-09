@@ -4,7 +4,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.util.List;
 // create table t3(id int primary key not null, username char(20) default null, password char(20) not null);
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UserTest {
     public static void main(String[] args){

@@ -14,7 +14,7 @@ import org.apache.hadoop.mapreduce.lib.reduce.LongSumReducer;
 
 import java.util.Random;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class Grep {
     public static void main(String[] args) throws Exception {

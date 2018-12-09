@@ -4,7 +4,7 @@ import com.alibaba.fastjson.serializer.SerializerFeature;
 
 import java.util.Date;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseFastJson {
     private static final String JSON_OBJ_STR = "{\"studentName\":\"lily\",\"studentAge\":12}";

@@ -4,7 +4,7 @@ import org.w3c.dom.Document;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UseXerces {
     public static void main(String[] args) {

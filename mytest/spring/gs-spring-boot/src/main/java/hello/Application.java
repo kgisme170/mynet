@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 @SpringBootApplication
 public class Application {

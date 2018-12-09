@@ -3,7 +3,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class UsePostgreSql {
     public static void main(String [] args) {

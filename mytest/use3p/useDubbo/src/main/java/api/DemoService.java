@@ -2,7 +2,7 @@ package api;
 
 import java.util.List;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public interface DemoService {
     /**
