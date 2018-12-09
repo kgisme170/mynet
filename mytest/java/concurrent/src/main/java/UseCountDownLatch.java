@@ -34,7 +34,7 @@ public class UseCountDownLatch {
             latch.await();
             System.out.println("Before");
             executor.shutdown();
-            System.out.println("After");
+            System.out.println("Main thread quits");
 
         } catch (InterruptedException e) {
             e.printStackTrace();
