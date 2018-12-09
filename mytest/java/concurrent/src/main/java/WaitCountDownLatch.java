@@ -1,7 +1,7 @@
 import java.util.concurrent.CountDownLatch;
 
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class WaitCountDownLatch {
     public static void main(String[] args) {

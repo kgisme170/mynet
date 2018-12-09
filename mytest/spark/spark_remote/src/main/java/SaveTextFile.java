@@ -7,7 +7,7 @@ import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function2;
 import scala.Tuple2;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class SaveTextFile {
     public static void main(String[] args) {

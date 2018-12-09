@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class ClientApp {
     public static void main(String[] args) {

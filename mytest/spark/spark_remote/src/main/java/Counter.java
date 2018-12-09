@@ -14,7 +14,7 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import org.apache.hadoop.mapreduce.lib.partition.HashPartitioner;
 import java.io.IOException;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class Counter {
     public static String inputFile = "customers.txt";

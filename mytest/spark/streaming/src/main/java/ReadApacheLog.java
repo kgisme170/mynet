@@ -1,6 +1,6 @@
 import java.io.*;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class ReadApacheLog {
     public static void main(String[] args) {

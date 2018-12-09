@@ -13,7 +13,7 @@ import scala.Tuple2;
 import java.util.Arrays;
 import java.util.Iterator;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class Ch1Java {
     public static void main(String[] s) {

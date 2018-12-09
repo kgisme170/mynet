@@ -19,7 +19,7 @@ class AvgCount{
 }
 
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class AggregateJava {
     public static void main(String[] args) {

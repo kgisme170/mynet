@@ -7,7 +7,7 @@ import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import scala.Tuple2;
 /**
- * @author liming.glm
+ * @author liming.gong
  */
 public class HadoopFileOld {
     public static void main(String[] args) {

@@ -7,82 +7,8 @@ import java.util.concurrent.locks.*;
  * @author liming.gong
  */
 public class LockDowngrade {
-    @SafeVarargs
-    public static <T> void addAll(Collection<T> coll, T... ts) {
-
-    }
-
     public static void main(String[] args) throws InterruptedException {
-        new LockDowngrade().transfer(1, 2, 3);
-        new CachedData().processCachedData();
         new ReadWriteLockTest().testLockDowngrading();
-    }
-
-    private int[] accounts = new int[]{3, 4, 5};
-
-    private void doTransfer(int from, int to, double amount) {
-    }
-
-    public void transfer(int from, int to, double amount) {
-        ReentrantLock locker = new ReentrantLock();
-        Condition sufficientFunds = locker.newCondition();
-        //条件对象，
-        locker.lock();
-        try {
-            while (accounts[from] < amount) {
-                sufficientFunds.await();
-            }
-            doTransfer(from, to, amount);
-            sufficientFunds.signalAll();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        } finally {
-            locker.unlock();
-        }
-
-        ReadWriteLock l = new ReentrantReadWriteLock();
-        //从读写锁创建锁
-        l.writeLock().lock();
-    }
-}
-
-class CachedData {
-    Object data;
-    volatile boolean cacheValid;
-    final ReentrantReadWriteLock rwl = new ReentrantReadWriteLock();
-
-    void processCachedData() {
-        //1. 上读锁
-        rwl.readLock().lock();
-
-        //2. 验证cacheValid
-        if (!cacheValid) {
-            // Must release read lock before acquiring write lock
-            rwl.readLock().unlock(); //3. 解除读锁
-            rwl.writeLock().lock(); //4. 上写锁
-            try {
-                // Recheck state because another thread might have
-                // acquired write lock and changed state before we did.
-                //5. 验证cacheValid
-                if (!cacheValid) {
-                    // data = ...
-                    cacheValid = true;
-                }
-                // Downgrade by acquiring read lock before releasing write lock
-                rwl.readLock().lock(); //6. 上读锁
-            } finally {
-                rwl.writeLock().unlock(); // Unlock write, still hold read //7. 解除写锁
-            }
-        }
-        try {
-            use(data);
-        } finally {
-            rwl.readLock().unlock();//8. 解除读锁
-        }
-    }
-
-    public void use(Object object) {
-
     }
 }
 
@@ -147,6 +73,7 @@ class ReadWriteLockTest {
         }
         start.countDown();
         end.await();
+        executor.shutdown();
     }
 
     /**
