@@ -36,10 +36,6 @@ public class UseDefaultColumnFamily {
         rocksDB.put(key.getBytes(), value.getBytes());
     }
 
-    private void removeData(String key) throws RocksDBException {
-        rocksDB.remove(key.getBytes());
-    }
-
     private void printData(String key) throws RocksDBException {
         byte[] getValue = rocksDB.get(key.getBytes());
         System.out.println(new String(getValue));
@@ -73,8 +69,6 @@ public class UseDefaultColumnFamily {
         putData("SecondKey", "SecondValue");
         printData(new String[]{"Hello", "SecondKey"});
 
-        printAllData();
-        removeData("Hello");
         printAllData();
     }
 
