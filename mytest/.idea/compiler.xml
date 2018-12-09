@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="classCompiler" />
         <module name="concurrent" />
         <module name="gs-spring-boot" />
         <module name="IocAop" />
