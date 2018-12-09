@@ -12,7 +12,7 @@ public class UseVolatile {
 
     public static void main(String[] args) throws InterruptedException {
         final AtomicInteger count = new AtomicInteger(0);
-        ThreadFactory namedThreadFactory = new ThreadFactoryBuilder().setNameFormat("UseCountDownLatch").build();
+        ThreadFactory namedThreadFactory = new ThreadFactoryBuilder().setNameFormat("UseVolatile").build();
         ThreadPoolExecutor executor = new ThreadPoolExecutor(
                 10,
                 10,

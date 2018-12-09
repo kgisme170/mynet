@@ -1,3 +1,9 @@
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
+
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 /**
  * @author liming.glm
@@ -17,14 +23,23 @@ public class UseThreadLocal {
 
     public static void main(String[] args) {
         final int iThread = 5;
+        ThreadFactory namedThreadFactory = new ThreadFactoryBuilder().setNameFormat("UseThreadLocal").build();
+        ThreadPoolExecutor executor = new ThreadPoolExecutor(
+                10,
+                10,
+                100,
+                TimeUnit.SECONDS,
+                new ArrayBlockingQueue<>(1),
+                namedThreadFactory);
+
         for (int i = 0; i < iThread; ++i) {
-            final Thread t = new Thread() {
+            executor.execute(new Runnable() {
                 @Override
                 public void run() {
                     System.out.println(UseThreadLocal.get());
                 }
-            };
-            t.start();
+            });
         }
+        executor.shutdown();
     }
 }
