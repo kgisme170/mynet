@@ -41,7 +41,7 @@ public class UseCustomColumnFamily {
         dbOptions.setCreateIfMissing(true);
         rocksDB = RocksDB.open(dbOptions, path, columnFamilyDescriptors, columnFamilyHandles);
         for (int i = 0; i < columnFamilyDescriptors.size(); i++) {
-            if (new String(columnFamilyDescriptors.get(i).columnFamilyName()).equals(table)) {
+            if (new String(columnFamilyDescriptors.get(i).getName()).equals(table)) {
                 rocksDB.dropColumnFamily(columnFamilyHandles.get(i));
             }
         }
@@ -51,10 +51,6 @@ public class UseCustomColumnFamily {
 
     private void putData(String key, String value) throws RocksDBException {
         rocksDB.put(columnFamilyHandle, key.getBytes(), value.getBytes());
-    }
-
-    private void removeData(String key) throws RocksDBException {
-        rocksDB.remove(key.getBytes());
     }
 
     private void printData(String key) throws RocksDBException {
@@ -97,7 +93,6 @@ public class UseCustomColumnFamily {
         putData("SecondKey", "SecondValue");
 
         printData(new String[]{key, "SecondKey"});
-        removeData(key);
 
         printAllData();
         columnFamilyHandle.close();
