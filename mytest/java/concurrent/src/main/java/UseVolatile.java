@@ -1,46 +1,38 @@
-import java.util.concurrent.CountDownLatch;
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
+
+import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
-class Singleton {
-    private volatile static Singleton instance = null;
-
-    private Singleton() {
-    }
-
-    public static Singleton getInstance() {
-        if (instance == null) {
-            synchronized (Singleton.class) {
-                if (instance == null) {
-                    instance = new Singleton();
-                }
-            }
-        }
-        return instance;
-    }
-    public void print(){System.out.println(Singleton.class.getName());}
-}
 
 /**
  * @author liming.glm
  */
 public class UseVolatile {
-    public static CountDownLatch l = new CountDownLatch(10);
+    final static int I_THREAD = 10;
+    public static CountDownLatch l = new CountDownLatch(I_THREAD);
 
     public static void main(String[] args) throws InterruptedException {
         final AtomicInteger count = new AtomicInteger(0);
-        final int iThread = 10;
-        for (int i = 0; i < iThread; ++i) {
-            new Thread() {
+        ThreadFactory namedThreadFactory = new ThreadFactoryBuilder().setNameFormat("UseCountDownLatch").build();
+        ThreadPoolExecutor executor = new ThreadPoolExecutor(
+                10,
+                10,
+                100,
+                TimeUnit.SECONDS,
+                new ArrayBlockingQueue<>(1),
+                namedThreadFactory);
+        for (int i = 0; i < I_THREAD; ++i) {
+            executor.execute(new Runnable() {
                 @Override
                 public void run() {
-                    for (int c = 0; c < iThread * iThread; ++c) {
-                        count.incrementAndGet();
-                    }
+                    System.out.println("run");
+                    count.incrementAndGet();
+                    System.out.println("end");
                     l.countDown();
                 }
-            }.start();
+            });
         }
         l.await();
+        executor.shutdown();
         System.out.println(count);
-        Singleton.getInstance().print();
     }
 }

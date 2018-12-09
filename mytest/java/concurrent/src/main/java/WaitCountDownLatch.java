@@ -5,6 +5,7 @@ import java.util.concurrent.CountDownLatch;
  */
 public class WaitCountDownLatch {
     public static void main(String[] args) {
+        /*
         CountDownLatch latch = new CountDownLatch(1);
         new Thread(new Runnable() {
             @Override
@@ -25,5 +26,6 @@ public class WaitCountDownLatch {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        */
     }
 }

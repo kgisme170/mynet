@@ -21,18 +21,18 @@ public class UseCountDownLatch {
             @Override
             public void run() {
                 System.out.println("run");
-                latch.countDown();
                 try {
                     Thread.sleep(2000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+                latch.countDown();
                 System.out.println("end");
             }
         });
         try {
             latch.await();
-            System.out.println("Before");
+            System.out.println("After latch await");
             executor.shutdown();
             System.out.println("Main thread quits");
 
