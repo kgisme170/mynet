@@ -26,6 +26,7 @@
         <option value="$PROJECT_DIR$/3p/pom.xml" />
         <option value="$PROJECT_DIR$/java/naming/pom.xml" />
         <option value="$PROJECT_DIR$/java/springIocAop/pom.xml" />
+        <option value="$PROJECT_DIR$/java/useMaven/pom.xml" />
       </set>
     </option>
   </component>

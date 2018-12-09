@@ -1,5 +1,3 @@
-import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
-
 import java.io.*;
 import java.lang.reflect.Constructor;
 
@@ -101,7 +99,7 @@ public class UseSingleton {
         try {
             Constructor ctor = S1.INSTANCE.getClass().getDeclaredConstructor(new Class[0]);
             ctor.setAccessible(true);
-            S1 s1 = (S1)ctor.newInstance();
+            S1 s1 = (S1) ctor.newInstance();
             if (s1 == S1.INSTANCE) {
                 System.out.println("Same");
             } else {
@@ -116,19 +114,19 @@ public class UseSingleton {
         try {
             S3 s3 = S3.getInstance();
             s3.setValue(1);
-            ByteOutputStream bos = new ByteOutputStream();
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
             ObjectOutputStream oos = new ObjectOutputStream(bos);
             oos.writeObject(s3);
-            byte[] b = bos.getBytes();
+            byte[] b = bos.toByteArray();
             s3.setValue(3);
 
-            ByteArrayInputStream bais = new ByteArrayInputStream(b);
-            ObjectInputStream ois = new ObjectInputStream(bais);
-            S3 s31 = (S3)ois.readObject();
+            ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(b);
+            ObjectInputStream ois = new ObjectInputStream(byteArrayInputStream);
+            S3 s31 = (S3) ois.readObject();
             System.out.println(s3.getValue());
             System.out.println(s31.getValue());
             ois.close();
-            bais.close();
+            byteArrayInputStream.close();
             oos.close();
             bos.close();
         } catch (IOException e) {
@@ -141,19 +139,19 @@ public class UseSingleton {
         try {
             S4 s4 = S4.instance;
             s4.setValue(10);
-            ByteOutputStream bos = new ByteOutputStream();
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
             ObjectOutputStream oos = new ObjectOutputStream(bos);
             oos.writeObject(s4);
-            byte[] b = bos.getBytes();
+            byte[] b = bos.toByteArray();
             s4.setValue(20);
 
-            ByteArrayInputStream bais = new ByteArrayInputStream(b);
-            ObjectInputStream ois = new ObjectInputStream(bais);
-            S4 s41 = (S4)ois.readObject();
+            ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(b);
+            ObjectInputStream ois = new ObjectInputStream(byteArrayInputStream);
+            S4 s41 = (S4) ois.readObject();
             System.out.println(s4.getValue());
             System.out.println(s41.getValue());
             ois.close();
-            bais.close();
+            byteArrayInputStream.close();
             oos.close();
             bos.close();
         } catch (IOException e) {

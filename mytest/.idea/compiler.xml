@@ -26,7 +26,6 @@
         <module name="useJetty" />
         <module name="useJunit" />
         <module name="useKafka" />
-        <module name="useMaven" />
         <module name="useMybatis" />
         <module name="useRocksDb" />
         <module name="useSlf4j" />
@@ -34,6 +33,9 @@
         <module name="useXml" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="useMaven" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
