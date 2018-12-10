@@ -5,7 +5,7 @@ import java.util.concurrent.*;
  */
 public class MyThreadFactoryExecutor {
     public static void main(String[] args) {
-        MyThreadFactory threadFactory = new MyThreadFactory("MyThreadFactory");
+        MyThreadFactory threadFactory = new MyThreadFactory("MyThreadFactoryExecutor");
         /**
          * 取代ExecutorService executor = Executors.newCachedThreadPool(threadFactory)
          */
