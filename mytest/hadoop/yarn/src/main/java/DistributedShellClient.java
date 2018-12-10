@@ -19,7 +19,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DistributedShellClient {
-
     private Configuration conf = new YarnConfiguration();
 
     public void run(String[] args) throws YarnException, IOException, InterruptedException {
