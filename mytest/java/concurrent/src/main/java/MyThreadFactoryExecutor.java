@@ -1,6 +1,4 @@
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 /**
  * @author liming.gong
@@ -8,7 +6,16 @@ import java.util.concurrent.TimeUnit;
 public class MyThreadFactoryExecutor {
     public static void main(String[] args) {
         MyThreadFactory threadFactory = new MyThreadFactory("MyThreadFactory");
-        ExecutorService executor = Executors.newCachedThreadPool(threadFactory);
+        /**
+         * 取代ExecutorService executor = Executors.newCachedThreadPool(threadFactory)
+         */
+        ThreadPoolExecutor executor = new ThreadPoolExecutor(
+                2,
+                2,
+                1,
+                TimeUnit.SECONDS,
+                new PriorityBlockingQueue<>(),
+                threadFactory);
         executor.submit(new Runnable() {
             @Override
             public void run() {
