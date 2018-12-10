@@ -109,6 +109,7 @@ public class UseCompiler2 {
         }
 
         // 从编译好的结果中提取Class信息
+        /*
         Map<String, byte[]> byteCodeMap = new HashMap<>(0);
         for (ByteArrayJavaClass cl : classFileObjects) {
             byteCodeMap.put(cl.getName().substring(1), cl.getBytes());
@@ -120,5 +121,6 @@ public class UseCompiler2 {
                 e.printStackTrace();
             }
         }
+        */
     }
 }
