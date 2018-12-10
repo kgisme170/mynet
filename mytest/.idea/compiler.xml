@@ -32,6 +32,7 @@
         <module name="useSlf4j" />
         <module name="useThrift" />
         <module name="useXml" />
+        <module name="yarn" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

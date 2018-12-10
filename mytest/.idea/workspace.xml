@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfc62482-9da0-4e79-ae37-177beef455dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop/yarn/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hadoop/yarn/src/main/java/DistributedShellClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/MyThreadFactoryExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/MyThreadFactoryExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hadoop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/local_test/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -77,6 +79,7 @@
     <ignored path="$PROJECT_DIR$/use3p/useOts/target/" />
     <ignored path="$PROJECT_DIR$/java/useXml/target/" />
     <ignored path="$PROJECT_DIR$/java/classCompiler/target/" />
+    <ignored path="$PROJECT_DIR$/hadoop/yarn/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +192,7 @@
           <entry key="gradle" value="1" />
           <entry key="html" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="551" />
+          <entry key="java" value="557" />
           <entry key="js" value="1" />
           <entry key="json" value="1" />
           <entry key="log" value="1" />
@@ -201,7 +204,7 @@
           <entry key="scala" value="16" />
           <entry key="sh" value="6" />
           <entry key="txt" value="11" />
-          <entry key="xml" value="255" />
+          <entry key="xml" value="258" />
           <entry key="xsl" value="1" />
           <entry key="yaml" value="3" />
         </counts>
@@ -214,7 +217,7 @@
           <entry key="Groovy" value="1" />
           <entry key="HTML" value="1" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="551" />
+          <entry key="JAVA" value="557" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="1" />
           <entry key="Manifest" value="2" />
@@ -223,16 +226,16 @@
           <entry key="Python" value="1" />
           <entry key="Scala" value="16" />
           <entry key="Specification" value="2" />
-          <entry key="XML" value="256" />
+          <entry key="XML" value="259" />
           <entry key="YAML" value="3" />
           <entry key="sbt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="31" />
+          <entry key="project.closed" value="32" />
           <entry key="project.open.time.0" value="6" />
-          <entry key="project.open.time.1" value="14" />
+          <entry key="project.open.time.1" value="15" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
@@ -242,7 +245,7 @@
           <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="33" />
+          <entry key="project.opened" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -253,7 +256,7 @@
           <entry key="cpp" value="48" />
           <entry key="dummy" value="191" />
           <entry key="html" value="50" />
-          <entry key="java" value="35206" />
+          <entry key="java" value="35577" />
           <entry key="js" value="34" />
           <entry key="json" value="83" />
           <entry key="properties" value="111" />
@@ -262,7 +265,7 @@
           <entry key="scala" value="501" />
           <entry key="sh" value="18" />
           <entry key="txt" value="145" />
-          <entry key="xml" value="1305" />
+          <entry key="xml" value="1317" />
           <entry key="xsl" value="3" />
         </counts>
       </usages-collector>
@@ -271,63 +274,38 @@
           <entry key="Bash" value="6" />
           <entry key="C++" value="79" />
           <entry key="HTML" value="50" />
-          <entry key="JAVA" value="35206" />
+          <entry key="JAVA" value="35577" />
           <entry key="JSON" value="83" />
           <entry key="JavaScript" value="34" />
           <entry key="PLAIN_TEXT" value="596" />
           <entry key="Properties" value="111" />
           <entry key="Scala" value="501" />
-          <entry key="XML" value="1308" />
+          <entry key="XML" value="1320" />
           <entry key="sbt" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyThreadFactory.java">
+        <entry file="file://$PROJECT_DIR$/hadoop/yarn/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyPriorityTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#462#463#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyThreadFactoryExecutor.java">
+        <entry file="file://$PROJECT_DIR$/hadoop/yarn/src/main/java/DistributedShellClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+            <state relative-caret-position="265">
+              <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2513#2529#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -345,10 +323,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>testJetty</find>
-      <find>AdditionService</find>
-      <find>dfsio</find>
-      <find>aggregateJava</find>
       <find>mkdir</find>
       <find>repo</find>
       <find>fastjson</find>
@@ -375,6 +349,10 @@
       <find>executor.submit</find>
       <find>new runnable</find>
       <find>threadFactory</find>
+      <find>FutureTask</find>
+      <find>addResult</find>
+      <find>org.apache.hadoop</find>
+      <find>hadoop</find>
     </findStrings>
     <replaceStrings>
       <replace>scala</replace>
@@ -404,10 +382,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hadoop/mr/src/main/java/W1Args.java" />
-        <option value="$PROJECT_DIR$/hadoop/mr/src/main/java/DfsIo.java" />
-        <option value="$PROJECT_DIR$/java/jLang/src/main/java/UseCompiler2.java" />
-        <option value="$PROJECT_DIR$/java/jLang/src/main/java/UseGeneric.java" />
         <option value="$PROJECT_DIR$/spring/gs-spring-boot/src/main/java/hello/Api01.java" />
         <option value="$PROJECT_DIR$/java/concurrent/src/main/java/UseTimerTask.java" />
         <option value="$PROJECT_DIR$/java/concurrent/src/main/java/UseCompletion.java" />
@@ -455,6 +429,10 @@
         <option value="$PROJECT_DIR$/java/concurrent/src/main/java/MyExecutor.java" />
         <option value="$PROJECT_DIR$/java/concurrent/src/main/java/MyPriorityTask.java" />
         <option value="$PROJECT_DIR$/java/concurrent/src/main/java/MyThreadFactoryExecutor.java" />
+        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/MyScheduledThreadPoolExecutor.java" />
+        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/MyWorkerThreadFactory.java" />
+        <option value="$PROJECT_DIR$/hadoop/yarn/pom.xml" />
+        <option value="$PROJECT_DIR$/hadoop/yarn/src/main/java/DistributedShellClient.java" />
       </list>
     </option>
   </component>
@@ -477,9 +455,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1747" />
-    <option name="y" value="-24" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1998" />
+    <option name="y" value="-81" />
     <option name="width" value="1368" />
     <option name="height" value="877" />
   </component>
@@ -505,7 +483,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -517,107 +494,45 @@
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="classCompiler" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="mr" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="classCompiler" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="yarn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="yarn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="classCompiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="classCompiler" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="hadoop" type="462c0819:PsiDirectoryNode" />
+              <item name="yarn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="MyThreadFactory.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jLang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jLang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jLang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jLang" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="spark_remote" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
@@ -628,6 +543,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -662,7 +578,7 @@
     <property name="SearchEverywhereHistoryKey" value="insertUser&#9;PSI&#9;JAVA://my.service.UserService#insertUser&#10;System.getProperty&#9;ACTION&#9;null&#10;testf&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;fast&#9;FILE&#9;file:///Users/x/odps_src_local/learn/mynet/mytest/java/java_local/src/main/java/testFastJson.java&#10;Class.forName&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544410352570" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544430672237" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
@@ -698,7 +614,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyThreadFactoryExecutor">
+  <component name="RunManager" selected="Application.MyWorkerThreadFactory">
     <configuration default="true" type="tests" factoryName="Unittests">
       <module name="jLang" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -720,8 +636,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyThreadFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyThreadFactory" />
+    <configuration name="MyScheduledThreadPoolExecutor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyScheduledThreadPoolExecutor" />
       <module name="concurrent" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -729,6 +645,13 @@
     </configuration>
     <configuration name="MyThreadFactoryExecutor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyThreadFactoryExecutor" />
+      <module name="concurrent" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyWorkerThreadFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyWorkerThreadFactory" />
       <module name="concurrent" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -744,13 +667,6 @@
     <configuration name="UseDerby" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UseDerby" />
       <module name="useDb" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UseSingleton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UseSingleton" />
-      <module name="jLang" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -785,19 +701,19 @@
     <list>
       <item itemvalue="Application.UseDerby" />
       <item itemvalue="Maven.prd" />
-      <item itemvalue="Application.UseSingleton" />
-      <item itemvalue="Application.MyThreadFactory" />
       <item itemvalue="Application.SleepTwoSecondsTask" />
       <item itemvalue="Application.MyPriorityTask" />
       <item itemvalue="Application.MyThreadFactoryExecutor" />
+      <item itemvalue="Application.MyScheduledThreadPoolExecutor" />
+      <item itemvalue="Application.MyWorkerThreadFactory" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyWorkerThreadFactory" />
+        <item itemvalue="Application.MyScheduledThreadPoolExecutor" />
         <item itemvalue="Application.MyThreadFactoryExecutor" />
         <item itemvalue="Application.MyPriorityTask" />
         <item itemvalue="Application.SleepTwoSecondsTask" />
-        <item itemvalue="Application.MyThreadFactory" />
-        <item itemvalue="Application.UseSingleton" />
       </list>
     </recent_temporary>
   </component>
@@ -820,27 +736,6 @@
       <updated>1534638569943</updated>
       <workItem from="1542379895697" duration="152000" />
       <workItem from="1542380053825" duration="2786000" />
-    </task>
-    <task id="LOCAL-00265" summary="java">
-      <created>1543659833203</created>
-      <option name="number" value="00265" />
-      <option name="presentableId" value="LOCAL-00265" />
-      <option name="project" value="LOCAL" />
-      <updated>1543659833203</updated>
-    </task>
-    <task id="LOCAL-00266" summary="java">
-      <created>1543673309735</created>
-      <option name="number" value="00266" />
-      <option name="presentableId" value="LOCAL-00266" />
-      <option name="project" value="LOCAL" />
-      <updated>1543673309735</updated>
-    </task>
-    <task id="LOCAL-00267" summary="java">
-      <created>1543694340184</created>
-      <option name="number" value="00267" />
-      <option name="presentableId" value="LOCAL-00267" />
-      <option name="project" value="LOCAL" />
-      <updated>1543694340184</updated>
     </task>
     <task id="LOCAL-00268" summary="java">
       <created>1543830691706</created>
@@ -1164,7 +1059,28 @@
       <option name="project" value="LOCAL" />
       <updated>1544370301108</updated>
     </task>
-    <option name="localTasksCounter" value="314" />
+    <task id="LOCAL-00314" summary="java">
+      <created>1544410371960</created>
+      <option name="number" value="00314" />
+      <option name="presentableId" value="LOCAL-00314" />
+      <option name="project" value="LOCAL" />
+      <updated>1544410371960</updated>
+    </task>
+    <task id="LOCAL-00315" summary="java">
+      <created>1544412682199</created>
+      <option name="number" value="00315" />
+      <option name="presentableId" value="LOCAL-00315" />
+      <option name="project" value="LOCAL" />
+      <updated>1544412682199</updated>
+    </task>
+    <task id="LOCAL-00316" summary="java">
+      <created>1544414478558</created>
+      <option name="number" value="00316" />
+      <option name="presentableId" value="LOCAL-00316" />
+      <option name="project" value="LOCAL" />
+      <updated>1544414478559</updated>
+    </task>
+    <option name="localTasksCounter" value="317" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1212,10 +1128,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1747" y="-24" width="1368" height="877" extended-state="0" />
+    <frame x="1440" y="-114" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23906486" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20926517" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1223,10 +1139,10 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Inspection Results" order="0" visible="true" weight="0.29044586" />
+      <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.29740933" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32738853" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.561086" weight="0.3057325" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.561086" weight="0.30051813" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1234,7 +1150,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5344436" side_tool="true" weight="0.30318472" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.442492" weight="0.30828026" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.6666667" weight="0.2624204" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.46555638" weight="0.2700637" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.46555638" visible="true" weight="0.21968912" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1244,7 +1160,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.12895928" />
+      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.09105431" />
       <window_info anchor="right" id="Database" order="8" />
     </layout>
   </component>
@@ -1298,61 +1214,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseSingleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="154" column="24" selection-start-line="154" selection-start-column="24" selection-end-line="154" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/jLang/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring/gs-spring-boot/mvnw">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="229" column="15" selection-start-line="229" selection-start-column="15" selection-end-line="229" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/concurrent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useXml/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useThrift/src/main/java/MyServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding>
-            <element signature="e#452#476#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/use3p/useThrift/src/main/java/AdditionClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1454,13 +1315,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseScript.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseScript.java" />
     <entry file="file://$PROJECT_DIR$/java/classCompiler/src/main/java/UseClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -1569,11 +1424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop/mr/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1078" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring/IocAop/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-39">
@@ -1612,16 +1462,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyThread.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyTask.java" />
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyThread.java" />
     <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseThreadPool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
@@ -1647,26 +1489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyThreadFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1701,18 +1523,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyPriorityTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseCountDownLatch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1723,10 +1533,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyScheduledThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1605#1606#0" expanded="true" />
+            <element signature="e#1645#1646#0" expanded="true" />
+            <element signature="e#1748#1749#0" expanded="true" />
+            <element signature="e#1788#1789#0" expanded="true" />
+            <element signature="e#1833#1834#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
+            <element signature="e#2913#2914#0" expanded="true" />
+            <element signature="e#2956#2957#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyThreadFactoryExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        <state relative-caret-position="105">
+          <caret line="7" column="84" selection-start-line="7" selection-start-column="84" selection-end-line="7" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyPriorityTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyThreadFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/ForkJoinTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="998" column="19" selection-start-line="998" selection-start-column="19" selection-end-line="998" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyWorkerThreadFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="60" column="11" lean-forward="true" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
+          <folding>
+            <element signature="e#391#392#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#1233#1234#0" expanded="true" />
+            <element signature="e#1288#1289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop/mr/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="21" selection-start-line="15" selection-start-column="8" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark/spark_remote/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark/spark_remote/src/main/java/Counter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop/yarn/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop/yarn/src/main/java/DistributedShellClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2513#2529#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
