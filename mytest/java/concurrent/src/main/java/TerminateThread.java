@@ -10,8 +10,23 @@ class ThreadFlag extends Thread {
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
+                if (Thread.interrupted()) {
+                    System.out.println("中断");
+                }
                 e.printStackTrace();
                 flag = true;
+            }
+        }
+    }
+}
+
+class ThreadInfinite extends Thread {
+    @Override
+    public void run() {
+        while (true) {
+            if (Thread.interrupted()) {
+                System.out.println("检查到中断");
+                break;
             }
         }
     }
@@ -35,5 +50,10 @@ public class TerminateThread {
         t2.start();
         t2.interrupt();
         t2.join();
+        Thread.sleep(500);
+        System.out.println("------------------");
+        ThreadInfinite loop = new ThreadInfinite();
+        loop.start();
+        loop.interrupt();
     }
 }
