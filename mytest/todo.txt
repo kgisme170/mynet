@@ -12,3 +12,5 @@ spark-submit --driver-class-path /home/a/.m2/repository/mysql/mysql-connector-ja
 
 4. useKafka
 5. dubbo
+
+java可变参
