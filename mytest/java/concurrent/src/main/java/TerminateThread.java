@@ -1,0 +1,39 @@
+import java.util.concurrent.ThreadFactory;
+
+class ThreadFlag extends Thread {
+    public volatile boolean flag = false;
+
+    @Override
+    public void run() {
+        while (!flag) {
+            System.out.println("running");
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+                flag = true;
+            }
+        }
+    }
+}
+/**
+ * @author liming.gong
+ */
+public class TerminateThread {
+    public static void main(String[] args) throws Exception {
+        ThreadFlag t = new ThreadFlag();
+        t.start();
+        try {
+            Thread.sleep(2000);
+            t.flag = true;
+            t.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        ThreadFlag t2 = new ThreadFlag();
+        t2.start();
+        t2.interrupt();
+        t2.join();
+    }
+}
