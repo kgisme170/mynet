@@ -13,6 +13,7 @@
         <module name="jLang" />
         <module name="mr" />
         <module name="scalaLang" />
+        <module name="security" />
         <module name="serialize" />
         <module name="spark_remote" />
         <module name="springDb" />
