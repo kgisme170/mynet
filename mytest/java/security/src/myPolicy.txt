@@ -1,3 +1,3 @@
-grant codeBase "file:D:\Documents\myproject\mynet\mytest\java\security\target\classes*" {
+grant codeBase "file:D:/Documents/myproject/mynet/mytest/java/security/target/classes*" {
     permission java.io.FilePermission "testPolicy.txt", "read,write";
 };
