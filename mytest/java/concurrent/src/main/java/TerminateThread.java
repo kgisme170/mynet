@@ -1,4 +1,4 @@
-import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.*;
 
 class ThreadFlag extends Thread {
     public volatile boolean flag = false;
@@ -31,6 +31,23 @@ class ThreadInfinite extends Thread {
         }
     }
 }
+
+class MyThread2 implements Runnable{
+    @Override
+    public void run() {
+        while (true) {
+            try {
+                if (Thread.interrupted()) {
+                    System.out.println("终止");
+                    throw new InterruptedException();
+                }
+            } catch (InterruptedException e) {
+                return;
+            }
+        }
+    }
+}
+
 /**
  * @author liming.gong
  */
@@ -55,5 +72,21 @@ public class TerminateThread {
         ThreadInfinite loop = new ThreadInfinite();
         loop.start();
         loop.interrupt();
+
+        MyThreadFactory threadFactory = new MyThreadFactory("MyThreadFactoryExecutor");
+        /**
+         * 取代ExecutorService executor = Executors.newCachedThreadPool(threadFactory)
+         */
+        ThreadPoolExecutor executor = new ThreadPoolExecutor(
+                2,
+                2,
+                1,
+                TimeUnit.SECONDS,
+                new PriorityBlockingQueue<>(),
+                threadFactory);
+        executor.submit(new MyThread2());
+        executor.submit(new MyThread2());
+        executor.submit(new MyThread2());
+        executor.shutdownNow();
     }
 }
