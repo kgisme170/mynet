@@ -6,7 +6,7 @@ public class TestPolicy {
         FileWriter writer;
         try {
             writer = new FileWriter("testPolicy.txt");
-            writer.write("hello1");
+            writer.write("hello");
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
