@@ -143,7 +143,10 @@ public class CoreJava {
         );
         stringPeopleMap.forEach((k, v) -> System.out.println(k));
         System.out.println(stringPeopleMap.getClass());
+        f3();
+    }
 
+    static void f3() {
         String[] init = {"One", "Two", "Three", "One", "Two", "Three"};
         List list1 = new ArrayList(Arrays.asList(init));
         list1.removeAll(Collections.singleton("One"));

@@ -18,6 +18,9 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * @author liming.gong
+ */
 public class DistributedShellClient {
     private Configuration conf = new YarnConfiguration();
 

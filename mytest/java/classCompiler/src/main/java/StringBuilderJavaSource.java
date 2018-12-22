@@ -32,10 +32,10 @@ class StringBuilderJavaSource extends SimpleJavaFileObject {
         JavaFileManager fileManager = compiler.getStandardFileManager(diagnosticCollector, null, null);
 
         // 返回FileObject给compiler用，只一个
-        StringBuilderJavaSource source = new StringBuilderJavaSource("myFirstClass");
+        StringBuilderJavaSource source = new StringBuilderJavaSource("MyFirstClass");
         source.append("package x;");
-        source.append("public class myFirstClass {");
-        source.append("    public void f(){System.out.println(\"myFirstClass.f()\");}");
+        source.append("public class MyFirstClass {");
+        source.append("    public void f(){System.out.println(\"MyFirstClass.f()\");}");
         source.append("}");
         JavaCompiler.CompilationTask task = compiler.getTask(null, fileManager, diagnosticCollector,
                 null, null, Arrays.asList(source));
