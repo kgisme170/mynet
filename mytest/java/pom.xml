@@ -16,6 +16,7 @@
         <module>useXml</module>
         <module>classCompiler</module>
         <module>security</module>
+        <module>network</module>
     </modules>
     <build>
         <plugins>
