@@ -12,3 +12,25 @@ spark-submit --driver-class-path /home/a/.m2/repository/mysql/mysql-connector-ja
 
 4. useKafka
 5. dubbo
+
+---------------
+question
+
+Why java has "List.toArray()" but not "Array.toList()"?
+
+Array doesn't have a "toList" function, while we need "Arrays.asList" helper functions to do the conversion?
+
+This is quite odd: in OOP, List has its own function to convert to Array, but Array needs some helper functions to convert to List: why not let Arrays has a "toList" function, and what's the reason behind this java design?
+
+Thanks a lot.
+
+----------------
+java stream.peek() doesn't return any elements?
+
+I just tried this:
+
+    Stream sf1 = Stream.of("a1", "b1").flatMap(str->Arrays.stream(str.split("")));
+    //System.out.println(sf1.count()); --->will print "4"
+    sf1.peek(str -> System.out.println(str));
+
+Nothing is being output, why?
