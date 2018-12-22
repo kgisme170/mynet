@@ -117,3 +117,6 @@ This time, not "filter()" call, but still throws out the same exception.
 Where this exception came from, and how to fix it?
 
 Thanks a lot.
+
+---------------------
+If we use Fork/join framework, when to call "ThreadLocal.remove()" function?
