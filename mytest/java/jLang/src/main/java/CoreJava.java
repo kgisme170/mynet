@@ -166,8 +166,10 @@ public class CoreJava {
 
         Arrays.stream(init).reduce((x, y) -> x + y);
         IntStream zeroToHundred = IntStream.rangeClosed(0, 100);
-        Stream<Integer> si = zeroToHundred.boxed(); // low efficiency
+        //Stream<Integer> si = zeroToHundred.boxed(); // low efficiency
         String sentence1 = "\uD835\uDD46abc";
         sentence1.codePoints().forEach(System.out::println);
+        System.out.println("-------------");
+        zeroToHundred.mapToObj(c->String.format("->%X", c)).forEach(System.out::println);
     }
 }
