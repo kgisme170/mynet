@@ -11,7 +11,10 @@ import java.net.URI;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class UseXPath {
+/**
+ * @author liming.gong
+ */
+public class UsePath {
     public static void main(String[] args) {
         String currentPath = Thread.currentThread().
                 getContextClassLoader().getResource("").toString();
