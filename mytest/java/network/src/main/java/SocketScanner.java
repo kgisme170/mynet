@@ -16,6 +16,7 @@ public class SocketScanner {
             }
             byte[] addressBytes = InetAddress.getByName(host).getAddress();
             System.out.println(addressBytes);
+            System.out.println(InetAddress.getLocalHost());
         } catch (Exception e) {
             e.printStackTrace();
         }
