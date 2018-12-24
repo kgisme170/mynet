@@ -1,3 +1,6 @@
-public class myFirstClass {
-    public void f(){System.out.println("myFirstClass.f()");}
+/**
+ * @author liming.gong
+ */
+public class MyFirstClass {
+    public void f(){System.out.println("f()");}
 }
