@@ -1,6 +1,5 @@
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 
-import java.util.Collection;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
 /**
