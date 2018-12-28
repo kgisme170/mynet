@@ -1,3 +1,4 @@
+package pkg;
 import javax.jws.WebParam;
 import javax.jws.WebService;
 import javax.xml.ws.Endpoint;
@@ -5,12 +6,12 @@ import java.util.Date;
 
 @WebService
 interface IService {
-    void hello(@WebParam(name="username") String username);
+    void hello(String username);
 }
 
-@WebService(targetNamespace = "ServiceImpl", endpointInterface="IService")
+@WebService(targetNamespace = "ServiceImpl", endpointInterface="pkg.IService")
 class ServiceImp implements IService{
-    @Override
+
     public void hello(@WebParam(name = "username") String username) {
         System.out.println("hello " + username + " now is " + new Date());
     }
