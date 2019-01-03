@@ -7,6 +7,7 @@ import java.util.Date;
  * @author liming.gong
  */
 @WebService(endpointInterface="pkg.IService")
+
 public class ServiceImpl implements IService{
     @Override
     public String hello(@WebParam(name = "username") String username) {

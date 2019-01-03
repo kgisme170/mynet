@@ -1,10 +1,8 @@
 package pkg;
 import javax.jws.WebService;
-import javax.jws.soap.SOAPBinding;
 import javax.xml.ws.Endpoint;
 
 @WebService
-@SOAPBinding(style = SOAPBinding.Style.RPC)
 interface IService {
     /**
      * hello + [username]

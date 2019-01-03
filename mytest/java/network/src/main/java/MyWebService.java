@@ -1,8 +1,5 @@
 import javax.jws.WebService;
 import javax.xml.ws.Endpoint;
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * @author liming.gong
  */
@@ -17,7 +14,7 @@ public class MyWebService {
     }
 
     public static void main(String[] args) {
-        Endpoint.publish("http://localhost:8099/service/function", new MyWebService());
-        System.out.println("OK");
+        Endpoint endpoint = Endpoint.publish("http://localhost:8099/service/function", new MyWebService());
+        System.out.println(endpoint.isPublished());
     }
 }
