@@ -1,10 +1,14 @@
+package pkg;
+
 import javax.jws.WebService;
 import javax.xml.ws.Endpoint;
+
 /**
  * @author liming.gong
  */
-@WebService(targetNamespace = "MyWebService")
-public class MyWebService {
+@WebService(endpointInterface = "pkg.IWebService")
+public class MyWebService implements IWebService {
+    @Override
     public String transWords(String words) {
         String res = "";
         for (char ch : words.toCharArray()) {
