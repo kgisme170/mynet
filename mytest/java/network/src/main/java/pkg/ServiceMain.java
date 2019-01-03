@@ -1,26 +1,20 @@
 package pkg;
 import javax.jws.WebParam;
 import javax.jws.WebService;
+import javax.jws.soap.SOAPBinding;
 import javax.xml.ws.Endpoint;
 import java.util.Date;
 
 @WebService
+@SOAPBinding(style = SOAPBinding.Style.RPC)
 interface IService {
-    void hello(String username);
-}
-
-@WebService(targetNamespace = "ServiceImpl", endpointInterface="pkg.IService")
-class ServiceImp implements IService{
-
-    public void hello(@WebParam(name = "username") String username) {
-        System.out.println("hello " + username + " now is " + new Date());
-    }
+    String hello(String username);
 }
 
 public class ServiceMain {
     public static void main(String[] args) {
         String address = "http://localhost:7777/myService";
-        Endpoint.publish(address, new ServiceImp());
-        System.out.println("OK");
+        Endpoint endpoint = Endpoint.publish(address, new ServiceImp());
+        System.out.println(endpoint.isPublished());
     }
 }
