@@ -6,6 +6,7 @@ import javax.jws.soap.SOAPBinding.Style;
 import javax.xml.ws.Endpoint;
 /**
  * @author liming.gong
+ * 有了@SOAPBinding字段以后，会发布?wsdl页面；否则没有
  */
 @WebService(endpointInterface = "pkg.ICalWebservice")
 @SOAPBinding(style=Style.RPC)
