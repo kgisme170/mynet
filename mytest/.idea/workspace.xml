@@ -5,50 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf0b9541-d6e2-4636-85bb-6680ae0aa118" name="Default Changelist" comment="Java">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/smartfox_info.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/classCompiler/src/main/java/MyFirstClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseFileLock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/jLang/src/main/java/CoreJava.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/network/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/network/src/main/java/EchoServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/network/src/main/java/SocketScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/network/src/main/java/UseUrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/useXml/src/main/java/UsePath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/useXml/src/main/java/XmlValidation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/useXml/src/main/resources/Employee.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/useXml/src/main/resources/EmployeeRequest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/useXml/src/main/resources/EmployeeResponse.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/useXml/src/main/resources/employee.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/hydra.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/derby_driver.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/fscontext_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_51.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_52.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_53.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_54.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_55.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/slf4j_simple_1_8_0_beta2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mytest.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/thriftCompiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/smartfox_info.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hadoop/yarn/src/main/java/DistributedShellClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/yarn/src/main/java/DistributedShellClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/classCompiler/src/main/java/StringBuilderJavaSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/classCompiler/src/main/java/StringBuilderJavaSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/classCompiler/src/main/java/myFirstClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/classCompiler/src/main/java/useResourceStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/classCompiler/src/main/java/UseResourceStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/concurrent/src/main/java/LockDowngrade.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/LockDowngrade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/security/src/main/java/TestPolicy.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/security/src/main/java/TestPolicy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/useXml/src/main/resources/book.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java/useXml/src/main/resources/book.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytest.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/network/src/main/java/EchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/network/src/main/java/EchoServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/network/src/main/java/PhoneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/network/src/main/java/PhoneService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/network/src/main/java/pkg/CalClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/network/src/main/java/pkg/CalClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/network/src/main/java/pkg/CalWebservice.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/network/src/main/java/pkg/CalWebservice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/network/src/main/java/pkg/ICalWebservice.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/network/src/main/java/pkg/ICalWebservice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceMain.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/use3p/useMybatis/target/" />
     <ignored path="$PROJECT_DIR$/spark/spark_remote/target/" />
@@ -90,13 +57,158 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-451817951">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="java" value="22" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="22" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="4" />
+          <entry key="java" value="1464" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1464" />
+          <entry key="PLAIN_TEXT" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/java/security/src/main/java/TestPrincipal.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/network/src/main/java/MyWebService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="19" column="64" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="14" />
+              <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="14" />
+              <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/CalClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/CalWebservice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/network/src/main/java/EchoServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/network/src/main/java/PhoneService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#241#242#0" expanded="true" />
+                <element signature="e#268#269#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/ICalWebservice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,6 +246,9 @@
       <find>myFirstClass</find>
       <find>ThreadLocal</find>
       <find>ThreadPoolExecutor executor</find>
+      <find>publish</find>
+      <find>targetNamespace</find>
+      <find>setOwner</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,6 +281,19 @@
         <option value="$PROJECT_DIR$/java/useXml/src/main/resources/EmployeeResponse.xml" />
         <option value="$PROJECT_DIR$/java/useXml/src/main/resources/employee.xml" />
         <option value="$PROJECT_DIR$/java/useXml/src/main/java/XmlValidation.java" />
+        <option value="$PROJECT_DIR$/java/network/src/main/java/WebService.java" />
+        <option value="$PROJECT_DIR$/java/network/src/main/java/MyWebService.java" />
+        <option value="$PROJECT_DIR$/java/network/src/main/java/ServiceMain.java" />
+        <option value="$PROJECT_DIR$/java/network/src/main/java/CalWebservice.java" />
+        <option value="$PROJECT_DIR$/java/network/src/main/java/EchoServer.java" />
+        <option value="$PROJECT_DIR$/java/network/src/main/java/pkg/ICalWebservice.java" />
+        <option value="$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceMain.java" />
+        <option value="$PROJECT_DIR$/java/network/src/main/java/pkg/CalClient.java" />
+        <option value="$PROJECT_DIR$/java/network/src/main/java/pkg/CalWebservice.java" />
+        <option value="$PROJECT_DIR$/java/network/src/main/java/PhoneService.java" />
+        <option value="$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceClient.java" />
+        <option value="$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceImp.java" />
+        <option value="$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -178,20 +306,15 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="serialize" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="48" />
-    <option name="width" value="1400" />
-    <option name="height" value="870" />
+    <option name="x" value="1446" />
+    <option name="y" value="-112" />
+    <option name="width" value="1908" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -201,7 +324,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope">
         <subPane subId="Project Files">
@@ -257,6 +379,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,41 +396,20 @@
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -315,7 +417,7 @@
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -324,25 +426,35 @@
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="pkg" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
@@ -356,7 +468,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545490764412" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546517880907" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -371,56 +483,80 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.XmlValidation">
-    <configuration name="CoreJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CoreJava" />
-      <module name="jLang" />
+  <component name="RunManager" selected="Application.ServiceClient">
+    <configuration name="CalClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pkg.CalClient" />
+      <module name="network" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pkg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UseFileLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UseFileLock" />
-      <module name="concurrent" />
+    <configuration name="CalWebservice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pkg.CalWebservice" />
+      <module name="network" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pkg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsePath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UsePath" />
-      <module name="useXml" />
+    <configuration name="PublishCalc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pkg.PublishCalc" />
+      <module name="network" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pkg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XmlValidation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="XmlValidation" />
-      <module name="useXml" />
+    <configuration name="ServiceClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pkg.ServiceClient" />
+      <module name="network" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pkg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="coreJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="coreJava" />
-      <module name="jLang" />
+    <configuration name="ServiceMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pkg.ServiceMain" />
+      <module name="network" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CoreJava" />
-      <item itemvalue="Application.UseFileLock" />
-      <item itemvalue="Application.UsePath" />
-      <item itemvalue="Application.XmlValidation" />
-      <item itemvalue="Application.coreJava" />
+      <item itemvalue="Application.ServiceMain" />
+      <item itemvalue="Application.PublishCalc" />
+      <item itemvalue="Application.CalWebservice" />
+      <item itemvalue="Application.CalClient" />
+      <item itemvalue="Application.ServiceClient" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.XmlValidation" />
-        <item itemvalue="Application.CoreJava" />
-        <item itemvalue="Application.UsePath" />
-        <item itemvalue="Application.UseFileLock" />
-        <item itemvalue="Application.coreJava" />
+        <item itemvalue="Application.ServiceClient" />
+        <item itemvalue="Application.ServiceMain" />
+        <item itemvalue="Application.CalClient" />
+        <item itemvalue="Application.CalWebservice" />
+        <item itemvalue="Application.PublishCalc" />
       </list>
     </recent_temporary>
   </component>
@@ -498,7 +634,49 @@
       <option name="project" value="LOCAL" />
       <updated>1545484681029</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Java">
+      <created>1545624647740</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545624647740</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Java">
+      <created>1545710899744</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1545710899744</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Java">
+      <created>1545922733996</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1545922733996</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Java">
+      <created>1545967295853</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1545967295853</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Java">
+      <created>1546516360815</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1546516360815</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Java">
+      <created>1546517545200</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1546517545200</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -511,9 +689,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1664" y="-27" width="1363" height="877" extended-state="0" />
+    <frame x="1440" y="-114" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25813776" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18956336" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -522,16 +701,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32898173" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2545692" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30362695" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32898173" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32898173" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32866243" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32866243" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.17707007" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32898173" />
-      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32898173" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.1761658" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3284974" />
+      <window_info active="true" anchor="bottom" id="Inspection Results" order="11" visible="true" weight="0.3284974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -540,6 +719,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -573,9 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="65" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -606,13 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-175">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/classCompiler/src/main/java/MyFirstClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -655,9 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-741">
           <caret line="120" column="8" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -700,16 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="26" column="35" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -752,6 +909,119 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/classCompiler/src/main/java/myFirstClass.java" />
+    <entry file="file://$PROJECT_DIR$/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/MyWebService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="19" column="64" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/javax/xml/namespace/QName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar!/com/sun/xml/internal/ws/client/WSServiceDelegate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="373" column="5" lean-forward="true" selection-start-line="373" selection-start-column="5" selection-end-line="373" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/EchoServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/ICalWebservice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" selection-start-line="18" selection-end-line="18" selection-end-column="14" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="14" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/CalClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/CalWebservice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/PhoneService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

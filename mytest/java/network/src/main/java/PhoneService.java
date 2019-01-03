@@ -20,7 +20,9 @@ class Phone {
         this.owner = owner;
     }
 }
-
+/**
+ * @author liming.gong
+ */
 @WebService(serviceName="PhoneManager", targetNamespace="http://dd.ws.it.cn")
 public class PhoneService {
     @WebMethod(operationName = "getMObileInfo")

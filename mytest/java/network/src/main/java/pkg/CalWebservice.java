@@ -4,7 +4,9 @@ import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 import javax.jws.soap.SOAPBinding.Style;
 import javax.xml.ws.Endpoint;
-
+/**
+ * @author liming.gong
+ */
 @WebService(endpointInterface = "pkg.ICalWebservice")
 @SOAPBinding(style=Style.RPC)
 public class CalWebservice implements ICalWebservice {

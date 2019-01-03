@@ -6,5 +6,11 @@ import javax.jws.soap.SOAPBinding;
 @WebService
 @SOAPBinding(style= SOAPBinding.Style.RPC)
 interface ICalWebservice {
+    /**
+     * 加法
+     * @param x
+     * @param y
+     * @return
+     */
     public int add(int x, int y);
 }
