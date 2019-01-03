@@ -5,6 +5,9 @@ import javax.xml.ws.Service;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+/**
+ * @author liming.gong
+ */
 public class MyWebClient {
     public static void main(String[] args) throws MalformedURLException {
         URL url = new URL("http://localhost:8099/service/function?wsdl");
