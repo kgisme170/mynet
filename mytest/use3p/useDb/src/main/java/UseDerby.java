@@ -1,6 +1,8 @@
 import com.sun.rowset.CachedRowSetImpl;
+import com.sun.rowset.JdbcRowSetImpl;
 
 import javax.sql.rowset.CachedRowSet;
+import javax.sql.rowset.JdbcRowSet;
 import javax.sql.rowset.RowSetFactory;
 import javax.sql.rowset.RowSetProvider;
 import javax.sql.rowset.spi.SyncProviderException;
@@ -143,22 +145,45 @@ class ConnectDerby {
             e.printStackTrace();
         }
     }
-}
 
+    public void f() {
+        try {
+
+            JdbcRowSet jdbcRS = new JdbcRowSetImpl(connection);
+            System.out.println(jdbcRS);
+            jdbcRS.setType(ResultSet.TYPE_SCROLL_INSENSITIVE);
+            String sql = "SELECT * FROM t";
+            jdbcRS.setCommand(sql);
+            jdbcRS.execute();
+            //jdbcRS.addRowSetListener(new ExampleListener());
+            while (jdbcRS.next()) {
+                // each call to next, generates a cursorMoved event
+                System.out.println("name = " + jdbcRS.getString(1));
+                System.out.println("age = " + jdbcRS.getInt(2));
+            }
+            jdbcRS.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
 /**
  * @author liming.gong
  */
 
 public class UseDerby {
     public static void main(String[] args) {
-        ConnectDerby connectDerby = new ConnectDerby();
-        connectDerby.init();
-        /**
-         * 第一个test connectDerby.iterateCachedRs
-         * 第一个test connectDerby.destroy
-         */
-
-        connectDerby.testUpdate();
-        connectDerby.destroy();
+        if (args.length > 1) {
+            ConnectDerby connectDerby = new ConnectDerby();
+            connectDerby.init();
+            connectDerby.iterateCachedRs();
+            connectDerby.testUpdate();
+            connectDerby.destroy();
+        } else {
+            ConnectDerby connectDerby = new ConnectDerby();
+            connectDerby.init();
+            connectDerby.f();
+            connectDerby.destroy();
+        }
     }
 }
