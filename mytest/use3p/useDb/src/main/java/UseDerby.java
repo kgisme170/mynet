@@ -155,18 +155,17 @@ class ConnectDerby {
             String sql = "SELECT * FROM t";
             jdbcRS.setCommand(sql);
             jdbcRS.execute();
-            //jdbcRS.addRowSetListener(new ExampleListener());
             while (jdbcRS.next()) {
                 // each call to next, generates a cursorMoved event
                 System.out.println("name = " + jdbcRS.getString(1));
                 System.out.println("age = " + jdbcRS.getInt(2));
             }
-            jdbcRS.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 }
+
 /**
  * @author liming.gong
  */
