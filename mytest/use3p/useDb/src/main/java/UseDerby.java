@@ -3,6 +3,7 @@ import com.sun.rowset.CachedRowSetImpl;
 import javax.sql.rowset.CachedRowSet;
 import javax.sql.rowset.RowSetFactory;
 import javax.sql.rowset.RowSetProvider;
+import javax.sql.rowset.spi.SyncProviderException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -43,13 +44,26 @@ class ConnectDerby {
     public void iterateCachedRs() {
         try {
             // CachedRowSetImpl rowSet = new CachedRowSetImpl();
-            factory = RowSetProvider.newFactory();
+            // 用factory的方式比上面一句更好
             CachedRowSet rowSet = factory.createCachedRowSet();
             rowSet.populate(resultSet);
             System.out.println("----------------");
+
             while (rowSet.next()) {
                 System.out.println("id:" + rowSet.getString(1));
             }
+
+            System.out.println("----------------");
+
+            rowSet.absolute(2);
+            rowSet.updateString("name", "王二");
+            System.out.println(rowSet.getString(1));
+            rowSet.updateRow();
+            rowSet.moveToInsertRow();
+
+            rowSet.updateString("name", "麻子");
+            rowSet.updateInt("age", 33);
+            rowSet.insertRow();
             System.out.println("----------------");
         } catch (Exception e) {
             e.printStackTrace();
@@ -99,6 +113,36 @@ class ConnectDerby {
             e.printStackTrace();
         }
     }
+
+    public void testUpdate() {
+        try {
+            CachedRowSet rowSet = factory.createCachedRowSet();
+            //rowSet.setTableName("myTable");
+            rowSet.populate(resultSet);
+
+            if (!rowSet.absolute(1)) {
+                return;
+            }
+
+            // rowSet.deleteRow()
+            rowSet.updateString("name", "王二");
+            rowSet.updateRow();
+            try {
+                rowSet.acceptChanges(connection);
+            } catch (SyncProviderException ex) {
+                System.out.println("Error commiting changes to the database: " + ex);
+            }
+
+            while (rowSet.next()) {
+                System.out.println("id:" + rowSet.getString(1));
+            }
+
+            iterateRs();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
 
 /**
@@ -109,7 +153,12 @@ public class UseDerby {
     public static void main(String[] args) {
         ConnectDerby connectDerby = new ConnectDerby();
         connectDerby.init();
-        connectDerby.iterateCachedRs();
+        /**
+         * 第一个test connectDerby.iterateCachedRs
+         * 第一个test connectDerby.destroy
+         */
+
+        connectDerby.testUpdate();
         connectDerby.destroy();
     }
 }
