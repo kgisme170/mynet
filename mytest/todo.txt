@@ -16,3 +16,4 @@ spark-submit --driver-class-path /home/a/.m2/repository/mysql/mysql-connector-ja
 If we use Fork/join framework, when to call "ThreadLocal.remove()" function?
 
 ---------------------
+unicode/encode/decode/char/CharSequence
