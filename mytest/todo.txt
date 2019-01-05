@@ -48,4 +48,46 @@ I've got a code snippet as below: I have "IMy" interface with default function, 
     }
 
 There is compilation error, how to fix this? Thanks a lot.
+----------------------
+Java Proxy.newProxyInstance() throws type cast exception?
 
+My following code tries to create a proxy-ed object that I expected to print "before" before calling "say()":
+
+    class Person2 {
+        private String name;
+        public Person2(String name) {
+            this.name = name;
+        }
+        public void say() {
+            System.out.println("Person:" + name);
+        }
+    }
+    class MyHandler implements InvocationHandler {
+        private Object object;
+        public MyHandler(Object o) {
+            object = o;
+        }
+        @Override
+        public Object invoke(Object proxy, Method method, Object[] args) throws Throwable { //
+            System.out.println("before");
+            return method.invoke(object, args);
+        }
+    }
+    public class TestProxy {
+        public static void main(String [] args) {
+            Person2 p = new Person2("myName");
+            InvocationHandler invocationHandler = new MyHandler(p);
+            Person2 obj = (Person2) Proxy.newProxyInstance(
+                    p.getClass().getClassLoader(),
+                    p.getClass().getInterfaces(),
+                    invocationHandler);
+            obj.say();
+        }
+    }
+
+But in fact it will throw out an exception:
+
+    Exception in thread "main" java.lang.ClassCastException: com.sun.proxy.$Proxy0 cannot be cast to Person2
+	at TestProxy.main
+
+So where did I get wrong and how to fix it?
