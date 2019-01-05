@@ -17,7 +17,8 @@ public class UseSystemIn {
         int age = in.nextInt();
         System.out.println(firstName + "," + age);
     }
-    public static void main(String[] args) {
+
+    public static void main(String[] args) { // 必须在java而不是javaw环境下执行console
         Console cons = System.console();
         System.out.println(cons);
         String username = cons.readLine("User name = ");
