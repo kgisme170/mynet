@@ -91,3 +91,63 @@ But in fact it will throw out an exception:
 	at TestProxy.main
 
 So where did I get wrong and how to fix it?
+----------------------
+
+Java logger config file doesn't take effect.
+
+I've got a simple java program:
+
+    public class UseLog {
+        public static final Logger logger = Logger.getLogger("UseLog");
+        public static void main(String[] args) {
+            logger.info("my4");
+        }
+    }
+
+And a "myConfig.txt" file:
+
+    .level=WARNING
+    UseLog.level=WARNING
+
+I compile and run it with command line:
+
+    java UseLog -Djava.util.logging.config.file=myConfig.txt
+
+I expected that it should print nothing, but in fact:
+
+    Jan 05, 2019 10:46:13 下午 UseLog main
+    INFO: my4
+
+So seems that my config file is not effective for my program. Where did I get wrong and how to fix?
+-----------------------
+
+What's the difference between java function's vararg array and normal array?
+
+There're 2 kinds of function declarations:
+
+    void f(String ... s) {
+        System.out.println(s.length);
+    }
+    void g(String [] s){
+        System.out.println(s.length);
+    }
+
+Both are ok, I would guess "f()" is only a form of syntax suger of g()?
+
+When using f(), java compile will still create an internal array of s, right or wrong? I checked the class file inside Intellij, seems the disassembly code for f() is still String... not String[]
+
+Would you kindly help to clarify? Thanks a lot.
+-----------------------
+
+How to define a java generic function without return type(void)?
+
+I wish to do this:
+
+    class My {
+        void <T> f(T arg){...}
+    }
+
+Is it possible to do so? Seems generic programming samples all seem to have a T type as return value. But void function should also be ok right?
+
+The code above doesn't compile actually. So how to fulfill my requirement?
+Thanks a lot.

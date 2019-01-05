@@ -1,0 +1,2 @@
+.level=WARNING
+UseLog.level=WARNING
