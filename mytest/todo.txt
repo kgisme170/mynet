@@ -17,3 +17,7 @@ If we use Fork/join framework, when to call "ThreadLocal.remove()" function?
 
 ---------------------
 unicode/encode/decode/char/CharSequence
+
+---------------------
+覆盖了equals就必须重写hashCode，如果不重写hashCode方法呢？
+hashCode必须和equals返回一致
