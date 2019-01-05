@@ -51,9 +51,9 @@ class ProxyFactory {
  */
 public class UseClassProxy {
     public static void main(String[] args) {
-        Person s = new Star();
-        ProxyFactory pf = new ProxyFactory(s);
-        Person o = pf.getInstance();
+        Person person = new Star();
+        ProxyFactory proxyFactory = new ProxyFactory(person);
+        Person o = proxyFactory.getInstance();
         o.sing();
         o.dance();
     }
