@@ -1,6 +1,9 @@
 import org.junit.*;
+import org.junit.rules.ExpectedException;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -80,5 +83,16 @@ public class TestReentrantLock {
 
     @Test
     public void TestAccountTransfer() {
+    }
+
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
+
+    @Test
+    public void shouldTestExceptionMessage() throws IndexOutOfBoundsException {
+        List<Object> list = new ArrayList<Object>();
+        thrown.expect(IndexOutOfBoundsException.class);
+        thrown.expectMessage("Index: 0, Size: 0");
+        list.get(0); // execution will never get past this line
     }
 }
