@@ -183,3 +183,52 @@ Thanks a lot.
 -------------------------
 散列集，装载因子
 -------------------------
+
+How to guarantee thread safe for 2 sequential statements in java?
+
+Usually in java we have simulated bank account transfer functions like below, using ReentrantLock.newCondition():
+
+    class Bank {
+        private Lock bankLock = new ReentrantLock();
+        private Condition sufficientFunds = bankLock.newCondition();
+        private final double[] accounts;
+
+        public Bank(int n, double initialBalance) {
+            accounts = new double[n];
+            Arrays.fill(accounts, initialBalance);
+        }
+
+        public void transfer(int from, int to, double amount) throws InterruptedException {
+            bankLock.lock();
+            try {
+                while(accounts[from] < amount) {
+                    sufficientFunds.await();
+                }
+                System.out.println(Thread.currentThread());
+                accounts[from] -= amount;//risky
+                // What if interrupted here ??????
+                accounts[to] += amount;  //risky
+                sufficientFunds.signalAll();
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                bankLock.unlock();
+            }
+        }
+
+
+It looks OK, because this is the usual case of using condition for thread synchronization, the lock will always be "unlocked" when thread interrupted.
+
+But in case this thread is interrupted in the place between
+
+    accounts[from] -= amount;//risky
+
+and
+
+    accounts[to] += amount;  //risky
+
+Then the total bank amount will not be balances at all. And I think declaring "accounts" to be atomic array doesn't solve the problem either. I think the problem lies in that, I should make "+ money" and "- money" inside a transaction, either both success, or should rollback.
+
+So it there any convenient way in java concurrent library to achieve this (transaction) ? Or this needs some special design, and how to implement it?
+
+Thanks a lot.
