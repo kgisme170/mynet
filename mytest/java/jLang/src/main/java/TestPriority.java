@@ -1,7 +1,7 @@
-class MyRunnable implements Runnable {
+class OurRunnable implements Runnable {
     private int id;
 
-    public MyRunnable(int id) {
+    public OurRunnable(int id) {
         this.id = id;
     }
 
@@ -27,11 +27,11 @@ public class TestPriority {
     public static void main(String[] args) throws InterruptedException {
         Thread[] t = new Thread[10];
         for (int i = 0; i < 5; ++i) {
-            t[i] = new Thread(new MyRunnable(i));
+            t[i] = new Thread(new OurRunnable(i));
             t[i].setPriority(Thread.MIN_PRIORITY);
         }
         for (int i = 5; i < 10; ++i) {
-            t[i] = new Thread(new MyRunnable(i));
+            t[i] = new Thread(new OurRunnable(i));
             t[i].setPriority(Thread.MAX_PRIORITY);
         }
         for (int i = 0; i < 10; ++i) {

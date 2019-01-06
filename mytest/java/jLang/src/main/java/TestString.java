@@ -3,8 +3,7 @@ import org.junit.*;
 import java.util.StringJoiner;
 
 public class TestString {
-    @Test
-    public void useCodePoint() {
+    public static void main(String [] args) {
         System.out.println("Main01");
         Assert.assertEquals(1, 1);
         String all = String.join("/", "\t", "abc", "xyz");
