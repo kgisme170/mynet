@@ -349,3 +349,4 @@ Yes, it runs well, restore system preference before I set them. I google-ed and 
 Thanks a lot.
 
 --------------------
+final 保证初始化的过程线程安全
