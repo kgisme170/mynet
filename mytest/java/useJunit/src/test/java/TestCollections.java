@@ -1,13 +1,18 @@
 import org.junit.*;
+import org.junit.Test;
 
 import java.time.LocalDate;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicLong;
+import java.util.concurrent.atomic.LongAdder;
 import java.util.function.IntConsumer;
 
 public class TestCollections {
     @Test(expected = UnsupportedOperationException.class)
     public void TestAsList() {
-        String [] array = new String[]{"xyz1", "abc", "1234"};
+        String[] array = new String[]{"xyz1", "abc", "1234"};
         List<String> stringList = Arrays.asList(array); // 只是一个视图而已
 
         IntConsumer intConsumer = i -> System.out.println(i);
@@ -46,12 +51,12 @@ public class TestCollections {
         stringSet.add("119");
         stringSet.add("nnn");
         stringSet.add("273");
-        for(String s: stringSet) {
+        for (String s : stringSet) {
             System.out.println(s);
         }
         System.out.println("--------------");
         SortedSet<String> sub = ((TreeSet<String>) stringSet).subSet("119", "nnn");
-        for(String s: sub) {
+        for (String s : sub) {
             System.out.println(s);
         }
         Assert.assertEquals(3, sub.size());
@@ -59,13 +64,13 @@ public class TestCollections {
         System.out.println("--------------");
         stringSet.add("210");
         Assert.assertEquals(4, sub.size()); // subSet只是一个视图
-        for(String s: sub) {
+        for (String s : sub) {
             System.out.println(s);
         }
 
         System.out.println("--------------");
-        String [] newStrings = stringSet.toArray(new String[stringSet.size()]);
-        for(String s: newStrings) {
+        String[] newStrings = stringSet.toArray(new String[stringSet.size()]);
+        for (String s : newStrings) {
             System.out.println(s);
         }
     }
@@ -95,8 +100,14 @@ public class TestCollections {
     public void TestSort() {
         class Staff {
             private int age;
-            public int getAge() { return age; }
-            public Staff(int a) { age = a; }
+
+            public int getAge() {
+                return age;
+            }
+
+            public Staff(int a) {
+                age = a;
+            }
         }
 
         ArrayList<Staff> staffArrayList = new ArrayList<>();
@@ -139,17 +150,37 @@ public class TestCollections {
 
     @Test
     public void TestMapCount() {
-        Map<String, Integer> stringIntegerMap = new HashMap<>();
+        Map<String, Integer> stringIntegerMap = new HashMap<>(); // value必须是boxed?
         String word = "abc";
         stringIntegerMap.put(word, stringIntegerMap.getOrDefault(word, 0) + 1);
 
         String another = "xyz";
         stringIntegerMap.putIfAbsent(another, 0);
-        stringIntegerMap.put(another, stringIntegerMap.get(another) +1);
+        stringIntegerMap.put(another, stringIntegerMap.get(another) + 1);
 
         String yet = "yet";
         stringIntegerMap.merge(yet, 1, Integer::sum); //最好的方式
+        stringIntegerMap.merge(yet, 1, (oldValue, newValue) -> oldValue + newValue);
+        stringIntegerMap.forEach((k, v) -> System.out.println(k + v));
+    }
 
-        stringIntegerMap.forEach((k,v) -> System.out.println(k + v));
+    @Test
+    public void TestConcurrentMapCount() { // 相当于ConcurrentHashMap<String, AtomicLong>
+        ConcurrentHashMap<String, Long> map = new ConcurrentHashMap<>();
+        String word = "abc";
+        Long oldValue, newValue;
+        do {
+            oldValue = map.get(word);
+            newValue = oldValue == null ? 1 : oldValue + 1;
+        } while (!map.replace(word, oldValue, newValue));
+        map.compute(word, (k, v) -> v == null ? 1 : v + 1);
+    }
+
+    @Test
+    public void TestLongAdder() {
+        ConcurrentHashMap<String, LongAdder> map = new ConcurrentHashMap<>();
+        String word = "abc";
+        map.putIfAbsent(word, new LongAdder()).increment();
+        map.computeIfAbsent(word, k -> new LongAdder()).increment();
     }
 }
