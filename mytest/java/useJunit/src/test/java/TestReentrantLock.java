@@ -1,4 +1,5 @@
-import org.junit.*;
+import org.junit.Test;
+import org.junit.Rule;
 import org.junit.rules.ExpectedException;
 
 import java.util.ArrayList;
