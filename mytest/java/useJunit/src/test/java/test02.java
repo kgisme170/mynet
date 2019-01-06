@@ -1,5 +1,6 @@
 import org.junit.*;
 
+import java.time.LocalDate;
 import java.util.*;
 import java.util.function.IntConsumer;
 import java.util.stream.Collectors;
@@ -148,5 +149,51 @@ public class test02 {
         staffArrayList.add(new Staff(43));
         staffArrayList.sort(Comparator.comparingInt(Staff::getAge).reversed());
         Assert.assertEquals(43, staffArrayList.get(0).getAge());
+
+        Iterator<Staff> it = staffArrayList.iterator();
+        it.next();
+        it.forEachRemaining(System.out::println);
+        System.out.println("---------");
+        ListIterator<Staff> listIterator = staffArrayList.listIterator();
+        listIterator.next();
+        listIterator.remove();
+        listIterator.next();
+        listIterator.remove();
+        listIterator.forEachRemaining(System.out::println);
+
+        NavigableSet<String> set = new TreeSet<>();
+        set.add("xyz");
+        set.add("abc");
+        set.add("kkk");
+        Assert.assertEquals("abc", set.floor("ef"));
+    }
+
+    @Test
+    public void TestPriorityQueue() {
+        PriorityQueue<LocalDate> pq = new PriorityQueue<>();
+        pq.add(LocalDate.of(2011, 12, 1));
+        pq.add(LocalDate.of(2001, 4, 9));
+        pq.add(LocalDate.of(2013, 3, 12));
+        pq.add(LocalDate.of(2014, 7, 28));
+        for (LocalDate ld : pq) {
+            System.out.println(ld);
+        }
+        System.out.println(pq.remove());
+    }
+
+    @Test
+    public void TestMapCount() {
+        Map<String, Integer> stringIntegerMap = new HashMap<>();
+        String word = "abc";
+        stringIntegerMap.put(word, stringIntegerMap.getOrDefault(word, 0) + 1);
+
+        String another = "xyz";
+        stringIntegerMap.putIfAbsent(another, 0);
+        stringIntegerMap.put(another, stringIntegerMap.get(another) +1);
+
+        String yet = "yet";
+        stringIntegerMap.merge(yet, 1, Integer::sum); //最好的方式
+
+        stringIntegerMap.forEach((k,v) -> System.out.println(k + v));
     }
 }
