@@ -1,11 +1,9 @@
-import com.sun.rowset.CachedRowSetImpl;
 import com.sun.rowset.JdbcRowSetImpl;
+import com.sun.rowset.WebRowSetImpl;
 
-import javax.sql.rowset.CachedRowSet;
-import javax.sql.rowset.JdbcRowSet;
-import javax.sql.rowset.RowSetFactory;
-import javax.sql.rowset.RowSetProvider;
+import javax.sql.rowset.*;
 import javax.sql.rowset.spi.SyncProviderException;
+import java.io.FileOutputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -71,14 +69,17 @@ class ConnectDerby {
             e.printStackTrace();
         }
     }
+    private final String user = "用户1";
+    private final String password = "用户11";
+    private final String url = "org.apache.derby.jdbc.EmbeddedDriver";
 
     public void init() {
         try {
-            Class.forName("org.apache.derby.jdbc.EmbeddedDriver").newInstance();
+            Class.forName(url).newInstance();
             System.out.println("加载嵌入式驱动");
             properties = new Properties();
-            properties.put("user", "用户1");
-            properties.put("password", "用户11");
+            properties.put("user", user);
+            properties.put("password", password);
 
             connection = DriverManager.getConnection("jdbc:derby:hello;create=true", properties);
             System.out.println("创建数据库hello");
@@ -119,14 +120,12 @@ class ConnectDerby {
     public void testUpdate() {
         try {
             CachedRowSet rowSet = factory.createCachedRowSet();
-            //rowSet.setTableName("myTable");
             rowSet.populate(resultSet);
 
             if (!rowSet.absolute(1)) {
                 return;
             }
 
-            // rowSet.deleteRow()
             rowSet.updateString("name", "王二");
             rowSet.updateRow();
             try {
@@ -146,7 +145,7 @@ class ConnectDerby {
         }
     }
 
-    public void f() {
+    public void useJdbcRowSet() {
         try {
 
             JdbcRowSet jdbcRS = new JdbcRowSetImpl(connection);
@@ -160,6 +159,22 @@ class ConnectDerby {
                 System.out.println("name = " + jdbcRS.getString(1));
                 System.out.println("age = " + jdbcRS.getInt(2));
             }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void useWebRowSet() {
+            try {
+            WebRowSet wrs = new WebRowSetImpl();
+            wrs.setUsername(user);
+            wrs.setPassword(password);
+            wrs.setUrl("jdbc:derby:hello;");
+            wrs.setCommand("SELECT * FROM t");
+            wrs.execute();
+            FileOutputStream fileOutputStream = new FileOutputStream("customers.xml");
+            wrs.writeXml(fileOutputStream);
+            fileOutputStream.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -181,7 +196,8 @@ public class UseDerby {
         } else {
             ConnectDerby connectDerby = new ConnectDerby();
             connectDerby.init();
-            connectDerby.f();
+            connectDerby.useJdbcRowSet();
+            // connectDerby.useWebRowSet();
             connectDerby.destroy();
         }
     }

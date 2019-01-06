@@ -26,7 +26,7 @@ public class TestCyclicBarrier {
         public void run() {
             System.out.println("线程" + Thread.currentThread().getName() + "写入...");
             try {
-                Thread.sleep(2000);      //以睡眠来模拟写入数据操作
+                Thread.sleep(2000);
                 System.out.println("线程" + Thread.currentThread().getName() + "写入完毕，等待其他线程");
                 cyclicBarrier.await();
             } catch (InterruptedException e) {

@@ -303,3 +303,10 @@ And the program hangs. I wish to know:
 (1) Why my program throws exception and then hangs
 
 (2) How to fix it?
+
+--------------------
+
+            //rowSet.setTableName("myTable");
+            // rowSet.deleteRow()
+            WebRowSet derby?
+--------------------
