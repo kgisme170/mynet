@@ -26,9 +26,11 @@ class什么时候该继承Comparator，什么时候该继承Comparator
 
 ---------------------
 
-Java: How to call interfaces' default function while overriding?
+Java: Why is interface's super class able to call interface function?
 
-I've got a code snippet as below: I have "IMy" interface with default function, in MyImpl class I override f3() and I wish to call IMy::f3() inside it:
+I've got a code snippet from internet:
+
+"IMy" interface with default function, MyImpl overrides f3() and the way to IMy::f3() inside MyImpl is "IMy.super.f3()":
 
     interface IMy {
         default void f1() {}
@@ -42,12 +44,17 @@ I've got a code snippet as below: I have "IMy" interface with default function, 
         @Override
         public void f3() {
             f1();
-            MyImpl.super.f3();//compilation error!
+            IMy.super.f3();//works!
+            super.f3(); // doesn't compile!
             System.out.println("f3");
         }
     }
 
-There is compilation error, how to fix this? Thanks a lot.
+It works,but I'm just curious: f3() is a function of "IMy", but what does "IMy.super" actually mean? I tried to change it to "super.f3()", it doesn't compile.
+
+I expected that MyImpl.super = IMy, thus should be able to call IMy.f3(), but the actual result was the contrary.
+
+So how to understand this IMy.super, would you help to explain?
 ----------------------
 Java Proxy.newProxyInstance() throws type cast exception?
 
@@ -309,4 +316,36 @@ And the program hangs. I wish to know:
             //rowSet.setTableName("myTable");
             // rowSet.deleteRow()
             WebRowSet derby?
+--------------------
+
+Where is java's system preference stored under mac? Couldn't find it.
+
+I've got following code snippet:
+
+    public void setPreference() throws Exception {
+        prefs = Preferences.userRoot().node(this.getClass().getName());
+        String ID1 = "Test1";
+        String ID2 = "Test2";
+        String ID3 = "Test3";
+
+        System.out.println(prefs.getBoolean(ID1, true));
+        System.out.println(prefs.get(ID2, "Hello World"));
+        System.out.println(prefs.getInt(ID3, 50));
+
+        prefs.putBoolean(ID1, false);
+        prefs.put(ID2, "Hello Europa");
+        prefs.putInt(ID3, 45);
+        prefs.remove(ID1);
+        prefs.flush();
+    }
+
+    public static void main(String[] args) throws Exception {
+        PreferenceTest test = new PreferenceTest();
+        test.setPreference();
+    }
+
+Yes, it runs well, restore system preference before I set them. I google-ed and it said that on mac, the preference is stored under $HOME as an hiden file. But I "ls -al ~" but didn't find a new hidden file. So what's its name and what's the content of it?
+
+Thanks a lot.
+
 --------------------
