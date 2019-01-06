@@ -3,17 +3,6 @@ import org.junit.*;
 import java.time.LocalDate;
 import java.util.*;
 import java.util.function.IntConsumer;
-import java.util.stream.Collectors;
-
-class Person {
-    private String name;
-    public Person(String name) {
-        this.name = name;
-    }
-    public void say() {
-        System.out.println("Person:" + name);
-    }
-}
 
 public class test02 {
     class My {
@@ -52,7 +41,6 @@ public class test02 {
     public void TestAsList() {
         String [] array = new String[]{"xyz1", "abc", "1234"};
         List<String> stringList = Arrays.asList(array); // 只是一个视图而已
-        List<Person> personList = stringList.stream().map(Person::new).collect(Collectors.toList());
 
         IntConsumer intConsumer = i -> System.out.println(i);
         for (int i = 0; i < 10; ++i) {
