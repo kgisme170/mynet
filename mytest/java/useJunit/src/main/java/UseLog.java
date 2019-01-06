@@ -7,9 +7,9 @@ import java.util.logging.Logger;
  */
 public class UseLog {
     public static final Logger logger = Logger.getLogger("my logger name");
-    void f(T ... s) {
-        System.out.println(s.length);
-    }
+    // f(T ... s) {
+    //    System.out.println(s.length);
+    //}
     void g(String [] s){
         System.out.println(s.length);
     }
@@ -25,6 +25,6 @@ public class UseLog {
         //logger的配置文件
         //java.util.logging.
 
-        new UseLog().f<String>("abc", "xyz");
+        //new UseLog().f<String>("abc", "xyz");
     }
 }

@@ -151,3 +151,10 @@ Is it possible to do so? Seems generic programming samples all seem to have a T 
 
 The code above doesn't compile actually. So how to fulfill my requirement?
 Thanks a lot.
+------------------------
+
+Does oracle jdk really support thread priority?
+
+The book <<Java core programming>> said oracle jdk treat all threads as same priority. So is there any way to write a quite sample to verify this?
+Thanks a lot.
+------------------------
