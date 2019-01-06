@@ -158,3 +158,26 @@ Does oracle jdk really support thread priority?
 The book <<Java core programming>> said oracle jdk treat all threads as same priority. So is there any way to write a quite sample to verify this?
 Thanks a lot.
 ------------------------
+
+Why some java exceptions are not forced to be handled?
+
+I'm new to java, at first I thought all exceptions are forced to be handled, thus java program is exception free, like this:
+
+    try {
+        FileOutputStream fos = new FileOutputStream(new File(""));
+    } catch (FileNotFoundException e) { // If not this "catch", program fails to compile.
+
+    }
+
+But I soon learned that some exceptions are not forced to be handled like:
+
+    int i = Integer.parseInt("ff");
+
+It throws out an exception:
+
+    java.lang.NumberFormatException
+
+I'm just curious: if exception is possible, why not force to try and catch exception like IO stream? Why some exceptions are not forced to "try/catch"?
+
+Thanks a lot.
+-------------------------

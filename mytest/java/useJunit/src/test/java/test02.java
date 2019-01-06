@@ -18,7 +18,7 @@ class MyImpl implements IMy {
     public void f3() {
         f1();
         f2();
-        //MyImpl.super.f3();//
+        MyImpl.super.f3();//
         System.out.println("f3");
     }
 }
