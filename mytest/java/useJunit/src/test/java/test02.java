@@ -98,6 +98,19 @@ public class test02 {
             System.out.println(s);
         }
         Assert.assertEquals(3, sub.size());
+
+        System.out.println("--------------");
+        stringSet.add("210");
+        Assert.assertEquals(4, sub.size()); // subSet只是一个视图
+        for(String s: sub) {
+            System.out.println(s);
+        }
+
+        System.out.println("--------------");
+        String [] newStrings = stringSet.toArray(new String[stringSet.size()]);
+        for(String s: newStrings) {
+            System.out.println(s);
+        }
     }
 
     @Test(expected = UnsupportedOperationException.class)
