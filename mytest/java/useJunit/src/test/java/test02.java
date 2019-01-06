@@ -4,25 +4,6 @@ import java.util.List;
 import java.util.function.IntConsumer;
 import java.util.stream.Collectors;
 
-interface IMy {
-    default void f1() {}
-    default void f2() {}
-    default void f3() {}
-    static void sf() {
-        System.out.println("f1, f2");
-    }
-}
-
-class MyImpl implements IMy {
-    @Override
-    public void f3() {
-        f1();
-        f2();
-        MyImpl.super.f3();//
-        System.out.println("f3");
-    }
-}
-
 class Person {
     private String name;
     public Person(String name) {
