@@ -17,6 +17,7 @@ public class TestReentrantLock {
                 public void run() {
                     try {
                         Thread.sleep(500);
+                        System.out.println("子线程睡眠结束");
                         main.interrupt();
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -26,6 +27,7 @@ public class TestReentrantLock {
             Thread t = new Thread(runnable);
             t.start();
             Thread.sleep(1000);
+            System.out.println("主线程睡眠结束");
             t.join();
         } catch (Exception e) {
             e.printStackTrace();

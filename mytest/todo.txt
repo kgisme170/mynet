@@ -232,3 +232,74 @@ Then the total bank amount will not be balances at all. And I think declaring "a
 So it there any convenient way in java concurrent library to achieve this (transaction) ? Or this needs some special design, and how to implement it?
 
 Thanks a lot.
+
+------------------------
+Java Condition throws out IllegalMonitorStateException.
+
+I'm testing the await function of Condition, in main thread, I created a sub-thread which sleeps a while and wakes up main thread, the main thread will use a while loop to check if condition is met:
+
+    public class TestLockWithCondition {
+        static boolean flag = true;
+
+        public static void main(String[] args) {
+            Lock bankLock = new ReentrantLock();
+            Condition sufficientFunds = bankLock.newCondition();
+            try {
+                Runnable runnable = new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            Thread.sleep(500);
+                            System.out.println("signal main thread");
+                            sufficientFunds.signalAll();
+                            Thread.sleep(300);
+                            flag = false;
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                };
+                Thread t = new Thread(runnable);
+                t.start();
+
+                bankLock.lock();
+                try {
+                    while (flag) {
+                        System.out.println("main enters while");
+                        sufficientFunds.await();
+                        System.out.println("main await ends");
+                    }
+                    System.out.println("main woke up" + Thread.currentThread());
+                    sufficientFunds.signalAll();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                } finally {
+                    bankLock.unlock();
+                }
+
+                System.out.println("end");
+                t.join();
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                System.out.println("finally unlock");
+                bankLock.unlock();
+            }
+        }
+    }
+
+
+When I run it, it prints:
+
+    main enters while
+    signal main thread
+    java.lang.IllegalMonitorStateException
+	    at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.signalAll(AbstractQueuedSynchronizer.java:1954)
+	    at TestLockWithCondition$1.run(TestLockWithCondition.java:21)
+	    at java.lang.Thread.run(Thread.java:745)
+
+And the program hangs. I wish to know:
+
+(1) Why my program throws exception and then hangs
+
+(2) How to fix it?
