@@ -1,6 +1,6 @@
 import org.junit.*;
-import java.util.Arrays;
-import java.util.List;
+
+import java.util.*;
 import java.util.function.IntConsumer;
 import java.util.stream.Collectors;
 
@@ -47,14 +47,93 @@ public class test02 {
         Assert.assertNotEquals(m1, m2);
     }
 
-    @Test
-    public void TestConstructor() {
-        List<String> stringList = Arrays.asList(new String[]{"xyz1", "abc", "1234"});
+    @Test(expected = UnsupportedOperationException.class)
+    public void TestAsList() {
+        String [] array = new String[]{"xyz1", "abc", "1234"};
+        List<String> stringList = Arrays.asList(array); // 只是一个视图而已
         List<Person> personList = stringList.stream().map(Person::new).collect(Collectors.toList());
 
         IntConsumer intConsumer = i -> System.out.println(i);
         for (int i = 0; i < 10; ++i) {
             intConsumer.accept(i);
         }
+
+        array[0] = "kkk";
+        System.out.println(stringList.get(0));
+        stringList.add("newElement"); // 不可添加
+    }
+
+    @Test(expected = UnsupportedOperationException.class)
+    public void TestNCopies() {
+        List<String> stringList = Collections.nCopies(5, "abc"); //不可修改
+        stringList.set(0, "kkk");
+    }
+
+    @Test(expected = UnsupportedOperationException.class)
+    public void TestSingleton() {
+        Set<String> stringSet = Collections.singleton("abc");
+        stringSet.add("another");
+    }
+
+    @Test(expected = UnsupportedOperationException.class)
+    public void TestEmpty() {
+        Set<String> empty = Collections.emptySet();
+        empty.add("abc");
+    }
+
+    @Test
+    public void TestSortedSet() {
+        SortedSet<String> stringSet = new TreeSet<>();
+        stringSet.add("xyz");
+        stringSet.add("abc");
+        stringSet.add("119");
+        stringSet.add("nnn");
+        stringSet.add("273");
+        for(String s: stringSet) {
+            System.out.println(s);
+        }
+        System.out.println("--------------");
+        SortedSet<String> sub = ((TreeSet<String>) stringSet).subSet("119", "nnn");
+        for(String s: sub) {
+            System.out.println(s);
+        }
+        Assert.assertEquals(3, sub.size());
+    }
+
+    @Test(expected = UnsupportedOperationException.class)
+    public void TestUnmodifiable() {
+        List<String> stringList = new ArrayList<>();
+        stringList.add("xyz");
+        stringList.add("abc");
+
+        List<String> list = Collections.unmodifiableList(stringList);
+        list.add("mmm");
+    }
+
+    @Test(expected = ClassCastException.class)
+    public void TestCheckedView() {
+        ArrayList<String> stringArrayList = new ArrayList<>();
+        ArrayList raw = stringArrayList;
+        raw.add(new Date());
+        raw.add(new Date());
+        List safeString = Collections.checkedList(stringArrayList, String.class);
+        List raw2 = safeString;
+        raw2.add(new Date());
+    }
+
+    @Test
+    public void TestSort() {
+        class Staff {
+            private int age;
+            public int getAge() { return age; }
+            public Staff(int a) { age = a; }
+        }
+
+        ArrayList<Staff> staffArrayList = new ArrayList<>();
+        staffArrayList.add(new Staff(33));
+        staffArrayList.add(new Staff(23));
+        staffArrayList.add(new Staff(43));
+        staffArrayList.sort(Comparator.comparingInt(Staff::getAge).reversed());
+        Assert.assertEquals(43, staffArrayList.get(0).getAge());
     }
 }
