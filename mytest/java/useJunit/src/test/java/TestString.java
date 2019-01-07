@@ -1,7 +1,11 @@
 import org.junit.*;
+import org.junit.Test;
 
 import java.util.StringJoiner;
 
+/**
+ * @author liming.gong
+ */
 public class TestString {
     public static void main(String [] args) {
         System.out.println("Main01");
