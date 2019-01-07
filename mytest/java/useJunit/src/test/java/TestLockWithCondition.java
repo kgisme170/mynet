@@ -30,21 +30,14 @@ public class TestLockWithCondition {
             t.start();
 
             bankLock.lock();
-            try {
-                while (flag) {
-                    System.out.println("main enters while");
-                    sufficientFunds.await();
-                    System.out.println("main await ends");
-                }
-                System.out.println("main woke up" + Thread.currentThread());
-                sufficientFunds.signalAll();
-            } catch (Exception e) {
-                e.printStackTrace();
-            } finally {
-                bankLock.unlock();
+            while (flag) {
+                System.out.println("main enters while");
+                sufficientFunds.await();
+                System.out.println("main await ends");
             }
-
-            System.out.println("end");
+            System.out.println("main woke up" + Thread.currentThread());
+            sufficientFunds.signalAll();
+        System.out.println("end");
             t.join();
         } catch (Exception e) {
             e.printStackTrace();
