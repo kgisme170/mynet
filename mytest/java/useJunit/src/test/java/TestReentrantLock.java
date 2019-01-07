@@ -51,21 +51,31 @@ public class TestReentrantLock {
             Arrays.fill(accounts, initialBalance);
         }
 
-        public void transfer(int from, int to, double amount) throws InterruptedException {
-            bankLock.lock();
-            try {
-                while(accounts[from] < amount) {
-                    sufficientFunds.await();
-                }
-                System.out.println(Thread.currentThread());
-                accounts[from] -= amount;
-                accounts[to] += amount;
-                sufficientFunds.signalAll();
-            } catch (Exception e) {
-                e.printStackTrace();
-            } finally {
-                bankLock.unlock();
-            }
+        public Thread doTransfer(int from, int to, double amount, int sleepMs) {
+            Runnable runnable = new Runnable() {
+                @Override
+                public void run() {
+                    bankLock.lock();
+                    try {
+                        while(accounts[from] < amount) {
+                            sufficientFunds.await();
+                        }
+                        System.out.println(Thread.currentThread());
+                        Thread.sleep(sleepMs);
+                        accounts[from] -= amount;
+                        System.out.println("睡眠了" + sleepMs + ", 剩余" + accounts[from]);
+                        Thread.sleep(sleepMs);
+                        accounts[to] += amount;
+                        sufficientFunds.signalAll();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    } finally {
+                        bankLock.unlock();
+                    }                }
+            };
+            Thread t = new Thread(runnable);
+            t.start();
+            return t;
         }
 
         public double getTotal() {
@@ -73,6 +83,7 @@ public class TestReentrantLock {
             try {
                 double sum = 0;
                 for (double a: accounts) {
+                    System.out.println(a);
                     sum += a;
                 }
                 return sum;
@@ -83,7 +94,15 @@ public class TestReentrantLock {
     }
 
     @Test
-    public void TestAccountTransfer() {
+    public void TestAccountTransfer() throws InterruptedException {
+        Bank bank = new Bank(3, 200);
+        Thread t1 = bank.doTransfer(0,1, 100, 2000);
+        Thread t2 = bank.doTransfer(1,2, 30, 400);
+        Thread t3 = bank.doTransfer(2,0, 5, 500);
+        t1.join();
+        t2.join();
+        t3.join();
+        System.out.println(bank.getTotal());
     }
 
     @Rule

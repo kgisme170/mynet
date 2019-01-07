@@ -1,9 +1,7 @@
 import com.sun.rowset.JdbcRowSetImpl;
-import com.sun.rowset.WebRowSetImpl;
 
 import javax.sql.rowset.*;
 import javax.sql.rowset.spi.SyncProviderException;
-import java.io.FileOutputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -163,22 +161,6 @@ class ConnectDerby {
             e.printStackTrace();
         }
     }
-
-    public void useWebRowSet() {
-            try {
-            WebRowSet wrs = new WebRowSetImpl();
-            wrs.setUsername(user);
-            wrs.setPassword(password);
-            wrs.setUrl("jdbc:derby:hello;");
-            wrs.setCommand("SELECT * FROM t");
-            wrs.execute();
-            FileOutputStream fileOutputStream = new FileOutputStream("customers.xml");
-            wrs.writeXml(fileOutputStream);
-            fileOutputStream.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 }
 
 /**
@@ -197,7 +179,6 @@ public class UseDerby {
             ConnectDerby connectDerby = new ConnectDerby();
             connectDerby.init();
             connectDerby.useJdbcRowSet();
-            // connectDerby.useWebRowSet();
             connectDerby.destroy();
         }
     }
