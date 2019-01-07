@@ -5,7 +5,8 @@ import java.util.TimerTask;
  */
 public class UseTimerTask {
     public static void main(String[] args) {
-        Timer timer = new Timer(true);
+        // true means isDaemon;
+        Timer timer = new Timer();
         TimerTask task1 = new TimerTask() {
             @Override
             public void run() {
@@ -18,6 +19,9 @@ public class UseTimerTask {
                 }
             }
         };
+        // delay 是多长时间以后开始task
+        timer.schedule(task1, 1000, 3000);
+
         TimerTask task2 = new TimerTask() {
             @Override
             public void run() {
@@ -26,10 +30,10 @@ public class UseTimerTask {
                 System.out.println(j / i);
             }
         };
-        timer.schedule(task1, 1000, 3000);
+
         timer.schedule(task2, 1000, 3000);
         try {
-            Thread.sleep(10000);
+            Thread.sleep(3000);
         } catch (Exception ex) {
             timer.cancel(); // 只要有一个task失败了，所有task都中止
         }
