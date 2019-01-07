@@ -150,7 +150,7 @@ public class TestCollections {
 
     @Test
     public void TestMapCount() {
-        Map<String, Integer> stringIntegerMap = new HashMap<>(); // value必须是boxed?
+        Map<String, Integer> stringIntegerMap = new HashMap<>();
         String word = "abc";
         stringIntegerMap.put(word, stringIntegerMap.getOrDefault(word, 0) + 1);
 
