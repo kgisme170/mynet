@@ -55,3 +55,10 @@ hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-2.8.4.jar \
 -output war-and-peace-output-20
 
 重载和默认参数
+
+env = Environment(CFLAGS='-std=c++14')
+conf = Configure(env)
+if conf.CheckCXX():
+   print("Yes CXX14")
+   env.SConscript(dirs=['newcpp'])
+env = conf.Finish()
