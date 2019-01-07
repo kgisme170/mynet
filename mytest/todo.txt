@@ -54,7 +54,7 @@ hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-2.8.4.jar \
 -input war-and-peace-input/war-and-peace.txt \
 -output war-and-peace-output-20
 
-重载和默认参数
+纯虚函数同样可以有实现
 
 env = Environment(CFLAGS='-std=c++14')
 conf = Configure(env)
