@@ -173,6 +173,8 @@ public class TestCollections {
             oldValue = map.get(word);
             newValue = oldValue == null ? 1 : oldValue + 1;
         } while (!map.replace(word, oldValue, newValue));
+
+        // 等效于上面的do while循环
         map.compute(word, (k, v) -> v == null ? 1 : v + 1);
     }
 
