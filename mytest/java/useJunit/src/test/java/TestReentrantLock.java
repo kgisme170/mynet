@@ -57,7 +57,7 @@ public class TestReentrantLock {
                 public void run() {
                     bankLock.lock();
                     try {
-                        while(accounts[from] < amount) {
+                        while (accounts[from] < amount) {
                             sufficientFunds.await();
                         }
                         System.out.println(Thread.currentThread());
@@ -71,7 +71,8 @@ public class TestReentrantLock {
                         e.printStackTrace();
                     } finally {
                         bankLock.unlock();
-                    }                }
+                    }
+                }
             };
             Thread t = new Thread(runnable);
             t.start();
@@ -82,7 +83,7 @@ public class TestReentrantLock {
             bankLock.lock();
             try {
                 double sum = 0;
-                for (double a: accounts) {
+                for (double a : accounts) {
                     System.out.println(a);
                     sum += a;
                 }
@@ -96,9 +97,9 @@ public class TestReentrantLock {
     @Test
     public void TestAccountTransfer() throws InterruptedException {
         Bank bank = new Bank(3, 200);
-        Thread t1 = bank.doTransfer(0,1, 100, 2000);
-        Thread t2 = bank.doTransfer(1,2, 30, 400);
-        Thread t3 = bank.doTransfer(2,0, 5, 500);
+        Thread t1 = bank.doTransfer(0, 1, 100, 2000);
+        Thread t2 = bank.doTransfer(1, 2, 30, 400);
+        Thread t3 = bank.doTransfer(2, 0, 5, 500);
         t1.join();
         t2.join();
         t3.join();
