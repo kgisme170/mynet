@@ -185,4 +185,17 @@ public class TestCollections {
         map.putIfAbsent(word, new LongAdder()).increment();
         map.computeIfAbsent(word, k -> new LongAdder()).increment();
     }
+
+    @Test
+    public void TestAtomic() {
+        AtomicLong largest = new AtomicLong();
+        Long observed = 3L;
+        largest.set(Math.max(largest.get(), observed)); // bad
+
+        Long oldValue, newValue;
+        do {
+            oldValue = largest.get();
+            newValue = Math.max(oldValue, observed);
+        } while (!largest.compareAndSet(oldValue, newValue));
+    }
 }
