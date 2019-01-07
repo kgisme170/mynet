@@ -1,2 +1,2 @@
-.level=WARNING
+handlers = java.util.logging.ConsoleHandler
 UseLog.level=WARNING
