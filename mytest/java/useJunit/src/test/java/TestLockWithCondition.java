@@ -16,6 +16,7 @@ public class TestLockWithCondition {
                 @Override
                 public void run() {
                     try {
+                        bankLock.lock();
                         Thread.sleep(500);
                         System.out.println("signal main thread");
                         sufficientFunds.signalAll();
@@ -23,6 +24,8 @@ public class TestLockWithCondition {
                         flag = false;
                     } catch (Exception e) {
                         e.printStackTrace();
+                    } finally {
+                        bankLock.unlock();
                     }
                 }
             };
