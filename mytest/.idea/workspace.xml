@@ -5,10 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf0b9541-d6e2-4636-85bb-6680ae0aa118" name="Default Changelist" comment="Java">
-      <change afterPath="$PROJECT_DIR$/java/jLang/src/main/java/UseRowSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/use3p/useDb/src/main/java/初始化postgre sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/SyncThis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/TestThreadCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseMapCollections.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseReadWriteLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseThreadLocalClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/UseTransferQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/useJunit/src/test/java/TestGeneric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/useJunit/src/test/java/TestParallel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/useJunit/src/test/java/UseCompletableFuture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/useJunit/src/test/java/UseForkJoin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/useJunit/src/test/java/UseHalfGenericType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/useJunit/src/test/java/UseSemaphore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use3p/useDb/src/main/java/UsePostgreSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/use3p/useDb/src/main/java/UsePostgreSql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/useJunit/src/test/java/TestCyclicBarrier.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/TestCyclicBarrier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/useJunit/src/test/java/TestLockWithCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/concurrent/src/main/java/TestLockWithCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/use3p/useMybatis/target/" />
     <ignored path="$PROJECT_DIR$/spark/spark_remote/target/" />
@@ -55,81 +67,88 @@
     <session id="-451817951">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="53" />
+          <entry key="SConscript" value="1" />
+          <entry key="SConstruct" value="1" />
+          <entry key="class" value="3" />
+          <entry key="cpp" value="1" />
+          <entry key="java" value="171" />
           <entry key="kt" value="1" />
-          <entry key="xml" value="3" />
+          <entry key="md" value="1" />
+          <entry key="properties" value="1" />
+          <entry key="sh" value="2" />
+          <entry key="txt" value="3" />
+          <entry key="xml" value="6" />
           <entry key="初始化postgre sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="53" />
+          <entry key="Bash" value="2" />
+          <entry key="C++" value="1" />
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="171" />
           <entry key="Kotlin" value="1" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="3" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Properties" value="1" />
+          <entry key="Specification" value="1" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="14" />
-          <entry key="java" value="4936" />
-          <entry key="xml" value="12" />
+          <entry key="SConscript" value="18" />
+          <entry key="SConstruct" value="17" />
+          <entry key="dummy" value="40" />
+          <entry key="java" value="24871" />
+          <entry key="txt" value="8667" />
+          <entry key="xml" value="15" />
           <entry key="初始化postgre sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4936" />
-          <entry key="PLAIN_TEXT" value="15" />
-          <entry key="XML" value="12" />
+          <entry key="JAVA" value="24871" />
+          <entry key="PLAIN_TEXT" value="8743" />
+          <entry key="XML" value="15" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/use3p/useDb/src/main/java/UseDerby.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="155" column="35" selection-start-line="155" selection-start-column="35" selection-end-line="155" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#iterateRs#0;class#ConnectDerby#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/use3p/useDb/src/main/java/UsePostgreSql.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/use3p/useDb/src/main/java/初始化postgre sql">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/todo.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="180" lean-forward="true" selection-start-line="180" selection-end-line="180" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseRowSet.java">
+        <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/UseCompletableFuture.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="57" column="10" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
+            <state relative-caret-position="150">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/UseHalfGenericType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,37 +168,40 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>splitAsStream</find>
-      <find>Supplier</find>
-      <find>new Suppli</find>
-      <find>flatMap</find>
-      <find>split(</find>
-      <find>Arrays.stream</find>
-      <find>mySupplier</find>
-      <find>partitioningBy</find>
-      <find>::println</find>
-      <find>FileChannel.open</find>
-      <find>FileLock</find>
-      <find>new Path</find>
-      <find>xsd</find>
-      <find>XPathFactory</find>
-      <find>book.xml</find>
-      <find>new URI</find>
-      <find>alibaba</find>
-      <find>taskCounter</find>
-      <find>myFirstClass</find>
-      <find>ThreadLocal</find>
-      <find>ThreadPoolExecutor executor</find>
-      <find>publish</find>
-      <find>targetNamespace</find>
-      <find>setOwner</find>
-      <find>HttpServlet</find>
-      <find>UseJe</find>
-      <find>pg_ctl</find>
-      <find>postgres</find>
-      <find>derby</find>
-      <find>jdbcRS</find>
+      <find>putIfAbsent</find>
+      <find>accumulate</find>
+      <find>bankLock\.lock\(\)\;\n            while \(flag\) \{\n                System\.out\.println\(\&quot;main enters while\&quot;\)\;\n                sufficientFunds\.await\(\)\;\n                System\.out\.println\(\&quot;main await ends\&quot;\)\;\n            \}\n            System\.out\.println\(\&quot;main woke up\&quot; \+ Thread\.currentThread\(\)\)\;\n            sufficientFunds\.signalAll\(\)\;\n        System\.out\.println\(\&quot;end\&quot;\)\;\n</find>
+      <find>merge</find>
+      <find>UseLog</find>
+      <find>f3</find>
+      <find>TestProxy</find>
+      <find>conf.setJobName(&quot;WordCountScala&quot;)</find>
+      <find>writeExternal</find>
+      <find>writeObje</find>
+      <find>testPolicy.txt</find>
+      <find>-nopie</find>
+      <find>class Bank</find>
+      <find>TestLockWithCondition</find>
+      <find>signal</find>
+      <find>sleep</find>
+      <find>useTimerTask</find>
+      <find>0.11.0</find>
+      <find>&lt;type&gt;pom&lt;/type&gt;</find>
+      <find>TimerTask</find>
+      <find>setJarByClass</find>
+      <find>HadoopPipes::runTask</find>
+      <find>nopie</find>
+      <find>JobConf = new JobConf(this.getClass)</find>
+      <find>DriverManager.getConnection</find>
+      <find>conditional_variable</find>
+      <find>Arrays.pa</find>
+      <find>ReadWriteLock</find>
+      <find>UseSe</find>
+      <find>thenApply</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -187,55 +209,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java/jLang/src/main/java/coreJava.java" />
-        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/FileLock.java" />
-        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/LockDowngrade.java" />
-        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/UseFileLock.java" />
-        <option value="$PROJECT_DIR$/java/useXml/src/main/java/UseXPath.java" />
-        <option value="$PROJECT_DIR$/java/useXml/src/main/java/UsePath.java" />
-        <option value="$PROJECT_DIR$/use3p/useThrift/src/main/java/gen-java/AdditionService.java" />
-        <option value="$PROJECT_DIR$/java/jLang/src/main/java/CoreJava.java" />
-        <option value="$PROJECT_DIR$/hadoop/yarn/src/main/java/DistributedShellClient.java" />
-        <option value="$PROJECT_DIR$/java/classCompiler/src/main/java/useResourceStream.java" />
-        <option value="$PROJECT_DIR$/java/security/src/main/java/TestPolicy.java" />
-        <option value="$PROJECT_DIR$/java/classCompiler/src/main/java/myFirstClass.java" />
-        <option value="$PROJECT_DIR$/java/classCompiler/src/main/java/StringBuilderJavaSource.java" />
-        <option value="$PROJECT_DIR$/java/classCompiler/src/main/java/MyFirstClass.java" />
-        <option value="$PROJECT_DIR$/java/classCompiler/src/main/java/UseResourceStream.java" />
-        <option value="$PROJECT_DIR$/java/useXml/src/main/resources/book.xml" />
-        <option value="$PROJECT_DIR$/todo.txt" />
-        <option value="$PROJECT_DIR$/java/concurrent/pom.xml" />
-        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/UseThreadLocal.java" />
-        <option value="$PROJECT_DIR$/java/useXml/src/main/resources/Employee.xsd" />
-        <option value="$PROJECT_DIR$/java/useXml/src/main/resources/EmployeeRequest.xml" />
-        <option value="$PROJECT_DIR$/java/useXml/src/main/resources/EmployeeResponse.xml" />
-        <option value="$PROJECT_DIR$/java/useXml/src/main/resources/employee.xml" />
-        <option value="$PROJECT_DIR$/java/useXml/src/main/java/XmlValidation.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/WebService.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/ServiceMain.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/CalWebservice.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/EchoServer.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/pkg/CalClient.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceImp.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceClient.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceImpl.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceMain.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/pkg/ICalWebservice.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/pkg/CalWebservice.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/pkg/IWebService.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/MyWebService.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/pkg/MyWebClient.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/PhoneService.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/MyHttpServer.java" />
-        <option value="$PROJECT_DIR$/use3p/useJetty/src/main/java/UseJetty.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/HttpService.java" />
-        <option value="$PROJECT_DIR$/java/network/pom.xml" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/HttpClient.java" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/MyHttpClient.java" />
-        <option value="$PROJECT_DIR$/java/jLang/src/main/java/UseRowSet.java" />
-        <option value="$PROJECT_DIR$/use3p/useDb/src/main/java/UseDerby.java" />
+        <option value="$PROJECT_DIR$/use3p/useDb/src/main/java/PostgreCachedRowSet.java" />
         <option value="$PROJECT_DIR$/use3p/useDb/src/main/java/UsePostgreSql.java" />
-        <option value="$PROJECT_DIR$/use3p/useDb/src/main/java/初始化postgre sql" />
+        <option value="$PROJECT_DIR$/use3p/useDb/src/main/java/DefaultMethod.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/main/java/TestUncaughtException.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/main/java/UseSyncMap.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/main/java/UseCheckedView.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/main/java/StreamMapNew.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/test02.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/main/java/TestPriority.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/TestString.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/StreamMapNew.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/PreferenceTest.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/TestCyclicBarrier.java" />
+        <option value="$PROJECT_DIR$/use3p/useDb/src/main/java/JdbcRowSetWithListern.java" />
+        <option value="$PROJECT_DIR$/use3p/useDb/src/main/java/JdbcRowSetWithListenFilter.java" />
+        <option value="$PROJECT_DIR$/use3p/useDb/src/main/java/JdbcRowSetWithListenerFilter.java" />
+        <option value="$PROJECT_DIR$/use3p/useDb/src/main/java/UseWebRowSet.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/UseStatic.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/UseSafeVarargs.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/TestCollections.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/main/resources/myConfig.txt" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/main/java/UseLog.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/TestString.java" />
+        <option value="$PROJECT_DIR$/java/jLang/src/main/java/TestProxy.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/TestLockWithCondition.java" />
+        <option value="$PROJECT_DIR$/use3p/useDb/src/main/java/UserDerby2.java" />
+        <option value="$PROJECT_DIR$/use3p/useDb/src/main/java/UseDerby.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/TestReentrantLock.java" />
+        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/UseLockCondition.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/TestThreads.java" />
+        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/UseTimerTask.java" />
+        <option value="$PROJECT_DIR$/use3p/useThrift/pom.xml" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/TestEquals.java" />
+        <option value="$PROJECT_DIR$/cpp/SConstruct" />
+        <option value="$PROJECT_DIR$/hadoop/mr/src/main/scala/scalaMr.java" />
+        <option value="$PROJECT_DIR$/cpp/cpp98/templateTemplate.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp98/SConscript" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/TestThreadCondition.java" />
+        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/SyncThis.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/UseParallel.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/TestGeneric.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/TestParallel.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/UseThreadLocal.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/UseMapCollections.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/UseTransferQueue.java" />
+        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/UseReadWriteLock.java" />
+        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/UseForkJoin.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/UseHalfGenericType.java" />
+        <option value="$PROJECT_DIR$/java/concurrent/src/main/java/UseSemaphore.java" />
+        <option value="$PROJECT_DIR$/java/useJunit/src/test/java/UseCompletableFuture.java" />
+        <option value="$PROJECT_DIR$/todo.txt" />
       </list>
     </option>
   </component>
@@ -253,10 +277,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1440" />
-    <option name="y" value="-114" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="x" value="77" />
+    <option name="y" value="23" />
+    <option name="width" value="1363" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -266,7 +290,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -321,7 +345,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,48 +362,68 @@
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="network" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="network" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="use3p" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="use3p" type="462c0819:PsiDirectoryNode" />
-              <item name="useDb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="use3p" type="462c0819:PsiDirectoryNode" />
-              <item name="useDb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="use3p" type="462c0819:PsiDirectoryNode" />
-              <item name="useDb" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="use3p" type="462c0819:PsiDirectoryNode" />
-              <item name="useDb" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="useJunit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="useJunit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="useJunit" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="useJunit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="useJunit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mytest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="useJunit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -389,7 +433,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546611759032" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546895204198" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4232558" />
@@ -407,56 +451,56 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UseDerby">
-    <configuration name="HttpClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HttpClient" />
-      <module name="network" />
+  <component name="RunManager" selected="Application.UseSemaphore">
+    <configuration name="UseForkJoin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UseForkJoin" />
+      <module name="concurrent" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HttpService" />
-      <module name="network" />
+    <configuration name="UseMapCollections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UseMapCollections" />
+      <module name="useJunit" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyHttpClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyHttpClient" />
-      <module name="network" />
+    <configuration name="UseReadWriteLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UseReadWriteLock" />
+      <module name="concurrent" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UseDerby" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UseDerby" />
-      <module name="useDb" />
+    <configuration name="UseSemaphore" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UseSemaphore" />
+      <module name="concurrent" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsePostgreSql" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UsePostgreSql" />
-      <module name="useDb" />
+    <configuration name="UseTransferQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UseTransferQueue" />
+      <module name="useJunit" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MyHttpClient" />
-      <item itemvalue="Application.HttpService" />
-      <item itemvalue="Application.HttpClient" />
-      <item itemvalue="Application.UseDerby" />
-      <item itemvalue="Application.UsePostgreSql" />
+      <item itemvalue="Application.UseTransferQueue" />
+      <item itemvalue="Application.UseMapCollections" />
+      <item itemvalue="Application.UseReadWriteLock" />
+      <item itemvalue="Application.UseForkJoin" />
+      <item itemvalue="Application.UseSemaphore" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.UseDerby" />
-        <item itemvalue="Application.UsePostgreSql" />
-        <item itemvalue="Application.MyHttpClient" />
-        <item itemvalue="Application.HttpClient" />
-        <item itemvalue="Application.HttpService" />
+        <item itemvalue="Application.UseSemaphore" />
+        <item itemvalue="Application.UseForkJoin" />
+        <item itemvalue="Application.UseReadWriteLock" />
+        <item itemvalue="Application.UseMapCollections" />
+        <item itemvalue="Application.UseTransferQueue" />
       </list>
     </recent_temporary>
   </component>
@@ -478,167 +522,6 @@
       <option name="presentableId" value="Default" />
       <updated>1544783607661</updated>
     </task>
-    <task id="LOCAL-00001" summary="Java">
-      <created>1545440900669</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1545440900669</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Java">
-      <created>1545440934202</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1545440934203</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Java">
-      <created>1545440967099</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1545440967099</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Java">
-      <created>1545471585409</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1545471585409</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Java">
-      <created>1545471845936</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1545471845936</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Java">
-      <created>1545483251508</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1545483251508</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Java">
-      <created>1545483821575</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1545483821575</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Java">
-      <created>1545484681029</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1545484681029</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Java">
-      <created>1545624647740</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1545624647740</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Java">
-      <created>1545710899744</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1545710899744</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Java">
-      <created>1545922733996</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1545922733996</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Java">
-      <created>1545967295853</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1545967295853</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Java">
-      <created>1546516360815</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1546516360815</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Java">
-      <created>1546517545200</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1546517545200</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Java">
-      <created>1546517922744</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1546517922744</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Java">
-      <created>1546518521325</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1546518521326</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Java">
-      <created>1546518580967</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1546518580967</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Java">
-      <created>1546519020079</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1546519020079</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Java">
-      <created>1546519153530</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1546519153530</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Java">
-      <created>1546577193045</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1546577193045</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Java">
-      <created>1546589897655</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1546589897655</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Java">
-      <created>1546593454665</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1546593454665</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Java">
-      <created>1546595569280</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1546595569280</updated>
-    </task>
     <task id="LOCAL-00024" summary="Java">
       <created>1546605055631</created>
       <option name="number" value="00024" />
@@ -653,8 +536,369 @@
       <option name="project" value="LOCAL" />
       <updated>1546611537539</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Java">
+      <created>1546611782287</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1546611782287</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Java">
+      <created>1546620410428</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1546620410428</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Java">
+      <created>1546623519299</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1546623519299</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Java">
+      <created>1546659813371</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1546659813371</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Java">
+      <created>1546682490848</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1546682490848</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Java">
+      <created>1546683254469</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1546683254470</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Java">
+      <created>1546685614731</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1546685614731</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Java">
+      <created>1546694962026</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1546694962026</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Java">
+      <created>1546695423255</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1546695423255</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Java">
+      <created>1546701108478</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1546701108478</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Java">
+      <created>1546749678138</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1546749678138</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Java">
+      <created>1546749722648</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1546749722648</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Java">
+      <created>1546750723594</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1546750723594</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Java">
+      <created>1546773985494</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1546773985494</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Java">
+      <created>1546774662327</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1546774662327</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Java">
+      <created>1546774786876</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1546774786876</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Java">
+      <created>1546777669285</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1546777669285</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Java">
+      <created>1546778119965</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1546778119965</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Java">
+      <created>1546784169980</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1546784169980</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Java">
+      <created>1546784561018</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1546784561018</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Java">
+      <created>1546784677318</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1546784677318</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Java">
+      <created>1546785114137</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1546785114137</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Java">
+      <created>1546785183270</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1546785183270</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Java">
+      <created>1546787067630</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1546787067630</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Java">
+      <created>1546788577612</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1546788577613</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Java">
+      <created>1546789467347</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1546789467347</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Java">
+      <created>1546790169888</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1546790169888</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Java">
+      <created>1546814763417</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1546814763417</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Java">
+      <created>1546816828587</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1546816828587</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Java">
+      <created>1546817715055</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1546817715055</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Java">
+      <created>1546817830418</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1546817830418</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Java">
+      <created>1546818923815</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1546818923815</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Java">
+      <created>1546819290429</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1546819290429</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Java">
+      <created>1546819369837</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1546819369837</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Java">
+      <created>1546819959390</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1546819959390</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Java">
+      <created>1546826170557</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1546826170557</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Java">
+      <created>1546855151234</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1546855151234</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Java">
+      <created>1546858153164</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1546858153164</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Java">
+      <created>1546864944028</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1546864944028</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Java">
+      <created>1546864995733</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1546864995733</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Java">
+      <created>1546865373841</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1546865373841</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Java">
+      <created>1546865707564</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1546865707564</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Java">
+      <created>1546866182901</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1546866182901</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Java">
+      <created>1546867024451</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1546867024451</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Java">
+      <created>1546867687025</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1546867687025</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Java">
+      <created>1546871160486</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1546871160486</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Java">
+      <created>1546871693288</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1546871693288</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestEquals_TestOverrideAll - 2019.01.07 at 21h 22m 49s.xml">
+      <configuration name="TestEquals.TestOverrideAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestEquals_TestOverrideAll - 2019.01.07 at 21h 24m 14s.xml">
+      <configuration name="TestEquals.TestOverrideAll" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestEquals_TestOverrideHashCode - 2019.01.07 at 21h 24m 53s.xml">
+      <configuration name="TestEquals.TestOverrideHashCode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestEquals_TestOverrideAll2 - 2019.01.07 at 21h 27m 44s.xml">
+      <configuration name="TestEquals.TestOverrideAll2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UseParallel_Sort - 2019.01.08 at 03h 18m 43s.xml">
+      <configuration name="UseParallel.Sort" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UseParallel_Sort - 2019.01.08 at 03h 20m 02s.xml">
+      <configuration name="UseParallel.Sort" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UseParallel_Sort - 2019.01.08 at 03h 21m 49s.xml">
+      <configuration name="UseParallel.Sort" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGeneric_Use - 2019.01.08 at 03h 28m 08s.xml">
+      <configuration name="TestGeneric.Use" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGeneric_Use - 2019.01.08 at 03h 31m 05s.xml">
+      <configuration name="TestGeneric.Use" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGeneric_Use - 2019.01.08 at 03h 31m 28s.xml">
+      <configuration name="TestGeneric.Use" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -666,10 +910,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="-114" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
+    <frame x="84" y="23" width="1356" height="877" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18956336" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24657534" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -677,17 +920,17 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3284974" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946752" visible="true" weight="0.2238342" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4996215" weight="0.32738853" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47260273" weight="0.31592357" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4981075" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32866243" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3284974" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4885845" visible="true" weight="0.31592357" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.5005325" side_tool="true" visible="true" weight="0.2238342" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3284974" />
-      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32738853" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.51141554" side_tool="true" visible="true" weight="0.31592357" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4824962" weight="0.32738853" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.4981075" weight="0.32738853" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -710,399 +953,408 @@
     <option name="LAST_COMMIT_MESSAGE" value="Java" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk/jre/lib/rt.jar!/java/nio/file/Path.class" />
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk/jre/lib/rt.jar!/javax/xml/xpath/XPath.class" />
-    <entry file="file://$PROJECT_DIR$/use3p/serialize/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/serialize/src/main/java/UseFastJsonComplex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useXml/src/main/java/UseStax.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hadoop/yarn/src/main/java/DistributedShellClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="59" column="70" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/classCompiler/src/main/java/StringBuilderJavaSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/security/src/main/java/TestPolicy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="101" selection-start-line="5" selection-start-column="101" selection-end-line="5" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/classCompiler/src/main/java/UseResourceStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useCurator/src/main/java/UseLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/CoreJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-741">
-          <caret line="120" column="8" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useThrift/src/main/java/gen-java/AdditionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="293" column="15" lean-forward="true" selection-start-line="293" selection-start-column="15" selection-end-line="293" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useXml/src/main/resources/book.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/concurrent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyWorkerThreadFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/MyThreadFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="58" column="11" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseThreadLocal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="26" column="35" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useXml/src/main/resources/Employee.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useXml/src/main/resources/employee.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useXml/src/main/java/UsePath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="21" column="54" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useXml/src/main/resources/EmployeeRequest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useXml/src/main/resources/EmployeeResponse.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useXml/src/main/java/XmlValidation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/classCompiler/src/main/java/myFirstClass.java" />
-    <entry file="file://$PROJECT_DIR$/todo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/javax/xml/namespace/QName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar!/com/sun/xml/internal/ws/client/WSServiceDelegate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="373" column="5" lean-forward="true" selection-start-line="373" selection-start-column="5" selection-end-line="373" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/CalClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/ICalWebservice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/CalWebservice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/ServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/IWebService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/MyWebClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/UseUrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/SocketScanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/PhoneService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/pkg/MyWebService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useJetty/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/MyHttpClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useJetty/src/main/java/UseJetty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="56" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#484#1003#0" expanded="true" />
-            <element signature="e#1002#1003#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/HttpService.java">
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/UseStatic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="35" column="69" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#1859#1860#0" expanded="true" />
-            <element signature="e#1915#1916#0" expanded="true" />
-            <element signature="e#1958#1959#0" expanded="true" />
-            <element signature="e#2017#2018#0" expanded="true" />
-          </folding>
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/MyHttpServer.java">
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/TestCollections.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="87">
+          <caret line="176" column="27" lean-forward="true" selection-start-line="176" selection-start-column="27" selection-end-line="176" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/MyHttpClient.java">
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/main/java/UseLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="63" column="32" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="113">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/pom.xml">
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/main/resources/myConfig.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/network/src/main/java/EchoServer.java">
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/TestString.java" />
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/TestProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        <state relative-caret-position="250">
+          <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseRowSet.java">
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseSerializable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="57" column="10" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/UseExternalizable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="144" column="11" selection-start-line="144" selection-start-column="11" selection-end-line="144" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/use3p/useDb/src/main/java/UseDerby.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="155" column="35" selection-start-line="155" selection-start-column="35" selection-end-line="155" selection-end-column="35" />
+        <state relative-caret-position="160">
+          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/UseSafeVarargs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/PreferenceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/rules/ExpectedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="110" column="44" lean-forward="true" selection-start-line="110" selection-start-column="44" selection-end-line="110" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseLockCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="69" column="18" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#iterateRs#0;class#ConnectDerby#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useDb/src/main/java/UsePostgreSql.java">
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/TestThreads.java" />
+    <entry file="file://$PROJECT_DIR$/spark/spark_remote/src/main/java/Counter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+        <state relative-caret-position="80">
+          <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/use3p/useDb/src/main/java/初始化postgre sql">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseTimerTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use3p/useThrift/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/TestEquals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/testcpp.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/SConstruct">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop/mr/src/main/cpp/build.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hadoop/mr/src/main/scala/scalaMr.java" />
+    <entry file="file://$PROJECT_DIR$/cpp/cpp98/templateTemplate.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp98/SConscript">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/TestCyclicBarrier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/TestThreadCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="73" column="1" lean-forward="true" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/TestLockWithCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="15" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="599" column="6" selection-start-line="599" selection-start-column="6" selection-end-line="599" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/use3p/useDb/src/main/java/UserDerby2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/SyncThis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="71" column="1" lean-forward="true" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="2377" column="22" selection-start-line="2377" selection-start-column="22" selection-end-line="2377" selection-end-column="22" />
+          <folding>
+            <element signature="e#111724#111725#0" expanded="true" />
+            <element signature="e#111781#111782#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/javafx/util/Pair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/TestGeneric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseThreadLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/UseThreadLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/TestParallel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/UseMapCollections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/UseTransferQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReentrantReadWriteLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="228" column="11" selection-start-line="228" selection-start-column="11" selection-end-line="228" selection-end-column="11" />
+          <folding>
+            <element signature="e#7757#7758#0" expanded="true" />
+            <element signature="e#7784#7785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/LockDowngrade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#LockDowngrade#0" />
+            <element signature="class#LockDowngrade#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/TestReentrantLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseReadWriteLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/DoublePredicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-223">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseForkJoin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/concurrent/src/main/java/UseSemaphore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/Semaphore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-920">
+          <caret line="155" column="13" selection-start-line="155" selection-start-column="13" selection-end-line="155" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/UseHalfGenericType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/CompletableFuture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="1980" column="45" selection-start-line="1980" selection-start-column="36" selection-end-line="1980" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/UseCompletableFuture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="180" lean-forward="true" selection-start-line="180" selection-end-line="180" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
