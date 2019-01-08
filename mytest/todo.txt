@@ -65,22 +65,6 @@ env = conf.Finish()
 
 ---------------------
 
-vector<int> v3(v1.begin(), v1.end(), back_inserter(v2.begin());
-
-back_inserter
-
-int a[] = {1,2,3,4};
-copy(a, &a[4], ostream_iterator<int>());
-copy(a, &a[4], ostream_iterator<char>());
-
-
-char c[] = {'1','2','3','4'};
-copy(a, &a[4], ostream_iterator<int>());
-copy(a, &a[4], ostream_iterator<char>());
-
-ostream_iterator<int>处理char
-ostream_iterator<char>处理int
-
 conditional_variable+lock
 
 java ServiceLoader 插件开发
