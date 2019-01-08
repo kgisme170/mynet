@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-
+//以下三种方式等效
 class SyncCollection1 { // using synchronized in function signature
     List<Integer> list = new ArrayList();
 
@@ -36,15 +36,22 @@ class SyncCollection3 { // using ReentrantLock lock()/unlock()
     Lock reentrantLock = new ReentrantLock();
 
     public void add(int o) {
-        reentrantLock.lock();
-        list.add(o);
-        reentrantLock.unlock();
+        try {
+            reentrantLock.lock();
+            list.add(o);
+        } finally {
+            reentrantLock.unlock();
+        }
     }
 
     public void remove(int o) {
-        reentrantLock.lock();
-        list.remove(o);
-        reentrantLock.unlock();
+        try {
+            reentrantLock.lock();
+            list.remove(o);
+        } finally {
+            reentrantLock.unlock();
+
+        }
     }
 }
 
