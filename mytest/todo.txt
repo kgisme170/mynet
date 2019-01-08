@@ -12,32 +12,12 @@ spark-submit --driver-class-path /home/a/.m2/repository/mysql/mysql-connector-ja
 
 4. useKafka
 5. dubbo
----------------------
-If we use Fork/join framework, when to call "ThreadLocal.remove()" function?
 
 ---------------------
 thread priority
 
-unicode/encode/decode/char/CharSequence
-
----------------------
-覆盖了equals就必须重写hashCode，如果不重写hashCode方法呢？
-hashCode必须和equals返回一致
----------------------
 class什么时候该继承Comparator，什么时候该继承Comparator
 
-How to define a java generic function without return type(void)?
-
-I wish to do this:
-
-    class My {
-        void <T> f(T arg){...}
-    }
-
-Is it possible to do so? Seems generic programming samples all seem to have a T type as return value. But void function should also be ok right?
-
-The code above doesn't compile actually. So how to fulfill my requirement?
-Thanks a lot.
 ------------------------
 散列集，装载因子
 -------------------------
@@ -66,98 +46,9 @@ env = conf.Finish()
 ---------------------
 
 conditional_variable+lock
-
 java ServiceLoader 插件开发
 
 ---------------------
-
-Why java TransferQueue cannot "transfer()" after "put()"?
-
-I've got a very simple code snippet:
-
-    public static void main(String [] args) throws InterruptedException {
-        TransferQueue<Integer> transferQueue = new LinkedTransferQueue<>();
-        System.out.println("Step1");
-        transferQueue.put(2);
-        System.out.println("Step2");
-        transferQueue.transfer(2);
-        System.out.println("Step3");
-    }
-
-Run this program, it prints:
-
-    Step1
-    Step2
-
-And then hangs there. So why "transfer()" function doesn't work?
-
----------------------
-
-What's difference between 3 types of "synchronized" usage in java?
-
-I've searched that there're 3 types of synchronizing function calls inside a class, I've listed them below.
-I'm just curious, what's the core difference between SyncCollection1, SyncCollection2, SyncCollection3, any potential issues in any of them?
-
-    class SyncCollection1 { // using synchronized in function signature
-        List<Integer> list = new ArrayList();
-        public synchronized void add(int o) {
-            list.add(o);
-        }
-        public synchronized void remove(int o) {
-            list.remove(o);
-        }
-    }
-    class SyncCollection2 { // using synchronized(this) inside function
-        List<Integer> list = new ArrayList();
-        public void add(int o) {
-            synchronized (this) {
-                list.add(o);
-            }
-        }
-        public void remove(int o) {
-            synchronized (this) {
-                list.remove(o);
-            }
-        }
-    }
-    class SyncCollection3 { // using ReentrantLock lock()/unlock()
-        List<Integer> list = new ArrayList();
-        Lock reentrantLock = new ReentrantLock();
-        public void add(int o) {
-            reentrantLock.lock();
-            list.add(o);
-            reentrantLock.unlock();
-        }
-        public void remove(int o) {
-            reentrantLock.lock();
-            list.remove(o);
-            reentrantLock.unlock();
-        }
-    }
-
-(1) What's the core difference between putting "synchronized" as function signature, and "synchronized(this)" for the whole function body?
-(2) In what scenario a function level "lock" is better than a function level "synchronized(this)"?
-
-Thanks a lot.
------------------
-
-How to add values for java generic map with "?" value type?
-
-I've seen this kind of declaration in jdk 8 sample:
-
-        Map<String, ?> map = new HashMap<>(3);//OK
-
-But when I tried to add value to "map", I didn't succeed:
-
-        map.put("abc", Optional.of(5));
-        map.put("kk", "xyz");
-
-Both fail to compile. I wish to know:
-
-(1) What does "?" indicate in Map declaration above?
-
-(2) How to give values to "map"?
-
 Thank you.
 
 META-INF
