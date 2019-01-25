@@ -10,24 +10,11 @@ $SPARK_HOME/sbin/spark-class org.apache.spark.deploy.worker.Worker<Spark-Master>
 3. 使用jdbc
 spark-submit --driver-class-path /home/a/.m2/repository/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar --jars target/myspark-1-1.0-SNAPSHOT.jar --class jdbcMysql target/myspark-1-1.0-SNAPSHOT.jar
 
-4. useKafka
-5. dubbo
-
----------------------
-thread priority
-
 class什么时候该继承Comparator，什么时候该继承Comparator
 
 ------------------------
 散列集，装载因子
 -------------------------
-
-            //rowSet.setTableName("myTable");
-            // rowSet.deleteRow()
-            WebRowSet derby?
---------------------
-final 保证初始化的过程线程安全
---------------------
 hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-2.8.4.jar \
 -file ./mapper.py -mapper ./mapper.py \
 -file ./reducer.py -reducer ./reducer.py \
@@ -47,9 +34,6 @@ env = conf.Finish()
 
 conditional_variable+lock
 java ServiceLoader 插件开发
-
----------------------
-Thank you.
 
 META-INF
     -- MANIFEST.MF
