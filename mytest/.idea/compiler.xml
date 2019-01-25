@@ -31,6 +31,7 @@
         <module name="useKafka" />
         <module name="useMybatis" />
         <module name="useRocksDb" />
+        <module name="useServiceLoader" />
         <module name="useSlf4j" />
         <module name="useThrift" />
         <module name="useXml" />

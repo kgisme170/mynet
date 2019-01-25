@@ -17,6 +17,7 @@
         <module>classCompiler</module>
         <module>security</module>
         <module>network</module>
+        <module>useServiceLoader</module>
     </modules>
     <build>
         <plugins>
