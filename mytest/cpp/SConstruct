@@ -39,13 +39,13 @@ env = conf.Finish()
 env = Environment(CFLAGS='-std=c++14')
 conf = Configure(env)
 if conf.CheckCXX():
-   print("Yes CXX11")
+   print("Yes CXX14")
    env.SConscript(dirs=['cpp14'])
 env = conf.Finish()
 
 env = Environment(CFLAGS='-std=c++17')
 conf = Configure(env)
 if conf.CheckCXX():
-   print("Yes CXX11")
+   print("Yes CXX17")
    env.SConscript(dirs=['cpp17'])
 env = conf.Finish()

@@ -24,7 +24,5 @@ hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-2.8.4.jar \
 ---------------------
 
 conditional_variable+lock
-java ServiceLoader 插件开发
-
 META-INF
     -- MANIFEST.MF
