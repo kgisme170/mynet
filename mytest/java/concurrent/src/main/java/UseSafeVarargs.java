@@ -1,5 +1,7 @@
 import java.util.ArrayList;
-
+/**
+ * @author liming.gong
+ */
 public class UseSafeVarargs {
     @SafeVarargs
     public static <T> T useVarargs(T... args) {

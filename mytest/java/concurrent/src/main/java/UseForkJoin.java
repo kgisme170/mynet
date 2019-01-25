@@ -7,7 +7,7 @@ import java.util.function.DoublePredicate;
  */
 public class UseForkJoin extends RecursiveTask<Integer> {
     public static final int THRESHOLD = 1000;
-    private double values[];
+    private double [] values;
     private int from;
     private int to;
     private DoublePredicate filter;
@@ -39,9 +39,9 @@ public class UseForkJoin extends RecursiveTask<Integer> {
     }
 
     public static void main(String[] args) {
-        final int SIZE = 2000000;
-        double[] numbers = new double[SIZE];
-        for (int i = 0; i < SIZE; ++i) {
+        final int size = 2000000;
+        double[] numbers = new double[size];
+        for (int i = 0; i < size; ++i) {
             numbers[i] = Math.random();
         }
         UseForkJoin useForkJoin = new UseForkJoin(numbers, 0, numbers.length, n -> n <= 0.5);

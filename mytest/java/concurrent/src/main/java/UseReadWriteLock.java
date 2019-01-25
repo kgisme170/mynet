@@ -9,7 +9,7 @@ public class UseReadWriteLock {
     private ReadLock readLock = lock.readLock();
     private WriteLock writeLock = lock.writeLock();
 
-    public Thread ReadThread() {
+    public Thread readThread() {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
@@ -31,7 +31,7 @@ public class UseReadWriteLock {
         return t;
     }
 
-    public Thread WriteThread() {
+    public Thread writeThread() {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
@@ -53,7 +53,7 @@ public class UseReadWriteLock {
 
     public static void main(String[] args) {
         UseReadWriteLock useReadWriteLock = new UseReadWriteLock();
-        Thread t1 = useReadWriteLock.ReadThread();
-        Thread t2 = useReadWriteLock.WriteThread();
+        Thread t1 = useReadWriteLock.readThread();
+        Thread t2 = useReadWriteLock.writeThread();
     }
 }

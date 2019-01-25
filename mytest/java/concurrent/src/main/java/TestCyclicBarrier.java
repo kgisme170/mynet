@@ -1,18 +1,21 @@
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
-
+/**
+ * @author liming.gong
+ */
 public class TestCyclicBarrier {
     public static void main(String[] args) {
-        int N = 3;
-        CyclicBarrier barrier = new CyclicBarrier(N, new Runnable() {
+        int n = 3;
+        CyclicBarrier barrier = new CyclicBarrier(n, new Runnable() {
             @Override
             public void run() {
                 System.out.println("当前线程" + Thread.currentThread().getName());
             }
         });
 
-        for (int i = 0; i < N; i++)
+        for (int i = 0; i < n; i++) {
             new Writer(barrier).start();
+        }
     }
 
     static class Writer extends Thread {

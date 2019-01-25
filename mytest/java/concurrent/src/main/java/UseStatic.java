@@ -5,27 +5,32 @@ class Sub extends Super {
     static { System.out.print("Sub "); }
 }
 
-// interface里面的数据成员都是final属性
-interface I {
-    int i = 1, ii = Test.out("ii", 2);
+/**
+ * interface里面的数据成员都是final属性
+  */
+interface InterfaceI {
+    int I = 1, II = Test.out("II", 2);
 }
-interface J extends I {
-    int j = Test.out("j", 3), jj = Test.out("jj", 4);
+interface InterfaceJ extends InterfaceI {
+    int J = Test.out("J", 3), JJ = Test.out("jj", 4);
 }
-interface K extends J {
-    int k = Test.out("k", 5);
+interface InterfaceK extends InterfaceJ {
+    int K = Test.out("K", 5);
 }
 class Test {
-    public int h = 3;
     static int out(String s, int i) {
         System.out.println(s + "=" + i);
         return i;
     }
 }
+
+/**
+ * @author liming.gong
+ */
 public class UseStatic {
     public static void main(String[] args) {
         System.out.println(Sub.taxi);
-        System.out.println(J.i);
-        System.out.println(K.j);
+        System.out.println(InterfaceJ.I);
+        System.out.println(InterfaceK.J);
     }
 }
