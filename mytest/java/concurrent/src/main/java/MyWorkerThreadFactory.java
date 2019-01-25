@@ -24,6 +24,7 @@ class MyWorkerThread extends ForkJoinWorkerThread {
     protected void onTermination(Throwable exception) {
         System.out.printf("MyWorkerThread 结束%d: %d\n", getId(), taskCounter.get());
         super.onTermination(exception);
+        taskCounter.remove();
     }
 
     public void addTask() {
