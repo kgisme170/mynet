@@ -15,10 +15,6 @@ public class TestReference {
         MegaByte() {
             b = new byte[KB * KB];
         }
-
-        void f() {
-            System.out.println(b[10]);
-        }
     }
 
     static MegaByte m = new MegaByte();
@@ -32,23 +28,6 @@ public class TestReference {
     static PhantomReference<MegaByte> phantomReference = new PhantomReference<>(m, referenceQueue);
 
     public static void main(String[] args) {
-        Integer integer = 2;
-        WeakReference<Integer> sr = new WeakReference<>(integer);
-        System.out.println(sr.get());
-        System.gc();                //通知JVM的gc进行垃圾回收
-        System.out.println("step 1: " + sr.get());
-        integer = null;
-        System.gc();
-        /**
-         * 弱引用总是被回收
-         */
-        System.out.println("step 2: " + sr.get());
-
-        integer = 3;
-        PhantomReference<Integer> integerPhantomReference = new PhantomReference<>(integer, null);
-        System.out.println(integerPhantomReference.get());
-        System.exit(1);
-
         Thread t = new Thread() {
             @Override
             public void run() {
