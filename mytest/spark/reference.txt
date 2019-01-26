@@ -6,6 +6,10 @@ $SPARK_HOME/sbin/start-master.sh
 $SPARK_HOME/sbin/spark-class org.apache.spark.deploy.worker.Worker<Spark-Master> &
 
 这个Spark-Master就是Spark URL，在用户界面顶端出现的Spark Master at:
+
+3. 使用jdbc
+spark-submit --driver-class-path /home/a/.m2/repository/mysql/mysql-connector-java/5.1.39/mysql-connector-java-5.1.39.jar --jars target/myspark-1-1.0-SNAPSHOT.jar --class jdbcMysql target/myspark-1-1.0-SNAPSHOT.jar
+
 ---------------------
 启动streaming:
 spark-submit --class structstream streaming/target/streaming-1.0-SNAPSHOT.jar

@@ -1,37 +1,35 @@
 import java.util.*;
-
+import org.junit.Test;
 /**
  * @author liming.gong
  */
-public class TestComparator {
+public class ComparatorTest {
     private int population;
 
-    public TestComparator(String n1, int p1) {
+    public ComparatorTest(String n1, int p1) {
         population = p1;
     }
 
     public static void main(String[] args) {
-        Comparator<TestComparator> order = new Comparator<TestComparator>() {
+        Comparator<ComparatorTest> order = new Comparator<ComparatorTest>() {
             @Override
-            public int compare(TestComparator o1, TestComparator o2) {
+            public int compare(ComparatorTest o1, ComparatorTest o2) {
                 int p1 = o1.getPopulation();
                 int p2 = o2.getPopulation();
                 if (p1 > p2) {
                     return 1;
-                }
-                else if (p1 < p2) {
+                } else if (p1 < p2) {
                     return -1;
-                }
-                else {
+                } else {
                     return 0;
                 }
             }
         };
-        TestComparator t1 = new TestComparator("t1", 1);
-        TestComparator t2 = new TestComparator("t2", 5);
-        TestComparator t3 = new TestComparator("t3", 3);
-        TestComparator t4 = new TestComparator("t4", 4);
-        Queue<TestComparator> q = new PriorityQueue<TestComparator>(10, order);
+        ComparatorTest t1 = new ComparatorTest("t1", 1);
+        ComparatorTest t2 = new ComparatorTest("t2", 5);
+        ComparatorTest t3 = new ComparatorTest("t3", 3);
+        ComparatorTest t4 = new ComparatorTest("t4", 4);
+        Queue<ComparatorTest> q = new PriorityQueue<ComparatorTest>(10, order);
         q.add(t1);
         q.add(t2);
         q.add(t3);
@@ -59,16 +57,19 @@ public class TestComparator {
         }
         Comparator<String> comparator = (first, second) -> first.length() - second.length();
         Arrays.sort(str, comparator);
+    }
 
+    @Test
+    public void testArrayListSort() {
         class Him {
             private int i;
             private int j;
             private String s;
 
-            public Him(int _i, int _j, String _s) {
-                i = _i;
-                j = _j;
-                s = _s;
+            public Him(int i, int j, String s) {
+                this.i = i;
+                this.j = j;
+                this.s = s;
             }
 
             public int getI() {

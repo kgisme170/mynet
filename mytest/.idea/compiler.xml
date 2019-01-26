@@ -29,6 +29,7 @@
         <module name="useJetty" />
         <module name="useJunit" />
         <module name="useKafka" />
+        <module name="useManifest" />
         <module name="useMybatis" />
         <module name="useRocksDb" />
         <module name="useServiceLoader" />
