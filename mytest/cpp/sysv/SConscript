@@ -1,12 +1,15 @@
+#1. Env setttings
 import os
 env=Environment(ENV=os.environ)
+env.Append(CXXFLAGS="--std=c++11")
+#2. Targets
 env.Program(target='mapfile', source='mapfile.c')
+env.Program(target='memexample', source='memexample.cpp')
 env.Program(target='sigcont', source='sigcont.c')
+env.Program(target='usePipe', source='usePipe.cpp')
 env.Program(target='useasm', source='useasm.c')
 env.Program(target='useclone', source='useclone.c')
 env.Program(target='useclone2', source='useclone2.c')
 env.Program(target='usefork', source='usefork.c')
 env.Program(target='usemmap', source='usemmap.c')
-env.Program(target='usePipe', source='usePipe.cpp')
 env.Program(target='usevfork', source='usevfork.c')
-env.Program(target='memexample', source='memexample.cpp')

@@ -1,9 +1,10 @@
 #1. Env setttings
 import os
 env=Environment(ENV=os.environ)
+env.Append(CXXFLAGS="--std=c++11")
 #2. Targets
-env.Program(target='gtest01_setup', source='gtest01_setup.cpp', LIBS=['gtest', 'gtest_main', 'pthread'])
-env.Program(target='gtest02_envThrowFormat', source='gtest02_envThrowFormat.cpp', LIBS=['gtest', 'pthread'])
-env.Program(target='gtest03_valueTypeParam', source='gtest03_valueTypeParam.cpp', LIBS=['gtest', 'pthread'])
-env.Program(target='gtest04_mock', source='gtest04_mock.cpp', LIBS=['gmock_main', 'gmock', 'gtest', 'pthread'])
-env.Program(target='gtest05_mock', source='gtest05_mock.cpp', LIBS=['gmock_main', 'gmock', 'gtest', 'pthread'])
+env.Program(target='gtest01_setup', source='gtest01_setup.cpp')
+env.Program(target='gtest02_envThrowFormat', source='gtest02_envThrowFormat.cpp')
+env.Program(target='gtest03_valueTypeParam', source='gtest03_valueTypeParam.cpp')
+env.Program(target='gtest04_mock', source='gtest04_mock.cpp')
+env.Program(target='gtest05_mock', source='gtest05_mock.cpp')

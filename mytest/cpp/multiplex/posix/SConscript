@@ -1,10 +1,14 @@
+#1. Env setttings
 import os
 env=Environment(ENV=os.environ)
-env.Program(target='threads_cacheline',source='threads_cacheline.cpp',LIBS='pthread')
-env.Program(target='threads_lock'     ,source='threads_lock.cpp',     LIBS='pthread')
-env.Program(target='threads_omp'      ,source='threads_omp.cpp',      LIBS='pthread')
-env.Program(target='testAlarm'        ,source='testAlarm.cpp')
-env.Program(target='testAlarmFork'    ,source='testAlarmFork.cpp')
-env.Program(target='testDup'          ,source='testDup.cpp')
-env.Program(target='testPoll'         ,source='testPoll.cpp')
-env.Program(target='testSelect'       ,source='testSelect.cpp')
+env.Append(CXXFLAGS="--std=c++11")
+#2. Targets
+env.Program(target='testAlarm', source='testAlarm.cpp')
+env.Program(target='testAlarmFork', source='testAlarmFork.cpp')
+env.Program(target='testDup', source='testDup.cpp')
+env.Program(target='testPipeAlarm', source='testPipeAlarm.cpp')
+env.Program(target='testPoll', source='testPoll.cpp')
+env.Program(target='testSelect', source='testSelect.cpp')
+env.Program(target='threads_cacheline', source='threads_cacheline.cpp')
+env.Program(target='threads_lock', source='threads_lock.cpp')
+env.Program(target='threads_omp', source='threads_omp.cpp')
