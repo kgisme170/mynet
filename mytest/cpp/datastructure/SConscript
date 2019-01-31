@@ -2,7 +2,8 @@
 import os
 env=Environment(ENV=os.environ)
 env.Append(CXXFLAGS="--std=c++11")
-#2. Targetsenv.Program(target='arrayPartitionZeros', source='arrayPartitionZeros.cpp')
+#2. Targets
+env.Program(target='arrayPartitionZeros', source='arrayPartitionZeros.cpp')
 env.Program(target='arrayRecursive', source='arrayRecursive.cpp')
 env.Program(target='banker', source='banker.cpp')
 env.Program(target='base10Tobase2', source='base10Tobase2.cpp')
