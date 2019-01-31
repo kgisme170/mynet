@@ -20,7 +20,6 @@ class SocketThread implements Runnable {
             Scanner sc = new Scanner(in, "UTF-8");
             PrintWriter pw = new PrintWriter(new OutputStreamWriter(out, "UTF-8"), true);
             pw.println("Ni hao");
-            /*半关闭可以指定 incoming.shutdownOutput();*/
 
             boolean bye = false;
             while (!bye && sc.hasNextLine()) {
