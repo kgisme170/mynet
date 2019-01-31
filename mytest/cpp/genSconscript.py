@@ -5,7 +5,6 @@ cwd = os.getcwd()
 
 def find_source_files(dir_name):
     file_list = []
-    print("find " + dir_name)
     for root, sub_dirs, files in os.walk(dir_name):
         for file in os.listdir(root):
             file_path = os.path.join(root, file)
@@ -34,6 +33,6 @@ for dir in ["cpp11", "cpp14", "cpp17"]:
         basename = os.path.basename(file_path)
         p = os.path.splitext(basename)[0]
         LIBS = "\', LIBS=[\'atomic\', \'pthread\'])"
-        cmd = "env.Program(target=\'" + p + "\', source=\'" + basename +  + os.linesep
+        cmd = "env.Program(target=\'" + p + "\', source=\'" + basename + LIBS + os.linesep
         f.write(cmd)
     f.close()
