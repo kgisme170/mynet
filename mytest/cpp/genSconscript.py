@@ -43,4 +43,4 @@ def generate_sconscript(dir_list, libs_flag = ""):
         f.close()
 
 generate_sconscript(["cpp11", "cpp14", "cpp17"], "\', LIBS=[\'atomic\', \'pthread\'])")
-generate_sconscript(["cpp98", "datastructure", "gtest", "multiplex/linux", "multiplex/posix", "multiplex/pthread", "sysv"])
+generate_sconscript(["cpp98", "datastructure", "gtest"])
