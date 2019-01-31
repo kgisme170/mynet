@@ -1,0 +1,9 @@
+import os,sys
+env = Environment(ENV = {'PATH' : os.environ['PATH']})
+env.Append(CXXFLAGS="-Wall")
+env.Append(CXXFLAGS="-Werror")
+
+env.SConscript(dirs=['grpc'])
+env.SConscript(dirs=['misc'])
+env.SConscript(dirs=['protobuf'])
+env.SConscript(dirs=['usethrift'])
