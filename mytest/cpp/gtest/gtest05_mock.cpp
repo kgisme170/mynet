@@ -29,25 +29,25 @@ TEST(t2,case3){
     Impl2 mock;
     char msg[]="msg";
 
-    EXPECT_CALL(mock,getS).WillOnce(Return((char*)NULL));
-    EXPECT_CALL(mock,add).WillOnce(Return(1));
+    EXPECT_CALL(mock,getS()).WillOnce(Return((char*)NULL));
+    EXPECT_CALL(mock,add()).WillOnce(Return(1));
     mock.getS();
     mock.add();
 }
 TEST(t2,case4){
     Impl2 mock;
-    EXPECT_CALL(mock,getS).WillOnce(ReturnNull());
+    EXPECT_CALL(mock,getS()).WillOnce(ReturnNull());
     mock.getS();
 
     int m_i=0;
-    EXPECT_CALL(mock,getRef).WillOnce(ReturnRef(m_i));
+    EXPECT_CALL(mock,getRef()).WillOnce(ReturnRef(m_i));
     int& ri=mock.getRef();
     ri=1;
     EXPECT_EQ(1,m_i);
 
     int* pi = &m_i;
     int* p2 = new int(2);
-    EXPECT_CALL(mock,getPointerRef).WillOnce(ReturnPointee(&pi));
+    EXPECT_CALL(mock,getPointerRef()).WillOnce(ReturnPointee(&pi));
     int*& rp=mock.getPointerRef();
     rp = p2;
     EXPECT_EQ(2,*pi);

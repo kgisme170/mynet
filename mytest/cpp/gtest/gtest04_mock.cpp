@@ -76,9 +76,9 @@ TEST(t2,case1){
 }
 TEST(t2,case2){
     Impl2 mock;
-    EXPECT_CALL(mock,add).Times(AtMost(1));
+    EXPECT_CALL(mock,add(::testing::_, ::testing::_)).Times(AtMost(1));
     EXPECT_CALL(mock,set(Not(HasSubstr("bb")))).Times(Between(1,5));
-    EXPECT_CALL(mock,get).Times(Exactly(0));
+    EXPECT_CALL(mock,get(::testing::_)).Times(Exactly(0));
     EXPECT_CALL(mock,minus(AllOf(Gt(5),Ne(10))));
     mock.minus(6);
     //EXPECT_CALL(mock,set(Not(HasSubstr("bb"))));//最后一个有效
