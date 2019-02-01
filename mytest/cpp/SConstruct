@@ -9,7 +9,6 @@ if os.system("./testgmock.sh") == 0:
     env.SConscript(dirs=['gtest'])
 env.SConscript(dirs=['linkerDiff'])
 env.SConscript(dirs=['linkerDynamic'])
-env.SConscript(dirs=['jni'])
 
 #if os.system("./testcpp.sh 11") == 0:
 #    env.SConscript(dirs=['cpp11'])
