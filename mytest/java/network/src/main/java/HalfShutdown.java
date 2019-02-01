@@ -48,7 +48,6 @@ public class HalfShutdown {
             System.out.println("客户线程2");
             e.printStackTrace();
         }
-        /*半关闭可以指定 incoming.shutdownOutput();*/
         try {
             ServerSocket serverSocket = new ServerSocket(PORT);
             while (true) {
