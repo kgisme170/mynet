@@ -1,9 +1,9 @@
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
-
 import javax.security.auth.callback.*;
 import javax.security.auth.login.LoginContext;
 import javax.security.auth.login.LoginException;
+import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 
 /**
  * 将username / password 传递给 LoginModule的handler，通过 LoginContext 的构造函数进行关联
@@ -55,12 +55,17 @@ class SampleCallbackHandler implements CallbackHandler {
  */
 public class LoginManager {
     public static void main(String[] args) {
+        URL url = new LoginManager().getClass().getClassLoader().getResource("");
+        String path = url.getPath() + File.separator + "jaas.conf";
+        System.out.println(path);
+        String key = "java.security.auth.login.config";
+        System.setProperty(key, path);
+
         try {
             final String username = "username";
             final String password = "password";
 
-            //此处指定了使用配置文件的“Sample"验证模块，对应的实现类为SampleLoginModule
-            LoginContext lc = new LoginContext("Sample", new SampleCallbackHandler(username, password));
+            LoginContext lc = new LoginContext("My", new SampleCallbackHandler(username, password));
             System.out.println("进行登录操作，如果验证失败会抛出异常");
             lc.login();
         } catch (LoginException e) {
