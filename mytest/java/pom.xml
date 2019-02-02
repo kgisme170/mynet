@@ -19,6 +19,7 @@
         <module>network</module>
         <module>useServiceLoader</module>
         <module>useManifest</module>
+        <module>useJass</module>
     </modules>
     <build>
         <plugins>
