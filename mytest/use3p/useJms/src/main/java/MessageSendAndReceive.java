@@ -40,7 +40,6 @@ public class MessageSendAndReceive {
         comsumer.setMessageListener(new MessageListener() {
             @Override
             public void onMessage(Message msg) {
-                // TODO Auto-generated method stub
                 TextMessage textMsg = (TextMessage) msg;
                 try {
                     System.out.println("接收到消息: " + textMsg.getText());

@@ -1,0 +1,7 @@
+#1. Env setttings
+import os
+env=Environment(ENV=os.environ)
+env.Append(CXXFLAGS="--std=c99")
+#2. Targets
+env.Program(target='testConst', source='testConst.c')
+env.Program(target='testReturnConst', source=['testReturnConst.c', 'anotherFile.c'])
