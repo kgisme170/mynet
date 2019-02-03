@@ -20,6 +20,7 @@
         <module>useServiceLoader</module>
         <module>useManifest</module>
         <module>useJass</module>
+        <module>useRmi</module>
     </modules>
     <build>
         <plugins>

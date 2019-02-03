@@ -32,6 +32,7 @@
         <module name="useKafka" />
         <module name="useManifest" />
         <module name="useMybatis" />
+        <module name="useRmi" />
         <module name="useRocksDb" />
         <module name="useServiceLoader" />
         <module name="useSlf4j" />
