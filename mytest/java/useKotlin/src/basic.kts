@@ -30,13 +30,13 @@ println("a的值是" + a + ",b的值是" + b)//传统写法
 println("a的值是$a,b的值是$b")//Kotlin替代传统写法
 println("a的值是${a.replace("A", "C")},b的值是$b")//Kotlin写法，在模板中写代码
 
-class TestA {
+open class TestA {
     init {}
     open fun testOpen() {
         println(this)
     }
 }
-class TestB : TestA {
+class TestB : TestA() {
     override fun testOpen() {
         super.testOpen()
     }

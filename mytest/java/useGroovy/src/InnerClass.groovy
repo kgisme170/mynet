@@ -14,16 +14,17 @@ public class Y {
     }
 }
 
-    import java.util.concurrent.CountDownLatch
-    import java.util.concurrent.TimeUnit
+import java.util.concurrent.CountDownLatch
+import java.util.concurrent.TimeUnit
 
-    CountDownLatch called = new CountDownLatch(1)
+CountDownLatch called = new CountDownLatch(1)
 
-    Timer timer = new Timer()
-    timer.schedule(new TimerTask() {
-        void run() {
-            called.countDown()
-        }
-    }, 0)
+Timer timer = new Timer(true)
+timer.schedule(new TimerTask() {
+    void run() {
+        called.countDown()
+    }
+}, 0)
 
-    assert called.await(2, TimeUnit.SECONDS)
+assert called.await(2, TimeUnit.SECONDS)
+print "await finish"

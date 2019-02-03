@@ -23,7 +23,7 @@ task ty << { println "print y"}
 4.times { counter->
     task "task$counter" << { println "task number $counter"}
 }
-//task0.dpendsOn task2, task3
+task0.dependsOn task2, task3
 
 task he << {
     println 'Hello world!'
