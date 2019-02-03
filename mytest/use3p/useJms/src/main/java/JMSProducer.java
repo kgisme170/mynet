@@ -8,13 +8,8 @@ import javax.jms.TextMessage;
 
 import org.apache.activemq.ActiveMQConnection;
 import org.apache.activemq.ActiveMQConnectionFactory;
-/**
- * 消息的生产者（发送者） 
- * @author liang
- *
- */
-public class JMSProducer {
 
+public class JMSProducer {
     //默认连接用户名
     private static final String USERNAME = ActiveMQConnection.DEFAULT_USER;
     //默认连接密码
@@ -68,13 +63,6 @@ public class JMSProducer {
 
     }
 
-    /**
-     * 发送消息
-     *
-     * @param session
-     * @param messageProducer 消息生产者
-     * @throws Exception
-     */
     public static void sendMessage(Session session, MessageProducer messageProducer) throws Exception {
         for (int i = 0; i < JMSProducer.SENDNUM; i++) {
             //创建一条文本消息 
@@ -83,6 +71,5 @@ public class JMSProducer {
             //通过消息生产者发出消息 
             messageProducer.send(message);
         }
-
     }
 }

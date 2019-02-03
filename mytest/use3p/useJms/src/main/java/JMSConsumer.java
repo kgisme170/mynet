@@ -8,13 +8,8 @@ import javax.jms.TextMessage;
 
 import org.apache.activemq.ActiveMQConnection;
 import org.apache.activemq.ActiveMQConnectionFactory;
-/**
- * 消息的消费者（接受者）
- * @author liang
- *
- */
-public class JMSConsumer {
 
+public class JMSConsumer {
     private static final String USERNAME = ActiveMQConnection.DEFAULT_USER;//默认连接用户名
     private static final String PASSWORD = ActiveMQConnection.DEFAULT_PASSWORD;//默认连接密码
     private static final String BROKEURL = ActiveMQConnection.DEFAULT_BROKER_URL;//默认连接地址
@@ -30,7 +25,6 @@ public class JMSConsumer {
 
         //实例化连接工厂
         connectionFactory = new ActiveMQConnectionFactory(JMSConsumer.USERNAME, JMSConsumer.PASSWORD, JMSConsumer.BROKEURL);
-
         try {
             //通过连接工厂获取连接
             connection = connectionFactory.createConnection();
@@ -55,6 +49,5 @@ public class JMSConsumer {
         } catch (JMSException e) {
             e.printStackTrace();
         }
-
     }
 }
