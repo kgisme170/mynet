@@ -1,7 +1,7 @@
 #1. Env setttings
 import os
 env=Environment(ENV=os.environ)
-env.Append(CXXFLAGS="--std=c++11share")
+env.Append(CXXFLAGS="--std=c++11")
 #2. Targets
 env.Program(target='001', source='001.cpp')
 env.Program(target='002_specialMemberFunction', source='002_specialMemberFunction.cpp')
