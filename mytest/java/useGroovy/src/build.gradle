@@ -1,0 +1,58 @@
+task my {
+    doLast {
+        print "Hi there"
+    }
+}
+
+task you << { println "hello" }
+
+task upper << {
+    String something = 'myname'
+    println "original: " + something
+    println "upper: " + something.toUpperCase()
+}
+
+task cout << { 4.times { print "$it " }}
+
+task t1 << { println "print t1" }
+task t2 (dependsOn: t1) << { println "print t2" }
+
+task tx (dependsOn: 'ty') << { println "print x"}
+task ty << { println "print y"}
+
+4.times { counter->
+    task "task$counter" << { println "task number $counter"}
+}
+//task0.dpendsOn task2, task3
+
+task he << {
+    println 'Hello world!'
+}
+he.doLast {
+    println "Greetings from the $he.name task."
+}
+
+defaultTasks 'clean', 'run'
+task clean << {
+    println 'Default Cleaning!'
+}
+task run << {
+    println 'Default Running!'
+}
+task other << {
+    println "I'm not a default task!"
+}
+
+task debug << {
+    println "We build the zip with version=$version"
+}
+task release(dependsOn: 'debug') << {
+    println 'We release now version=$version'
+}
+gradle.taskGraph.whenReady {taskGraph ->
+    if (taskGraph.hasTask(release)) {
+        version = '1.0'
+    } else {
+        version = '1.0-SNAPSHOT'
+    }
+}
