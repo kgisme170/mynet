@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/java/useGroovy/useGroovy.iml" filepath="$PROJECT_DIR$/java/useGroovy/useGroovy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/useKotlin/useKotlin.iml" filepath="$PROJECT_DIR$/java/useKotlin/useKotlin.iml" />
     </modules>
   </component>
 </project>

@@ -4,15 +4,12 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf0b9541-d6e2-4636-85bb-6680ae0aa118" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/useGroovy/src/CallMethod.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/useGroovy/src/CallMethod2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/useGroovy/src/InnerClass.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/useGroovy/src/ReadFile.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/useGroovy/src/ReadFile2.groovy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/useGroovy/src/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/useGroovy/useGroovy.iml" afterDir="false" />
+    <list default="true" id="bf0b9541-d6e2-4636-85bb-6680ae0aa118" name="Default Changelist" comment="Java">
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/useKotlin/src/basic.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/useKotlin/useKotlin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/statistics.sh" beforeDir="false" afterPath="$PROJECT_DIR$/statistics.sh" afterDir="false" />
     </list>
@@ -55,6 +52,7 @@
     <ignored path="$PROJECT_DIR$/java/useManifest/target/" />
     <ignored path="$PROJECT_DIR$/java/useJass/target/" />
     <ignored path="$PROJECT_DIR$/java/useRmi/target/" />
+    <ignored path="$PROJECT_DIR$/java/useBean/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,34 +83,37 @@
           <entry key="gitignore" value="1" />
           <entry key="gradle" value="1" />
           <entry key="groovy" value="6" />
-          <entry key="java" value="240" />
+          <entry key="java" value="250" />
           <entry key="kt" value="1" />
+          <entry key="kts" value="1" />
           <entry key="md" value="2" />
+          <entry key="patch" value="1" />
           <entry key="policy" value="4" />
           <entry key="properties" value="1" />
           <entry key="py" value="4" />
-          <entry key="sh" value="9" />
+          <entry key="sh" value="11" />
           <entry key="txt" value="7" />
-          <entry key="xml" value="12" />
+          <entry key="xml" value="15" />
           <entry key="初始化postgre sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Bash" value="9" />
+          <entry key="Bash" value="11" />
           <entry key="C++" value="5" />
           <entry key="CLASS" value="3" />
           <entry key="Groovy" value="7" />
           <entry key="HOCON" value="3" />
-          <entry key="JAVA" value="240" />
-          <entry key="Kotlin" value="1" />
+          <entry key="JAVA" value="250" />
+          <entry key="Kotlin" value="2" />
           <entry key="Manifest" value="1" />
+          <entry key="PATCH" value="1" />
           <entry key="PLAIN_TEXT" value="21" />
           <entry key="Properties" value="1" />
           <entry key="Python" value="3" />
           <entry key="SPI" value="1" />
           <entry key="Specification" value="2" />
-          <entry key="XML" value="12" />
+          <entry key="XML" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -126,9 +127,11 @@
           <entry key="dummy" value="48" />
           <entry key="gradle" value="556" />
           <entry key="groovy" value="432" />
-          <entry key="java" value="31644" />
+          <entry key="java" value="32167" />
+          <entry key="kt" value="22" />
+          <entry key="kts" value="33" />
           <entry key="py" value="16" />
-          <entry key="sh" value="214" />
+          <entry key="sh" value="251" />
           <entry key="txt" value="9307" />
           <entry key="xml" value="15" />
           <entry key="初始化postgre sql" value="1" />
@@ -136,11 +139,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Bash" value="214" />
+          <entry key="Bash" value="251" />
           <entry key="C++" value="14" />
           <entry key="Groovy" value="988" />
           <entry key="HOCON" value="17" />
-          <entry key="JAVA" value="31644" />
+          <entry key="JAVA" value="32167" />
+          <entry key="Kotlin" value="55" />
           <entry key="Manifest" value="146" />
           <entry key="PLAIN_TEXT" value="9453" />
           <entry key="Python" value="16" />
@@ -153,10 +157,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/useGroovy/src/InnerClass.groovy">
+        <entry file="file://$PROJECT_DIR$/java/useKotlin/src/basic.kts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-25">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            <state relative-caret-position="60">
+              <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -164,17 +168,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/statistics.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11" selection-start-column="11" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/useGroovy/src/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+            <state relative-caret-position="45">
+              <caret line="3" column="125" selection-start-line="3" selection-start-column="125" selection-end-line="3" selection-end-column="125" />
             </state>
           </provider>
         </entry>
@@ -188,13 +183,12 @@
         <option value="Interface" />
         <option value="Python Script" />
         <option value="Class" />
+        <option value="Kotlin Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>DriverManager.getConnection</find>
-      <find>conditional_variable</find>
       <find>Arrays.pa</find>
       <find>ReadWriteLock</find>
       <find>UseSe</find>
@@ -223,6 +217,8 @@
       <find>　　</find>
       <find>policy</find>
       <find>1099</find>
+      <find>Stax</find>
+      <find>changableValue</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -239,12 +235,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java/useManifest/src/main/java/my/M2.java" />
-        <option value="$PROJECT_DIR$/spark/reference.txt" />
-        <option value="$PROJECT_DIR$/todo.txt" />
-        <option value="$PROJECT_DIR$/hadoop/SampleCommand.txt" />
-        <option value="$PROJECT_DIR$/java/network/src/main/java/pkg/MyWebService.java" />
-        <option value="$PROJECT_DIR$/java/useServiceLoader/src/main/java/my/HeCommand.java" />
         <option value="$PROJECT_DIR$/java/useServiceLoader/src/main/java/my/YouCommand.java" />
         <option value="$PROJECT_DIR$/java/jLang/src/main/java/TestComparator.java" />
         <option value="$PROJECT_DIR$/java/jLang/src/main/java/TestPriority.java" />
@@ -276,7 +266,6 @@
         <option value="$PROJECT_DIR$/java/useRmi/src/main/compute/Task.java" />
         <option value="$PROJECT_DIR$/java/useRmi/src/main/java/engine/ComputeEngine.java" />
         <option value="$PROJECT_DIR$/java/useRmi/src/main/java/client/ComputePi.java" />
-        <option value="$PROJECT_DIR$/java/useRmi/src/main/java/client/Pi.java" />
         <option value="$PROJECT_DIR$/java/useRmi/src/main/resources/runclient.sh" />
         <option value="$PROJECT_DIR$/java/useRmi/src/main/resources/runservers.sh" />
         <option value="$PROJECT_DIR$/java/useRmi/src/main/resources/server.policy" />
@@ -289,6 +278,13 @@
         <option value="$PROJECT_DIR$/java/useGroovy/src/CallMethod.java" />
         <option value="$PROJECT_DIR$/java/useGroovy/src/CallMethod2.java" />
         <option value="$PROJECT_DIR$/java/useGroovy/src/build.gradle" />
+        <option value="$PROJECT_DIR$/java/useXml/src/main/java/UseStax2.java" />
+        <option value="$PROJECT_DIR$/java/useBean/src/main/java/bean/SomeBeanPropertyListener.java" />
+        <option value="$PROJECT_DIR$/java/useRmi/src/main/java/client/Pi.java" />
+        <option value="$PROJECT_DIR$/java/useBean/src/main/java/bean/SomeBean.java" />
+        <option value="$PROJECT_DIR$/java/useBean/src/main/java/bean/TestBean.java" />
+        <option value="$PROJECT_DIR$/java/useKotlin/src/basic.kt" />
+        <option value="$PROJECT_DIR$/java/useKotlin/src/basic.kts" />
         <option value="$PROJECT_DIR$/statistics.sh" />
       </list>
     </option>
@@ -306,11 +302,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="73" />
-    <option name="y" value="23" />
-    <option name="width" value="1560" />
-    <option name="height" value="877" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1725" />
+    <option name="y" value="-114" />
+    <option name="width" value="1616" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -391,22 +387,14 @@
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="useGroovy" type="462c0819:PsiDirectoryNode" />
+              <item name="useKotlin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
               <item name="mytest" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="useGroovy" type="462c0819:PsiDirectoryNode" />
+              <item name="useKotlin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="useGroovy" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="InnerClass.groovy" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
@@ -416,9 +404,9 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549161220952" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549169020504" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/java/classCompiler/src/main/java" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4232558" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -444,14 +432,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CallMethod2">
-    <configuration name="CallMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CallMethod" />
-      <module name="useGroovy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin script.basic.kts">
     <configuration name="CallMethod2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CallMethod2" />
       <module name="useGroovy" />
@@ -459,45 +440,81 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LoginManager" />
-      <module name="useJass" />
+    <configuration name="TestBean" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bean.TestBean" />
+      <module name="useBean" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bean.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsePath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UsePath" />
+    <configuration name="UseStax" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UseStax" />
+      <module name="useXml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UseStax2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UseStax2" />
+      <module name="useXml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="basic.kts" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script" temporary="true" nameIsGenerated="true">
       <module name="jLang" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReadFile2" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
-      <module name="useGroovy" />
-      <setting name="path" value="file://$PROJECT_DIR$/java/useGroovy/src/ReadFile2.groovy" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$/java/useGroovy/src" />
-      <setting name="debug" value="false" />
+      <option name="filePath" value="$PROJECT_DIR$/java/useKotlin/src/basic.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/java/useKotlin/src" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" value="$PROJECT_DIR$/java/useKotlin/src/basic.kts" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/java/useKotlin/src" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LoginManager" />
-      <item itemvalue="Application.UsePath" />
-      <item itemvalue="Application.CallMethod" />
-      <item itemvalue="Groovy.ReadFile2" />
       <item itemvalue="Application.CallMethod2" />
+      <item itemvalue="Application.UseStax" />
+      <item itemvalue="Application.UseStax2" />
+      <item itemvalue="Application.TestBean" />
+      <item itemvalue="Kotlin script.basic.kts" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin script.basic.kts" />
+        <item itemvalue="Application.TestBean" />
+        <item itemvalue="Application.UseStax2" />
+        <item itemvalue="Application.UseStax" />
         <item itemvalue="Application.CallMethod2" />
-        <item itemvalue="Groovy.ReadFile2" />
-        <item itemvalue="Application.CallMethod" />
-        <item itemvalue="Application.LoginManager" />
-        <item itemvalue="Application.UsePath" />
       </list>
     </recent_temporary>
   </component>
@@ -518,48 +535,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544783607661</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Java">
-      <created>1546816828587</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1546816828587</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Java">
-      <created>1546817715055</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1546817715055</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Java">
-      <created>1546817830418</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1546817830418</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Java">
-      <created>1546818923815</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1546818923815</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Java">
-      <created>1546819290429</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1546819290429</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Java">
-      <created>1546819369837</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1546819369837</updated>
     </task>
     <task id="LOCAL-00060" summary="Java">
       <created>1546819959390</created>
@@ -862,7 +837,49 @@
       <option name="project" value="LOCAL" />
       <updated>1549154151440</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="Java">
+      <created>1549162471879</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1549162471879</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Java">
+      <created>1549163709314</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1549163709314</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Java">
+      <created>1549165488579</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1549165488579</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Java">
+      <created>1549165505976</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1549165505976</updated>
+    </task>
+    <task id="LOCAL-00107" summary="Java">
+      <created>1549165543531</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1549165543531</updated>
+    </task>
+    <task id="LOCAL-00108" summary="Java">
+      <created>1549166872370</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1549166872370</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -907,9 +924,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="68" y="23" width="1372" height="877" extended-state="6" />
+    <frame x="2109" y="-114" width="1616" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23233083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19631512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -918,16 +936,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49624062" weight="0.32611465" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.44360903" weight="0.31082803" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.44027954" weight="0.30984455" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49659348" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32866243" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49548873" side_tool="true" visible="true" weight="0.47388536" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49809402" side_tool="true" visible="true" weight="0.22072539" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.47218046" weight="0.32611465" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.5045113" visible="true" weight="0.47388536" />
-      <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.5987888" weight="0.41910827" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.501906" visible="true" weight="0.22072539" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.59720457" weight="0.41865286" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -936,7 +954,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.22706766" />
+      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.19186786" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -946,51 +964,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="SHOW_PATCH_IN_EXPLORER" value="true" />
     <MESSAGE value="Java" />
     <option name="LAST_COMMIT_MESSAGE" value="Java" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/useManifest/src/main/java/TestOom.java" />
-    <entry file="file://$PROJECT_DIR$/java/useJunit/src/test/java/ComparableComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark/streaming/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="87" column="32" lean-forward="true" selection-start-line="87" selection-start-column="32" selection-end-line="87" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useManifest/src/main/java/TestReference.java" />
-    <entry file="file://$PROJECT_DIR$/java/jLang/src/main/java/TestOom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" selection-start-line="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useManifest/src/main/java/PhantomGc.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="2064" column="17" selection-start-line="2064" selection-start-column="17" selection-end-line="2064" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useManifest/src/main/java/question.txt" />
-    <entry file="file://$PROJECT_DIR$/java/useManifest/src/main/java/ReferenceGc.java" />
-    <entry file="file://$PROJECT_DIR$/java/useManifest/src/main/resources/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/python/concurrent/pv.py" />
     <entry file="file://$PROJECT_DIR$/java/network/src/main/java/MyHttpClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1163,20 +1141,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/useRmi/src/main/java/client/Pi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#787#788#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/useRmi/src/main/java/engine/ComputeEngine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -1291,15 +1255,107 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/useGroovy/src/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+        <state relative-caret-position="36">
+          <caret line="41" column="6" lean-forward="true" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useXml/src/main/resources/book.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/javax/xml/stream/events/XMLEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useXml/src/main/java/UseStax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useXml/src/main/java/UseStax2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Java.patch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-101" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useBean/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useRmi/src/main/java/client/Pi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/beans/VetoableChangeSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="267" column="16" selection-start-line="267" selection-start-column="16" selection-end-line="267" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useBean/src/main/java/bean/SomeBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useBean/src/main/java/bean/SomeBeanPropertyListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useBean/src/main/java/bean/TestBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/useKotlin/src/basic.kts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/statistics.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        <state relative-caret-position="45">
+          <caret line="3" column="125" selection-start-line="3" selection-start-column="125" selection-end-line="3" selection-end-column="125" />
         </state>
       </provider>
     </entry>
@@ -1356,7 +1412,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>useDb</last-edited>
+          <last-edited>mytest (1)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
