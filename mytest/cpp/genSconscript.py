@@ -42,5 +42,5 @@ def generate_sconscript(dir_list, libs_flag = ""):
                 f.write("env.Program(target=\'" + p + "\', source=\'" + basename + libs_flag + os.linesep)
         f.close()
 
-generate_sconscript(["cpp11", "cpp14", "cpp17"], "\', LIBS=[\'atomic\', \'pthread\'])")
-generate_sconscript(["cpp98", "datastructure"])
+#generate_sconscript(["cpp11", "cpp14", "cpp17"], "\', LIBS=[\'atomic\', \'pthread\'])")
+generate_sconscript(["cpp98", "datastructure", "cpp11share"])

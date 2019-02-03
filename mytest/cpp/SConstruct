@@ -5,6 +5,7 @@ env.Append(CXXFLAGS="-Werror")
 
 env.SConscript(dirs=['c99'])
 env.SConscript(dirs=['cpp98'])
+env.SConscript(dirs=['cpp98namelookup'])
 env.SConscript(dirs=['datastructure'])
 if os.system("./testgmock.sh") == 0:
     env.SConscript(dirs=['gtest'])
