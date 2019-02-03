@@ -30,6 +30,7 @@ public class Pi implements Task<BigDecimal>, Serializable {
     /**
      * Calculate pi.
      */
+    @Override
     public BigDecimal execute() {
         return computePi(digits);
     }
