@@ -16,8 +16,8 @@ conf = Configure(env)
 if conf.CheckCXX():
    print("Yes CXX11")
    env.SConscript(dirs=['cpp11'])
+   env.SConscript(dirs=['cpp11concurrent'])
    env.SConscript(dirs=['cpp11share'])
-   env.SConscript(dirs=['concurrent'])
 env = conf.Finish()
 
 env = Environment(CFLAGS='-std=c++14')
