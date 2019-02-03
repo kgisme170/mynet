@@ -43,7 +43,10 @@ public class UseStax2 {
                         if (content != null && !content.isEmpty() && content.length() != 0) {
                             System.out.println(", 文本 = " + content + ", " + content.length());
                         }
+                        break;
                     }
+                    default:
+                        break;
                 }
                 if (!reader.hasNext()) {
                     break;
