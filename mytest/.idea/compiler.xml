@@ -29,6 +29,7 @@
         <module name="useHibernate" />
         <module name="useJass" />
         <module name="useJetty" />
+        <module name="useJms" />
         <module name="useJunit" />
         <module name="useKafka" />
         <module name="useManifest" />

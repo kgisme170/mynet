@@ -21,6 +21,7 @@
         <module>useSlf4j</module>
         <module>useRocksDb</module>
         <module>useCurator</module>
+        <module>useJms</module>
     </modules>
     <build>
         <plugins>
