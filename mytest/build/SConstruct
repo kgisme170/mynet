@@ -1,0 +1,8 @@
+import os,sys
+env = Environment(ENV = {'PATH' : os.environ['PATH']})
+env.Append(CXXFLAGS="-Wall")
+env.Append(CXXFLAGS="-Werror")
+
+env.SConscript(dirs=['linkerConstruct'])
+env.SConscript(dirs=['linkerDiff'])
+env.SConscript(dirs=['linkerDynamic'])

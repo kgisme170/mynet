@@ -3,6 +3,12 @@
 using namespace std;
 constexpr int f(){return 3;}
 template<int N> int g(){return N;}
+
+class A{
+    static const int a = 3;
+    constexpr static int b = 3;
+    constexpr static int c[2] = { 1, 2 };//--std=c++11
+};
 constexpr int pow(int base, int exp)//求次方数
 {
     return (exp == 0 ? 1 : base * pow(base, exp - 1));

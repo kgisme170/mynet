@@ -9,8 +9,6 @@ env.SConscript(dirs=['cpp98namelookup'])
 env.SConscript(dirs=['datastructure'])
 if os.system("./testgmock.sh") == 0:
     env.SConscript(dirs=['gtest'])
-env.SConscript(dirs=['linkerDiff'])
-env.SConscript(dirs=['linkerDynamic'])
 
 env = Environment(CFLAGS='-std=c++11')
 conf = Configure(env)
