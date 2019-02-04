@@ -50,6 +50,7 @@ generate_sconscript("cpp14", "--std=c++14")
 generate_sconscript("cpp17", "--std=c++17")
 
 generate_sconscript("cpp98", "--std=c++98")
+generate_sconscript("cpp98metaprogramming", "--std=c++98")
 generate_sconscript("cpp98namelookup", "--std=c++98")
 generate_sconscript("cpp98virtualstatic", "--std=c++98")
 

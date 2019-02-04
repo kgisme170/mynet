@@ -4,8 +4,12 @@ env.Append(CXXFLAGS="-Wall")
 env.Append(CXXFLAGS="-Werror")
 
 env.SConscript(dirs=['c99'])
+
 env.SConscript(dirs=['cpp98'])
 env.SConscript(dirs=['cpp98namelookup'])
+env.SConscript(dirs=['cpp98metaprogramming'])
+env.SConscript(dirs=['cpp98virtualstatic'])
+
 env.SConscript(dirs=['datastructure'])
 if os.system("./testgmock.sh") == 0:
     env.SConscript(dirs=['gtest'])
@@ -16,7 +20,9 @@ if conf.CheckCXX():
    print("Yes CXX11")
    env.SConscript(dirs=['cpp11'])
    env.SConscript(dirs=['cpp11concurrent'])
+   env.SConscript(dirs=['cpp11initializer'])
    env.SConscript(dirs=['cpp11share'])
+   env.SConscript(dirs=['cpp11variadic'])
 env = conf.Finish()
 
 env = Environment(CFLAGS='-std=c++14')

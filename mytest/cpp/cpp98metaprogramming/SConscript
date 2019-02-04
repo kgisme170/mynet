@@ -1,0 +1,11 @@
+#1. Env setttings
+import os
+env=Environment(ENV=os.environ)
+env.Append(CXXFLAGS="--std=c++98")
+#2. Targets
+env.Program(target='001_compile_time_computing', source='001_compile_time_computing.cpp')
+env.Program(target='002_is_base_of', source='002_is_base_of.cpp')
+env.Program(target='003_is_base_of_static_assert', source='003_is_base_of_static_assert.cpp')
+env.Program(target='004_tag_dispatch', source='004_tag_dispatch.cpp')
+env.Program(target='005_array_computing', source='005_array_computing.cpp')
+env.Program(target='006_array_computing_expression_template', source='006_array_computing_expression_template.cpp')

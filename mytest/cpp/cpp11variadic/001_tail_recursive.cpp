@@ -13,6 +13,16 @@ void printLine(First&& first, Rest&&... rest)
     printLine(forward<Rest>(rest)...);
 }
 
+template<typename T>
+T sumAll(T&& value){
+    return value;
+}
+
+template<typename Head, typename...Tail>
+Head sumAll(Head&& h, Tail&&...tail){
+    return h+sumAll(forward<Tail>(tail)...);
+}
+
 int main()
 {
     double d = 2.3;
@@ -20,5 +30,7 @@ int main()
     printLine("hi",d,'a');
     printLine(d,'a');
     printLine('a');
+
+    cout<<'\n'<<sumAll(2L,'a',3)<<endl;
     return 0;
 }
