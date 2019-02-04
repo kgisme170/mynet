@@ -15,7 +15,7 @@ string randomString()
         iBuf[i]=(char)rand0to1*92+33;
     }
     char ret[6];
-    snprintf(ret, 6, "%c%c%c%c%c\n",
+    snprintf(ret, 7, "%c%c%c%c%c\n",
         iBuf[0],iBuf[1],iBuf[2],iBuf[3],iBuf[4]);
     return ret;
 }

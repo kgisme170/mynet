@@ -2,7 +2,7 @@
 #include<cstdlib>
 #include<string>
 using namespace std;
-void* operator new(size_t s)throw(bad_alloc){
+void* operator new(size_t s){
     printf("分配了%lu字节\n",s);
     return malloc(s);
 }

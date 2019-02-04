@@ -12,6 +12,6 @@
      char buf3[s];
      char buf4[InAnotherFile()];
      char buf5[add(3,argc)];
-     printf("%d,%d,%d,%d,%d\n",sizeof(buf2),sizeof(buf3),sizeof(buf4),sizeof(buf5));
+     printf("%lu,%lu,%lu,%lu\n",sizeof(buf2),sizeof(buf3),sizeof(buf4),sizeof(buf5));
      return 0;
  }

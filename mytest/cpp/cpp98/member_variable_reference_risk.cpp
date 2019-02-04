@@ -3,7 +3,7 @@ struct M{
     int* pi;
     M():pi(new int(12)){printf("构造\n");}
     M(const M&){printf("拷贝\n");}
-    ~M(){delete pi;pi=nullptr;}
+    ~M(){delete pi;pi=NULL;}
 };
 struct B{
     M& ref;

@@ -1,4 +1,3 @@
-$cat testexception1.cpp
 #include<iostream>
 using namespace std;
 struct M{

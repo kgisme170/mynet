@@ -1,4 +1,3 @@
-$cat testexception2.cpp
 #include<memory>
 #include<iostream>
 using namespace std;

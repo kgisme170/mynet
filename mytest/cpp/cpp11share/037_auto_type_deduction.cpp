@@ -1,3 +1,11 @@
+#include<stdio.h>
+struct M{
+    int m_i;
+    M():m_i(2){}
+    int GetValue(){return m_i;}
+    int&GetRef()  {return m_i;}
+};
+
 int main(){
     M obj;
     auto i=obj.GetValue();
