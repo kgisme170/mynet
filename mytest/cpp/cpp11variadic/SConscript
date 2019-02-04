@@ -1,0 +1,9 @@
+#1. Env setttings
+import os
+env=Environment(ENV=os.environ)
+env.Append(CXXFLAGS="--std=c++11")
+#2. Targets
+env.Program(target='001_tail_recursive', source='001_tail_recursive.cpp')
+env.Program(target='002_iteration', source='002_iteration.cpp')
+env.Program(target='003_count_of', source='003_count_of.cpp')
+env.Program(target='004_type_list', source='004_type_list.cpp')

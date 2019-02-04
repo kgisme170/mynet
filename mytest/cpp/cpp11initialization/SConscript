@@ -1,0 +1,16 @@
+#1. Env setttings
+import os
+env=Environment(ENV=os.environ)
+env.Append(CXXFLAGS="--std=c++11")
+#2. Targets
+env.Program(target='001_static_zero_initialize', source='001_static_zero_initialize.cpp')
+env.Program(target='002_value_initialization', source='002_value_initialization.cpp')
+env.Program(target='003_most_vexing_parse', source='003_most_vexing_parse.cpp')
+env.Program(target='004_aggregation_initialization', source='004_aggregation_initialization.cpp')
+env.Program(target='005_copy_list_initialization', source='005_copy_list_initialization.cpp')
+env.Program(target='007_template_initializer_list', source='007_template_initializer_list.cpp')
+env.Program(target='008_auto_initializer_list', source='008_auto_initializer_list.cpp')
+env.Program(target='009_dereference_initializer_list', source='009_dereference_initializer_list.cpp')
+env.Program(target='010_greedy_match_initializer_list', source='010_greedy_match_initializer_list.cpp')
+env.Program(target='011_greedy_match_initializer_list', source='011_greedy_match_initializer_list.cpp')
+env.Program(target='012_empty_initializer_list', source='012_empty_initializer_list.cpp')
