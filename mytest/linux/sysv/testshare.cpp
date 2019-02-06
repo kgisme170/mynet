@@ -9,7 +9,7 @@ public:
 };
 int main(){
     const vector<C> v(3);
-    for(auto c:v){
+    for(auto& c:v){
         cout<<c.m_i<<'\n';
     }
     return 0;
