@@ -1,3 +1,5 @@
+#include<initializer_list>
+using namespace std;
 template<class T>
 void f(T t){}
 int main(){
