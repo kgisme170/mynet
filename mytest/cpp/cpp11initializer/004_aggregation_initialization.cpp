@@ -1,4 +1,3 @@
-#include<initializer_list>
 #include<map>
 #include<vector>
 using namespace std;
@@ -7,7 +6,7 @@ struct A{
     struct B{
         int i;
         int j;
-    };
+    }obj;
 }a={2,{3,4}};
 int main() {
     int buf[2][2]={1,2,3,4};
