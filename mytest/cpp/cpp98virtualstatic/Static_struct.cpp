@@ -1,3 +1,4 @@
+#include<stdio.h>
 struct Static_struct{
     static int m;
 };
