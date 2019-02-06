@@ -6,7 +6,7 @@ struct STATIC_ASSERT_TRUE{};
 template<>
 struct STATIC_ASSERT_TRUE<true>{
     int i;
-}
+};
 
 template<bool b>
 bool TEST_TRUE(){return sizeof(STATIC_ASSERT_TRUE<b>::i)==sizeof(int);}
