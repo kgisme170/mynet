@@ -1,5 +1,6 @@
 #include <cstddef>
 #include <utility>
+using namespace std;
 template<class T>
 size_t f(T&&...elem){
     return sizeof...(elem);//C++11的sizeof
