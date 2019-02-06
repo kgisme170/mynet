@@ -2,9 +2,9 @@
 using namespace std;
 
 template<bool b>
-void STATIC_ASSERT_TRUE();
+class STATIC_ASSERT_TRUE();
 template<>
-void STATIC_ASSERT_TRUE<true>(){
+class STATIC_ASSERT_TRUE<true>(){
     int i;
 }
 
