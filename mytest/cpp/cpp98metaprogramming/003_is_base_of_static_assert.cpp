@@ -4,7 +4,9 @@ using namespace std;
 template<bool b>
 void STATIC_ASSERT_TRUE();
 template<>
-void STATIC_ASSERT_TRUE<true>(){}
+void STATIC_ASSERT_TRUE<true>(){
+    int i;
+}
 
 template<bool b>
 bool TEST_TRUE(){return sizeof(STATIC_ASSERT_TRUE<b>::i)==sizeof(int);}
