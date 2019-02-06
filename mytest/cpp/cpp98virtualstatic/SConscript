@@ -3,7 +3,6 @@ import os
 env=Environment(ENV=os.environ)
 env.Append(CXXFLAGS="--std=c++98")
 #2. Targets
-env.Program(target='Static_const_struct', source='Static_const_struct.cpp')
 env.Program(target='Static_struct', source='Static_struct.cpp')
 env.Program(target='virtual01', source='virtual01.cpp')
 env.Program(target='virtual02', source='virtual02.cpp')

@@ -3,6 +3,7 @@ import os
 env=Environment(ENV=os.environ)
 env.Append(CXXFLAGS="--std=c++11")
 #2. Targets
+env.Program(target='Static_const_struct_error', source='Static_const_struct_error.cpp')
 env.Program(target='001_static_zero_initialize', source='001_static_zero_initialize.cpp')
 env.Program(target='002_value_initialization', source='002_value_initialization.cpp')
 env.Program(target='003_most_vexing_parse', source='003_most_vexing_parse.cpp')
