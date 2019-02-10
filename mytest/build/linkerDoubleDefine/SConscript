@@ -1,13 +1,8 @@
 #1. Env setttings
-import os
+import os,sys
 env=Environment(ENV=os.environ)
 env.Append(LIBPATH=".")
 #2. Targets
-env.Object('b.cpp')
-env.Object('d.cpp')
-env.StaticLibrary('b',['b.o'])
-env.StaticLibrary('d',['d.o'])
-env.Program('a',source=['a.cpp'],LIBS=['b','d'])
 
 main=env.Object('doubledefinemain.cpp')
 env.Program('doubledefineCpp',source=[main,'doubledefine01.cpp','doubledefine02.cpp'])
