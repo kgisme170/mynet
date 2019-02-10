@@ -1,4 +1,6 @@
 extern int a;
+#include<stdio.h>
 int main() {
-      return a;
+    printf("%d\n",a);
+    return 0;
 }
