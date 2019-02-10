@@ -1,4 +1,8 @@
 cmake_minimum_required (VERSION 2.8)
 add_library(myclasses SHARED class1.cpp class2.cpp)
+add_library(class1 SHARED class1.cpp)
+add_library(class2 SHARED class2.cpp)
 add_executable(TestConstructor main.cpp)
+add_executable(TestConstructor2 main.cpp)
 target_link_libraries(TestConstructor myclasses)
+target_link_libraries(TestConstructor class1 class2)
