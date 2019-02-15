@@ -3,7 +3,7 @@
 #include <dlfcn.h>
 
 int main(){
-    void * handle = dlopen("./libmya.so", RTLD_LAZY);
+    void * handle = dlopen("libmya.so", RTLD_LAZY);
     if (!handle) {
         fprintf(stderr, "%s\n", dlerror());
         exit(EXIT_FAILURE);
