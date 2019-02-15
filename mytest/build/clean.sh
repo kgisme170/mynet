@@ -7,3 +7,4 @@ rm -fr linkerPreload/build
 rm -fr useCmake/forJava/build
 rm -fr useCmake/stage1/build
 rm -fr useCmake/stage2/build
+rm -fr useCmake/transmitDeps/build
