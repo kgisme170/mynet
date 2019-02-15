@@ -1,8 +1,6 @@
-public class cpp2java {
-    static {
-        System.loadLibrary("impl");
-    }
+import static java.util.Arrays.copyOf;
 
+public class cpp2java {
     private int intField;
 
     public cpp2java() {
@@ -12,6 +10,10 @@ public class cpp2java {
     public cpp2java(int i) {
         intField = i;
         System.out.println("ctor(int)");
+    }
+
+    static {
+        System.loadLibrary("impl");
     }
 
     private static native void print();
@@ -26,6 +28,14 @@ public class cpp2java {
     public static boolean boolFunc(boolean bool) {
         print();
         return !bool;
+    }
+
+    public static int[] arrayFunc(int [] array) {
+        int [] newArray = copyOf(array, array.length);
+        for(int i = 0; i < newArray.length; ++i) {
+            newArray[i] += 1;
+        }
+        return newArray;
     }
 
     private static void mythrow() {
@@ -47,5 +57,11 @@ public class cpp2java {
 
     public int addone(int i) {
         return i + 1;
+    }
+
+    public static void main(String [] args) {
+        int [] buf = new int [] {1,2,3};
+        int [] newBuf = arrayFunc(buf);
+        System.out.println(newBuf.toString());
     }
 }
