@@ -19,6 +19,7 @@ int printStackTrace(JNIEnv *env) {
     env->DeleteLocalRef(cls);
     return 0;
 }
+
 char option[] = "-Djava.class.path=.:..";
 int main(){
     JavaVMOption options[1];
@@ -72,6 +73,11 @@ int main(){
     } else {
         printf("find static byte[] read(String) failed\n");
     }
+
+    // arrayFunction begins
+    // public static int[] arrayFunc(int[]);
+    // descriptor: ([I)[I    
+    // arrayFunction ends
 
     mid = env->GetStaticMethodID(cls, "mythrow", "()V");
     if (mid) {
@@ -135,7 +141,6 @@ int main(){
     env->SetIntField(obj2, fid, 8);
     int f = env->GetIntField(obj2, fid);
     printf("new field value=%d\n", f);
-    //env->ReleaseEle
     jvm->DestroyJavaVM();
     return 0;
 }
