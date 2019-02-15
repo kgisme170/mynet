@@ -19,7 +19,7 @@ int printStackTrace(JNIEnv *env) {
     env->DeleteLocalRef(cls);
     return 0;
 }
-char option[] = "-Djava.class.path=.";
+char option[] = "-Djava.class.path=.:..";
 int main(){
     JavaVMOption options[1];
     options[0].optionString = option;
