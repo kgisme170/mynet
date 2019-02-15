@@ -24,7 +24,7 @@ int main(){
     JavaVMOption options[1];
     options[0].optionString = option;
     JavaVMInitArgs vm_args = {0};
-    vm_args.version = JNI_VERSION_1_6;
+    vm_args.version = JNI_VERSION_1_8;
     vm_args.nOptions = 1;
     vm_args.options = options;
 
@@ -39,6 +39,10 @@ int main(){
     jclass cls = env->FindClass("cpp2java");
     if (cls == NULL) {
         printf("find class failed\n");
+    }
+    if (env->ExceptionOccurred()) // check if an exception occurred
+    {
+        env->ExceptionDescribe(); // print the stack trace
         return -2;
     }
     // javap -s -p cpp2java.class
