@@ -1,9 +1,3 @@
-#java_binary(
-#    name = "hello",
-#    srcs = glob(["**/*.java"]),
-#    main_class = "com.demo.DemoRunner"
-#)
-
 java_binary(
     name = "hello",
     srcs = ["src/main/java/com/demo/DemoRunner.java"],
