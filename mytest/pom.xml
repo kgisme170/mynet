@@ -11,8 +11,8 @@
     <modules>
         <module>hadoop</module>
         <module>java</module>
+        <module>java3p</module>
         <module>spark</module>
-        <module>use3p</module>
         <module>spring</module>
     </modules>
 </project>
