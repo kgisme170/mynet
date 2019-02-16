@@ -69,6 +69,9 @@ int useJvm::CallStaticFunction(const char* functionName, int parameter) {
 // arrayFunction ends
 jintArray useJvm::CallStaticFunction(const char* functionName, const int* parameter, const size_t size) {
     jmethodID mid = env->GetStaticMethodID(cls, functionName, "([I)[I");
+    for(size_t i=0;i<size;++i) {
+        printf("parameter = %d\n", parameter[i]);
+    }
     if (mid) {
         jintArray iarr = env->NewIntArray(size);
         env->SetIntArrayRegion(iarr, 0, size, parameter);
