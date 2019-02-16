@@ -1,2 +1,4 @@
 #include<time.h>
-int InAnotherFile(){return 3;}
+int InAnotherFile() {
+    return 3;
+}

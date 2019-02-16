@@ -1,4 +1,4 @@
 #include<stdatomic.h>
-int main(){
+int main() {
     return 0;
 }

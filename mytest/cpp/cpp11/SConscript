@@ -4,6 +4,7 @@ env=Environment(ENV=os.environ)
 env.Append(CXXFLAGS="--std=c++11")
 #2. Targets
 env.Program(target='Static_struct', source='Static_struct.cpp')
+env.Program(target='constInitializer', source='constInitializer.cpp')
 env.Program(target='decl', source='decl.cpp')
 env.Program(target='noexcept', source='noexcept.cpp')
 env.Program(target='objectModel01', source='objectModel01.cpp')

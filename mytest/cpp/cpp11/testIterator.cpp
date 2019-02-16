@@ -2,9 +2,8 @@
 #include <vector>
 #include <iterator>
 
-int main()
-{
-    std::vector<int> vec{61,62,63,64,65,66,67,68};
+int main() {
+    std::vector<int> vec{61, 62, 63, 64, 65, 66, 67, 68};
     std::fill_n(std::back_inserter(vec), 4, 0);
     for (int n : vec)
         std::cout << n << ' ';

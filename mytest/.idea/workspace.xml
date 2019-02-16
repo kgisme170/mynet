@@ -3,16 +3,53 @@
   <component name="AnalysisUIOptions">
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bf0b9541-d6e2-4636-85bb-6680ae0aa118" name="Default Changelist" comment="Java">
-      <change afterPath="$PROJECT_DIR$/linux/sysv/SConscript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/fscontext_4_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/fscontext_4_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_51.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_51.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_52.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_52.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_53.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_53.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_54.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_54.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_55.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_2_55.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/slf4j_simple_1_8_0_beta2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/slf4j_simple_1_8_0_beta2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/SConstruct" beforeDir="false" afterPath="$PROJECT_DIR$/linux/SConstruct" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/fcntlMonitor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/sysv/fcntlMonitor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/genSConscript.py" beforeDir="false" afterPath="$PROJECT_DIR$/linux/genSConscript.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/testFpe.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/sysv/testFpe.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/testshare.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/sysv/testshare.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/useuuid.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/sysv/useuuid.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/c99/anotherFile.c" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/c99/anotherFile.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/c99/testConst.c" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/c99/testConst.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/c99/testReturnConst.c" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/c99/testReturnConst.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/Makefile.testString01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/SConscript" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/SConscript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/Static_struct.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/Static_struct.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/constInitializer.cp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/constInitializer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/decl.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/decl.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/enumAsTemplateParameter_error.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/enumAsTemplateParameter_error.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/noexcept.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/noexcept.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/objectModel01.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/objectModel01.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/poly.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/poly.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/qualifiedEnum.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/qualifiedEnum.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/shareFromThis.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/shareFromThis.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/static_const.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/static_const.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/tempFunction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/tempFunction.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/templateContainer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/templateContainer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/testConstExpr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/testConstExpr.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/testIterator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/testIterator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/testTemplate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/testTemplate.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/testTraits.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/testTraits.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/testVariadic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/testVariadic.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/typeDeductionForInitializerlist.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/typeDeductionForInitializerlist.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/useDecay.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/useDecay.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/usec11.c" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/usec11.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/usehashmap.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/usehashmap.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/usehashset.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/usehashset.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp/cpp11/usemultiset.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp/cpp11/usemultiset.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/use3p/useMybatis/target/" />
     <ignored path="$PROJECT_DIR$/spark/spark_remote/target/" />
@@ -61,145 +98,100 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-451817951">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="7" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.7" value="2" />
-          <entry key="project.open.time.8" value="4" />
-          <entry key="project.opened" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="Command" value="1" />
-          <entry key="MF" value="1" />
-          <entry key="SConscript" value="30" />
-          <entry key="SConstruct" value="14" />
-          <entry key="c" value="3" />
-          <entry key="class" value="4" />
-          <entry key="conf" value="3" />
-          <entry key="cpp" value="127" />
-          <entry key="gitignore" value="2" />
-          <entry key="gradle" value="1" />
-          <entry key="groovy" value="6" />
-          <entry key="java" value="255" />
-          <entry key="kt" value="1" />
-          <entry key="kts" value="2" />
-          <entry key="md" value="12" />
-          <entry key="mvnw" value="1" />
-          <entry key="patch" value="1" />
-          <entry key="policy" value="4" />
-          <entry key="properties" value="1" />
-          <entry key="py" value="16" />
-          <entry key="sbt" value="1" />
-          <entry key="sh" value="12" />
-          <entry key="txt" value="7" />
-          <entry key="xml" value="17" />
-          <entry key="初始化postgre sql" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Bash" value="13" />
-          <entry key="C++" value="130" />
-          <entry key="CLASS" value="4" />
-          <entry key="Groovy" value="7" />
-          <entry key="HOCON" value="3" />
-          <entry key="JAVA" value="255" />
-          <entry key="Kotlin" value="3" />
-          <entry key="Manifest" value="1" />
-          <entry key="PATCH" value="1" />
-          <entry key="PLAIN_TEXT" value="59" />
-          <entry key="Properties" value="1" />
-          <entry key="Python" value="15" />
-          <entry key="SPI" value="1" />
-          <entry key="Specification" value="12" />
-          <entry key="XML" value="17" />
-          <entry key="sbt" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Command" value="11" />
-          <entry key="MF" value="146" />
-          <entry key="SConscript" value="76" />
-          <entry key="SConstruct" value="130" />
-          <entry key="c" value="19" />
-          <entry key="conf" value="17" />
-          <entry key="cpp" value="816" />
-          <entry key="dummy" value="51" />
-          <entry key="gradle" value="556" />
-          <entry key="groovy" value="432" />
-          <entry key="java" value="32560" />
-          <entry key="kt" value="22" />
-          <entry key="kts" value="505" />
-          <entry key="py" value="587" />
-          <entry key="sh" value="265" />
-          <entry key="txt" value="9307" />
-          <entry key="xml" value="20" />
-          <entry key="初始化postgre sql" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Bash" value="265" />
-          <entry key="C++" value="835" />
-          <entry key="Groovy" value="988" />
-          <entry key="HOCON" value="17" />
-          <entry key="JAVA" value="32560" />
-          <entry key="Kotlin" value="527" />
-          <entry key="Manifest" value="146" />
-          <entry key="PLAIN_TEXT" value="9565" />
-          <entry key="Python" value="587" />
-          <entry key="SPI" value="11" />
-          <entry key="XML" value="20" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cpp3p/SConstruct">
+        <entry file="file://$PROJECT_DIR$/cpp/cpp11/testIterator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+            <state relative-caret-position="195">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/linux/memleak/memleak_demo.cpp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/linux/sysv/fcntlMonitor.cpp">
+        <entry file="file://$PROJECT_DIR$/cpp/cpp11/testTemplate.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="329">
+              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/linux/SConstruct">
+        <entry file="file://$PROJECT_DIR$/cpp/cpp11/testTraits.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              <folding>
+                <element signature="e#51#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp/cpp11/testVariadic.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp/cpp11/typeDeductionForInitializerlist.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp/cpp11/usec11.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp/cpp11/useDecay.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp/cpp11/usehashmap.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+              <folding>
+                <element signature="e#164#176#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp/cpp11/usehashset.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/linux/genSConscript.py">
+        <entry file="file://$PROJECT_DIR$/cpp/cpp11/usemultiset.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="356">
+              <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -219,7 +211,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>execlp(&quot;cat&quot;,&quot;cat&quot;,&quot;my.txt&quot;,NULL);</find>
       <find>struct S4:S2,S3{</find>
       <find>pthread_setcancelstate(PTHREAD_CANCEL_DISABLE</find>
       <find>return static_cast&lt;A&gt;(a + u);</find>
@@ -249,6 +240,7 @@
       <find>dup2</find>
       <find>fds[0].fd=fd[0]</find>
       <find>POLLIN</find>
+      <find>constini</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -269,34 +261,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cpp/cpp11/testConstExpr.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp98/static_const.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp11/static_const.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp11share/032_default_move.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp11share/033_default_linker_error.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp11share/034_delete_compile_error.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp11share/035_auto.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp11share/036_auto_type_deduction.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp11share/037_auto_type_deduction.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp11share/038_auto_reference.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp11share/039_typedef_error.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp11share/040_template_error.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp11share/041_template_auto_decltype.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp14/template_auto.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp11share/042_decltype.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp11share/043_decltype_return_type.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp11share/044_decltype_auto.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp98/member_variable_reference_risk.cpp" />
-        <option value="$PROJECT_DIR$/cpp/cpp98/explicitConstructor.cpp" />
-        <option value="$PROJECT_DIR$/build/SConstruct" />
-        <option value="$PROJECT_DIR$/linux/multiplex/linux/testPipe.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/linux/testPoll.cpp" />
-        <option value="$PROJECT_DIR$/cpp/initialization_parameterList/003_most_vexing_parse.cpp" />
-        <option value="$PROJECT_DIR$/cpp/initialization_parameterList/004_aggregation_initialization.cpp" />
-        <option value="$PROJECT_DIR$/cpp/initialization_parameterList/005_copy_list_initialization.cpp" />
-        <option value="$PROJECT_DIR$/cpp/initialization_parameterList/002_value_initialization.cpp" />
-        <option value="$PROJECT_DIR$/cpp/initialization_parameterList/006_type_match_error.cpp" />
-        <option value="$PROJECT_DIR$/cpp/initialization_parameterList/008_auto_initializer_list.cpp" />
         <option value="$PROJECT_DIR$/cpp/initialization_parameterList/007_template_initializer_list.cpp" />
         <option value="$PROJECT_DIR$/cpp/initialization_parameterList/009_dereference_initializer_list.cpp" />
         <option value="$PROJECT_DIR$/cpp/initialization_parameterList/001_static_zero_initialize.cpp" />
@@ -320,6 +284,34 @@
         <option value="$PROJECT_DIR$/cpp3p/SConstruct" />
         <option value="$PROJECT_DIR$/linux/SConstruct" />
         <option value="$PROJECT_DIR$/linux/genSConscript.py" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/constInitializer.cp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/SConscript" />
+        <option value="$PROJECT_DIR$/cpp/c99/anotherFile.c" />
+        <option value="$PROJECT_DIR$/cpp/c99/testConst.c" />
+        <option value="$PROJECT_DIR$/cpp/c99/testReturnConst.c" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/constInitializer.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/decl.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/objectModel01.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/enumAsTemplateParameter_error.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/noexcept.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/poly.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/qualifiedEnum.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/shareFromThis.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/static_const.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/Static_struct.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/tempFunction.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/templateContainer.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/testConstExpr.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/testIterator.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/testTemplate.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/testTraits.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/testVariadic.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/typeDeductionForInitializerlist.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/usec11.c" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/useDecay.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/usehashmap.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/usehashset.cpp" />
+        <option value="$PROJECT_DIR$/cpp/cpp11/usemultiset.cpp" />
       </list>
     </option>
   </component>
@@ -346,21 +338,21 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="68" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="81" />
     <option name="y" value="23" />
-    <option name="width" value="1372" />
+    <option name="width" value="1359" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -393,50 +385,38 @@
           <expand>
             <path>
               <item name="mytest" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="useDbcp" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
             <path>
               <item name="mytest" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="useMybatis" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="cpp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="mytest" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="useRocksDb" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="cpp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="c99" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="mytest" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="useSlf4j" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="mytest" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="useThrift" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mytest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mytest" type="462c0819:PsiDirectoryNode" />
-              <item name="linux" type="462c0819:PsiDirectoryNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="cpp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="cpp11" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549323951943" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/java/classCompiler/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.4232558" />
@@ -466,7 +446,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MessageSendAndReceive">
+  <component name="RunManager">
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Consumer" />
       <module name="useJms" />
@@ -529,21 +509,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Consumer" />
-      <item itemvalue="Kotlin script.basic.kts" />
-      <item itemvalue="Application.MessageSendAndReceive" />
-      <item itemvalue="Application.JMSProducer" />
-      <item itemvalue="Application.Producer" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MessageSendAndReceive" />
-        <item itemvalue="Application.Producer" />
-        <item itemvalue="Application.JMSProducer" />
-        <item itemvalue="Kotlin script.basic.kts" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
     <option name="projectSyncType">
@@ -562,6 +527,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544783607661</updated>
+      <workItem from="1550332497493" duration="561000" />
     </task>
     <task id="LOCAL-00080" summary="Java">
       <created>1548421634860</created>
@@ -941,6 +907,9 @@
       <configuration name="ComparableComparator.ExternalCompare" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="561000" />
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -951,16 +920,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="68" y="23" width="1372" height="877" extended-state="6" />
+    <frame x="81" y="23" width="1359" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26090226" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2649962" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49624062" weight="0.32611465" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.43837357" weight="0.30955413" />
@@ -969,10 +939,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32866243" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.50075185" side_tool="true" visible="true" weight="0.40636942" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.5011389" side_tool="true" visible="true" weight="0.40636942" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.47218046" weight="0.32611465" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924812" visible="true" weight="0.40636942" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49886104" visible="true" weight="0.40636942" />
       <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.59656924" weight="0.4178344" />
+      <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1014,11 +985,11 @@
       <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.22706766" />
     </layout-to-restore>
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.cpp" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="SHOW_PATCH_IN_EXPLORER" value="true" />
@@ -1026,178 +997,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="Java" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cpp/cpp98/objectModelBehaviorAndPitfalls.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3664">
-          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/useKotlin/src/basic.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-301" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/initialization_paramList.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/testEpoll.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/testLibEv.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/testLibEvent.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/testLibEventHttp.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/testPipe.cpp" />
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/testPoll.cpp" />
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11initializer/009_dereference_initializer_list.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11initializer/008_auto_initializer_list.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11initializer/005_copy_list_initialization.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11initializer/007_template_initializer_list.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11initializer/010_greedy_match_initializer_list.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" lean-forward="true" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp98virtualstatic/virtual和static关键字的陷阱.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2910">
-          <caret line="194" lean-forward="true" selection-start-line="194" selection-end-line="194" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11initializer/011_greedy_match_initializer_list.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" lean-forward="true" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11initializer/012_empty_initializer_list.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11initializer/006_type_match_error.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11initializer/001_static_zero_initialize.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11initializer/002_value_initialization.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11initializer/003_most_vexing_parse.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11initializer/004_aggregation_initialization.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11variadic/003_count_of.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11variadic/004_type_list.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11variadic/SConscript">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11initializer/SConscript">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp98/TemplateMetaProgramming.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp98metaprogramming/001_compile_time_computing.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11variadic/001_tail_recursive.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/cpp11variadic/002_iteration.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11variadic/002_iteration.cpp" />
     <entry file="file://$PROJECT_DIR$/cpp/cpp98metaprogramming/004_tag_dispatch.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1236,13 +1036,7 @@
     <entry file="file://$PROJECT_DIR$/cpp/cpp98metaprogramming/SConscript">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/SConstruct">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/build/SConstruct" />
     <entry file="file://$PROJECT_DIR$/cpp/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1260,9 +1054,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/linux/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/linux/.gitignore" />
     <entry file="file://$PROJECT_DIR$/cpp/genSconscript.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1287,10 +1079,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/linux/sysv/SConscript">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/cpp3p/SConstruct">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1300,24 +1095,235 @@
     <entry file="file://$PROJECT_DIR$/linux/sysv/fcntlMonitor.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/sysv/SConscript">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/linux/SConstruct">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/linux/genSConscript.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/constInitializer.cp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/SConscript">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/c99/anotherFile.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/c99/testConst.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/c99/testReturnConst.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/decl.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/Makefile.testString01">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/constInitializer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/enumAsTemplateParameter_error.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding>
+            <element signature="e#72#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/noexcept.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <element signature="e#285#294#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/objectModel01.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/poly.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/qualifiedEnum.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/shareFromThis.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/static_const.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/Static_struct.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/tempFunction.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/templateContainer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+          <folding>
+            <element signature="e#610#672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/testConstExpr.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/testIterator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/testTemplate.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/testTraits.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#51#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/testVariadic.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/typeDeductionForInitializerlist.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/usec11.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/useDecay.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/usehashmap.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+          <folding>
+            <element signature="e#164#176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/usehashset.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/cpp11/usemultiset.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
         </state>
       </provider>
     </entry>

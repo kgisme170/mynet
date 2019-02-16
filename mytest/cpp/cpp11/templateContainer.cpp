@@ -5,12 +5,12 @@
 using namespace std;
 
 template <template <typename T, typename Alloc=std::allocator<T> > class T, typename Elem>
-void f(){
+void f() {
     T<Elem> t;
     t.push_back(1);
 }
-struct myHash{
-    int operator()(int i)const{return i%7;}
+struct myHash {
+    int operator()(int i) const { return i % 7; }
 };
 template <template <
     typename Key,
@@ -19,17 +19,17 @@ template <template <
     class KeyEqual = std::equal_to<Key>,
     class Allocator = std::allocator< std::pair<const Key, T> >
 > class MapT>
-void g(){
+void g() {
     MapT<int, int, myHash> m;
-    m.insert(make_pair(1,3));
-    cout<<m.size()<<endl;
+    m.insert(make_pair(1, 3));
+    cout << m.size() << endl;
 }
 template<template<typename, typename> class C, typename E, typename A>
-void h(const C<E,A>& container){
-    cout<<container.size()<<endl;
+void h(const C<E,A>& container) {
+    cout << container.size() << endl;
 }
 
-int main(){
+int main() {
     f<vector, int>();
     f<list, long>();
     g<unordered_map>();
