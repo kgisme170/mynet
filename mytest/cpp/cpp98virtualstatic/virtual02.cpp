@@ -1,13 +1,18 @@
 #include<stdio.h>
-struct B{
+struct B {
     virtual void pure() = 0;
-    void h() {printf("Base\n");pure();}
-    ~B(){h();}
+
+    void h() {
+        printf("Base\n");
+        pure();
+    }
+
+    ~B() { h(); }
 };
-struct D : B{
-    void pure(){}
+struct D : B {
+    void pure() {}
 };
-int main(){
+int main() {
     D d;
     return 0;
 }

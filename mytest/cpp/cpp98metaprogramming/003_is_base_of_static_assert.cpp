@@ -4,16 +4,15 @@ using namespace std;
 template<bool b>
 struct STATIC_ASSERT_TRUE{};
 template<>
-struct STATIC_ASSERT_TRUE<true>{
+struct STATIC_ASSERT_TRUE<true> {
     int i;
 };
 
 template<bool b>
 bool TEST_TRUE(){return sizeof(STATIC_ASSERT_TRUE<b>::i)==sizeof(int);}
 
-int main()
-{
-    TEST_TRUE<1==1>();
-     // TEST_TRUE<1==0>();//编译错误: error: no member named 'i' in 'STATIC_ASSERT_TRUE<false>'
+int main() {
+    TEST_TRUE<1 == 1>();
+    // TEST_TRUE<1==0>();//编译错误: error: no member named 'i' in 'STATIC_ASSERT_TRUE<false>'
     return 0;
 }
