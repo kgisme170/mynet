@@ -20,40 +20,43 @@ const  int count = 6;
 static struct cdev *demop = NULL;
 
 //打开设备
-static int demo_open(struct inode *inode, struct file *filp){
+static int demo_open(struct inode *inode, struct file *filp) {
     //get command and pid
-    printk(KERN_INFO "module open: %s : %s : %d\n", __FILE__, __func__, __LINE__);return 0;
+    printk(KERN_INFO
+    "module open: %s : %s : %d\n", __FILE__, __func__, __LINE__);
+    return 0;
 }
 //关闭设备
-static int demo_release(struct inode *inode, struct file *filp){
+static int demo_release(struct inode *inode, struct file *filp) {
     //get major and minor from inode
-    printk(KERN_INFO "module release: %s : %s : %d\n", __FILE__, __func__, __LINE__);
+    printk(KERN_INFO
+    "module release: %s : %s : %d\n", __FILE__, __func__, __LINE__);
     return 0;
 }
 //读设备
 static ssize_t demo_read(struct file *filp, char __user *buf, size_t size, loff_t *offset) {
-    struct inode *inode = filp->f_path.dentry->d_inode; 
+    struct inode *inode = filp->f_path.dentry->d_inode;
     //get command and pid
-    printk(KERN_INFO "read request (%s:pid=%d), %s : %s : %d, size = %ld\n", current->comm, current->pid, __FILE__, __func__, __LINE__, size); 
-    //get major and minor from inode 
-    printk(KERN_INFO "(major=%d, minor=%d), %s : %s : %d\n", imajor(inode), iminor(inode), __FILE__, __func__, __LINE__); 
+    printk(KERN_INFO "read request (%s:pid=%d), %s : %s : %d, size = %ld\n", current->comm, current->pid, __FILE__, __func__, __LINE__, size);
+    //get major and minor from inode
+    printk(KERN_INFO "(major=%d, minor=%d), %s : %s : %d\n", imajor(inode), iminor(inode), __FILE__, __func__, __LINE__);
     return 0;
 }
 //写设备 
 static ssize_t demo_write(struct file *filp, const char __user *buf, size_t size, loff_t *offset) {
     char buffer[128];
-    struct inode *inode = filp->f_path.dentry->d_inode; 
-    //get command and pid 
-    printk(KERN_INFO "write request(%s:pid=%d), %s : %s : %d, size = %ld\n", current->comm, current->pid, __FILE__, __func__, __LINE__, size); 
-    //get major and minor from inode 
-    printk(KERN_INFO "(major=%d, minor=%d), %s : %s : %d\n", imajor(inode), iminor(inode), __FILE__, __func__, __LINE__); 
+    struct inode *inode = filp->f_path.dentry->d_inode;
+    //get command and pid
+    printk(KERN_INFO "write request(%s:pid=%d), %s : %s : %d, size = %ld\n", current->comm, current->pid, __FILE__, __func__, __LINE__, size);
+    //get major and minor from inode
+    printk(KERN_INFO "(major=%d, minor=%d), %s : %s : %d\n", imajor(inode), iminor(inode), __FILE__, __func__, __LINE__);
     if(raw_copy_from_user(buffer, buf, size)){
         return -EFAULT;
     }
     buffer[size-1]='\0';
     printk(KERN_INFO "user wrote bytes=%s", buffer);
     return size;
-} 
+}
 static struct file_operations fops = {
     .owner   = THIS_MODULE,
     .open    = demo_open,

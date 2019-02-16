@@ -13,22 +13,22 @@ void timer_cb(EV_P_ ev_timer *w, int revents){
     ssize_t bytes=write(fd[1],msg,sizeof(msg));
     printf("子进程msg已写入:%ld字节\n",bytes);
 }
-int main(){
-    assert(pipe(fd)==0);
-    pid_t pid=fork();
-    if(pid==0){//子进程
-        struct ev_loop* loop=EV_DEFAULT;
+int main() {
+    assert(pipe(fd) == 0);
+    pid_t pid = fork();
+    if (pid == 0) {//子进程
+        struct ev_loop *loop = EV_DEFAULT;
         ev_timer timer_watcher;
-        ev_timer_init(&timer_watcher,timer_cb,0,0);
-        timer_watcher.repeat=1;
-        ev_timer_again(loop,&timer_watcher);
-        ev_run(loop,0);
-    }else if(pid>0){//父进程
-        struct ev_loop* loop=EV_DEFAULT;
+        ev_timer_init(&timer_watcher, timer_cb, 0, 0);
+        timer_watcher.repeat = 1;
+        ev_timer_again(loop, &timer_watcher);
+        ev_run(loop, 0);
+    } else if (pid > 0) {//父进程
+        struct ev_loop *loop = EV_DEFAULT;
         ev_io pipe_watcher;
-        ev_io_init(&pipe_watcher,pipe_cb,fd[0],EV_READ);
-        ev_io_start(loop,&pipe_watcher);
-        ev_run(loop,0);
+        ev_io_init(&pipe_watcher, pipe_cb, fd[0], EV_READ);
+        ev_io_start(loop, &pipe_watcher);
+        ev_run(loop, 0);
     }
     return 0;
 }

@@ -31,26 +31,24 @@ timeout_cb (EV_P_ ev_timer *w, int revents)
  //ev_break (EV_A_ EVBREAK_ONE);
 }
 
-int
-main (void)
-{
- // use the default event loop unless you have special needs
- struct ev_loop *loop = EV_DEFAULT;
+int main () {
+    // use the default event loop unless you have special needs
+    struct ev_loop *loop = EV_DEFAULT;
 
- // initialise an io watcher, then start it
- // this one will watch for stdin to become readable
- ev_io_init (&stdin_watcher, stdin_cb, /*STDIN_FILENO*/ 0, EV_READ);
- ev_io_start (loop, &stdin_watcher);
+    // initialise an io watcher, then start it
+    // this one will watch for stdin to become readable
+    ev_io_init(&stdin_watcher, stdin_cb, /*STDIN_FILENO*/ 0, EV_READ);
+    ev_io_start(loop, &stdin_watcher);
 
- // initialise a timer watcher, then start it
- // simple non-repeating 1 second timeout
- ev_timer_init (&timeout_watcher, timeout_cb, 10, 0.);
- timeout_watcher.repeat=2.;
- ev_timer_again(loop, &timeout_watcher);
+    // initialise a timer watcher, then start it
+    // simple non-repeating 1 second timeout
+    ev_timer_init(&timeout_watcher, timeout_cb, 10, 0.);
+    timeout_watcher.repeat = 2.;
+    ev_timer_again(loop, &timeout_watcher);
 
- // now wait for events to arrive
- ev_run (loop, 0);
+    // now wait for events to arrive
+    ev_run(loop, 0);
 
- // break was called, so exit
- return 0;
+    // break was called, so exit
+    return 0;
 }

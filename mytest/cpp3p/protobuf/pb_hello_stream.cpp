@@ -8,14 +8,12 @@ using namespace std;
 
 using namespace google::protobuf::io;
 
-class FASWriter
-{
+class FASWriter {
     fstream mFs;
     OstreamOutputStream *_OstreamOutputStream;
     CodedOutputStream *_CodedOutputStream;
 public:
-    FASWriter(const std::string &file)
-    {
+    FASWriter(const std::string &file) {
         mFs.open(file.c_str(), std::ios_base::out | std::ios_base::binary);
         assert(mFs.good());
 
@@ -23,31 +21,27 @@ public:
         _CodedOutputStream = new CodedOutputStream(_OstreamOutputStream);
     }
 
-    inline void operator()(const ::google::protobuf::Message &msg)
-    {
-        _CodedOutputStream->WriteVarint32((unsigned)msg.ByteSize());
+    inline void operator()(const ::google::protobuf::Message &msg) {
+        _CodedOutputStream->WriteVarint32((unsigned) msg.ByteSize());
 
-        if ( !msg.SerializeToCodedStream(_CodedOutputStream) )
+        if (!msg.SerializeToCodedStream(_CodedOutputStream))
             std::cout << "SerializeToCodedStream error " << std::endl;
     }
 
-    ~FASWriter()
-    {
+    ~FASWriter() {
         delete _CodedOutputStream;
         delete _OstreamOutputStream;
         mFs.close();
     }
 };
 
-class FASReader
-{
+class FASReader {
     std::ifstream mFs;
 
     IstreamInputStream *_IstreamInputStream;
     CodedInputStream *_CodedInputStream;
 public:
-    FASReader(const std::string &file): mFs(file.c_str(),std::ios::in | std::ios::binary)
-    {
+    FASReader(const std::string &file) : mFs(file.c_str(), std::ios::in | std::ios::binary) {
         assert(mFs.good());
 
         _IstreamInputStream = new IstreamInputStream(&mFs);
@@ -55,18 +49,15 @@ public:
     }
 
     template<class T>
-    bool ReadNext()
-    {
+    bool ReadNext() {
         T msg;
         unsigned int size;
 
         bool ret = _CodedInputStream->ReadVarint32(&size);
-        if ( ret )
-        {
+        if (ret) {
             CodedInputStream::Limit msgLimit = _CodedInputStream->PushLimit(size);
             ret = msg.ParseFromCodedStream(_CodedInputStream);
-            if (ret)
-            {
+            if (ret) {
                 _CodedInputStream->PopLimit(msgLimit);
                 std::cout << " FASReader ReadNext: " << msg.DebugString() << std::endl;
             }
@@ -75,17 +66,15 @@ public:
         return ret;
     }
 
-    ~FASReader()
-    {
+    ~FASReader() {
         delete _CodedInputStream;
         delete _IstreamInputStream;
         mFs.close();
     }
 };
 using namespace std;
-int main()
-{
-    hello p1,p2,p3;
+int main() {
+    hello p1, p2, p3;
     p1.set_f1(1);
     p1.set_f2(2);
     p2.set_f1(3);
@@ -100,7 +89,7 @@ int main()
     }
     {
         FASReader reader("./hello.data");
-        while(reader.ReadNext<hello>()){}
+        while (reader.ReadNext<hello>()) {}
     }
     return 0;
 }

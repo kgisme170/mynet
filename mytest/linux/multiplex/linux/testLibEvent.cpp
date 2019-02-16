@@ -13,12 +13,11 @@
 int debug = 0;
 
 struct client {
-  int fd;
-  struct bufferevent *buf_ev;
+    int fd;
+    struct bufferevent *buf_ev;
 };
 
-int setnonblock(int fd)
-{
+int setnonblock(int fd) {
   int flags;
 
   flags = fcntl(fd, F_GETFL);
@@ -93,64 +92,59 @@ void accept_callback(int fd,
   bufferevent_enable(client->buf_ev, EV_READ);
 }
 
-int main(int argc,
-         char **argv)
-{
-  int socketlisten;
-  struct sockaddr_in addresslisten;
-  struct event accept_event;
-  int reuse = 1;
+int main() {
+    int socketlisten;
+    struct sockaddr_in addresslisten;
+    struct event accept_event;
+    int reuse = 1;
 
-  event_init();
+    event_init();
 
-  socketlisten = socket(AF_INET, SOCK_STREAM, 0);
+    socketlisten = socket(AF_INET, SOCK_STREAM, 0);
 
-  if (socketlisten < 0)
-    {
-      fprintf(stderr,"Failed to create listen socket");
+    if (socketlisten < 0) {
+      fprintf(stderr, "Failed to create listen socket");
       return 1;
     }
 
-  memset(&addresslisten, 0, sizeof(addresslisten));
+    memset(&addresslisten, 0, sizeof(addresslisten));
 
-  addresslisten.sin_family = AF_INET;
-  addresslisten.sin_addr.s_addr = INADDR_ANY;
-  addresslisten.sin_port = htons(SERVER_PORT);
+    addresslisten.sin_family = AF_INET;
+    addresslisten.sin_addr.s_addr = INADDR_ANY;
+    addresslisten.sin_port = htons(SERVER_PORT);
 
-  if (bind(socketlisten,
-           (struct sockaddr *)&addresslisten,
-           sizeof(addresslisten)) < 0)
-    {
-      fprintf(stderr,"Failed to bind");
+    if (bind(socketlisten,
+             (struct sockaddr *) &addresslisten,
+             sizeof(addresslisten)) < 0) {
+      fprintf(stderr, "Failed to bind");
       return 1;
     }
 
-  if (listen(socketlisten, 5) < 0)
-    {
-      fprintf(stderr,"Failed to listen to socket");
+    if (listen(socketlisten, 5) < 0) {
+      fprintf(stderr, "Failed to listen to socket");
       return 1;
     }
 
-  setsockopt(socketlisten,
-             SOL_SOCKET,
-             SO_REUSEADDR,
-             &reuse,
-             sizeof(reuse));
+    setsockopt(socketlisten,
+               SOL_SOCKET,
+               SO_REUSEADDR,
+               &reuse,
+               sizeof(reuse));
 
-  setnonblock(socketlisten);
+    setnonblock(socketlisten);
 
-  event_set(&accept_event,
-            socketlisten,
-            EV_READ|EV_PERSIST,
-            accept_callback,
-            NULL);
+    event_set(&accept_event,
+              socketlisten,
+              EV_READ | EV_PERSIST,
+              accept_callback,
+              NULL);
 
-  event_add(&accept_event,
-            NULL);
+    event_add(&accept_event,
+              NULL);
 
-  event_dispatch();
+    event_dispatch();
 
-  close(socketlisten);
+    close(socketlisten);
 
-  return 0;
+    return 0;
 }

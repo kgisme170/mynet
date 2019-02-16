@@ -1,5 +1,4 @@
 #include <iostream>
-
 #include <thrift/protocol/TBinaryProtocol.h>
 #include <thrift/transport/TSocket.h>
 #include <thrift/transport/TTransportUtils.h>
@@ -14,9 +13,9 @@ using namespace apache::thrift::transport;
 using namespace worker;
 
 int main() {
-  boost::shared_ptr<TTransport> socket(new TSocket("localhost", 9090));
-  boost::shared_ptr<TTransport> transport(new TBufferedTransport(socket));
-  boost::shared_ptr<TProtocol> protocol(new TBinaryProtocol(transport));
+  boost::shared_ptr <TTransport> socket(new TSocket("localhost", 9090));
+  boost::shared_ptr <TTransport> transport(new TBufferedTransport(socket));
+  boost::shared_ptr <TProtocol> protocol(new TBinaryProtocol(transport));
   MyManagerClient client(protocol);
 
   try {
@@ -25,7 +24,7 @@ int main() {
     client.ping();
     cout << "ping()" << endl;
     transport->close();
-  } catch (TException& tx) {
+  } catch (TException &tx) {
     cout << "ERROR: " << tx.what() << endl;
   }
 }

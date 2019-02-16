@@ -1,6 +1,7 @@
 #pragma once
 
-struct M{
+struct M {
     M();
+
     ~M();
 };
