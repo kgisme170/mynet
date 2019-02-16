@@ -18,7 +18,6 @@
         <module>security</module>
         <module>network</module>
         <module>useServiceLoader</module>
-        <module>useManifest</module>
         <module>useJass</module>
         <module>useRmi</module>
         <module>useBean</module>

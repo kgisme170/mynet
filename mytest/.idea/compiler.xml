@@ -32,7 +32,6 @@
         <module name="useJms" />
         <module name="useJunit" />
         <module name="useKafka" />
-        <module name="useManifest" />
         <module name="useMybatis" />
         <module name="useRmi" />
         <module name="useRocksDb" />
@@ -43,5 +42,8 @@
         <module name="yarn" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="useManifest" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

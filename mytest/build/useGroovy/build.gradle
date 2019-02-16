@@ -1,0 +1,14 @@
+group 'my'
+version '1.0-SNAPSHOT'
+apply plugin: 'java'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+// 指定maven仓库为maven中央仓库
+repositories {
+    mavenCentral()
+}
+jar {
+    baseName = 'first-gradle'
+    version =  '0.1.0'
+}
