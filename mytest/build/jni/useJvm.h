@@ -1,36 +1,23 @@
 #include<jni.h>
-#include<stdio.h>
-#include<stdlib.h>
 class useJvm {
-    static const char option[] = "-Djava.class.path=.:..";
     JavaVMOption options[1];
     JavaVM* jvm;
     JNIEnv *env;
     jclass cls;
+    int printStackTrace();
 public:
-    useJvm(const char* javaClassName) {
-        options[0].optionString = option;
-        JavaVMInitArgs vm_args = {0};
-        vm_args.version = JNI_VERSION_1_8;
-        vm_args.nOptions = 1;
-        vm_args.options = options;
+    useJvm(const char* javaClassName);
+    ~useJvm();
 
-        long status = JNI_CreateJavaVM(&jvm, (void**)&env, &vm_args);
-        if (status == JNI_ERR) {
-            printf("Create jvm failed\n");
-            exit(1);
-        }
-        cls = env->FindClass("cpp2java");
-        if (cls == NULL) {
-            printf("find class failed\n");
-        }
-        if (env->ExceptionOccurred()) // check if an exception occurred
-        {
-            env->ExceptionDescribe(); // print the stack trace
-            exit(2);
-        }
-    }
-    ~useJvm() {
-        jvm->DestroyJavaVM();
-    }
+    int CallStaticFunction(const char* functionName, int parameter);
+    bool CallStaticFunction(const char* functionName, bool parameter);
+    void CallStaticFunction(const char* functionName, const char* parameter);
+    void CallStaticThrow(const char* functionName);
+
+    jobject CreateObject();
+    jobject CreateObject(int parameter);
+    int CallMethod(jobject& obj, const char* functionName, int parameter);
+    jfieldID SetIntField(jobject& obj, const char* fieldName, int value);
+    int GetIntField(jobject& obj, jfieldID fid);
 };
+
