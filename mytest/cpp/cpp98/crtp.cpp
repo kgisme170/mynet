@@ -4,16 +4,16 @@ template <class T>
 struct Base {
     void f() {
         // ...
-        static_cast<T*>(this)->cmp();
+        static_cast<T *>(this)->cmp();
         // ...
     }
 };
 
 struct Derived : Base<Derived> {
-    void cmp(){cout<<"cmp function\n";}
+    void cmp() { cout << "cmp function\n"; }
 };
 
-int main(){
+int main() {
     Derived d;
     d.f();
     return 0;

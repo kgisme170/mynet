@@ -1,13 +1,14 @@
-struct Base{
-    virtual void f(){}
-    virtual void f(int){}
+struct Base {
+    virtual void f() {}
+
+    virtual void f(int) {}
 };
-struct Derived:Base
-{
+struct Derived:Base {
     using Base::f;
-    void f(int){}
+
+    void f(int) {}
 };
-int main(){
+int main() {
     Derived obj;
     obj.f();
     return 0;

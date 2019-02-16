@@ -2,22 +2,22 @@
 #include<iostream>
 #include<sstream>
 using namespace std;
-int main(){
+int main() {
     char fn[] = "instanceIds.txt";
     ofstream f(fn);
-    for (size_t i = 0; i < 10; ++ i) {
+    for (size_t i = 0; i < 10; ++i) {
         f << "20171026114246691ggyx3t81" << ';';
     }
     f.close();
 
     ifstream f2(fn);
     string line;
-    while(std::getline(f2, line, ';')) {
+    while (std::getline(f2, line, ';')) {
         cout << line << '\n';
     }
     cout << "----------------------\n";
     ostringstream oss;
-    for (size_t i = 0; i < 10; ++ i) {
+    for (size_t i = 0; i < 10; ++i) {
         oss << "20171026114246691ggyx3t81" << ';';
     }
 
@@ -25,7 +25,7 @@ int main(){
     istringstream iss(s);
     cout << s << '\n';
     cout << "----------------------\n";
-    while(std::getline(iss, line, ';')) {
+    while (std::getline(iss, line, ';')) {
         cout << line << '\n';
     }
 

@@ -1,7 +1,7 @@
-class A{
+class A {
     static const double a = 3.0;
 };
-int main(){
+int main() {
     A a;
     return 0;
 }

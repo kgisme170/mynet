@@ -1,17 +1,18 @@
 #include<iostream>
 using namespace std;
 template<class T>
-class My{
+class My {
 public:
-    void f(){}
+    void f() {}
+
     template<class G>
-    void g()const {}
+    void g() const {}
 };
 template<class T>
-void h(const My<T>& m){
+void h(const My<T>& m) {
     m.template g<int>();
 }
-int main(){
+int main() {
     My<char> m;
     m.g<int>();
     h(m);

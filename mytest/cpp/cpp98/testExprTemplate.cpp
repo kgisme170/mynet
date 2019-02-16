@@ -49,44 +49,50 @@ size_t countof(T (&buf)[n]){
 }
 */
 template<typename Elem, size_t len>
-struct ArrayExp{
+struct ArrayExp {
     typedef Elem value_type;
     Elem buf[len];
-    ArrayExp(){
-        for(size_t i=0;i<len;++i)
-            buf[i]=i;
+
+    ArrayExp() {
+        for (size_t i = 0; i < len; ++i)
+            buf[i] = i;
     }
-    void print(){
-        for(size_t i=0;i<len;++i)
-            cout<<buf[i]<<',';
-        cout<<'\n';
+
+    void print() {
+        for (size_t i = 0; i < len; ++i)
+            cout << buf[i] << ',';
+        cout << '\n';
     }
-    const Elem& operator[](size_t i)const{return buf[i];}
+
+    const Elem &operator[](size_t i) const { return buf[i]; }
+
     template<typename Expr>
-    ArrayExp(const Expr& e){
-        for(size_t i=0;i<len;++i){
-            buf[i]=e[i];
+    ArrayExp(const Expr &e) {
+        for (size_t i = 0; i < len; ++i) {
+            buf[i] = e[i];
         }
     }
 };
 template<typename L,typename R>
-struct expr_add{
-    const L& l;
-    const R& r;
+struct expr_add {
+    const L &l;
+    const R &r;
     typedef typename L::value_type value_type;
-    expr_add(const L& _l,const R& _r):l(_l),r(_r){}
-    const value_type operator[](size_t i)const{
-        return l[i]+r[i];
+
+    expr_add(const L &_l, const R &_r) : l(_l), r(_r) {}
+
+    const value_type operator[](size_t i) const {
+        return l[i] + r[i];
     }
 };
 template<typename L,typename R>
 expr_add<L,R> operator+(const L&l, const R&r){
     return expr_add<L,R>(l,r);
 }
-int main(){
-    ArrayExp<int,3> a1,a2,a3,a4;
+int main() {
+    ArrayExp<int, 3> a1, a2, a3, a4;
     a1.print();//0,1,2,
-    ArrayExp<int,3>a5(a1+a2+a3+a4);
+    ArrayExp<int, 3> a5(a1 + a2 + a3 + a4);
     a5.print();//0,4,8,
     return 0;
 }

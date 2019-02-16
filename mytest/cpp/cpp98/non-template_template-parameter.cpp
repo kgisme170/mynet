@@ -3,8 +3,10 @@
 #include<stdio.h>
 int array[2];
 template<int* array>
-void f(){printf("array\n");}
-int main(){
+void f() {
+ printf("array\n");
+}
+int main() {
  f<array>();
  return 0;
 }

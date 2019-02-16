@@ -1,8 +1,7 @@
 #include<utility>
 //foward类型作为返回，带有value category，简单用auto会丢失
 template<class Fun, class... Args>
-decltype(auto) Example(Fun fun, Args&&... args)
-{
+decltype(auto) Example(Fun fun, Args&&... args) {
     return fun(std::forward<Args>(args)...);
 }
 

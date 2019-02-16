@@ -10,10 +10,10 @@ struct is_placeholder:public integral_constant<int,0>{};
 template<int i>
 struct is_placeholder<place_holder<i> >:public integral_constant<int,i>{};
 template<typename T>
-auto check(){
+auto check() {
     return is_placeholder<T>::value;
 }
-int main(){
-    auto i=check<_1>();
+int main() {
+    auto i = check<_1>();
     return 0;
 }
