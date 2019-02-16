@@ -2,4 +2,4 @@
 mkdir build
 cd build
 cmake ../
-make -j8
+make -j8 VERBOSE=1

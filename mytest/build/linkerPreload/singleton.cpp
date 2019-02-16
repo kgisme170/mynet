@@ -4,4 +4,3 @@ class singleton{
 public:
     singleton(){cout<<"singleton ctor\n";}
 };
-singleton s;
