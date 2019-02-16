@@ -4,15 +4,21 @@
 #include <string>
 using namespace std;
 using namespace testing;
-class If2{
+class If2 {
 public:
-    virtual char* getS()=0;
-    virtual int add()=0;
-    virtual int add2(int)=0;
-    virtual int& getRef()=0;
-    virtual int*& getPointerRef()=0;
-    virtual void setParam(int* pi)=0;
-    virtual void f()=0;
+    virtual char *getS() = 0;
+
+    virtual int add() = 0;
+
+    virtual int add2(int) = 0;
+
+    virtual int &getRef() = 0;
+
+    virtual int *&getPointerRef() = 0;
+
+    virtual void setParam(int *pi) = 0;
+
+    virtual void f() = 0;
 };
 class Impl2:public If2{
 public:

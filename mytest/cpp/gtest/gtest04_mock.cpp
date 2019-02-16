@@ -8,25 +8,26 @@ using namespace testing;
 int DieInDebugElse1(int* sideeffect) {
     if (sideeffect) *sideeffect = 1;
 #ifndef NDEBUG
-    GTEST_LOG_(FATAL)<<"debug death inside DieInDebugElse12()";
+    GTEST_LOG_(FATAL) << "debug death inside DieInDebugElse12()";
 #endif  // NDEBUG
     return 12;
 }
-TEST(a,c){
+TEST(a,c) {
     int sideeffect = 0;
     EXPECT_DEBUG_DEATH(DieInDebugElse1(&sideeffect), "death");
 }
+class IMy {
+public:
+    ~IMy() {}
 
-class IMy{
-public:
-    ~IMy(){}
-    virtual string getString()=0;
+    virtual string getString() = 0;
 };
-class MyImpl:IMy{
+class MyImpl:IMy {
 public:
-    MOCK_METHOD0(getString, string());
+    MOCK_METHOD0(getString, string()
+    );
 };
-TEST(my, case1){
+TEST(my, case1) {
     EXPECT_THAT("123456789", MatchesRegex("[1-9]*"));
     EXPECT_THAT("1234  56789", ContainsRegex("[1-9]*"));
 
@@ -50,21 +51,32 @@ TEST(my, case1){
     }
 }
 struct S{int m_i;};
-class If2{
+class If2 {
 public:
-    virtual int add(int a,int b)=0;
-    virtual int minus(int a)=0;
-    virtual void get(const S& s)=0;
-    virtual void set(const char* s)=0;
+    virtual int add(int a, int b) = 0;
+
+    virtual int minus(int a) = 0;
+
+    virtual void get(const S &s) = 0;
+
+    virtual void set(const char *s) = 0;
 };
-class Impl2:public If2{
+class Impl2:public If2 {
 public:
-    MOCK_METHOD2(add, int(int,int));
-    MOCK_METHOD1(minus, int(int));
-    MOCK_METHOD1(get, void(const S&));
-    MOCK_METHOD1(set, void(const char*));
+    MOCK_METHOD2(add,
+    int(
+    int, int));
+    MOCK_METHOD1(minus,
+    int(
+    int));
+    MOCK_METHOD1(get,
+    void(
+    const S&));
+    MOCK_METHOD1(set,
+    void(
+    const char*));
 };
-TEST(t2,case1){
+TEST(t2,case1) {
     Impl2 mock;
     EXPECT_CALL(mock,add(Eq(1),Ge(1)));
     mock.add(1,1);
@@ -74,7 +86,7 @@ TEST(t2,case1){
     EXPECT_CALL(mock,get(Field(&S::m_i, Gt(0))));//Expected arg #0: is an object whose given field is > 0
     mock.get(obj);
 }
-TEST(t2,case2){
+TEST(t2,case2) {
     Impl2 mock;
     EXPECT_CALL(mock,add(::testing::_, ::testing::_)).Times(AtMost(1));
     EXPECT_CALL(mock,set(Not(HasSubstr("bb")))).Times(Between(1,5));
