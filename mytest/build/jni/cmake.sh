@@ -1,5 +1,4 @@
 #!/bin/bash
-set -x
 mkdir -p build
 cd build
 javac ../cpp2java.java

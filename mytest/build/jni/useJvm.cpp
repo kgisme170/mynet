@@ -51,12 +51,29 @@ useJvm::~useJvm() {
 }
 
 // javap -s -p cpp2java.class
-// call static methods 可以看到带类型的签名
+// call static methods
 
-int useJvm::CallStaticFunction(const char* functionName, int i) {
+int useJvm::CallStaticFunction(const char* functionName, int parameter) {
     jmethodID mid = env->GetStaticMethodID(cls, functionName, "(I)I");
     if (mid) {
-        return env->CallStaticIntMethod(cls, mid, 8);
+        return env->CallStaticIntMethod(cls, mid, parameter);
+    } else {
+        printf("find statis int method failed\n");
+        exit(3);
+    }
+}
+
+// arrayFunction begins
+// public static int[] arrayFunc(int[]);
+// descriptor: ([I)[I
+// arrayFunction ends
+jintArray useJvm::CallStaticFunction(const char* functionName, const int* parameter, const size_t size) {
+    jmethodID mid = env->GetStaticMethodID(cls, functionName, "([I)[I");
+    if (mid) {
+        jintArray iarr = env->NewIntArray(size);
+        env->SetIntArrayRegion(iarr, 0, size, parameter);
+        jintArray array = (jintArray)env->CallStaticObjectMethod(cls, mid, iarr);
+        return array;
     } else {
         printf("find statis int method failed\n");
         exit(3);
