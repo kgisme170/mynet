@@ -1,29 +1,35 @@
 #include<cstdio>
 #include<utility>
 using namespace std;
-struct Base{
-    Base(){printf("Base\n");}
-    Base(const Base&){printf("Base copy ctor\n");}
-    Base(Base&&)     {printf("Base move ctor\n");}
+struct Base {
+    Base() { printf("Base\n"); }
+
+    Base(const Base &) { printf("Base copy ctor\n"); }
+
+    Base(Base &&) { printf("Base move ctor\n"); }
 };
-struct Derived:Base{
-    Derived(){}
-    Derived(const Derived&d):Base(d){printf("Derived copy ctor\n");}
-    Derived(Derived&&)=default;//注意这里
+struct Derived:Base {
+    Derived() {}
+
+    Derived(const Derived &d) : Base(d) { printf("Derived copy ctor\n"); }
+
+    Derived(Derived &&) = default;//注意这里
 };
-struct Other:Base{
-    Other(){}
-    Other(const Other&o):Base(o){printf("Other copy ctor\n");}
-    Other(Other&&){};//什么都不干
+struct Other:Base {
+    Other() {}
+
+    Other(const Other &o) : Base(o) { printf("Other copy ctor\n"); }
+
+    Other(Other &&) {};//什么都不干
 };
-int main(){
+int main() {
     Derived d;
-    Derived d2=d;
-    Derived d3=move(d);
+    Derived d2 = d;
+    Derived d3 = move(d);
     printf("=============\n");
     Other o;
-    Other o2=o;
-    Other o3=move(o);
+    Other o2 = o;
+    Other o3 = move(o);
     return 0;
 }
 //运行输出

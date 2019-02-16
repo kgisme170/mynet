@@ -11,9 +11,9 @@ bool ready = false;
 bool processed = false;
 void tf() {
     cout << "sub waits\n";
-    unique_lock<mutex> lk(m);//unique_lock other types?
-    cv.wait(lk, [](){return ready;});
-    cout << "sub notified"<<endl;
+    unique_lock <mutex> lk(m);//unique_lock other types?
+    cv.wait(lk, []() { return ready; });
+    cout << "sub notified" << endl;
     sleep(1);
     processed = true;
     cout << "sub notifies main\n";
@@ -32,8 +32,8 @@ int main() {
     sub.join();
 
     cout << "main waits\n";
-    unique_lock<mutex> lk(m);
-    cv.wait(lk, [](){return processed;});
+    unique_lock <mutex> lk(m);
+    cv.wait(lk, []() { return processed; });
     cout << "main notified\n";
     return 0;
 }

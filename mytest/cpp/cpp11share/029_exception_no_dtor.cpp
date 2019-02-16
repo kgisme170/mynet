@@ -1,11 +1,16 @@
 #include<iostream>
 using namespace std;
-struct M{
-    M(){ cout<<"M ctor"<<endl;throw 1;}
-    ~M(){cout<<"M dtor"<<endl;}
-    void print(){cout<<"print"<<endl;}
+struct M {
+    M() {
+        cout << "M ctor" << endl;
+        throw 1;
+    }
+
+    ~M() { cout << "M dtor" << endl; }
+
+    void print() { cout << "print" << endl; }
 };
-int main(){
+int main() {
     M obj;
     obj.print();
     return 0;

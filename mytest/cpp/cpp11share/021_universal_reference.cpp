@@ -1,8 +1,8 @@
 struct M{};
 template<typename T>
-void f(T&& t){
+void f(T&& t) {
 }
-int main(){
+int main() {
     M obj;
     f(obj);
     f(M());

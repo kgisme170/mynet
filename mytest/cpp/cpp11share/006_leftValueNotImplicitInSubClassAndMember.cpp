@@ -1,25 +1,25 @@
 #include<iostream>
 using namespace std;
-struct Member
-{
-    Member(){cout<<"成员的默认构造"<<endl;}
-    Member(const Member&){cout<<"成员的拷贝构造"<<endl;}
+struct Member {
+    Member() { cout << "成员的默认构造" << endl; }
+
+    Member(const Member &) { cout << "成员的拷贝构造" << endl; }
 };
-struct Base
-{
-    Base(){cout<<"基类的默认构造"<<endl;}
-    Base(const Base&){cout<<"基类的拷贝构造"<<endl;}
+struct Base {
+    Base() { cout << "基类的默认构造" << endl; }
+
+    Base(const Base &) { cout << "基类的拷贝构造" << endl; }
 };
-struct D: Base
-{
+struct D: Base {
     Member m_a;
-    D(){}
-    D(const D&){cout<<"继承类的拷贝构造"<<endl;}
+
+    D() {}
+
+    D(const D &) { cout << "继承类的拷贝构造" << endl; }
 };
-int main()
-{
+int main() {
     D d1;
-    cout<<endl;
+    cout << endl;
     D d2(d1);
     return 0;
 }

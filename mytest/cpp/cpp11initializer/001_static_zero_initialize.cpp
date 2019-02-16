@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int global_i;
-int main(){
+int main() {
     static int i;
-    cout<<global_i<<i<<endl;//打印00
+    cout << global_i << i << endl;//打印00
 }

@@ -5,10 +5,10 @@ void g(const M&){printf("重载,接收左值引用\n");}
 void g(M&&     ){printf("重载,接收右值引用\n");}
 
 template<typename T>
-void f(T&& t){
+void f(T&& t) {
     g(std::forward<T>(t));
 }
-int main(){
+int main() {
     M obj;
     f(obj);
     f(M());
