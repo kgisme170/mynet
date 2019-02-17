@@ -12,50 +12,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf0b9541-d6e2-4636-85bb-6680ae0aa118" name="Default Changelist" comment="Java">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jni/impl.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/jni/impl.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jni/useJvm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/jni/useJvm.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jni/useJvm.h" beforeDir="false" afterPath="$PROJECT_DIR$/build/jni/useJvm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jni/usejclass.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/jni/usejclass.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerConstructor/class1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerConstructor/class1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerConstructor/class2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerConstructor/class2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerConstructor/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerConstructor/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine.h" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine01.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine01.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine02.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine02.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerDoubleDefine/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDoubleDefine/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerDynamic/a.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDynamic/a.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerDynamic/bar1.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDynamic/bar1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerDynamic/bar2.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDynamic/bar2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerDynamic/d.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDynamic/d.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerDynamic/foo1.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDynamic/foo1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerDynamic/foo2.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDynamic/foo2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerExtension/singleton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerExtension/singleton.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerExtension/singletonMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerExtension/singletonMain.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerPreload/d1.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerPreload/d1.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerPreload/d1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerPreload/d1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerPreload/d2.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerPreload/d2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerPreload/d2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerPreload/d2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerPreload/m.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerPreload/m.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/linkerPreload/m.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerPreload/m.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/useBazel/cpp-project/BUILD" beforeDir="false" afterPath="$PROJECT_DIR$/build/useBazel/cpp-project/BUILD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/useBazel/cpp-project/hello-dl.cc" beforeDir="false" afterPath="$PROJECT_DIR$/build/useBazel/cpp-project/hello-dl.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/useBazel/cpp-project/hello-greet.cc" beforeDir="false" afterPath="$PROJECT_DIR$/build/useBazel/cpp-project/hello-greet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/useBazel/cpp-project/hello-greet.h" beforeDir="false" afterPath="$PROJECT_DIR$/build/useBazel/cpp-project/hello-greet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/useBazel/cpp-project/hello-world.cc" beforeDir="false" afterPath="$PROJECT_DIR$/build/useBazel/cpp-project/hello-world.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/useCmake/stage1/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/stage1/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/useCmake/stage1/main.cc" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/stage1/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/useCmake/stage1/power.cc" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/stage1/power.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/useCmake/stage2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/stage2/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/useCmake/stage2/main.cc" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/stage2/main.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/useCmake/stage2/math/power.cc" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/stage2/math/power.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/useCmake/transmitDeps/a.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/transmitDeps/a.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/useCmake/transmitDeps/b.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/transmitDeps/b.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/useCmake/transmitDeps/c.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/transmitDeps/c.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/useCmake/transmitDeps/dl.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/transmitDeps/dl.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/useCmake/transmitDeps/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/transmitDeps/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="bf0b9541-d6e2-4636-85bb-6680ae0aa118" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/use3p/useMybatis/target/" />
     <ignored path="$PROJECT_DIR$/spark/spark_remote/target/" />
     <ignored path="$PROJECT_DIR$/spring/IocAop/target/" />
@@ -104,98 +61,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/useCmake/stage1/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/useCmake/stage2/math/power.cc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/useCmake/stage2/main.cc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/useCmake/stage2/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/useCmake/stage2/math/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/useCmake/transmitDeps/a.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/useCmake/transmitDeps/b.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/useCmake/transmitDeps/c.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/useCmake/transmitDeps/dl.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build/useCmake/transmitDeps/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -287,7 +153,6 @@
         <option value="$PROJECT_DIR$/build/linkerDynamic/d.cpp" />
         <option value="$PROJECT_DIR$/build/linkerDynamic/foo1.c" />
         <option value="$PROJECT_DIR$/build/linkerDynamic/foo2.c" />
-        <option value="$PROJECT_DIR$/build/linkerExtension/singleton.cpp" />
         <option value="$PROJECT_DIR$/build/linkerExtension/singletonMain.cpp" />
         <option value="$PROJECT_DIR$/build/linkerPreload/d1.c" />
         <option value="$PROJECT_DIR$/build/linkerPreload/d1.cpp" />
@@ -311,6 +176,7 @@
         <option value="$PROJECT_DIR$/build/useCmake/transmitDeps/c.cpp" />
         <option value="$PROJECT_DIR$/build/useCmake/transmitDeps/dl.cpp" />
         <option value="$PROJECT_DIR$/build/useCmake/transmitDeps/main.cpp" />
+        <option value="$PROJECT_DIR$/build/linkerExtension/singleton.cpp" />
       </list>
     </option>
   </component>
@@ -389,7 +255,7 @@
             <path>
               <item name="mytest" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="build" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="python" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -515,13 +381,6 @@
       <option name="presentableId" value="Default" />
       <updated>1544783607661</updated>
       <workItem from="1550332497493" duration="3574000" />
-    </task>
-    <task id="LOCAL-00082" summary="Java">
-      <created>1548422354496</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1548422354496</updated>
     </task>
     <task id="LOCAL-00083" summary="Java">
       <created>1548422597293</created>
@@ -859,7 +718,14 @@
       <option name="project" value="LOCAL" />
       <updated>1550333744171</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="Java">
+      <created>1550372197404</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1550372197405</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -895,7 +761,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3919000" />
+    <option name="totallyTimeSpent" value="4581000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -908,7 +774,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="81" y="23" width="1359" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3204252" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1159,13 +1024,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/linkerExtension/singleton.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/linkerExtension/singletonMain.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1334,6 +1192,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerExtension/singleton.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
         </state>
       </provider>
     </entry>
