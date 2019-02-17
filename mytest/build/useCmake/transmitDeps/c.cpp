@@ -1,3 +1,3 @@
-int c(int x){
-    return x+2;
+int c(int x) {
+    return x + 2;
 }

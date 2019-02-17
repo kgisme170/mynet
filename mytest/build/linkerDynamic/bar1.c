@@ -1,2 +1,4 @@
 int x;
-void f(){x=16;}
+void f() {
+    x = 16;
+}

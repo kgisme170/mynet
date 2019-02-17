@@ -1,2 +1,4 @@
 double x;
-void f(){x=0;}
+void f() {
+    x = 0;
+}

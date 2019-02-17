@@ -1,4 +1,4 @@
 #include<stdio.h>
-void f(){
+void f() {
     puts("l2\n");
 }

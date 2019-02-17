@@ -7,11 +7,11 @@ int useJvm::printStackTrace() {
     jclass cls = env->FindClass("java/lang/Exception");
     if (cls != NULL) {
         jmethodID constructor = env->GetMethodID(cls, "<init>", "()V");
-        if(constructor != NULL) {
+        if (constructor != NULL) {
             jobject exc = env->NewObject(cls, constructor);
-            if(exc != NULL) {
+            if (exc != NULL) {
                 jmethodID printStackTrace = env->GetMethodID(cls, "printStackTrace", "()V");
-                if(printStackTrace != NULL) {
+                if (printStackTrace != NULL) {
                     env->CallObjectMethod(exc, printStackTrace);
                 } else { return 4; }
             } else { return 3; }
@@ -30,7 +30,7 @@ useJvm::useJvm(const char* javaClassName) {
     vm_args.nOptions = 1;
     vm_args.options = options;
 
-    long status = JNI_CreateJavaVM(&jvm, (void**)&env, &vm_args);
+    long status = JNI_CreateJavaVM(&jvm, (void **) &env, &vm_args);
     if (status == JNI_ERR) {
         printf("Create jvm failed\n");
         exit(1);
@@ -69,18 +69,18 @@ int useJvm::CallStaticFunction(const char* functionName, int parameter) {
 // arrayFunction ends
 void useJvm::CallStaticFunction(const char* functionName, const int* parameter, const size_t size) {
     jmethodID mid = env->GetStaticMethodID(cls, functionName, "([I)[I");
-    for(size_t i=0;i<size;++i) {
+    for (size_t i = 0; i < size; ++i) {
         printf("parameter = %d\n", parameter[i]);
     }
     if (mid) {
         jintArray iarr = env->NewIntArray(size);
         env->SetIntArrayRegion(iarr, 0, size, parameter);
-        jintArray ret = (jintArray)env->CallStaticObjectMethod(cls, mid, iarr);
-	int * p = env->GetIntArrayElements(ret , NULL);
-	for(int i = 0; i < 3; ++i){
-	    printf("%d\n", p[i]);
-	}
-	env->ReleaseIntArrayElements(ret, p, JNI_ABORT);
+        jintArray ret = (jintArray) env->CallStaticObjectMethod(cls, mid, iarr);
+        int *p = env->GetIntArrayElements(ret, NULL);
+        for (int i = 0; i < 3; ++i) {
+            printf("%d\n", p[i]);
+        }
+        env->ReleaseIntArrayElements(ret, p, JNI_ABORT);
     } else {
         printf("find statis int method failed\n");
         exit(3);
@@ -101,9 +101,9 @@ void useJvm::CallStaticFunction(const char* functionName, const char* parameter)
     jmethodID mid = env->GetStaticMethodID(cls, functionName, "(Ljava/lang/String;)[B");
     if (mid) {
         jstring js = env->NewStringUTF(parameter);
-        jbyteArray obj = (jbyteArray)env->CallStaticObjectMethod(cls, mid, js);
-        jbyte* data=env->GetByteArrayElements(obj,0);
-        printf("%c%c\n",data[0],data[1]);
+        jbyteArray obj = (jbyteArray) env->CallStaticObjectMethod(cls, mid, js);
+        jbyte *data = env->GetByteArrayElements(obj, 0);
+        printf("%c%c\n", data[0], data[1]);
         env->ReleaseByteArrayElements(obj, data, 0);
     } else {
         printf("find static byte[] read(String) failed\n");
@@ -188,4 +188,3 @@ jfieldID useJvm::SetIntField(jobject& obj, const char* fieldName, int value) {
 int useJvm::GetIntField(jobject& obj, jfieldID fid) {
     return env->GetIntField(obj, fid);
 }
-

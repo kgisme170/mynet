@@ -13,64 +13,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf0b9541-d6e2-4636-85bb-6680ae0aa118" name="Default Changelist" comment="Java">
-      <change beforePath="$PROJECT_DIR$/cpp3p/grpc/client.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp3p/grpc/client.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp3p/grpc/server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp3p/grpc/server.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp3p/misc/mpi_init.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp3p/misc/mpi_init.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp3p/misc/mpi_usage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp3p/misc/mpi_usage.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp3p/misc/testleveldb.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp3p/misc/testleveldb.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp3p/misc/testlibxml2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp3p/misc/testlibxml2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp3p/misc/testlz4.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp3p/misc/testlz4.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp3p/misc/testopengl.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp3p/misc/testopengl.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp3p/misc/testsnappy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp3p/misc/testsnappy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp3p/misc/testzstd.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp3p/misc/testzstd.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp3p/protobuf/pb_embed.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp3p/protobuf/pb_embed.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp3p/protobuf/pb_hello.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp3p/protobuf/pb_hello.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp3p/protobuf/pb_hello_stream.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp3p/protobuf/pb_hello_stream.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp3p/protobuf/pb_serialize.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp3p/protobuf/pb_serialize.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp3p/usethrift/studentclient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp3p/usethrift/studentclient.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp3p/usethrift/studentserver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp3p/usethrift/studentserver.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cpp3p/usethrift/workerclient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp3p/usethrift/workerclient.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hadoop/mr/src/main/cpp/dfsio.c" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/src/main/cpp/dfsio.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hadoop/mr/src/main/cpp/w.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/hadoop/mr/src/main/cpp/w.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/memleak/memleak_demo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/memleak/memleak_demo.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/module/cdevtest.c" beforeDir="false" afterPath="$PROJECT_DIR$/linux/module/cdevtest.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/linux/client.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/linux/client.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/linux/server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/linux/server.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/linux/testAioNotify.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/linux/testAioNotify.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/linux/testAioQuery.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/linux/testAioQuery.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/linux/testEpoll.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/linux/testEpoll.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/linux/testLibEv.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/linux/testLibEv.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/linux/testLibEvent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/linux/testLibEvent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/linux/testLibEventHttp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/linux/testLibEventHttp.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/linux/testPipeEv.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/linux/testPipeEv.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/linux/testRWlock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/linux/testRWlock.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/linux/testcwd.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/linux/testcwd.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/linux/unixDomainSocket.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/linux/unixDomainSocket.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/posix/testAlarm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/posix/testAlarm.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/posix/testAlarmFork.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/posix/testAlarmFork.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/posix/testDup.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/posix/testDup.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/posix/testPipeAlarm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/posix/testPipeAlarm.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/posix/testPoll.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/posix/testPoll.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/posix/testSelect.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/posix/testSelect.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/posix/threads_cacheline.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/posix/threads_cacheline.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/posix/threads_lock.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/posix/threads_lock.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/posix/threads_omp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/posix/threads_omp.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/pthread/producerConsumer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/pthread/producerConsumer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/pthread/testCondWait.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/pthread/testCondWait.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/pthread/testPthread.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/pthread/testPthread.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCancel.c" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCancel.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCancelCpp.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCancelCpp.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCancelCppStd.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCancelCppStd.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCancelUnwind.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCancelUnwind.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCond.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCond.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadExit.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadExit.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadJoin.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadJoin.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadMutex.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadMutex.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadReturn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadReturn.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/pthread/useTlsCheck.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/pthread/useTlsCheck.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/pthread/useTlsCreate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/pthread/useTlsCreate.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/pthread/useTlsCreate.h" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/pthread/useTlsCreate.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux/multiplex/pthread/usetls.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linux/multiplex/pthread/usetls.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jni/impl.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/jni/impl.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jni/useJvm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/jni/useJvm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jni/useJvm.h" beforeDir="false" afterPath="$PROJECT_DIR$/build/jni/useJvm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jni/usejclass.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/jni/usejclass.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerConstructor/class1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerConstructor/class1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerConstructor/class2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerConstructor/class2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerConstructor/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerConstructor/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine.h" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine01.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine01.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine02.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine02.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerDoubleDefine/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDoubleDefine/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerDynamic/a.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDynamic/a.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerDynamic/bar1.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDynamic/bar1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerDynamic/bar2.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDynamic/bar2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerDynamic/d.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDynamic/d.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerDynamic/foo1.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDynamic/foo1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerDynamic/foo2.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerDynamic/foo2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerExtension/singleton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerExtension/singleton.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerExtension/singletonMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerExtension/singletonMain.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerPreload/d1.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerPreload/d1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerPreload/d1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerPreload/d1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerPreload/d2.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerPreload/d2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerPreload/d2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerPreload/d2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerPreload/m.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerPreload/m.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/linkerPreload/m.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/linkerPreload/m.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/useBazel/cpp-project/BUILD" beforeDir="false" afterPath="$PROJECT_DIR$/build/useBazel/cpp-project/BUILD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/useBazel/cpp-project/hello-dl.cc" beforeDir="false" afterPath="$PROJECT_DIR$/build/useBazel/cpp-project/hello-dl.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/useBazel/cpp-project/hello-greet.cc" beforeDir="false" afterPath="$PROJECT_DIR$/build/useBazel/cpp-project/hello-greet.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/useBazel/cpp-project/hello-greet.h" beforeDir="false" afterPath="$PROJECT_DIR$/build/useBazel/cpp-project/hello-greet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/useBazel/cpp-project/hello-world.cc" beforeDir="false" afterPath="$PROJECT_DIR$/build/useBazel/cpp-project/hello-world.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/useCmake/stage1/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/stage1/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/useCmake/stage1/main.cc" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/stage1/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/useCmake/stage1/power.cc" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/stage1/power.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/useCmake/stage2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/stage2/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/useCmake/stage2/main.cc" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/stage2/main.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/useCmake/stage2/math/power.cc" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/stage2/math/power.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/useCmake/transmitDeps/a.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/transmitDeps/a.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/useCmake/transmitDeps/b.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/transmitDeps/b.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/useCmake/transmitDeps/c.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/transmitDeps/c.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/useCmake/transmitDeps/dl.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/transmitDeps/dl.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/useCmake/transmitDeps/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/useCmake/transmitDeps/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/use3p/useMybatis/target/" />
     <ignored path="$PROJECT_DIR$/spark/spark_remote/target/" />
@@ -122,91 +106,91 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/testPthreadExit.cpp">
+        <entry file="file://$PROJECT_DIR$/build/useCmake/stage1/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+            <state relative-caret-position="30">
+              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/testPthreadJoin.cpp">
+        <entry file="file://$PROJECT_DIR$/build/useCmake/stage2/math/power.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="180">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/testPthreadMutex.cpp">
+        <entry file="file://$PROJECT_DIR$/build/useCmake/stage2/main.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="45">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/testPthreadReturn.cpp">
+        <entry file="file://$PROJECT_DIR$/build/useCmake/stage2/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="45">
+              <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/useTlsCheck.cpp">
+        <entry file="file://$PROJECT_DIR$/build/useCmake/stage2/math/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+            <state relative-caret-position="15">
+              <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/useTlsCreate.cpp">
+        <entry file="file://$PROJECT_DIR$/build/useCmake/transmitDeps/a.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            <state relative-caret-position="105">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/useTlsCreate.h">
+        <entry file="file://$PROJECT_DIR$/build/useCmake/transmitDeps/b.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="30">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hadoop/mr/src/main/cpp/dfsio.c">
+        <entry file="file://$PROJECT_DIR$/build/useCmake/transmitDeps/c.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="30">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/useCmake/transmitDeps/dl.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hadoop/mr/src/main/cpp/w.cpp">
+        <entry file="file://$PROJECT_DIR$/build/useCmake/transmitDeps/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/usetls.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+            <state relative-caret-position="75">
+              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -276,47 +260,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cpp3p/misc/testopengl.cpp" />
-        <option value="$PROJECT_DIR$/cpp3p/misc/testsnappy.cpp" />
-        <option value="$PROJECT_DIR$/cpp3p/misc/testzstd.cpp" />
-        <option value="$PROJECT_DIR$/cpp3p/protobuf/pb_embed.cpp" />
-        <option value="$PROJECT_DIR$/cpp3p/protobuf/pb_hello.cpp" />
-        <option value="$PROJECT_DIR$/cpp3p/protobuf/pb_hello_stream.cpp" />
-        <option value="$PROJECT_DIR$/cpp3p/protobuf/pb_serialize.cpp" />
-        <option value="$PROJECT_DIR$/cpp3p/usethrift/studentclient.cpp" />
-        <option value="$PROJECT_DIR$/cpp3p/usethrift/studentserver.cpp" />
-        <option value="$PROJECT_DIR$/cpp3p/usethrift/workerclient.cpp" />
-        <option value="$PROJECT_DIR$/linux/memleak/memleak_demo.cpp" />
-        <option value="$PROJECT_DIR$/linux/module/cdevtest.c" />
-        <option value="$PROJECT_DIR$/linux/multiplex/linux/client.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/linux/server.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/linux/testAioNotify.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/linux/testAioQuery.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/linux/testcwd.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/linux/testEpoll.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/linux/testLibEv.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/linux/testLibEvent.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/linux/testLibEventHttp.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/linux/testPipeEv.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/linux/testRWlock.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/linux/unixDomainSocket.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/posix/testAlarm.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/posix/testAlarmFork.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/posix/testDup.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/posix/testPipeAlarm.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/posix/testPoll.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/posix/testSelect.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/posix/threads_cacheline.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/posix/threads_lock.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/posix/threads_omp.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/pthread/producerConsumer.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/pthread/testCondWait.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/pthread/testPthread.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCancelCpp.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCancel.c" />
-        <option value="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCancelCppStd.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCancelUnwind.cpp" />
-        <option value="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCond.cpp" />
         <option value="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadExit.cpp" />
         <option value="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadJoin.cpp" />
         <option value="$PROJECT_DIR$/linux/multiplex/pthread/testPthreadMutex.cpp" />
@@ -327,6 +270,47 @@
         <option value="$PROJECT_DIR$/linux/multiplex/pthread/useTlsCreate.h" />
         <option value="$PROJECT_DIR$/hadoop/mr/src/main/cpp/dfsio.c" />
         <option value="$PROJECT_DIR$/hadoop/mr/src/main/cpp/w.cpp" />
+        <option value="$PROJECT_DIR$/build/jni/impl.c" />
+        <option value="$PROJECT_DIR$/build/jni/usejclass.cpp" />
+        <option value="$PROJECT_DIR$/build/jni/useJvm.cpp" />
+        <option value="$PROJECT_DIR$/build/jni/useJvm.h" />
+        <option value="$PROJECT_DIR$/build/linkerConstructor/class1.cpp" />
+        <option value="$PROJECT_DIR$/build/linkerConstructor/class2.cpp" />
+        <option value="$PROJECT_DIR$/build/linkerConstructor/main.cpp" />
+        <option value="$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine.h" />
+        <option value="$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine01.cpp" />
+        <option value="$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine02.cpp" />
+        <option value="$PROJECT_DIR$/build/linkerDoubleDefine/main.cpp" />
+        <option value="$PROJECT_DIR$/build/linkerDynamic/a.cpp" />
+        <option value="$PROJECT_DIR$/build/linkerDynamic/bar1.c" />
+        <option value="$PROJECT_DIR$/build/linkerDynamic/bar2.c" />
+        <option value="$PROJECT_DIR$/build/linkerDynamic/d.cpp" />
+        <option value="$PROJECT_DIR$/build/linkerDynamic/foo1.c" />
+        <option value="$PROJECT_DIR$/build/linkerDynamic/foo2.c" />
+        <option value="$PROJECT_DIR$/build/linkerExtension/singleton.cpp" />
+        <option value="$PROJECT_DIR$/build/linkerExtension/singletonMain.cpp" />
+        <option value="$PROJECT_DIR$/build/linkerPreload/d1.c" />
+        <option value="$PROJECT_DIR$/build/linkerPreload/d1.cpp" />
+        <option value="$PROJECT_DIR$/build/linkerPreload/d2.c" />
+        <option value="$PROJECT_DIR$/build/linkerPreload/d2.cpp" />
+        <option value="$PROJECT_DIR$/build/linkerPreload/m.c" />
+        <option value="$PROJECT_DIR$/build/linkerPreload/m.cpp" />
+        <option value="$PROJECT_DIR$/build/useBazel/cpp-project/hello-dl.cc" />
+        <option value="$PROJECT_DIR$/build/useBazel/cpp-project/hello-greet.cc" />
+        <option value="$PROJECT_DIR$/build/useBazel/cpp-project/hello-greet.h" />
+        <option value="$PROJECT_DIR$/build/useBazel/cpp-project/hello-world.cc" />
+        <option value="$PROJECT_DIR$/build/useBazel/cpp-project/BUILD" />
+        <option value="$PROJECT_DIR$/build/useCmake/stage1/main.cc" />
+        <option value="$PROJECT_DIR$/build/useCmake/stage1/power.cc" />
+        <option value="$PROJECT_DIR$/build/useCmake/stage1/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/build/useCmake/stage2/math/power.cc" />
+        <option value="$PROJECT_DIR$/build/useCmake/stage2/main.cc" />
+        <option value="$PROJECT_DIR$/build/useCmake/stage2/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/build/useCmake/transmitDeps/a.cpp" />
+        <option value="$PROJECT_DIR$/build/useCmake/transmitDeps/b.cpp" />
+        <option value="$PROJECT_DIR$/build/useCmake/transmitDeps/c.cpp" />
+        <option value="$PROJECT_DIR$/build/useCmake/transmitDeps/dl.cpp" />
+        <option value="$PROJECT_DIR$/build/useCmake/transmitDeps/main.cpp" />
       </list>
     </option>
   </component>
@@ -405,37 +389,7 @@
             <path>
               <item name="mytest" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="hadoop" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="mytest" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="hadoop" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="mr" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="mytest" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="hadoop" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="mr" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="mytest" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="hadoop" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="mr" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="mytest" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="hadoop" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="mr" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="cpp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="build" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -941,7 +895,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3574000" />
+    <option name="totallyTimeSpent" value="3919000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -953,17 +907,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="81" y="23" width="1359" height="877" extended-state="6" />
+    <frame x="81" y="23" width="1359" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3158694" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3204252" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49624062" weight="0.32611465" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.43837357" weight="0.30955413" />
@@ -972,11 +925,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32866243" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.5011389" side_tool="true" visible="true" weight="0.40636942" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.5018982" side_tool="true" visible="true" weight="0.40636942" />
       <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.47218046" weight="0.32611465" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49886104" visible="true" weight="0.40636942" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49810174" visible="true" weight="0.40636942" />
       <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.59656924" weight="0.4178344" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -986,6 +939,7 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.22706766" />
+      <window_info anchor="right" id="Database" order="9" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26090226" />
@@ -1030,323 +984,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Java" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cpp3p/misc/testsnappy.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp3p/misc/testzstd.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp3p/protobuf/pb_embed.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp3p/protobuf/pb_hello.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp3p/protobuf/pb_hello_stream.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="94" column="1" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp3p/protobuf/pb_serialize.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp3p/protobuf/serialize.proto">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp3p/usethrift/studentserver.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp3p/usethrift/studentclient.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp3p/usethrift/workerclient.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/memleak/memleak_demo.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/client.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/server.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/testAioNotify.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/testAioQuery.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/testcwd.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/testEpoll.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/module/cdevtest.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/testLibEv.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/testLibEvent.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="142" column="20" lean-forward="true" selection-start-line="142" selection-start-column="20" selection-end-line="142" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/testLibEventHttp.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/testPipeEv.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/testRWlock.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/linux/unixDomainSocket.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/posix/testAlarm.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/posix/testAlarmFork.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/posix/testDup.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/posix/testPipeAlarm.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/posix/testPoll.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/posix/testSelect.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/posix/threads_cacheline.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/posix/threads_lock.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/posix/threads_omp.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/producerConsumer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/testCondWait.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/testPthread.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCancelCpp.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCancel.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCancelCppStd.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCancelUnwind.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/testPthreadCond.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="74" column="1" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/testPthreadExit.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/testPthreadJoin.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/testPthreadMutex.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/testPthreadReturn.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/usetls.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/useTlsCheck.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
+        <state relative-caret-position="450">
           <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
         </state>
       </provider>
@@ -1372,10 +1012,328 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/linux/multiplex/pthread/usetls.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hadoop/mr/src/main/cpp/w.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
-          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/jni/cpp2java.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/jni/impl.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/jni/usejclass.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/jni/useJvm.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="189" column="1" selection-start-line="189" selection-start-column="1" selection-end-line="189" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/jni/useJvm.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerConstructor/class1.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerConstructor/class2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerConstructor/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine01.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerDoubleDefine/doubledefine02.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerDoubleDefine/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerDynamic/a.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerDynamic/b.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerDynamic/bar1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerDynamic/bar2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerDynamic/d.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerDynamic/foo1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerDynamic/foo2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerExtension/singleton.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerExtension/singletonMain.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerPreload/d1.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerPreload/d1.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerPreload/d2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerPreload/d2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerPreload/m.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/linkerPreload/m.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useBazel/cpp-project/hello-dl.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useBazel/cpp-project/hello-greet.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useBazel/cpp-project/hello-greet.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useBazel/cpp-project/hello-world.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useBazel/cpp-project/BUILD">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useBazel/cpp-project/.bazelrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useCmake/stage1/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useCmake/stage1/power.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useCmake/stage1/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useCmake/stage2/math/power.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useCmake/stage2/main.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useCmake/stage2/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useCmake/stage2/math/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useCmake/transmitDeps/a.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useCmake/transmitDeps/b.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useCmake/transmitDeps/c.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useCmake/transmitDeps/dl.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/useCmake/transmitDeps/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>

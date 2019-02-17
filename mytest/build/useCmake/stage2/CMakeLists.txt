@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
 project(demo)
 add_subdirectory(math)
-add_executable(demo, main.cc)
+add_executable(demo, main.cpp)
 target_link_libraries(demo, math)

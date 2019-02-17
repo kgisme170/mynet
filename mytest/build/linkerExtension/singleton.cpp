@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-class singleton{
+class singleton {
 public:
-    singleton(){cout<<"singleton ctor\n";}
+    singleton() { cout << "singleton ctor\n"; }
 };

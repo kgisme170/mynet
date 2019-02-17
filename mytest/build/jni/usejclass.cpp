@@ -2,11 +2,11 @@
 #include<stdio.h>
 #include"useJvm.h"
 
-int main(){
+int main() {
     useJvm u("cpp2java");
     printf("%d\n", u.CallStaticFunction("intFunc", 8));
     int buf[3];
-    for(int i = 0; i < 3; ++i){
+    for (int i = 0; i < 3; ++i) {
         buf[i] = i;
     }
     u.CallStaticFunction("arrayFunc", buf, 3);
