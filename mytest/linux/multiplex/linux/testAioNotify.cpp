@@ -20,7 +20,7 @@ void* thread_write(void* arg) {
 void read_done(io_context_t ctx,struct iocb* ,long,long) {
     printf("读取=%s\n", buf);
 }
-void main() {
+int main() {
     assert(pipe(fd) == 0);
     pthread_create(&ntid, NULL, &thread_write, NULL);
     assert(io_setup(1, &ctx) == 0);
@@ -30,4 +30,5 @@ void main() {
         assert(io_submit(ctx, 1, &p) == 1);
         io_queue_run(ctx);
     }
+    return 0;
 }
