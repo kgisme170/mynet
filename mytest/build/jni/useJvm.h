@@ -1,4 +1,5 @@
 #include<jni.h>
+#include<map>
 class useJvm {
     JavaVMOption options[1];
     JavaVM* jvm;
@@ -10,7 +11,7 @@ public:
     ~useJvm();
 
     int CallStaticFunction(const char* functionName, int parameter);
-    jintArray CallStaticFunction(const char* functionName, const int* parameter, const size_t size);
+    void CallStaticFunction(const char* functionName, const int* parameter, const size_t size);
     bool CallStaticFunction(const char* functionName, bool parameter);
     void CallStaticFunction(const char* functionName, const char* parameter);
     void CallStaticThrow(const char* functionName);

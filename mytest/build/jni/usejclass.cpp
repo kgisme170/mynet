@@ -6,13 +6,11 @@ int main(){
     useJvm u("cpp2java");
     printf("%d\n", u.CallStaticFunction("intFunc", 8));
     int buf[3];
-    for(int i=0;i<3;++i){
+    for(int i = 0; i < 3; ++i){
         buf[i] = i;
     }
-    jintArray ret = u.CallStaticFunction("arrayFunc", buf, 3);
-    for(int i=0;i<3;++i){
-        printf("%d\n", ret[i]);
-    }
+    u.CallStaticFunction("arrayFunc", buf, 3);
+
     printf("%d\n", u.CallStaticFunction("boolFunc", false));
     u.CallStaticFunction("read", "hi");
     u.CallStaticThrow("mythrow");

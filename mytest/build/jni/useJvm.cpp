@@ -67,7 +67,7 @@ int useJvm::CallStaticFunction(const char* functionName, int parameter) {
 // public static int[] arrayFunc(int[]);
 // descriptor: ([I)[I
 // arrayFunction ends
-jintArray useJvm::CallStaticFunction(const char* functionName, const int* parameter, const size_t size) {
+void useJvm::CallStaticFunction(const char* functionName, const int* parameter, const size_t size) {
     jmethodID mid = env->GetStaticMethodID(cls, functionName, "([I)[I");
     for(size_t i=0;i<size;++i) {
         printf("parameter = %d\n", parameter[i]);
@@ -75,8 +75,12 @@ jintArray useJvm::CallStaticFunction(const char* functionName, const int* parame
     if (mid) {
         jintArray iarr = env->NewIntArray(size);
         env->SetIntArrayRegion(iarr, 0, size, parameter);
-        jintArray array = (jintArray)env->CallStaticObjectMethod(cls, mid, iarr);
-        return array;
+        jintArray ret = (jintArray)env->CallStaticObjectMethod(cls, mid, iarr);
+	int * p = env->GetIntArrayElements(ret , NULL);
+	for(int i = 0; i < 3; ++i){
+	    printf("%d\n", p[i]);
+	}
+	env->ReleaseIntArrayElements(ret, p, JNI_ABORT);
     } else {
         printf("find statis int method failed\n");
         exit(3);
