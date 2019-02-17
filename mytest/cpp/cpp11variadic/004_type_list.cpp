@@ -15,7 +15,7 @@ struct typeList<0, Head, Tail...> {
 };
 
 int main() {
-    typeList<2, int, short, char *, int *>::type x = "hello";
+    typeList<2, int, short, const char *, int *>::type x = "hello";
     cout << x << endl;
     return 0;
 }

@@ -11,8 +11,9 @@ struct Int {};
 constexpr auto iter(Int<0>) -> Int<0>;
 
 template<int i>
-constexpr auto iter(Int<i>) -> decltype(auto)
-{ return iter(Int<i-1>{}); }
+constexpr auto iter(Int<i>) -> decltype(auto) {
+    return iter(Int<i-1>{});
+}
 
 int main() {
     decltype(iter(Int<10>{})) a;
