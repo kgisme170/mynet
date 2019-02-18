@@ -2,15 +2,8 @@
 import os
 env=Environment(ENV=os.environ)
 env.Append(CXXFLAGS="--std=c++11")
+env.AppendUnique(LIBS=['atomic', 'pthread'])
 #2. Targets
-env.Program(target='atomicVsMutex', source='atomicVsMutex.cpp', LIBS = ['atomic', 'pthread'])
-env.Program(target='atomic_flag', source='atomic_flag.cpp', LIBS = ['atomic', 'pthread'])
-env.Program(target='cas', source='cas.cpp', LIBS = ['atomic', 'pthread'])
-env.Program(target='condition', source='condition.cpp', LIBS = ['atomic', 'pthread'])
-env.Program(target='stdtls', source='stdtls.cpp', LIBS = ['atomic', 'pthread'])
-env.Program(target='testConditionWait', source='testConditionWait.cpp', LIBS = ['atomic', 'pthread'])
-env.Program(target='testStdThreadExit', source='testStdThreadExit.cpp', LIBS = ['atomic', 'pthread'])
-env.Program(target='threadMutex', source='threadMutex.cpp', LIBS = ['atomic', 'pthread'])
-env.Program(target='threadWait', source='threadWait.cpp', LIBS = ['atomic', 'pthread'])
-env.Program(target='usefuture', source='usefuture.cpp', LIBS = ['atomic', 'pthread'])
-env.Program(target='uselock', source='uselock.cpp', LIBS = ['atomic', 'pthread'])
+for f in env.Glob("*.cpp"):
+    if "error" not in str(f):
+        env.Program("${SOURCE.base}",f)
