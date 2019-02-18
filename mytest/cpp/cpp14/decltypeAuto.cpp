@@ -8,7 +8,9 @@ decltype(auto) Example(Fun fun, Args&&... args) {
 template<int i>
 struct Int {};
 
-constexpr auto iter(Int<0>) -> Int<0>;
+constexpr auto iter(Int<0>) -> Int<0> {
+    return Int<0>{};
+}
 
 template<int i>
 constexpr auto iter(Int<i>) -> decltype(auto) {
