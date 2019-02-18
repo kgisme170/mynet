@@ -11,7 +11,7 @@
     <modules>
         <module>useAnnotation</module>
         <module>jLang</module>
-        <module>useJunit</module>
+        <!--module>useJunit</module-->
         <module>concurrent</module>
         <module>useXml</module>
         <module>classCompiler</module>

@@ -6,8 +6,6 @@ using namespace std;
 pthread_key_t p_key = 10000001;
 
 void* tf(void*arg) {
-    pthread_t tid;
-    tid = pthread_self();
     {
         M obj1;
         sleep(1);

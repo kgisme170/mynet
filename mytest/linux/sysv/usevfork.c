@@ -7,8 +7,6 @@
 int main(){
     pid_t p = vfork();
     int i = 0, status;
-    int fd;
-    char buf[1024];
     if (p>0){//父
         sleep(2);
         wait(&status);//父进程处于D状态, ps显示的WCHAN是do_for

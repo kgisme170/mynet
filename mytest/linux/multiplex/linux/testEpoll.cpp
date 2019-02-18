@@ -32,7 +32,7 @@ int main() {
         ev.events = EPOLLIN | EPOLLET;
         epoll_ctl(epfd, EPOLL_CTL_ADD, fd[0], &ev);
         while (true) {
-            int nfds = epoll_wait(epfd, events, 1, -1);
+            epoll_wait(epfd, events, 1, -1);
             if (events[0].data.fd == fd[0]) {
                 ssize_t bytes = read(fd[0], buf, sizeof(buf));
                 printf("父进程读入%ld字节=%s\n", bytes, buf);
