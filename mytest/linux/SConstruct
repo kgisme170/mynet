@@ -3,5 +3,4 @@ env = Environment(ENV = {'PATH' : os.environ['PATH']})
 env.Append(CXXFLAGS="-Wall")
 env.Append(CXXFLAGS="-Werror")
 
-env.SConscript(dirs=['multiplex/pthread'])
 env.SConscript(dirs=['sysv'])
