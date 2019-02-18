@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import os,sys
 env = Environment()
-
+env.Execute("echo Top level SConstruct")
 sconscript_file="SConscript"
 env.SConscript(
     sconscript_file,
