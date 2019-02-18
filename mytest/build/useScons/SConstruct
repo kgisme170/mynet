@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+import os,sys
+env = Environment(ENV = {'PATH' : os.environ['PATH']})
+execludeBuildInfo = []
+for f in env.Glob("*.cc"):
+    if "c.cc" not in str(f):
+        execludeBuildInfo.append(f)
+
+for f in execludeBuildInfo:
+    print f
+env.Program(target='main', source=execludeBuildInfo)
