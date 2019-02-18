@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/41187986/singleton-across-compilation-units-linking-library-vs-linking-objects
+
+Self-discovery only works if the object files are linked into the executable
