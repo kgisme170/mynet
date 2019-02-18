@@ -6,10 +6,11 @@ env.Append(CXXFLAGS = ['-I.'])
 info = env.StaticLibrary(target='info',source=['common/info.cpp','info.cpp'], CPPPATH=[])
 env['INFO'] = info
 
-env.SharedLibrary(
+MYLIB = env.SharedLibrary(
     target = 'mylib',
     source = ['mylib.cpp'],
     LIBPATH = ['.'],
     LIBS = ['info']) # doesn' take effect when not used
+print(MYLIB)
 
 env.SConscript(dirs=['common'], exports=['env'])
