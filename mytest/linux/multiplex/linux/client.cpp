@@ -64,7 +64,7 @@ int main(int argc, char *argv[]) {
 	pcmsg->cmsg_len = CMSG_LEN(sizeof(int));
 	pcmsg->cmsg_level = SOL_SOCKET;
 	pcmsg->cmsg_type = SCM_RIGHTS;  //指明发送的是描述符
-	*((int *) CMSG_DATA(pcmsg)) == fd;  //把描述符写入辅助数据
+	*((int *) CMSG_DATA(pcmsg)) = fd;  //把描述符写入辅助数据
 
 	ret = sendmsg(clifd, &msg, 0);  //send filedescriptor
 	printf("ret = %d, filedescriptor = %d\n", ret, fd);
