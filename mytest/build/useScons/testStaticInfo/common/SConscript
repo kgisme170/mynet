@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+#Import('env')
+env = Environment()
+env.Append(CXXFLAGS = ['-I.'])
+common_src=[env.Glob('*.cpp')]
+env.SharedLibrary( # all source files
+    target='common',
+    source=common_src
+)

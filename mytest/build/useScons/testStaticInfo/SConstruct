@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+import os,sys
+env = Environment(ENV = {'PATH' : os.environ['PATH']})
+env.Append(CXXFLAGS = ['-I.'])
+info = env.StaticLibrary(target='info',source=['common/info.cpp','info.cpp'], CPPPATH=[])
+env['INFO'] = info
+
+env.SharedLibrary(
+    target = 'mylib',
+    source = ['mylib.cpp'],
+    LIBPATH = ['.'],
+    LIBS = ['info']) # doesn' take effect when not used
+
+env.SConscript(dirs=['common'])
