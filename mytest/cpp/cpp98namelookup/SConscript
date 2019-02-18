@@ -3,12 +3,6 @@ import os
 env=Environment(ENV=os.environ)
 env.Append(CXXFLAGS="--std=c++98")
 #2. Targets
-env.Program(target='ResolutionClass01', source='ResolutionClass01.cpp')
-env.Program(target='ResolutionClass02', source='ResolutionClass02.cpp')
-env.Program(target='ResolutionFunction01', source='ResolutionFunction01.cpp')
-env.Program(target='ResolutionFunction02', source='ResolutionFunction02.cpp')
-env.Program(target='ResolutionNamespace', source='ResolutionNamespace.cpp')
-env.Program(target='ResolutionTemplate01', source='ResolutionTemplate01.cpp')
-env.Program(target='ResolutionTemplate02', source='ResolutionTemplate02.cpp')
-env.Program(target='ResolutionTemplateClass01', source='ResolutionTemplateClass01.cpp')
-env.Program(target='ResolutionTemplateClass02', source='ResolutionTemplateClass02.cpp')
+for f in env.Glob("*.cpp"):
+    if "error" not in str(f):
+    	env.Program("${SOURCE.base}",f)
