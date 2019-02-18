@@ -6,4 +6,6 @@ sconscript_file="SConscript"
 env.SConscript(
     sconscript_file,
     exports='env',
+    variant_dir='build',
+    duplicate=1
 )
