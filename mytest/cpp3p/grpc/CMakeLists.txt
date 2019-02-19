@@ -10,10 +10,9 @@ add_custom_target(protoSource
 )
 add_dependencies(protoSource protoFile)
 
-add_library(protoLib SHARED examples.grpc.pb.cc examples.pb.cc)
-add_dependencies(protoLib protoSource)
+add_library(protoCpp SHARED examples.grpc.pb.cc examples.pb.cc)
+add_dependencies(protoCpp protoSource)
 
+link_libraries(protoCpp protobuf grpc grpc++)
 add_executable(client client.cpp)
 add_executable(server server.cpp)
-target_link_libraries(client protoLib protobuf grpc grpc++)
-target_link_libraries(server protoLib protobuf grpc grpc++)
