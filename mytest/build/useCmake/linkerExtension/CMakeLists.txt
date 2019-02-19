@@ -1,4 +1,4 @@
-add_executable(main singleton.cpp main.cpp)
+add_executable(singletonObjectMain singleton.cpp main.cpp)
 add_library(static STATIC singleton.cpp)
 add_library(shared SHARED singleton.cpp)
 add_executable(singletonStatic main.cpp)
