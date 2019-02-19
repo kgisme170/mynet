@@ -5,12 +5,15 @@
 #include "examples.pb.h"
 #include "examples.grpc.pb.h"
 
+#include <functional>
 #include <grpcpp/impl/codegen/async_stream.h>
 #include <grpcpp/impl/codegen/async_unary_call.h>
 #include <grpcpp/impl/codegen/channel_interface.h>
 #include <grpcpp/impl/codegen/client_unary_call.h>
+#include <grpcpp/impl/codegen/client_callback.h>
 #include <grpcpp/impl/codegen/method_handler_impl.h>
 #include <grpcpp/impl/codegen/rpc_service_method.h>
+#include <grpcpp/impl/codegen/server_callback.h>
 #include <grpcpp/impl/codegen/service_type.h>
 #include <grpcpp/impl/codegen/sync_stream.h>
 
@@ -30,6 +33,10 @@ SearchService::Stub::Stub(const std::shared_ptr< ::grpc::ChannelInterface>& chan
 
 ::grpc::Status SearchService::Stub::Search(::grpc::ClientContext* context, const ::SearchRequest& request, ::SearchResponse* response) {
   return ::grpc::internal::BlockingUnaryCall(channel_.get(), rpcmethod_Search_, context, request, response);
+}
+
+void SearchService::Stub::experimental_async::Search(::grpc::ClientContext* context, const ::SearchRequest* request, ::SearchResponse* response, std::function<void(::grpc::Status)> f) {
+  return ::grpc::internal::CallbackUnaryCall(stub_->channel_.get(), stub_->rpcmethod_Search_, context, request, response, std::move(f));
 }
 
 ::grpc::ClientAsyncResponseReader< ::SearchResponse>* SearchService::Stub::AsyncSearchRaw(::grpc::ClientContext* context, const ::SearchRequest& request, ::grpc::CompletionQueue* cq) {

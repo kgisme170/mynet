@@ -6,12 +6,15 @@
 
 #include "examples.pb.h"
 
+#include <functional>
 #include <grpcpp/impl/codegen/async_generic_service.h>
 #include <grpcpp/impl/codegen/async_stream.h>
 #include <grpcpp/impl/codegen/async_unary_call.h>
+#include <grpcpp/impl/codegen/client_callback.h>
 #include <grpcpp/impl/codegen/method_handler_impl.h>
 #include <grpcpp/impl/codegen/proto_utils.h>
 #include <grpcpp/impl/codegen/rpc_method.h>
+#include <grpcpp/impl/codegen/server_callback.h>
 #include <grpcpp/impl/codegen/service_type.h>
 #include <grpcpp/impl/codegen/status.h>
 #include <grpcpp/impl/codegen/stub_options.h>
@@ -39,6 +42,12 @@ class SearchService final {
     std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::SearchResponse>> PrepareAsyncSearch(::grpc::ClientContext* context, const ::SearchRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReaderInterface< ::SearchResponse>>(PrepareAsyncSearchRaw(context, request, cq));
     }
+    class experimental_async_interface {
+     public:
+      virtual ~experimental_async_interface() {}
+      virtual void Search(::grpc::ClientContext* context, const ::SearchRequest* request, ::SearchResponse* response, std::function<void(::grpc::Status)>) = 0;
+    };
+    virtual class experimental_async_interface* experimental_async() { return nullptr; }
   private:
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::SearchResponse>* AsyncSearchRaw(::grpc::ClientContext* context, const ::SearchRequest& request, ::grpc::CompletionQueue* cq) = 0;
     virtual ::grpc::ClientAsyncResponseReaderInterface< ::SearchResponse>* PrepareAsyncSearchRaw(::grpc::ClientContext* context, const ::SearchRequest& request, ::grpc::CompletionQueue* cq) = 0;
@@ -53,9 +62,21 @@ class SearchService final {
     std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::SearchResponse>> PrepareAsyncSearch(::grpc::ClientContext* context, const ::SearchRequest& request, ::grpc::CompletionQueue* cq) {
       return std::unique_ptr< ::grpc::ClientAsyncResponseReader< ::SearchResponse>>(PrepareAsyncSearchRaw(context, request, cq));
     }
+    class experimental_async final :
+      public StubInterface::experimental_async_interface {
+     public:
+      void Search(::grpc::ClientContext* context, const ::SearchRequest* request, ::SearchResponse* response, std::function<void(::grpc::Status)>) override;
+     private:
+      friend class Stub;
+      explicit experimental_async(Stub* stub): stub_(stub) { }
+      Stub* stub() { return stub_; }
+      Stub* stub_;
+    };
+    class experimental_async_interface* experimental_async() override { return &async_stub_; }
 
    private:
     std::shared_ptr< ::grpc::ChannelInterface> channel_;
+    class experimental_async async_stub_{this};
     ::grpc::ClientAsyncResponseReader< ::SearchResponse>* AsyncSearchRaw(::grpc::ClientContext* context, const ::SearchRequest& request, ::grpc::CompletionQueue* cq) override;
     ::grpc::ClientAsyncResponseReader< ::SearchResponse>* PrepareAsyncSearchRaw(::grpc::ClientContext* context, const ::SearchRequest& request, ::grpc::CompletionQueue* cq) override;
     const ::grpc::internal::RpcMethod rpcmethod_Search_;
@@ -89,6 +110,32 @@ class SearchService final {
     }
   };
   typedef WithAsyncMethod_Search<Service > AsyncService;
+  template <class BaseClass>
+  class ExperimentalWithCallbackMethod_Search : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    ExperimentalWithCallbackMethod_Search() {
+      ::grpc::Service::experimental().MarkMethodCallback(0,
+        new ::grpc::internal::CallbackUnaryHandler< ::SearchRequest, ::SearchResponse>(
+          [this](::grpc::ServerContext* context,
+                 const ::SearchRequest* request,
+                 ::SearchResponse* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   return this->Search(context, request, response, controller);
+                 }));
+    }
+    ~ExperimentalWithCallbackMethod_Search() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status Search(::grpc::ServerContext* context, const ::SearchRequest* request, ::SearchResponse* response) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual void Search(::grpc::ServerContext* context, const ::SearchRequest* request, ::SearchResponse* response, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
+  };
+  typedef ExperimentalWithCallbackMethod_Search<Service > ExperimentalCallbackService;
   template <class BaseClass>
   class WithGenericMethod_Search : public BaseClass {
    private:
@@ -125,6 +172,31 @@ class SearchService final {
     void RequestSearch(::grpc::ServerContext* context, ::grpc::ByteBuffer* request, ::grpc::ServerAsyncResponseWriter< ::grpc::ByteBuffer>* response, ::grpc::CompletionQueue* new_call_cq, ::grpc::ServerCompletionQueue* notification_cq, void *tag) {
       ::grpc::Service::RequestAsyncUnary(0, context, request, response, new_call_cq, notification_cq, tag);
     }
+  };
+  template <class BaseClass>
+  class ExperimentalWithRawCallbackMethod_Search : public BaseClass {
+   private:
+    void BaseClassMustBeDerivedFromService(const Service *service) {}
+   public:
+    ExperimentalWithRawCallbackMethod_Search() {
+      ::grpc::Service::experimental().MarkMethodRawCallback(0,
+        new ::grpc::internal::CallbackUnaryHandler< ::grpc::ByteBuffer, ::grpc::ByteBuffer>(
+          [this](::grpc::ServerContext* context,
+                 const ::grpc::ByteBuffer* request,
+                 ::grpc::ByteBuffer* response,
+                 ::grpc::experimental::ServerCallbackRpcController* controller) {
+                   this->Search(context, request, response, controller);
+                 }));
+    }
+    ~ExperimentalWithRawCallbackMethod_Search() override {
+      BaseClassMustBeDerivedFromService(this);
+    }
+    // disable synchronous version of this method
+    ::grpc::Status Search(::grpc::ServerContext* context, const ::SearchRequest* request, ::SearchResponse* response) override {
+      abort();
+      return ::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "");
+    }
+    virtual void Search(::grpc::ServerContext* context, const ::grpc::ByteBuffer* request, ::grpc::ByteBuffer* response, ::grpc::experimental::ServerCallbackRpcController* controller) { controller->Finish(::grpc::Status(::grpc::StatusCode::UNIMPLEMENTED, "")); }
   };
   template <class BaseClass>
   class WithStreamedUnaryMethod_Search : public BaseClass {
