@@ -4,8 +4,9 @@ rm -fr linkerDoubleDefine/build
 rm -fr linkerDynamic/build
 rm -fr linkerPreload/build
 
-rm -fr useCmake/forJava/build
 rm -fr jni/build
-rm -fr useCmake/stage1/build
-rm -fr useCmake/stage2/build
+rm -fr useCmake/basic/build
+rm -fr useCmake/dependency/build
+rm -fr useCmake/forJava/build
+rm -fr useCmake/subdir/build
 rm -fr useCmake/transmitDeps/build
