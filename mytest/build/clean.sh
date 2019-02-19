@@ -7,6 +7,5 @@ rm -fr linkerPreload/build
 rm -fr jni/build
 rm -fr useCmake/basic/build
 rm -fr useCmake/dependency/build
-rm -fr useCmake/forJava/build
 rm -fr useCmake/subdir/build
 rm -fr useCmake/transmitDeps/build

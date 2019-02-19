@@ -3,6 +3,6 @@
 int main() {
     puts("main.cpp");
     double d = power(2.5, 3);
-    puts(d);
+    printf("%f\n", d);
     return 0;
 }
