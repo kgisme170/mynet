@@ -1,4 +1,6 @@
 cmake_minimum_required (VERSION 2.8) 
+execute_process(COMMAND javac cpp2java.java)
+execute_process(COMMAND javah -classpath . -jni cpp2java)
 include_directories(.)
 include_directories(build)
 add_library(impl SHARED impl.c)
