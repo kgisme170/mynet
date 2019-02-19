@@ -36,6 +36,9 @@ sudo ldconfig
 
 #openmpi
 wget https://download.open-mpi.org/release/open-mpi/v3.1/openmpi-3.1.1.tar.gz
+make -j8
+sudo make install
+sudo ldconfig
 
 #uuid
 sudo apt-get install uuid-dev

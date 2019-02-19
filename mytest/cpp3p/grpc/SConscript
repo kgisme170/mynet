@@ -1,8 +1,0 @@
-import os
-env=Environment(ENV=os.environ,LIBPATH='/usr/local/lib')
-env.Append(CXXFLAGS="-std=c++11 -I.")
-LINKFLAGS=['-lprotobuf', '-lgrpc', '-lgrpc++']
-ex_grpc=Object('examples.grpc.pb.cc', CCFLAGS="-I. -std=c++11")
-ex_pb=Object('examples.pb.cc',CCFLAGS="-I. -std=c++11")
-env.Program(target='client', CCFLAGS="-I.", source=['client.cpp',ex_grpc,ex_pb], LIBS=LINKFLAGS)
-env.Program(target='server', CCFLAGS="-I.", source=['server.cpp',ex_grpc,ex_pb], LIBS=LINKFLAGS)
