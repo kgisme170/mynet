@@ -5,6 +5,7 @@ add_subdirectory(dependency)
 add_subdirectory(subdir)
 add_subdirectory(transmitDeps)
 
+add_subdirectory(forJava)
 add_subdirectory(jni)
 add_subdirectory(linkerConstructor)
 add_subdirectory(linkerDoubleDefine)

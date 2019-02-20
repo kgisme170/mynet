@@ -1,12 +1,12 @@
 #include<utility>
-//foward类型作为返回，带有value category，简单用auto会丢失
+//forward类型作为返回，带有value category，简单用auto会丢失
 template<class Fun, class... Args>
 decltype(auto) Example(Fun fun, Args&&... args) {
     return fun(std::forward<Args>(args)...);
 }
 
 template<int i>
-struct Int {};
+struct Int {int value = i;};
 
 constexpr auto iter(Int<0>) -> Int<0> {
     return Int<0>{};
@@ -19,5 +19,5 @@ constexpr auto iter(Int<i>) -> decltype(auto) {
 
 int main() {
     decltype(iter(Int<10>{})) a;
-    return 0;
+    return a.value;
 }
