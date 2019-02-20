@@ -18,9 +18,11 @@ int main(){
 
     printf("Bss location:%p\n", &bssvar);
     char* b=(char*)malloc(1);
+    free(b);
     printf("Heap location 1:%p\n", b);
 
     b=(char*)malloc(1);
+    free(b);
     printf("Heap location 2:%p\n", b);
     getchar();
     return 0;

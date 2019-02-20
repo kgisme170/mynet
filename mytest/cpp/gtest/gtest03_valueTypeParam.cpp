@@ -41,8 +41,7 @@ INSTANTIATE_TYPED_TEST_CASE_P(My, FooTest, MyTypes_P);
 
 void core() {
     cerr << "core dump";
-    int *p = NULL;
-    *p = 1;
+    int *p = 1;
 }
 void die() {
     cerr << "Existed with code 1";

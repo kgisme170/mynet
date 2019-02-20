@@ -14,5 +14,11 @@ int main() {
     A *p = new A[5]{{1},
                     {2},
                     {3}};//剩下的两个A初始化为0
+    delete p;
+    delete pb;
+    delete qi;
+    delete pi;
+    delete a2;
+    delete a1;
     return 0;
 }
