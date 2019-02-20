@@ -19,7 +19,6 @@ public class TestReentrantLock {
                 public void run() {
                     try {
                         Thread.sleep(500);
-                        System.out.println("子线程睡眠结束");
                         main.interrupt();
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -29,7 +28,6 @@ public class TestReentrantLock {
             Thread t = new Thread(runnable);
             t.start();
             Thread.sleep(1000);
-            System.out.println("主线程睡眠结束");
             t.join();
         } catch (Exception e) {
             e.printStackTrace();
@@ -47,6 +45,6 @@ public class TestReentrantLock {
         List<Object> list = new ArrayList<Object>();
         thrown.expect(IndexOutOfBoundsException.class);
         thrown.expectMessage("Index: 0, Size: 0");
-        list.get(0); // execution will never get past this line
+        list.get(0);
     }
 }

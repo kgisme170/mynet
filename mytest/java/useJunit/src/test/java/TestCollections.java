@@ -13,7 +13,7 @@ public class TestCollections {
     @Test(expected = UnsupportedOperationException.class)
     public void TestAsList() {
         String[] array = new String[]{"xyz1", "abc", "1234"};
-        List<String> stringList = Arrays.asList(array); // 只是一个视图而已
+        List<String> stringList = Arrays.asList(array);
 
         IntConsumer intConsumer = i -> System.out.println(i);
         for (int i = 0; i < 10; ++i) {
@@ -22,12 +22,12 @@ public class TestCollections {
 
         array[0] = "kkk";
         System.out.println(stringList.get(0));
-        stringList.add("newElement"); // 不可添加
+        stringList.add("newElement");
     }
 
     @Test(expected = UnsupportedOperationException.class)
     public void TestNCopies() {
-        List<String> stringList = Collections.nCopies(5, "abc"); //不可修改
+        List<String> stringList = Collections.nCopies(5, "abc");
         stringList.set(0, "kkk");
     }
 
@@ -63,7 +63,7 @@ public class TestCollections {
 
         System.out.println("--------------");
         stringSet.add("210");
-        Assert.assertEquals(4, sub.size()); // subSet只是一个视图
+        Assert.assertEquals(4, sub.size());
         for (String s : sub) {
             System.out.println(s);
         }
@@ -159,13 +159,13 @@ public class TestCollections {
         stringIntegerMap.put(another, stringIntegerMap.get(another) + 1);
 
         String yet = "yet";
-        stringIntegerMap.merge(yet, 1, Integer::sum); //最好的方式
+        stringIntegerMap.merge(yet, 1, Integer::sum);
         stringIntegerMap.merge(yet, 1, (oldValue, newValue) -> oldValue + newValue);
         stringIntegerMap.forEach((k, v) -> System.out.println(k + v));
     }
 
     @Test
-    public void TestConcurrentMapCount() { // 相当于ConcurrentHashMap<String, AtomicLong>
+    public void TestConcurrentMapCount() {
         ConcurrentHashMap<String, Long> map = new ConcurrentHashMap<>();
         String word = "abc";
         Long oldValue, newValue;
@@ -174,7 +174,6 @@ public class TestCollections {
             newValue = oldValue == null ? 1 : oldValue + 1;
         } while (!map.replace(word, oldValue, newValue));
 
-        // 等效于上面的do while循环
         map.compute(word, (k, v) -> v == null ? 1 : v + 1);
     }
 

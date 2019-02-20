@@ -28,7 +28,7 @@ public class ComparableComparator {
     }
 
     @Test
-    public void UseModel() { // 取模?
+    public void UseModel() {
         class Cb implements Comparable<Cb> {
             int m_i;
 

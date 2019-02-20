@@ -21,16 +21,3 @@ public class UseLog {
         Logger.getGlobal().setLevel(Level.INFO);
     }
 }
-
-/**
- * 要使得log的配置文件有效，必须采用jvm选项，-D需要出现在class name之前。
- * 出现在class name后面的是程序运行时参数args的部分
- * 例如以下用法：
- *
- *
- $java -Djava.util.logging.config.file=myConfig.txt UseLog
- arg count: 0
- 一月 07, 2019 5:50:30 下午 UseLog main
- 警告: hello from warning
- *
- */
