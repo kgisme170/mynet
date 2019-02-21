@@ -1,0 +1,11 @@
+import os,sys
+env=Environment()
+
+llvm_lib = env.ParseFlags(["llvm-config --libs"])
+env.MergeFlags(llvm_lib)
+
+my_libs = llvm_lib["LIBS"]
+
+env.aProgram(target = '',
+             source = '.cpp',
+             LIBS=my_libs)
