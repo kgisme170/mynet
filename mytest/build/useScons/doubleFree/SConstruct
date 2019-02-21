@@ -4,6 +4,6 @@ env.SharedLibrary(target='mylib_shared', source='mylib.cc')
 env.StaticLibrary(target='mylib', source='mylib.cc', CPPFLAGS=['-fPIC'])
 
 env.SharedLibrary(target='useShared', source='useShared.cc', LIBS='mylib_shared')
-env.SharedLibrary(target='useStatic', source='useStatic.cc', LIBS='mylib')
+env.StaticLibrary(target='useStatic', source='useStatic.cc', LIBS='mylib')
 
 env.Program(target='main', source='main.cc', LIBS=['useShared', 'useStatic'])
