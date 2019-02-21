@@ -14,7 +14,7 @@ I run "cmake ." OK, and then make VERBOSE=1 it gives compilation error:
 
     Scanning dependencies of target testusage
     [ 50%] Building CXX object CMakeFiles/testusage.dir/testusage.cpp.o
-    /home/a/proj/mynet/mytest/cpp3p/useXml2/testusage.cpp:1:9: fatal error: libxml/parser.h: 没有那个文件或目录
+    /home/a/proj/mynet/mytest/cpp3p/useXml2/testusage.cpp:1:9: fatal error: libxml/parser.h: no such file or directory
      #include<libxml/parser.h>
              ^~~~~~~~~~~~~~~~~
     compilation terminated.
