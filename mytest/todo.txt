@@ -1,5 +1,0 @@
-Template specialization used, but compiler gives warning about "used but never defined"
-warning: inline function ‘constexpr Int<0> iter(Int<0>)’ used but never defined
- constexpr auto iter(Int<0>) -> Int<0>;
-                ^~~~
-
