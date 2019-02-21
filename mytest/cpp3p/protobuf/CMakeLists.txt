@@ -31,6 +31,10 @@ add_custom_command(
     ARGS "--proto_path=."
          "--cpp_out=${BUILD}"
          "serialize.proto"
+    COMMAND ${PROTOBUF_PROTOC_EXECUTABLE}
+    ARGS "--proto_path=."
+         "--python_out=${BUILD}"
+         "pytest.proto"
     COMMENT "genProto"
 )
 
@@ -38,7 +42,7 @@ add_custom_target(myPreprocess ALL DEPENDS ${HELLO_PB_CC} ${EMBED_PB_CC} ${SERIA
 
 add_custom_command(TARGET myPreprocess
   PRE_BUILD 
-  COMMAND echo "-->Executing protoc command"
+  COMMAND echo "Executing protoc command"
   COMMENT "This command will be executed before building target myPreprocess"
 )
 link_libraries(${PROTOBUF_LIBRARY})
