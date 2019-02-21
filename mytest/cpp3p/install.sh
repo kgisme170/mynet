@@ -41,5 +41,9 @@ make -j8
 sudo make install
 sudo ldconfig
 
-#uuid
-sudo apt-get install uuid-dev
+#misc
+apt-get install libleveldb-dev
+apt-get install liblz4-dev
+apt-get install libsnappy-dev
+apt-get install libzstd-dev
+apt-get install uuid-dev
