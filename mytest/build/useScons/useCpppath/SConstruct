@@ -1,0 +1,3 @@
+env=Environment()
+MYINCLUDE='myinclude'
+env.Program(target='main', source='main.cc', CPPPATH=[MYINCLUDE])

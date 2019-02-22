@@ -1,11 +1,11 @@
-import os,sys
+from os import popen
+
+LIBDIR=str(popen('llvm-config --libdir').read()).strip()
+INCLUDEDIR=str(popen('llvm-config --includedir').read()).strip()
+LLVMLIBS=str(popen('llvm-config --libs').read()).strip()
+
 env=Environment()
+env.Append(CPPPATH=[INCLUDEDIR])
+env.Append(LIBPATH=[LIBDIR])
 
-llvm_lib = env.ParseFlags(["llvm-config --libs"])
-env.MergeFlags(llvm_lib)
-
-my_libs = llvm_lib["LIBS"]
-
-env.aProgram(target = '',
-             source = '.cpp',
-             LIBS=my_libs)
+env.Program(target='llvm_gen', source='llvm_gen.cpp', LIBS=[LLVMLIBS])
