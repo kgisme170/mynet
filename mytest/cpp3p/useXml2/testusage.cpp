@@ -6,34 +6,22 @@
 #include<iostream>
 using namespace std;
 int main(int argc,char*argv[]) {
+    xmlParserNodeInfo info;
+    cout << hex << &info << endl;
     xmlInitParser();
-    xmlDocPtr
-    doc =/*xmlParseFile(argv[1]);*/xmlNewDoc(BAD_CAST
-    "1.0");
+    xmlDocPtr doc = xmlNewDoc(BAD_CAST "1.0");
     xmlNodePtr
-    root = xmlNewNode(NULL, BAD_CAST
-    "root");
+    root = xmlNewNode(NULL, BAD_CAST "root");
     xmlDocSetRootElement(doc, root);
-    xmlNewTextChild(root, NULL, BAD_CAST
-    "n1", BAD_CAST
-    "text01");
-    xmlNewTextChild(root, NULL, BAD_CAST
-    "n2", BAD_CAST
-    "text02");
-    xmlNewTextChild(root, NULL, BAD_CAST
-    "n3", BAD_CAST
-    "text03");
-    xmlNodePtr
-    n = xmlNewNode(NULL, BAD_CAST
-    "n1");
+    xmlNewTextChild(root, NULL, BAD_CAST "n1", BAD_CAST "text01");
+    xmlNewTextChild(root, NULL, BAD_CAST "n2", BAD_CAST "text02");
+    xmlNewTextChild(root, NULL, BAD_CAST "n3", BAD_CAST "text03");
+    xmlNodePtr n = xmlNewNode(NULL, BAD_CAST "n1");
     xmlAddChild(root, n);
     xmlNodePtr
-    t = xmlNewText(BAD_CAST
-    "text01");
+    t = xmlNewText(BAD_CAST "text01");
     xmlAddChild(n, t);
-    xmlNewProp(n, BAD_CAST
-    "myprop", BAD_CAST
-    "yes");
+    xmlNewProp(n, BAD_CAST "myprop", BAD_CAST "yes");
     xmlSaveFormatFileEnc("m.xml", doc, "UTF-8", 1);
     xmlFreeDoc(doc);
 
