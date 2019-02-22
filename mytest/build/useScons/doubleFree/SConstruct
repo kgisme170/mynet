@@ -1,7 +1,7 @@
 import os,sys
 env = Environment(LINKFLAGS="-L.")
 STATIC = env.SharedObject(target='static', source='static.cpp')
-STATIC_LIB = env.StaticLibrary(target='static', source='static')
-D1 = env.SharedLibrary(target='dynamic1', source='dynamic1.cpp', LIBS=['static'])
-D2 = env.SharedLibrary(target='dynamic2', source='dynamic2.cpp', LIBS=['static'])
-env.Program(target='main', source='main.cpp', LIBS=['dynamic1', 'dynamic2'])
+STATIC_LIB = env.StaticLibrary(target='static', source=STATIC)
+D1 = env.SharedLibrary(target='dynamic1', source=['dynamic1.cpp'], LIBS=[STATIC_LIB])
+D2 = env.SharedLibrary(target='dynamic2', source=['dynamic2.cpp'], LIBS=[STATIC_LIB])
+env.Program(target='main', source='main.cpp', LIBS=[D1, D2])
