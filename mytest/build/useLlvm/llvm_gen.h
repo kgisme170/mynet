@@ -51,6 +51,22 @@ typedef function<void(void)> llmmCallback;
 
 class llvm_gen {
     LLVMContext mContext;
+    unique_ptr<Module> mModule;
+    unique_ptr<EngineBuilder> mEngineBuilder;
+    llvm::PointerType* mPtrType;
+    llvm::Type* mVoidType;
+
+    // llvm constants to help with code gen verbosity
+    llvm::Value* mBitTrueValue;
+    llvm::Value* mBitFalseValue;
+
+    llvm::Value* mBoolTrueValue;
+    llvm::Value* mBoolFalseValue;
+
+    llvm::Value* mBoolNullValue;
+    llvm::Value* mInt64NullValue;
+    llvm::Value* mDoubleNullValue;
+    llvm::Value* mDatetimeNullValue;
 public:
     llvm_gen(){}
     bool init(const string& fileName);

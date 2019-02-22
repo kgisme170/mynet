@@ -9,16 +9,15 @@ bool llvm_gen::init(const string& fileName) {
     InitializeNativeTargetAsmPrinter();
     InitializeNativeTargetAsmParser();
 
-    LLVMContext mContext;
     ErrorOr<std::unique_ptr<MemoryBuffer>> buf = MemoryBuffer::getFile(fileName);
     Expected<std::unique_ptr<Module>> m = parseBitcodeFile(**buf, mContext);
     if (m) {
 	printf("Fail to parse IR module\n");
 	return false;
     }
-    unique_ptr<Module> mModule(m->get());
+    mModule.reset(m->get());
     mModule->setModuleIdentifier("myId");
-    unique_ptr<EngineBuilder> mEngineBuilder(new EngineBuilder(move(mModule)));
+    mEngineBuilder.reset(new EngineBuilder(move(mModule)));
     string cpuName = sys::getHostCPUName().str();
     mEngineBuilder->setMCPU(cpuName);
     mEngineBuilder->setEngineKind(EngineKind::JIT);
@@ -30,6 +29,19 @@ bool llvm_gen::init(const string& fileName) {
 	printf("Cannot create MCJit: %s\n", sErr.c_str());
 	return false;
     }
+    mVoidType = Type::getVoidTy(mContext);
+    mPtrType = PointerType::get(mModule->getTypeByName("type01"), 0);
+
+    mBitTrueValue = ConstantInt::get(mContext, APInt(1, true, true));
+    mBitFalseValue = ConstantInt::get(mContext, APInt(1, false, true));
+
+    mBoolTrueValue = ConstantInt::get(mContext, APInt(8, 1, true));
+    mBoolFalseValue = ConstantInt::get(mContext, APInt(8, 0, true));
+
+    mBoolNullValue = ConstantInt::get(mContext, APInt(8, -1, true));
+    mInt64NullValue = ConstantInt::get(mContext, APInt(64, 0x8000000000000000, true));
+    mDoubleNullValue = ConstantFP::get(mContext, APFloat(-DBL_MAX));
+    mDatetimeNullValue = mInt64NullValue;
 }
 
 int main(int argc, char* argv[]){
