@@ -1,0 +1,14 @@
+import os,sys
+env=Environment()
+
+example = env.SharedObject(target='example', source=['example.c'])
+
+env.Execute('ln -f -s example.i example_tcl.i')
+env.Execute('swig -tcl example_tcl.i')
+example_tcl = env.SharedObject(target='example_tcl', source=['example_tcl_wrap.c'], CPPFLAGS="-I/usr/include/tcl")
+env.SharedLibrary(target='tcl_lib', source=[example, example_tcl])
+
+env.Execute('ln -f -s example.i example_python.i')
+env.Execute('swig -python example_python.i')
+example_python = env.SharedObject(target='example_python', source=['example_python_wrap.c'], CPPFLAGS="-I/usr/include/python2.7")
+env.SharedLibrary(target='python_lib', source=[example, example_python])
