@@ -7,9 +7,11 @@ if not GetOption('clean'):
     env.Execute('swig -python example_python.i')
     env.Execute('swig -perl example_perl.i')
 else:
-    env.Execute('rm example_tcl_wrap.c')
-    env.Execute('rm example_wrap.c')
-    env.Execute('rm example_perl_wrap.c')
+    env.Execute('rm -fr example_tcl_wrap.c')
+    env.Execute('rm -fr example_python_wrap.c')
+    env.Execute('rm -fr example_perl_wrap.c')
+    env.Execute('rm -fr python_lib.py*')
+    env.Execute('rm -fr libperl_lib.pm')
 
 example_tcl = env.SharedObject(target='example_tcl', source=['example_tcl_wrap.c'], CCFLAGS="-I/usr/include/tcl")
 env.SharedLibrary(target='tcl_lib', source=[exampleObj, example_tcl])
@@ -18,5 +20,5 @@ example_python = env.SharedObject(target='example_python', source=['example_pyth
 env.SharedLibrary(target='python_lib', source=[exampleObj, example_python])
 
 flags=os.popen('perl -MExtUtils::Embed -e ccopts').read()
-example_python = env.SharedObject(target='example_perl', source=['example_perl_wrap.c'], CCFLAGS=flags)
-env.SharedLibrary(target='perl_lib', source=[exampleObj, example_python])
+example_perl= env.SharedObject(target='example_perl', source=['example_perl_wrap.c'], CCFLAGS=flags)
+env.SharedLibrary(target='perl_lib', source=[exampleObj, example_perl])
