@@ -12,12 +12,16 @@ else:
     env.Execute('rm -fr example_perl_wrap.c')
     env.Execute('rm -fr python_lib.py*')
     env.Execute('rm -fr libperl_lib.pm')
+    env.Execute('rm -fr _python_lib.so')
 
 example_tcl = env.SharedObject(target='example_tcl', source=['example_tcl_wrap.c'], CCFLAGS="-I/usr/include/tcl")
 env.SharedLibrary(target='tcl_lib', source=[exampleObj, example_tcl])
 
 example_python = env.SharedObject(target='example_python', source=['example_python_wrap.c'], CCFLAGS="-I/usr/include/python2.7")
-env.SharedLibrary(target='python_lib', source=[exampleObj, example_python])
+python_lib = env.SharedLibrary(target='python_lib', source=[exampleObj, example_python])
+def post_action(source, target, env):
+    env.Execute('cp libpython_lib.so _python_lib.so')
+env.AddPostAction(python_lib, post_action)
 
 flags=os.popen('perl -MExtUtils::Embed -e ccopts').read()
 example_perl= env.SharedObject(target='example_perl', source=['example_perl_wrap.c'], CCFLAGS=flags)
