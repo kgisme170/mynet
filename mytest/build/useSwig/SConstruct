@@ -1,20 +1,22 @@
 import os,sys
 env=Environment()
 
-example = env.SharedObject(target='example', source=['example.c'])
+exampleObj = env.SharedObject(target='example', source=['example.c'])
+if not GetOption('clean'):
+    env.Execute('swig -tcl example_tcl.i')
+    env.Execute('swig -python example.i')
+    env.Execute('swig -perl example_perl.i')
+else:
+    env.Execute('rm example_tcl_wrap.c')
+    env.Execute('rm example_wrap.c')
+    env.Execute('rm example_perl_wrap.c')
 
-env.Execute('ln -f -s example.i example_tcl.i')
-env.Execute('swig -tcl example_tcl.i')
 example_tcl = env.SharedObject(target='example_tcl', source=['example_tcl_wrap.c'], CCFLAGS="-I/usr/include/tcl")
-env.SharedLibrary(target='tcl_lib', source=[example, example_tcl])
+env.SharedLibrary(target='tcl_lib', source=[exampleObj, example_tcl])
 
-env.Execute('ln -f -s example.i example_python.i')
-env.Execute('swig -python example_python.i')
-example_python = env.SharedObject(target='example_python', source=['example_python_wrap.c'], CCFLAGS="-I/usr/include/python2.7")
-env.SharedLibrary(target='python_lib', source=[example, example_python])
+example_python = env.SharedObject(target='example_python', source=['example_wrap.c'], CCFLAGS="-I/usr/include/python2.7")
+env.SharedLibrary(target='_example', source=[exampleObj, example_python])
 
-env.Execute('ln -f -s example.i example_perl.i')
-env.Execute('swig -perl example_perl.i')
 flags=os.popen('perl -MExtUtils::Embed -e ccopts').read()
 example_python = env.SharedObject(target='example_perl', source=['example_perl_wrap.c'], CCFLAGS=flags)
-env.SharedLibrary(target='perl_lib', source=[example, example_python])
+env.SharedLibrary(target='perl_lib', source=[exampleObj, example_python])
