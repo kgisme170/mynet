@@ -26,7 +26,8 @@ OK, 现在我们知道L和C相交于p，那么p有什么特点？因为L是直�
 
 这里n是一个比例系数，书中常用希腊字母lambda表示，为了输入方便我就用英文字母n了。grad代表求梯度的函数。那么我们知道梯度是一个矢量:
 <img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20grad%28Cp%29%3D%5Cbegin%7Bbmatrix%7D%20%5Cfrac%7B%5Cpartial%20C%7D%7B%5Cpartial%20s%7D%5C%5C%20%5Cfrac%7B%5Cpartial%20C%7D%7B%5Cpartial%20h%7D%20%5Cend%7Bbmatrix%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20100/3*h%5E%7B2/3%7D*s%5E%7B-2/3%7D%5C%5C%20200/3*h%5E%7B-1/3%7D*s%5E%7B2/3%7D%20%5Cend%7Bbmatrix%7D">
+
 <img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20grad%28Lp%29%3D%5Cbegin%7Bbmatrix%7D%20%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%20s%7D%5C%5C%20%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%20h%7D%20%5Cend%7Bbmatrix%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%202000%5C%5C%2020%20%5Cend%7Bbmatrix%7D">
 
-对上面三个式子联立，可以消除n，然后得到h和s之间的关系: h=200s，再带入到约束条件里面我们得到:
+对上面三个式子联立，可以消除n，然后得到h和s之间的关系: h=200s，再代入到约束条件里面我们得到:
 <img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20h%3D10/3%2C%20s%3D2000/s">
