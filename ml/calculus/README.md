@@ -31,3 +31,16 @@ OK, 现在我们知道L和C相交于p，那么p有什么特点？因为L是直�
 
 对上面三个式子联立，可以消除n，然后得到h和s之间的关系: h=200s，再代入到约束条件里面我们得到:
 <img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20h%3D10/3%2C%20s%3D2000/s">
+
+------------------
+
+一般的高等数学里面，通常是先介绍方向导数，再介绍梯度。按照可汗学院的说法，先介绍梯度是个更好的选择。因为我们需要从矢量的角度来理解，为什么方向导数最大值的方向，就是梯度方向。同样用可汗学院的说法:
+
+首先，假设2维平面的梯度矢量可以写成:
+
+<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20grad%28f%28x%2Cy%29%29%3D%5Cbegin%7Bbmatrix%7D%20%5Cfrac%7B%5Cpartial%20f%7D%7B%5Cpartial%20y%7D%5C%5C%20%5Cfrac%7B%5Cpartial%20f%7D%7B%5Cpartial%20x%7D%20%5Cend%7Bbmatrix%7D">
+为了抽象, 把这个函数嵌套写成抽象代数里面的乘法运算(群)，grad和f都作为函数group的一份子，那么某一个点(x,y)的方向导数，就可以写成grad*f和(x,y)这个矢量的点乘，还是用乘法符号*来表示:
+
+<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20%28grad*f%29%28x%2Cy%29%3Dgrad%28f%28x%2Cy%29%29%20*%20%28x%27%2Cy%27%29%20%3D%20%5Cbegin%7Bbmatrix%7D%20%5Cfrac%7B%5Cpartial%20f%7D%7B%5Cpartial%20x%7D%5C%5C%20%5Cfrac%7B%5Cpartial%20f%7D%7B%5Cpartial%20y%7D%20%5Cend%7Bbmatrix%7D*%20%5Cbegin%7Bbmatrix%7D%20x%27%5C%5C%20y%27%20%5Cend%7Bbmatrix%7D">
+
+上式中的(x',y')是和(x,y)平行的单位矢量。要使得这个结果(标量)最大，那么显然要让(x,y)的方向就等于梯度的方向----换句话说，一个点(x,y)的所有方向导数中，梯度方向取得最大值。
