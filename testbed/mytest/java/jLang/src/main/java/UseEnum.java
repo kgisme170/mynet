@@ -8,7 +8,7 @@ public class UseEnum {
         /**
          * 测试
          */
-        SCUUESS("1", "成功"),
+        SUCCESS("1", "成功"),
 
         /**
          * 测试
@@ -41,8 +41,8 @@ public class UseEnum {
     }
 
     public static void main(String[] args) {
-        System.out.println(Status.SCUUESS.getValue());
-        System.out.println(Status.SCUUESS.getDesc());
+        System.out.println(Status.SUCCESS.getValue());
+        System.out.println(Status.SUCCESS.getDesc());
         System.out.println(Status.FAILED.getValue());
         System.out.println(Status.FAILED.getDesc());
         Map<Status, String> m = new HashMap<>(0);
