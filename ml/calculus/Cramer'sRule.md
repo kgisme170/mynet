@@ -16,12 +16,22 @@ M x = A
 
 <img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Cbegin%7Bbmatrix%7D%202%20%26%205%5C%5C%204%20%26%203%20%5Cend%7Bbmatrix%7D%20%5Cbegin%7Bbmatrix%7D%20x%20%5C%5C%20y%20%5Cend%7Bbmatrix%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%2011%5C%5C%2015%20%5Cend%7Bbmatrix%7D">
 
-x代表，M作为一个基底的时候，它表示的(x,y)，对应于单位基底的表示的(11, 15)。这个线性变化可以分为两个部分，例如我们可以把这个线性方程变成下面的样子:
+x代表，M作为一个基底的时候，它表示的(x,y)，对应于单位基底(矩阵I)的表示的(11, 15)。然后要这样看问题: 
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Cbegin%7Bbmatrix%7D%202%20%26%205%5C%5C%204%20%26%203%20%5Cend%7Bbmatrix%7D%20%5Cbegin%7Bbmatrix%7D%20x%20%26%200%5C%5C%20y%20%26%200%20%5Cend%7Bbmatrix%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%2011%20%26%200%5C%5C%2015%20%26%200%20%5Cend%7Bbmatrix%7D">
+(a) 易知在原二维向量平面上，矢量v=[x,y]，和x轴的单位向量组成一个平行四边形，这个四边形的面积(Area)就是y
 
-这个式子是M经过投影变换(x,y)变成了矢量(11,15)，那么投影的x部分就原来的向量在投影后的模的伸长倍数。这个伸长的倍数可以用面积的商来表示:
+(b) v和y轴的单位向量组成一个平行四边形，这个平行四边形的面积(Area)就是x
+
+(c) 然后用M来代替I(使得v经过线性变换变成了新的目标矢量v'=[11,15])，此时原来平面上的平行四边形的面积，现在也都相应增加到了det(M)倍。
+
+于是在新的矢量平面上:
+
+(1) 基矢量[2,4]和v'张成的平行四边形的面积AreaY=det(M)*y
+
+(2) 基矢量[5,3]和v'张成的平行四边形的面积AreaX=det(M)*x
+
+再次解释:这个式子是M经过投影变换(x,y)变成了矢量(11,15)，那么投影的x部分就原来的向量在投影后的模的伸长倍数。这个伸长的倍数可以用面积的商来表示:
 
 <img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20x%3D%5Cfrac%20%7Bdet%20%5Cbegin%7Bbmatrix%7D%2011%20%26%205%5C%5C%2015%20%26%203%20%5Cend%7Bbmatrix%7D%7D%20%7Bdet%20%7B%20%5Cbegin%7Bbmatrix%7D%202%20%26%205%20%5C%5C%204%20%26%203%20%5Cend%7Bbmatrix%7D%7D%20%7D">
 
-上面的det是基向量映射后的平行四边形的面积。下面的det是原来的基向量的平行四边形的面积。
+上面的det是基向量映射后的平行四边形的面积。下面的det是原来的基向量的平行四边形的面积。y的公式类似。这就是克莫尔法则解释的线性变换本身的几何内涵。
