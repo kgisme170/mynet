@@ -7,13 +7,13 @@
 #### 1. 有限个离散向量组成的正交基:
 例如2x2的矩阵(行列式!=0)都可以用下面的对角矩阵进行分解:
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Cbegin%7Bbmatrix%7D%201%20%26%200%5C%5C%200%20%26%201%20%5Cend%7Bbmatrix%7D">
+<img src="img/fourier01.gif">
 
 那么向量(1,0),(0,1)就组成一个最简单的正交基。这个是线性代数的基本知识。扩展一下，n x n的对角矩阵，其实对应n个向量组成的n维正交基，可以用来分解一个n维的普通向量。
 
 下面这样的一组向量也组成正交基:
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Cbegin%7Bbmatrix%7D%201%20%26%201%20%26%201%20%26%201%5C%5C%201%20%26%201%20%26%20-1%20%26%20-1%20%5C%5C%201%20%26%20-1%20%26%201%20%26%20-1%20%5C%5C%20-1%20%26%201%20%26%201%20%26%20-1%20%5Cend%7Bbmatrix%7D">
+<img src="img/fourier02.gif">
 
 可以看到这组向量，两两点积都是0。当然，还可以进一步单位化，也就是前面都乘以1/2，就完美了。任何一个4维向量，都可以用这个正交基的线性组合表示。
 
@@ -27,25 +27,27 @@
 #### 2. 周期函数的三角函数展开
 可以知道sin(nx)这个函数族，在[0-2Pi]范围内，都是两两正交的。cos(nx)也一样。
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Cint_%7B0%7D%5E%7B2%5Cpi%20%7D%20sin%28nx%29sin%28px%29%20dx"> 其中n,p都是自然数
+<img src="img/fourier03.gif"> 
+
+其中n,p都是自然数
 
 对于连续函数而言，正交就是两个函数乘积在区间里面的积分: 积分就是乘积的部分和，没有问题。因此，有了傅立叶级数。那么第一个问题: 为什么既要有cos又要有sin?
 
 因为一个函数本身，可以分解成奇函数和偶函数的和。为什么?
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20f%28x%29%20%3D%20%5Cfrac%7Bf%28x%29&plus;f%28-x%29%7D%7B2%7D%20&plus;%20%5Cfrac%7Bf%28x%29-f%28-x%29%7D%7B2%7D">
+<img src="img/fourier04.gif">
 
 其中前面的部分
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Cfrac%7Bf%28x%29&plus;f%28-x%29%7D%7B2%7D">
+<img src="img/fourier05.gif">
 
 是偶函数要用cos展开，后面的部分是奇函数要用sin展开，容易验证。
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20f%28x%29%20%3D%20a_%7B0%7D%20&plus;%5Csum_%7Bn%3D1%7D%5E%7B%5Cinfty%20%7D%28a_%7Bn%7D%20cos%28%20%5Cfrac%7B2%5Cpi%20n%7D%7BT%7D%20x%29%20&plus;%20b_%7Bn%7D%20sin%28%20%5Cfrac%7B2%5Cpi%20n%7D%7BT%7D%20x%29%29">
+<img src="img/fourier06.gif">
 
 其中的cos和sin都是基，那么an和bn都是f(x)在cos/sin上的投影，于是:
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20a_%7Bn%7D%3D%5Cint_%7B0%7D%5E%7B2%20%5Cpi%7D%5Cfrac%7Bf%28x%29.%20cos%28%20%5Cfrac%7B2%5Cpi%20n%7D%7BT%7D%20x%29%7D%7Bcos%28%20%5Cfrac%7B2%5Cpi%20n%7D%7BT%7Dx%29.%20cos%28%20%5Cfrac%7B2%5Cpi%20n%7D%7BT%7D%20x%29%7D%20dx">
+<img src="img/fourier07.gif">
 
 bn类似。如果用欧拉公式来重写成复数形式，那么会更简单。
 
@@ -53,17 +55,17 @@ bn类似。如果用欧拉公式来重写成复数形式，那么会更简单。
 
 为了表示方便，我们把傅立叶级数映射到C平面(x/y平面的傅立叶级数和C平面的傅立叶级数表示，是双射关系，所以替代性的表示利于研究)。
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20f%28x%29%20%3D%20%5Csum_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7D%20C_%7Bn%7D.e%5E%7Bi%20%5Cfrac%7B2%20%5Cpi%20nx%7D%7BT%7D%7D">
+<img src="img/fourier08.gif">
 
 周期T推向无穷的时候可以得到，傅立叶级数的离散求和关系变成了C域沿着单位圆的环路积分，级数展开变成了积分变换，于是我们得到了傅立叶变换。
 
 #### 3. 傅立叶变换
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20f%28x%29%20%3D%20%5Cint_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7DF%28w%29%20e%5E%7Biwx%7Ddw">
+<img src="img/fourier09.gif">
 
 其中F(w)是Cn在T->无穷时的极限:
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20F%28w%29%20%3D%20%5Clim_%7BT-%3E%5Cinfty%7D%20C_%7Bn%7D%20%3D%20%5Clim_%7BT-%3E%5Cinfty%7D%20%5Cfrac%7B1%7D%7BT%7D%5Cint_%7B0%7D%5E%7BT%7Df%28x%29e%5E%7B-i%20%5Cfrac%7B2%20%5Cpi%20nx%7D%7BT%7D%7Ddx%20%3D%20%5Cfrac%7B1%7D%7B2%20%5Cpi%7D%5Cint_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7Df%28x%29e%5E%7B-iwx%7Ddx">
+<img src="img/fourier10.gif">
 
 注意，我们假设用于傅立叶变换的f(x)是周期无穷大的，因此F域的表示是一个正交基exp(jw)的密度函数的概念。如果f(x)本身含有周期信号的部分，那么这个密度在周期上就是无穷大，看F(w)的图形上就是一个冲击。
 
