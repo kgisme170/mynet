@@ -10,11 +10,11 @@
 
 那么一个最简单的线程方程组代表什么? 矩阵看作一个线程变化的时候，就是一个线性变换，和某个矢量的投影下(因为是点乘)，变成了另外一个矢量。
 
-<img src="http://latex.codecogs.com/gif.latex?%5Cbg_white%20Mx%20%3D%20A">
+<img src="img/mxa.gif">
 
 最简单的是2维的情况。例如
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Cbegin%7Bbmatrix%7D%202%20%26%205%5C%5C%204%20%26%203%20%5Cend%7Bbmatrix%7D%20%5Cbegin%7Bbmatrix%7D%20x%20%5C%5C%20y%20%5Cend%7Bbmatrix%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%2011%5C%5C%2015%20%5Cend%7Bbmatrix%7D">
+<img src="img/cramersRule01.gif">
 
 x代表，M作为一个基底的时候，它表示的(x,y)，对应于单位基底(矩阵I)的表示的(11, 15)。然后要这样看问题: 
 
@@ -32,6 +32,6 @@ x代表，M作为一个基底的时候，它表示的(x,y)，对应于单位基�
 
 再次解释:这个式子是M经过投影变换(x,y)变成了矢量(11,15)，那么投影的x部分就原来的向量在投影后的模的伸长倍数。这个伸长的倍数可以用面积的商来表示:
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20x%3D%5Cfrac%20%7Bdet%20%5Cbegin%7Bbmatrix%7D%2011%20%26%205%5C%5C%2015%20%26%203%20%5Cend%7Bbmatrix%7D%7D%20%7Bdet%20%7B%20%5Cbegin%7Bbmatrix%7D%202%20%26%205%20%5C%5C%204%20%26%203%20%5Cend%7Bbmatrix%7D%7D%20%7D">
+<img src="img/cramersRule02.gif">
 
 上面的det是基向量映射后的平行四边形的面积。下面的det是原来的基向量的平行四边形的面积。y的公式类似。这就是克莫尔法则解释的线性变换本身的几何内涵。
