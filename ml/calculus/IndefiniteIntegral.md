@@ -77,7 +77,6 @@
 
 <img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20F%28x%29%3D%5Csum_%7B0%7D%5E%7Bn%7D%20f%28x%29">
 
-
 那么一个区间的范围，人数的表示就是:
 
 <img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20F%28b%29-F%28a%29%3D%5Csum_%7Ba%7D%5E%7Bb%7D%20f%28x%29">
