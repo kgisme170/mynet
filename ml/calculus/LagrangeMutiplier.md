@@ -7,9 +7,9 @@
 #### 例子摘录如下:
 
 有一个钢铁厂，每个工人工时的成本20元，总共使用h个工时； 钢铁原料s每吨2,000元。现在有20,000元的预算投入生产，问如何使得总的产出R(Revenue)最大:
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20R%3D100%20*%20h%5E%7B2/3%7D%20*%20s%5E%7B1/3%7D">
+<img src="img/multiplier01.gif">
 约束条件是
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%2020h&plus;2000s%5Cleq%2020000">
+<img src="img/multiplier02.gif">
 
 求解的思想:
 
@@ -22,15 +22,15 @@
 
 #### 2. 求解
 OK, 现在我们知道L和C相交于p，那么p有什么特点？因为L是直线，和C相交于一点，立刻知道L是C的切线，p点处，C的法线方向就是L的垂线方向。用微积分的话说，在p点，C的梯度平行于L的梯度: 这个正比例关系用下面的式子表示:
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20grad%28Cp%29%20%3D%20n%20*%20grad%28Lp%29">
+<img src="img/multiplier03.gif">
 
 这里n是一个比例系数，书中常用希腊字母lambda表示，为了输入方便我就用英文字母n了。grad代表求梯度的函数。那么我们知道梯度是一个矢量:
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20grad%28Cp%29%3D%5Cbegin%7Bbmatrix%7D%20%5Cfrac%7B%5Cpartial%20C%7D%7B%5Cpartial%20s%7D%5C%5C%20%5Cfrac%7B%5Cpartial%20C%7D%7B%5Cpartial%20h%7D%20%5Cend%7Bbmatrix%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20100/3*h%5E%7B2/3%7D*s%5E%7B-2/3%7D%5C%5C%20200/3*h%5E%7B-1/3%7D*s%5E%7B2/3%7D%20%5Cend%7Bbmatrix%7D">
+<img src="img/multiplier04.gif">
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20grad%28Lp%29%3D%5Cbegin%7Bbmatrix%7D%20%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%20s%7D%5C%5C%20%5Cfrac%7B%5Cpartial%20L%7D%7B%5Cpartial%20h%7D%20%5Cend%7Bbmatrix%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%202000%5C%5C%2020%20%5Cend%7Bbmatrix%7D">
+<img src="img/multiplier05.gif">
 
 对上面三个式子联立，可以消除n，然后得到h和s之间的关系: h=200s，再代入到约束条件里面我们得到:
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20h%3D10/3%2C%20s%3D2000/s">
+<img src="img/multiplier06.gif">
 
 ------------------
 
@@ -38,9 +38,9 @@ OK, 现在我们知道L和C相交于p，那么p有什么特点？因为L是直�
 
 首先，假设2维平面的梯度矢量可以写成:
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20grad%28f%28x%2Cy%29%29%3D%5Cbegin%7Bbmatrix%7D%20%5Cfrac%7B%5Cpartial%20f%7D%7B%5Cpartial%20y%7D%5C%5C%20%5Cfrac%7B%5Cpartial%20f%7D%7B%5Cpartial%20x%7D%20%5Cend%7Bbmatrix%7D">
+<img src="img/multiplier07.gif">
 为了抽象, 把这个函数嵌套写成抽象代数里面的乘法运算(群)，grad和f都作为函数group的一份子，那么某一个点(x,y)的方向导数，就可以写成grad*f和(x,y)这个矢量的点乘，还是用乘法符号*来表示:
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20%28grad*f%29%28x%2Cy%29%3Dgrad%28f%28x%2Cy%29%29%20*%20%28x%27%2Cy%27%29%20%3D%20%5Cbegin%7Bbmatrix%7D%20%5Cfrac%7B%5Cpartial%20f%7D%7B%5Cpartial%20x%7D%5C%5C%20%5Cfrac%7B%5Cpartial%20f%7D%7B%5Cpartial%20y%7D%20%5Cend%7Bbmatrix%7D*%20%5Cbegin%7Bbmatrix%7D%20x%27%5C%5C%20y%27%20%5Cend%7Bbmatrix%7D">
+<img src="img/multiplier08.gif">
 
 上式中的(x',y')是和(x,y)平行的单位矢量。要使得这个结果(标量)最大，那么显然要让(x,y)的方向就等于梯度的方向----换句话说，一个点(x,y)的所有方向导数中，梯度方向取得最大值。
