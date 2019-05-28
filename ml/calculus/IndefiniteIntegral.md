@@ -75,22 +75,22 @@
 
 假设这条街就是定义域x(离散点)，每个范围的人数是一个f(x)，那么我们记录的就是
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20F%28x%29%3D%5Csum_%7B0%7D%5E%7Bn%7D%20f%28x%29">
+<img src="img/indefiniteIntegral01.gif">
 
 那么一个区间的范围，人数的表示就是:
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20F%28b%29-F%28a%29%3D%5Csum_%7Ba%7D%5E%7Bb%7D%20f%28x%29">
+<img src="img/indefiniteIntegral02.gif">
 
 把这个离散形式转换成连续形式，区间变成dx，趋近无穷小，那么和函数(部分和)的表示形式:
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5Cint_%7B0%7D%5E%7Bx%7Df%28x%29dx">
+<img src="img/indefiniteIntegral03.gif">
 
 这就是我们知道的不定积分形式。那么不定积分的导数，就是原函数f(x)，也就是F(x)。
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20F%28x&plus;%5CDelta%20x%29-F%28x%29%3Df%28x%29%20*%20%5CDelta%20x">
+<img src="img/indefiniteIntegral04.gif">
 ，两边同除以<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20%5CDelta%20x">，就是导数关系了。
 
 F(x)在一个区间上，左右两个值的差，除以区间的长度。用概率的角度来看，就是f(x)就是F(x)在x上的密度函数。但是上面这个公式常常让人费解，因为x是一个变量，对于某个和函数而言，求和上限应该是固定的，要把x看成是一个常量来处理。因此更好的写法是下面这样的:
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20F%28x%29%3D%5Cint_%7B0%7D%5E%7Bx%7Df%28u%29du">
+<img src="img/indefiniteIntegral05.gif">
 
 在求二元积分的时候，这样的表示形式尤其清晰。注意，不定积分是一个[函数]，定积分是一个一维标量(scalar)。
