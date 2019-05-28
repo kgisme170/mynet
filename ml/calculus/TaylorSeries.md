@@ -4,7 +4,7 @@
 
 那么泰勒展开式是怎么一回事? 首先，我们的目标是用一个多项式(中学生都可以理解的)去模拟一个函数。例如我想用
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20P%28x%29%3DC_%7B0%7D&plus;C_%7B1%7D%20x%20&plus;C_%7B2%7Dx%5E%7B2%7D%20&plus;..."> (1)
+<img src="img/taylor01.gif"> (1)
 
 来表示cos(x)在0点附近的值，该怎么做?
 分步求值就可以了。既然P(x)是cos的模拟，那么
@@ -19,13 +19,13 @@ cos'(0)=P''(0)
 
 可以计算得到c1=1, c2=0, c3=-1/2, ...
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20P%28x%29%3D1&plus;0x%20&plus;%5Cfrac%7B-1%7D%7B2%7Dx%5E%7B2%7D%20&plus;...">
+<img src="img/taylor02.gif">
 
 注意，这里的展开式是在零点附近，是麦克劳林展开时，在x0点附近的展开式，用(x-x0)替代x就可以了。
 
 那么，对于一般形式的f(x)，他的泰勒级数是什么样的? 首先，还是不管三七二十一，写出式子(1)，然后对求各阶导。由于多项式求n阶导数的时候，x^n会产生一个n!的乘数，因此
 
-<img src="https://latex.codecogs.com/gif.latex?%5Cbg_white%20C%28n%29%3D%5Cfrac%7B1%7D%7Bn%21%7D%5Cfrac%7B%5Cpartial%5E%7B3%7Df%7D%7B%5Cpartial%20x%5E%7B3%7D%7D%20%28n%3D0%2C1%2C2...%5Cinfty%29">
+<img src="img/taylor03.gif">
 
 看起来并没有什么新的信息: 但是普通的高等数学课本的讲述方式不是这样的: 牛顿时代的微积分是通过几何方法来发现和推导的，泰勒展开式也是通过切线法加以描绘和说明，推导出一个函数f(x)在满足一定的连续和收敛条件下，在一个区域里面可以展开成它的各阶导数的某个和的形式。这个其实很难从数学上推理和证明，因为非常绕。
 
