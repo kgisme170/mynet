@@ -1,4 +1,30 @@
-﻿@searchlog =
+﻿DECLARE @input string = "/SearchLog.tsv";
+DECLARE @d1 DateTime = System.DateTime.Parse("2019/05/31");
+DECLARE @a sbyte = 0;
+DECLARE @b short = 1;
+DECLARE @c int = 2;
+DECLARE @d long = 3L;
+DECLARE @e float = 4.0f;
+DECLARE @f double? = 5.0;
+DECLARE @g byte = 6;
+DECLARE @h ushort = 7;
+DECLARE @i uint = 8;
+DECLARE @j ulong = 9L;
+DECLARE @a1 byte [] = new byte[] { 0, 1, 2 };
+DECLARE @a2 string[] = new string[]{ "xyz", "abc", "ok" };
+
+DECLARE @m SqlMap<string,string> = new SqlMap<string, string>
+                                   {
+                                   {"k1", "v1"},
+                                   {"k2", "v2"}
+                                   };
+DECLARE @misc1 bool = false;
+DECLARE @misc2 Guid = new System.Guid();
+DECLARE @t = "self";
+DECLARE @s1 string = "before" + @t + "after";
+DECLARE @s2 string = string.Format("before{0}after", @t);
+//DECLARE @c string = MyHelper.GetMyName();
+@searchlog =
     EXTRACT
         UserId int,
         Start DateTime,
@@ -7,7 +33,7 @@
         Duration int,
         Urls string,
         ClickedUrls string
-    FROM "/SearchLog.tsv"
+    FROM @input
     USING Extractors.Tsv();
 @output =
     SELECT Start,
@@ -17,8 +43,18 @@
     WHERE
     Start >= DateTime.Parse("2012/02/16")
     AND Start <= DateTime.Parse("2012/02/17");
+
+@output2 =
+    SELECT ((Double) UserId) AS DoubleId,
+           Start.DayOfYear AS StartDayOfYear,
+           Urls.ToUpper() AS UPPER_URLS
+    FROM @searchlog;
 OUTPUT @output
 TO "/SearchLog_output.tsv"
+USING Outputters.Tsv();
+
+OUTPUT @output2
+TO "/SearchLog_output_doubleId.tsv"
 USING Outputters.Tsv();
 
 @log2 =
@@ -40,8 +76,8 @@ USING Outputters.Tsv();
     FROM @log5
     WHERE DoubleLength > 80;
 OUTPUT @log6
-TO "/SearchLog_withLength_output.tsv"
-USING Outputters.Tsv();
+TO "/SearchLog_withLength_output.csv"
+USING Outputters.Csv();
 
 @departments =
     SELECT *
@@ -65,8 +101,8 @@ USING Outputters.Tsv();
         )
 ) AS D( DepID, DepName );
 OUTPUT @departments
-TO "/Departments.tsv"
-USING Outputters.Tsv();
+TO "/Departments.txt"
+USING Outputters.Text(encoding: Encoding.UTF8);
 
 @rs1 =
     SELECT ROW_NUMBER() OVER() AS RowNumber,
@@ -75,4 +111,4 @@ USING Outputters.Tsv();
     FROM @searchlog;
 OUTPUT @rs1
 TO "/rs1.tsv"
-USING Outputters.Tsv();
+USING Outputters.Tsv(encoding: Encoding.[ASCII]);
