@@ -22,9 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Script Include="Script.usql" />
-    <ScriptCode Include="Script.usql.cs">
-      <DependentUpon>Script.usql</DependentUpon>
-    </ScriptCode>
+    <Script Include="Script1.usql" />
   </ItemGroup>
   <!-- check for SDK Build target in current path then in USQLSDKPath-->
   <Import Project="UsqlSDKBuild.targets" Condition="Exists('UsqlSDKBuild.targets')" />

@@ -1,4 +1,4 @@
-﻿DECLARE @input string = "/SearchLog.tsv";
+﻿DECLARE @input string = "/SearchLog1.tsv";
 DECLARE @d1 DateTime = System.DateTime.Parse("2019/05/31");
 DECLARE @a sbyte = 0;
 DECLARE @b short = 1;
@@ -23,7 +23,6 @@ DECLARE @misc2 Guid = new System.Guid();
 DECLARE @t = "self";
 DECLARE @s1 string = "before" + @t + "after";
 DECLARE @s2 string = string.Format("before{0}after", @t);
-//DECLARE @c string = MyHelper.GetMyName();
 @searchlog =
     EXTRACT
         UserId int,
