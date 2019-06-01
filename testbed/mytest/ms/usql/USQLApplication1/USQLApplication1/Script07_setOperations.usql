@@ -1,0 +1,290 @@
+﻿@a =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            1,
+            "Smith"
+        ),
+        (
+            1,
+            "Smith"
+        ),
+        (
+            2,
+            "Brown"
+        ),
+        (
+            3,
+            "Case"
+        )
+) AS D( DepID, DepName );
+@b =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            1,
+            "Smith"
+        ),
+        (
+            1,
+            "Smith"
+        ),
+        (
+            1,
+            "Smith"
+        ),
+        (
+            2,
+            "Brown"
+        ),
+        (
+            4,
+            "Dey"
+        ),
+        (
+            4,
+            "Dey"
+        )
+) AS D( DepID, DepName );
+
+// common
+@union_all =
+    SELECT *
+    FROM @a
+    UNION ALL
+    SELECT *
+    FROM @b;
+OUTPUT @union_all
+TO "output/union_all.tsv"
+USING Outputters.Tsv();
+
+@union_distinct =
+    SELECT *
+    FROM @a
+    UNION DISTINCT
+    SELECT *
+    FROM @b;
+OUTPUT @union_distinct
+TO "output/union_distinct.tsv"
+USING Outputters.Tsv();
+
+@intersect_all =
+    SELECT *
+    FROM @a
+    INTERSECT ALL
+    SELECT *
+    FROM @b;
+OUTPUT @intersect_all
+TO "output/intersect_all.tsv"
+USING Outputters.Tsv();
+
+@intersect_distinct =
+    SELECT *
+    FROM @a
+    INTERSECT DISTINCT
+    SELECT *
+    FROM @b;
+OUTPUT @intersect_distinct
+TO "output/intersect_distinct.tsv"
+USING Outputters.Tsv();
+
+// not common inside 
+@a_except_b_all =
+    SELECT *
+    FROM @a
+    EXCEPT ALL
+    SELECT *
+    FROM @b;
+OUTPUT @a_except_b_all
+TO "output/a_except_b_all.tsv"
+USING Outputters.Tsv();
+
+@b_except_a_all =
+    SELECT *
+    FROM @b
+    EXCEPT ALL
+    SELECT *
+    FROM @a;
+OUTPUT @b_except_a_all
+TO "output/b_except_a_all.tsv"
+USING Outputters.Tsv();
+
+@a_except_b_distinct =
+    SELECT *
+    FROM @a
+    EXCEPT DISTINCT
+    SELECT *
+    FROM @b;
+OUTPUT @a_except_b_distinct
+TO "output/a_except_b_distinct.tsv"
+USING Outputters.Tsv();
+
+@b_except_a_distinct =
+    SELECT *
+    FROM @b
+    EXCEPT DISTINCT
+    SELECT *
+    FROM @a;
+OUTPUT @b_except_a_distinct
+TO "output/b_except_a_distinct.tsv"
+USING Outputters.Tsv();
+
+// Outer union
+@left =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            1,
+            "x",
+            (int?) 50
+        ),
+        (
+            1,
+            "y",
+            (int?) 60
+        )
+) AS L(K, A, C);
+@right =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            5,
+            "x",
+            1
+        ),
+        (
+            6,
+            "x",
+            2
+        ),
+        (
+            10,
+            "y",
+            3
+        )
+) AS R(B, A, K);
+@res =
+    SELECT *
+    FROM @left
+    OUTER UNION BY NAME ON (*)
+    SELECT *
+    FROM @right;
+OUTPUT @res
+TO "output/res.tsv"
+USING Outputters.Tsv();
+
+// Joins
+@departments =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            "31",
+            "Sales"
+        ),
+        (
+            "33",
+            "Engineering"
+        ),
+        (
+            "34",
+            "Clerical"
+        ),
+        (
+            "35",
+            "Marketing"
+        )
+) AS D( DepID, DepName );
+
+@employees =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            "31",
+            "Rafferty"
+        ),
+        (
+            "33",
+            "Jones"
+        ),
+        (
+            "33",
+            "Heisenberg"
+        ),
+        (
+            "34",
+            "Robinson"
+        ),
+        (
+            "34",
+            "Smith"
+        ),
+        (
+            (string) null,
+            "Williams"
+        )
+) AS D( DepID, EmpName );
+
+// cross join
+@cross_join =
+    SELECT @departments.DepID AS DepID_Dep,
+           @employees.DepID AS DepID_Emp,
+           @employees.EmpName,
+           @departments.DepName
+    FROM @employees
+         CROSS JOIN
+             @departments;
+OUTPUT @cross_join
+TO "output/cross_join1.tsv"
+USING Outputters.Tsv();
+
+@cross_join =
+    SELECT @departments.DepID AS DepID_Dep,
+           @employees.DepID AS DepID_Emp,
+           @employees.EmpName,
+           @departments.DepName
+    FROM @employees
+         CROSS JOIN
+             @departments;
+
+OUTPUT @cross_join
+TO "output/cross_join2.tsv"
+USING Outputters.Tsv();
+
+@left_semijoin1 =
+    SELECT @employees.DepID,
+           @employees.EmpName
+    FROM @employees
+         LEFT SEMIJOIN
+             @departments
+         ON @employees.DepID == @departments.DepID;
+OUTPUT @left_semijoin1
+TO "output/left_semijoin1.tsv"
+USING Outputters.Tsv();
+
+@left_semijoin2 =
+    SELECT @departments.DepID,
+           @departments.DepName
+    FROM @departments
+         LEFT SEMIJOIN
+             @employees
+         ON @departments.DepID == @employees.DepID;
+OUTPUT @left_semijoin2
+TO "output/left_semijoin2.tsv"
+USING Outputters.Tsv();
+
+@left_antisemijoin =
+    SELECT @departments.DepID,
+           @departments.DepName
+    FROM @departments
+         LEFT ANTISEMIJOIN
+             @employees
+         ON @departments.DepID == @employees.DepID;
+OUTPUT @left_antisemijoin
+TO "output/left_antisemijoin.tsv"
+USING Outputters.Tsv();

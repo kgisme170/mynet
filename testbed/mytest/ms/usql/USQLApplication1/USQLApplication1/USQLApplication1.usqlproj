@@ -27,6 +27,7 @@
     <Script Include="Script04_db.usql" />
     <Script Include="Script05_assembly.usql" />
     <Script Include="Script06_windowFunction.usql" />
+    <Script Include="Script07_setOperations.usql" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OrdersLib\OrdersLib.csproj">
