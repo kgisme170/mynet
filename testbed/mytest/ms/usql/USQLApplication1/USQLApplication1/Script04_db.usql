@@ -1,0 +1,92 @@
+﻿CREATE DATABASE IF NOT EXISTS MyDB;
+
+CREATE FUNCTION MyDB.dbo.ExtractSearchLog()
+RETURNS @rows
+AS
+BEGIN
+    @rows =
+        EXTRACT UserId int,
+                Start DateTime,
+                Region string,
+                Query string,
+                Duration int,
+                Urls string,
+                ClickedUrls string
+        FROM "/SearchLog1.tsv"
+        USING Extractors.Tsv();
+RETURN;
+END;
+
+@searchlog =
+    MyDB.dbo.ExtractSearchLog
+    (
+    );
+
+@output =
+    SELECT UserId
+    FROM @searchlog;
+OUTPUT @output
+TO "/output/MySchema.txt"
+USING Outputters.Text();
+
+@customers =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            "Contoso",
+            123
+        ),
+        (
+            "Woodgrove",
+            456
+        )
+) AS D( customer, Id );
+
+CREATE TABLE MyDB.dbo.Customers
+(
+    INDEX idx
+    CLUSTERED(customer ASC)
+    DISTRIBUTED BY
+    HASH(customer)
+) AS
+SELECT *
+FROM @customers;
+
+CREATE TABLE MyDB.dbo.Customers2
+(
+    Customer string,
+    Id int,
+    INDEX idx
+    CLUSTERED(Customer ASC)
+    DISTRIBUTED BY
+    HASH(Customer)
+);
+
+@customers =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            "Contoso",
+            123
+        ),
+        (
+            "Woodgrove",
+            456
+        )
+) AS D( Customer, Id );
+INSERT INTO MyDB.dbo.Customers2
+SELECT *
+FROM @customers;
+/*
+@rs =
+    SELECT *
+    FROM MyDB.dbo.Customers;
+@rs2 =
+    SELECT *
+    FROM MyDB.dbo.Customers2;
+
+OUTPUT @rs TO "output/rs1.csv" USING Outputters.Csv();
+OUTPUT @rs2 TO "output/rs2.tsv" USING Outputters.Tsv();*/
+DROP DATABASE MyDB;

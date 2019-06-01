@@ -63,3 +63,7 @@ USING Outputters.Text();
     SELECT Region,
            string.Join(";", UrlsArray) AS Urls
     FROM @d;
+
+OUTPUT @e
+TO "output/arrayAgr.txt"
+USING Outputters.Text();
