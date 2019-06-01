@@ -54,6 +54,36 @@ OUTPUT @outputGroup
 TO "/output/outputGroup.txt"
 USING Outputters.Text();
 
+@outputFilter =
+    SELECT Region,
+           SUM(Duration) AS TotalDuration
+    FROM @searchlog
+    GROUP BY Region;
+
+OUTPUT @outputFilter
+TO "/output/outputFilter.txt"
+USING Outputters.Text();
+
+@outputHaving =
+    SELECT Region,
+           SUM(Duration) AS TotalDuration
+    FROM @searchlog
+    GROUP BY Region
+    HAVING SUM(Duration) > 200;
+
+OUTPUT @outputHaving
+TO "/output/outputHaving.txt"
+USING Outputters.Text();
+
+@outputAnyValue =
+    SELECT ANY_VALUE(Start) AS FirstStart,
+           Region
+    FROM @searchlog
+    GROUP BY Region;
+
+OUTPUT @outputAnyValue
+TO "/output/outputAnyValue.txt"
+USING Outputters.Text();
 // FileSet P54 not done
 // MyHelper class
 /*

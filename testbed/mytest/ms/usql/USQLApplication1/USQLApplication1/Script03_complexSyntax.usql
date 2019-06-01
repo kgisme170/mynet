@@ -1,0 +1,65 @@
+﻿@a =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            "Contoso",
+            1500.0
+        ),
+        (
+            "Woodgrove",
+            2700.0
+        ),
+        (
+            (string) null,
+            6700.0
+        )
+) AS D( customer, amount );
+@b =
+    SELECT COUNT() AS Count,
+           SUM(customer.Contains("o") ? 1 : 0) AS CountContainsLowercaseO,
+           SUM(customer == null? 1 : 0) AS CountIsNull
+    FROM @a;
+OUTPUT @b
+TO "/output/b.txt"
+USING Outputters.Text();
+DECLARE @input string = "/SearchLog1.tsv";
+@searchlog =
+    EXTRACT
+        UserId int,
+        Start DateTime,
+        Region string,
+        Query string,
+        Duration int,
+        Urls string,
+        ClickedUrls string
+    FROM @input
+    USING Extractors.Tsv();
+
+@a =
+    SELECT Region,
+           Urls
+    FROM @searchlog;
+@b =
+    SELECT Region,
+           SqlArray.Create(Urls.Split(';')) AS UrlTokens
+    FROM @a;
+@c =
+    SELECT Region,
+           Token AS Url
+    FROM @b
+         CROSS APPLY
+             EXPLODE(UrlTokens) AS my(Token);
+OUTPUT @c
+TO "/output/crossApply.txt"
+USING Outputters.Text();
+
+@d =
+    SELECT Region,
+           ARRAY_AGG<string>(Url) AS UrlsArray
+    FROM @c
+    GROUP BY Region;
+@e =
+    SELECT Region,
+           string.Join(";", UrlsArray) AS Urls
+    FROM @d;

@@ -21,8 +21,9 @@
     <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Script Include="Script.usql" />
-    <Script Include="Script1.usql" />
+    <Script Include="Script01_basicTypes.usql" />
+    <Script Include="Script02_syntax.usql" />
+    <Script Include="Script03_complexSyntax.usql" />
   </ItemGroup>
   <!-- check for SDK Build target in current path then in USQLSDKPath-->
   <Import Project="UsqlSDKBuild.targets" Condition="Exists('UsqlSDKBuild.targets')" />
