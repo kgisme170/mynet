@@ -1,11 +1,5 @@
 ﻿DECLARE @input string = "/SearchLog1.tsv";
-/*
-@searchlog =
-    EXTRACT
-        UserId int
-    FROM "/SearchLog1.tsv"
-    USING Extractors.Tsv();
-*/
+
 @searchlog =
     EXTRACT
         UserId int,
@@ -14,10 +8,47 @@
         Query string,
         Duration int,
         Urls string,
-        ClickedUrls string
-    FROM @input
+        ClickedUrls string,
+        _fn int
+    FROM "/SearchLog{_fn}.tsv"
     USING Extractors.Tsv();
 
-OUTPUT @searchlog
+@searchlog2 =
+    SELECT
+        UserId
+    FROM @searchlog;
+
+OUTPUT @searchlog2
 TO "UserId.csv"
 USING Outputters.Csv();
+
+// FileSet P54 not done
+// MyHelper class
+/*
+DECLARE @InputFile string = string.Format(@"/input/data-{{_dt:yyyy}}/{{_dt:MM}}/{{_dt:dd}}.txt");
+
+@rs =
+    EXTRACT UserId int,
+            Name string,
+            _dt DateTime
+    FROM @InputFile
+    USING Extractors.Csv();
+*/
+//DECLARE @InputFile string = string.Format("/input/data-{*}.txt");
+
+@rs =
+    EXTRACT UserId int,
+            Name string,
+            _dt DateTime
+    //FROM "/input/data-2019-05-30.txt" OK
+    //FROM "/input/data-{*}.txt" OK
+    FROM "/input/data-{_dt:yyyy}-{_dt:MM}-{_dt:dd}.txt"
+    USING Extractors.Tsv();
+OUTPUT @rs
+TO "/output/dtResult.txt"
+USING Outputters.Text();
+
+@rc = SELECT COUNT() AS count FROM @rs;
+OUTPUT @rc
+TO "/output/dtCount.txt"
+USING Outputters.Text();
