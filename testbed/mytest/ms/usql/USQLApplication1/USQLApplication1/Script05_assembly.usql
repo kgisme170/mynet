@@ -1,8 +1,11 @@
 ﻿REFERENCE SYSTEM ASSEMBLY [System.Xml];
 CREATE DATABASE IF NOT EXISTS MyDB;
 
-CREATE ASSEMBLY MyDB.OrdersLibAsm
-FROM @"/DLLs/OrdersLib.dll";
+DECLARE @ProjectRoot = @"C:\Users\limgong\mynet\testbed\mytest\ms\usql\USQLApplication1";
+DECLARE @OrdersLibDll string = @ProjectRoot + @"\OrdersLib\bin\Debug\OrdersLib.dll";
+
+CREATE ASSEMBLY [OrdersLib] FROM @OrdersLibDll;
+REFERENCE ASSEMBLY [OrdersLib];
 
 @customers =
     SELECT *
@@ -23,4 +26,5 @@ FROM @"/DLLs/OrdersLib.dll";
            Id
     FROM @customers;
 
-USING Exc = System.Exceptions;
+//USING Exc = System.Exceptions;
+//TODO

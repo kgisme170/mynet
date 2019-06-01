@@ -1,0 +1,285 @@
+﻿@querylog =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            "Banana",
+            300,
+            "Image"
+        ),
+        (
+            "Cherry",
+            300,
+            "Image"
+        ),
+        (
+            "Durian",
+            500,
+            "Image"
+        ),
+        (
+            "Apple",
+            100,
+            "Web"
+        ),
+        (
+            "Fig",
+            200,
+            "Web"
+        ),
+        (
+            "Papaya",
+            200,
+            "Web"
+        ),
+        (
+            "Avocado",
+            300,
+            "Web"
+        ),
+        (
+            "Cherry",
+            400,
+            "Web"
+        ),
+        (
+            "Durian",
+            500,
+            "Web"
+        ) )
+AS T(Query,Latency,Vertical);
+
+@employees =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            1,
+            "Noah",
+            "Engineering",
+            100,
+            10000
+        ),
+        (
+            2,
+            "Sophia",
+            "Engineering",
+            100,
+            20000
+        ),
+        (
+            3,
+            "Liam",
+            "Engineering",
+            100,
+            30000
+        ),
+        (
+            4,
+            "Emma",
+            "HR",
+            200,
+            10000
+        ),
+        (
+            5,
+            "Jacob",
+            "HR",
+            200,
+            10000
+        ),
+        (
+            6,
+            "Olivia",
+            "HR",
+            200,
+            10000
+        ),
+        (
+            7,
+            "Mason",
+            "Executive",
+            300,
+            50000
+        ),
+        (
+            8,
+            "Ava",
+            "Marketing",
+            400,
+            15000
+        ),
+        (
+            9,
+            "Ethan",
+            "Marketing",
+            400,
+            10000
+        ) )
+AS T(EmpID, EmpName, DeptName, DeptID, Salary);
+// aggr and groupby
+@result =
+    SELECT SUM(Salary) AS TotalSalary
+    FROM @employees;
+OUTPUT @result TO "out/result1.csv" USING Outputters.Csv();
+
+@result =
+    SELECT DeptName,
+           SUM(Salary) AS SalaryByDept
+    FROM @employees
+    GROUP BY DeptName;
+OUTPUT @result TO "out/result2.csv" USING Outputters.Csv();
+
+// window function
+@result =
+    SELECT EmpName,
+           SUM(Salary) OVER() AS SalaryAllDepts
+    FROM @employees;
+OUTPUT @result TO "out/result3.csv" USING Outputters.Csv();
+
+@result =
+    SELECT EmpName,
+           DeptName,
+           SUM(Salary) OVER(PARTITION BY DeptName) AS SalaryByDept
+    FROM @employees;
+OUTPUT @result TO "out/result4.csv" USING Outputters.Csv();
+
+@result =
+    SELECT *,
+           SUM(Salary) OVER(PARTITION BY DeptName) AS TotalByDept
+    FROM @employees;
+OUTPUT @result TO "out/result5.csv" USING Outputters.Csv();
+
+@result =
+    SELECT *,
+           COUNT( * ) OVER(PARTITION BY DeptName) AS CountByDept
+    FROM @employees;
+OUTPUT @result TO "out/result6.csv" USING Outputters.Csv();
+
+@result =
+    SELECT *,
+           MIN(Salary) OVER(PARTITION BY DeptName) AS MinSalary
+    FROM @employees;
+OUTPUT @result TO "out/result7.csv" USING Outputters.Csv();
+
+// analytics
+@result =
+    SELECT *,
+           CUME_DIST() OVER(PARTITION BY Vertical ORDER BY Latency) AS CumeDist
+    FROM @querylog;
+OUTPUT @result TO "out/result8.csv" USING Outputters.Csv();
+
+@result =
+    SELECT Vertical,
+           Query,
+           PERCENTILE_CONT(0.5)
+           WITHIN GROUP(ORDER BY Latency)
+           OVER(PARTITION BY Vertical) AS PercentileCont50,
+           PERCENTILE_DISC(0.5)
+           WITHIN GROUP(ORDER BY Latency)
+           OVER(PARTITION BY Vertical) AS PercentileDisc50
+    FROM @querylog;
+OUTPUT @result TO "out/result9.csv" USING Outputters.Csv();
+
+@result =
+    SELECT *,
+           PERCENT_RANK()
+           OVER(PARTITION BY Vertical ORDER BY Latency) AS PercentRank
+    FROM @querylog;
+OUTPUT @result TO "out/result10.csv" USING Outputters.Csv();
+
+@result =
+    SELECT *,
+           ROW_NUMBER() OVER(PARTITION BY Vertical ORDER BY Latency) AS RowNumber,
+           RANK() OVER(PARTITION BY Vertical ORDER BY Latency) AS Rank,
+           DENSE_RANK() OVER(PARTITION BY Vertical ORDER BY Latency) AS DenseRank
+    FROM @querylog;
+OUTPUT @result TO "out/result11.csv" USING Outputters.Csv();
+
+@result =
+    SELECT *,
+           ROW_NUMBER() OVER() AS RowNumber
+    FROM @querylog;
+OUTPUT @result TO "out/result12.csv" USING Outputters.Csv();
+
+// top N records via RANK, DENSE_RANK or ROW_NUMBER
+@result =
+    SELECT *,
+           ROW_NUMBER() OVER(PARTITION BY Vertical ORDER BY Latency) AS RowNumber,
+           RANK() OVER(PARTITION BY Vertical ORDER BY Latency) AS Rank,
+           DENSE_RANK() OVER(PARTITION BY Vertical ORDER BY Latency) AS DenseRank
+    FROM @querylog;
+OUTPUT @result TO "out/result13.csv" USING Outputters.Csv();
+
+@result =
+    SELECT *,
+           DENSE_RANK()
+           OVER(PARTITION BY Vertical ORDER BY Latency) AS DenseRank
+    FROM @querylog;
+OUTPUT @result TO "out/result14.csv" USING Outputters.Csv();
+
+@result =
+    SELECT *
+    FROM @result
+    WHERE DenseRank <= 3;
+OUTPUT @result TO "out/result15.csv" USING Outputters.Csv();
+
+@result =
+    SELECT *,
+           RANK()
+           OVER(PARTITION BY Vertical ORDER BY Latency) AS Rank
+    FROM @querylog;
+OUTPUT @result TO "out/result16.csv" USING Outputters.Csv();
+
+@result =
+    SELECT *
+    FROM @result
+    WHERE Rank <= 3;
+OUTPUT @result TO "out/result17.csv" USING Outputters.Csv();
+
+@result =
+    SELECT *,
+           ROW_NUMBER()
+           OVER(PARTITION BY Vertical ORDER BY Latency) AS RowNumber
+    FROM @querylog;
+OUTPUT @result TO "out/result18.csv" USING Outputters.Csv();
+
+@result =
+    SELECT *
+    FROM @result
+    WHERE RowNumber <= 3;
+OUTPUT @result TO "out/result19.csv" USING Outputters.Csv();
+
+// Any N records per group
+/*
+@result =
+    SELECT *,
+           ROW_NUMBER()
+           OVER(PARTITION BY ZipCode ORDER BY 1) AS RowNumber
+    FROM @customers;
+*/   
+@result =
+    SELECT *
+    FROM @result
+    WHERE RowNumber <= 10;
+OUTPUT @result TO "out/result20.csv" USING Outputters.Csv();
+
+// Getting the Rows that have the maximum (or minimum) value for a Column within a partition
+@results =
+    SELECT Query,
+           Latency,
+           Vertical,
+           ROW_NUMBER() OVER(PARTITION BY Vertical ORDER BY Latency DESC) AS rn
+    FROM @querylog;
+OUTPUT @result TO "out/result21.csv" USING Outputters.Csv();
+
+@results =
+    SELECT Query,
+           Latency,
+           Vertical
+    FROM @results
+    WHERE rn == 1;
+
+OUTPUT @results
+TO "ou/windowFunctions.tsv"
+USING Outputters.Tsv();

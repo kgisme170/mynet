@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace OrdersLib
 {
+    public static class HelpersOut
+    {
+        public static string CustPrefix = "CUST_";
+    }
     public class OrdersLib
     {
+        public static class Helpers
+        {
+            public static string CustPrefix = "CUST_";
+        }
     }
 }
