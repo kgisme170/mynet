@@ -1,0 +1,26 @@
+﻿REFERENCE SYSTEM ASSEMBLY [System.Xml];
+CREATE DATABASE IF NOT EXISTS MyDB;
+
+CREATE ASSEMBLY MyDB.OrdersLibAsm
+FROM @"/DLLs/OrdersLib.dll";
+
+@customers =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            "Contoso",
+            123
+        ),
+        (
+            "Woodgrove",
+            456
+        )
+) AS D( Customer, Id );
+
+@customers =
+    SELECT (OrdersLib.Helpers.CustPrefix + Customer) AS Customer,
+           Id
+    FROM @customers;
+
+USING Exc = System.Exceptions;

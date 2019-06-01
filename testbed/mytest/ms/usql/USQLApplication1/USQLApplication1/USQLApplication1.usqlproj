@@ -25,6 +25,7 @@
     <Script Include="Script02_syntax.usql" />
     <Script Include="Script03_complexSyntax.usql" />
     <Script Include="Script04_db.usql" />
+    <Script Include="Script05_assembly.usql" />
   </ItemGroup>
   <!-- check for SDK Build target in current path then in USQLSDKPath-->
   <Import Project="UsqlSDKBuild.targets" Condition="Exists('UsqlSDKBuild.targets')" />
