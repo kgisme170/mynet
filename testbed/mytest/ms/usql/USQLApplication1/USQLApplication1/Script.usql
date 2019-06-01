@@ -9,6 +9,70 @@
         ClickedUrls string
     FROM "/SearchLog.tsv"
     USING Extractors.Tsv();
-OUTPUT @searchlog
-    TO "/SearchLog_output.tsv"
+@output =
+    SELECT Start,
+           Region,
+           Duration
+    FROM @searchlog
+    WHERE
+    Start >= DateTime.Parse("2012/02/16")
+    AND Start <= DateTime.Parse("2012/02/17");
+OUTPUT @output
+TO "/SearchLog_output.tsv"
+USING Outputters.Tsv();
+
+@log2 =
+    SELECT *,
+           Urls.Length AS UrlLength
+    FROM @searchlog;
+@log3 =
+    SELECT Urls,
+           UrlLength
+    FROM @log2;
+@log4 =
+    SELECT UrlLength
+    FROM @log3;
+@log5 =
+    SELECT (UrlLength + UrlLength) AS DoubleLength
+    FROM @log4;
+@log6 =
+    SELECT *
+    FROM @log5
+    WHERE DoubleLength > 80;
+OUTPUT @log6
+TO "/SearchLog_withLength_output.tsv"
+USING Outputters.Tsv();
+
+@departments =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            31,
+            "Sales"
+        ),
+        (
+            33,
+            "Engineering"
+        ),
+        (
+            34,
+            "Clerical"
+        ),
+        (
+            35,
+            "Marketing"
+        )
+) AS D( DepID, DepName );
+OUTPUT @departments
+TO "/Departments.tsv"
+USING Outputters.Tsv();
+
+@rs1 =
+    SELECT ROW_NUMBER() OVER() AS RowNumber,
+           Start,
+           Region
+    FROM @searchlog;
+OUTPUT @rs1
+TO "/rs1.tsv"
 USING Outputters.Tsv();
