@@ -1,13 +1,14 @@
 ﻿REFERENCE SYSTEM ASSEMBLY [System.Xml];
 CREATE DATABASE IF NOT EXISTS MyDB;
 
-DECLARE @ProjectRoot = @"D:\git\mynet\testbed\mytest\ms\usql\USQLApplication1";
+DECLARE @ProjectRoot = @"C:\Users\limgong\mynet\testbed\mytest\ms\usql\USQLApplication1";
 DECLARE @OrdersLibDll string = @ProjectRoot + @"\OrdersLib\bin\Debug\OrdersLib.dll";
+//DECLARE @OrdersLibDll string = ".\OrdersLib.dll";
 
 DROP ASSEMBLY IF EXISTS [OrdersLib];
 CREATE ASSEMBLY [OrdersLib] FROM @OrdersLibDll;
 REFERENCE ASSEMBLY [OrdersLib];
-//USING MyNs;
+USING MyNs;
 
 @customers =
     SELECT *
@@ -24,7 +25,12 @@ REFERENCE ASSEMBLY [OrdersLib];
 ) AS D( Customer, Id );
 
 @customers =
-    SELECT (MyNs.MyClass.Helpers.CustPrefix + Customer) AS Customer,
+    SELECT (MyClass.Helpers.CustPrefix + Customer) AS Customer,
+           Id
+    FROM @customers;
+
+@customers =
+    SELECT MyClass.Normalize(Customer) AS Customer,
            Id
     FROM @customers;
 
@@ -34,3 +40,227 @@ USING Outputters.Tsv();
 
 //USING Exc = System.Exceptions;
 //TODO
+
+@t =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            "2016/03/31",
+            "1:00",
+            "mrys",
+            "@saveenr great demo yesterday",
+            7
+        ),
+        (
+            "2016/03/31",
+            "7:00",
+            "saveenr",
+            "@mrys Thanks! U-SQL RuL3Z!",
+            4
+        )
+) AS D( date, time, author, tweet , retweets);
+
+@results =
+    SELECT AGG<MVA_UDAgg.MySum>(retweets) AS totalretweets
+    FROM @t
+    GROUP BY date;
+
+OUTPUT @results
+TO "/output.csv"
+USING Outputters.Csv();
+
+DEPLOY RESOURCE "/helloworld.txt";
+@departments =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            31,
+            "Sales"
+        ),
+        (
+            33,
+            "Engineering"
+        ),
+        (
+            34,
+            "Clerical"
+        ),
+        (
+            35,
+            "Marketing"
+        )
+) AS D( DepID, DepName );
+
+@departments =
+    SELECT DepID,
+           DepName,
+           System.[IO].File.ReadAllText("helloworld.txt") AS Message
+    FROM @departments;
+
+OUTPUT @departments
+TO "/departments.tsv"
+USING Outputters.Tsv();
+
+// why processor?
+DEPLOY RESOURCE "/helloworld.txt";
+@departments =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            31,
+            "Sales"
+        ),
+        (
+            33,
+            "Engineering"
+        ),
+        (
+            34,
+            "Clerical"
+        ),
+        (
+            35,
+            "Marketing"
+        )
+) AS D( DepID, DepName );
+
+@departments =
+    PROCESS @departments
+    PRODUCE DepID int,
+DepName string,
+HelloWorld string
+    USING new Demo.HelloWorldProcessor();
+
+OUTPUT @departments
+TO "/departments.tsv"
+USING Outputters.Tsv();
+
+// udt
+@products =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            "Apple",
+            "0000"
+        ),
+        (
+            "Cherry",
+            "0001"
+        ),
+        (
+            "Banana",
+            "1001"
+        ),
+        (
+            "Orange",
+            "0110"
+        )
+) AS
+D( bitstring );
+
+@products =
+    SELECT ProductCode,
+           BitString,
+           new MyUDTExamples.Bits(BitString) AS Bits
+    FROM @products;
+
+// convert and persist udt
+@products2 =
+    SELECT ProductCode,
+           BitString,
+           Bits.ToInteger() AS BitInt
+    FROM @products;
+
+OUTPUT @products2
+TO "/output.csv"
+USING Outputters.Csv();
+
+// persist into table
+CREATE TABLE MyDB.dbo.MyTable
+(
+    INDEX idx
+    CLUSTERED(ProductCode ASC)
+    DISTRIBUTED BY
+    HASH(ProductCode)
+) AS
+SELECT *
+FROM @products2;
+
+// number ranges:
+DECLARE @StartDate = DateTime.Parse("1979-03-31");
+@numbers_10 =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            0
+        ),
+        (
+            1
+        ),
+        (
+            2
+        ),
+        (
+            3
+        ),
+        (
+            4
+        ),
+        (
+            5
+        ),
+        (
+            6
+        ),
+        (
+            7
+        ),
+        (
+            8
+        ),
+        (
+            9
+        )
+) AS T(Value);
+
+@numbers_100 =
+    SELECT (a.Value * 10 + b.Value) AS Value
+    FROM @numbers_10 AS a
+         CROSS JOIN
+             @numbers_10 AS b;
+@numbers_10000 =
+    SELECT (a.Value * 100 + b.Value) AS Value
+    FROM @numbers_100 AS a
+         CROSS JOIN
+             @numbers_100 AS b;
+@result =
+    SELECT Value,
+           @StartDate.AddDays(Value) AS Date
+    FROM @numbers_10000;
+OUTPUT @result
+TO "/res.csv"
+USING Outputters.Csv(outputHeader : true);
+
+CREATE DATABASE IF NOT EXISTS MyDB;
+DROP TABLE IF EXISTS MyDB.dbo.Numbers_10000;
+CREATE TABLE MyDB.dbo.Numbers_10000
+(
+    INDEX idx
+    CLUSTERED(Value ASC)
+    DISTRIBUTED BY
+    RANGE(Value)
+) AS
+SELECT *
+FROM @numbers_10000;
+
+@a =
+    SELECT Value
+    FROM MyDB.dbo.Numbers_10000
+    WHERE Value >= 1 AND Value <= 87;
+
+OUTPUT @a TO "/output/numberRange.csv" USING Outputters.Csv();
