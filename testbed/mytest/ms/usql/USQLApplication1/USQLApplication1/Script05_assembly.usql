@@ -1,11 +1,13 @@
 ﻿REFERENCE SYSTEM ASSEMBLY [System.Xml];
 CREATE DATABASE IF NOT EXISTS MyDB;
 
-DECLARE @ProjectRoot = @"C:\Users\limgong\mynet\testbed\mytest\ms\usql\USQLApplication1";
+DECLARE @ProjectRoot = @"D:\git\mynet\testbed\mytest\ms\usql\USQLApplication1";
 DECLARE @OrdersLibDll string = @ProjectRoot + @"\OrdersLib\bin\Debug\OrdersLib.dll";
 
+DROP ASSEMBLY IF EXISTS [OrdersLib];
 CREATE ASSEMBLY [OrdersLib] FROM @OrdersLibDll;
 REFERENCE ASSEMBLY [OrdersLib];
+//USING MyNs;
 
 @customers =
     SELECT *
@@ -22,9 +24,13 @@ REFERENCE ASSEMBLY [OrdersLib];
 ) AS D( Customer, Id );
 
 @customers =
-    SELECT (OrdersLib.Helpers.CustPrefix + Customer) AS Customer,
+    SELECT (MyNs.MyClass.Helpers.CustPrefix + Customer) AS Customer,
            Id
     FROM @customers;
+
+OUTPUT @customers
+TO "/output/useAssembly"
+USING Outputters.Tsv();
 
 //USING Exc = System.Exceptions;
 //TODO

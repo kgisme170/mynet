@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OrdersLib
+namespace MyNs
 {
     public static class HelpersOut
     {
         public static string CustPrefix = "CUST_";
     }
-    public class OrdersLib
+    public class MyClass
     {
         public static class Helpers
         {
