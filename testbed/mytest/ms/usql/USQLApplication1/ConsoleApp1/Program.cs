@@ -50,8 +50,42 @@ namespace ConsoleApp1
             Object obj = (Object)binForm.Deserialize(memStream);
             return obj;
         }
+
+        delegate void vFunc();
+        static readonly vFunc mFunc = vf;
+        public static void vf()
+        {
+            Console.WriteLine("func");
+        }
+
+        delegate double dFunc(int r);
+        static readonly dFunc aFunc = area;
+        public static double area(int r)
+        {
+            return 3.14 * r * r;
+        }
+
         static void Main(string[] args)
         {
+            mFunc();
+            Console.WriteLine(aFunc(3));
+
+            dFunc func = new dFunc(area);
+            Console.WriteLine(func(4));
+            dFunc circumference = new dFunc(delegate (int r) { return 6.28 * r; });
+            Console.WriteLine(circumference(5));
+
+            dFunc circ = r => 6.28 * r;
+            Console.WriteLine(circ(8));
+            Func<Double, Double> f = r => 6.28 * r;
+            Console.WriteLine(f(9));
+
+            void ai(int x) => Console.WriteLine(x + 1);
+            ai(5);
+
+            Action<int> a = ai;
+            a(5);
+
             string date = "2019-05-27 00:00:00";
             DateTime time = DateTime.Parse(date);
             Console.WriteLine(time);
