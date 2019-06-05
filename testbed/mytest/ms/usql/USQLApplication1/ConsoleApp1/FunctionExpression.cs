@@ -6,25 +6,25 @@ namespace ConsoleApp1
     class FunctionExpression
     {
         delegate void vFunc();
-        static readonly vFunc mFunc = vf;
-        public static void vf()
+        static readonly vFunc mFunc = Vf;
+        public static void Vf()
         {
             Console.WriteLine("func");
         }
 
         delegate double dFunc(int r);
-        static readonly dFunc aFunc = area;
-        public static double area(int r)
+        static readonly dFunc aFunc = Area;
+        public static double Area(int r)
         {
             return 3.14 * r * r;
         }
 
-        static void test()
+        static void Test()
         {
             mFunc();
             Console.WriteLine(aFunc(3));
 
-            dFunc func = new dFunc(area);
+            dFunc func = new dFunc(Area);
             Console.WriteLine(func(4));
             dFunc circumference = new dFunc(delegate (int r) { return 6.28 * r; });
             Console.WriteLine(circumference(5));
