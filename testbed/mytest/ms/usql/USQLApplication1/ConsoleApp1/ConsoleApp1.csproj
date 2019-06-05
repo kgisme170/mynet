@@ -48,12 +48,19 @@
     <Compile Include="Extension.cs" />
     <Compile Include="FunctionExpression.cs" />
     <Compile Include="Indexer.cs" />
+    <Compile Include="IterateYield.cs" />
     <Compile Include="ObjectBytesConversion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="m.Designer.html" />
+    <Content Include="m.html">
+      <SubType>Component</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
