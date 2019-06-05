@@ -88,6 +88,10 @@ namespace ConsoleApp1
 
             Action av = () => Console.WriteLine("av");
             av();
+
+            Predicate<int> p = x => x == 3;
+            Console.WriteLine(p(4));
+
             string date = "2019-05-27 00:00:00";
             DateTime time = DateTime.Parse(date);
             Console.WriteLine(time);
