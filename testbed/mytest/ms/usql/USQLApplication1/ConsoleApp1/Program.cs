@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
@@ -80,7 +81,7 @@ namespace ConsoleApp1
             Func<double, double> f = r => 6.28 * r;
             Console.WriteLine(f(9));
 
-            void ai(int x) => Console.WriteLine(x + 1);
+            void ai(int _x) => Console.WriteLine(_x + 1);
             ai(5);
 
             Action<int> a = ai;
@@ -89,7 +90,7 @@ namespace ConsoleApp1
             Action av = () => Console.WriteLine("av");
             av();
 
-            Predicate<int> p = x => x == 3;
+            Predicate<int> p = _x => _x == 3;
             Console.WriteLine(p(4));
 
             string date = "2019-05-27 00:00:00";
@@ -104,6 +105,17 @@ namespace ConsoleApp1
 
             Outter obj = (Outter)ByteArrayToObject(bytes);
             Console.WriteLine(obj.li[1].mI); // expect "3"
+
+            int x = 3, y = 4;
+            BinaryExpression b1 = Expression.MakeBinary(ExpressionType.Add,
+                Expression.Constant(1), Expression.Constant(2));
+            BinaryExpression b2 = Expression.MakeBinary(ExpressionType.Add,
+                Expression.Constant(x), Expression.Constant(y));
+
+            BinaryExpression b3 = Expression.MakeBinary(ExpressionType.Subtract, b1, b2);
+            int result = Expression.Lambda<Func<int>>(b3).Compile()();
+            Console.WriteLine(result);
+
         }
     }
 }
