@@ -77,7 +77,7 @@ namespace ConsoleApp1
 
             dFunc circ = r => 6.28 * r;
             Console.WriteLine(circ(8));
-            Func<Double, Double> f = r => 6.28 * r;
+            Func<double, double> f = r => 6.28 * r;
             Console.WriteLine(f(9));
 
             void ai(int x) => Console.WriteLine(x + 1);
