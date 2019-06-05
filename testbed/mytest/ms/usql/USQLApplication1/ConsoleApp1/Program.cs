@@ -86,6 +86,8 @@ namespace ConsoleApp1
             Action<int> a = ai;
             a(5);
 
+            Action av = () => Console.WriteLine("av");
+            av();
             string date = "2019-05-27 00:00:00";
             DateTime time = DateTime.Parse(date);
             Console.WriteLine(time);
