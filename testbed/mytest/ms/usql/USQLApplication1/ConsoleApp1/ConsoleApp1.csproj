@@ -25,6 +25,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -82,6 +83,7 @@
     <Compile Include="ResetEvent.cs" />
     <Compile Include="SecureRandom.cs" />
     <Compile Include="Tpl.cs" />
+    <Compile Include="Unsafe.cs" />
     <Compile Include="UseCovariant.cs" />
     <Compile Include="UseMapper.cs" />
     <Compile Include="UseThreads.cs" />

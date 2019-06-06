@@ -2,9 +2,9 @@
 
 namespace ConsoleApp1
 {
-    class My // immutable object
+    class Immutable // immutable object
     {
-        public My(string _cur, string _addr)
+        public Immutable(string _cur, string _addr)
         {
             Currency = _cur;
             Address = _addr;
@@ -23,8 +23,9 @@ namespace ConsoleApp1
             Console.WriteLine("D: " + guid.ToString("D"));
             Console.WriteLine("N: " + guid.ToString("N"));
 
-            var m = new My("usd", "us");
+            var m = new Immutable("usd", "us");
             string s = m.Currency;
+            Unsafe.Test();
         }
     }
 }
