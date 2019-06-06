@@ -26,6 +26,9 @@ namespace ConsoleApp1
             var m = new Immutable("usd", "us");
             string s = m.Currency;
             Unsafe.Test();
+
+            var u = new UseGeneric<int>();
+            Console.WriteLine(u.Compare(1, 2));
         }
     }
 }

@@ -85,6 +85,7 @@
     <Compile Include="Tpl.cs" />
     <Compile Include="Unsafe.cs" />
     <Compile Include="UseCovariant.cs" />
+    <Compile Include="UseGeneric.cs" />
     <Compile Include="UseMapper.cs" />
     <Compile Include="UseThreads.cs" />
     <Compile Include="Volatile.cs" />
