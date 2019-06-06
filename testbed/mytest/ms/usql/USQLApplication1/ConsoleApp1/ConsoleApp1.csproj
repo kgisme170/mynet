@@ -80,7 +80,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResetEvent.cs" />
-    <Compile Include="UseBond.cs" />
+    <Compile Include="SecureRandom.cs" />
+    <Compile Include="Tpl.cs" />
     <Compile Include="UseCovariant.cs" />
     <Compile Include="UseMapper.cs" />
     <Compile Include="UseThreads.cs" />

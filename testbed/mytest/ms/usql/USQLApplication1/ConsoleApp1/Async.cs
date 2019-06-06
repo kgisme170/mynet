@@ -9,22 +9,22 @@ namespace ConsoleApp1
         public static void LongTask()
         {
             Thread.Sleep(4000);
-            Console.WriteLine("LongTask ends");
+            Console.WriteLine("LongTask ends " + Thread.CurrentThread.ManagedThreadId);
         }
         public static async void Method1()
         {
             await Task.Run(new Action(LongTask));
-            Console.WriteLine("end");
+            Console.WriteLine("end" + Thread.CurrentThread.ManagedThreadId);
         }
         public static async void Method2()
         {
             await Task.Delay(4000);
-            Console.WriteLine("end");
+            Console.WriteLine("end " + Thread.CurrentThread.ManagedThreadId);
         }
         public static async void Method3()
         {
             await Task.Delay(4000);
-            Console.WriteLine("end");
+            Console.WriteLine("end " + Thread.CurrentThread.ManagedThreadId);
         }
         public static void Test()
         {
