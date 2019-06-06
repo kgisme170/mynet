@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace ConsoleApp1
 {
-    class Program
+    class Volatile
     {
         public static volatile int count = 0;
         public static void Method()
@@ -17,7 +17,7 @@ namespace ConsoleApp1
             Console.WriteLine("e");
         }
 
-        public static void Main(String [] args)
+        public static void Test(String[] args)
         {
             new Thread(Method).Start();
             Thread.Sleep(4000);

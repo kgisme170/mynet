@@ -7,7 +7,7 @@ namespace ConsoleApp1
     {
         static AutoResetEvent e = new AutoResetEvent(false);
         //static ManualResetEvent e = new ManualResetEvent(false);//signal all the WaitOne() calls
-        public static void Main(string[] args)
+        public static void Test(string[] args)
         {
             Thread t = new Thread(Method);
             t.Start();

@@ -82,6 +82,7 @@
     <Compile Include="UseCovariant.cs" />
     <Compile Include="UseMapper.cs" />
     <Compile Include="UseThreads.cs" />
+    <Compile Include="Volatile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
