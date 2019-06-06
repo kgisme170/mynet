@@ -21,7 +21,7 @@ namespace ConsoleApp1
         public static object ParseData(string s)
         {
             string[] array = s.Split(' ');
-            return new { Name = array[0], Address = array[1], Postcode = array[2] };
+            return new { Name = array[0], Address = array[1], PostCode = array[2] };
         }
 
         static T Cast<T>(object obj, T type)
@@ -31,13 +31,13 @@ namespace ConsoleApp1
         public static void Test()
         {
             string s = "john, 20st, 100020";
-            /*
+
             Split(s, out string name, out string address, out string postcode);
             Console.WriteLine(name + address + postcode);
 
             Tuple<string, string, string> t = Parse(s);
             Console.WriteLine(t.Item1);
-            */
+
             var o = Cast(ParseData(s), new { Name = "", Address = "", PostCode = "" });
         }
 

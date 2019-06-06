@@ -1,34 +1,31 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace ConsoleApp1
 {
-    class Immutable // immutable object
-    {
-        public Immutable(string _cur, string _addr)
-        {
-            Currency = _cur;
-            Address = _addr;
-        }
-
-        public string Currency { get; }
-        public string Address { get; }
-    }
     class Program
     {
         public static void Main(String [] args)
-        {
-            Guid guid = Guid.NewGuid();
-            Console.WriteLine("_: " + guid);
-            Console.WriteLine("B: " + guid.ToString("B"));
-            Console.WriteLine("D: " + guid.ToString("D"));
-            Console.WriteLine("N: " + guid.ToString("N"));
-
-            var m = new Immutable("usd", "us");
-            string s = m.Currency;
-            Unsafe.Test();
-
+        { 
             var u = new UseGeneric<int>();
             Console.WriteLine(u.Compare(1, 2));
+            Console.WriteLine("----------");
+
+            UseDataAnnotations obj = new UseDataAnnotations();
+            obj.Name = null;
+            var context = new ValidationContext(obj, null, null);
+            var result = new List<ValidationResult>();
+            bool IsValid = Validator.TryValidateObject(
+                obj, 
+                context,
+                null, 
+                true);
+            Console.WriteLine(IsValid);
+            foreach(var x in result)
+            {
+                Console.WriteLine(x.ErrorMessage);
+            }
         }
     }
 }

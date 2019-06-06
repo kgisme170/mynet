@@ -22,6 +22,9 @@ namespace ConsoleApp1
             {
                 int* iArray = stackalloc int[100];
                 val = Htons(val);
+
+                Myclass* pm = stackalloc Myclass[1];
+                pm[0].val = 3;
             }
             Console.WriteLine(val);
         }
