@@ -13,13 +13,13 @@ namespace ConsoleApp1
             Console.WriteLine("----------");
 
             UseDataAnnotations obj = new UseDataAnnotations();
-            obj.Name = null;
+            obj.Name = "abc";
             var context = new ValidationContext(obj, null, null);
             var result = new List<ValidationResult>();
             bool IsValid = Validator.TryValidateObject(
                 obj, 
                 context,
-                null, 
+                result, // can be null, 
                 true);
             Console.WriteLine(IsValid);
             foreach(var x in result)
