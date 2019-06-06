@@ -2,7 +2,7 @@
 
 namespace ConsoleApp1
 {
-    class My
+    class My // immutable object
     {
         public My(string _cur, string _addr)
         {
