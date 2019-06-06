@@ -6,33 +6,8 @@ namespace ConsoleApp1
 {
     class Program
     {
-        public static void LongTask()
-        {
-            Thread.Sleep(4000);
-            Console.WriteLine("LongTask ends");
-        }
-        public static async void Method1()
-        {
-            await Task.Run(new Action(LongTask));
-            Console.WriteLine("end");
-        }
-        public static async void Method2()
-        {
-            await Task.Delay(4000);
-            Console.WriteLine("end");
-        }
-        public static async void Method3()
-        {
-            await Task.Delay(4000);
-            Console.WriteLine("end");
-        }
         public static void Main(string[] args)
         {
-            Method1();
-            Method2();
-            Method3();
-            string str = Console.ReadLine();
-            Console.WriteLine(str);
         }
     }
 }
