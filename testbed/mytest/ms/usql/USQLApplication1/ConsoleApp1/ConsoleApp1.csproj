@@ -70,6 +70,7 @@
   <ItemGroup>
     <Compile Include="AnonymousTypes.cs" />
     <Compile Include="Async.cs" />
+    <Compile Include="Coalescing.cs" />
     <Compile Include="Extension.cs" />
     <Compile Include="FunctionExpression.cs" />
     <Compile Include="Indexer.cs" />
