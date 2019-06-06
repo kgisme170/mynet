@@ -6,7 +6,7 @@ namespace ConsoleApp1
     {
         public static void Main(String [] args)
         {
-            Destructor.Test();
+            Async.Test();
         }
     }
 }

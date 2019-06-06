@@ -26,7 +26,7 @@ namespace ConsoleApp1
             await Task.Delay(4000);
             Console.WriteLine("end");
         }
-        public static void Test(string[] args)
+        public static void Test()
         {
             Method1();
             Method2();
@@ -34,6 +34,5 @@ namespace ConsoleApp1
             string str = Console.ReadLine();
             Console.WriteLine(str);
         }
-
     }
 }
