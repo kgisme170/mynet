@@ -12,7 +12,7 @@ namespace DataApp1
 
             DateTime dt = DateTime.Now;
             Console.WriteLine(dt == null);
-            UseObserver.Test();
+            UseAppDomain.Test();
         }
     }
 }
