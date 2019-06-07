@@ -3,10 +3,23 @@
 
 #include "pch.h"
 #include <iostream>
-
+using namespace std;
+struct Base
+{
+	virtual void f(int i) { cout << "Base int" << endl; }
+};
+struct Derive : Base
+{
+	virtual void f(double d) { cout << "Derived double" << endl; }
+};
 int main()
 {
-    std::cout << "Hello World!\n"; 
+    cout << "Hello World!\n";
+	Derive d;
+	d.f(2.0); // child
+	Base* pb = &d;
+	pb->f(2.0); // base
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
