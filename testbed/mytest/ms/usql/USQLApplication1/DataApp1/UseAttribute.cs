@@ -8,6 +8,22 @@ namespace DataApp1
 {
     class UseAttribute
     {
+        static void Test(string[] args)
+        {
+            var people = new People()
+            {
+                Name = "asdfasdfasdfasdfasdfasdf",
+                Description = "description"
+            };
+            try
+            {
+                new ValidationModel().Validate(people);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
     [AttributeUsage(AttributeTargets.Property)]
     public class StringLengthAttribute : Attribute

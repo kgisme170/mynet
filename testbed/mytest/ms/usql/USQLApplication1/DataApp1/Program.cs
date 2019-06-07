@@ -10,19 +10,12 @@ namespace DataApp1
     {
         static void Main(string[] args)
         {
-            var people = new People()
-            {
-                Name = "asdfasdfasdfasdfasdfasdf",
-                Description = "description"
-            };
-            try
-            {
-                new ValidationModel().Validate(people);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            var v = "ab";
+            dynamic d = "ab";
+            Console.WriteLine(v.Length +　d.Length);
+
+            DateTime dt = DateTime.Now;
+            Console.WriteLine(dt == null);
         }
     }
 }
