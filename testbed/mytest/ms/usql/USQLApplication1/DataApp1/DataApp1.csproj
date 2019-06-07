@@ -49,10 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ctor.cs" />
     <Compile Include="FragileClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UseAttribute.cs" />
+    <Compile Include="UseObserver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
