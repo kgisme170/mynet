@@ -99,8 +99,21 @@ F(x)在一个区间上，左右两个值的差，除以区间的长度。用概�
 
 #### 3. 数学含义
 
-由于不定积分，其实就是导数(derivative)的反函数，因此研究不定积分就要研究微分计算的几个基本规则: 加法律(additive rule)，幂次律(power rule)，乘积(produce rule)，商律(quotient rule)，链式应用律(chain rule)。
+由于不定积分，其实就是导数(derivative)的反函数，因此研究不定积分就要研究微分计算的几个基本规则: 加法律(additive rule)，幂次律(power rule)，乘积(produce rule)，商律(quotient rule)，合成律(chain rule)。
 
 例如求ln(x)的导数: <img src="img/indefiniteIntegral06.gif">
 
 再比如，有些导数是隐含的，比如单位圆的方程: <img src="img/indefiniteIntegral07.gif">，求y点的导数需要用到chainRule: <img src="img/indefiniteIntegral08.gif">，化成极坐标，x=sin(t) y=cos(t) 那么这个导数/斜率就是-tan(t)。
+
+#### 4. 多于一维的情况
+组合律的应用，遵从线性映射的组合律，也就是点积运算求得。例如<img src="img/chainRule01.gif">，求这个函数在单位圆上面的导数，由于可以写成t的函数x(t)=cos(t),y(t)=sin(t)，当我们直接求f't的时候，可以得到:<img src="img/chainRule02.gif">。如果我们分步来求，可以得到<img src="img/chainRule03.gif">，同时<img src="img/chainRule04.gif">，比较上面3个式子，可以验证合成律的一般形式: 
+
+<img src="img/chainRule05.gif">----(1)
+
+对于这个式子，可以理解为类似1维的情况，但是需要写成向量的形式。<img src="img/chainRule06.gif">，我们又知道: <img src="img/chainRule07.gif">，因此:
+
+<img src="img/chainRule08.gif">
+
+上式就是f在v方向上的方向导数的定义。而方向导数其实是线性代数里面用点乘的方式得到的一个映射。这也就是解释了(1)式的代数意义。<img src="img/chainRule09.gif">，因此(1)式可以写成点乘形式:
+
+<img src="img/chainRule10.gif">，这个看起来就和单个变量的合成律很像了。
