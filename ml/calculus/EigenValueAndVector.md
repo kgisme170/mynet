@@ -34,3 +34,14 @@ OK，下面这个矩阵的特征值和特征向量怎么求:
 <img src="img/eigen08.gif">，它的一个特征值是1，说明对应的特征向量在线性变换下长度不变。
 
 对于左下角是0的矩阵 <img src="img/eigen10.gif">, 计算特征值 <img src="img/eigen11.gif">, 只有一个特征值。但是一个特征值可以对应多个特征向量。
+
+#### 3. 应用
+
+fibonacci数列的通项公式，就可以用矩阵的特征向量来求解。首先，写出该数列的通项公式:<img src="img/fib01.gif">，其中: <img src="img/fib02.gif">，解得特征值<img src="img/fib03.gif">
+
+然后，求解特征向量，得到特征矩阵，以及M的特征向量分解形式:<img src="img/fib04.gif">
+其中D是特征值组成的对角矩阵。
+
+<img src="img/fib05.gif"> 其中 <img src="img/fib06.gif">
+
+可以解得<img src="img/fib07.gif">
