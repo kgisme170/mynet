@@ -99,7 +99,10 @@ F(x)在一个区间上，左右两个值的差，除以区间的长度。用概�
 
 #### 3. 数学含义
 
-由于不定积分，其实就是导数(derivative)的反函数，因此研究不定积分就要研究微分计算的几个基本规则: 加法律(additive rule)，幂次律(power rule)，乘积(produce rule)，商律(quotient rule)，合成律(chain rule)。
+由于不定积分，其实就是导数(derivative)的反函数，因此研究不定积分就要研究微分计算的几个基本规则: 加法律(additive rule)，幂次律(power rule)，乘积律(produce rule)，商律(quotient rule)，合成(组合)律(chain rule)。
+
+Product rule的证明:
+<img src="img/productRule01.gif"> 这个式子就是f'g+fg'。Chain rule很容易证明，2维情况的Chain rule需要特别的证明。
 
 例如求ln(x)的导数: <img src="img/indefiniteIntegral06.gif">
 
