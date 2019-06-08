@@ -19,7 +19,7 @@ namespace DataApp1
             var perm = new PermissionSet(PermissionState.None);
             perm.AddPermission(
                 new SecurityPermission(SecurityPermissionFlag.Execution));
-            perm.AddPermission(
+            perm.AddPermission( // exception
                 new FileIOPermission(FileIOPermissionAccess.NoAccess, "@d:\\"));
 
             var setup = new AppDomainSetup();
@@ -49,7 +49,7 @@ namespace DataApp1
         public ThirdParty()
         {
             Console.WriteLine("3p loadling");
-            System.IO.File.Create(@"d:\x.txt");
+            System.IO.File.Create(@"d:\\x.txt");
         }
         ~ThirdParty()
         {
