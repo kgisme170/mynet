@@ -17,7 +17,7 @@ namespace ConsoleApp1
             var context = new ValidationContext(obj, null, null);
             var result = new List<ValidationResult>();
             bool IsValid = Validator.TryValidateObject(
-                obj, 
+                obj,
                 context,
                 result, // can be null, 
                 true);

@@ -9,3 +9,15 @@
 
 举个具体的例子，f(x,y)=xy, 积分曲线C是x=cost, y=sint, t=[0, PI/2]，是在第一象限的一个半圆。
 <img src="img/linearIntegral02.gif">，再设u=sin(t)，原式=<img src="img/linearIntegral03.gif">
+
+再举一个例子，在第一象限的围线积分，半圆+x轴+y轴组成的区域，其实就是3个墙的面积:
+
+<img src="img/linearIntegral04.gif">
+
+在三段线上分别用x(t),y(t)来计算。在园弧上:
+
+<img src="img/linearIntegral05.gif"> = PI/2，然后在y轴上，x=0, y=2-t, t从0到2之间。dx/dt=0, dy/dt=-1，
+
+<img src="img/linearIntegral06.gif">，在x轴上，x=t, y=0, t从0到2，可以算出来积分=2. 3部分的值加起来就是结果。
+
+同理，三维空间的函数f(x,y,z)对于面积的曲面积分，原理类似，只是增加了一个维度而已，还是写成t的函数来求解。
