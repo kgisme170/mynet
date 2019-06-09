@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace DataApp1
 {
@@ -163,6 +162,20 @@ namespace DataApp1
             foreach(var g in group1)
             {
                 Console.WriteLine(g.Dept + "," + g.TopSal_id + "," + g.Salary);
+            }
+
+            var group2 = from e in id
+                         group e by e.Department_id into deptgrp
+                         select deptgrp.Key;
+            foreach (var k in group2)
+            {
+                Console.WriteLine(k);
+            }
+
+            var group3 = ie.GroupBy(x => x.Department_id);
+            foreach (var g in group3)
+            {
+                Console.WriteLine(g.Sum(x=>x.Salary));
             }
         }
     }

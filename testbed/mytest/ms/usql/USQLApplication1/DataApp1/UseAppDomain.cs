@@ -20,13 +20,13 @@ namespace DataApp1
             perm.AddPermission(
                 new SecurityPermission(SecurityPermissionFlag.Execution));
             perm.AddPermission(
-                new FileIOPermission(FileIOPermissionAccess.AllAccess, @"c:\git\"));
+                new FileIOPermission(FileIOPermissionAccess.AllAccess, @"d:\git\"));
 
             var setup = new AppDomainSetup();
             setup.ApplicationBase = AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
             AppDomain secureDomain = AppDomain.CreateDomain("secure", null, setup, perm);
 
-            ThirdParty third = new ThirdParty();
+            //ThirdParty third = new ThirdParty() // this line conflicts with lines below to "CreateInstanceAndUnwrap
 
             Type thirdParty = typeof(ThirdParty);
             secureDomain.
@@ -48,7 +48,7 @@ namespace DataApp1
         public ThirdParty()
         {
             Console.WriteLine("3p loadling");
-            System.IO.File.Create(@"c:\git\test.txt");
+            System.IO.File.Create(@"d:\git\test.txt");
         }
         ~ThirdParty()
         {
