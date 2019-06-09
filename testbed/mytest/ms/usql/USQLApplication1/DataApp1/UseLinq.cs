@@ -134,7 +134,7 @@ namespace DataApp1
                     Dep = d.Department_name,
                     Sal = e.Salary
                 });*/
-            Console.WriteLine("-----------");
+            Console.WriteLine("Select highest salary-----------");
             var combine1 = from e in ie
                            join d in id
                            on e.Department_id equals d.Department_id
@@ -149,7 +149,7 @@ namespace DataApp1
                 Console.WriteLine(c.Dep+","+c.Sal);
             }
 
-            Console.WriteLine("-----------");
+            Console.WriteLine("Select highest salary from each department-----------");
             var group1 = from e in ie
                          group e by e.Department_id into deptgrp
                          let totsal = deptgrp.Max(x => x.Salary)
@@ -164,6 +164,7 @@ namespace DataApp1
                 Console.WriteLine(g.Dept + "," + g.TopSal_id + "," + g.Salary);
             }
 
+            Console.WriteLine("Select department id-----------");
             var group2 = from e in id
                          group e by e.Department_id into deptgrp
                          select deptgrp.Key;
@@ -172,11 +173,16 @@ namespace DataApp1
                 Console.WriteLine(k);
             }
 
+            Console.WriteLine("Select highest salary from each department-----------");
             var group3 = ie.GroupBy(x => x.Department_id);
             foreach (var g in group3)
             {
                 Console.WriteLine(g.Sum(x=>x.Salary));
             }
+
+            Console.WriteLine("Select highest salary from each department-----------");
+            ie.GroupBy(x => x.Department_id).Select(g => g.Sum(x => x.Salary))
+            .ToList().ForEach(x => Console.WriteLine(x));
         }
     }
 }
