@@ -19,20 +19,19 @@ namespace DataApp1
             var perm = new PermissionSet(PermissionState.None);
             perm.AddPermission(
                 new SecurityPermission(SecurityPermissionFlag.Execution));
-            perm.AddPermission( // exception
-                new FileIOPermission(FileIOPermissionAccess.NoAccess, @"c:\"));
+            perm.AddPermission(
+                new FileIOPermission(FileIOPermissionAccess.NoAccess, @"c:\git"));
 
             var setup = new AppDomainSetup();
             setup.ApplicationBase = AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
             AppDomain secureDomain = AppDomain.CreateDomain("secure", null, setup, perm);
 
-            // App domain
             ThirdParty third = new ThirdParty();
 
             Type thirdParty = typeof(ThirdParty);
             secureDomain.
                 CreateInstanceAndUnwrap(thirdParty.Assembly.FullName,
-                    thirdParty.FullName);
+                    thirdParty.FullName);//exception!!!!!!!!!!
             AppDomain.Unload(secureDomain);
 
             Class1 obj1 = new Class1();

@@ -13,12 +13,24 @@ namespace DataApp1
     }
     class Employee
     {
-        public int Employ_id { get; set; }
+        public int Employee_id { get; set; }
         public string First_name { get; set; }
         public string Last_name { get; set; }
         public Gender gender { get; set; }
         public int Department_id { get; set; }
         public int Salary { get; set; }
+
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.Append("Employee_id=" + Employee_id);
+            sb.Append(",First_name=" + First_name);
+            sb.Append(",Last_name=" + Last_name);
+            sb.Append(",gender=" + gender);
+            sb.Append(",Department_id=" + Department_id);
+            sb.Append(",Salary=" + Salary);
+            return sb.ToString();
+        }
     }
     class Department
     {
@@ -33,7 +45,7 @@ namespace DataApp1
             {
                 new Employee
                 {
-                    Employ_id=2002,
+                    Employee_id=2002,
                     First_name="Super",
                     Last_name="Man",
                     gender=Gender.M,
@@ -42,7 +54,7 @@ namespace DataApp1
                 },
                 new Employee
                 {
-                    Employ_id=2003,
+                    Employee_id=2003,
                     First_name="Jessica",
                     Last_name="Liyers",
                     gender=Gender.F,
@@ -51,7 +63,7 @@ namespace DataApp1
                 },
                 new Employee
                 {
-                    Employ_id=2004,
+                    Employee_id=2004,
                     First_name="Bonnie",
                     Last_name="Adams",
                     gender=Gender.M,
@@ -60,7 +72,7 @@ namespace DataApp1
                 },
                 new Employee
                 {
-                    Employ_id=2005,
+                    Employee_id=2005,
                     First_name="James",
                     Last_name="Bakon",
                     gender=Gender.M,
@@ -69,7 +81,7 @@ namespace DataApp1
                 },
                 new Employee
                 {
-                    Employ_id=2006,
+                    Employee_id=2006,
                     First_name="Michael",
                     Last_name="Robins",
                     gender=Gender.M,
@@ -78,7 +90,7 @@ namespace DataApp1
                 },
                 new Employee
                 {
-                    Employ_id=2007,
+                    Employee_id=2007,
                     First_name="Stacy",
                     Last_name="Jacobs",
                     gender=Gender.F,
@@ -101,10 +113,41 @@ namespace DataApp1
                 } 
             };
 
-            var employ_between_2003_2008 = ie.Where(x => x.Employ_id >= 2003 && x.Employ_id <=2008);
-            foreach(var e in employ_between_2003_2008)
+            var employ_between_2003_2006 = ie.Where(x => x.Employee_id >= 2003 && x.Employee_id <=2006);
+            foreach(var em in employ_between_2003_2006)
             {
-                Console.WriteLine(e);
+                Console.WriteLine(em);
+            }
+
+            var highest_salary = ie.Max(x => x.Salary);
+            Console.WriteLine(highest_salary);
+
+            var max2nd = ie.OrderByDescending(x => x.Salary).Skip(1).First();
+            Console.WriteLine(max2nd);
+
+            var maxOther = ie.Where(x => x.Salary != highest_salary).Max(x => x.Salary);
+            Console.WriteLine(maxOther);
+
+            /* Using extented methods
+            var combine1 = ie.Join(id, e => e.Department_id, d => d.Department_id,
+                (e, d) => new
+                {
+                    Dep = d.Department_name,
+                    Sal = e.Salary
+                });*/
+            Console.WriteLine("-----------");
+            var combine1 = from e in ie
+                           join d in id
+                           on e.Department_id equals d.Department_id
+                           where e.Salary == highest_salary
+                           select new
+                           {
+                               Dep = d.Department_name,
+                               Sal = e.Salary
+                           };
+            foreach(var c in combine1)
+            {
+                Console.WriteLine(c.Dep+","+c.Sal);
             }
         }
     }
