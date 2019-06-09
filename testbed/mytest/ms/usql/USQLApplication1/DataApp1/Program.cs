@@ -4,15 +4,19 @@ namespace DataApp1
 {
     class Program
     {
-        static void Main(string[] args)
+        private Program()
         {
             var v = "ab";
             dynamic d = "ab";
-            Console.WriteLine(v.Length +　d.Length);
+            Console.WriteLine(v.Length + d.Length);
 
             DateTime dt = DateTime.Now;
             Console.WriteLine(dt == null);
-            UseAppDomain.Test();
+
+        }
+        static void Main(string[] args)
+        {
+            UseLinq.Test();
         }
     }
 }
