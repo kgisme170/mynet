@@ -149,6 +149,21 @@ namespace DataApp1
             {
                 Console.WriteLine(c.Dep+","+c.Sal);
             }
+
+            Console.WriteLine("-----------");
+            var group1 = from e in ie
+                         group e by e.Department_id into deptgrp
+                         let totsal = deptgrp.Max(x => x.Salary)
+                         select new
+                         {
+                             Dept = deptgrp.Key,
+                             TopSal_id = deptgrp.First(s => s.Salary == totsal).Employee_id,
+                             Salary = totsal
+                         };
+            foreach(var g in group1)
+            {
+                Console.WriteLine(g.Dept + "," + g.TopSal_id + "," + g.Salary);
+            }
         }
     }
 }

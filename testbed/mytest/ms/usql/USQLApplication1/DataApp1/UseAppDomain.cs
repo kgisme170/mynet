@@ -20,7 +20,7 @@ namespace DataApp1
             perm.AddPermission(
                 new SecurityPermission(SecurityPermissionFlag.Execution));
             perm.AddPermission(
-                new FileIOPermission(FileIOPermissionAccess.NoAccess, @"c:\git"));
+                new FileIOPermission(FileIOPermissionAccess.AllAccess, @"c:\git\"));
 
             var setup = new AppDomainSetup();
             setup.ApplicationBase = AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
