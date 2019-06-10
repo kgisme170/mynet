@@ -56,6 +56,7 @@
     <Compile Include="UseAttribute.cs" />
     <Compile Include="UseLinq.cs" />
     <Compile Include="UseObserver.cs" />
+    <Compile Include="UseWeakReference.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -16,7 +16,7 @@ namespace DataApp1
         }
         static void Main(string[] args)
         {
-            UseLinq.Test();
+            UseWeakReference.Test();
         }
     }
 }
