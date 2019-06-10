@@ -13,6 +13,15 @@
 <html><body>
 Now is: <#= GetCurrentTime() #> <br>
 
+<#@ assembly name="EnvDTE" #>
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating" #>
+<#
+  IServiceProvider serviceProvider = (IServiceProvider)this.Host;
+  EnvDTE.DTE dte = (EnvDTE.DTE) serviceProvider.GetCOMService(typeof(EnvDTE.DTE));
+#>
+
+Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #><br>
+
 <#
 for(int i=0;i<=10;++i)
 {
@@ -39,6 +48,7 @@ var xml = XDocument.Load(fileName);
 </body></html>
 
 <#
+	Warning("A warning message");
 	DateTime GetCurrentTime()
 	{
 		return System.DateTime.Now;
