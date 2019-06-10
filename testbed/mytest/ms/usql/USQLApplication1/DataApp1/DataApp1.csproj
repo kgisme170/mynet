@@ -67,14 +67,14 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="XmlToText.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>XmlToText.txt</LastGenOutput>
-    </Content>
-    <Content Include="XmlToText.txt">
+    <Content Include="XmlToText.html">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>XmlToText.tt</DependentUpon>
+    </Content>
+    <Content Include="XmlToText.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>XmlToText.html</LastGenOutput>
     </Content>
     <Content Include="XmlToText.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

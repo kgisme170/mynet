@@ -3,4 +3,8 @@
 <#@ import namespace="System.Linq" #>
 <#@ import namespace="System.Text" #>
 <#@ import namespace="System.Collections.Generic" #>
-<#@ output extension=".txt" #>
+<#@ output extension=".html" #>
+
+<html><body>
+The date and time now is: <#= DateTime.Now #>
+</body></html>
