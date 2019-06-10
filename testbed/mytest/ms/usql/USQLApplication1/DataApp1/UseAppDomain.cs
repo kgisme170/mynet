@@ -27,11 +27,10 @@ namespace DataApp1
             AppDomain secureDomain = AppDomain.CreateDomain("secure", null, setup, perm);
 
             //ThirdParty third = new ThirdParty() // this line conflicts with lines below to "CreateInstanceAndUnwrap
-
             Type thirdParty = typeof(ThirdParty);
             secureDomain.
                 CreateInstanceAndUnwrap(thirdParty.Assembly.FullName,
-                    thirdParty.FullName);//exception!!!!!!!!!!
+                    thirdParty.FullName);
             AppDomain.Unload(secureDomain);
 
             Class1 obj1 = new Class1();
