@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<building>
+  <floor>
+    <name>floor1</name>
+    <rooms>23</rooms>
+  </floor>
+  <floor>
+    <name>floor2</name>
+    <rooms>40</rooms>
+  </floor>
+  <floor>
+    <name>floor3</name>
+    <rooms>35</rooms>
+  </floor>
+</building>

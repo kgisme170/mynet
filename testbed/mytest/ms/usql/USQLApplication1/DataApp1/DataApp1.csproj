@@ -57,10 +57,28 @@
     <Compile Include="UseLinq.cs" />
     <Compile Include="UseObserver.cs" />
     <Compile Include="UseWeakReference.cs" />
+    <Compile Include="UseXml.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="XmlToText.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>XmlToText.txt</LastGenOutput>
+    </Content>
+    <Content Include="XmlToText.txt">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XmlToText.tt</DependentUpon>
+    </Content>
+    <Content Include="XmlToText.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
