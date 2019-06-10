@@ -50,6 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FragileClass.cs" />
+    <Compile Include="CodeGen\GenerateClass.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GenerateClass.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UseAppDomain.cs" />
@@ -67,12 +72,16 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="XmlToText.html">
+    <Content Include="CodeGen\GenerateClass.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GenerateClass.cs</LastGenOutput>
+    </Content>
+    <Content Include="CodeGen\XmlToText.html">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>XmlToText.tt</DependentUpon>
     </Content>
-    <Content Include="XmlToText.tt">
+    <Content Include="CodeGen\XmlToText.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>XmlToText.html</LastGenOutput>
     </Content>
