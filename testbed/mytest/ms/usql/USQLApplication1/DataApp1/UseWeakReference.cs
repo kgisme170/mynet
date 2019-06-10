@@ -22,6 +22,7 @@ namespace DataApp1
             wr.TryGetTarget(out Person p2);
             Console.WriteLine(p2);
 
+            p1 = null;
             p2 = null;
             System.GC.Collect();
             Thread.Sleep(1000);
