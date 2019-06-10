@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Bond;
+using System.Runtime.Serialization.Formatters.Binary;
+
 namespace ConsoleApp2_Bond
 {
     class RawData
@@ -28,7 +30,9 @@ namespace ConsoleApp2_Bond
                 Id = 123,
                 Photo = new byte[10]
             };
-            
+
+            BitFormatter bitFormatter = new BitFormatter();
+            MemoryStream memoryStream = new MemoryStream();
         }
     }
 }
