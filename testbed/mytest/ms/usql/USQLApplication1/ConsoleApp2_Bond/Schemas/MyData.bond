@@ -1,0 +1,7 @@
+﻿namespace ConsoleApp2_Bond
+struct MyData
+{
+	0 : string      Name;
+	1 : int64		Id;
+	3 : blob		Photo;
+}
