@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Bond;
+﻿using Microsoft.Bond;
+using System;
+using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
 namespace ConsoleApp2_Bond
 {
+    [Serializable]
     class RawData
     {
         public string Name { set; get; }
@@ -24,15 +22,19 @@ namespace ConsoleApp2_Bond
                 Id = 123,
                 Photo = new BondBlob(new byte[10])
             };
+
             RawData rawData = new RawData
             {
                 Name = "john",
                 Id = 123,
-                Photo = new byte[10]
+                Photo = new byte[100]
             };
 
-            BitFormatter bitFormatter = new BitFormatter();
+            BinaryFormatter bitFormatter = new BinaryFormatter();
             MemoryStream memoryStream = new MemoryStream();
+            bitFormatter.Serialize(memoryStream, rawData);
+            byte [] bytes = memoryStream.ToArray();
+            Console.WriteLine(bytes.Length);
         }
     }
 }

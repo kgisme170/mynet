@@ -1,4 +1,5 @@
 ﻿namespace ConsoleApp2_Bond
+
 struct MyData
 {
 	0 : string      Name;
