@@ -60,6 +60,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UseMyData.cs" />
     <Compile Include="UseStruct.cs" />
+    <Compile Include="UseStructProperty.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

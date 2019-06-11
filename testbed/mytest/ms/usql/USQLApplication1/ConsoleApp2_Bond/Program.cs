@@ -1,4 +1,5 @@
-﻿namespace ConsoleApp2_Bond
+﻿using System;
+namespace ConsoleApp2_Bond
 {
     class Program
     {
@@ -7,4 +8,5 @@
             UseMyData.Test();
         }
     }
+
 }
