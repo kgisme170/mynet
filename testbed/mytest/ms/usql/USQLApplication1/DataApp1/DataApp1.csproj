@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormatDateTime.cs" />
     <Compile Include="FragileClass.cs" />
     <Compile Include="CodeGen\GenerateClass.cs">
       <AutoGen>True</AutoGen>
