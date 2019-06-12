@@ -10,24 +10,15 @@ using Microsoft.ComplexEventProcessing.Linq;
 
 namespace ConsoleApp2
 {
+    //数据Payload
     public class StockQuote
     {
-        /// <summary>
-        /// Unique ID of stock or index
-        /// </summary>
         public string StockID { get; set; }
-
-        /// <summary>
-        /// Field identifier
-        /// </summary>
         public string FieldID { get; set; }
-
-        /// <summary>
-        /// Numerical value
-        /// </summary>
         public double Value { get; set; }
     }
 
+    //输入配置
     public class StockQuoteInputConfig
     {
         public string ID { get; set; }
@@ -37,19 +28,16 @@ namespace ConsoleApp2
         public int Interval { get; set; }
     }
 
+    // 输入适配器，读取输入配置，并读入输入数据(Payload所指类型)
     public class StockQuoteTypedPointInput : TypedPointInputAdapter<StockQuote>
     {
         public readonly static IFormatProvider QuoteFormatProvider = CultureInfo.InvariantCulture.NumberFormat;
         private PointEvent<StockQuote> pendingEvent;
         private StockQuoteInputConfig _config;
-        private SortedList<DateTime, string[]> quotes;
+        private SortedList<DateTime, string[]> quotes; // 读入的数据
         private IEnumerator<KeyValuePair<DateTime, string[]>> quoteEnumerator;
-        private SortedList<string, int> columns;
+        private SortedList<string, int> columns; // 读入csv的列名
 
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        /// <param name="config">Configuration for this adapter</param>
         public StockQuoteTypedPointInput(StockQuoteInputConfig config)
         {
             _config = config;
@@ -182,10 +170,6 @@ namespace ConsoleApp2
             pendingEvent = currEvent;
         }
 
-        /// <summary>
-        /// Debugging function
-        /// </summary>
-        /// <param name="evt"></param>
         private void PrintEvent(PointEvent<StockQuote> evt)
         {
             Console.WriteLine("Input: " + evt.EventKind + " " +
@@ -213,14 +197,11 @@ namespace ConsoleApp2
     {
         public string AdapterStopSignal { get; set; }
     }
+
     public class StockQuoteTypedPointOutput : TypedPointOutputAdapter<StockQuote>
     {
         private EventWaitHandle _adapterStopSignal;
 
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        /// <param name="config">Adapter configuration</param>
         public StockQuoteTypedPointOutput(StockQuoteOutputConfig config)
         {
             if (!string.IsNullOrEmpty(config.AdapterStopSignal))
@@ -308,10 +289,6 @@ namespace ConsoleApp2
             }
         }
 
-        /// <summary>
-        /// Used for debugging purposes
-        /// </summary>
-        /// <param name="evt"></param>
         private void PrintEvent(PointEvent<StockQuote> evt)
         {
             if (evt.EventKind == EventKind.Cti)
