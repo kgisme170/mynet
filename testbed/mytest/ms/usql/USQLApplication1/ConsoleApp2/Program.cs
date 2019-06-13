@@ -321,13 +321,35 @@ namespace ConsoleApp2
     }
     class Program
     {
+        private static void RunQuery(CepStream<StockQuote> cepStream, Application application)
+        {
+            // Configure output adapter
+            var outputConfig = new StockQuoteOutputConfig();
+
+            // Create query and bind to the output adapter
+            var query = cepStream.ToQuery(application, Guid.NewGuid().ToString(), "description", typeof(StockQuoteOutputFactory), outputConfig, EventShape.Point, StreamEventOrder.ChainOrdered);
+
+            // Start query
+            query.Start();
+
+            // Wait until query change state
+            DiagnosticView diagnosticView;
+            do
+            {
+                Thread.Sleep(100);
+                diagnosticView = query.Application.Server.GetDiagnosticView(query.Name);
+            } while ((string)diagnosticView[DiagnosticViewProperty.QueryState] == "Running");
+
+            // Stop query
+            query.Stop();
+        }
         static void Main(string[] args)
         {
             using (Server server = Server.Create("MyInstance"))
             {
                 try
                 {
-                    Application myApp = server.CreateApplication("MyApp");
+                    Application application = server.CreateApplication("application");
                     var ericSEKConfig = new StockQuoteInputConfig
                     {
                         ID = "ERIC-SEK",
@@ -336,26 +358,60 @@ namespace ConsoleApp2
                         StartDate = new DateTime(2009, 01, 01),
                         Interval = 0
                     };
-                    var inputstream = CepStream<StockQuote>.Create("inputStream",
+                    var cepStream = CepStream<StockQuote>.Create("cepStream",
                                                                    typeof(StockQuoteInputFactory),
                                                                    ericSEKConfig,
                                                                    EventShape.Point);
 
-                    var filtered = from e in inputstream
+                    var filtered = from e in cepStream
                                    where e.Value > 95
                                    select e;
-
-                    var query = filtered.ToQuery(myApp,
+                    /*
+                    var query = filtered.ToQuery(application,
                                                  "filterQuery",
                                                  "Filter out Values over 95",
                                                  typeof(StockQuoteOutputFactory),
                                                  new StockQuoteOutputConfig(),
                                                  EventShape.Point,
                                                  StreamEventOrder.FullyOrdered);
+                                                 */
+                    RunQuery(filtered, application);
 
-                    query.Start();
-                    Console.ReadLine();
-                    query.Stop();
+                    var avgCepStream = from w in cepStream.Where(e => e.FieldID == "Close")
+                                                 .HoppingWindow(TimeSpan.FromDays(7), TimeSpan.FromDays(1), HoppingWindowOutputPolicy.ClipToWindowEnd)
+                                       select new StockQuote()
+                                       {
+                                           StockID = "ERIC",
+                                           FieldID = "7-day avg",
+                                           Value = w.Avg(e => e.Value)
+                                       };
+
+                    RunQuery(avgCepStream, application);
+
+                    var ericUSDGroupCepStream = from e in cepStream
+                                                group e by e.FieldID into eGroup
+                                                from w in eGroup.HoppingWindow(TimeSpan.FromDays(7), TimeSpan.FromDays(1), HoppingWindowOutputPolicy.ClipToWindowEnd)
+                                                select new StockQuote()
+                                                {
+                                                    StockID = "ERIC 7-day avg",
+                                                    FieldID = eGroup.Key,
+                                                    Value = w.Avg(e => e.Value)
+                                                };
+
+                    RunQuery(ericUSDGroupCepStream, application);
+
+                    var bigLooserCepStream = (from e1 in cepStream
+                                              from e2 in cepStream.ShiftEventTime(e => e.StartTime.AddDays(7))
+                                              where e1.FieldID == "Close" && e2.FieldID == "Close"
+                                              select new StockQuote()
+                                              {
+                                                  StockID = "ERIC > 10% drop",
+                                                  FieldID = "Close",
+                                                  Value = (e1.Value - e2.Value) / e2.Value * 100
+                                              }).Where(e => e.Value < -10);
+
+
+                    RunQuery(bigLooserCepStream, application);
                 }
                 catch (Exception e)
                 {
