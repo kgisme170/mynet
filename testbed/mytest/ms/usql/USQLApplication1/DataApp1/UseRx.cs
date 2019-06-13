@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Reactive.Linq;
 using System.IO;
+using System.Linq;
+using System.Reactive.Linq;
 
 namespace DataApp1
 {
@@ -15,7 +13,7 @@ namespace DataApp1
             IObservable<Int32> input = Observable.Range(1, 15);
             input.Where(i => i % 2 == 0).Subscribe(x => Console.Write("{0} ", x));
             Console.WriteLine();
-
+            
             //使用Array返回Observabale集合
             var myArray = new[] { 1, 3, 5, 7, 9 };
             IObservable<Int32> varmyObservable = myArray.ToObservable();
@@ -39,7 +37,8 @@ namespace DataApp1
                 streamReader => (streamReader.ReadToEnd().Select(str => str)).ToObservable()
                 );
             ObservableStrings.Subscribe(Console.Write);
-            Console.WriteLine();
+            Console.WriteLine("-----------------");
+
             //在Rx中Zip是将两个Observable对象合并为一个新的Observable对象。
             var numberCitys = varmyObservable.Zip(input, (range, array) => range + ":" + array);
             numberCitys.Subscribe(Console.WriteLine);
