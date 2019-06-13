@@ -7,6 +7,7 @@
 
 <# var properties = new string [] {"P1", "P2", "P3"}; #>
 // This is generated code:
+#pragma warning disable CS0401 
 class MyGeneratedClass {
 <# // This code runs in the text template:
   foreach (string propertyName in properties)  { #>

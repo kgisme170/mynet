@@ -28,6 +28,12 @@ namespace DataApp1
             string WithinDateString =
                 String.Format("date={0:yyyy-MM-dd}&hour={1}...{2}&sparsestreamset=true", EndDateUTC, 0, 23);
             Console.WriteLine(WithinDateString);
+
+            DateTimeOffset dateOffset1 = DateTimeOffset.Now;
+            DateTimeOffset dateOffset2 = DateTimeOffset.UtcNow;
+            TimeSpan difference = dateOffset1 - dateOffset2;
+            Console.WriteLine("{0} - {1} = {2}",
+                              dateOffset1, dateOffset2, difference);
         }
     }
 }
