@@ -61,6 +61,8 @@
     <Compile Include="InputConfig.cs" />
     <Compile Include="Payload.cs" />
     <Compile Include="PayloadInputFactory.cs" />
+    <Compile Include="PayloadOutputConfig.cs" />
+    <Compile Include="PayloadOutputFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

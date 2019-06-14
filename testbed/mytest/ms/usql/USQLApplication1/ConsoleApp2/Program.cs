@@ -213,11 +213,6 @@ namespace ConsoleApp2
         }
     }
 
-    public class PayloadOutputConfig
-    {
-        public string AdapterStopSignal { get; set; }
-    }
-
     public class PayloadTypedPointOutput : TypedPointOutputAdapter<Payload>
     {
         private EventWaitHandle _adapterStopSignal;
@@ -324,21 +319,6 @@ namespace ConsoleApp2
         }
     }
 
-    public class PayloadOutputFactory : ITypedOutputAdapterFactory<PayloadOutputConfig>
-    {
-        public OutputAdapterBase Create<TPayload>(PayloadOutputConfig config, EventShape eventShape)
-        {
-            // Only support the point event model
-            if (eventShape == EventShape.Point)
-                return new PayloadTypedPointOutput(config);
-            else
-                return default(OutputAdapterBase);
-        }
-
-        public void Dispose()
-        {
-        }
-    }
     class Program
     {
         private static void RunQuery(CepStream<Payload> cepStream, Application application)
