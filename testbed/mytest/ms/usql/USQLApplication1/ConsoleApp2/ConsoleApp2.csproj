@@ -58,13 +58,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InputAdapterFromFile.cs" />
     <Compile Include="InputConfig.cs" />
+    <Compile Include="OutputAdapter.cs" />
     <Compile Include="Payload.cs" />
     <Compile Include="PayloadInputFactory.cs" />
     <Compile Include="PayloadOutputConfig.cs" />
     <Compile Include="PayloadOutputFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StandardDeviation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

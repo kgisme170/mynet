@@ -9,7 +9,7 @@ namespace ConsoleApp2
         {
             // Only support the point event model
             if (eventShape == EventShape.Point)
-                return new PayloadTypedPointOutput(config);
+                return new OutputAdapter(config);
             else
                 return default(OutputAdapterBase);
         }
