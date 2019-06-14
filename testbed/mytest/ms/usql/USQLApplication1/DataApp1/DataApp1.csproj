@@ -81,6 +81,7 @@
     <Compile Include="UseAttribute.cs" />
     <Compile Include="UseEnumerator.cs" />
     <Compile Include="UseLinq.cs" />
+    <Compile Include="UseObservable.cs" />
     <Compile Include="UseObserver.cs" />
     <Compile Include="UseRx.cs" />
     <Compile Include="UseWeakReference.cs" />
