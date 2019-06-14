@@ -20,13 +20,12 @@ namespace DataApp1
                 Console.Write(i);
             }
             Console.WriteLine("\n----ToObservable----");
-            var bufOb = buf.ToObservable<int>();
-            bufOb.Subscribe(Console.Write);
+            buf.ToObservable().Subscribe(Console.Write);
             Console.WriteLine("\n----Select int to boolean----");
-            bufOb.Select(x=>x>=3).Subscribe(Console.Write);
+            buf.ToObservable().Select(x => x >= 3).Subscribe(Console.Write);
 
             Console.WriteLine("\n----Filter numbers----");
-            bufOb.Where(x => x >= 3).Subscribe(Console.Write);
+            buf.ToObservable().Where(x => x >= 3).Subscribe(Console.Write);
         }
     }
 }
