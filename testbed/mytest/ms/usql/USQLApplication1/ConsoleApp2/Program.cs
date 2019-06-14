@@ -1,15 +1,68 @@
-﻿using System;
+﻿using Microsoft.ComplexEventProcessing;
+using Microsoft.ComplexEventProcessing.Adapters;
+using Microsoft.ComplexEventProcessing.Extensibility;
+using Microsoft.ComplexEventProcessing.Linq;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Threading;
-using System.IO;
-using System.Globalization;
-using Microsoft.ComplexEventProcessing;
-using Microsoft.ComplexEventProcessing.Adapters;
-using Microsoft.ComplexEventProcessing.Linq;
 
 namespace ConsoleApp2
 {
+    public class StandardDeviationUDA : CepAggregate<StockQuote, double>
+    {
+        /// <summary>
+        /// Calculation.
+        /// </summary>
+        /// <param name="stockQuotes">Payloads</param>
+        /// <returns></returns>
+        public override double GenerateOutput(IEnumerable<StockQuote> stockQuotes)
+        {
+            // Calculate mean and count
+            var sum = 0.0;
+            var count = 0;
+            foreach (var q in stockQuotes)
+            {
+                sum += q.Value;
+                count++;
+            }
+            var mean = sum / count;
+
+            // Add deviation squares
+            sum = 0.0;
+            foreach (var q in stockQuotes)
+            {
+                sum += (q.Value - mean) * (q.Value - mean);
+            }
+
+            // Calculate standard deviation
+            var stddev = Math.Sqrt(sum / count);
+
+            return stddev;
+        }
+    }
+
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Calculates the Standard Deviation
+        /// </summary>
+        /// <param name="window"></param>
+        /// <returns></returns>
+        [CepUserDefinedAggregate(typeof(StandardDeviationUDA))]
+        public static double StandardDeviation(this CepWindow<StockQuote> window)
+        {
+            // This method is actually never executed. Instead StreamInsight 
+            // invokes the StandardDeviationUDA class.
+
+            // Throw an error if method is executed.
+            throw CepUtility.DoNotCall();
+        }
+    }
+
     //数据Payload
     public class StockQuote
     {
@@ -343,8 +396,11 @@ namespace ConsoleApp2
             // Stop query
             query.Stop();
         }
+
         static void Main(string[] args)
         {
+            // Create a tracer to output information on the console.
+            TraceListener tracer = new ConsoleTraceListener();
             using (Server server = Server.Create("MyInstance"))
             {
                 try
@@ -358,6 +414,8 @@ namespace ConsoleApp2
                         StartDate = new DateTime(2009, 01, 01),
                         Interval = 0
                     };
+
+                    // Implicit 方式
                     var cepStream = CepStream<StockQuote>.Create("cepStream",
                                                                    typeof(StockQuoteInputFactory),
                                                                    ericSEKConfig,
@@ -412,6 +470,41 @@ namespace ConsoleApp2
 
 
                     RunQuery(bigLooserCepStream, application);
+
+                    // Explicit 方式
+                    var input = CepStream<StockQuote>.Create("input");
+                    var stddevCepStream = from w in input.Where(e => e.FieldID == "Close")
+                                                                     .HoppingWindow(TimeSpan.FromDays(7), TimeSpan.FromDays(1), HoppingWindowOutputPolicy.ClipToWindowEnd)
+                                          select new StockQuote()
+                                          {
+                                              StockID = "ERIC",
+                                              FieldID = "7-day Stddev",
+                                              Value = w.StandardDeviation()
+                                          };
+                    var queryTemplate = application.CreateQueryTemplate("standardDeviationExampleTemplate", "Description...", stddevCepStream);
+
+                    var queryBinder = new QueryBinder(queryTemplate);
+                    var inputAdapter = application.CreateInputAdapter<StockQuoteInputFactory>("StockQuoteInput", "Description...");
+                    var outputAdapter = application.CreateOutputAdapter<StockQuoteOutputFactory>("StockQuoteOutput", "Description...");
+                    queryBinder.BindProducer<StockQuote>("input", inputAdapter, ericSEKConfig, EventShape.Point);
+                    queryBinder.AddConsumer<StockQuote>("output", outputAdapter, new StockQuoteOutputConfig(), EventShape.Point, StreamEventOrder.ChainOrdered);
+
+                    var query = application.CreateQuery("standardDeviationExampleQuery", "Description...", queryBinder);
+                    query.Start();
+
+                    // Wait until output adapter signals that it is finished
+                    DiagnosticView diagnosticView;
+                    do
+                    {
+                        Thread.Sleep(100);
+                        diagnosticView = query.Application.Server.GetDiagnosticView(query.Name);
+                    } while ((string)diagnosticView["QueryState"] == "Running");
+
+                    // Stop
+                    query.Stop();
+                    // Release resources
+                    application.Delete();
+                    server.Dispose();
                 }
                 catch (Exception e)
                 {
