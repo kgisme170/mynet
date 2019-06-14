@@ -12,19 +12,19 @@ using System.Threading;
 
 namespace ConsoleApp2
 {
-    public class StandardDeviationUDA : CepAggregate<StockQuote, double>
+    public class StandardDeviationUDA : CepAggregate<Payload, double>
     {
         /// <summary>
         /// Calculation.
         /// </summary>
-        /// <param name="stockQuotes">Payloads</param>
+        /// <param name="Payloads">Payloads</param>
         /// <returns></returns>
-        public override double GenerateOutput(IEnumerable<StockQuote> stockQuotes)
+        public override double GenerateOutput(IEnumerable<Payload> Payloads)
         {
             // Calculate mean and count
             var sum = 0.0;
             var count = 0;
-            foreach (var q in stockQuotes)
+            foreach (var q in Payloads)
             {
                 sum += q.Value;
                 count++;
@@ -33,7 +33,7 @@ namespace ConsoleApp2
 
             // Add deviation squares
             sum = 0.0;
-            foreach (var q in stockQuotes)
+            foreach (var q in Payloads)
             {
                 sum += (q.Value - mean) * (q.Value - mean);
             }
@@ -53,7 +53,7 @@ namespace ConsoleApp2
         /// <param name="window"></param>
         /// <returns></returns>
         [CepUserDefinedAggregate(typeof(StandardDeviationUDA))]
-        public static double StandardDeviation(this CepWindow<StockQuote> window)
+        public static double StandardDeviation(this CepWindow<Payload> window)
         {
             // This method is actually never executed. Instead StreamInsight 
             // invokes the StandardDeviationUDA class.
@@ -63,35 +63,17 @@ namespace ConsoleApp2
         }
     }
 
-    //数据Payload
-    public class StockQuote
-    {
-        public string StockID { get; set; }
-        public string FieldID { get; set; }
-        public double Value { get; set; }
-    }
-
-    //输入配置
-    public class StockQuoteInputConfig
-    {
-        public string ID { get; set; }
-        public string Filename { get; set; }
-        public string[] ColumnNames { get; set; }
-        public DateTime StartDate { get; set; }
-        public int Interval { get; set; }
-    }
-
     // 输入适配器，读取输入配置，并读入输入数据(Payload所指类型)
-    public class StockQuoteTypedPointInput : TypedPointInputAdapter<StockQuote>
+    public class InputAdapter : TypedPointInputAdapter<Payload>
     {
         public readonly static IFormatProvider QuoteFormatProvider = CultureInfo.InvariantCulture.NumberFormat;
-        private PointEvent<StockQuote> pendingEvent;
-        private StockQuoteInputConfig _config;
+        private PointEvent<Payload> pendingEvent; // 当前的event，用于处理重启任务的记录
+        private InputConfig _config;
         private SortedList<DateTime, string[]> quotes; // 读入的数据
-        private IEnumerator<KeyValuePair<DateTime, string[]>> quoteEnumerator;
+        private IEnumerator<KeyValuePair<DateTime, string[]>> quoteEnumerator; // IEnumerator是有状态的
         private SortedList<string, int> columns; // 读入csv的列名
 
-        public StockQuoteTypedPointInput(StockQuoteInputConfig config)
+        public InputAdapter(InputConfig config)
         {
             _config = config;
 
@@ -135,7 +117,7 @@ namespace ConsoleApp2
         /// </summary>
         private void ProduceEvents()
         {
-            var currEvent = default(PointEvent<StockQuote>);
+            var currEvent = default(PointEvent<Payload>);
 
             EnqueueCtiEvent(new DateTimeOffset(_config.StartDate, TimeSpan.Zero));
             try
@@ -165,7 +147,7 @@ namespace ConsoleApp2
                                     // Produce INSERT event
                                     currEvent = CreateInsertEvent();
                                     currEvent.StartTime = date;
-                                    currEvent.Payload = new StockQuote
+                                    currEvent.Payload = new Payload
                                     {
                                         StockID = _config.ID,
                                         FieldID = columnName,
@@ -208,7 +190,7 @@ namespace ConsoleApp2
             }
         }
 
-        private void PrepareToStop(PointEvent<StockQuote> currEvent)
+        private void PrepareToStop(PointEvent<Payload> currEvent)
         {
             //EnqueueCtiEvent(DateTime.Now);
             if (currEvent != null)
@@ -218,25 +200,25 @@ namespace ConsoleApp2
             }
         }
 
-        private void PrepareToResume(PointEvent<StockQuote> currEvent)
+        private void PrepareToResume(PointEvent<Payload> currEvent)
         {
             pendingEvent = currEvent;
         }
 
-        private void PrintEvent(PointEvent<StockQuote> evt)
+        private void PrintEvent(PointEvent<Payload> evt)
         {
             Console.WriteLine("Input: " + evt.EventKind + " " +
                 evt.StartTime + " " + evt.Payload.StockID + " " +
                 evt.Payload.FieldID + " " + evt.Payload.Value);
         }
     }
-    public class StockQuoteInputFactory : ITypedInputAdapterFactory<StockQuoteInputConfig>
+    public class PayloadInputFactory : ITypedInputAdapterFactory<InputConfig>
     {
-        public InputAdapterBase Create<TPayload>(StockQuoteInputConfig config, EventShape eventShape)
+        public InputAdapterBase Create<TPayload>(InputConfig config, EventShape eventShape)
         {
             // Only support the point event model
             if (eventShape == EventShape.Point)
-                return new StockQuoteTypedPointInput(config);
+                return new InputAdapter(config);
             else
                 return default(InputAdapterBase);
         }
@@ -246,16 +228,16 @@ namespace ConsoleApp2
         }
     }
 
-    public class StockQuoteOutputConfig
+    public class PayloadOutputConfig
     {
         public string AdapterStopSignal { get; set; }
     }
 
-    public class StockQuoteTypedPointOutput : TypedPointOutputAdapter<StockQuote>
+    public class PayloadTypedPointOutput : TypedPointOutputAdapter<Payload>
     {
         private EventWaitHandle _adapterStopSignal;
 
-        public StockQuoteTypedPointOutput(StockQuoteOutputConfig config)
+        public PayloadTypedPointOutput(PayloadOutputConfig config)
         {
             if (!string.IsNullOrEmpty(config.AdapterStopSignal))
                 _adapterStopSignal = EventWaitHandle.OpenExisting(config.AdapterStopSignal);
@@ -283,7 +265,7 @@ namespace ConsoleApp2
         /// </summary>
         private void ConsumeEvents()
         {
-            PointEvent<StockQuote> currEvent;
+            PointEvent<Payload> currEvent;
             DequeueOperationResult result;
 
             try
@@ -334,7 +316,7 @@ namespace ConsoleApp2
         {
         }
 
-        private void PrepareToStop(PointEvent<StockQuote> currEvent, DequeueOperationResult result)
+        private void PrepareToStop(PointEvent<Payload> currEvent, DequeueOperationResult result)
         {
             if (result == DequeueOperationResult.Success)
             {
@@ -342,7 +324,7 @@ namespace ConsoleApp2
             }
         }
 
-        private void PrintEvent(PointEvent<StockQuote> evt)
+        private void PrintEvent(PointEvent<Payload> evt)
         {
             if (evt.EventKind == EventKind.Cti)
             {
@@ -357,13 +339,13 @@ namespace ConsoleApp2
         }
     }
 
-    public class StockQuoteOutputFactory : ITypedOutputAdapterFactory<StockQuoteOutputConfig>
+    public class PayloadOutputFactory : ITypedOutputAdapterFactory<PayloadOutputConfig>
     {
-        public OutputAdapterBase Create<TPayload>(StockQuoteOutputConfig config, EventShape eventShape)
+        public OutputAdapterBase Create<TPayload>(PayloadOutputConfig config, EventShape eventShape)
         {
             // Only support the point event model
             if (eventShape == EventShape.Point)
-                return new StockQuoteTypedPointOutput(config);
+                return new PayloadTypedPointOutput(config);
             else
                 return default(OutputAdapterBase);
         }
@@ -374,13 +356,13 @@ namespace ConsoleApp2
     }
     class Program
     {
-        private static void RunQuery(CepStream<StockQuote> cepStream, Application application)
+        private static void RunQuery(CepStream<Payload> cepStream, Application application)
         {
             // Configure output adapter
-            var outputConfig = new StockQuoteOutputConfig();
+            var outputConfig = new PayloadOutputConfig();
 
             // Create query and bind to the output adapter
-            var query = cepStream.ToQuery(application, Guid.NewGuid().ToString(), "description", typeof(StockQuoteOutputFactory), outputConfig, EventShape.Point, StreamEventOrder.ChainOrdered);
+            var query = cepStream.ToQuery(application, Guid.NewGuid().ToString(), "description", typeof(PayloadOutputFactory), outputConfig, EventShape.Point, StreamEventOrder.ChainOrdered);
 
             // Start query
             query.Start();
@@ -406,7 +388,7 @@ namespace ConsoleApp2
                 try
                 {
                     Application application = server.CreateApplication("application");
-                    var ericSEKConfig = new StockQuoteInputConfig
+                    var ericSEKConfig = new InputConfig
                     {
                         ID = "ERIC-SEK",
                         Filename = "eric_b_sek_2009.csv",
@@ -416,8 +398,8 @@ namespace ConsoleApp2
                     };
 
                     // Implicit 方式
-                    var cepStream = CepStream<StockQuote>.Create("cepStream",
-                                                                   typeof(StockQuoteInputFactory),
+                    var cepStream = CepStream<Payload>.Create("cepStream",
+                                                                   typeof(PayloadInputFactory),
                                                                    ericSEKConfig,
                                                                    EventShape.Point);
 
@@ -428,8 +410,8 @@ namespace ConsoleApp2
                     var query = filtered.ToQuery(application,
                                                  "filterQuery",
                                                  "Filter out Values over 95",
-                                                 typeof(StockQuoteOutputFactory),
-                                                 new StockQuoteOutputConfig(),
+                                                 typeof(PayloadOutputFactory),
+                                                 new PayloadOutputConfig(),
                                                  EventShape.Point,
                                                  StreamEventOrder.FullyOrdered);
                                                  */
@@ -437,7 +419,7 @@ namespace ConsoleApp2
 
                     var avgCepStream = from w in cepStream.Where(e => e.FieldID == "Close")
                                                  .HoppingWindow(TimeSpan.FromDays(7), TimeSpan.FromDays(1), HoppingWindowOutputPolicy.ClipToWindowEnd)
-                                       select new StockQuote()
+                                       select new Payload()
                                        {
                                            StockID = "ERIC",
                                            FieldID = "7-day avg",
@@ -449,7 +431,7 @@ namespace ConsoleApp2
                     var ericUSDGroupCepStream = from e in cepStream
                                                 group e by e.FieldID into eGroup
                                                 from w in eGroup.HoppingWindow(TimeSpan.FromDays(7), TimeSpan.FromDays(1), HoppingWindowOutputPolicy.ClipToWindowEnd)
-                                                select new StockQuote()
+                                                select new Payload()
                                                 {
                                                     StockID = "ERIC 7-day avg",
                                                     FieldID = eGroup.Key,
@@ -461,7 +443,7 @@ namespace ConsoleApp2
                     var bigLooserCepStream = (from e1 in cepStream
                                               from e2 in cepStream.ShiftEventTime(e => e.StartTime.AddDays(7))
                                               where e1.FieldID == "Close" && e2.FieldID == "Close"
-                                              select new StockQuote()
+                                              select new Payload()
                                               {
                                                   StockID = "ERIC > 10% drop",
                                                   FieldID = "Close",
@@ -472,10 +454,10 @@ namespace ConsoleApp2
                     RunQuery(bigLooserCepStream, application);
 
                     // Explicit 方式
-                    var input = CepStream<StockQuote>.Create("input");
+                    var input = CepStream<Payload>.Create("input");
                     var stddevCepStream = from w in input.Where(e => e.FieldID == "Close")
                                                                      .HoppingWindow(TimeSpan.FromDays(7), TimeSpan.FromDays(1), HoppingWindowOutputPolicy.ClipToWindowEnd)
-                                          select new StockQuote()
+                                          select new Payload()
                                           {
                                               StockID = "ERIC",
                                               FieldID = "7-day Stddev",
@@ -484,10 +466,10 @@ namespace ConsoleApp2
                     var queryTemplate = application.CreateQueryTemplate("standardDeviationExampleTemplate", "Description...", stddevCepStream);
 
                     var queryBinder = new QueryBinder(queryTemplate);
-                    var inputAdapter = application.CreateInputAdapter<StockQuoteInputFactory>("StockQuoteInput", "Description...");
-                    var outputAdapter = application.CreateOutputAdapter<StockQuoteOutputFactory>("StockQuoteOutput", "Description...");
-                    queryBinder.BindProducer<StockQuote>("input", inputAdapter, ericSEKConfig, EventShape.Point);
-                    queryBinder.AddConsumer<StockQuote>("output", outputAdapter, new StockQuoteOutputConfig(), EventShape.Point, StreamEventOrder.ChainOrdered);
+                    var inputAdapter = application.CreateInputAdapter<PayloadInputFactory>("PayloadInput", "Description...");
+                    var outputAdapter = application.CreateOutputAdapter<PayloadOutputFactory>("PayloadOutput", "Description...");
+                    queryBinder.BindProducer<Payload>("input", inputAdapter, ericSEKConfig, EventShape.Point);
+                    queryBinder.AddConsumer<Payload>("output", outputAdapter, new PayloadOutputConfig(), EventShape.Point, StreamEventOrder.ChainOrdered);
 
                     var query = application.CreateQuery("standardDeviationExampleQuery", "Description...", queryBinder);
                     query.Start();

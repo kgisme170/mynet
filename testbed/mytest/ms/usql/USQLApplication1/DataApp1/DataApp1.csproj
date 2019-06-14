@@ -79,6 +79,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UseAppDomain.cs" />
     <Compile Include="UseAttribute.cs" />
+    <Compile Include="UseEnumerator.cs" />
     <Compile Include="UseLinq.cs" />
     <Compile Include="UseObserver.cs" />
     <Compile Include="UseRx.cs" />

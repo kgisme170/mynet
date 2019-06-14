@@ -10,7 +10,7 @@ namespace DataApp1
     {
         static void Main(string[] args)
         {
-            UseRx.Test();
+            UseEnumerator.Test();
         }
     }
 }
