@@ -9,10 +9,10 @@ namespace ConsoleApp2
 {
     class Program
     {
+        readonly private static PayloadOutputConfig outputConfig = new PayloadOutputConfig();
         private static void RunQuery(CepStream<Payload> cepStream, Application application)
         {
             // Configure output adapter
-            var outputConfig = new PayloadOutputConfig();
 
             // Create query and bind to the output adapter
             var query = cepStream.ToQuery(application, Guid.NewGuid().ToString(), "description", typeof(PayloadOutputFactory), outputConfig, EventShape.Point, StreamEventOrder.ChainOrdered);
@@ -122,7 +122,7 @@ namespace ConsoleApp2
                     var InputAdapterFromFile = application.CreateInputAdapter<PayloadInputFactory>("PayloadInput", "Description...");
                     var outputAdapter = application.CreateOutputAdapter<PayloadOutputFactory>("PayloadOutput", "Description...");
                     queryBinder.BindProducer<Payload>("input", InputAdapterFromFile, ericSEKConfig, EventShape.Point);
-                    queryBinder.AddConsumer<Payload>("output", outputAdapter, new PayloadOutputConfig(), EventShape.Point, StreamEventOrder.ChainOrdered);
+                    queryBinder.AddConsumer<Payload>("output", outputAdapter, outputConfig, EventShape.Point, StreamEventOrder.ChainOrdered);
 
                     var query = application.CreateQuery("standardDeviationExampleQuery", "Description...", queryBinder);
                     query.Start();
