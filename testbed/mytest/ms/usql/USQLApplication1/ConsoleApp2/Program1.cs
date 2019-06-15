@@ -209,36 +209,30 @@ namespace ConsoleApp2
 
     partial class Program
     {
-        public static void Test1()
+        static Server server = Server.Create("MyInstance");
+        static Application application = server.CreateApplication("Myapp");
+        static InConfig inConfig = new InConfig()
         {
-            Server server = Server.Create("MyInstance");
-            Application application = server.CreateApplication("Myapp");
+            TollName = "Toll1",
+        };
+        static OutConfig outConfig = new OutConfig()
+        {
+            OutConfigName = "outConfig1"
+        };
 
-            var InConfig = new InConfig()
-            {
-                TollName = "Toll1",
-            };
-
-            var input1 = CepStream<MediationData>.Create("input1");
-            var outConfig = new OutConfig()
-            {
-                OutConfigName = "outConfig1"
-            };
-
-            var filter = from e in input1
-                         where e.Number > 3
-                         select e;
+        public static void RunCepStream(CepStream<MediationData> cepStream)
+        {
             var binder = new QueryBinder(application.CreateQueryTemplate(
                 "template1",
                 "description1",
-                filter));
+                cepStream));
             var inputAdapter = application.CreateInputAdapter<InputFactory>("nameIn", "descIn");
             var outputAdapter = application.CreateOutputAdapter<OutputFactory>("nameOut", "descOut");
 
             binder.BindProducer<MediationData>(
                 "input1",
                 inputAdapter,
-                InConfig,
+                inConfig,
                 EventShape.Point);
             binder.AddConsumer<MediationData>(
                 "output1",
@@ -257,7 +251,16 @@ namespace ConsoleApp2
             } while ((string)diagnosticView["QueryState"] == "Running");
 
             query.Stop();
+            query.Delete();
+        }
 
+        public static void Test1()
+        {
+            var input1 = CepStream<MediationData>.Create("input1");
+            var filter = from e in input1
+                         where e.Number > 3
+                         select e;
+            RunCepStream(filter);
             application.Delete();
             server.Dispose();
         }
