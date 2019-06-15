@@ -275,29 +275,31 @@ namespace ConsoleApp2
         {
             var cepStream = CepStream<MediationData>.Create("cepStream1");
 
-            /*
+            Console.WriteLine("\n-----------------------------Filter e.Number > 3\n");
             var filter = from e in cepStream
                          where e.Number > 3
                          select e;
             RunCepStream(filter);
-            */
-            /*
+
+            Console.WriteLine("\n-----------------------------Get average for HoppingWindow(3,1)\n");
             var avgCepStream = from w in cepStream.Where(e=>true).HoppingWindow(TimeSpan.FromMinutes(3), TimeSpan.FromMinutes(1), HoppingWindowOutputPolicy.ClipToWindowEnd)
                                select new MediationData()
                                {
+                                   Direction = "Average",
                                    Number = w.Avg(e => e.Number)
                                };
             RunCepStream(avgCepStream);
-            */
-            /*
+
+            Console.WriteLine("\n-----------------------------Sum of TumblingWindow(3)\n");
             var count = from win in cepStream.TumblingWindow(TimeSpan.FromMinutes(3))
                         select new MediationData()
                         {
+                            Direction = "Average",
                             Number = win.Sum(e => e.Number)
                         };
             RunCepStream(count);
-            */
 
+            Console.WriteLine("\n-----------------------------Group e.Direction With HoppingWindow(3,3)\n");
             var groupCepStream = from e in cepStream
                                  group e by e.Direction into eGroup
                                  from w in eGroup.HoppingWindow(TimeSpan.FromMinutes(3), TimeSpan.FromMinutes(3), HoppingWindowOutputPolicy.ClipToWindowEnd)
