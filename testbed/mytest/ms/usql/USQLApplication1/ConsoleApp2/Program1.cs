@@ -55,21 +55,27 @@ namespace ConsoleApp2
             {
                 GetTollData(2),
                 GetTollData(4),
+
                 GetTollData(6),
                 GetTollData(8),
                 GetTollData(10),
+
                 GetTollData(12),
                 GetTollData(18),
                 GetTollData(0),
+
                 GetTollData(0),
                 GetTollData(3),
                 GetTollData(3),
+
                 GetTollData(3),
                 GetTollData(6),
                 GetTollData(9),
+
                 GetTollData(0),
                 GetTollData(0),
                 GetTollData(0),
+
                 GetTollData(15),
                 GetTollData(9),
             }.GetEnumerator();
@@ -266,14 +272,21 @@ namespace ConsoleApp2
                          select e;
             RunCepStream(filter);
             */
-
+            /*
             var avgCepStream = from w in cepStream.Where(e=>true).HoppingWindow(TimeSpan.FromMinutes(3), TimeSpan.FromMinutes(1), HoppingWindowOutputPolicy.ClipToWindowEnd)
                                select new MediationData()
                                {
                                    Number = w.Avg(e => e.Number)
                                };
             RunCepStream(avgCepStream);
-            application.Delete();
+            */
+
+            var count = from win in cepStream.TumblingWindow(TimeSpan.FromMinutes(3))
+                        select new MediationData()
+                        {
+                            Number = win.Sum(e => e.Number)
+                        };
+            RunCepStream(count);
             server.Dispose();
         }
     }
