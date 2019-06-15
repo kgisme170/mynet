@@ -141,22 +141,37 @@ namespace ConsoleApp2
 
             while (AdapterState != AdapterState.Stopping)
             {
-                Console.WriteLine("->->Enter output while");
+                //Console.WriteLine("->->Enter output while");
                 var result = Dequeue(out PointEvent<MediationData> d);
-                Console.WriteLine("->->After deque");
+                //Console.WriteLine("->->After deque");
                 if (result == DequeueOperationResult.Empty)
                 {
-                    Console.WriteLine("->->empty");
-                    Ready(); // 进入下一次循环
+                    //Console.WriteLine("->->empty");
+                    PrepareToResume();
+                    Ready(); // 进入下一次 query.Start 通知循环
                     return;
                 }
                 if(d.EventKind == EventKind.Insert)
                 {
                     Console.WriteLine("->->[" + d.StartTime + "]" + d.Payload.Number);
                 }
+                ReleaseEvent(ref d);
             }
+            var ret = Dequeue(out PointEvent<MediationData> currEvent);
+            PrepareToStop(currEvent, ret);
             Stopped();
             Console.WriteLine("->End output adapter consume event");
+        }
+        private void PrepareToResume()
+        {
+        }
+
+        private void PrepareToStop(PointEvent<MediationData> currEvent, DequeueOperationResult result)
+        {
+            if (result == DequeueOperationResult.Success)
+            {
+                ReleaseEvent(ref currEvent);
+            }
         }
 
         // implement
@@ -208,7 +223,7 @@ namespace ConsoleApp2
             var binder = new QueryBinder(application.CreateQueryTemplate(
                 "template1",
                 "description1",
-                input1));
+                filter));
             var inputAdapter = application.CreateInputAdapter<InputFactory>("nameIn", "descIn");
             var outputAdapter = application.CreateOutputAdapter<OutputFactory>("nameOut", "descOut");
 
