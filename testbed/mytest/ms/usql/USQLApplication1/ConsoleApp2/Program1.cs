@@ -47,6 +47,7 @@ namespace ConsoleApp2
         readonly InConfig config;
         int currentMinute = 1;
         IEnumerator<TollData> data;
+        TimeSpan offset = TimeZoneInfo.Local.GetUtcOffset(DateTime.UtcNow);
         TollData GetTollData(int n, string g)
         {
             return new TollData
@@ -97,7 +98,7 @@ namespace ConsoleApp2
 
         private void ProduceEvents()
         {
-            var dateTimeOffset = new DateTimeOffset(new DateTime(2019, 06, 01), TimeSpan.FromHours(8));
+            var dateTimeOffset = new DateTimeOffset(new DateTime(2019, 06, 01), offset);
             EnqueueCtiEvent(dateTimeOffset); // 把这个dateTimeOffset 当成是UTC时间
             Console.WriteLine("Begin input adapter process event");
 
@@ -109,14 +110,14 @@ namespace ConsoleApp2
                     e = CreateInsertEvent();
                     TollData d = data.Current;
                     var date = d.Timestamp;
-                    e.StartTime = new DateTimeOffset(d.Timestamp, TimeSpan.FromHours(8)); // e.StartTime 当成是 utc时间 enqueue
+                    e.StartTime = new DateTimeOffset(d.Timestamp, offset); // e.StartTime 当成是 utc时间 enqueue
                     e.Payload = new MediationData
                     {
                         Direction = d.Direction,
                         Number = d.Number
                     };
                     Enqueue(ref e);
-                    var date2 = new DateTimeOffset(date, TimeSpan.FromHours(8));
+                    var date2 = new DateTimeOffset(date, offset);
                     EnqueueCtiEvent(date2);
                     Console.WriteLine("Data:" + d + " is enqueued");
                 }
