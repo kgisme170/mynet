@@ -12,12 +12,16 @@ namespace ConsoleApp2
     {
         public DateTime Timestamp { get; set; }
         public int Number { get; set; }
+
+        public override string ToString()
+        {
+            return "TollData: Timestamp = " + Timestamp + ", Number = " + Number;
+        }
     }
 
-    public class TollConfig
+    public class InConfig
     {
         public string TollName { get; set; }
-        public IEnumerator<TollData> TollData { get; set; }
     }
 
     public class OutConfig
@@ -32,102 +36,11 @@ namespace ConsoleApp2
 
     public class InAdapter : TypedPointInputAdapter<MediationData>
     {
-        readonly TollConfig config;
-        public InAdapter(TollConfig config)
-        {
-            this.config = config;
-        }
-
-        private void ProduceEvents()
-        {
-            EnqueueCtiEvent(new DateTimeOffset(DateTime.Now, TimeSpan.Zero));
-            var data = config.TollData;
-
-            while (data.MoveNext())
-            {
-                var e = CreateInsertEvent();
-                TollData d = data.Current;
-                e.StartTime = d.Timestamp;
-                e.Payload = new MediationData
-                {
-                    Number = d.Number
-                };
-                Enqueue(ref e);
-            }
-        }
-
-        // override
-        public override void Resume()
-        {
-            ProduceEvents();
-        }
-
-        public override void Start()
-        {
-            ProduceEvents();
-        }
-    }
-
-    class InputFactory : ITypedInputAdapterFactory<TollConfig>
-    {
-        public InputAdapterBase Create<TPayload>(TollConfig configInfo, EventShape eventShape)
-        {
-            return new InAdapter(configInfo);
-        }
-
-        public void Dispose()
-        {
-            Console.WriteLine("InputFactory dispose()");
-        }
-    }
-    public class OutAdapter : TypedPointOutputAdapter<MediationData>
-    {
-        private void ConsumeEvents()
-        {
-            while (true)
-            {
-                var result = Dequeue(out PointEvent<MediationData> d);
-                if(result == DequeueOperationResult.Empty)
-                {
-                    return;
-                }
-                if(d.EventKind == EventKind.Insert)
-                {
-                    Console.WriteLine("[" + d.StartTime + "]" + d.Payload.Number);
-                }
-            }
-        }
-
-        // implement
-        public override void Resume()
-        {
-            ConsumeEvents();
-        }
-
-        public override void Start()
-        {
-            ConsumeEvents();
-        }
-    }
-
-    public class OutputFactory : ITypedOutputAdapterFactory<TollConfig>
-    {
-        public OutputAdapterBase Create<TPayload>(TollConfig configInfo, EventShape eventShape)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Dispose()
-        {
-            Console.WriteLine("OutputFactory dispose()");
-        }
-    }
-
-    partial class Program
-    {
-        static DateTime now = DateTime.Now;
-        static int currentMinute = 1;
-        public static TollData GetTollData(int n)
+        readonly DateTime now = DateTime.Now;
+        readonly InConfig config;
+        int currentMinute = 1;
+        IEnumerator<TollData> data;
+        TollData GetTollData(int n)
         {
             return new TollData
             {
@@ -135,7 +48,8 @@ namespace ConsoleApp2
                 Number = n
             };
         }
-        public static IEnumerator<TollData> GetData()
+
+        IEnumerator<TollData> GetData()
         {
             return new List<TollData>()
             {
@@ -160,23 +74,134 @@ namespace ConsoleApp2
                 GetTollData(9),
             }.GetEnumerator();
         }
+
+        public InAdapter(InConfig config)
+        {
+            this.config = config;
+            data = GetData();
+        }
+
+        private void ProduceEvents()
+        {
+            var dateTimeOffset = new DateTimeOffset(new DateTime(2019, 06, 01), TimeSpan.Zero);
+            EnqueueCtiEvent(dateTimeOffset);
+            Console.WriteLine("Begin input adapter process event");
+            DateTime date = DateTime.Now;
+            while (data.MoveNext())
+            {
+                var e = CreateInsertEvent();
+                TollData d = data.Current;
+                date = d.Timestamp;
+                e.StartTime = d.Timestamp;
+                e.Payload = new MediationData
+                {
+                    Number = d.Number
+                };
+                Enqueue(ref e);
+                Console.WriteLine("Data:" + d + " is enqueued");
+            }
+            EnqueueCtiEvent(new DateTimeOffset(new DateTime(2019, 06, 21), TimeSpan.Zero));
+            Stopped();
+            Console.WriteLine("=====End input adapter process event");
+        }
+
+        // override
+        public override void Resume()
+        {
+            ProduceEvents();
+        }
+
+        public override void Start()
+        {
+            ProduceEvents();
+        }
+    }
+
+    class InputFactory : ITypedInputAdapterFactory<InConfig>
+    {
+        public InputAdapterBase Create<TPayload>(InConfig configInfo, EventShape eventShape)
+        {
+            return new InAdapter(configInfo);
+        }
+
+        public void Dispose()
+        {
+            Console.WriteLine("InputFactory dispose()");
+        }
+    }
+    public class OutAdapter : TypedPointOutputAdapter<MediationData>
+    {
+        public OutAdapter(OutConfig config)
+        {
+
+        }
+        private void ConsumeEvents()
+        {
+            Console.WriteLine("->Begin output adapter consume event");
+
+            while (AdapterState != AdapterState.Stopping)
+            {
+                Console.WriteLine("->->Enter output while");
+                var result = Dequeue(out PointEvent<MediationData> d);
+                Console.WriteLine("->->After deque");
+                if (result == DequeueOperationResult.Empty)
+                {
+                    Console.WriteLine("->->empty");
+                    Ready(); // 进入下一次循环
+                    return;
+                }
+                if(d.EventKind == EventKind.Insert)
+                {
+                    Console.WriteLine("->->[" + d.StartTime + "]" + d.Payload.Number);
+                }
+            }
+            Stopped();
+            Console.WriteLine("->End output adapter consume event");
+        }
+
+        // implement
+        public override void Resume()
+        {
+            ConsumeEvents();
+        }
+
+        public override void Start()
+        {
+            ConsumeEvents();
+        }
+    }
+
+    public class OutputFactory : ITypedOutputAdapterFactory<OutConfig>
+    {
+        public OutputAdapterBase Create<TPayload>(OutConfig configInfo, EventShape eventShape)
+        {
+            return new OutAdapter(configInfo);
+        }
+
+        public void Dispose()
+        {
+            Console.WriteLine("OutputFactory dispose()");
+        }
+    }
+
+    partial class Program
+    {
         public static void Test1()
         {
             Server server = Server.Create("MyInstance");
             Application application = server.CreateApplication("Myapp");
 
-            var tollData = GetData();
-            var tollConfig = new TollConfig()
+            var InConfig = new InConfig()
             {
                 TollName = "Toll1",
-                TollData = tollData
             };
 
-            var input1 = CepStream<TollData>.Create("input1");
+            var input1 = CepStream<MediationData>.Create("input1");
             var outConfig = new OutConfig()
             {
                 OutConfigName = "outConfig1"
             };
+
             var filter = from e in input1
                          where e.Number > 3
                          select e;
@@ -184,17 +209,17 @@ namespace ConsoleApp2
                 "template1",
                 "description1",
                 input1));
-            var inputAdaptor = application.CreateInputAdapter<InputFactory>("nameIn", "descIn");
-            var outputAdaptor = application.CreateOutputAdapter<OutputFactory>("nameOut", "descOut");
+            var inputAdapter = application.CreateInputAdapter<InputFactory>("nameIn", "descIn");
+            var outputAdapter = application.CreateOutputAdapter<OutputFactory>("nameOut", "descOut");
 
-            binder.BindProducer<TollData>(
+            binder.BindProducer<MediationData>(
                 "input1",
-                inputAdaptor,
-                tollConfig,
+                inputAdapter,
+                InConfig,
                 EventShape.Point);
-            binder.AddConsumer<TollData>(
+            binder.AddConsumer<MediationData>(
                 "output1",
-                outputAdaptor,
+                outputAdapter,
                 outConfig,
                 EventShape.Point,
                 StreamEventOrder.ChainOrdered);

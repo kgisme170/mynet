@@ -7,7 +7,7 @@ namespace ConsoleApp2
         public static int GetChoice()
         {
             int choice = -1;
-            while(choice != -1)
+            while(choice == -1)
             {
                 try
                 {
@@ -28,6 +28,8 @@ namespace ConsoleApp2
 
         static void Main(string[] args)
         {
+            Test1();
+            /*
             int choice = GetChoice();
             switch (choice)
             {
@@ -41,9 +43,9 @@ namespace ConsoleApp2
                     Test2();
                     break;
                 default:
-                    Console.WriteLine("error");
+                    Console.WriteLine("输入错误");
                     break;
-            }
+            }*/
         }
     }
 }
