@@ -309,6 +309,13 @@ namespace ConsoleApp2
                                      Number = w.Avg(e => e.Number)
                                  };
             RunCepStream(groupCepStream);
+
+            Console.WriteLine("\n-----------------------------ShiftEvent by 7 min\n");
+            var shiftEventCepStream =  from e in cepStream.ShiftEventTime(e => e.StartTime.AddMinutes(7))
+                                      select e;
+            RunCepStream(shiftEventCepStream);
+
+            application.Delete();
             server.Dispose();
         }
     }
