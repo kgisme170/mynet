@@ -1,6 +1,5 @@
-﻿namespace ConsoleApp2_Bond
+﻿namespace ConsoleApp1
 {
-
     public struct Size
     {
         public int Length;// { get; set; }
@@ -21,9 +20,6 @@
                 TableSize = new Size() { Length = 100, Width = 80 },
                 TvSize = new Size() { Length = 10, Width = 8 }
             };
-
-            //r.TableSize.Length = 0; 会有编译错误
-            UseMyData.Test();
         }
     }
 }

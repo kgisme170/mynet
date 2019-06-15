@@ -5,9 +5,17 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace ConsoleApp2_Bond
 {
+    [Serializable]
+    class RawData
+    {
+        public string Name { set; get; }
+        public Int64 Id { set; get; }
+        public byte[] Photo { set; get; }
+    }
+
     class UseMyData
     {
-        public static void Test()
+        public static void Main(string [] args)
         {
             MyData myData = new MyData
             {

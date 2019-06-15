@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace ConsoleApp2_Bond
+namespace ConsoleApp1
 {
     struct MyStruct
     {
@@ -13,13 +13,6 @@ namespace ConsoleApp2_Bond
     {
         public int mJ;
         public MyStruct st;
-    }
-    [Serializable]
-    class RawData
-    {
-        public string Name { set; get; }
-        public Int64 Id { set; get; }
-        public byte[] Photo { set; get; }
     }
 
     class UseStruct

@@ -76,6 +76,8 @@
     <Compile Include="UseDataAnnotations.cs" />
     <Compile Include="UseGeneric.cs" />
     <Compile Include="UseMapper.cs" />
+    <Compile Include="UseStruct.cs" />
+    <Compile Include="UseStructProperty.cs" />
     <Compile Include="UseThreads.cs" />
     <Compile Include="Volatile.cs" />
   </ItemGroup>
