@@ -109,7 +109,7 @@ namespace ConsoleApp2
                     e = CreateInsertEvent();
                     TollData d = data.Current;
                     var date = d.Timestamp;
-                    e.StartTime = d.Timestamp; // e.StartTime 的 utc时间 enqueue
+                    e.StartTime = new DateTimeOffset(d.Timestamp, TimeSpan.FromHours(8)); // e.StartTime 当成是 utc时间 enqueue
                     e.Payload = new MediationData
                     {
                         Direction = d.Direction,
@@ -167,7 +167,7 @@ namespace ConsoleApp2
             while (AdapterState != AdapterState.Stopping)
             {
                 //Console.WriteLine("->->Enter output while");
-                var result = Dequeue(out PointEvent<MediationData> d);
+                var result = Dequeue(out PointEvent<MediationData> d); // deque UTC时间，显示的时候加上时区
                 //Console.WriteLine("->->After deque");
                 if (result == DequeueOperationResult.Empty)
                 {
