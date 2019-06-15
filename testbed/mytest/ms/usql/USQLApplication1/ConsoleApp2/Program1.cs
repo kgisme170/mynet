@@ -86,19 +86,27 @@ namespace ConsoleApp2
             var dateTimeOffset = new DateTimeOffset(new DateTime(2019, 06, 01), TimeSpan.Zero);
             EnqueueCtiEvent(dateTimeOffset);
             Console.WriteLine("Begin input adapter process event");
-            DateTime date = DateTime.Now;
-            while (data.MoveNext())
+
+            var e = default(PointEvent<MediationData>);
+            while (AdapterState != AdapterState.Stopping)
             {
-                var e = CreateInsertEvent();
-                TollData d = data.Current;
-                date = d.Timestamp;
-                e.StartTime = d.Timestamp;
-                e.Payload = new MediationData
+                if (data.MoveNext())
                 {
-                    Number = d.Number
-                };
-                Enqueue(ref e);
-                Console.WriteLine("Data:" + d + " is enqueued");
+                    e = CreateInsertEvent();
+                    TollData d = data.Current;
+                    var date = d.Timestamp;
+                    e.StartTime = d.Timestamp;
+                    e.Payload = new MediationData
+                    {
+                        Number = d.Number
+                    };
+                    Enqueue(ref e);
+                    Console.WriteLine("Data:" + d + " is enqueued");
+                }
+                else
+                {
+                    break;
+                }
             }
             EnqueueCtiEvent(new DateTimeOffset(new DateTime(2019, 06, 21), TimeSpan.Zero));
             Stopped();
