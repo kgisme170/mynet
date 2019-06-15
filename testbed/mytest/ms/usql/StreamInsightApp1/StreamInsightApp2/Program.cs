@@ -55,6 +55,16 @@ namespace StreamInsightApp2
                 GenTollReading(tollId, number));
         }
 
+        public static IEnumerable<int> Gen()
+        {
+            int i = 0;
+            while (i<=10)
+            {
+                Thread.Sleep(300);
+                yield return i++;
+            }
+        }
+
         public static void Main(string[] args)
         {
             Console.WriteLine("Begin");
@@ -85,8 +95,17 @@ namespace StreamInsightApp2
                 Gen3(12, 20, 00, 12, 22, 00, 1, 2),
                 Gen3(12, 22, 00, 12, 25, 00, 1, 2),
             };
-            //var streamable = intervals.ToIntervalStreamable(e => e, AdvanceTimeSettings.IncreasingStartTime);
 
+            IQueryable iq = application.DefineEnumerable(()=>intervals);
+            IEnumerable<int> ii = Gen();
+            foreach(int i in Gen())
+            {
+                Console.WriteLine(i);
+            }
+            foreach (int i in Gen())
+            {
+                Console.WriteLine(i);
+            }
             application.Delete();
             server.Dispose();
         }
