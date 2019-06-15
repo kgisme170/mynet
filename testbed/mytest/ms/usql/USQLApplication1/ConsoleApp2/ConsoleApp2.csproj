@@ -60,7 +60,7 @@
   <ItemGroup>
     <Compile Include="InputAdapterFromFile.cs" />
     <Compile Include="InputConfig.cs" />
-    <Compile Include="OutputAdapter.cs" />
+    <Compile Include="OutputAdapterFromFile.cs" />
     <Compile Include="Payload.cs" />
     <Compile Include="PayloadInputFactory.cs" />
     <Compile Include="PayloadOutputConfig.cs" />

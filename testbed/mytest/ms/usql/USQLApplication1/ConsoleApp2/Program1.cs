@@ -11,7 +11,7 @@ namespace ConsoleApp2
     public class TollData
     {
         public DateTime Timestamp { get; set; }
-        public int Number { get; set; }
+        public double Number { get; set; }
 
         public override string ToString()
         {
@@ -31,12 +31,12 @@ namespace ConsoleApp2
 
     public class MediationData
     {
-        public int Number { get; set; }
+        public double Number { get; set; }
     }
 
     public class InAdapter : TypedPointInputAdapter<MediationData>
     {
-        readonly DateTime now = DateTime.Now;
+        readonly DateTime now = new DateTime(2019, 06, 01);
         readonly InConfig config;
         int currentMinute = 1;
         IEnumerator<TollData> data;
@@ -44,7 +44,7 @@ namespace ConsoleApp2
         {
             return new TollData
             {
-                Timestamp = DateTime.Now + TimeSpan.FromMinutes(currentMinute++),
+                Timestamp = now + TimeSpan.FromMinutes(currentMinute++),
                 Number = n
             };
         }
@@ -83,8 +83,8 @@ namespace ConsoleApp2
 
         private void ProduceEvents()
         {
-            var dateTimeOffset = new DateTimeOffset(new DateTime(2019, 06, 01), TimeSpan.Zero);
-            EnqueueCtiEvent(dateTimeOffset);
+            var dateTimeOffset = new DateTimeOffset(new DateTime(2019, 06, 01), TimeSpan.FromHours(8));
+            EnqueueCtiEvent(dateTimeOffset); // 把这个dateTimeOffset 当成是UTC时间
             Console.WriteLine("Begin input adapter process event");
 
             var e = default(PointEvent<MediationData>);
@@ -95,12 +95,14 @@ namespace ConsoleApp2
                     e = CreateInsertEvent();
                     TollData d = data.Current;
                     var date = d.Timestamp;
-                    e.StartTime = d.Timestamp;
+                    e.StartTime = d.Timestamp; // e.StartTime 的 utc时间 enqueue
                     e.Payload = new MediationData
                     {
                         Number = d.Number
                     };
                     Enqueue(ref e);
+                    var date2 = new DateTimeOffset(date, TimeSpan.FromHours(8));
+                    EnqueueCtiEvent(date2);
                     Console.WriteLine("Data:" + d + " is enqueued");
                 }
                 else
@@ -219,18 +221,18 @@ namespace ConsoleApp2
         {
             OutConfigName = "outConfig1"
         };
+        static InputAdapter inputAdapter = application.CreateInputAdapter<InputFactory>("nameIn", "descIn");
+        static OutputAdapter outputAdapter = application.CreateOutputAdapter<OutputFactory>("nameOut", "descOut");
 
         public static void RunCepStream(CepStream<MediationData> cepStream)
         {
             var binder = new QueryBinder(application.CreateQueryTemplate(
-                "template1",
+                Guid.NewGuid().ToString(),
                 "description1",
                 cepStream));
-            var inputAdapter = application.CreateInputAdapter<InputFactory>("nameIn", "descIn");
-            var outputAdapter = application.CreateOutputAdapter<OutputFactory>("nameOut", "descOut");
 
             binder.BindProducer<MediationData>(
-                "input1",
+                "cepStream1",
                 inputAdapter,
                 inConfig,
                 EventShape.Point);
@@ -256,11 +258,18 @@ namespace ConsoleApp2
 
         public static void Test1()
         {
-            var input1 = CepStream<MediationData>.Create("input1");
-            var filter = from e in input1
+            var cepStream = CepStream<MediationData>.Create("cepStream1");
+            var filter = from e in cepStream
                          where e.Number > 3
                          select e;
             RunCepStream(filter);
+            /*
+            var avgCepStream = from w in cepStream.Where(e=>true).HoppingWindow(TimeSpan.FromMinutes(5), TimeSpan.FromDays(1), HoppingWindowOutputPolicy.ClipToWindowEnd)
+                               select new MediationData()
+                               {
+                                   Number = w.Avg(e => e.Number)
+                               };
+            RunCepStream(avgCepStream);*/
             application.Delete();
             server.Dispose();
         }

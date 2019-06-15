@@ -5,11 +5,11 @@ using System.Threading;
 
 namespace ConsoleApp2
 {
-    public class OutputAdapter : TypedPointOutputAdapter<Payload>
+    public class OutputAdapterFromFile : TypedPointOutputAdapter<Payload>
     {
         private EventWaitHandle _adapterStopSignal;
 
-        public OutputAdapter(PayloadOutputConfig config)
+        public OutputAdapterFromFile(PayloadOutputConfig config)
         {
             if (!string.IsNullOrEmpty(config.AdapterStopSignal))
                 _adapterStopSignal = EventWaitHandle.OpenExisting(config.AdapterStopSignal);

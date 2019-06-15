@@ -9,7 +9,7 @@ namespace ConsoleApp2
         {
             // Only support the point event model
             if (eventShape == EventShape.Point)
-                return new OutputAdapter(config);
+                return new OutputAdapterFromFile(config);
             else
                 return default(OutputAdapterBase);
         }
