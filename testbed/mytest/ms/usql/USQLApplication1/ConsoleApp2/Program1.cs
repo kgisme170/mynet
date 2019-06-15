@@ -259,17 +259,20 @@ namespace ConsoleApp2
         public static void Test1()
         {
             var cepStream = CepStream<MediationData>.Create("cepStream1");
+
+            /*
             var filter = from e in cepStream
                          where e.Number > 3
                          select e;
             RunCepStream(filter);
-            /*
-            var avgCepStream = from w in cepStream.Where(e=>true).HoppingWindow(TimeSpan.FromMinutes(5), TimeSpan.FromDays(1), HoppingWindowOutputPolicy.ClipToWindowEnd)
+            */
+
+            var avgCepStream = from w in cepStream.Where(e=>true).HoppingWindow(TimeSpan.FromMinutes(3), TimeSpan.FromMinutes(1), HoppingWindowOutputPolicy.ClipToWindowEnd)
                                select new MediationData()
                                {
                                    Number = w.Avg(e => e.Number)
                                };
-            RunCepStream(avgCepStream);*/
+            RunCepStream(avgCepStream);
             application.Delete();
             server.Dispose();
         }
