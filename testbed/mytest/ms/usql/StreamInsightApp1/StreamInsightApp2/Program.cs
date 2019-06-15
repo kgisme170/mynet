@@ -1,5 +1,4 @@
 ﻿using Microsoft.ComplexEventProcessing;
-using Microsoft.ComplexEventProcessing.Adapters;
 using Microsoft.ComplexEventProcessing.Linq;
 using System;
 using System.Collections.Generic;
