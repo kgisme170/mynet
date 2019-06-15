@@ -28,14 +28,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files\Microsoft StreamInsight 2.1\Bin\Microsoft.ComplexEventProcessing.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.ComplexEventProcessing.Adapters, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\Microsoft StreamInsight 1.0\Bin\Microsoft.ComplexEventProcessing.Adapters.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.ComplexEventProcessing.Diagnostics, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\Microsoft StreamInsight 1.0\Bin\Microsoft.ComplexEventProcessing.Diagnostics.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
