@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("HitchHikerGuide")]
+[assembly: AssemblyTitle("StreamInsightApp2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("HitchHikerGuide")]
+[assembly: AssemblyProduct("StreamInsightApp2")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d0cb6b35-2788-4802-a067-90239bda88e2")]
+[assembly: Guid("fa156589-90ac-4763-bcb8-2c6d01478f4d")]
 
 // Version information for an assembly consists of the following four values:
 //

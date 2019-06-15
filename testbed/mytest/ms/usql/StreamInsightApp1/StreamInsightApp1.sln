@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamInsightApp1", "StreamInsightApp1\StreamInsightApp1.csproj", "{71379EFE-0B1E-4627-8567-B013D91D5E41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HitchHikerGuide", "HitchHikerGuide\HitchHikerGuide.csproj", "{D0CB6B35-2788-4802-A067-90239BDA88E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamInsightApp2", "StreamInsightApp2\StreamInsightApp2.csproj", "{FA156589-90AC-4763-BCB8-2C6D01478F4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{71379EFE-0B1E-4627-8567-B013D91D5E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71379EFE-0B1E-4627-8567-B013D91D5E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71379EFE-0B1E-4627-8567-B013D91D5E41}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D0CB6B35-2788-4802-A067-90239BDA88E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D0CB6B35-2788-4802-A067-90239BDA88E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D0CB6B35-2788-4802-A067-90239BDA88E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D0CB6B35-2788-4802-A067-90239BDA88E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA156589-90AC-4763-BCB8-2C6D01478F4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA156589-90AC-4763-BCB8-2C6D01478F4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA156589-90AC-4763-BCB8-2C6D01478F4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA156589-90AC-4763-BCB8-2C6D01478F4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
