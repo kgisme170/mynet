@@ -11,6 +11,7 @@ namespace ConsoleApp2
     public class TollData
     {
         public DateTime Timestamp { get; set; }
+        public string Direction { get; set; }
         public double Number { get; set; }
 
         public override string ToString()
@@ -32,6 +33,12 @@ namespace ConsoleApp2
     public class MediationData
     {
         public double Number { get; set; }
+        public string Direction { get; set; }
+
+        public override string ToString()
+        {
+            return "TollData: Direction = " + Direction + ", Number = " + Number;
+        }
     }
 
     public class InAdapter : TypedPointInputAdapter<MediationData>
@@ -40,11 +47,12 @@ namespace ConsoleApp2
         readonly InConfig config;
         int currentMinute = 1;
         IEnumerator<TollData> data;
-        TollData GetTollData(int n)
+        TollData GetTollData(int n, string g)
         {
             return new TollData
             {
                 Timestamp = now + TimeSpan.FromMinutes(currentMinute++),
+                Direction = g,
                 Number = n
             };
         }
@@ -53,31 +61,31 @@ namespace ConsoleApp2
         {
             return new List<TollData>()
             {
-                GetTollData(2),
-                GetTollData(4),
+                GetTollData(2, "Up"),
+                GetTollData(4, "Down"),
 
-                GetTollData(6),
-                GetTollData(8),
-                GetTollData(10),
+                GetTollData(6, "Up"),
+                GetTollData(8, "Down"),
+                GetTollData(10, "Down"),
 
-                GetTollData(12),
-                GetTollData(18),
-                GetTollData(0),
+                GetTollData(12, "Up"),
+                GetTollData(18, "Up"),
+                GetTollData(0, "Down"),
 
-                GetTollData(0),
-                GetTollData(3),
-                GetTollData(3),
+                GetTollData(0, "Up"),
+                GetTollData(3, "Up"),
+                GetTollData(3, "Up"),
 
-                GetTollData(3),
-                GetTollData(6),
-                GetTollData(9),
+                GetTollData(3, "Down"),
+                GetTollData(6, "Down"),
+                GetTollData(9, "Down"),
 
-                GetTollData(0),
-                GetTollData(0),
-                GetTollData(0),
+                GetTollData(0, "Up"),
+                GetTollData(0, "Up"),
+                GetTollData(0, "Up"),
 
-                GetTollData(15),
-                GetTollData(9),
+                GetTollData(15, "Down"),
+                GetTollData(9, "Up"),
             }.GetEnumerator();
         }
 
@@ -104,6 +112,7 @@ namespace ConsoleApp2
                     e.StartTime = d.Timestamp; // e.StartTime 的 utc时间 enqueue
                     e.Payload = new MediationData
                     {
+                        Direction = d.Direction,
                         Number = d.Number
                     };
                     Enqueue(ref e);
@@ -169,7 +178,7 @@ namespace ConsoleApp2
                 }
                 if(d.EventKind == EventKind.Insert)
                 {
-                    Console.WriteLine("->->[" + d.StartTime + "]" + d.Payload.Number);
+                    Console.WriteLine("->->[" + d.StartTime + "]" + d.Payload);
                 }
                 ReleaseEvent(ref d);
             }
@@ -280,13 +289,24 @@ namespace ConsoleApp2
                                };
             RunCepStream(avgCepStream);
             */
-
+            /*
             var count = from win in cepStream.TumblingWindow(TimeSpan.FromMinutes(3))
                         select new MediationData()
                         {
                             Number = win.Sum(e => e.Number)
                         };
             RunCepStream(count);
+            */
+
+            var groupCepStream = from e in cepStream
+                                 group e by e.Direction into eGroup
+                                 from w in eGroup.HoppingWindow(TimeSpan.FromMinutes(3), TimeSpan.FromMinutes(3), HoppingWindowOutputPolicy.ClipToWindowEnd)
+                                 select new MediationData()
+                                 {
+                                     Direction = eGroup.Key,
+                                     Number = w.Avg(e => e.Number)
+                                 };
+            RunCepStream(groupCepStream);
             server.Dispose();
         }
     }
