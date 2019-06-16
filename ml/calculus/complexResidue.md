@@ -133,9 +133,17 @@ s1) 找到q(z)在实数轴上面的所有0点。从上面得到的环路积分/�
 <img src="img/residue21.gif">
 
 同样用上半圆法则来计算:
-<img src="img/residue22.gif">，需要考虑的极点(上半平面)是: <img src="img/residue23.gif">
+<img src="img/residue22.gif">，
 
-同时，留数定理的约束条件里面说了，如果f(z)是一个有理多项式的形式: <img src="img/residue24.gif">，然后留数=<img src="img/residue25.gif">
+需要考虑的极点(上半平面)是: <img src="img/residue23.gif">
+
+同时，留数定理的约束条件里面说了，如果f(z)是一个有理多项式的形式: <img src="img/residue24.gif">，
+
+1. R趋近无穷的时候，容易得到圆周积分=0
+2. <img src="img/residue26.gif">
+
+因此留数=
+<img src="img/residue25.gif">
 
 还有一类不好计算的有限积分，被积函数里面有很多三角函数的形式。这个通过极坐标方法化简为z的积分问题，然后再使用留数的方式求解。
 
