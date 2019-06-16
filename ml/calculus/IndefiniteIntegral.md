@@ -102,9 +102,41 @@ F(x)在一个区间上，左右两个值的差，除以区间的长度。用概�
 由于不定积分，其实就是导数(derivative)的反函数，因此研究不定积分就要研究微分计算的几个基本规则: 加法律(additive rule)，幂次律(power rule)，乘积律(produce rule)，商律(quotient rule)，合成(组合)律(chain rule)。
 
 Product rule的证明:
-<img src="img/productRule01.gif"> 这个式子就是f'g+fg'。Chain rule很容易证明，2维情况的Chain rule需要特别的证明。
+<img src="img/productRule01.gif"> 这个式子就是f'g+fg'。
 
-例如求ln(x)的导数: <img src="img/indefiniteIntegral06.gif">
+合成律(Chain rule):
+
+<img src="img/chainRule11.gif">
+
+再来求商律:
+
+<img src="img/quotientRule.gif">
+
+这个式子就是(f'g-fg')/g^2，也可以用乘积律+幂次律+合成律来求解
+
+<img src="img/quotientRule02.gif">
+
+注意：2维情况的Chain rule需要特别的证明。
+
+例如求ln(x)的导数:
+
+<img src="img/indefiniteIntegral06.gif">
+
+反函数的求导很直观:
+
+<img src="img/inverseFunction.gif">
+
+用这个反函数的求导法+商律，得到y=arctan(x)的导数:
+
+<img src="img/arctan.gif">
+
+自然对数的指数函数的求导分两步:
+
+<img src="img/exponent1.gif">
+
+<img src="img/exponent3.gif">
+
+易知lim的部分是1，因此自然对数的指数函数，导数就是自己。
 
 再比如，有些导数是隐含的，比如单位圆的方程: <img src="img/indefiniteIntegral07.gif">，求y点的导数需要用到chainRule: <img src="img/indefiniteIntegral08.gif">，化成极坐标，x=sin(t) y=cos(t) 那么这个导数/斜率就是-tan(t)。
 
