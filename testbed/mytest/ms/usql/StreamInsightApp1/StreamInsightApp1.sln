@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamInsightApp2", "Stream
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlterPointEvent", "AlterPointEvent\AlterPointEvent.csproj", "{C829244D-9017-4554-B00D-8BA53CA354BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIObserverApp", "SIObserverApp\SIObserverApp.csproj", "{C0720720-78A5-48CD-823F-C785F8594C07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C829244D-9017-4554-B00D-8BA53CA354BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C829244D-9017-4554-B00D-8BA53CA354BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C829244D-9017-4554-B00D-8BA53CA354BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0720720-78A5-48CD-823F-C785F8594C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0720720-78A5-48CD-823F-C785F8594C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0720720-78A5-48CD-823F-C785F8594C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0720720-78A5-48CD-823F-C785F8594C07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

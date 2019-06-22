@@ -81,10 +81,11 @@ namespace AlterPointEvent
                                        High = evt.Value
                                    };
             Console.WriteLine("query ready");
+            var query = crossedThreshold.ToEnumerable(); // lazy初始化
 
-            foreach (var outputSample in crossedThreshold.ToEnumerable())
+            foreach (var outputSample in query) // 迭代访问query的过程会触发inputStream的产生
             {
-                Console.WriteLine(outputSample);
+                Console.WriteLine(outputSample); // 打印outputSample, 也就是select new的结果
             }
 
             Console.WriteLine("Done. Press ENTER to terminate");
