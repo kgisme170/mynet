@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryWithoutAdapter.cs" />
     <Compile Include="TollExtensibility.cs" />
     <Compile Include="TollTypes.cs" />
   </ItemGroup>

@@ -516,7 +516,7 @@
 
         static Server server = Server.Create("MyInstance");
         static Application app = server.CreateApplication("TollStationApp");
-        public static void Main(String[] args)
+        public static void Test(String[] args)
         {
             var demos = (from mi in typeof(HelloToll).GetMethods(BindingFlags.Static | BindingFlags.NonPublic)
                          let nameAttr = mi.GetCustomAttributes(typeof(DisplayNameAttribute), false)
