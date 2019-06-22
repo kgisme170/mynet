@@ -516,55 +516,54 @@
 
         static void Main()
         {
-            using (var server = Server.Create("MyInstance"))
+            var server = Server.Create("MyInstance");
+            Application application = server.CreateApplication("TollStationApp");
+
+            var demos = (from mi in typeof(HelloToll).GetMethods(BindingFlags.Static | BindingFlags.NonPublic)
+                            let nameAttr = mi.GetCustomAttributes(typeof(DisplayNameAttribute), false)
+                                .OfType<DisplayNameAttribute>()
+                                .SingleOrDefault()
+                            let descriptionAttr = mi.GetCustomAttributes(typeof(DescriptionAttribute), false)
+                                .OfType<DescriptionAttribute>()
+                                .SingleOrDefault()
+                            where null != nameAttr
+                            select new { Action = mi, Name = nameAttr.DisplayName, Description = descriptionAttr.Description }).ToArray();
+
+            while (true)
             {
-                Application application = server.CreateApplication("TollStationApp");
+                Console.WriteLine();
+                Console.WriteLine("Pick an action:");
+                for (int demo = 0; demo < demos.Length; demo++)
+                {
+                    Console.WriteLine("{0,4} - {1}", demo, demos[demo].Name);
+                }
 
-                var demos = (from mi in typeof(HelloToll).GetMethods(BindingFlags.Static | BindingFlags.NonPublic)
-                             let nameAttr = mi.GetCustomAttributes(typeof(DisplayNameAttribute), false)
-                                 .OfType<DisplayNameAttribute>()
-                                 .SingleOrDefault()
-                             let descriptionAttr = mi.GetCustomAttributes(typeof(DescriptionAttribute), false)
-                                 .OfType<DescriptionAttribute>()
-                                 .SingleOrDefault()
-                             where null != nameAttr
-                             select new { Action = mi, Name = nameAttr.DisplayName, Description = descriptionAttr.Description }).ToArray();
+                Console.WriteLine("Exit - Exit from Demo.");
+                var response = Console.ReadLine().Trim();
+                if (string.Equals(response, "exit", StringComparison.OrdinalIgnoreCase) ||
+                    string.Equals(response, "e", StringComparison.OrdinalIgnoreCase))
+                {
+                    break;
+                }
 
-                while (true)
+                int demoToRun;
+                demoToRun = Int32.TryParse(response, NumberStyles.Integer, CultureInfo.InvariantCulture, out demoToRun)
+                    ? demoToRun
+                    : -1;
+
+                if (0 <= demoToRun && demoToRun < demos.Length)
                 {
                     Console.WriteLine();
-                    Console.WriteLine("Pick an action:");
-                    for (int demo = 0; demo < demos.Length; demo++)
-                    {
-                        Console.WriteLine("{0,4} - {1}", demo, demos[demo].Name);
-                    }
-
-                    Console.WriteLine("Exit - Exit from Demo.");
-                    var response = Console.ReadLine().Trim();
-                    if (string.Equals(response, "exit", StringComparison.OrdinalIgnoreCase) ||
-                        string.Equals(response, "e", StringComparison.OrdinalIgnoreCase))
-                    {
-                        break;
-                    }
-
-                    int demoToRun;
-                    demoToRun = Int32.TryParse(response, NumberStyles.Integer, CultureInfo.InvariantCulture, out demoToRun)
-                        ? demoToRun
-                        : -1;
-
-                    if (0 <= demoToRun && demoToRun < demos.Length)
-                    {
-                        Console.WriteLine();
-                        Console.WriteLine(demos[demoToRun].Name);
-                        Console.WriteLine(demos[demoToRun].Description);
-                        demos[demoToRun].Action.Invoke(null, new[] { application });
-                    }
-                    else
-                    {
-                        Console.WriteLine("Unknown Query Demo");
-                    }
+                    Console.WriteLine(demos[demoToRun].Name);
+                    Console.WriteLine(demos[demoToRun].Description);
+                    demos[demoToRun].Action.Invoke(null, new[] { application });
+                }
+                else
+                {
+                    Console.WriteLine("Unknown Query Demo");
                 }
             }
+            server.Dispose();
         }
         #endregion
     }
