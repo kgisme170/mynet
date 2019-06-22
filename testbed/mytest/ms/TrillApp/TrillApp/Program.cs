@@ -9,14 +9,14 @@
     using Microsoft.ComplexEventProcessing;
     using Microsoft.ComplexEventProcessing.Linq;
 
-    static class HelloToll
+    public class HelloToll
     {
         [DisplayName("Pass-through")]
         [Description("Pass-through query to just show input stream in the same form as we show output.")]
-        static void PassThrough(Application app)
+        static void PassThrough()
         {
-            var inputStream = app.GetTollReadings();
-            app.DisplayIntervalResults(inputStream);
+            var inputStream = GetTollReadings();
+            DisplayIntervalResults(inputStream);
         }
 
         [DisplayName("Tumbling Count")]
@@ -24,12 +24,12 @@
                      "that were being processed at some point during that period at " +
                      "the toll station since the last result. Report the result at a " +
                      "point in time, at the end of the 3 minute window.")]
-        static void TumblingCount(Application app)
+        static void TumblingCount()
         {
-            var inputStream = app.GetTollReadings();
+            var inputStream = GetTollReadings();
             var query = from win in inputStream.TumblingWindow(TimeSpan.FromMinutes(3))
                         select win.Count();
-            app.DisplayPointResults(query);
+            DisplayPointResults(query);
         }
 
         [DisplayName("Hopping Count")]
@@ -37,23 +37,23 @@
                      "a 3 minute window, with the window moving in one minute hops. " +
                      "Provide the counts as of the last reported result as of a point " +
                      "in time, reflecting the vehicles processed over the last 3 minutes.")]
-        static void HoppingCount(Application app)
+        static void HoppingCount()
         {
-            var inputStream = app.GetTollReadings();
+            var inputStream = GetTollReadings();
             var countStream = from win in inputStream.HoppingWindow(TimeSpan.FromMinutes(3), TimeSpan.FromMinutes(1))
                               select win.Count();
             var query = countStream
                 .ToPointEventStream();
-            app.DisplayPointResults(query);
+            DisplayPointResults(query);
         }
 
         [DisplayName("Partitioned Hopping window")]
         [Description("Find the toll generated from vehicles being processed at each " +
                      "toll station at some time over a 3 minute window, with the time advancing " +
                      "in one minute hops. Provide the value as of the last reported result.")]
-        static void PartitionedHoppingWindow(Application app)
+        static void PartitionedHoppingWindow()
         {
-            var inputStream = app.GetTollReadings();
+            var inputStream = GetTollReadings();
             var query = from e in inputStream
                         group e by e.TollId into perTollBooth
                         from win in perTollBooth.HoppingWindow(
@@ -65,16 +65,16 @@
                             TollAmount = win.Sum(e => e.Toll),
                             VehicleCount = win.Count() // computed as a bonus, not asked in the query
                         };
-            app.DisplayPointResults(query);
+            DisplayPointResults(query);
         }
 
         [DisplayName("Partitioned Sliding window")]
         [Description("Find the most recent toll generated from vehicles being processed " +
                      "at each station over a 1 minute window reporting the result every time a " +
                      "change occurs in the input.")]
-        static void PartitionedSlidingWindow(Application app)
+        static void PartitionedSlidingWindow()
         {
-            var inputStream = app.GetTollReadings();
+            var inputStream = GetTollReadings();
             var query = from e in inputStream.AlterEventDuration(e => e.EndTime - e.StartTime + TimeSpan.FromMinutes(1))
                         group e by e.TollId into perTollBooth
                         from win in perTollBooth.SnapshotWindow()
@@ -84,14 +84,14 @@
                             TollAmount = win.Sum(e => e.Toll),
                             VehicleCount = win.Count() // computed as a bonus, not asked in the query
                         };
-            app.DisplayIntervalResults(query);
+            DisplayIntervalResults(query);
         }
 
         [DisplayName("Partitioned Moving Average")]
         [Description("Moving average over the results of [Partitioned Sliding window].")]
-        static void PartitionedMovingAverage(Application app)
+        static void PartitionedMovingAverage()
         {
-            var inputStream = app.GetTollReadings();
+            var inputStream = GetTollReadings();
             var partitionedSlidingWindow = from e in inputStream.AlterEventDuration(e => e.EndTime - e.StartTime + TimeSpan.FromMinutes(1))
                                            group e by e.TollId into perTollBooth
                                            from win in perTollBooth.SnapshotWindow()
@@ -107,16 +107,16 @@
                             TollId = e.TollId,
                             AverageToll = e.TollAmount / e.VehicleCount
                         };
-            app.DisplayIntervalResults(query);
+            DisplayIntervalResults(query);
         }
 
         [DisplayName("Inner Join")]
         [Description("Report the output whenever Toll Booth 2 has processed the same number " +
                      "of vehicles as Toll Booth 1, computed over the last 1 minute, every time " +
                      "a change occurs in either stream.")]
-        static void InnerJoin(Application app)
+        static void InnerJoin()
         {
-            var inputStream = app.GetTollReadings();
+            var inputStream = GetTollReadings();
             var partitionedSlidingWindow = from e in inputStream.AlterEventDuration(e => e.EndTime - e.StartTime + TimeSpan.FromMinutes(1))
                                            group e by e.TollId into perTollBooth
                                            from win in perTollBooth.SnapshotWindow()
@@ -137,14 +137,14 @@
                             TollId2 = e2.TollId,
                             VehicleCount = e1.VehicleCount
                         };
-            app.DisplayIntervalResults(query);
+            DisplayIntervalResults(query);
         }
 
         [DisplayName("Cross Join")]
         [Description("Variation of [Inner Join] with cross join instead.")]
-        static void CrossJoin(Application app)
+        static void CrossJoin()
         {
-            var inputStream = app.GetTollReadings();
+            var inputStream = GetTollReadings();
             var partitionedSlidingWindow = from e in inputStream.AlterEventDuration(e => e.EndTime - e.StartTime + TimeSpan.FromMinutes(1))
                                            group e by e.TollId into perTollBooth
                                            from win in perTollBooth.SnapshotWindow()
@@ -164,7 +164,7 @@
                             TollId2 = e2.TollId,
                             VehicleCount = e1.VehicleCount
                         };
-            app.DisplayIntervalResults(query);
+            DisplayIntervalResults(query);
         }
 
         [DisplayName("Theta Join")]
@@ -172,9 +172,9 @@
                      "Report the output whenever Toll Booth 2 has processed lesser number " +
                      "of vehicles as Toll Booth 1, computed over the last 1 minute, every time " +
                      "a change occurs in either stream.")]
-        static void ThetaJoin(Application app)
+        static void ThetaJoin()
         {
-            var inputStream = app.GetTollReadings();
+            var inputStream = GetTollReadings();
             var partitionedSlidingWindow = from e in inputStream.AlterEventDuration(e => e.EndTime - e.StartTime + TimeSpan.FromMinutes(1))
                                            group e by e.TollId into perTollBooth
                                            from win in perTollBooth.SnapshotWindow()
@@ -195,15 +195,15 @@
                             TollId2 = e2.TollId,
                             VehicleCount = e1.VehicleCount
                         };
-            app.DisplayIntervalResults(query);
+            DisplayIntervalResults(query);
         }
 
         [DisplayName("Left Anti Join")]
         [Description("Report toll violators – owners of vehicles that pass through an automated " +
                      "toll booth without a valid EZ-Pass tag read.")]
-        static void LeftAntiJoin(Application app)
+        static void LeftAntiJoin()
         {
-            var inputStream = app.GetTollReadings();
+            var inputStream = GetTollReadings();
 
             // Simulate the reference stream from inputStream itself - convert it to a point event stream
             var referenceStream = from e in inputStream.ToPointEventStream() select e;
@@ -219,15 +219,15 @@
 
             // Report tag violations
             var query = referenceStream.LeftAntiJoin(observedStream, (left, right) => true);
-            app.DisplayPointResults(query);
+            DisplayPointResults(query);
         }
 
         [DisplayName("TopK")]
         [Description("Report the top 2 toll amounts from the results of [Partitioned Sliding window] " +
                      "over a 3 minute tumbling window.")]
-        static void TopK(Application app)
+        static void TopK()
         {
-            var inputStream = app.GetTollReadings();
+            var inputStream = GetTollReadings();
             var partitionedSlidingWindow = from e in inputStream.AlterEventDuration(e => e.EndTime - e.StartTime + TimeSpan.FromMinutes(1))
                                            group e by e.TollId into perTollBooth
                                            from win in perTollBooth.SnapshotWindow()
@@ -251,15 +251,15 @@
                                     VehicleCount = e.Payload.VehicleCount
                                 })
                         select top;
-            app.DisplayPointResults(query);
+            DisplayPointResults(query);
         }
 
         [DisplayName("Filter and Project")]
         [Description("Report the top 2 toll amounts from the results of [Partitioned Sliding Window] " +
                      "over a 3 minute tumbling window, but only show results for TollStation ID 1.")]
-        static void FilterProject(Application app)
+        static void FilterProject()
         {
-            var inputStream = app.GetTollReadings();
+            var inputStream = GetTollReadings();
             var partitionedSlidingWindow = from e in inputStream.AlterEventDuration(e => e.EndTime - e.StartTime + TimeSpan.FromMinutes(1))
                                            group e by e.TollId into perTollBooth
                                            from win in perTollBooth.SnapshotWindow()
@@ -286,14 +286,14 @@
             var query = from e in topK
                         where e.TollId == "1"
                         select e;
-            app.DisplayPointResults(query);
+            DisplayPointResults(query);
         }
 
         [DisplayName("Outer Join")]
         [Description("Outer Join using query primitives.")]
-        static void OuterJoin(Application app)
+        static void OuterJoin()
         {
-            var inputStream = app.GetTollReadings();
+            var inputStream = GetTollReadings();
 
             // Simulate the left stream input from inputStream
             var outerJoin_L = from e in inputStream
@@ -342,15 +342,15 @@
 
             // Union the two streams to complete a Left Outer Join operation
             var query = innerJoin.Union(leftAntiJoin);
-            app.DisplayIntervalResults(query);
+            DisplayIntervalResults(query);
         }
 
         [DisplayName("UDF")]
         [Description("For each vehicle that is being processed at an EZ-Pass booth, report " +
                      "the TollReading if the tag does not exist, has expired, or is reported stolen.")]
-        static void UDF(Application app)
+        static void UDF()
         {
-            var inputStream = app.GetTollReadings();
+            var inputStream = GetTollReadings();
             var query = from e in inputStream
                         where 0 == e.Tag.Length || TagInfo.IsLostOrStolen(e.Tag) || TagInfo.IsExpired(e.Tag)
                         select new TollViolation
@@ -362,28 +362,28 @@
                             Tag = e.Tag,
                             TollId = e.TollId
                         };
-            app.DisplayIntervalResults(query);
+            DisplayIntervalResults(query);
         }
 
         [DisplayName("UDA")]
         [Description("Over a 3 minute tumbling window, find the ratio of out-of-state " +
                      "vehicles to total vehicles being processed at a toll station.")]
-        static void _11_UDA(Application app)
+        static void _11_UDA()
         {
-            var inputStream = app.GetTollReadings();
+            var inputStream = GetTollReadings();
             var query = from win in inputStream.TumblingWindow(TimeSpan.FromMinutes(3))
                         select win.UserDefinedAggregate<TollReading, OutOfStateVehicleRatio, float>(null);
-            app.DisplayPointResults(query);
+            DisplayPointResults(query);
         }
 
         [DisplayName("UDA2")]
         [Description("Variation of [UDA] that uses OutOfStateVehicleRatio2 UDA.")]
-        static void UDA2(Application app)
+        static void UDA2()
         {
-            var inputStream = app.GetTollReadings();
+            var inputStream = GetTollReadings();
             var query = from win in inputStream.TumblingWindow(TimeSpan.FromMinutes(3))
                         select win.UserDefinedAggregateWithMapping<TollReading, OutOfStateVehicleRatio2, string, float>(e => e.State, null);
-            app.DisplayPointResults(query);
+            DisplayPointResults(query);
         }
 
         [DisplayName("UDO")]
@@ -391,13 +391,13 @@
                      "with tonnage greater than one ton (2K lbs), along with their arrival " +
                      "times at the toll, and any charges due to weight violation. Overweight " +
                      "charges during the rush hour (7am to 7pm) are double that of non-rush hours.")]
-        static void UDO(Application app)
+        static void UDO()
         {
-            var inputStream = app.GetTollReadings();
+            var inputStream = GetTollReadings();
             var query = from win in inputStream.TumblingWindow(TimeSpan.FromHours(1))
                         from e in win.UserDefinedOperator(() => new VehicleWeights())
                         select e;
-            app.DisplayPointResults(query);
+            DisplayPointResults(query);
         }
 
         #region Program plumbing
@@ -407,7 +407,7 @@
         /// </summary>
         /// <param name="app">StreamInsight application object.</param>
         /// <returns>Returns stream of simulated TollReadings used in examples.</returns>
-        static IQStreamable<TollReading> GetTollReadings(this Application app)
+        static IQStreamable<TollReading> GetTollReadings()
         {
             return app.DefineEnumerable(() =>
                 // Simulated readings data defined as an array.
@@ -464,7 +464,7 @@
                 .ToIntervalStreamable(e => e, AdvanceTimeSettings.IncreasingStartTime);
         }
 
-        static void DisplayPointResults<TPayload>(this Application app, IQStreamable<TPayload> resultStream)
+        static void DisplayPointResults<TPayload>(IQStreamable<TPayload> resultStream)
         {
             // Define observer that formats arriving events as points to the console window.
             var consoleObserver = app.DefineObserver(() => Observer.Create<PointEvent<TPayload>>(ConsoleWritePoint));
@@ -489,7 +489,7 @@
                 Console.WriteLine(string.Format(CultureInfo.InvariantCulture, "CTI    <{0}>", e.StartTime.DateTime));
         }
 
-        static void DisplayIntervalResults<TPayload>(this Application app, IQStreamable<TPayload> resultStream)
+        static void DisplayIntervalResults<TPayload>(IQStreamable<TPayload> resultStream)
         {
             // Define observer that formats arriving events as intervals to the console window.
             var consoleObserver = app.DefineObserver(() => Observer.Create<IntervalEvent<TPayload>>(ConsoleWriteInterval));
@@ -514,20 +514,19 @@
                 Console.WriteLine(string.Format(CultureInfo.InvariantCulture, "CTI    <{0}>", e.StartTime.DateTime));
         }
 
-        static void Main()
+        static Server server = Server.Create("MyInstance");
+        static Application app = server.CreateApplication("TollStationApp");
+        public static void Main(String[] args)
         {
-            var server = Server.Create("MyInstance");
-            Application application = server.CreateApplication("TollStationApp");
-
             var demos = (from mi in typeof(HelloToll).GetMethods(BindingFlags.Static | BindingFlags.NonPublic)
-                            let nameAttr = mi.GetCustomAttributes(typeof(DisplayNameAttribute), false)
-                                .OfType<DisplayNameAttribute>()
-                                .SingleOrDefault()
-                            let descriptionAttr = mi.GetCustomAttributes(typeof(DescriptionAttribute), false)
-                                .OfType<DescriptionAttribute>()
-                                .SingleOrDefault()
-                            where null != nameAttr
-                            select new { Action = mi, Name = nameAttr.DisplayName, Description = descriptionAttr.Description }).ToArray();
+                         let nameAttr = mi.GetCustomAttributes(typeof(DisplayNameAttribute), false)
+                             .OfType<DisplayNameAttribute>()
+                             .SingleOrDefault()
+                         let descriptionAttr = mi.GetCustomAttributes(typeof(DescriptionAttribute), false)
+                             .OfType<DescriptionAttribute>()
+                             .SingleOrDefault()
+                         where null != nameAttr
+                         select new { Action = mi, Name = nameAttr.DisplayName, Description = descriptionAttr.Description }).ToArray();
 
             while (true)
             {
@@ -556,13 +555,14 @@
                     Console.WriteLine();
                     Console.WriteLine(demos[demoToRun].Name);
                     Console.WriteLine(demos[demoToRun].Description);
-                    demos[demoToRun].Action.Invoke(null, new[] { application });
+                    demos[demoToRun].Action.Invoke(null, null);
                 }
                 else
                 {
                     Console.WriteLine("Unknown Query Demo");
                 }
             }
+            app.Delete();
             server.Dispose();
         }
         #endregion
