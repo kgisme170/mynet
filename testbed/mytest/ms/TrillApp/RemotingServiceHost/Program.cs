@@ -12,21 +12,14 @@ namespace RemotingServiceHost
             HelloRemotingService.HelloRemotingService remotingService =
                 new HelloRemotingService.HelloRemotingService();
             TcpChannel tcpChannel = new TcpChannel(8080);
-            try
-            {
-                ChannelServices.RegisterChannel(tcpChannel, true);
+            ChannelServices.RegisterChannel(tcpChannel, true);
 
-                RemotingConfiguration.RegisterWellKnownServiceType(
-                    typeof(HelloRemotingService.HelloRemotingService),
-                    "GetMessage",
-                    WellKnownObjectMode.Singleton);
-                Console.WriteLine("Service started");
-                Console.ReadLine();
-            }
-            catch(Exception e)
-            {
-
-            }
+            RemotingConfiguration.RegisterWellKnownServiceType(
+                typeof(HelloRemotingService.HelloRemotingService),
+                "GetMessage",
+                WellKnownObjectMode.Singleton);
+            Console.WriteLine("Service started");
+            Console.ReadLine();
         }
     }
 }
