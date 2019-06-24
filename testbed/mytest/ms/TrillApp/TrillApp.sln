@@ -20,13 +20,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient1", "WebClient1\We
 		{C0850527-D174-4DD1-B617-6179F953A6DB} = {C0850527-D174-4DD1-B617-6179F953A6DB}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IHelloRemotingService", "IHelloRemotingService\IHelloRemotingService.csproj", "{4F013B7C-E511-42E6-AAFF-9056B32C5636}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IHelloRemotingService", "IHelloRemotingService\IHelloRemotingService.csproj", "{4F013B7C-E511-42E6-AAFF-9056B32C5636}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloRemotingService", "HelloRemotingService\HelloRemotingService.csproj", "{4114B3EC-DE45-4F7D-B920-C99F6F60895B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloRemotingService", "HelloRemotingService\HelloRemotingService.csproj", "{4114B3EC-DE45-4F7D-B920-C99F6F60895B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemotingServiceHost", "RemotingServiceHost\RemotingServiceHost.csproj", "{8922C247-603E-469A-9294-E59DEACF0F0C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloServiceClient", "HelloServiceClient\HelloServiceClient.csproj", "{5EFA7B2E-0329-4542-9D1B-88FC0F3D41D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{E9972640-0A00-4FA7-81FC-76F158BA760A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -78,6 +80,10 @@ Global
 		{5EFA7B2E-0329-4542-9D1B-88FC0F3D41D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EFA7B2E-0329-4542-9D1B-88FC0F3D41D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EFA7B2E-0329-4542-9D1B-88FC0F3D41D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9972640-0A00-4FA7-81FC-76F158BA760A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9972640-0A00-4FA7-81FC-76F158BA760A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9972640-0A00-4FA7-81FC-76F158BA760A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9972640-0A00-4FA7-81FC-76F158BA760A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
