@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eventBasedAsynchronousPatte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskAsync", "TaskAsync\TaskAsync.csproj", "{2AC583A7-4758-48E7-A73B-D47E4107BB9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeginInvoke", "BeginInvoke\BeginInvoke.csproj", "{A2E8F058-6CFD-4292-ACF9-639972C65478}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,6 +98,10 @@ Global
 		{2AC583A7-4758-48E7-A73B-D47E4107BB9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AC583A7-4758-48E7-A73B-D47E4107BB9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AC583A7-4758-48E7-A73B-D47E4107BB9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E8F058-6CFD-4292-ACF9-639972C65478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E8F058-6CFD-4292-ACF9-639972C65478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E8F058-6CFD-4292-ACF9-639972C65478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E8F058-6CFD-4292-ACF9-639972C65478}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
