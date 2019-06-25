@@ -12,12 +12,7 @@ namespace eventBasedAsynchronousPattern
     [Description("Wraps an HttpWebRequest and returns a html")]
     public class HtmlClient : System.ComponentModel.Component
     {
-        public HtmlClient()
-        {
-            InitializeCallbacks();
-        }
-
-        #region Public API
+        #region Sync Public API
         public string DownloadHtml(string address)
         {
             return DownloadHtml(new Uri(address));
@@ -28,40 +23,7 @@ namespace eventBasedAsynchronousPattern
             return InternalDownload(address);
         }
         #endregion
-
-        private delegate void DownloadHtmlCallback(Uri address, AsyncOperation asyncOperation);
-        public void DownloadHtmlAsync(Uri address)
-        {
-            AsyncOperation asyncOperation = AsyncOperationManager.CreateOperation(null);
-            DownloadHtmlCallback callback = new DownloadHtmlCallback(InternalDownloadHtmlAsync);
-            callback.BeginInvoke(address, asyncOperation, null, null);
-        }
-
-        public event EventHandler<DownloadHtmlCompletedEventArgs> DownloadHtmlCompleted;
-        protected virtual void OnDownloadHtmlCompleted(DownloadHtmlCompletedEventArgs e)
-        {
-            DownloadHtmlCompleted?.Invoke(this, e);
-        }
-        private void InternalDownloadHtmlAsync(Uri address, AsyncOperation asyncOperation)
-        {
-            string html = InternalDownload(address);
-            DownloadHtmlCompletedEventArgs e = new DownloadHtmlCompletedEventArgs(null, false, html);
-            asyncOperation.PostOperationCompleted(DownloadHtmlCompletedCallback, e);
-        }
-        private void InitializeCallbacks()
-        {
-            DownloadHtmlCompletedCallback = new SendOrPostCallback(InternalDownloadHtmlCompleted);
-        }
-        private void InternalDownloadHtmlCompleted(object state)
-        {
-            DownloadHtmlCompletedEventArgs e = (DownloadHtmlCompletedEventArgs)state;
-            OnDownloadHtmlCompleted(e);
-        }
-        private SendOrPostCallback DownloadHtmlCompletedCallback;
-        public void DownloadHtmlAsync(string address)
-        {
-            DownloadHtmlAsync(new Uri(address));
-        }
+        #region download
         private string InternalDownload(Uri address)
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(address);
@@ -73,6 +35,24 @@ namespace eventBasedAsynchronousPattern
             }
             Thread.Sleep(5000);
             return html;
+        }
+        #endregion
+        public event EventHandler<DownloadHtmlCompletedEventArgs> DownloadHtmlCompleted; // 完成函数，事件处理的回调入口，由调用者赋值，这里体现event based
+        private readonly SendOrPostCallback DownloadHtmlCompletedCallback;
+        public HtmlClient() // 外部的EventHandler被注入到完成回调
+        {
+            DownloadHtmlCompletedCallback = new SendOrPostCallback((object state) => DownloadHtmlCompleted?.Invoke(this, (DownloadHtmlCompletedEventArgs)state));
+        }
+
+        private delegate void DownloadHtmlCallback(Uri address, AsyncOperation asyncOperation);
+        public void DownloadHtmlAsync(Uri address) // 外部调用的入口
+        {
+            new DownloadHtmlCallback((Uri uri, AsyncOperation op) => // 下载函数
+            {
+                string html = InternalDownload(uri);
+                DownloadHtmlCompletedEventArgs e = new DownloadHtmlCompletedEventArgs(null, false, html);
+                op.PostOperationCompleted(DownloadHtmlCompletedCallback, e); // 下载完成后，调用complete函数，关联comple函数和e
+            }).BeginInvoke(address, AsyncOperationManager.CreateOperation(null), null, null); // 调用async下载函数，关联async函数和和asyncOperation
         }
     }
 }

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace eventBasedAsynchronousPattern
@@ -50,7 +43,7 @@ namespace eventBasedAsynchronousPattern
 
             progressBar1.Value = progressBar1.Minimum;
             progressBar1.Style = ProgressBarStyle.Marquee;
-            htmlClient1.DownloadHtmlAsync("http://www.baidu.com");
+            htmlClient1.DownloadHtmlAsync(new Uri("http://www.baidu.com"));
         }
     }
 }
