@@ -38,7 +38,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeginInvoke", "BeginInvoke\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{EBCA7C9D-C2C7-4BB0-827C-5824A717408A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsqlTest", "UsqlTest\UsqlTest.csproj", "{04B7BAA7-CBBC-4783-A0E4-1895D6FD8279}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsqlTest", "UsqlTest\UsqlTest.csproj", "{C2F99E52-C927-476A-88A1-5420AE2C1BBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -110,10 +110,10 @@ Global
 		{EBCA7C9D-C2C7-4BB0-827C-5824A717408A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBCA7C9D-C2C7-4BB0-827C-5824A717408A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBCA7C9D-C2C7-4BB0-827C-5824A717408A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{04B7BAA7-CBBC-4783-A0E4-1895D6FD8279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{04B7BAA7-CBBC-4783-A0E4-1895D6FD8279}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{04B7BAA7-CBBC-4783-A0E4-1895D6FD8279}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{04B7BAA7-CBBC-4783-A0E4-1895D6FD8279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F99E52-C927-476A-88A1-5420AE2C1BBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F99E52-C927-476A-88A1-5420AE2C1BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F99E52-C927-476A-88A1-5420AE2C1BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F99E52-C927-476A-88A1-5420AE2C1BBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
