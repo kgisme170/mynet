@@ -31,12 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Analytics.Interfaces">
-      <HintPath>$(PkgMicrosoft_Analytics_StreamScope_RuntimeTool)\lib\Microsoft.Analytics.Interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Analytics.Interfaces.Streaming">
-      <HintPath>$(PkgMicrosoft_Analytics_StreamScope_RuntimeTool)\lib\Microsoft.Analytics.Interfaces.Streaming.dll</HintPath>
-    </Reference>
+    <Reference Include="Microsoft.Analytics.Interfaces" />
+    <Reference Include="Microsoft.Analytics.Interfaces.Streaming" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
