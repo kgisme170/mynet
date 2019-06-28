@@ -1,0 +1,16 @@
+﻿//Script GUID:f145b8e3-8fe3-4a23-b46d-8aaa1d4e9343
+//Used for tracking history
+@searchlog = 
+    EXTRACT UserId int,
+        Start DateTime,
+        Region string,
+        Query string,
+        Duration int,
+        Urls string,
+        ClickedUrls string
+        FROM "SearchLog.txt"
+    USING Extractors.Tsv();
+
+OUTPUT @searchlog
+TO "my/output2.tsv"
+USING Outputters.Tsv();
