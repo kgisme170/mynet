@@ -31,6 +31,10 @@
     <Script Include="Script1.usql" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Analytics.Interfaces" />
+    <Reference Include="Microsoft.Analytics.Interfaces.Streaming" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\OrdersLib\OrdersLib.csproj">
       <Name>OrdersLib</Name>
       <Project>{c8462db9-bffc-4d57-aa30-304e7764e337}</Project>

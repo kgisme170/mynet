@@ -12,5 +12,5 @@
     USING Extractors.Tsv();
 
 OUTPUT @searchlog
-TO "my/output2.tsv"
+TO "my/output3.tsv"
 USING Outputters.Tsv();
