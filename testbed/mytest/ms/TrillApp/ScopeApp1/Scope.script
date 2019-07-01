@@ -1,6 +1,28 @@
-﻿//Script GUID:f145b8e3-8fe3-4a23-b46d-8aaa1d4e9343
-//Used for tracking history
-searchlog = 
+﻿#CS
+public class MyTsvExtractor : Extractor
+{
+    public override Schema Produces(string[] schema, string[] args)
+    {
+        return new Schema(@"UserId:int,Start:DateTime,Region:string,Query:string,Duration:int,Urls:string,ClickedUrls:string");
+    }
+    public override IEnumerable<Row> Extract(StreamReader reader, Row outputRow, string[] args)
+    {
+        char delimiter = '\t';
+        string line;
+        while ((line = reader.ReadLine()) != null)
+        {
+            string[] tokens = line.Split(delimiter); // Consider using IndexOf() or IndexOfAny() instead of Split() for your extractor for improved performance
+            for (int i = 0; i < tokens.Length; ++i)
+            {
+                outputRow[i].UnsafeSet(tokens[i]);
+            }
+            yield return outputRow;
+        }
+    }
+}
+#ENDCS
+
+searchlog =
     EXTRACT UserId : int,
         Start : DateTime,
         Region : string,
@@ -9,8 +31,9 @@ searchlog =
         Urls : string,
         ClickedUrls : string
         FROM "SearchLog.txt"
-    USING DefaultTextExtractor();
+    //USING DefaultTextExtractor();
+    USING MyTsvExtractor();
 
 OUTPUT searchlog
-TO "my/output2.txt"
+TO "my/output4.txt"
 USING DefaultTextOutputter();

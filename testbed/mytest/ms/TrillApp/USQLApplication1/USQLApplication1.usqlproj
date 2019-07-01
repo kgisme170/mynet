@@ -28,7 +28,6 @@
     <Script Include="Script05_assembly.usql" />
     <Script Include="Script06_windowFunction.usql" />
     <Script Include="Script07_setOperations.usql" />
-    <Script Include="Script1.usql" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Analytics.Interfaces" />
@@ -40,11 +39,6 @@
       <Project>{c8462db9-bffc-4d57-aa30-304e7764e337}</Project>
       <Private>True</Private>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ScriptCode Include="Script1.usql.cs">
-      <DependentUpon>Script1.usql</DependentUpon>
-    </ScriptCode>
   </ItemGroup>
   <!-- check for SDK Build target in current path then in USQLSDKPath-->
   <Import Project="UsqlSDKBuild.targets" Condition="Exists('UsqlSDKBuild.targets')" />
