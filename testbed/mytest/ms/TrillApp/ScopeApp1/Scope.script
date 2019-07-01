@@ -21,7 +21,7 @@ public class MyTsvExtractor : Extractor
     }
 }
 #ENDCS
-
+/*
 searchlog =
     EXTRACT UserId : int,
         Start : DateTime,
@@ -31,9 +31,16 @@ searchlog =
         Urls : string,
         ClickedUrls : string
         FROM "SearchLog.txt"
-    //USING DefaultTextExtractor();
+    USING MyTsvExtractor();
+*/
+
+searchlog =
+    EXTRACT UserId : int,
+        Start : DateTime,
+        Region : string
+        FROM "SearchLog.txt"
     USING MyTsvExtractor();
 
 OUTPUT searchlog
-TO "my/output4.txt"
+TO "my/output5.txt"
 USING DefaultTextOutputter();
