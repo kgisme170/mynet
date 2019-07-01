@@ -12,5 +12,6 @@
     USING Extractors.Tsv();
 
 OUTPUT @searchlog
-TO "my/output3.tsv"
+TO "my/output4.bin"
 USING Outputters.Tsv();
+//USING new AtomicBinaryOutputter();

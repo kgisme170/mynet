@@ -12,5 +12,5 @@ searchlog =
     USING DefaultTextExtractor();
 
 OUTPUT searchlog
-TO "my/output2.tsv"
+TO "my/output2.txt"
 USING DefaultTextOutputter();
