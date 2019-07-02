@@ -33,7 +33,7 @@ searchlog =
         FROM "SearchLog.txt"
     USING MyTsvExtractor();
 */
-
+/*
 searchlog =
     EXTRACT UserId : int,
         Start : DateTime,
@@ -43,4 +43,25 @@ searchlog =
 
 OUTPUT searchlog
 TO "my/output5.txt"
+USING DefaultTextOutputter();
+*/
+
+#DECLARE ResourcesPath       string = @"D:\git\ads.bi.subjectareas\target\distrib\debug\amd64\Autopilot\StreamingToBatch\Binaries\";
+#DECLARE BIScopePipelinesDll string = @ResourcesPath + "Microsoft.BI.ScopePipelines.dll";
+#DECLARE BICommonDll string = @ResourcesPath + "Microsoft.BI.Common.dll";
+REFERENCE @BIScopePipelinesDll;
+REFERENCE @BICommonDll;
+
+#DECLARE Schema_Prod string = @"UserId:int,Start:DateTime,Region:string,Query:string,Duration:int,Urls:string,ClickedUrls:string";
+#DECLARE InputFile string = "output22.bin";
+#DECLARE OutputExpiration int = 14;
+
+ProdData =
+    EXTRACT *
+    FROM @InputFile
+    USING Microsoft.BI.ScopePipelines.BinaryExtractor(schema: @Schema_Prod);
+
+#DECLARE OutputFile string = "useScope.tsv";
+OUTPUT ProdData
+TO @OutputFile
 USING DefaultTextOutputter();

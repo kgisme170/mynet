@@ -31,6 +31,9 @@
     </ScriptCode>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="output22.bin">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="SearchLog.txt">
       <SubType>Content</SubType>
     </Content>
