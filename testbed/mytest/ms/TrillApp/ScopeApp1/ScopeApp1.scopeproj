@@ -26,11 +26,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Script Include="Scope.script" />
+    <Script Include="ScopeTestBin.script" />
     <ScriptCode Include="Scope.script.cs">
       <DependentUpon>Scope.script</DependentUpon>
     </ScriptCode>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Intlines.txt">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="output22.bin">
       <SubType>Content</SubType>
     </Content>

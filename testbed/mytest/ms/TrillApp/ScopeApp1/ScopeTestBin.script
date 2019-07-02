@@ -1,0 +1,57 @@
+﻿#DECLARE UETResourcesPath string = @"D:\git\ads.bi.subjectareas\target\distrib\debug\amd64\Autopilot\StreamingConversion\Binaries\";
+
+#DECLARE UETSchemaDll string = @UETResourcesPath + "Microsoft.AdCenter.BI.UET.Schema.dll";
+#DECLARE UETCommonHelperDll string = @UETResourcesPath + "Microsoft.AdCenter.BI.UET.Common.Helpers.dll";
+
+#DECLARE BICommonDLL string = @UETResourcesPath + "Microsoft.BI.Common.dll";
+#DECLARE BIScopePipelineDLL string = @UETResourcesPath + "Microsoft.BI.ScopePipelines.dll";
+#DECLARE BondDLL string = @UETResourcesPath + "Microsoft.Bond.dll";
+#DECLARE BondInterfacesDLL string = @UETResourcesPath + "Microsoft.Bond.Interfaces.dll";
+#DECLARE CFRDLL string = @UETResourcesPath + "Microsoft.BI.CFR.LogRecords.dll";
+#DECLARE SchemasDLL string = @UETResourcesPath + "Microsoft.BI.UET.Schemas.dll";
+#DECLARE USQLDll string = @UETResourcesPath + "Microsoft.BI.USQL.dll";
+#DECLARE UETUSQLDll string = @UETResourcesPath + "Microsoft.BI.UET.USQL.dll";
+#DECLARE BICommonCollectionsDll string = @UETResourcesPath + "Microsoft.BI.Common.Collections.dll";
+#DECLARE BICommonLoggingDll string = @UETResourcesPath + "Microsoft.BI.Common.Logging.dll";
+#DECLARE BICommonIODll string = @UETResourcesPath + "Microsoft.BI.Common.IO.FileSystem.dll";
+#DECLARE CEPDll string = @UETResourcesPath + "Microsoft.BI.ComplexEventProcessing.dll";
+#DECLARE CEPUSQLDll string = @UETResourcesPath + "Microsoft.BI.ComplexEventProcessing.USQL.dll";
+#DECLARE INTERFACES string = @UETResourcesPath + "Microsoft.Analytics.Interfaces.Streaming.dll";
+#DECLARE StreamProcessingCommon string = @UETResourcesPath + "Microsoft.StreamProcessing.Common.dll";
+
+REFERENCE @BICommonDLL;
+REFERENCE @BIScopePipelineDLL;
+REFERENCE @UETSchemaDll;
+REFERENCE @BondDLL;
+REFERENCE @BondInterfacesDLL;
+REFERENCE @CFRDLL;
+REFERENCE @SchemasDLL;
+REFERENCE @USQLDll;
+REFERENCE @UETUSQLDll;
+REFERENCE @BICommonCollectionsDll;
+REFERENCE @BICommonLoggingDll;
+REFERENCE @BICommonIODll;
+REFERENCE @CEPDll;
+REFERENCE @CEPUSQLDll;
+REFERENCE @INTERFACES;
+REFERENCE @StreamProcessingCommon;
+
+USING Microsoft.Analytics.Interfaces.Streaming;
+USING Microsoft.BI.ComplexEventProcessing;
+USING Microsoft.BI.CFR;
+USING Microsoft.BI.UET.Schemas;
+USING Microsoft.BI.UET.Schemas.Utilities;
+USING Microsoft.BI.UET.USQL;
+USING Microsoft.BI.USQL;
+
+#DECLARE Schema_Prod string = @"UserId:int";
+searchlog =
+    EXTRACT UserId : int
+        FROM "Intlines.txt"
+    USING DefaultTextExtractor();
+
+#DECLARE OutputFile string = "useText.txt";
+
+OUTPUT searchlog
+TO @OutputFile
+USING DefaultTextOutputter();
