@@ -25,5 +25,14 @@ namespace WebApp1.Controllers
                 return entities.Employees.FirstOrDefault(e => e.ID == id);
             }
         }
+
+        public void Post([FromBody] Employee employee)
+        {
+            using (EmployeeDBEntities entities = new EmployeeDBEntities())
+            {
+                entities.Employees.Add(employee);
+                entities.SaveChanges();
+            }
+        }
     }
 }
