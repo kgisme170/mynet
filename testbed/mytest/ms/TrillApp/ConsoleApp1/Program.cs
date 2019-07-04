@@ -24,6 +24,7 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
+            IList<string> list = new List<string>();
         }
     }
 }

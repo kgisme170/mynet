@@ -1,33 +1,11 @@
-﻿/*
-searchlog =
-    EXTRACT UserId : int,
-        Start : DateTime,
-        Region : string,
-        Query : string,
-        Duration : int,
-        Urls : string,
-        ClickedUrls : string
-        FROM "SearchLog.txt"
-    USING MyTsvExtractor();
-*/
-/*
-searchlog =
-    EXTRACT UserId : int,
-        Start : DateTime,
-        Region : string
-        FROM "SearchLog.txt"
-    USING MyTsvExtractor();
-
-OUTPUT searchlog
-TO "my/output5.txt"
-USING DefaultTextOutputter();
-*/
-
-#DECLARE ResourcesPath       string = @"D:\git\ads.bi.subjectareas\target\distrib\debug\amd64\Autopilot\StreamingToBatch\Binaries\";
+﻿#DECLARE ResourcesPath       string = @"D:\git\ads.bi.subjectareas\target\distrib\debug\amd64\Autopilot\StreamingToBatch\Binaries\";
 #DECLARE BIScopePipelinesDll string = @ResourcesPath + "Microsoft.BI.ScopePipelines.dll";
 #DECLARE BICommonDll string = @ResourcesPath + "Microsoft.BI.Common.dll";
 REFERENCE @BIScopePipelinesDll;
 REFERENCE @BICommonDll;
+REFERENCE "System.dll";
+
+USING System.Collections.Generic;
 
 #DECLARE Schema_Prod string = @"UserId:int,Start:DateTime,Region:string,Query:string,Duration:int,Urls:string,ClickedUrls:string";
 #DECLARE InputFile string = "output22.bin";
@@ -38,7 +16,33 @@ ProdData =
     FROM @InputFile
     USING Microsoft.BI.ScopePipelines.BinaryExtractor(schema: @Schema_Prod);
 
-#DECLARE OutputFile string = "useScope.tsv";
+ProdData =
+#DECLARE Urls string = "http://www.baidu.com";
+    SELECT UserId
+           //, new MyType("a") AS T
+           , new [] {1,2,3} AS Beer
+           , @Urls.Split('.').Where(u=>u.StartsWith("http:")).ToList() AS HttpUrls
+    FROM ProdData;
+/*
+ProdData2 =
+    SELECT (FROM u IN Urls WHERE u.StartsWith("http")).ToList() AS HttpUrls
+    FROM ProdData;
+*/
+
+//ProdData2 = SELECT @Urls.GetHttpUrls() AS HttpUrls FROM ProdData;
+#DECLARE b1 bool = false;
+#DECLARE b2 bool = false;
+ProdData =
+    SELECT UserId,
+           string.Join(";", HttpUrls) AS HttpUrls
+           //IF (@b1, true, false) AND IF (@b2, true, false) ? 1 : 2
+    //MyHelper.SecondsToMinutes(600) AS DurationInMinutes
+    FROM ProdData
+    WHERE UserId IN(1, 2, 3, 4);
+
+//#DECLARE TagId string[] = new string[]{"s1","s2"};
+
+#DECLARE OutputFile string = "useScope.ss";
+
 OUTPUT ProdData
-TO @OutputFile
-USING DefaultTextOutputter();
+TO SSTREAM @OutputFile;

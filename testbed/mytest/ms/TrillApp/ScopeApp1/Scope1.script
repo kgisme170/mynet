@@ -1,0 +1,39 @@
+﻿searchlog =
+    EXTRACT UserId : int,
+        Start : DateTime,
+        Region : string,
+        Query : string,
+        Duration : int,
+        Urls : string,
+        ClickedUrls : string
+        FROM "SearchLog.txt"
+    USING DefaultTextExtractor();
+
+//rs2 = SELECT Duration FROM searchlog;
+rs1 =
+    SELECT Region,
+           SUM(Duration) AS TotalDuration
+    //FROM rs2;
+    FROM searchlog
+    GROUP BY Region
+    HAVING TotalDuration > 200;
+
+OUTPUT rs1
+TO "sum.txt";
+
+rs2 =
+    SELECT COUNT(DISTINCT UserId) AS NumSessions,
+           COUNTIF(Duration > 600) AS NumLongSessions,
+           Region
+    FROM searchlog
+    GROUP BY Region;
+
+rs3 =
+    SELECT ANY_VALUE(Start) AS FirstStart,
+           Region
+    FROM searchlog
+    GROUP BY Region;
+
+rs4 =
+    SELECT ARGMAX(Duration, UserId) AS MaxDurationUserId
+    FROM searchlog;

@@ -26,9 +26,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Script Include="Scope.script" />
+    <Script Include="Scope1.script" />
     <Script Include="ScopeTestBin.script" />
     <ScriptCode Include="Scope.script.cs">
       <DependentUpon>Scope.script</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="Scope1.script.cs">
+      <DependentUpon>Scope1.script</DependentUpon>
     </ScriptCode>
   </ItemGroup>
   <ItemGroup>
@@ -36,6 +40,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="output22.bin">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="README.txt">
       <SubType>Content</SubType>
     </Content>
     <Content Include="SearchLog.txt">
