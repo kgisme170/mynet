@@ -1,0 +1,5 @@
+en-fr	241
+en-gb	688
+en-gr	305
+en-mx	422
+en-us	8291

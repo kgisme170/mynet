@@ -1,4 +1,10 @@
-﻿searchlog =
+﻿#IF(LOCAL)
+    #DECLARE inputfile string = "SearchLog.txt";
+#ELSE
+    #DECLARE inputfile string = "/my/sampledata/input.tsv";
+#ENDIF
+#DECLARE x string = EXISTS("path") ? "a" : "b";
+searchlog =
     EXTRACT UserId : int,
         Start : DateTime,
         Region : string,
@@ -6,14 +12,13 @@
         Duration : int,
         Urls : string,
         ClickedUrls : string
-        FROM "SearchLog.txt"
+        FROM @inputfile
     USING DefaultTextExtractor();
 
 //rs2 = SELECT Duration FROM searchlog;
 rs1 =
     SELECT Region,
            SUM(Duration) AS TotalDuration
-    //FROM rs2;
     FROM searchlog
     GROUP BY Region
     HAVING TotalDuration > 200;
@@ -37,3 +42,39 @@ rs3 =
 rs4 =
     SELECT ARGMAX(Duration, UserId) AS MaxDurationUserId
     FROM searchlog;
+
+rs5 =
+    SELECT Start,
+           Region,
+           Duration
+    FROM searchlog
+    WHERE REGEX(@"\bpizza.*\b").IsMatch("www");
+
+rs6 =
+    SELECT MAX(Duration) AS MaxCost
+    FROM searchlog;
+
+rs7 =
+    SELECT Region,
+           SplitUrls AS Url
+    FROM searchlog
+         CROSS APPLY Urls.Split(';') AS SplitUrls;
+
+rs8 =
+    SELECT Region,
+           String.Join(";", LIST(Url).ToArray()) AS Urls
+    FROM rs7
+    GROUP BY Region;
+
+rs9 =
+    SELECT Region,
+           string.Join(";", ARRAY_AGG(Url)) AS Urls
+    FROM rs7
+    GROUP BY Region;
+/*
+#IF (STREAM(@inputfile).CREATED < new System.DateTime(2019,03,31))
+    #DECLARE IsOld bool = true;
+#ELSE
+    #DECLARE IsOld bool = false;
+#ENDIF
+*/
