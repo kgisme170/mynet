@@ -1,0 +1,19 @@
+﻿CREATE VIEW SearchLog SCHEMA(
+    UserId : int,
+    name: string
+)
+PARAMS (
+    minId int,
+    maxId int
+)
+AS BEGIN
+searchlog = 
+    EXTRACT
+        UserId : int,
+        name: string
+    FROM
+        "TextFile2.txt",
+        "TextFile1.txt"
+    //WHERE UserId >= @minId AND UserId <= @maxId
+    USING DefaultTextExtractor(delimiter: ' ');
+END;
