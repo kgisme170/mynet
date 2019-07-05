@@ -3,9 +3,124 @@
         name : string,
         UserId : int
     FROM "TabFile.txt"
-    USING MyTsvExtractor();
+    USING MyTsvExtractor();//没有输出
 
 OUTPUT searchlog
 TO "TextOutput.txt"
+//USING DefaultTextOutputter();
+USING MyCsvOutputter();
+
+#CS
+public class UrlList
+{
+    public List<string> Items;
+    private static char [] sepchars = new char[] {';'};
+    public UrlList(string s)
+    {
+        this.Items = new List<string>(s.Split(sepchars));
+    }
+    public static UrlList Create(string s)
+    {
+        return new UrlList(s);
+    }
+    public string Serialize()
+    {
+        return string.Join(";", this.Items);
+    }
+}
+public class MySum_Double : Aggregate1<double, double>
+{
+    double sum = 0;
+    public override void Initialize()
+    {
+        sum = 0;
+    }
+    public override void Add(double y)
+    {
+        sum += y;
+    }
+    public override double Finalize()
+    {
+        return sum;
+    }
+}
+#ENDCS
+
+searchlog =
+    EXTRACT
+        UserId : int,
+        Start : DateTime,
+        Region : string,
+        Query : string,
+        Duration : int,
+        Urls : string,
+        ClickedUrls : string
+    FROM @"SearchLog.txt"
+    USING DefaultTextExtractor();
+
+searchlog2 =
+    SELECT UserId,
+           Region,
+           new UrlList(ClickedUrls) AS CLickedUrlsList
+    FROM searchlog;
+
+searchlog3 =
+    SELECT UserId,
+           Region,
+           CLickedUrlsList.Items.Count AS ClickedUrlsCount
+    FROM searchlog2;
+
+OUTPUT searchlog
+TO "searchlog2.txt"
 USING DefaultTextOutputter();
-//USING MyCsvOutputter();
+
+OUTPUT searchlog3
+TO "searchlog3.txt"
+USING DefaultTextOutputter();
+
+searchlog4 = SELECT Region,
+       MySum(Duration) AS TotalDuration
+FROM searchlog
+GROUP BY Region;
+
+OUTPUT searchlog4
+TO "searchlog4.txt"
+USING DefaultTextOutputter();
+
+#CS
+public class CopyProcess : Processor
+{
+    public override Schema Produces(
+        string[] required_columns,
+        string[] args,
+        Schema input_schema
+    ){
+        var output_schema = input_schema.CloneWithSource();
+        var newcol = new ColumnInfo("Market2", typeof(string));
+        output_schema.Add(newcol);
+        return output_schema;
+    }
+    public override IEnumerable<Row> Process(
+        RowSet input_rowset,
+        Row output_row,
+        string[] args
+    ){
+        foreach (Row input_row in input_rowset.Rows){
+            input_row.CopyTo(output_row);
+            //string market = input_row[0].String;
+            //output_row[0].Set("FOO" + market);
+            yield return output_row;
+        }
+    }
+}
+#ENDCS
+
+rs2 =
+    PROCESS searchlog
+    PRODUCE UserId,
+            Region
+    USING CopyProcess;
+
+OUTPUT rs2
+TO "rs2.txt"
+USING DefaultTextOutputter();

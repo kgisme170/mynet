@@ -37,6 +37,8 @@ public class MyCsvOutputter : Outputter
                 }
                 row[i].Serialize(writer);
                 c++;
+                string debug_msg = string.Format("Line {0}: {1}", i, row);
+                ScopeRuntime.Diagnostics.DebugStream.WriteLine(debug_msg);
             }
             writer.WriteLine();
             writer.Flush();
