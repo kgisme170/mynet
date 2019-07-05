@@ -29,15 +29,26 @@
     <Script Include="Scope1.script" />
     <Script Include="Scope2.script" />
     <Script Include="Scope3.script" />
+    <Script Include="Scope4.script" />
+    <Script Include="Scope5.script" />
     <Script Include="ScopeTestBin.script" />
     <ScriptCode Include="Scope.script.cs">
       <DependentUpon>Scope.script</DependentUpon>
     </ScriptCode>
-    <ScriptCode Include="Scope3.script.cs">
-      <DependentUpon>Scope3.script</DependentUpon>
+    <ScriptCode Include="Scope4.script.cs">
+      <DependentUpon>Scope4.script</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="Scope5.script.cs">
+      <DependentUpon>Scope5.script</DependentUpon>
     </ScriptCode>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Departments.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Employees.txt">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="TabFile.txt">
       <SubType>Content</SubType>
     </Content>

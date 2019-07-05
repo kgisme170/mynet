@@ -1,6 +1,6 @@
 ﻿using ScopeRuntime;
-using System.Collections.Generic;
 using System.IO;
+using System.Collections.Generic;
 public class MyTsvExtractor : Extractor
 {
     public override Schema Produces(string[] schema, string[] args)

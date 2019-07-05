@@ -1,0 +1,16 @@
+﻿employees =
+    EXTRACT EmpName : string,
+            DepID : string
+    FROM @"Employees.txt"
+    USING DefaultTextExtractor();
+
+departments =
+    EXTRACT DepID : string,
+            DepName : string
+    FROM @"departments.txt"
+    USING DefaultTextExtractor();
+
+rs0 = COMBINE employees WITH departments
+ON employees.DepID == departments.DepID
+USING MyCrossJoinCombiner ();
+OUTPUT rs0 TO "output.txt";

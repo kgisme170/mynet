@@ -1,16 +1,4 @@
-﻿searchlog =
-    EXTRACT 
-        name : string,
-        UserId : int
-    FROM "TabFile.txt"
-    USING MyTsvExtractor();//没有输出
-
-OUTPUT searchlog
-TO "TextOutput.txt"
-//USING DefaultTextOutputter();
-USING MyCsvOutputter();
-
-#CS
+﻿#CS
 public class UrlList
 {
     public List<string> Items;
@@ -109,6 +97,7 @@ public class CopyProcess : Processor
             input_row.CopyTo(output_row);
             //string market = input_row[0].String;
             //output_row[0].Set("FOO" + market);
+            string results = input_row[1].String;
             yield return output_row;
         }
     }

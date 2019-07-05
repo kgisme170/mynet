@@ -1,0 +1,10 @@
+﻿searchlog =
+    EXTRACT 
+        name : string,
+        UserId : int
+    FROM "TabFile.txt"
+    USING MyTsvExtractor();
+
+OUTPUT searchlog
+TO "TextOutput.txt"
+USING MyCsvOutputter();
