@@ -1,0 +1,26 @@
+﻿MODULE @"Scope1.module" AS M;
+
+colors = 
+    EXTRACT Color:string, 
+            HexCode:string, 
+            Rgb:string, 
+            Issued:String, 
+            Retired:string, 
+            Notes:string
+    FROM @"/my/Colors.txt" 
+    USING DefaultTextExtractor();
+
+colors2 = M.DoNothingFunc( input=colors );
+colors3 = M.ReverseFunc( input=colors );
+
+OUTPUT colors 
+TO @"/my/outcolors.txt" 
+USING DefaultTextOutputter();
+
+OUTPUT colors2
+TO @"/my/outcolors2.txt" 
+USING DefaultTextOutputter();
+
+OUTPUT colors3
+TO @"/my/outcolors3.txt" 
+USING DefaultTextOutputter();
