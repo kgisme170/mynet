@@ -40,6 +40,9 @@
     </ScriptCode>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scope2.view">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="TextFile2.txt">
       <SubType>Content</SubType>
     </Content>

@@ -1,0 +1,14 @@
+﻿CREATE VIEW SearchLog SCHEMA(
+    UserId : int,
+    name: string
+)
+AS BEGIN
+searchlog = 
+    EXTRACT
+        UserId : int,
+        name: string
+    FROM
+        "TextFile2.txt",
+        "TextFile1.txt"
+    USING DefaultTextExtractor(delimiter: ' ');
+END;

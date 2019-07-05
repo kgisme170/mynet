@@ -1,11 +1,18 @@
 ﻿//Script GUID:fec3c0ae-4d38-497c-b22a-5ce20b0ecb17
 //Used for tracking history
 searchlog =
-    EXTRACT UserId : int,
+    EXTRACT 
+        UserId : int,
         name : string
-        FROM "TextFile1.txt",
-             "TextFile2.txt"
+    //        FROM "TextFile1.txt",
+    //             "TextFile2.txt"
+    FROM STREAMSET "/"
+         PATTERN "TextFile%n.txt"
+         RANGE __serialnum = ["1", "2"]
     USING DefaultTextExtractor(delimiter:' ');
+
+searchlog =
+    VIEW "Scope2.view";
 
 OUTPUT searchlog
 TO "SpaceOut.txt";
