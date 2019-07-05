@@ -40,6 +40,9 @@
     </ScriptCode>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="TextFile2.txt">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Intlines.txt">
       <SubType>Content</SubType>
     </Content>
