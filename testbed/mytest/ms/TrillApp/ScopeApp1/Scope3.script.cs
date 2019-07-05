@@ -22,3 +22,24 @@ public class MyTsvExtractor : Extractor
         }
     }
 }
+public class MyCsvOutputter : Outputter
+{
+    public override void Output(RowSet input, StreamWriter writer, string[] args)
+    {
+        foreach (Row row in input.Rows)
+        {
+            int c = 0;
+            for (int i = 0; i < row.Count; i++)
+            {
+                if (c > 0)
+                {
+                    writer.Write(",");
+                }
+                row[i].Serialize(writer);
+                c++;
+            }
+            writer.WriteLine();
+            writer.Flush();
+        }
+    }
+}

@@ -8,3 +8,4 @@
 OUTPUT searchlog
 TO "TextOutput.txt"
 USING DefaultTextOutputter();
+//USING MyCsvOutputter();
