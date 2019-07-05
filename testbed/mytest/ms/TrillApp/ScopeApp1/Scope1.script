@@ -13,7 +13,7 @@ searchlog =
         Urls : string,
         ClickedUrls : string
         FROM @inputfile
-    USING DefaultTextExtractor();
+    USING DefaultTextExtractor();//delimiter:' ');
 
 //rs2 = SELECT Duration FROM searchlog;
 rs1 =
