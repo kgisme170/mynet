@@ -15,7 +15,6 @@ searchlog =
         FROM @inputfile
     USING DefaultTextExtractor();//delimiter:' ');
 
-//rs2 = SELECT Duration FROM searchlog;
 rs1 =
     SELECT Region,
            SUM(Duration) AS TotalDuration
