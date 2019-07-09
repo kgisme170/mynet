@@ -32,6 +32,7 @@
     <Script Include="Scope4.script" />
     <Script Include="Scope5.script" />
     <Script Include="Scope6.script" />
+    <Script Include="Scope7.script" />
     <Script Include="ScopeTestBin.script" />
     <ScriptCode Include="Scope.script.cs">
       <DependentUpon>Scope.script</DependentUpon>
@@ -44,6 +45,9 @@
     </ScriptCode>
     <ScriptCode Include="Scope6.script.cs">
       <DependentUpon>Scope6.script</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="Scope7.script.cs">
+      <DependentUpon>Scope7.script</DependentUpon>
     </ScriptCode>
   </ItemGroup>
   <ItemGroup>

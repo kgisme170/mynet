@@ -3,22 +3,29 @@ using System.IO;
 using System.Collections.Generic;
 public class MyTsvExtractor : Extractor
 {
+    /*
     public override Schema Produces(string[] schema, string[] args)
     {
         return new Schema(@"UserId:int,name:string");
     }
-    public override IEnumerable<Row> Extract(StreamReader reader, Row outputRow, string[] args)
+    */
+    public override Schema Produces(string[] requested_columns, string[] args)
+
+    {
+        return new Schema(requested_columns);
+    }
+    public override IEnumerable<Row> Extract(StreamReader reader, Row output_row, string[] args)
     {
         char delimiter = '\t';
         string line;
         while ((line = reader.ReadLine()) != null)
         {
-            string[] tokens = line.Split(delimiter); // Consider using IndexOf() or IndexOfAny() instead of Split() for your extractor for improved performance
+            var tokens = line.Split(delimiter);
             for (int i = 0; i < tokens.Length; ++i)
             {
-                outputRow[i].UnsafeSet(tokens[i]);
+                output_row[i].UnsafeSet(tokens[i]);
             }
-            yield return outputRow;
+            yield return output_row;
         }
     }
 }

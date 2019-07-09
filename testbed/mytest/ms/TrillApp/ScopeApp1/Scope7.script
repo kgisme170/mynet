@@ -1,0 +1,51 @@
+﻿searchlog =
+    EXTRACT UserId : int,
+        Start : DateTime,
+        Region : string,
+        Query : string,
+        Duration : int,
+        Urls : string,
+        ClickedUrls : string
+        FROM "SearchLog.txt"
+    USING DefaultTextExtractor();
+
+constValues =
+    SELECT a,
+           b
+    FROM(
+        VALUES
+        (
+            1,
+            2
+        ),
+        (
+            399266,
+            4
+        ),
+        (
+            951513,
+            6
+        ),
+        (
+            7,
+            8
+        ),
+        (
+            9,
+            10
+        ) ) AS MyTable(a, b);
+
+constValues =
+    SELECT a
+    FROM constValues;
+
+final =
+    SELECT *
+    FROM searchlog
+         INNER JOIN
+             constValues
+         ON searchlog.UserId == constValues.a;
+
+OUTPUT final
+TO "constValues.txt"
+USING DefaultTextOutputter();
