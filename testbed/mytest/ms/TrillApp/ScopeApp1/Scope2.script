@@ -1,6 +1,4 @@
-﻿//Script GUID:fec3c0ae-4d38-497c-b22a-5ce20b0ecb17
-//Used for tracking history
-searchlog =
+﻿searchlog =
     EXTRACT 
         UserId : int,
         name : string

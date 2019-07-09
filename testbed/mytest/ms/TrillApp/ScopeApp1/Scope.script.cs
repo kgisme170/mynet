@@ -18,12 +18,3 @@ public static class MyHelper
         return minutes;
     }
 }
-/*
-public static class MyExtensions
-{
-    public static List<string> GetHttpUrls(this IList<string> urls)
-    {
-        return urls.Where(u => u.StartsWith("http:")).ToList();
-    }
-}
-*/

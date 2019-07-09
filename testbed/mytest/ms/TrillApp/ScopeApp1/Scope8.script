@@ -1,0 +1,28 @@
+﻿#CS
+public class MyClass{
+    private int mI { get; set; }
+    public MyClass(int i){
+        mI = i;
+    }
+}
+#ENDCS
+    
+constValues =
+    SELECT a,
+           b
+    FROM(
+        VALUES
+        (
+            9,
+            10
+        ) ) AS MyTable(a, b);
+
+values2 =
+    SELECT
+        a,
+        new MyClass(b) AS My
+    FROM constValues;
+
+OUTPUT values2
+TO "values.tsv"
+USING MyOutputter();
