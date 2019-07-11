@@ -1,3 +1,4 @@
-﻿e = SSTREAM "local/users/limgong/Output.ss";
-s = SELECT Score FROM e;
+﻿e = SSTREAM "local/users/limgong/UpdatedConversion_20190703_0000.detail.keep.ss";//Output.ss";
+//s = SELECT COUNT() AS C FROM e;
+s = SELECT DISTINCT TagId FROM e;
 OUTPUT s TO CONSOLE;
