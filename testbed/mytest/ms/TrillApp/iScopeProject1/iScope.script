@@ -1,2 +1,3 @@
-﻿e = SSTREAM "local/users/limgong/UpdatedConversion_20190627_0000.detail.ss";
-OUTPUT e TO CONSOLE;
+﻿e = SSTREAM "local/users/limgong/Output.ss";
+s = SELECT Score FROM e;
+OUTPUT s TO CONSOLE;

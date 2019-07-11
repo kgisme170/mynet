@@ -4,6 +4,12 @@ public class MyClass{
     public MyClass(int i){
         mI = i;
     }
+    public string Serialize(){
+        return mI.ToString();
+    }
+    public void Serialize(StreamWriter writer){
+        writer.Write(mI.ToString());
+    }
 }
 #ENDCS
     
@@ -24,5 +30,12 @@ values2 =
     FROM constValues;
 
 OUTPUT values2
-TO "values.tsv"
+TO "values2.tsv"
+USING MyOutputter();
+
+values3 =
+    SELECT My.Serialize() AS My;
+
+OUTPUT values3
+TO "values3.tsv"
 USING MyOutputter();
