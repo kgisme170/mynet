@@ -28,14 +28,15 @@ values2 =
         a,
         new MyClass(b) AS My
     FROM constValues;
-
+/*
 OUTPUT values2
-TO "values2.tsv"
+TO "local/users/limgong/values2.tsv"
 USING MyOutputter();
-
+*/
 values3 =
-    SELECT My.Serialize() AS My;
+    SELECT My.Serialize() AS My
+    FROM values2;
 
 OUTPUT values3
-TO "values3.tsv"
+TO "local/users/limgong/values3.tsv"
 USING MyOutputter();
