@@ -1,0 +1,2 @@
+﻿e = SSTREAM "local/users/limgong/UpdatedConversion_20190627_0000.detail.ss";
+OUTPUT e TO CONSOLE;

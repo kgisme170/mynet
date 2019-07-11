@@ -1,0 +1,33 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>0b749eed-4eb1-45d4-a0e1-bb2a8afdb46b</ProjectGuid>
+    <OutputType>File</OutputType>
+    <AssemblyName>
+    </AssemblyName>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <IsIScope>true</IsIScope>
+    <IsInteractiveQuery>true</IsInteractiveQuery>
+    <Name>iScopeProject1</Name>
+    <RootNamespace>iScopeProject1</RootNamespace>
+    <VCSelectionInProjectProperty>&lt;Use Current VC in VC Selector&gt;</VCSelectionInProjectProperty>
+    <CosmosRuntimeVersion>Default</CosmosRuntimeVersion>
+    <ScopePath>%24(SCRIPT_DIR);%24(CLUSTER_ROOT);%24(SCOPE_DIR);%24(PROJECT_DIR)</ScopePath>
+    <InputStreamSearchPath>%24(PROJECT_DIR);%24(SCRIPT_DIR);%24(CLUSTER_ROOT)</InputStreamSearchPath>
+    <VertexDebugSolution>false</VertexDebugSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Script Include="iScope.script" />
+  </ItemGroup>
+  <Import Project="$(AppData)\Microsoft\ScopeStudio\MsBuild\1.0\iScope.targets" />
+</Project>
