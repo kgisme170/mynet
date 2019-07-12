@@ -1,0 +1,65 @@
+﻿Employees =
+    SELECT EmpName,
+           DeptId
+    FROM(
+        VALUES
+        (
+            "Rafferty",
+            31
+        ),
+
+        (
+            "Jones",
+            34
+        ),
+
+        (
+            "Steinberg",
+            31
+        ),
+
+        (
+            "Robinson",
+            34
+        ),
+
+        (
+            "Smith",
+            34
+        ),
+
+        (
+            "John",
+            31
+        )
+) AS Employees(EmpName, DeptId);
+
+Departments =
+    SELECT DeptId, DepName
+    FROM(
+        VALUES
+        (
+            31,
+            "math"
+        ),
+        (
+            34,
+            "physics"
+        )
+) AS Departments(DeptId, DepName);
+
+OUTPUT Employees
+TO "out/Empl.txt";
+OUTPUT Departments
+TO "out/Dept.txt";
+
+All =
+    SELECT e.EmpName AS EmpName,
+           e.DeptId AS DeptId,
+           d.DepName
+    FROM Employees AS e,
+         Departments AS d
+    WHERE e.DeptId == d.DeptId;
+
+OUTPUT All
+TO "out/All.txt";
