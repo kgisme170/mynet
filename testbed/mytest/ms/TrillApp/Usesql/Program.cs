@@ -10,7 +10,10 @@ namespace Usesql
         {
             SqlConnection conn = new SqlConnection("Data Source=MININT-EP12N1V;Initial Catalog=EmployeeDB;Integrated Security=True");
             conn.Open();
-            SqlCommand cmd = new SqlCommand("select FirstName, LastName from Employees");
+            SqlCommand cmd = new SqlCommand(
+                "select FirstName, LastName from Employees",
+                conn
+            );
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
