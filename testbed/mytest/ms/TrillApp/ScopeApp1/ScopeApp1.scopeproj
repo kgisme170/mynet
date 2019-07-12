@@ -25,33 +25,32 @@
     <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Script Include="Scope.script" />
-    <Script Include="Scope1.script" />
-    <Script Include="Scope2.script" />
-    <Script Include="Scope3.script" />
-    <Script Include="Scope4.script" />
-    <Script Include="Scope5.script" />
+    <Script Include="UseClientSchema.script" />
+    <Script Include="UseAggOps.script" />
+    <Script Include="RangePattern.script" />
+    <Script Include="UdoAndProcessor.script" />
+    <Script Include="UseMyTsvExtractor.script" />
+    <Script Include="UseMyCrossJoinCombiner.script" />
     <Script Include="Scope6.script" />
-    <Script Include="Scope7.script" />
-    <Script Include="Scope8.script" />
-    <Script Include="ScopeTestBin.script" />
-    <ScriptCode Include="Scope.script.cs">
-      <DependentUpon>Scope.script</DependentUpon>
+    <Script Include="ValuesAndInnerJoin.script" />
+    <Script Include="Serialize.script" />
+    <ScriptCode Include="UseClientSchema.script.cs">
+      <DependentUpon>UseClientSchema.script</DependentUpon>
     </ScriptCode>
-    <ScriptCode Include="Scope4.script.cs">
-      <DependentUpon>Scope4.script</DependentUpon>
+    <ScriptCode Include="UseMyTsvExtractor.script.cs">
+      <DependentUpon>UseMyTsvExtractor.script</DependentUpon>
     </ScriptCode>
-    <ScriptCode Include="Scope5.script.cs">
-      <DependentUpon>Scope5.script</DependentUpon>
+    <ScriptCode Include="UseMyCrossJoinCombiner.script.cs">
+      <DependentUpon>UseMyCrossJoinCombiner.script</DependentUpon>
     </ScriptCode>
     <ScriptCode Include="Scope6.script.cs">
       <DependentUpon>Scope6.script</DependentUpon>
     </ScriptCode>
-    <ScriptCode Include="Scope7.script.cs">
-      <DependentUpon>Scope7.script</DependentUpon>
+    <ScriptCode Include="ValuesAndInnerJoin.script.cs">
+      <DependentUpon>ValuesAndInnerJoin.script</DependentUpon>
     </ScriptCode>
-    <ScriptCode Include="Scope8.script.cs">
-      <DependentUpon>Scope8.script</DependentUpon>
+    <ScriptCode Include="Serialize.script.cs">
+      <DependentUpon>Serialize.script</DependentUpon>
     </ScriptCode>
   </ItemGroup>
   <ItemGroup>
@@ -67,16 +66,13 @@
     <Content Include="TabFile.txt">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Scope1.view">
+    <Content Include="ViewWithParameter.view">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Scope2.view">
+    <Content Include="ViewWithNoParam.view">
       <SubType>Content</SubType>
     </Content>
     <Content Include="TextFile2.txt">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Intlines.txt">
       <SubType>Content</SubType>
     </Content>
     <Content Include="output22.bin">
