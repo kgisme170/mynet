@@ -2,6 +2,7 @@
 public class MyClass{
     private int mI { get; set; }
     public MyClass(int i){
+        ScopeRuntime.Diagnostics.DebugStream.WriteLine("Hello World");
         mI = i;
     }
     public string Serialize(){
