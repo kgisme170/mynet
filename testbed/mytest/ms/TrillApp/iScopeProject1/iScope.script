@@ -1,4 +1,5 @@
-﻿e = SSTREAM "local/users/limgong/UpdatedConversion_20190703_0100.detail.ss";//Output.ss";
+﻿e = SSTREAM "my/SubjectArea/Conversion.USQL/S2B/AllOutput/StreamingToBatch/2019/07/07/00/UpdatedConversion_20190707_0000.ss";//Output.ss";
 //s = SELECT COUNT() AS C FROM e;
-s = SELECT DISTINCT TagId FROM e;
+//s = SELECT DISTINCT TagId FROM e;
+s = SELECT COUNT() AS C FROM e;
 OUTPUT s TO CONSOLE;
