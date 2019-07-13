@@ -39,6 +39,10 @@ namespace LinqRx
             Console.WriteLine();
             Console.WriteLine();
             Produce5().ForAll(Console.Write);
+            Console.WriteLine();
+
+            Enumerable.Range(1, 15).Where(i => i % 2 == 0).ForAll(Console.Write);
+            Console.WriteLine();
         }
 
         public static IEnumerable<Tuple<int, int>> Produce1()
