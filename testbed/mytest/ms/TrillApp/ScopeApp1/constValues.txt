@@ -1,0 +1,2 @@
+399266	12/02/15 11:53:16	en-us	how to make nachos	73	d-card:recipes;www.nachos.com;www.wikipedia.com;d-card:videos	NULL	399266
+951513	12/02/16 12:17:00	en-us	pokemon	63	pokemon.com;pokemon.com/us;d-card:videos;serebii.net	d-card:videos	951513
