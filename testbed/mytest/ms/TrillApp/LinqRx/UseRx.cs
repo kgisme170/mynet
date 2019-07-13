@@ -24,6 +24,14 @@ namespace LinqRx
             );
             var sub = observable.Subscribe(observer);
             sub.Dispose();
+
+            var subject = new Subject<int>();
+            var sub2 = subject.Subscribe(Console.WriteLine);
+            subject.OnNext(1);
+            subject.OnNext(11);
+            subject.OnNext(12);
+            sub2.Dispose();
+            subject.OnNext(33);
         }
         public static void Test1()
         {
@@ -35,10 +43,12 @@ namespace LinqRx
 
             var ob = new MyObserver<int>();
             var subscripttion = input.Subscribe(ob);
-            subscripttion.Dispose();
 
             var observable = new MyRangeObservable(5, 8);
             var subscription2 = observable.Subscribe(ob);
+
+            Console.ReadKey();
+            subscripttion.Dispose();
             subscription2.Dispose();
         }
     }
@@ -102,11 +112,14 @@ namespace LinqRx
         {
             try
             {
-                for (int i = _start; i < _start + _count; ++i)
-                {
-                    observer.OnNext(i);
-                }
-                observer.OnCompleted();
+                //Task.Run(() =>
+                //{
+                    for (int i = _start; i < _start + _count; ++i)
+                    {
+                        observer.OnNext(i);
+                    }
+                    observer.OnCompleted();
+                //});
             }
             catch (Exception e)
             {
