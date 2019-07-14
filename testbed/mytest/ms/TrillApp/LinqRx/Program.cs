@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            UseExpression.Test();
+            UseMethods.Test();
         }
     }
 }
