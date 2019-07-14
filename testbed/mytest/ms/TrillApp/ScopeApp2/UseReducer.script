@@ -1,0 +1,47 @@
+﻿Employees =
+    SELECT EmpName,
+           DeptId
+    FROM(
+        VALUES
+        (
+            "Rafferty",
+            31
+        ),
+
+        (
+            "Jones",
+            34
+        ),
+
+        (
+            "Steinberg",
+            31
+        ),
+
+        (
+            "Robinson",
+            34
+        ),
+
+        (
+            "Smith",
+            34
+        ),
+
+        (
+            "John",
+            31
+        )
+) AS Employees(EmpName, DeptId);
+
+reducedTaxes =
+    REDUCE Employees
+    ON DeptId
+    PRODUCE EmpNames : string,
+            DeptId : int
+    USING MyReducer
+    PRESORT DeptId;
+
+OUTPUT reducedTaxes
+TO @"my/UseReducer.txt"
+USING DefaultTextOutputter();

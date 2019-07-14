@@ -26,6 +26,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Script Include="JOIN.script" />
+    <Script Include="UseReducer.script" />
+  </ItemGroup>
+  <ItemGroup>
+    <ScriptCode Include="UseReducer.script.cs">
+      <DependentUpon>UseReducer.script</DependentUpon>
+    </ScriptCode>
   </ItemGroup>
   <Import Project="$(AppData)\Microsoft\ScopeStudio\MsBuild\1.0\Scope.targets" />
 </Project>
