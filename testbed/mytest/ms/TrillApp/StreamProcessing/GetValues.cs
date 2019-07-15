@@ -82,9 +82,7 @@ namespace StreamProcessing
             query
                 .ToStreamEventObservable()
                 .Where(e => e.IsData)
-                .ForEachAsync(e => Console.WriteLine("{0}\t{1}\t{2}", e.StartTime, e.EndTime, e.Payload)).Wait();
-
-            Console.ReadLine();
+                .ForEachAsync(e => Console.WriteLine("{0}\t{1}\t{2}", e.StartTime, e.EndTime, e.Payload)).Wait();  
         }
     }
 }
