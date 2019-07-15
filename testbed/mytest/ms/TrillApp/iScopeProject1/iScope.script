@@ -1,4 +1,4 @@
-﻿e = SSTREAM "local/users/limgong/Joined_20190707_0000.detail.ss";//Output.ss";
+﻿e = SSTREAM "local/users/limgong/Joined_20190709_0200.detail.ss";//Output.ss";
 //s = SELECT COUNT() AS C FROM e;
 //s = SELECT DISTINCT TagId FROM e;
 s = SELECT DISTINCT TagId FROM e;
