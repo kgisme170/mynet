@@ -9,9 +9,14 @@ namespace LinqRx
         public static void Test()
         {
             int[] foo =
-                (from n in Enumerable.Range(0, 10)
+                (from n in Enumerable.Range(0, 100)
                  select n * n).ToArray();
-            foo.Where(n => n > 50).Select(n => "n=" + n).ForAll(Console.WriteLine);
+            foo
+                .Where(n => n > 50 && n < 300)
+                .Select(n => "n=" + n)
+                .Take(5)
+                .Skip(1)
+                .ForAll(Console.WriteLine);
         }
     }
 }
