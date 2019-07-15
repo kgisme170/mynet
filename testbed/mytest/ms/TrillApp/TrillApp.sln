@@ -15,8 +15,6 @@ Project("{16730046-AB7A-431B-B756-05245A4DDAE1}") = "iScopeProject1", "iScopePro
 EndProject
 Project("{202899A3-C531-4771-9089-0213D66978AE}") = "ScopeApp2", "ScopeApp2\ScopeApp2.scopeproj", "{E9D15DD4-2E04-4CAB-84C5-DC5566B962DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqRx", "LinqRx\LinqRx.csproj", "{39306A81-938F-4BCE-8032-8EB1AA5FFBCD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,18 +97,6 @@ Global
 		{E9D15DD4-2E04-4CAB-84C5-DC5566B962DD}.Release|x64.Build.0 = Release|x64
 		{E9D15DD4-2E04-4CAB-84C5-DC5566B962DD}.Release|x86.ActiveCfg = Release|x86
 		{E9D15DD4-2E04-4CAB-84C5-DC5566B962DD}.Release|x86.Build.0 = Release|x86
-		{39306A81-938F-4BCE-8032-8EB1AA5FFBCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{39306A81-938F-4BCE-8032-8EB1AA5FFBCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{39306A81-938F-4BCE-8032-8EB1AA5FFBCD}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{39306A81-938F-4BCE-8032-8EB1AA5FFBCD}.Debug|x64.Build.0 = Debug|Any CPU
-		{39306A81-938F-4BCE-8032-8EB1AA5FFBCD}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{39306A81-938F-4BCE-8032-8EB1AA5FFBCD}.Debug|x86.Build.0 = Debug|Any CPU
-		{39306A81-938F-4BCE-8032-8EB1AA5FFBCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{39306A81-938F-4BCE-8032-8EB1AA5FFBCD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{39306A81-938F-4BCE-8032-8EB1AA5FFBCD}.Release|x64.ActiveCfg = Release|Any CPU
-		{39306A81-938F-4BCE-8032-8EB1AA5FFBCD}.Release|x64.Build.0 = Release|Any CPU
-		{39306A81-938F-4BCE-8032-8EB1AA5FFBCD}.Release|x86.ActiveCfg = Release|Any CPU
-		{39306A81-938F-4BCE-8032-8EB1AA5FFBCD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
