@@ -6,7 +6,8 @@
         static void Main(string[] args)
         {
             //UseMulticast.Test();
-            StandardDeviationAggregate.Test();
+            //StandardDeviationAggregate.Test();
+            GetValues.Test();
         }
     }
 }
