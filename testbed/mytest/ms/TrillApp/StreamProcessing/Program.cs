@@ -9,17 +9,6 @@ namespace StreamProcessing
     {
         static void Main(string[] args)
         {
-            /*
-            var values = new[]
-            {
-                new {Field1=1,Field2=3},
-                new {Field1=1,Field2=3},
-                new {Field1=1,Field2=3},
-                new {Field1=1,Field2=3},
-                new {Field1=1,Field2=3},
-            };
-            */
-
             StreamEvent<int>[] values =
             {
                 StreamEvent.CreateInterval(1, 10, 1),
@@ -34,8 +23,13 @@ namespace StreamProcessing
                 StreamEvent.CreatePunctuation<int>(StreamEvent.InfinitySyncTime)
             };
 
-            var input = values.ToObservable().ToStreamable();
-            Console.WriteLine("Input =");
+            var ob = values.ToObservable();
+            var input = ob.ToStreamable();
+            Console.WriteLine("Streamable Input =");
+            ob.ForEachAsync(e => Console.WriteLine(e)).Wait();
+            Console.WriteLine();
+
+            Console.WriteLine("StreamEventObservable Input =");
             input.ToStreamEventObservable().ForEachAsync(e => Console.WriteLine(e)).Wait();
 
             Console.WriteLine();
@@ -44,6 +38,14 @@ namespace StreamProcessing
             Console.WriteLine();
             Console.WriteLine("Output =");
             output.ToStreamEventObservable().ForEachAsync(e => Console.WriteLine(e)).Wait();
+
+            var output2 = input.Aggregate(
+                w => w.StandardDeviation(v => v),
+                w => w.Count(),
+                (std, count) => new { StandardDeviation = std, Count = count }
+            );
+            Console.WriteLine("Output2 =");
+            output2.ToStreamEventObservable().ForEachAsync(e => Console.WriteLine(e)).Wait();
         }
     }
 }
