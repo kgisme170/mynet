@@ -7,7 +7,8 @@
         {
             //UseMulticast.Test();
             //StandardDeviationAggregate.Test();
-            GetValues.Test();
+            //GetValues.Test();
+            UseCheckPoint.Test();
         }
     }
 }

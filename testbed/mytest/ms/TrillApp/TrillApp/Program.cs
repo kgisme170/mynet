@@ -1,14 +1,14 @@
-﻿namespace TrillApp
-{
-    using System;
-    using System.ComponentModel;
-    using System.Globalization;
-    using System.Linq;
-    using System.Reactive;
-    using System.Reflection;
-    using Microsoft.ComplexEventProcessing;
-    using Microsoft.ComplexEventProcessing.Linq;
+﻿using System;
+using System.ComponentModel;
+using System.Globalization;
+using System.Linq;
+using System.Reactive;
+using System.Reflection;
+using Microsoft.ComplexEventProcessing;
+using Microsoft.ComplexEventProcessing.Linq;
 
+namespace TrillApp
+{
     public class HelloToll
     {
         [DisplayName("Pass-through")]
