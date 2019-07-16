@@ -8,7 +8,8 @@
             //UseMulticast.Test();
             //StandardDeviationAggregate.Test();
             //GetValues.Test();
-            UseCheckPoint.Test();
+            //UseCheckPoint.Test();
+            QueryWritersGuide.Test();
         }
     }
 }
