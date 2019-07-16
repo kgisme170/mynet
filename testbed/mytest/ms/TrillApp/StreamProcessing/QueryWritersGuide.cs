@@ -1,12 +1,8 @@
 ﻿using Microsoft.StreamProcessing;
-using Microsoft.StreamProcessing.Internal;
 using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Reactive;
 using System.Reactive.Linq;
-using System.Reactive.Subjects;
 
 namespace StreamProcessing
 {

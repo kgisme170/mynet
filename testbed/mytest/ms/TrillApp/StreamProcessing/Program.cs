@@ -10,6 +10,7 @@
             //GetValues.Test();
             //UseCheckPoint.Test();
             QueryWritersGuide.Test();
+            //PerformanceCounterObservable.Test();
         }
     }
 }

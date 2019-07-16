@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="GetValues.cs" />
     <Compile Include="MyAverageAggregate.cs" />
+    <Compile Include="PerformanceCounterObservable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryWritersGuide.cs" />
