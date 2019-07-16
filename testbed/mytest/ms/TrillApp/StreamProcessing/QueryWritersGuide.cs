@@ -532,7 +532,7 @@ namespace StreamProcessing
                                           PeriodicPunctuationPolicy.Count(1));
             streamableIthEventPunctuations.ToStreamEventObservable().Where(e => e.IsData || e.IsPunctuation).ForEachAsync(e => WriteEvent(e)).Wait();
             Console.WriteLine();
-
+            */
             Console.WriteLine("Figure 62: Input with Generated Punctuations After 10 Tick Periods");
             var streamableTimePeriodEventPunctuations = new[]
             {
@@ -541,10 +541,10 @@ namespace StreamProcessing
                 StreamEvent.CreateInterval(19, 4, 3),
                 StreamEvent.CreateInterval(40, 41, 4)
             }.ToObservable().ToStreamable(DisorderPolicy.Drop(),
+                                          FlushPolicy.FlushOnPunctuation,
                                           PeriodicPunctuationPolicy.Time(10));
             streamableTimePeriodEventPunctuations.ToStreamEventObservable().Where(e => e.IsData || e.IsPunctuation).ForEachAsync(e => WriteEvent(e)).Wait();
             Console.WriteLine();
-            */
             Console.WriteLine("Figure 63: Query with No Output");
             var IncompleteOutputQuery1 = new[]
             {
