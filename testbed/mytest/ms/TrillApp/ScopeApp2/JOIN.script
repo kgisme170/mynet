@@ -21,3 +21,11 @@ All =
 
 OUTPUT All
 TO SSTREAM "my/All.ss";
+
+data =
+    SELECT 
+        new ARRAY<string>(Employees.EmpName) {"Foo", "Bar"} AS EmpName
+        FROM Employees;
+
+OUTPUT data
+TO SSTREAM "my/data.ss";
