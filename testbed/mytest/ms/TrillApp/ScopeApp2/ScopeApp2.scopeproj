@@ -27,6 +27,7 @@
   <ItemGroup>
     <Script Include="JOIN.script" />
     <Script Include="SearchLog.script" />
+    <Script Include="UseFunc.script" />
     <Script Include="UseReducer.script" />
   </ItemGroup>
   <ItemGroup>
@@ -48,6 +49,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="SearchLogParameterized.view">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UseFunc.module">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

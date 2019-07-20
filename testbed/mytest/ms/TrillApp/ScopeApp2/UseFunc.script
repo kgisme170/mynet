@@ -1,0 +1,6 @@
+﻿data = VIEW "SearchLog.view";
+
+MODULE "UseFunc.module";
+rs4 = myModule.searchLogSplit( input = data, start = "2019-07-15", end = "2019-07-15" );
+OUTPUT rs4.between
+TO @"/my/searchLogSplit.txt";

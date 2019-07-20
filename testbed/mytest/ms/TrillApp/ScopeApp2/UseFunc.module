@@ -1,0 +1,30 @@
+﻿DEFINE MODULE myModule
+BEGIN
+FUNC searchLogSplit
+RETURN
+    (between ROWSET(UserId:int, Start:DateTime, Region:string, Query:string, Duration:int, Urls:string, ClickedUrls:string),
+     outside  ROWSET(UserId:int, Start:DateTime, Region:string, Query:string, Duration:int, Urls:string, ClickedUrls:string))
+PARAMS
+	(input ROWSET(UserId:int, Start:DateTime, Region:string, Query:string, Duration:int, Urls:string, ClickedUrls:string),
+	 start string,
+	 end string);
+END MODULE
+
+FUNC searchLogSplit
+RETURN
+    (between ROWSET(UserId:int, Start:DateTime, Region:string, Query:string, Duration:int, Urls:string, ClickedUrls:string),
+     outside ROWSET(UserId:int, Start:DateTime, Region:string, Query:string, Duration:int, Urls:string, ClickedUrls:string))
+PARAMS
+	(input ROWSET(UserId:int, Start:DateTime, Region:string, Query:string, Duration:int, Urls:string, ClickedUrls:string),
+	 start string,
+	 end string)
+BEGIN
+    between =
+        SELECT *
+        FROM input
+        WHERE Start >= DateTime.Parse(@start) AND Start < DateTime.Parse(@end).AddDays(1);
+    outside =
+        SELECT *
+        FROM input
+        WHERE Start < DateTime.Parse(@start) OR Start >= DateTime.Parse(@end).AddDays(1);
+END FUNC
