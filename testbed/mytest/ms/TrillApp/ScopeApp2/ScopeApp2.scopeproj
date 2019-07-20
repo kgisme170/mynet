@@ -26,12 +26,24 @@
   </PropertyGroup>
   <ItemGroup>
     <Script Include="JOIN.script" />
+    <Script Include="SearchLog.script" />
     <Script Include="UseReducer.script" />
   </ItemGroup>
   <ItemGroup>
+    <ScriptCode Include="SearchLog.script.cs">
+      <DependentUpon>SearchLog.script</DependentUpon>
+    </ScriptCode>
     <ScriptCode Include="UseReducer.script.cs">
       <DependentUpon>UseReducer.script</DependentUpon>
     </ScriptCode>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SearchLog.txt">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SearchLog.view">
+      <SubType>Content</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(AppData)\Microsoft\ScopeStudio\MsBuild\1.0\Scope.targets" />
 </Project>

@@ -1,0 +1,2 @@
+﻿searchlog = VIEW "SearchLog.view";
+OUTPUT searchlog TO "/my/SearchLog.txt" USING DefaultTextOutputter();
