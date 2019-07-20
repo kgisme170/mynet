@@ -3,7 +3,7 @@ OUTPUT data TO "/my/SearchLog.txt" USING DefaultTextOutputter();
 
 searchlog_filtered =
    VIEW "SearchLogParameterized.view"
-       PARAMS( start = "2019-07-15", end = "2019-07-15") ;
+       PARAMS( start = "2019-07-15", end = "2019-07-15" ) ;
 
 rs1 = SELECT *
        FROM searchlog_filtered;
@@ -15,6 +15,13 @@ TO @"/my/output_searchlog_filtered.txt";
 MODULE "SearchLog.module";
 rs2 = myModule.myview();
 
-OUTPUT rs2 
-    TO @"/my/useModule.tsv"
+OUTPUT rs2
+    TO @"/my/viewInModule.tsv"
+    USING DefaultTextOutputter();
+
+rs3 =
+    myModule.searchLogView
+    ( start = "2019-07-15", end = "2019-07-15" );
+OUTPUT rs3
+    TO @"/my/parameterizedViewInModule.tsv"
     USING DefaultTextOutputter();
