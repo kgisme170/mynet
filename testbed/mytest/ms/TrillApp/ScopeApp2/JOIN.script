@@ -13,10 +13,11 @@ TO "my/myData.txt";
 All =
     SELECT e.EmpName AS EmpName,
            e.DeptId AS DeptId,
-           d.DepName
+           d.DepName,
+           new ARRAY<string>(){"Foo", "Bar"} AS array
     FROM Employees AS e,
          Departments AS d
     WHERE e.DeptId == d.DeptId;
 
 OUTPUT All
-TO "my/All.txt";
+TO SSTREAM "my/All.ss";
