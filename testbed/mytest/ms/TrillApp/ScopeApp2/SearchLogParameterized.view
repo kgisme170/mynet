@@ -1,0 +1,20 @@
+﻿CREATE VIEW SearchLog SCHEMA ( 
+    UserId:int, 
+    Start:DateTime, 
+    Region:string, 
+    Query:string, 
+    Duration:int, 
+    Urls:string, 
+    ClickedUrls:string
+)
+PARAMS (
+	start string,
+	end string
+)
+AS BEGIN
+    searchlog = VIEW "SearchLog.view";
+    filtered_searchlog =
+        SELECT *
+        FROM searchlog
+        WHERE Start >= DateTime.Parse(@start) AND Start < DateTime.Parse(@end).AddDays(1);
+END;

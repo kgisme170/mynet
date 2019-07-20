@@ -1,21 +1,21 @@
-﻿CREATE VIEW myview 
-    SCHEMA ( 
-            UserId:int, 
-            Start:DateTime, 
-            Region:string, 
-            Query:string, 
-            Duration:int, 
-            Urls:string, 
+﻿CREATE VIEW myview
+    SCHEMA (
+            UserId:int,
+            Start:DateTime,
+            Region:string,
+            Query:string,
+            Duration:int,
+            Urls:string,
             ClickedUrls:string
     )
 AS BEGIN
-    mylog = 
-        EXTRACT UserId:int, 
-                Start:DateTime, 
-                Region:string, 
-                Query:string, 
-                Duration:int, 
-                Urls:string, 
+    mylog =
+        EXTRACT UserId:int,
+                Start:DateTime,
+                Region:string,
+                Query:string,
+                Duration:int,
+                Urls:string,
                 ClickedUrls:string
         FROM @"SearchLog.txt"
         USING DefaultTextExtractor();

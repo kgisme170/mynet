@@ -44,6 +44,9 @@
     <Content Include="SearchLog.view">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="SearchLogParameterized.view">
+      <SubType>Content</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(AppData)\Microsoft\ScopeStudio\MsBuild\1.0\Scope.targets" />
 </Project>

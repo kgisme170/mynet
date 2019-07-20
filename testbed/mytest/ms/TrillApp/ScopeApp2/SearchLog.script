@@ -1,2 +1,12 @@
 ﻿data = VIEW "SearchLog.view";
 OUTPUT data TO "/my/SearchLog.txt" USING DefaultTextOutputter();
+
+searchlog_filtered =
+   VIEW "SearchLogParameterized.view"
+       PARAMS( start = "2019-07-15", end = "2019-07-15") ;
+
+rs1 = SELECT *
+       FROM searchlog_filtered;
+
+OUTPUT rs1
+TO @"/my/output_searchlog_filtered.txt";

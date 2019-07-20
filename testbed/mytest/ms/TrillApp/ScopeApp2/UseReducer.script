@@ -34,19 +34,6 @@
         )
 ) AS Employees(EmpName, DeptId);
 
-CREATE VIEW SearchLog
-    SCHEMA (
-        EmplName:string,
-        DeptId:int
-    )
-AS BEGIN
-    searchlog =
-        EXTRACT 
-        EmplName:string,
-        DeptId:int
-FROM Employees;
-END;
-
 reducedTaxes =
     REDUCE Employees
     ON DeptId
