@@ -1,4 +1,4 @@
-﻿CREATE VIEW SearchLog 
+﻿CREATE VIEW myview 
     SCHEMA ( 
             UserId:int, 
             Start:DateTime, 
@@ -9,7 +9,7 @@
             ClickedUrls:string
     )
 AS BEGIN
-    searchlog = 
+    mylog = 
         EXTRACT UserId:int, 
                 Start:DateTime, 
                 Region:string, 
