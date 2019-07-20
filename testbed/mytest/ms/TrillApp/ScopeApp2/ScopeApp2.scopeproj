@@ -38,6 +38,9 @@
     </ScriptCode>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SearchLog.module">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="SearchLog.txt">
       <SubType>Content</SubType>
     </Content>

@@ -10,3 +10,11 @@ rs1 = SELECT *
 
 OUTPUT rs1
 TO @"/my/output_searchlog_filtered.txt";
+
+////
+MODULE "SearchLog.module";
+rs2 = myModule.myview();
+
+OUTPUT rs2 
+    TO @"/my/useModule.tsv"
+    USING DefaultTextOutputter();

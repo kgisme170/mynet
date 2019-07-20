@@ -1,0 +1,37 @@
+﻿DEFINE MODULE myModule
+BEGIN
+VIEW myview
+    RETURN ROWSET (
+        UserId:int,
+        Start:DateTime,
+        Region:string,
+        Query:string,
+        Duration:int,
+        Urls:string,
+        ClickedUrls:string)
+    PARAMS ();
+END MODULE
+
+VIEW myview
+    RETURN ROWSET (
+        UserId:int,
+        Start:DateTime,
+        Region:string,
+        Query:string,
+        Duration:int,
+        Urls:string,
+        ClickedUrls:string)
+    PARAMS () 
+BEGIN
+    rawdata = 
+        EXTRACT 
+            UserId:int,
+            Start:DateTime,
+            Region:string,
+            Query:string,
+            Duration:int,
+            Urls:string,
+            ClickedUrls:string
+        FROM @"SearchLog.txt"
+        USING DefaultTextExtractor();
+END VIEW
