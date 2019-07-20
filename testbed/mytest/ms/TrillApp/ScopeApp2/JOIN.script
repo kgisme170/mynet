@@ -1,24 +1,14 @@
 ﻿MODULE "myData.module";// file name
-Employees = GenData.gen
+Employees = GenData.genEmployee
+    (
+    );
+Departments =
+    GenData.genDepartment
     (
     );
 
 OUTPUT Employees
 TO "my/myData.txt";
-
-Departments =
-    SELECT DeptId, DepName
-    FROM(
-        VALUES
-        (
-            31,
-            "math"
-        ),
-        (
-            34,
-            "physics"
-        )
-) AS Departments(DeptId, DepName);
 
 All =
     SELECT e.EmpName AS EmpName,
