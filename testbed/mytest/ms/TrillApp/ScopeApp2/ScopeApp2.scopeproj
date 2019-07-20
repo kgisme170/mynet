@@ -39,6 +39,9 @@
     </ScriptCode>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="myData.module">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="SearchLog.module">
       <SubType>Content</SubType>
     </Content>

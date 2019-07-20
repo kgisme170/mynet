@@ -1,38 +1,10 @@
-﻿Employees =
-    SELECT EmpName,
-           DeptId
-    FROM(
-        VALUES
-        (
-            "Rafferty",
-            31
-        ),
+﻿MODULE "myData.module";// file name
+Employees = GenData.gen
+    (
+    );
 
-        (
-            "Jones",
-            34
-        ),
-
-        (
-            "Steinberg",
-            31
-        ),
-
-        (
-            "Robinson",
-            34
-        ),
-
-        (
-            "Smith",
-            34
-        ),
-
-        (
-            "John",
-            31
-        )
-) AS Employees(EmpName, DeptId);
+OUTPUT Employees
+TO "my/myData.txt";
 
 Departments =
     SELECT DeptId, DepName
@@ -48,18 +20,6 @@ Departments =
         )
 ) AS Departments(DeptId, DepName);
 
-rs0 =
-    SELECT DeptId, ARGMAX(DeptId, EmpName) AS ArgMaxDeptId_EmpName
-           GROUP BY DeptId
-    FROM Employees;
-OUTPUT rs0
-TO "my/argmax.txt";
-/*
-OUTPUT Employees
-TO "out/Empl.txt";
-OUTPUT Departments
-TO "out/Dept.txt";
-*/
 All =
     SELECT e.EmpName AS EmpName,
            e.DeptId AS DeptId,
@@ -69,4 +29,4 @@ All =
     WHERE e.DeptId == d.DeptId;
 
 OUTPUT All
-TO "out/All.txt";
+TO "my/All.txt";
