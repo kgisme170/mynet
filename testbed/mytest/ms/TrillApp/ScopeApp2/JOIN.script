@@ -48,11 +48,18 @@ Departments =
         )
 ) AS Departments(DeptId, DepName);
 
+rs0 =
+    SELECT DeptId, ARGMAX(DeptId, EmpName) AS ArgMaxDeptId_EmpName
+           GROUP BY DeptId
+    FROM Employees;
+OUTPUT rs0
+TO "my/argmax.txt";
+/*
 OUTPUT Employees
 TO "out/Empl.txt";
 OUTPUT Departments
 TO "out/Dept.txt";
-
+*/
 All =
     SELECT e.EmpName AS EmpName,
            e.DeptId AS DeptId,
