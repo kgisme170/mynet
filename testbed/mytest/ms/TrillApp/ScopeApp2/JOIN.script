@@ -24,7 +24,7 @@ TO SSTREAM "my/All.ss";
 
 data =
     SELECT 
-        new ARRAY<string>(Employees.EmpName) {"Foo", "Bar"} AS EmpName
+        new ARRAY<string>() {Employees.EmpName, "Foo", "Bar"} AS EmpName
         FROM Employees;
 
 OUTPUT data
