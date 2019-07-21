@@ -1,0 +1,29 @@
+﻿MODULE "myData.module";// file name
+EmployTable = GenData.genEmployee
+    (
+    );
+
+data =
+    SELECT MAP_AGG(EmpName, EmpName) AS Row,
+           new Dictionary<string, string>() AS EmptyMap
+    FROM EmployTable;
+
+#DECLARE mymap1 MAP<string, string> = new MAP<string, string>
+    {
+        {"a", "b"},
+        {"c", "d"}
+    };
+
+data1 = SELECT
+        1 AS id,
+        Row,
+        new MAP<string, string>(EmptyMap) AS EmptyMap,
+        new MAP<string, string>
+        {
+            {"a", "b"},
+            {"c", "d"}
+        } AS myMap
+    FROM data;
+
+OUTPUT data1
+TO SSTREAM "/my/data.ss";

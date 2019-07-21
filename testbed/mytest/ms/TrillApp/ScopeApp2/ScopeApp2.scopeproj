@@ -28,11 +28,16 @@
     <Script Include="JOIN.script" />
     <Script Include="SearchLog.script" />
     <Script Include="UseFunc.script" />
+    <Script Include="UseFuncResolver.script" />
+    <Script Include="UseMap.script" />
     <Script Include="UseReducer.script" />
   </ItemGroup>
   <ItemGroup>
     <ScriptCode Include="SearchLog.script.cs">
       <DependentUpon>SearchLog.script</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="UseFuncResolver.script.cs">
+      <DependentUpon>UseFuncResolver.script</DependentUpon>
     </ScriptCode>
     <ScriptCode Include="UseReducer.script.cs">
       <DependentUpon>UseReducer.script</DependentUpon>
@@ -40,6 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="myData.module">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="MyModule.module">
       <SubType>Content</SubType>
     </Content>
     <Content Include="SearchLog.module">
