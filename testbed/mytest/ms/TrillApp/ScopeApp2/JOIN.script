@@ -23,8 +23,10 @@ OUTPUT All
 TO SSTREAM "my/All.ss";
 
 data =
-    SELECT 
-        new ARRAY<string>() {EmployTable.EmpName, "Foo", "Bar"} AS EmpName
+    SELECT
+        (DeptId > 30 ?
+            new ARRAY<string>() {EmployTable.EmpName, "Foo", "Bar"} :
+            new ARRAY<string>() {EmployTable.EmpName}) AS EmpName
         FROM EmployTable;
 
 OUTPUT data
