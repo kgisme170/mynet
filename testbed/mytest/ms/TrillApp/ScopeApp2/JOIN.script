@@ -37,7 +37,9 @@ Departments =
     (
     );
 data =
-    SELECT new ARRAY<string>(Departments.DepNames) AS DepNames
+    SELECT
+        new ARRAY<string>(Departments.DepNames.Where(c=>c.StartsWith("m"))) AS DepNames,
+        Departments.DepNames[0] AS FirstDepartment
     FROM Departments;
 OUTPUT data
 TO SSTREAM "my/Departments.ss";
