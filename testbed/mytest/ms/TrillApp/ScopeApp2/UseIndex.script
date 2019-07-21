@@ -1,0 +1,12 @@
+﻿CREATE INDEX "my/All_indexed.ss" ON
+                              (
+                              SELECT EmpName,
+                                     DeptId,
+                                     DepName
+                              FROM
+                              (
+                                  SSTREAM "my/All.ss"
+                              )
+)
+                              HASH CLUSTERED BY EmpName
+                                  SORTED BY EmpName;

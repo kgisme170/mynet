@@ -29,6 +29,7 @@
     <Script Include="SearchLog.script" />
     <Script Include="UseFunc.script" />
     <Script Include="UseFuncResolver.script" />
+    <Script Include="UseIndex.script" />
     <Script Include="UseMap.script" />
     <Script Include="UseReducer.script" />
   </ItemGroup>

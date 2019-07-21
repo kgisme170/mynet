@@ -1,0 +1,6 @@
+Rafferty	31
+Jones	34
+Steinberg	31
+Robinson	34
+Smith	34
+John	31

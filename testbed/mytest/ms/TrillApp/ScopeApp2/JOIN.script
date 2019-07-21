@@ -20,7 +20,7 @@ All =
     WHERE e.DeptId == d.DeptId;
 
 OUTPUT All
-TO SSTREAM "my/All.ss";
+TO SSTREAM "my/All.ss"  HASH CLUSTERED BY EmpName;
 
 data =
     SELECT
