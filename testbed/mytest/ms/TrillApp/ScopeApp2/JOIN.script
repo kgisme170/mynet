@@ -1,13 +1,13 @@
 ﻿MODULE "myData.module";// file name
-Employees = GenData.genEmployee
+EmployTable = GenData.genEmployee
     (
     );
-Departments =
+DepartmentTable =
     GenData.genDepartment
     (
     );
 
-OUTPUT Employees
+OUTPUT EmployTable
 TO "my/myData.txt";
 
 All =
@@ -15,8 +15,8 @@ All =
            e.DeptId AS DeptId,
            d.DepName,
            new ARRAY<string>(){"Foo", "Bar"} AS array
-    FROM Employees AS e,
-         Departments AS d
+    FROM EmployTable AS e,
+         DepartmentTable AS d
     WHERE e.DeptId == d.DeptId;
 
 OUTPUT All
@@ -24,8 +24,18 @@ TO SSTREAM "my/All.ss";
 
 data =
     SELECT 
-        new ARRAY<string>() {Employees.EmpName, "Foo", "Bar"} AS EmpName
-        FROM Employees;
+        new ARRAY<string>() {EmployTable.EmpName, "Foo", "Bar"} AS EmpName
+        FROM EmployTable;
 
 OUTPUT data
 TO SSTREAM "my/data.ss";
+
+Departments =
+    GenData.genDepartments
+    (
+    );
+data =
+    SELECT new ARRAY<string>(Departments.DepNames) AS DepNames
+    FROM Departments;
+OUTPUT data
+TO SSTREAM "my/Departments.ss";

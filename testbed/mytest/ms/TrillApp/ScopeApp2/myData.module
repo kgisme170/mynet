@@ -6,11 +6,14 @@ RETURN ROWSET(EmpName:string, DeptId:int)
 PARAMS();
 
 VIEW genDepartment
-RETURN ROWSET(DeptId int, DepName string)
+RETURN ROWSET(DeptId: int, DepName: string)
 PARAMS();
 
+VIEW genDepartments
+RETURN ROWSET (DeptId: int, DepNames:ARRAY<string>)
+PARAMS();
 END MODULE
-
+//////////////////////////
 VIEW genEmployee
 RETURN ROWSET(EmpName:string, DeptId:int)
 PARAMS()
@@ -53,7 +56,7 @@ BEGIN
 END VIEW
 
 VIEW genDepartment
-RETURN ROWSET(DeptId int, DepName string)
+RETURN ROWSET(DeptId: int, DepName: string)
 PARAMS()
 BEGIN
     Departments =
@@ -62,11 +65,28 @@ BEGIN
             VALUES
             (
                 31,
-                "math"
+                "math, mandarine"
             ),
             (
                 34,
-                "physics"
+                "physics, chemistry"
             )
     ) AS Departments(DeptId, DepName);
+END VIEW
+
+VIEW genDepartments
+RETURN ROWSET (DeptId: int, DepNames:ARRAY<string>)
+PARAMS()
+BEGIN
+    data =
+        genDepartment
+        (
+        );
+    data1 =
+        SELECT DeptId,
+               DepName.Split(new[]{ ',' }) AS DepNames
+        FROM data;
+    data2 =
+        SELECT DeptId,
+               new ARRAY<string>(DepNames) AS DepNames;
 END VIEW
