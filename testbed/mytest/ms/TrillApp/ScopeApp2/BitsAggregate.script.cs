@@ -4,11 +4,11 @@ using System.IO;
 using System.Text;
 using ScopeRuntime;
 
-public class myHelper
+public class MyHelper
 {
     public static string IntArrayToString(Microsoft.SCOPE.Types.ScopeArray<int> input)
     {
-        var sb = new System.Text.StringBuilder();
+        var sb = new StringBuilder();
         for (int i = 0; i < input.Count; i++)
         {
             if (i > 0)
@@ -33,19 +33,19 @@ public class Accumulate_Microsoft_SCOPE_Types_ScopeArray_1__System_Int32__mscorl
 
     public override void Add(Microsoft.SCOPE.Types.ScopeArray<int> y)
     {
-        if (this.acc == null)
+        if (acc == null)
         {
-            this.acc = new int[y.Count];
+            acc = new int[y.Count];
         }
         for (int i = 0; i < y.Count; i++)
         {
-            this.acc[i] += y[i];
+            acc[i] += y[i];
         }
     }
 
     public override Microsoft.SCOPE.Types.ScopeArray<int> Finalize()
     {
-        var arr = new Microsoft.SCOPE.Types.ScopeArray<int>(this.acc);
+        var arr = new Microsoft.SCOPE.Types.ScopeArray<int>(acc);
         return arr;
     }
 }

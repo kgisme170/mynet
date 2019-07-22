@@ -4,21 +4,28 @@
     FROM @"Bits.txt"
     USING DefaultTextExtractor();
 
-data1 = 
-    SELECT Category, new ARRAY<int> ( Value.Select(c => c == '0' ? 0 : 1).ToArray() ) AS Values
+data1 =
+    SELECT Category,
+           new ARRAY<int>(Value.Select(c => c == '0'? 0 : 1).ToArray()) AS Values
     FROM data;
 
-data2 = SELECT Category, Accumulate(Values) AS Sum
+data2 =
+    SELECT Category,
+           Accumulate(Values) AS Sum
     FROM data1
     GROUP BY Category;
 
-data3 = SELECT Category, myHelper.IntArrayToString( Sum ) AS Values
+data3 =
+    SELECT Category,
+           MyHelper.IntArrayToString(Sum) AS Values
     FROM data2;
 
-OUTPUT data2 TO SSTREAM
-  @"/my/Output/Output.ss";
+OUTPUT data1
+TO SSTREAM @"/my/data1.ss";
 
+OUTPUT data2
+TO SSTREAM @"/my/data2.ss";
 
-OUTPUT data3 TO 
-  @"/my/Output/Output.tsv"
-  USING DefaultTextOutputter();
+OUTPUT data3
+TO @"/my/data3.tsv"
+USING DefaultTextOutputter();
