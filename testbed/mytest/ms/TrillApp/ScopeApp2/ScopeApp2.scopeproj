@@ -25,6 +25,7 @@
     <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Script Include="BitsAggregate.script" />
     <Script Include="JOIN.script" />
     <Script Include="SearchLog.script" />
     <Script Include="UseFunc.script" />
@@ -34,6 +35,9 @@
     <Script Include="UseReducer.script" />
   </ItemGroup>
   <ItemGroup>
+    <ScriptCode Include="BitsAggregate.script.cs">
+      <DependentUpon>BitsAggregate.script</DependentUpon>
+    </ScriptCode>
     <ScriptCode Include="SearchLog.script.cs">
       <DependentUpon>SearchLog.script</DependentUpon>
     </ScriptCode>
@@ -45,6 +49,9 @@
     </ScriptCode>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bits.txt">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="myData.module">
       <SubType>Content</SubType>
     </Content>
