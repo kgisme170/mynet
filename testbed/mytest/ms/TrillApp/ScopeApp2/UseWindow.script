@@ -1,0 +1,152 @@
+﻿querylog = 
+    EXTRACT Query:string,
+            Latency:int,
+            Vertical:string
+    FROM @"my/QueryLog.tsv"
+    USING DefaultTextExtractor();
+
+data =
+   SELECT 
+       *,
+       ROW_NUMBER() OVER () AS RowNumber
+   FROM querylog;
+
+OUTPUT data
+    TO SSTREAM @"my/Globally_unique_id.ss"; 
+
+data =
+   SELECT 
+       *,
+       CUME_DIST() OVER(PARTITION BY Vertical ORDER BY Latency) AS CumeDist
+   FROM querylog;
+
+OUTPUT data
+    TO SSTREAM @"my/CUME_DIST.ss";
+
+data =
+   SELECT 
+       *,
+       DENSE_RANK() OVER (PARTITION BY Vertical ORDER BY Latency) AS DenseRank 
+FROM 
+   querylog;
+
+OUTPUT data
+    TO SSTREAM @"my/DENSE_RANK.ss"; 
+
+data =
+   SELECT 
+       *,
+       NTILE(4) OVER(PARTITION BY Vertical ORDER BY Latency) AS Quartile   
+FROM 
+   querylog;
+
+OUTPUT data
+    TO SSTREAM @"my/NTILE_4.ss"; 
+
+data =
+   SELECT 
+       *,
+       ROW_NUMBER() OVER (PARTITION BY Vertical ORDER BY Latency) AS RowNumber,
+       RANK() OVER (PARTITION BY Vertical ORDER BY Latency) AS Rank, 
+       DENSE_RANK() OVER (PARTITION BY Vertical ORDER BY Latency) AS DenseRank 
+FROM 
+   querylog;
+
+OUTPUT data
+    TO SSTREAM @"my/Numbering_Rows.ss"; 
+
+data =
+   SELECT 
+       *,
+       PERCENT_RANK() OVER(PARTITION BY Vertical ORDER BY Latency) AS PercentRank
+   FROM querylog;
+
+OUTPUT data
+    TO SSTREAM @"my/PERCENT_RANK.ss";
+
+data =
+   SELECT 
+       *,
+       PERCENTILE_CONT(0.5) 
+           WITHIN GROUP (ORDER BY Latency) 
+           OVER ( PARTITION BY Vertical ) AS Percentile50 
+    FROM querylog;
+
+OUTPUT data
+    TO SSTREAM @"my/PERCENTILE_CONT.ss";
+
+data =
+   SELECT 
+       *,
+       PERCENTILE_DISC(0.5) 
+           WITHIN GROUP (ORDER BY Latency) 
+           OVER ( PARTITION BY Vertical ) AS Percentile50 
+    FROM querylog;
+
+OUTPUT data
+    TO SSTREAM @"my/PERCENTILE_DISC.ss";
+
+data =
+   SELECT 
+       *,
+       RANK() OVER  (PARTITION BY Vertical ORDER BY Latency) AS Rank 
+FROM 
+   querylog;
+
+OUTPUT data
+    TO SSTREAM @"my/RANK.ss"; 
+
+data1 =
+   SELECT 
+       *,
+       ROW_NUMBER() OVER (PARTITION BY Vertical ORDER BY Latency) AS RowNumber  
+   FROM querylog;
+
+data2 = 
+    SELECT *
+    FROM data1
+    WHERE RowNumber < 4;
+
+OUTPUT data2
+    TO SSTREAM @"my/ROW_NUMBER_2.ss"; 
+
+data =
+   SELECT 
+       *,
+       RANK() OVER (PARTITION BY Vertical ORDER BY Latency) AS Rank,
+       DENSE_RANK() OVER (PARTITION BY Vertical ORDER BY Latency) AS DenseRank,
+       ROW_NUMBER() OVER (PARTITION BY Vertical ORDER BY Latency) AS RowNumber
+   FROM querylog;
+
+OUTPUT data
+    TO SSTREAM @"my/TOP_N_in_Group_Context_RANK_DENSE_RANK_ROW_NUMBER.ss"; 
+
+data =
+   SELECT 
+       *,
+       DENSE_RANK() OVER (PARTITION BY Vertical ORDER BY Latency) AS DenseRank
+   FROM querylog
+   HAVING DenseRank <= 3;
+
+OUTPUT data
+    TO SSTREAM @"my/TOP_N_DENSE_RANK.ss"; 
+
+data =
+   SELECT 
+       *,
+       RANK() OVER (PARTITION BY Vertical ORDER BY Latency) AS Rank
+   FROM querylog
+   HAVING Rank <= 3;
+
+OUTPUT data
+    TO SSTREAM @"my/TOP_N_RANK.ss"; 
+
+data =
+   SELECT 
+       *,
+       ROW_NUMBER() OVER (PARTITION BY Vertical ORDER BY Latency) AS RowNumber
+   FROM querylog
+   HAVING RowNumber <= 3;
+
+OUTPUT data
+    TO SSTREAM @"my/TOP_N_ROW_NUMBER.ss"; 

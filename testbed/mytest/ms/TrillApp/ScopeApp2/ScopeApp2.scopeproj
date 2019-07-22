@@ -34,6 +34,7 @@
     <Script Include="UseIndex.script" />
     <Script Include="UseMap.script" />
     <Script Include="UseReducer.script" />
+    <Script Include="UseWindow.script" />
   </ItemGroup>
   <ItemGroup>
     <ScriptCode Include="BitsAggregate.script.cs">
@@ -60,6 +61,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="MyModule.module">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="QueryLog.tsv">
       <SubType>Content</SubType>
     </Content>
     <Content Include="SearchLog.module">
