@@ -62,3 +62,13 @@ public class AllSum_StringInteger : Aggregate2<string, int, string>
     }
 }
 #ENDCS
+
+Bits =
+    EXTRACT TypeName : string,
+            Content : MyDepartment
+    FROM @"Bits.txt"
+    USING VersionExtractor();
+
+OUTPUT Bits
+TO @"my/outputBits.tsv"
+USING MyOutputter();
