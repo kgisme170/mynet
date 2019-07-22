@@ -26,6 +26,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Script Include="BitsAggregate.script" />
+    <Script Include="EmployeeAggregate.script" />
     <Script Include="JOIN.script" />
     <Script Include="SearchLog.script" />
     <Script Include="UseFunc.script" />
@@ -37,6 +38,9 @@
   <ItemGroup>
     <ScriptCode Include="BitsAggregate.script.cs">
       <DependentUpon>BitsAggregate.script</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="EmployeeAggregate.script.cs">
+      <DependentUpon>EmployeeAggregate.script</DependentUpon>
     </ScriptCode>
     <ScriptCode Include="SearchLog.script.cs">
       <DependentUpon>SearchLog.script</DependentUpon>

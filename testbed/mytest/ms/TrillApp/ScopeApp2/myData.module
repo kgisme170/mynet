@@ -5,6 +5,10 @@ VIEW genEmployee
 RETURN ROWSET(EmpName:string, DeptId:int)
 PARAMS();
 
+VIEW genSalary
+RETURN ROWSET(EmpName:string, DeptId:int, Salary:int)
+PARAMS();
+
 VIEW genDepartment
 RETURN ROWSET(DeptId: int, DepName: string)
 PARAMS();
@@ -53,6 +57,54 @@ BEGIN
             31
         )
     ) AS Employees(EmpName, DeptId);
+END VIEW
+
+VIEW genSalary
+RETURN ROWSET(EmpName:string, DeptId:int, Salary: int)
+PARAMS()
+BEGIN
+    Salary =
+    SELECT EmpName,
+           DeptId,
+           Salary
+    FROM(
+        VALUES
+        (
+            "Rafferty",
+            31,
+            400
+        ),
+
+        (
+            "Jones",
+            34,
+            420
+        ),
+
+        (
+            "Steinberg",
+            31,
+            430
+        ),
+
+        (
+            "Robinson",
+            34,
+            320
+        ),
+
+        (
+            "Smith",
+            34,
+            340
+        ),
+
+        (
+            "John",
+            31,
+            400
+        )
+    ) AS Salary(EmpName, DeptId, Salary);
 END VIEW
 
 VIEW genDepartment

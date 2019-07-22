@@ -1,0 +1,64 @@
+﻿MODULE "myData.module" AS M;
+EmployTable = M.genEmployee
+     (
+     );
+mySum = SELECT MySum(EmpName) AS Sum, DeptId
+FROM EmployTable
+GROUP BY DeptId;
+
+OUTPUT TO SSTREAM @"my/MySum.ss";
+
+SELECT AllSum(EmpName, Salary) AS Sum, DeptId
+FROM M.genSalary()
+GROUP BY DeptId;
+
+OUTPUT TO SSTREAM @"my/AllSum.ss";
+
+#CS
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
+using ScopeRuntime;
+
+public class MySum_String : Aggregate1<string, string>
+{
+    string all = "";
+
+    public override void Initialize()
+    {
+    }
+
+    public override void Add(string y)
+    {
+        all += y;
+        all += ",";
+    }
+
+    public override string Finalize()
+    {
+        return all;
+    }
+}
+
+public class AllSum_StringInteger : Aggregate2<string, int, string>
+{
+    string all = "";
+    int salary = 0;
+    public override void Initialize()
+    {
+    }
+
+    public override void Add(string y, int z)
+    {
+        all += y;
+        all += ",";
+        salary += z;
+    }
+
+    public override string Finalize()
+    {
+        return all + salary.ToString();
+    }
+}
+#ENDCS
