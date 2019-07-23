@@ -1,5 +1,10 @@
-﻿e = SSTREAM "local/users/limgong/Joined_20190709_0200.detail.ss";//Output.ss";
-//s = SELECT COUNT() AS C FROM e;
+﻿e = SSTREAM "/local/twp/SubjectArea/juwshi/SubjectArea/Conversion.USQL/S2B//StreamingToBatchWithFraud/2019/07/21/00/ConversionWithoutAttribution_20190721_0000.ss"; //Output.ss";
+s = SELECT COUNT() AS C FROM e;
 //s = SELECT DISTINCT TagId FROM e;
-s = SELECT DISTINCT TagId FROM e;
-OUTPUT s TO CONSOLE;
+/*
+s =
+    SELECT *
+    FROM e
+    WHERE IsAttributed == false;
+*/
+//OUTPUT s TO CONSOLE;

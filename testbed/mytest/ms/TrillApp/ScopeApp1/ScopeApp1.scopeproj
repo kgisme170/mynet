@@ -63,6 +63,9 @@
     <Content Include="Scope1.module">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Scope2.view">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="TabFile.txt">
       <SubType>Content</SubType>
     </Content>
