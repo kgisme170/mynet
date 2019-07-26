@@ -40,15 +40,16 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files\Microsoft StreamInsight 2.1\Bin\Microsoft.ComplexEventProcessing.dll</HintPath>
     </Reference>
-
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

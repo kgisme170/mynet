@@ -55,7 +55,6 @@
     <Compile Include="MyAverageAggregate.cs" />
     <Compile Include="PerformanceCounterObservable.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryWritersGuide.cs" />
     <Compile Include="StandardDeviationAggregate.cs" />
     <Compile Include="UseCheckPoint.cs" />
@@ -69,6 +68,9 @@
       <Project>{b0b52124-4daf-4e38-8672-f99e85d89123}</Project>
       <Name>Microsoft.StreamProcessing</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

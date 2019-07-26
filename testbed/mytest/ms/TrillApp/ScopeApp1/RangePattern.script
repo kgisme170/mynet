@@ -9,8 +9,10 @@
          RANGE __serialnum = ["1", "2"]
     USING DefaultTextExtractor(delimiter:' ');
 
-searchlog =
+searchlog1 =
     VIEW "Scope2.view";
 
 OUTPUT searchlog
-TO "SpaceOut.txt";
+TO "searchlog.txt";
+OUTPUT searchlog1
+TO "searchlog1.txt";
