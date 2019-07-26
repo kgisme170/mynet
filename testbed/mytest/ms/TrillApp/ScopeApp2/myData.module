@@ -55,6 +55,11 @@ BEGIN
         (
             "John",
             31
+        ),
+
+        (
+            "Kate",
+            30
         )
     ) AS Employees(EmpName, DeptId);
 END VIEW

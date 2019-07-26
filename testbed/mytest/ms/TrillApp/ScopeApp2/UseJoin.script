@@ -1,0 +1,35 @@
+﻿MODULE "myData.module";
+Employees =
+    GenData.genEmployee
+    (
+    );
+Departments =
+    GenData.genDepartment
+    (
+    );
+
+OUTPUT Employees
+TO SSTREAM "my/employees.ss";
+
+OUTPUT Departments
+TO SSTREAM "my/departments.ss";
+
+Exists =
+    SELECT e.EmpName, e.DeptId, d.DepName
+    FROM Employees AS e
+         JOIN
+             Departments AS d
+         ON e.DeptId == d.DeptId;
+
+OUTPUT Exists
+TO SSTREAM "my/exists.ss";
+
+ExistsOrNull =
+    SELECT e.EmpName, e.DeptId, d.DepName
+    FROM Employees AS e
+         LEFT OUTER JOIN
+             Departments AS d
+         ON e.DeptId == d.DeptId;
+
+OUTPUT ExistsOrNull
+TO SSTREAM "my/existsOrNull.ss";

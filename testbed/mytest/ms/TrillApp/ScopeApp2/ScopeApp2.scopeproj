@@ -27,11 +27,12 @@
   <ItemGroup>
     <Script Include="BitsAggregate.script" />
     <Script Include="EmployeeAggregate.script" />
-    <Script Include="JOIN.script" />
+    <Script Include="Multiselect.script" />
     <Script Include="SearchLog.script" />
     <Script Include="UseFunc.script" />
     <Script Include="UseFuncResolver.script" />
     <Script Include="UseIndex.script" />
+    <Script Include="UseJoin.script" />
     <Script Include="UseMap.script" />
     <Script Include="UseReducer.script" />
     <Script Include="UseWindow.script" />
