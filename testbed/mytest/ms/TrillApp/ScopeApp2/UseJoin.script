@@ -33,3 +33,22 @@ ExistsOrNull =
 
 OUTPUT ExistsOrNull
 TO SSTREAM "my/existsOrNull.ss";
+
+AntiExists =
+    SELECT e.EmpName,
+           e.DeptId
+    FROM ExistsOrNull AS e
+    WHERE e.DepName == null;
+
+OUTPUT AntiExists
+TO SSTREAM "my/antiExists.ss";
+
+AntiJoin =
+    SELECT e.EmpName,
+           e.DeptId
+    FROM ExistsOrNull AS e
+         ANTISEMIJOIN Departments AS d
+    ON e.DeptId == d.DeptId;
+
+OUTPUT AntiJoin
+TO SSTREAM "my/antiJoin.ss";
