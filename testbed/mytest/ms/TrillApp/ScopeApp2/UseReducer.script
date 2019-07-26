@@ -1,38 +1,8 @@
-﻿Employees =
-    SELECT EmpName,
-           DeptId
-    FROM(
-        VALUES
-        (
-            "Rafferty",
-            31
-        ),
-
-        (
-            "Jones",
-            34
-        ),
-
-        (
-            "Steinberg",
-            31
-        ),
-
-        (
-            "Robinson",
-            34
-        ),
-
-        (
-            "Smith",
-            34
-        ),
-
-        (
-            "John",
-            31
-        )
-) AS Employees(EmpName, DeptId);
+﻿MODULE "myData.module";
+Employees =
+    GenData.genEmployee
+    (
+    );
 
 reducedTaxes =
     REDUCE Employees
