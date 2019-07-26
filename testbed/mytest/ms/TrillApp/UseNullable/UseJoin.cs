@@ -76,6 +76,20 @@ namespace UseNullable
                 .Where(e => !departments.Select(d => d.DeptId).Contains(e.DeptId))
                 .Select(e => e.EmpName);
             ret6.Print();
+
+            var ret7 = from e in employees
+                       join d in departments
+                       on e.DeptId equals d.DeptId into gj
+                       from subdept in gj.DefaultIfEmpty() // left outer join
+                       select new { e.EmpName, subdept?.DeptName };
+            ret7.Print();
+
+            var ret8 = from e in employees
+                       join d in departments on e.DeptId equals d.DeptId into gj
+                       from subdept in gj.DefaultIfEmpty()
+                       where subdept is null
+                       select new { e.EmpName, subdept?.DeptName };
+            ret8.Print();
         }
     }
 }
