@@ -40,6 +40,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="UseExpression.cs" />
+    <Compile Include="UseJoin.cs" />
     <Compile Include="UseMethods.cs" />
     <Compile Include="UseQuery.cs" />
     <Compile Include="UseRx.cs" />

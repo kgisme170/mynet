@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace UseNullable
+namespace ConsoleApp1
 {
     class Member
     {
@@ -19,13 +17,8 @@ namespace UseNullable
     {
         public Inner inner { get; set; }
     }
-    class Program
+    class UseNullable
     {
-        static void Main(string[] args)
-        {
-            UseJoin.Test();
-        }
-
         static void Test()
         {
             Outter outter = new Outter();

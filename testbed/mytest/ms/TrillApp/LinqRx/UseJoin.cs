@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UseNullable
+namespace LinqRx
 {
     class Employee
     {
@@ -20,7 +20,7 @@ namespace UseNullable
     {
         public static void Print<T>(this IEnumerable<T> data)
         {
-            foreach ( T t in data)
+            foreach (T t in data)
             {
                 Console.WriteLine(t);
             }
