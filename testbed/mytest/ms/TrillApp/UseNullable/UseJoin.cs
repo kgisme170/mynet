@@ -64,8 +64,18 @@ namespace UseNullable
 
             var ret3 = from e in employees
                        where !(from d in departments select d.DeptId).Contains(e.DeptId)
-                       select new { e.EmpName };
+                       select e.EmpName;//new { e.EmpName };
             ret3.Print();
+
+            var ret4 = from e in employees select e.EmpName;
+            ret4.Print();
+            var ret5 = employees.Select(e => e.EmpName);
+            ret5.Print();
+
+            var ret6 = employees
+                .Where(e => !departments.Select(d => d.DeptId).Contains(e.DeptId))
+                .Select(e => e.EmpName);
+            ret6.Print();
         }
     }
 }
