@@ -16,6 +16,17 @@ namespace UseNullable
         public int DeptId { get; set; }
         public string DeptName { get; set; }
     }
+    public static class MyExtension
+    {
+        public static void Print<T>(this IEnumerable<T> data)
+        {
+            foreach ( T t in data)
+            {
+                Console.WriteLine(t);
+            }
+            Console.WriteLine("----------");
+        }
+    }
     class UseJoin
     {
         public static void Test()
@@ -42,10 +53,14 @@ namespace UseNullable
                          join d in departments
                          on e.DeptId equals d.DeptId
                          select new { e.EmpName, d.DeptName };
-            foreach (var r in result)
-            {
-                Console.WriteLine(r);
-            }
+            result.Print();
+
+            var ret2 = employees.Join(
+                departments,
+                left => left.DeptId,
+                right => right.DeptId,
+                (left, right) => new { left.EmpName, right.DeptName });
+            ret2.Print();
         }
     }
 }
