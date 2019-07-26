@@ -61,6 +61,11 @@ namespace UseNullable
                 right => right.DeptId,
                 (left, right) => new { left.EmpName, right.DeptName });
             ret2.Print();
+
+            var ret3 = from e in employees
+                       where !(from d in departments select d.DeptId).Contains(e.DeptId)
+                       select new { e.EmpName };
+            ret3.Print();
         }
     }
 }
