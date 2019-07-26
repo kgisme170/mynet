@@ -23,8 +23,17 @@ namespace UseNullable
     {
         static void Main(string[] args)
         {
+            UseJoin.Test();
+        }
+
+        static void Test()
+        {
             Outter outter = new Outter();
             Console.WriteLine(outter?.inner?.mI?.Name);
+            Console.WriteLine(outter?.inner == null);
+
+            Console.WriteLine(outter?.inner?.mI == null ? "a" : "b");
+            Console.WriteLine(new Guid());
         }
     }
 }

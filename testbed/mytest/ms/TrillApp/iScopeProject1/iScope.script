@@ -1,5 +1,39 @@
-﻿e = SSTREAM "/local/twp/SubjectArea/juwshi/SubjectArea/Conversion.USQL/S2B//StreamingToBatchWithFraud/2019/07/21/00/ConversionWithoutAttribution_20190721_0000.ss"; //Output.ss";
-s = SELECT COUNT() AS C FROM e;
+﻿e = SSTREAM "local/users/limgong/02_Joined_uet_AttributedAndUnattributed_20190721_0000.detail.ss"; //Output.ss";
+/*
+s =
+    SELECT DISTINCT ConversionId
+    FROM e;
+*/
+s =
+    SELECT COUNT() AS C
+    FROM e; // 179135/179135  180770/Same
+/*
+s =
+    SELECT *
+    FROM e
+    WHERE IsAttributed == false;
+*/
+/*
+s = // AttributedAndUnattributed_Joined_uet_pii_20190721_0000.detail.ss
+    SELECT COUNT() AS C
+    FROM e;//179162
+*/
+/*
+s =
+    SELECT ConversionId
+    FROM e
+    GROUP BY ConversionId
+    HAVING COUNT(ConversionId) > 1;
+*/
+/*
+s =
+    SELECT DISTINCT ConversionId
+    FROM e;
+s =
+    SELECT COUNT() AS C
+    FROM s;//172910
+*/
+
 //s = SELECT DISTINCT TagId FROM e;
 /*
 s =
@@ -7,4 +41,5 @@ s =
     FROM e
     WHERE IsAttributed == false;
 */
-//OUTPUT s TO CONSOLE;
+OUTPUT s TO CONSOLE;
+//OUTPUT s TO SSTREAM "local/users/limgong/Unattributed_Joined_uet_pii_20190721_0000.detail.ss";
