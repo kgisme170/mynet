@@ -44,6 +44,7 @@
     <Compile Include="UseMethods.cs" />
     <Compile Include="UseQuery.cs" />
     <Compile Include="UseRx.cs" />
+    <Compile Include="UseSubquery.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

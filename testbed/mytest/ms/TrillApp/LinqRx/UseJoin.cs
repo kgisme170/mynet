@@ -16,17 +16,7 @@ namespace LinqRx
         public int DeptId { get; set; }
         public string DeptName { get; set; }
     }
-    public static class MyExtension
-    {
-        public static void Print<T>(this IEnumerable<T> data)
-        {
-            foreach (T t in data)
-            {
-                Console.WriteLine(t);
-            }
-            Console.WriteLine("----------");
-        }
-    }
+
     class UseJoin
     {
         public static void Test()
