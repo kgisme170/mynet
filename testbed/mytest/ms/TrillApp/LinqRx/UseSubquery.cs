@@ -8,8 +8,8 @@ namespace LinqRx
 {
     class Student
     {
-        public int Sno { get; set; }
-        public int Cno { get; set; }
+        public int Sno { get; set; } // Student number
+        public int Cno { get; set; } // College number
         public int Grade { get; set; }
         public Student(int s, int c, int g)
         {
@@ -20,6 +20,16 @@ namespace LinqRx
         public override string ToString()
         {
             return Sno.ToString() + ":" + Cno.ToString() + ":" + Grade.ToString();
+        }
+    }
+    class Course
+    {
+        public int Sno { get; set; }
+        public string CName { get; set; }
+        public Course(int s, string c)
+        {
+            Sno = s;
+            CName = c;
         }
     }
     class UseSubquery
@@ -39,12 +49,29 @@ namespace LinqRx
                 new Student(3,4,93)
             };
 
-            var ret = students
+            IEnumerable<Course> courses = new[]
+            {
+                new Course(1, "math"),
+                new Course(2, "physics"),
+                new Course(2, "math"),
+                new Course(3, "physics"),
+            };
+
+            var ret = students // 高于平均分的所有课程
                 .Where(s => 
                        s.Grade > students
                                     .Where(ss => ss.Sno == s.Sno)
                                     .Average(ss => ss.Grade));
             ret.Print();
+
+            var ret2 = students // 选择了math
+                .Where(s =>
+                       courses
+                           .Where(c => c.Sno == s.Sno)
+                           .Any(c => c.CName == "math"))
+                .Select(s => s.Sno)
+                .Distinct();
+            ret2.Print();
         }
     }
 }
