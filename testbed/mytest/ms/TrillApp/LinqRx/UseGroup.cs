@@ -44,7 +44,7 @@ namespace LinqRx
 
             var nextStudents = students.Select(s => Student.NextYear(s));
             nextStudents.Print();
-
+            Console.WriteLine("=================================");
             var ret1 = from s in 
                            students
                        group s by s.Year
@@ -58,8 +58,15 @@ namespace LinqRx
                        from s in g
                        from r in s
                        select r;
-
-            foreach(var g in ret1)
+            var ret3 = from s in students
+                       group new { s.FirstName, s.LastName }
+                       by s.Year into sg
+                       where sg.Key > 1
+                       from g in sg
+                       select g;
+            ret3.Print();
+            Console.WriteLine("=================================");
+            foreach (var g in ret1)
             {
                 Console.WriteLine("(1)--------------------Year");
                 foreach (var e in g)
