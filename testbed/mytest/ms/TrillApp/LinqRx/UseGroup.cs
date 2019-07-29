@@ -23,6 +23,10 @@ namespace LinqRx
             {
                 return "Year=" + Year + ", FirstName=" + FirstName + ", LastName=" + LastName;
             }
+            public static Student NextYear(Student s)
+            {
+                return new Student(s.Year + 1, s.FirstName, s.LastName);
+            }
         }
         public static void Test()
         {
@@ -37,6 +41,9 @@ namespace LinqRx
                 new Student(3, "Group", "Love"),
                 new Student(3, "John", "Love"),
             };
+
+            var nextStudents = students.Select(s => Student.NextYear(s));
+            nextStudents.Print();
 
             var ret1 = from s in 
                            students
