@@ -22,7 +22,7 @@ namespace LinqRx
             //UseExpression.Test();
             //UseSubquery.Test();
             //SimulatePartition.Test();
-            SelectMany.Test();
+            SimulatePartition.Test();
         }
     }
 }
