@@ -44,6 +44,7 @@
     <Compile Include="SelectMany.cs" />
     <Compile Include="SimulatePartition.cs" />
     <Compile Include="UseExpression.cs" />
+    <Compile Include="UseGroup.cs" />
     <Compile Include="UseJoin.cs" />
     <Compile Include="UseMethods.cs" />
     <Compile Include="UseQuery.cs" />

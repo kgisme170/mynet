@@ -52,7 +52,6 @@ namespace LinqRx
                      orderby r.id
                      select r;
 
-            //var r2 = groups.Select(c => c.OrderBy(o => o.id).Select((v, i) => new { i, v }).ToList());
             var r2 = groups.Select(c => c.OrderBy(o => o.id).Select((content, index) => new { index, content }));
             foreach(var list in r2)
             {
@@ -70,19 +69,6 @@ namespace LinqRx
                 Console.WriteLine($"{row.id}  | {row.inst}\t| {row.name}  \t| {row.rowNumber}");
             }
             Console.WriteLine("---------------------------------------------");
-            //var r2 = r1.Select((v, i) => new { i, v }.ToList());
-
-            //var ret = r1.Select(c => c.Select((v, i) => new { i, v }).ToList());
-            /*
-                .SelectMany(c => c)
-                .Select(c => new { c.v.id, c.v.inst, c.v.name, rn = c.i + 1 })
-                .ToList();
-            Console.WriteLine("id | inst \t| name  \t| rn");
-            foreach (var row in ret)
-            {
-                Console.WriteLine($"{row.id}  | {row.inst}\t| {row.name}  \t| {row.rn}");
-            }
-            Console.WriteLine("----------\n");*/
         }
     }
 }

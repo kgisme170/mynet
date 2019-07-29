@@ -51,7 +51,8 @@ namespace LinqRx
                 select new XElement("Person",
                                     new XAttribute("FirstName", person.FirstName),
                                     new XAttribute("LastName", person.LastName),
-                                    from subpet in gj select new XElement("Pet", subpet.Name))
+                                    from subpet in gj
+                                    select new XElement("Pet", subpet.Name))
             );
             Console.WriteLine(ownersAndPets);
         }

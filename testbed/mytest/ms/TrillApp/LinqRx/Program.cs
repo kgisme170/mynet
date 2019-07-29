@@ -20,9 +20,10 @@ namespace LinqRx
         {
             //UseMethods.Test();
             //UseExpression.Test();
-            UseSubquery.Test();
+            //UseSubquery.Test();
             //SimulatePartition.Test();
             //OrderBySelect.Test();
+            UseGroup.Test();
         }
     }
 }
