@@ -17,6 +17,10 @@ namespace LinqRx
             Cno = c;
             Grade = g;
         }
+        public Student(int g)
+        {
+            Grade = g;
+        }
         public override string ToString()
         {
             return Sno.ToString() + ":" + Cno.ToString() + ":" + Grade.ToString();

@@ -39,6 +39,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="SelectMany.cs" />
+    <Compile Include="SimulatePartition.cs" />
     <Compile Include="UseExpression.cs" />
     <Compile Include="UseJoin.cs" />
     <Compile Include="UseMethods.cs" />
