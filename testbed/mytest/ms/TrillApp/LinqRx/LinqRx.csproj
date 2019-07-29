@@ -38,6 +38,7 @@
     <Reference Include="System.Reactive.Providers, Version=1.0.10621.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SelectRowNumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="SelectMany.cs" />
     <Compile Include="SimulatePartition.cs" />
