@@ -76,6 +76,20 @@ namespace LinqRx
                 .Select(s => s.Sno)
                 .Distinct();
             ret2.Print();
+
+            int[] ids = { 2, 3, 4 };
+            var avg = from s in students
+                      let i = s.Sno
+                      where ids.Contains(i)
+                      group s by s.Sno into sg
+                      select new
+                      {
+                          Sno = sg.Key,
+                          Avg = sg.Average(s=>s.Grade),
+                          Max = sg.Max(s=>s.Grade),
+                          Min = sg.Min(s=>s.Grade)
+                      };
+            avg.Print();
         }
     }
 }
