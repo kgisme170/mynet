@@ -24,7 +24,8 @@ namespace LinqRx
             //SimulatePartition.Test();
             //OrderBySelect.Test();
             //UseGroup.Test();
-            UseCount.Test();
+            //UseCount.Test();
+            TraverseDir.Test();
         }
     }
 }
