@@ -23,7 +23,8 @@ namespace LinqRx
             //UseSubquery.Test();
             //SimulatePartition.Test();
             //OrderBySelect.Test();
-            UseGroup.Test();
+            //UseGroup.Test();
+            UseCount.Test();
         }
     }
 }
