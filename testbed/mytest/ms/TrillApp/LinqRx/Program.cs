@@ -27,7 +27,8 @@ namespace LinqRx
             //UseCount.Test();
             //TraverseDir.Test();
             //CrossJoin.Test();
-            SelectMany.Test();
+            //SelectMany.Test();
+            DeferExecution.Test();
         }
     }
 }
