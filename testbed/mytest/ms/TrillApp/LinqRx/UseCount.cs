@@ -25,7 +25,7 @@ namespace LinqRx
             c.Print();
 
             var l = from e in v
-                    group e by e.Id into eg
+                    group e by new { e.Id, e.Name } into eg
                     select new { k = eg.Key, CustCount = eg.Count() };
             l.Print();
 
