@@ -39,6 +39,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrossJoin.cs" />
     <Compile Include="SelectRowNumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="SelectMany.cs" />
