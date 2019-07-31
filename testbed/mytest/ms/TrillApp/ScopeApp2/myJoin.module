@@ -4,6 +4,10 @@ VIEW genUet
 RETURN ROWSET(EventId:int, EventKey:string)
 PARAMS();
 
+VIEW employees
+RETURN ROWSET(name:string, deptId:int, salary:int)
+PARAMS();
+
 END MODULE
 
 VIEW genUet
@@ -24,4 +28,20 @@ BEGIN
         (8, "Key1"),
         (9, "Key9")
     ) AS Uet(EventId, EventKey);
+END VIEW
+
+VIEW employees
+RETURN ROWSET(name:string, deptId:int, salary:int)
+PARAMS()
+BEGIN
+    data = SELECT name, deptId, salary
+    FROM( VALUES
+        ("Jack", 1, 400),
+        ("Greg", 2, 350),
+        ("John", 1, 450),
+        ("Kate", 2, 420),
+        ("Jane", 3, 300),
+        ("Jessy", 2, 400),
+        ("Kevin", 3, 380)
+    ) AS data(name, deptId, salary);
 END VIEW
