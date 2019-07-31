@@ -1,0 +1,19 @@
+﻿MODULE "myJoin.module";
+Uet =
+    uetData.genUet
+    (
+    );
+
+Keys =
+    SELECT DISTINCT EventKey AS ek
+    FROM Uet;
+
+Uet =
+    SELECT *
+    FROM Uet
+         INNER JOIN
+             Keys
+         ON Uet.EventKey == Keys.ek;
+
+OUTPUT Uet
+TO SSTREAM "my/Uet.ss";

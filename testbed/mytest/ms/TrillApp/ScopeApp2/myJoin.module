@@ -1,0 +1,27 @@
+﻿DEFINE MODULE uetData
+BEGIN
+VIEW genUet
+RETURN ROWSET(EventId:int, EventKey:string)
+PARAMS();
+
+END MODULE
+
+VIEW genUet
+RETURN ROWSET(EventId:int, EventKey:string)
+PARAMS()
+BEGIN
+    Uet =
+    SELECT EventId, EventKey
+    FROM(
+        VALUES
+        (1, "Key1"),
+        (2, "Key2"),
+        (3, "Key1"),
+        (4, "Key4"),
+        (5, "Key2"),
+        (6, "Key6"),
+        (7, "Key7"),
+        (8, "Key1"),
+        (9, "Key9")
+    ) AS Uet(EventId, EventKey);
+END VIEW

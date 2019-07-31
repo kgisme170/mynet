@@ -29,6 +29,7 @@
     <Script Include="EmployeeAggregate.script" />
     <Script Include="Multiselect.script" />
     <Script Include="SearchLog.script" />
+    <Script Include="useDistinct.script" />
     <Script Include="UseFunc.script" />
     <Script Include="UseFuncResolver.script" />
     <Script Include="UseIndex.script" />
@@ -47,6 +48,9 @@
     <ScriptCode Include="SearchLog.script.cs">
       <DependentUpon>SearchLog.script</DependentUpon>
     </ScriptCode>
+    <ScriptCode Include="useDistinct.script.cs">
+      <DependentUpon>useDistinct.script</DependentUpon>
+    </ScriptCode>
     <ScriptCode Include="UseFuncResolver.script.cs">
       <DependentUpon>UseFuncResolver.script</DependentUpon>
     </ScriptCode>
@@ -59,6 +63,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="myData.module">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="myJoin.module">
       <SubType>Content</SubType>
     </Content>
     <Content Include="MyModule.module">

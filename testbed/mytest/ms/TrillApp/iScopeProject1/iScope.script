@@ -5,8 +5,9 @@ s =
     FROM e;
 */
 s =
-    SELECT COUNT() AS C
-    FROM e; // 179135/179135  180770/Same
+    SELECT *
+    FROM e // 179135/179135  180770/Same
+    WHERE EventKey = "e33a3a83e4235d9d898eff8c00606761";
 /*
 s =
     SELECT *
