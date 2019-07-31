@@ -25,7 +25,7 @@ BEGIN
         (5, "Key2"),
         (6, "Key6"),
         (7, "Key7"),
-        (8, "Key1"),
+        (1, "Key1"),
         (9, "Key9")
     ) AS Uet(EventId, EventKey);
 END VIEW

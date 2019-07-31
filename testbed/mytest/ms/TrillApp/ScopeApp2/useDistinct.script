@@ -7,25 +7,28 @@ Uet =
 Keys =
     SELECT DISTINCT EventKey AS ek
     FROM Uet;
+OUTPUT Keys
+TO SSTREAM "my/Keys.ss";
 
-Uet = // cannot dedup
-    SELECT *
-    FROM Uet
-         INNER JOIN
-             Keys
-         ON Uet.EventKey == Keys.ek;
+SELECT Uet.EventId, Uet.EventKey
+FROM Keys
+     INNER JOIN
+         Uet
+     ON Keys.ek == Uet.EventKey;
+OUTPUT
+TO SSTREAM "my/dedup.ss";
 
-OUTPUT Uet
-TO SSTREAM "my/Uet.ss";
-
-employees =
-    uetData.employees
-    (
-    );
-
+SELECT EventId,
+       EventKey,
+       COUNT( * ) AS C
+FROM Uet
+GROUP BY EventId,
+         EventKey;
+OUTPUT
+TO SSTREAM "my/count.ss";
 /*
 SELECT *
-FROM employee AS e
+FROM employees AS e
 WHERE e.salary = (
     SELECT MAX(e2.salary)
     FROM employee AS e2
@@ -35,10 +38,15 @@ OUTPUT
 TO SSTREAM "my/dedup.ss";
 */
 
-dedup =
+employees =
+    uetData.employees
+    (
+    );
+
+aggre =
     SELECT deptId, SUM(salary) AS TotalSalary, MAX(salary) AS MaxSalary
     FROM employees
     GROUP BY deptId;
 
-OUTPUT dedup
-TO SSTREAM "my/dedup.ss";
+OUTPUT aggre
+TO SSTREAM "my/aggre.ss";
