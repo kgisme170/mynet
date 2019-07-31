@@ -29,18 +29,6 @@ Grouped =
 OUTPUT
 TO SSTREAM "my/count.ss";
 
-/*
-SELECT *
-FROM employees AS e
-WHERE e.salary = (
-    SELECT MAX(e2.salary)
-    FROM employee AS e2
-    WHERE e2.deptId = e.deptId);
-
-OUTPUT
-TO SSTREAM "my/dedup.ss";
-*/
-
 employees =
     uetData.employees
     (
