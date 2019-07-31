@@ -1,10 +1,14 @@
-﻿DEFINE MODULE uetData
+﻿DEFINE MODULE testData
 BEGIN
 VIEW genUet
 RETURN ROWSET(EventId:int, EventKey:string)
 PARAMS();
 
 VIEW employees
+RETURN ROWSET(name:string, deptId:int, salary:int)
+PARAMS();
+
+VIEW employeesMore
 RETURN ROWSET(name:string, deptId:int, salary:int)
 PARAMS();
 
@@ -43,5 +47,22 @@ BEGIN
         ("Jane", 3, 300),
         ("Jessy", 2, 400),
         ("Kevin", 3, 380)
+    ) AS data(name, deptId, salary);
+END VIEW
+
+VIEW employeesMore
+RETURN ROWSET(name:string, deptId:int, salary:int)
+PARAMS()
+BEGIN
+    data = SELECT name, deptId, salary
+    FROM( VALUES
+        ("Jack", 1, 400),
+        ("Dave", 1, 250),
+        ("Zerg", 1, 410),
+        ("Lee", 2, 420),
+        ("Jason", 3, 300),
+        ("Jane", 3, 300),
+        ("Jane", 3, 300),
+        ("Toron", 2, 330)
     ) AS data(name, deptId, salary);
 END VIEW

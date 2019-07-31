@@ -1,6 +1,6 @@
 ﻿MODULE "myJoin.module";
 Uet =
-    uetData.genUet
+    testData.genUet
     (
     );
 
@@ -30,7 +30,7 @@ OUTPUT
 TO SSTREAM "my/count.ss";
 
 employees =
-    uetData.employees
+    testData.employees
     (
     );
 
@@ -41,3 +41,24 @@ aggre =
 
 OUTPUT aggre
 TO SSTREAM "my/aggre.ss";
+
+// 找出在employeesMore当中但是不在employees当中的人员信息
+
+empDeptIds =
+    SELECT DISTINCT(name) AS n
+    FROM employees;
+
+employeesMore =
+    testData.employeesMore
+    (
+    );
+SELECT name,
+       salary
+FROM employeesMore
+     LEFT JOIN
+         empDeptIds
+     ON employeesMore.name == empDeptIds.n
+WHERE empDeptIds.n == null;
+
+OUTPUT
+TO SSTREAM "my/setDifference.ss";
