@@ -18,14 +18,17 @@ FROM Keys
 OUTPUT
 TO SSTREAM "my/dedup.ss";
 
-SELECT EventId,
-       EventKey,
-       COUNT( * ) AS C
-FROM Uet
-GROUP BY EventId,
-         EventKey;
+Grouped =
+    SELECT EventId,
+           EventKey,
+           COUNT( * ) AS C
+    FROM Uet
+    GROUP BY EventId,
+             EventKey
+    HAVING C == 1;
 OUTPUT
 TO SSTREAM "my/count.ss";
+
 /*
 SELECT *
 FROM employees AS e
