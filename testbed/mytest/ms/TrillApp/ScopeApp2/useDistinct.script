@@ -35,7 +35,7 @@ employees =
     );
 
 aggre =
-    SELECT deptId, SUM(salary) AS TotalSalary, MAX(salary) AS MaxSalary
+    SELECT deptId, SUM(salary) AS TotalSalary, MAX(salary) AS MaxSalary, FIRST(name) AS name
     FROM employees
     GROUP BY deptId;
 
@@ -53,6 +53,7 @@ employeesMore =
     (
     );
 SELECT name,
+       deptId,
        salary
 FROM employeesMore
      LEFT JOIN

@@ -32,6 +32,7 @@
     <Script Include="useDistinct.script" />
     <Script Include="UseFunc.script" />
     <Script Include="UseFuncResolver.script" />
+    <Script Include="UseGroupBy.script" />
     <Script Include="UseIndex.script" />
     <Script Include="UseJoin.script" />
     <Script Include="UseMap.script" />

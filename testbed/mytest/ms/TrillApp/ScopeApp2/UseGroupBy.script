@@ -1,0 +1,11 @@
+﻿MODULE "myJoin.module";
+Uet =
+    testData.genUet
+    (
+    );
+
+SELECT *,
+       COUNT( * ) AS C
+FROM Uet;
+OUTPUT
+TO SSTREAM "my/Count.ss";

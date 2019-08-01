@@ -24,13 +24,13 @@ BEGIN
         VALUES
         (1, "Key1"),
         (2, "Key2"),
-        (3, "Key1"),
+        (1, "Key1"),
         (4, "Key4"),
         (5, "Key2"),
-        (6, "Key6"),
+        (1, "Key7"),
         (7, "Key7"),
-        (1, "Key1"),
-        (9, "Key9")
+        (7, "Key1"),
+        (7, "Key7")
     ) AS Uet(EventId, EventKey);
 END VIEW
 
