@@ -27,6 +27,7 @@
   <ItemGroup>
     <Script Include="BitsAggregate.script" />
     <Script Include="EmployeeAggregate.script" />
+    <Script Include="InnerJoin.script" />
     <Script Include="Multiselect.script" />
     <Script Include="SearchLog.script" />
     <Script Include="useDistinct.script" />
@@ -45,6 +46,9 @@
     </ScriptCode>
     <ScriptCode Include="EmployeeAggregate.script.cs">
       <DependentUpon>EmployeeAggregate.script</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="InnerJoin.script.cs">
+      <DependentUpon>InnerJoin.script</DependentUpon>
     </ScriptCode>
     <ScriptCode Include="SearchLog.script.cs">
       <DependentUpon>SearchLog.script</DependentUpon>

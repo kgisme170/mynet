@@ -1,0 +1,41 @@
+﻿dLeft =
+    SELECT k, mId
+    FROM(VALUES
+            ("key1", 32),
+            ("Key3", 64)
+) AS dLeft(k, mId);
+dRight =
+    SELECT id,
+           key
+    FROM(VALUES
+            (1, "key1"),
+            (2, "key1"),
+            (4, "key2")
+)AS dRight(id, key);
+
+joined =
+    SELECT *
+    FROM dLeft
+         INNER JOIN
+             dRight
+         ON dLeft.k == dRight.key;
+OUTPUT joined
+TO SSTREAM "my/joined.ss";
+
+left_joined =
+    SELECT *
+    FROM dLeft
+         LEFT OUTER JOIN
+             dRight
+         ON dLeft.k == dRight.key;
+OUTPUT left_joined
+TO SSTREAM "my/left_joined.ss";
+
+leftsemi_joined =
+    SELECT *
+    FROM dLeft
+         LEFT SEMIJOIN
+             dRight
+         ON dLeft.k == dRight.key;
+OUTPUT leftsemi_joined
+TO SSTREAM "my/leftsemi_joined.ss";

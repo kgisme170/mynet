@@ -12,24 +12,12 @@
 constValues =
     SELECT a,
            b
-    FROM(
-        VALUES
-        (
-            1,
-            2
-        ),
-        (
-            399266,
-            4
-        ),
-        (
-            951513,
-            6
-        ),
-        (
-            9,
-            10
-        ) ) AS MyTable(a, b);
+    FROM(VALUES
+        (1, 2),
+        (399266, 4),
+        (951513, 6),
+        (9, 10)
+) AS MyTable(a, b);
 
 constValues =
     SELECT a
@@ -48,14 +36,9 @@ USING DefaultTextOutputter();
 
 TagIds =
     SELECT TagId
-    FROM(
-        VALUES
-        (
-            407
-        ),
-        (
-            521
-        )
+    FROM(VALUES
+        (407),
+        (521)
 ) AS MyTable(TagId);
 
 Data = SELECT TagId

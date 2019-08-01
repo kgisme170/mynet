@@ -19,10 +19,9 @@ s =
 */
 
 s = // AttributedAndUnattributed_Joined_uet_pii_20190721_0000.detail.ss
-    SELECT COUNT() AS C
-    FROM e //179162
-    //GROUP BY EventKey
-    HAVING C > 1;
+    SELECT *
+    FROM e
+    WHERE CleanedClickId == "0023ce8a0641189a8fe093bee833b9c2";// AND ConversionId == "6c301690d6225279261902b7f631a01c5c4aea87da1214a902fe99ed84b81996";
 
 /*
 s =

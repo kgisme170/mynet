@@ -20,8 +20,7 @@ PARAMS()
 BEGIN
     Uet =
     SELECT EventId, EventKey
-    FROM(
-        VALUES
+    FROM(VALUES
         (1, "Key1"),
         (2, "Key2"),
         (1, "Key1"),
@@ -39,7 +38,7 @@ RETURN ROWSET(name:string, deptId:int, salary:int)
 PARAMS()
 BEGIN
     data = SELECT name, deptId, salary
-    FROM( VALUES
+    FROM(VALUES
         ("Jack", 1, 400),
         ("Greg", 2, 350),
         ("John", 1, 450),
@@ -55,7 +54,7 @@ RETURN ROWSET(name:string, deptId:int, salary:int)
 PARAMS()
 BEGIN
     data = SELECT name, deptId, salary
-    FROM( VALUES
+    FROM(VALUES
         ("Jack", 1, 400),
         ("Dave", 1, 250),
         ("Zerg", 1, 410),

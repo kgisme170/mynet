@@ -17,23 +17,16 @@ public class MyClass{
 constValues =
     SELECT a,
            b
-    FROM(
-        VALUES
-        (
-            9,
-            10
-        ) ) AS MyTable(a, b);
+    FROM(VALUES
+        (9, 10)
+) AS MyTable(a, b);
 
 values2 =
     SELECT
         a,
         new MyClass(b) AS My
     FROM constValues;
-/*
-OUTPUT values2
-TO "local/users/limgong/values2.tsv"
-USING MyOutputter();
-*/
+
 values3 =
     SELECT My.Serialize() AS My
     FROM values2;
