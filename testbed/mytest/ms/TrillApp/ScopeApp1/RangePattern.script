@@ -13,8 +13,8 @@ searchlog1 =
     VIEW "Scope2.view";
 
 OUTPUT searchlog
-TO "searchlog.txt"
+TO "output/searchlog.txt"
 USING DefaultTextOutputter();
 OUTPUT searchlog1
-TO "searchlog1.txt"
+TO "output/searchlog1.txt"
 USING DefaultTextOutputter();

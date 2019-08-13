@@ -37,6 +37,9 @@
     <Content Include="201908110100.ss">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="201908110200.ss">
+      <SubType>Content</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(AppData)\Microsoft\ScopeStudio\MsBuild\1.0\Scope.targets" />
 </Project>
