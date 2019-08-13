@@ -31,10 +31,10 @@
     </ScriptCode>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="searchlog.ss">
+    <Content Include="201908110000.ss">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="searchlog1.ss">
+    <Content Include="201908110100.ss">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

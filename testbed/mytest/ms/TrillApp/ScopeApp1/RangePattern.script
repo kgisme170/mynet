@@ -13,6 +13,8 @@ searchlog1 =
     VIEW "Scope2.view";
 
 OUTPUT searchlog
-TO SSTREAM "searchlog.ss";
+TO "searchlog.txt"
+USING DefaultTextOutputter();
 OUTPUT searchlog1
-TO SSTREAM "searchlog1.ss";
+TO "searchlog1.txt"
+USING DefaultTextOutputter();

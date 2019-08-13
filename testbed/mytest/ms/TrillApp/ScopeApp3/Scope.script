@@ -1,10 +1,15 @@
-﻿/*
-
-#DECLARE dt DateTime = new DateTime(2019, 8, 11);
+﻿#DECLARE dt DateTime = new DateTime(2019, 8, 11);
 
 #DECLARE WithinDateString string = 
-    String.Format("date={0:yyyy-MM-dd}&hour={1}...{2}", @dt, 0, 3);
+    //String.Format(@"date={0:yyyyMMdd}{{hour}}.ss?&hour={1}...{2}", @dt, 0, 3);
+    String.Format(@"%Y%m%d%h00.ss?&date={0:yyyy-MM-dd}&hour=0...1", @dt);
 
-EXTRACT * FROM WithinDateString USING 
-*/
+searchlogs =
+SELECT * FROM
+(
+    SSTREAM @WithinDateString
+);
 
+OUTPUT
+TO "searchlogs.txt"
+USING DefaultTextOutputter();
