@@ -31,15 +31,20 @@
     </ScriptCode>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="201908110000.ss">
+    <Content Include="2019\08\11\201908110000.ss">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="201908110100.ss">
+    <Content Include="2019\08\11\201908110100.ss">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="201908110200.ss">
+    <Content Include="2019\08\11\201908110200.ss">
       <SubType>Content</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="2019" />
+    <Folder Include="2019\08" />
+    <Folder Include="2019\08\11" />
   </ItemGroup>
   <Import Project="$(AppData)\Microsoft\ScopeStudio\MsBuild\1.0\Scope.targets" />
 </Project>

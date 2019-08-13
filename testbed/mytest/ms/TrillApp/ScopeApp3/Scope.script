@@ -1,8 +1,8 @@
 ﻿#DECLARE dt DateTime = new DateTime(2019, 8, 11, 09, 12, 30);
 
 #DECLARE WithinDateString string = 
-    // String.Format(@"%Y%m%d%h00.ss?&date={0:yyyy-MM-dd}&hour={1}...{2}", @dt, 0, 2); // Also 
-    String.Format(@"{0:yyyyMMdd}%h00.ss?&&hour={1}...{2}", @dt, 0, 2);
+    String.Format(@"%Y%m%d%h00.ss?&date={0:yyyy-MM-dd}&hour={1}...{2}", @dt, 0, 2); // Also 
+    // String.Format(@"{0:yyyy}/{0:mm}/{0:dd}/{0:yyyyMMdd}%h00.ss?&&hour={1}...{2}", @dt, 0, 2);
 
 searchlogs =
 SELECT * FROM
