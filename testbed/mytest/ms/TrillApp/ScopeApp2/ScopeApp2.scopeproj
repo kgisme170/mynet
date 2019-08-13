@@ -47,9 +47,6 @@
     <ScriptCode Include="EmployeeAggregate.script.cs">
       <DependentUpon>EmployeeAggregate.script</DependentUpon>
     </ScriptCode>
-    <ScriptCode Include="InnerJoin.script.cs">
-      <DependentUpon>InnerJoin.script</DependentUpon>
-    </ScriptCode>
     <ScriptCode Include="SearchLog.script.cs">
       <DependentUpon>SearchLog.script</DependentUpon>
     </ScriptCode>
