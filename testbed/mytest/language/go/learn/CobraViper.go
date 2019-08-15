@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"os"
 	"strings"
+	"time"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
@@ -80,5 +81,12 @@ Message 003`,
 	}
 	fmt.Println("%T", logger)
 	fmt.Println(logger)
+
+	defer logger.Sync()
+	logger.Info("----failed to fetch URL----",
+		zap.String("url", "http://example.com"),
+		zap.Int("attempt", 3),
+		zap.Duration("backoff", time.Second),
+	)
 	os.Exit(0)
 }
