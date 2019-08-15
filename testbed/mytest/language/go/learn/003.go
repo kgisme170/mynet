@@ -7,6 +7,7 @@ import (
 	"strings"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"go.uber.org/zap"
 )
 var f = "config.yaml"
 
@@ -70,5 +71,14 @@ Message 003`,
 
 	rootCmd.AddCommand(cobraCmd)
 	rootCmd.Execute()
+
+	var logger *zap.Logger
+	var err error
+	logger, err = zap.NewProduction()
+	if err == nil {
+		fmt.Println("zap logger error")
+	}
+	fmt.Println("%T", logger)
+	fmt.Println(logger)
 	os.Exit(0)
 }
