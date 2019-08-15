@@ -60,6 +60,14 @@ Message 003`,
 			fmt.Println(c)
 		},
 	}
+
+	cobraCmd.Flags().StringVarP(
+		&f,
+		"config",
+		"c",
+		"",
+		"Path to config file, in json format")
+
 	rootCmd.AddCommand(cobraCmd)
 	rootCmd.Execute()
 	os.Exit(0)
