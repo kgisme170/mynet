@@ -1,4 +1,4 @@
-package main
+package mygo
 
 import (
 	"fmt"
@@ -70,7 +70,7 @@ func useSwitch(x int) {
 	}
 }
 
-func test1() {
+func test001() {
 	var c, python, java = true, false, "no"
 	fmt.Println(add(43, 42), minus(43, 42))
 	fmt.Println(math.Pi)
@@ -153,7 +153,7 @@ func test1() {
 }
 
 /* Print something */
-func test2() {
+func test002() {
 	defer fmt.Println("at exit")
 	fmt.Println("begin")
 	for i := 0; i < 10; i++ {
@@ -208,7 +208,7 @@ func printSlice(s string, x []int) {
 		s, len(x), cap(x), x)
 }
 
-func main() {
+func main001() {
 	game := [][]string{
 		[]string{"_", "_", "_"},
 		[]string{"_", "_", "_"},
