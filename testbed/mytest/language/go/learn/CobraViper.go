@@ -1,5 +1,6 @@
 package main
 import (
+	"bytes"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -21,9 +22,9 @@ func readConfig(content io.Reader) string {
 		return ""
 	}
 	v := config.GetString("param1")
-	//fmt.Println("param1:", v)
 	return v
 }
+
 func main() {
 	rootCmd := &cobra.Command{
 		Use: "003",
@@ -51,7 +52,6 @@ Message 003`,
 				fmt.Printf("Error: Config not found: %s\n", f)
 				os.Exit(1)
 			}
-			//fmt.Println(content)
 			reader := strings.NewReader(string(content))
 
 			c := readConfig(reader)
@@ -88,5 +88,36 @@ Message 003`,
 		zap.Int("attempt", 3),
 		zap.Duration("backoff", time.Second),
 	)
+	config := viper.New()
+	config.SetConfigType("yaml") // or viper.SetConfigType("YAML")
+
+	buf := bytes.NewBufferString("hello")
+	s := []byte(" world")
+	buf.Write(s)
+	fmt.Println(buf.String())
+
+	var yamlExample = []byte(`
+Hacker: true
+name: steve
+hobbies:
+- skateboarding
+- snowboarding
+- go
+clothing:
+jacket: leather
+trousers: denim
+age: 35
+eyes : brown
+beard: true`)
+
+	content := bytes.NewBuffer(yamlExample)
+	//fmt.Println(content)
+	err = config.ReadConfig(content)
+	if err != nil {
+		fmt.Printf("Error: ReadConfig: %s", err.Error())
+		os.Exit(1)
+	}
+
+	fmt.Println("name=",config.GetString("name"))
 	os.Exit(0)
 }
