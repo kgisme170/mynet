@@ -19,7 +19,7 @@ namespace XUnitTestProject1
             return data;
         }
         //Main method begins here.
-        public static void main(string file)
+        public static void Run(string file)
         {
             //Test for correct number of arguments.
             try
@@ -30,7 +30,7 @@ namespace XUnitTestProject1
                 byte[] rawData = ReadFile(file);
                 x509.Import(rawData);
                 */
-                var x509 = new X509Certificate2(File.ReadAllBytes(file));
+                var x509 = new X509Certificate2(file);
                 //Debug.WriteLine to console information contained in the certificate.
                 Debug.WriteLine(Environment.NewLine);
                 Debug.WriteLine("Subject: {1}{0}", Environment.NewLine, x509.Subject);

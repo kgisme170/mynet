@@ -6,7 +6,7 @@ namespace usex509
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            SslTcpClient.Run();
         }
     }
 }

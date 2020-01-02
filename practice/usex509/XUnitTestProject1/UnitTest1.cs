@@ -52,11 +52,11 @@ namespace XUnitTestProject1
                 }*/
                 //CertInfo.main("client.key");
                 Console.WriteLine("------------------");
-                CertInfo.main("client.pem");
+                CertInfo.Run("client.pem");
                 Console.WriteLine("------------------");
                 //CertInfo.main("server.key");
                 Console.WriteLine("------------------");
-                CertInfo.main("server.pem");
+                CertInfo.Run("server.pem");
                 Console.WriteLine("------------------");
 
             }
