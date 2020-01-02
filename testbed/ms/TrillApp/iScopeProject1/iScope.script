@@ -1,0 +1,55 @@
+﻿//e = SSTREAM "local/users/limgong/02_Joined_uet_AttributedAndUnattributed_20190721_0000.detail.ss"; //Output.ss";
+//e = SSTREAM "local/users/limgong/Test/011_Attributed_20190728_0000.detail.ss"; //Output.ss";
+
+e = SSTREAM "local/projects/DataUsage/Job/Daily/2019/09/JobAsset_2019_09_07.ss"; //Output.ss";
+//c = SELECT COUNT(*) AS C FROM e;
+//OUTPUT c TO CONSOLE;
+
+usql = SELECT * FROM e WHERE JobName LIKE "%USQL%";
+//OUTPUT usql TO CONSOLE;
+
+c = SELECT COUNT(*) AS C FROM usql;
+OUTPUT c TO CONSOLE;
+
+/*
+s =
+    SELECT DISTINCT ConversionId
+    FROM e;
+*/
+/*
+s =
+    SELECT *
+    FROM e // 179135/179135  180770/Same
+    WHERE EventKey = "e33a3a83e4235d9d898eff8c00606761";
+*/
+/*
+s =
+    SELECT *
+    FROM e
+    WHERE IsAttributed == false;
+*/
+
+/*
+s =
+    SELECT *, COUNT(ConversionId) AS C
+    FROM e
+    GROUP BY ConversionId
+    HAVING C > 1;
+*/
+/*
+s =
+    SELECT DISTINCT ConversionId
+    FROM e;
+s =
+    SELECT COUNT() AS C
+    FROM s;//172910
+*/
+
+//s = SELECT DISTINCT TagId FROM e;
+/*
+s =
+    SELECT *
+    FROM e
+    WHERE IsAttributed == false;
+*/
+//OUTPUT s TO SSTREAM "local/users/limgong/Unattributed_Joined_uet_pii_20190721_0000.detail.ss";
