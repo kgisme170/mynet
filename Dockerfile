@@ -4,7 +4,7 @@ FROM ubuntu:19.04 AS build_base
 # Install some dependencies needed to build the project
 RUN apt-get update \
     && apt-get -y upgrade \
-    && apt-get install -y --fix-missing autoconf automake bison ca-certificates cmake curl flex git gcc golang graphviz g++ libc6-dev lua5.3 make openjdk-12-jdk openjdk-12-dbg openssl python ruby scons vim wget \
+    && apt-get install -y --fix-missing autoconf automake bison ca-certificates cmake curl flex git gcc graphviz g++ libc6-dev lua5.3 make openjdk-12-jdk openssl python ruby scons vim wget \
     && wget https://dl.google.com/go/go1.13.3.linux-amd64.tar.gz \
     && tar -xvf go1.13.3.linux-amd64.tar.gz \
     && mv go /usr/local \
