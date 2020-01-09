@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "usex509", "usex509\usex509.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{226B3345-C05F-473B-A478-E78190986366}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SslTcpServer", "SslTcpServer\SslTcpServer.csproj", "{E18949DB-B73A-4713-8308-2CC78E353129}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SslTcpServer", "SslTcpServer\SslTcpServer.csproj", "{E18949DB-B73A-4713-8308-2CC78E353129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraceConsole", "TraceConsole\TraceConsole.csproj", "{4F9F46BF-9534-44F1-9D9B-9CBB2F645B5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraceConsole472", "TraceConsole472\TraceConsole472.csproj", "{5C59C40F-B2FE-4BA1-BF69-12579D427D42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{E18949DB-B73A-4713-8308-2CC78E353129}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E18949DB-B73A-4713-8308-2CC78E353129}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E18949DB-B73A-4713-8308-2CC78E353129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F9F46BF-9534-44F1-9D9B-9CBB2F645B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9F46BF-9534-44F1-9D9B-9CBB2F645B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F9F46BF-9534-44F1-9D9B-9CBB2F645B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9F46BF-9534-44F1-9D9B-9CBB2F645B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C59C40F-B2FE-4BA1-BF69-12579D427D42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C59C40F-B2FE-4BA1-BF69-12579D427D42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C59C40F-B2FE-4BA1-BF69-12579D427D42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C59C40F-B2FE-4BA1-BF69-12579D427D42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
