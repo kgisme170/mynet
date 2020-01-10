@@ -3,7 +3,7 @@
 
 bool llvm_gen::init(const string& fileName) {
     if(!llvm_is_multithreaded()) {
-	printf("Not multi thread\n");
+	    printf("Not multi thread\n");
     }
     InitializeNativeTarget();
     InitializeNativeTargetAsmPrinter();
@@ -12,8 +12,8 @@ bool llvm_gen::init(const string& fileName) {
     ErrorOr<std::unique_ptr<MemoryBuffer>> buf = MemoryBuffer::getFile(fileName);
     Expected<std::unique_ptr<Module>> m = parseBitcodeFile(**buf, mContext);
     if (m) {
-	printf("Fail to parse IR module\n");
-	return false;
+        printf("Fail to parse IR module\n");
+        return false;
     }
     mModule.reset(m->get());
     mModule->setModuleIdentifier("myId");
@@ -26,8 +26,8 @@ bool llvm_gen::init(const string& fileName) {
     mEngineBuilder->setErrorStr(&sErr);
     ExecutionEngine* mMCJit = mEngineBuilder->create();
     if (!mMCJit) {
-	printf("Cannot create MCJit: %s\n", sErr.c_str());
-	return false;
+        printf("Cannot create MCJit: %s\n", sErr.c_str());
+        return false;
     }
     mVoidType = Type::getVoidTy(mContext);
     mPtrType = PointerType::get(mModule->getTypeByName("type01"), 0);
@@ -42,6 +42,7 @@ bool llvm_gen::init(const string& fileName) {
     mInt64NullValue = ConstantInt::get(mContext, APInt(64, 0x8000000000000000, true));
     mDoubleNullValue = ConstantFP::get(mContext, APFloat(-DBL_MAX));
     mDatetimeNullValue = mInt64NullValue;
+    return true;
 }
 
 int main(int argc, char* argv[]){

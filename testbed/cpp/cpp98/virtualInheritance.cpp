@@ -1,3 +1,4 @@
+#include<iostream>
 using namespace std;
 
 struct Base1{ int mi,mj,mk,mh;};//16=4x4

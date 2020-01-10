@@ -1,0 +1,22 @@
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+JRE_HOME=$JAVA_HOME/jre
+export JAVA_HOME
+export JRE_HOME
+
+GOROOT=/usr/local/go
+GOPATH=$HOME/goproj
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$JAVA_HOME/bin:$PATH
+PATH=$GOPATH/bin:$GOROOT/bin:$PATH:.
+CLASSPATH=$JAVA_HOME/lib:.
+
+C_INCLUDE_PATH=$JAVA_HOME/include:$JAVA_HOME/include/linux:/usr/include/llvm-c-8/llvm-c/Transforms:/usr/include/python2.7:/usr/include/tcl8.6/
+CPLUS_INCLUDE_PATH=$JAVA_HOME/include:$JAVA_HOME/include/linux:/usr/include/llvm-c-8/llvm-c/Transforms:/usr/include/python2.7:/usr/include/tcl8.6/
+LD_LIBRARY_PATH=$JAVA_HOME/jre/lib/amd64/server
+
+export GOROOT
+export GOPATH
+export PATH
+export CLASSPATH
+export C_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH
+export LD_LIBRARY_PATH
