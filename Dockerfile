@@ -4,7 +4,7 @@ FROM ubuntu:19.04 AS build_base
 # Install some dependencies needed to build the project
 RUN apt-get update \
     && apt-get -y upgrade \
-    && apt-get install -y --fix-missing ant autoconf automake bison ca-certificates clang cmake curl flex git gcc gradle graphviz g++ libc6-dev lua5.3 llvm make maven ninja-build openjdk-8-jdk openjdk-8-jre openssl python python-dev ruby scons swig tcl tcl-dev vim wget \
+    && apt-get install -y --fix-missing ant autoconf autogen automake bison ca-certificates clang cmake curl flex git gcc gradle graphviz g++ libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev libc6-dev libevent-dev libleveldb-dev liblz4-dev libsnappy-dev libssl-dev libtool libzstd-dev lua5.3 llvm lz4 make maven ninja-build openjdk-8-jdk openjdk-8-jre openssl pkg-config python python-dev ruby scons swig tcl tcl-dev uuid-dev vim wget \
     && wget https://dl.google.com/go/go1.13.3.linux-amd64.tar.gz \
     && tar -xvf go1.13.3.linux-amd64.tar.gz \
     && mv go /usr/local \
