@@ -8,7 +8,7 @@
     <packaging>pom</packaging>
     <artifactId>spring</artifactId>
     <modules>
-        <module>gs-spring-boot</module>
+        <!--module>gs-spring-boot</module-->
         <module>IocAop</module>
         <module>springDb</module>
     </modules>
