@@ -44,10 +44,10 @@ cd /mynet/testbed/cpp && chmod +x testgmock.sh && scons -j8
 cd /mynet/testbed/cpp3p/useXml2 && cmake . && make
 
 # linux
-cd /mynet/testbed/linux/multiplex/linux && bazel build
-cd /mynet/testbed/linux/multiplex/posix && bazel build
-cd /mynet/testbed/linux/multiplex/pthread && bazel build
-cd /mynet/testbed/linux/multiplex/sysv && bazel build
+cd /mynet/testbed/linux/multiplex/linux && bazel build ...
+# cd /mynet/testbed/linux/multiplex/posix && bazel build ...
+cd /mynet/testbed/linux/multiplex/pthread && bazel build ...
+cd /mynet/testbed/linux//sysv && bazel build ...
 
 # java
-cd /mynet/testbed && mvn package
+# cd /mynet/testbed && mvn package

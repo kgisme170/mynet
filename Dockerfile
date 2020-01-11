@@ -5,7 +5,7 @@ FROM ubuntu:19.04 AS build_base
 RUN apt-get update \
     && apt-get -y upgrade \
     && apt-get -y install --fix-missing ant autoconf autogen automake bison ca-certificates clang cmake curl flex git gcc graphviz g++ libc6-dev libtool \
-    && apt-get -y install --fix-missing libevent-dev libleveldb-dev liblz4-dev libsnappy-dev libssl-dev libxml2-dev libzstd-dev \
+    && apt-get -y install --fix-missing libevent-dev libleveldb-dev liblz4-dev libomp-dev libsnappy-dev libssl-dev libxml2-dev libzstd-dev \
     && apt-get -y install --fix-missing lua5.3 llvm lz4 make maven ninja-build openjdk-8-jdk openjdk-8-jre openssl pkg-config \
     && apt-get -y install --fix-missing gradle python python-dev ruby scons swig uuid-dev vim wget \
     && wget https://dl.google.com/go/go1.13.3.linux-amd64.tar.gz \
