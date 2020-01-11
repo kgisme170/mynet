@@ -42,5 +42,5 @@ cc_binary(
     name = "threads_omp",
     srcs = ["threads_omp.cpp"],
     copts = ["-fopenmp"],
-    linkopts = ["-lpthread -lomp"]
+    linkopts = ["-L/usr/lib/llvm-8/lib -lpthread -lomp"]
 )
