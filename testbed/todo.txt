@@ -26,3 +26,8 @@ I run "cmake ." OK, and then make VERBOSE=1 it gives compilation error:
     make: *** [all] Error 2
     
 Seems that "include_directories" didn't add any "-I" option into Makefile. How could I fix it?
+
+---------------------
+
+gs-spring-boot
+useJunit
