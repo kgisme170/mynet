@@ -12,7 +12,6 @@
         <module>hadoop</module>
         <module>java</module>
         <module>java3p</module>
-        <module>spark</module>
         <module>spring</module>
     </modules>
 </project>
