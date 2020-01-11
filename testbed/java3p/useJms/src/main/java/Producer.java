@@ -35,7 +35,7 @@ public class Producer extends MqConfig {
         final int num = 10;
         for (int i = 0; i < num; i++) {
             TextMessage message = session.createTextMessage("ActiveMQ send message" + i);
-            System.out.println("Send message：ActiveMQ send message" + i);
+            System.out.println("Send message: ActiveMQ send message" + i);
             messageProducer.send(message);
         }
         messageProducer.close();

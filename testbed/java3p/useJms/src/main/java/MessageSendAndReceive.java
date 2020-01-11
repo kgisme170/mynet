@@ -1,8 +1,8 @@
 /**
  * 2 ways for receiver to get message
  * 1. consumer.receive() 或 consumer.receive(int timeout)；
- * 2. 注册一个MessageListener。
- * First method uses p2p方式, receiver will wait until message arrives
+ * 2. register a MessageListener。
+ * First method uses p2p, receiver will wait until message arrives
  * Second method will use async and register a monitor, callback its onMessage when receives message
  */
 
@@ -25,11 +25,11 @@ public class MessageSendAndReceive {
         ConnectionFactory factory = new ActiveMQConnectionFactory("vm://localhost");
         Connection connection = factory.createConnection();
         connection.start();
-        //创建消息的Destination
+        //Destination for message creation
         Queue queue = new ActiveMQQueue("testQueue");
 
         final Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-        //创建将要发送的消息
+        //create message to send
         Message message = session.createTextMessage("Hello JMS!");
 
         MessageProducer producer = session.createProducer(queue);
@@ -42,7 +42,7 @@ public class MessageSendAndReceive {
             public void onMessage(Message msg) {
                 TextMessage textMsg = (TextMessage) msg;
                 try {
-                    System.out.println("接收到消息: " + textMsg.getText());
+                    System.out.println("Receives message: " + textMsg.getText());
                     System.exit(0);
                 } catch (JMSException e) {
                     e.printStackTrace();
