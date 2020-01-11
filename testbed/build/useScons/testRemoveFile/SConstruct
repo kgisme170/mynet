@@ -6,6 +6,4 @@ for f in env.Glob("*.cc"):
     if "c.cc" not in str(f):
         execludeBuildInfo.append(f)
 
-for f in execludeBuildInfo:
-    print f
 env.Program(target='main', source=execludeBuildInfo)
