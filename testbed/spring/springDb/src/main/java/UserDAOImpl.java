@@ -24,12 +24,12 @@ public class UserDAOImpl extends JdbcDaoSupport implements IUserDAO {
         this.getJdbcTemplate().update(sql, user.getUsername(), user.getPassword(), user.getId());
     }
     @Override
-    public String searchUserName(int id) {// 简单查询，按照ID查询，返回字符串
+    public String searchUserName(int id) {
         String sql = "select username from t3 where id=?";
         return this.getJdbcTemplate().queryForObject(sql, String.class, id);
     }
     @Override
-    public List<User> findAll() {// 复杂查询返回List集合
+    public List<User> findAll() {
         String sql = "select * from t3";
         return this.getJdbcTemplate().query(sql, new UserRowMapper());
     }
