@@ -1,5 +1,5 @@
 #!/bin/bash
-
+source /etc/environment
 # ant
 cd /mynet/testbed/build/useAnt && ant
 # bazel
