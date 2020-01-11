@@ -51,3 +51,5 @@ cd /mynet/testbed/linux//sysv && bazel build ...
 
 # java
 cd /mynet/testbed/java3p && mvn package
+cd /mynet/testbed/spark  && mvn package
+cd /mynet/testbed/spring && mvn package
