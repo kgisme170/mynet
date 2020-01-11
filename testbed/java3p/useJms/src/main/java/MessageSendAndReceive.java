@@ -1,6 +1,6 @@
 /**
  * 2 ways for receiver to get message
- * 1. consumer.receive() 或 consumer.receive(int timeout)；
+ * 1. consumer.receive() or consumer.receive(int timeout); 
  * 2. register a MessageListener。
  * First method uses p2p, receiver will wait until message arrives
  * Second method will use async and register a monitor, callback its onMessage when receives message
