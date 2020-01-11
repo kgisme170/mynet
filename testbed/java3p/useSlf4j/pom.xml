@@ -8,6 +8,10 @@
         <groupId>mygroup</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
 
     <groupId>useSlf4j</groupId>
     <artifactId>useSlf4j</artifactId>
