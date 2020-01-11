@@ -1,9 +1,9 @@
 /**
- * 消息的消费者接收消息可以采用两种方式：
- * 1、consumer.receive() 或 consumer.receive(int timeout)；
- * 2、注册一个MessageListener。
- * 采用第一种p2p方式，消息的接收者会一直等待下去，直到有消息到达，或者超时。
- * 后一种异步方式会注册一个监听器，当有消息到达的时候，会回调它的onMessage()方法。
+ * 2 ways for receiver to get message
+ * 1. consumer.receive() 或 consumer.receive(int timeout)；
+ * 2. 注册一个MessageListener。
+ * First method uses p2p方式, receiver will wait until message arrives
+ * Second method will use async and register a monitor, callback its onMessage when receives message
  */
 
 import javax.jms.Connection;

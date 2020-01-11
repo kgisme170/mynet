@@ -13,7 +13,6 @@ public class Producer extends MqConfig {
         try {
             init(true);
             messageProducer = session.createProducer(destination);
-            //发送消息
             sendMessage(session, messageProducer);
         } catch (Exception e) {
             e.printStackTrace();
@@ -35,8 +34,8 @@ public class Producer extends MqConfig {
     public void sendMessage(Session session, MessageProducer messageProducer) throws Exception {
         final int num = 10;
         for (int i = 0; i < num; i++) {
-            TextMessage message = session.createTextMessage("ActiveMQ 发送消息" + i);
-            System.out.println("发送消息：ActiveMQ 发送消息" + i);
+            TextMessage message = session.createTextMessage("ActiveMQ send message" + i);
+            System.out.println("Send message：ActiveMQ send message" + i);
             messageProducer.send(message);
         }
         messageProducer.close();
