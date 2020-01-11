@@ -1,5 +1,5 @@
 #!/bin/bash
-
+source /etc/environment
 # ant
 cd /mynet/testbed/build/useAnt && ant
 # bazel
@@ -40,8 +40,7 @@ cd /mynet/testbed/build/useSwig && scons -j8
 cd /mynet/testbed/cpp && chmod +x testgmock.sh && scons -j8
 
 # cpp3p
-# cd /mynet/testbed/cpp3p && chmod +x install.sh && ./install.sh
-cd /mynet/testbed/cpp3p/useXml2 && cmake . && make
+cd /mynet/testbed/cpp3p && chmod +x install.sh && ./install.sh
 
 # linux
 cd /mynet/testbed/linux/multiplex/linux && bazel build ...
