@@ -15,7 +15,8 @@ if(FoundThrift)
     )
     
     include_directories(/usr/local/include)
-    link_directories($ENV{LD_LIBRARY_PATH})
+    #link_directories($ENV{LD_LIBRARY_PATH})
+    link_directories(/thrift-0.10.0/lib/cpp/.libs)
     link_libraries(thrift thriftnb event)
     
     set(GEN ${directory}/gen-cpp)
