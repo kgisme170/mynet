@@ -1,5 +1,0 @@
-#!/usr/bin/env python
-import os,sys
-env = Environment()
-env.Program(target='main', source='main.cc', LIBS=['mylib'], LINKFLAGS=['-L.'])
-env.SharedLibrary(target='mylib', source='mylib.cc')

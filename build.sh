@@ -23,15 +23,10 @@ cd /mynet/testbed/build/useMaven && mvn package
 cd /mynet/testbed/build/useNinja && ninja
 
 # sbt
-#
 
 # scons
-cd /mynet/testbed/build/useScons/doubleFree && scons -j8
-cd /mynet/testbed/build/useScons/doubleLink && scons -j8
-cd /mynet/testbed/build/useScons/libDependency && scons -j8
-cd /mynet/testbed/build/useScons/testRemoveFile && scons -j8
+cd /mynet/testbed/build/useScons && scons -j8
 cd /mynet/testbed/build/useScons/testStaticInfo && scons -j8
-cd /mynet/testbed/build/useScons/useCpppath && scons -j8
 
 # swig
 cd /mynet/testbed/build/useSwig && scons -j8

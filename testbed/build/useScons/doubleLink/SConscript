@@ -1,6 +1,6 @@
 import os,sys
-env=Environment(LINKFLAGS=["-L."])
-env.Append(RPATH='.')
+env=Environment(LINKFLAGS=["-L/mynet/testbed/build/useScons/doubleLink"])
+env.Append(RPATH='/mynet/testbed/build/useScons/doubleLink')
 
 env.SharedLibrary(target='mylib_shared', source='mylib.cc')
 env.StaticLibrary(target='mylib', source='mylib.cc', CPPFLAGS=['-fPIC'])
