@@ -2,7 +2,7 @@ import os,sys
 env = Environment(ENV = {'PATH' : os.environ['PATH']})
 
 env.SConscript(dirs=['doubleFree'])
-env.SConscript(dirs=['doubleLink'])
+#env.SConscript(dirs=['doubleLink'])
 env.SConscript(dirs=['libDependency'])
 env.SConscript(dirs=['testRemoveFile'])
 env.SConscript(dirs=['useCpppath'])
