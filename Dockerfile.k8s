@@ -1,0 +1,8 @@
+FROM ubuntu:18.04 AS build_base
+RUN apt-get update \
+    && apt-get -y upgrade \
+    && apt-get -y install --fix-missing docker.io \
+    && useradd me \
+    && usermod -aG docker me \
+    && apt install -y curl gnupg gnupg2 software-properties-common systemd \
+    && systemctl enable docker
