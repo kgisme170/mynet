@@ -44,4 +44,6 @@ cd /mynet/testbed/linux/multiplex/pthread && bazel build ...
 cd /mynet/testbed/linux/sysv && bazel build ...
 
 # java
+cd /mynet/hadoop  && mvn package
+cd /mynet/spark   && mvn package
 cd /mynet/testbed && mvn package
