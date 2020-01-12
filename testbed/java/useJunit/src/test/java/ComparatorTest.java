@@ -6,7 +6,8 @@ import org.junit.Test;
 public class ComparatorTest {
     private int population;
 
-    public ComparatorTest(String n1, int p1) {
+    public ComparatorTest(){}
+    public void set(int p1) {
         population = p1;
     }
 
@@ -25,10 +26,10 @@ public class ComparatorTest {
                 }
             }
         };
-        ComparatorTest t1 = new ComparatorTest("t1", 1);
-        ComparatorTest t2 = new ComparatorTest("t2", 5);
-        ComparatorTest t3 = new ComparatorTest("t3", 3);
-        ComparatorTest t4 = new ComparatorTest("t4", 4);
+        ComparatorTest t1 = new ComparatorTest(); t1.set(1);
+        ComparatorTest t2 = new ComparatorTest(); t1.set(5);
+        ComparatorTest t3 = new ComparatorTest(); t1.set(3);
+        ComparatorTest t4 = new ComparatorTest(); t1.set(4);
         Queue<ComparatorTest> q = new PriorityQueue<ComparatorTest>(10, order);
         q.add(t1);
         q.add(t2);
@@ -38,7 +39,6 @@ public class ComparatorTest {
         while (q.size() != 0) {
             System.out.println(q.poll());
         }
-
 
         class LengthCompare implements Comparator<String> {
             @Override
