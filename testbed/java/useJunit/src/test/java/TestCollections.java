@@ -169,11 +169,8 @@ public class TestCollections {
         ConcurrentHashMap<String, Long> map = new ConcurrentHashMap<>();
         String word = "abc";
         Long oldValue, newValue;
-        do {
-            oldValue = map.get(word);
-            newValue = oldValue == null ? 1 : oldValue + 1;
-        } while (!map.replace(word, oldValue, newValue));
-
+        oldValue = map.get(word);
+        newValue = oldValue == null ? 1 : oldValue + 1;
         map.compute(word, (k, v) -> v == null ? 1 : v + 1);
     }
 
@@ -181,7 +178,10 @@ public class TestCollections {
     public void TestLongAdder() {
         ConcurrentHashMap<String, LongAdder> map = new ConcurrentHashMap<>();
         String word = "abc";
-        map.putIfAbsent(word, new LongAdder()).increment();
+        LongAdder l = map.putIfAbsent(word, new LongAdder());
+	if (l != null) {
+	    l.increment();
+	}
         map.computeIfAbsent(word, k -> new LongAdder()).increment();
     }
 

@@ -30,7 +30,7 @@ public class TestReentrantLock {
             Thread.sleep(1000);
             t.join();
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
         } finally {
             System.out.println("finally unlock");
             bankLock.unlock();
