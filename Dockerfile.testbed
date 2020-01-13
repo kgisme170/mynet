@@ -1,13 +1,14 @@
 # Base build image
-FROM ubuntu:19.04 AS build_base
+FROM ubuntu:18.04 AS build_base
 # Install some dependencies needed to build the project
 RUN apt-get update \
     && apt-get -y upgrade \
     && apt-get -y install --fix-missing ant autoconf autogen automake bison ca-certificates clang cmake curl flex git gcc graphviz g++ libc6-dev libtool \
     && apt-get -y install --fix-missing libaio-dev libev-dev libevent-dev libleveldb-dev liblz4-dev libomp-dev libsnappy-dev libssl-dev libxml2-dev libzstd-dev \
-    && apt-get -y install --fix-missing lua5.3 llvm lz4 make maven ninja-build openjdk-8-jdk openjdk-8-jre openssl pkg-config \
+    && apt-get -y install --fix-missing lua5.1 llvm make maven ninja-build openjdk-8-jdk openjdk-8-jre openssl pkg-config \
     && apt-get -y install --fix-missing gradle python python-dev ruby scons swig uuid-dev vim wget \
     && apt-get -y install --fix-missing build-essential libgl1-mesa-dev freeglut3-dev libglew-dev libsdl2-dev libsdl2-image-dev libglm-dev libfreetype6-dev \
+    && apt-get -y install --fix-missing libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev \
     && wget www.scala-lang.org/files/archive/scala-2.11.8.deb \
     && dpkg -i scala-2.11.8.deb \
     && echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | tee /etc/apt/sources.list.d/bazel.list \
@@ -24,7 +25,8 @@ RUN apt-get update \
     && git clone https://github.com/kgisme170/mynet.git \
     && git config --global user.email kgisme170@163.com \
     && git config --global user.name kgisme170 \
-    && apt-get -y install --fix-missing libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev 
+    && cd /mynet \
+    && git config credential.helper store
 
 # Force the go compiler to use modules
 COPY environment /etc/environment
