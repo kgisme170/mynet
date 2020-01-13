@@ -22,6 +22,8 @@ RUN apt-get update \
     && export GOPATH=$HOME/goproj \
     && export PATH=$GOPATH/bin:$GOROOT/bin:$PATH \
     && git clone https://github.com/kgisme170/mynet.git \
+    && git config --global user.email kgisme170@163.com \
+    && git config --global user.name kgisme170 \
     && apt-get -y install --fix-missing libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev 
 
 # Force the go compiler to use modules

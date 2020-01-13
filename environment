@@ -9,9 +9,9 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/us
 PATH=$GOPATH/bin:$GOROOT/bin:$PATH:.
 CLASSPATH=$JAVA_HOME/lib:.
 
-C_INCLUDE_PATH=$JAVA_HOME/include:$JAVA_HOME/include/linux:/usr/include/llvm-c-8/llvm-c/Transforms:/usr/include/python2.7:/usr/include/tcl8.6/
-CPLUS_INCLUDE_PATH=$JAVA_HOME/include:$JAVA_HOME/include/linux:/usr/include/llvm-c-8/llvm-c/Transforms:/usr/include/python2.7:/usr/include/tcl8.6/
-LD_LIBRARY_PATH=$JAVA_HOME/jre/lib/amd64/server
+C_INCLUDE_PATH=$JAVA_HOME/include:$JAVA_HOME/include/linux:/usr/include/llvm-c-8/llvm-c/Transforms:/usr/include/python2.7:/usr/include/tcl8.6:/thrift-0.10.0/lib/cpp/src
+CPLUS_INCLUDE_PATH=$JAVA_HOME/include:$JAVA_HOME/include/linux:/usr/include/llvm-c-8/llvm-c/Transforms:/usr/include/python2.7:/usr/include/tcl8.6:/thrift-0.10.0/lib/cpp/src
+LD_LIBRARY_PATH=$JAVA_HOME/jre/lib/amd64/server::/thrift-0.10.0/lib/cpp/.libs
 
 export GOROOT
 export GOPATH
