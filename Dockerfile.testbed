@@ -3,6 +3,7 @@ FROM ubuntu:18.04 AS build_base
 # Install some dependencies needed to build the project
 RUN apt-get update \
     && apt-get -y upgrade \
+    && apt-get -y autoremove libprotobuf-dev \
     && apt-get -y install --fix-missing ant autoconf autogen automake bison ca-certificates clang cmake curl flex git gcc graphviz g++ libc6-dev libtool \
     && apt-get -y install --fix-missing libaio-dev libev-dev libevent-dev libleveldb-dev liblz4-dev libomp-dev libsnappy-dev libssl-dev libxml2-dev libzstd-dev \
     && apt-get -y install --fix-missing lua5.1 llvm make maven ninja-build openjdk-8-jdk openjdk-8-jre openssl pkg-config \
@@ -23,9 +24,10 @@ RUN apt-get update \
     && export GOPATH=$HOME/goproj \
     && export PATH=$GOPATH/bin:$GOROOT/bin:$PATH \
     && git clone https://github.com/kgisme170/mynet.git \
+    && cd /mynet \
+    && git config credential.helper store \
     && git config --global user.email kgisme170@163.com \
     && git config --global user.name kgisme170 \
-    && cd /mynet \
     && git config credential.helper store
 
 # Force the go compiler to use modules
