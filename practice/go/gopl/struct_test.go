@@ -38,7 +38,7 @@ type T2 struct {
 	j int
 }
 
-func newT1() *T1{
+func newT1() *T1 {
 	return &T1{}
 }
 
@@ -68,4 +68,6 @@ func TestPointer(t *testing.T) {
 	pf2(t1)
 	pf3 := (*T).compare
 	pf3(t1, t2)
+
+	new(T).print()
 }
