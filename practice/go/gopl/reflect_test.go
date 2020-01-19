@@ -30,8 +30,19 @@ func (t *T3) Do() {
 
 func test1() {
 	name := "Do"
-	t := &T3{}
-	reflect.ValueOf(t).MethodByName(name).Call(nil)
+	t1 := &T3{}
+	reflect.ValueOf(t1).MethodByName(name).Call(nil)
+
+	x := &T3{}
+	v := reflect.ValueOf(x)
+	t := v.Type()
+	fmt.Printf("type %s\n", t)
+
+	for i := 0; i < v.NumMethod(); i++ {
+		methType := v.Method(i).Type()
+		fmt.Printf("func (%s) %s%s\n", t, t.Method(i).Name,
+			strings.TrimPrefix(methType.String(), "func"))
+	}
 }
 
 func (t *T3) Do2(a int, b string) {
