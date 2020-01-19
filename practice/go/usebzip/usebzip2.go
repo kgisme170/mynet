@@ -26,6 +26,30 @@ type writer struct {
 	outbuf [64 * 1024]byte
 }
 
+// Close flushes the compressed data and closes the stream.
+// It does not close the underlying io.Writer.
+func (w *writer) Close() error {
+    if w.stream == nil {
+        panic("closed")
+    }
+    defer func() {
+        C.BZ2_bzCompressEnd(w.stream)
+        C.bz2free(w.stream)
+        w.stream = nil
+    }()
+    for {
+        inlen, outlen := C.uint(0), C.uint(cap(w.outbuf))
+        r := C.bz2compress(w.stream, C.BZ_FINISH, nil, &inlen,
+            (*C.char)(unsafe.Pointer(&w.outbuf)), &outlen)
+        if _, err := w.w.Write(w.outbuf[:outlen]); err != nil {
+            return err
+        }
+        if r == C.BZ_STREAM_END {
+            return nil
+        }
+    }
+}
+
 // NewWriter returns a writer for bzip2-compressed streams.
 func NewWriter(out io.Writer) io.WriteCloser {
 	const blockSize = 9
