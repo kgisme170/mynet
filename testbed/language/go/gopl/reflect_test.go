@@ -70,8 +70,8 @@ func test3() {
 }
 
 type T4 struct {
-	A int    `json:"aaa" test:"testaaa"`
-	B string `json:"bbb" test:"testbbb"`
+	A int    `json:"aaa" test:"AA"`
+	B string `json:"bbb" test:"BB"`
 }
 
 func test4() {
@@ -108,14 +108,11 @@ func test5() {
 
 	for i := 0; i < tt.NumField(); i++ {
 		field := tt.Field(i)
-		newTTag := field.Tag.Get("newT")
+		newTTag := field.Tag.Get("test")
 		tValue := tv.Field(i)
-		// newTValue.Elem().FieldByName(newTTag).Set(tValue) // panic
 		newTfield := newTValue.Elem().FieldByName(newTTag)
 		if newTfield.CanSet() {
 			newTfield.Set(tValue)
-		} else {
-			fmt.Println("cannot set")
 		}
 	}
 
