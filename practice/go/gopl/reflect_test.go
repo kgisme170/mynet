@@ -99,7 +99,13 @@ func test5() {
 		field := tt.Field(i)
 		newTTag := field.Tag.Get("newT")
 		tValue := tv.Field(i)
-		newTValue.Elem().FieldByName(newTTag).Set(tValue)
+		// newTValue.Elem().FieldByName(newTTag).Set(tValue) // panic
+		newTfield := newTValue.Elem().FieldByName(newTTag)
+		if newTfield.CanSet() {
+			newTfield.Set(tValue)
+		} else {
+			fmt.Println("cannot set")
+		}
 	}
 
 	fmt.Println(newT)
@@ -166,7 +172,7 @@ func test10() {
 	fmt.Println(result[0].Int()) // #=> 1
 }
 
-func TestReflect(t *testing.T) {
+func test0() {
 	fmt.Printf("%T\n", 3)
 	v := reflect.TypeOf(3)
 	fmt.Println(v)
@@ -189,11 +195,20 @@ func TestReflect(t *testing.T) {
 	got := strings.Split("a:b:c", ":")
 	want := []string{"a", "b", "c"}
 	fmt.Println(reflect.DeepEqual(got, want))
-	test1()
-	test2()
-	test3()
-	test4()
-	//test5()
-	//test6()
-	//test7()
+}
+
+func TestReflect(t *testing.T) {
+	/*
+		test0()
+		test1()
+		test2()
+		test3()
+		test4()*/
+	test5()
+	/*
+		test6()
+		test7()
+		test8()
+		test9()
+		test10()*/
 }
