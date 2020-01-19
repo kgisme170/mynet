@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io"
 	"os"
 	"testing"
 )
@@ -23,12 +24,13 @@ func TestRecover(t *testing.T) {
 // my comments
 func TestTypeAssertion(t *testing.T) {
 	defer check()
-	//v := os.Stdout
-	//v2 = v.(io.readWriter)
+	var v interface{} = os.Stdout
+	v2 := v.(io.ReadWriter)
+	fmt.Println(v2)
 	// go internal package
 	// go map value *=
 	// go module
 	// go flag
 	// tcp Dial
-	
+
 }
