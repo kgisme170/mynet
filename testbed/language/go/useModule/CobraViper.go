@@ -10,6 +10,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
+	"github.com/my"
 )
 var f = "config.yaml"
 
@@ -26,6 +27,7 @@ func readConfig(content io.Reader) string {
 }
 
 func main() {
+	my.F1()
 	rootCmd := &cobra.Command{
 		Use: "003",
 		Short: "test 003,",
