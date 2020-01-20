@@ -1,10 +1,9 @@
-// Package bzip provides a writer that uses bzip2 compression (bzip.org).
+// ex13.3 bzip provides a concurrency-safe writer that uses bzip2 compression.
 package bzip
 
 /*
-gcc -I/usr/include -L/usr/lib -lbz2 --shared bzip2.c -fPIC -o libbzip2.so
 #cgo CFLAGS: -I/usr/include
-#cgo LDFLAGS: -L/usr/lib -lbz2
+#cgo LDFLAGS: -L/usr/lib -L. -lbz2 -lusebzip2
 #include <bzlib.h>
 #include <stdlib.h>
 bz_stream* bz2alloc() { return calloc(1, sizeof(bz_stream)); }
@@ -16,9 +15,7 @@ import "C"
 
 import (
 	"io"
-	"log"
-	"os"
-	"testing"
+	"sync"
 	"unsafe"
 )
 
@@ -26,30 +23,7 @@ type writer struct {
 	w      io.Writer // underlying output stream
 	stream *C.bz_stream
 	outbuf [64 * 1024]byte
-}
-
-// Close flushes the compressed data and closes the stream.
-// It does not close the underlying io.Writer.
-func (w *writer) Close() error {
-	if w.stream == nil {
-		panic("closed")
-	}
-	defer func() {
-		C.BZ2_bzCompressEnd(w.stream)
-		C.bz2free(w.stream)
-		w.stream = nil
-	}()
-	for {
-		inlen, outlen := C.uint(0), C.uint(cap(w.outbuf))
-		r := C.bz2compress(w.stream, C.BZ_FINISH, nil, &inlen,
-			(*C.char)(unsafe.Pointer(&w.outbuf)), &outlen)
-		if _, err := w.w.Write(w.outbuf[:outlen]); err != nil {
-			return err
-		}
-		if r == C.BZ_STREAM_END {
-			return nil
-		}
-	}
+	sync.Mutex
 }
 
 // NewWriter returns a writer for bzip2-compressed streams.
@@ -62,12 +36,50 @@ func NewWriter(out io.Writer) io.WriteCloser {
 	return w
 }
 
-func TestBzip2(t *testing.T) {
-	w := NewWriter(os.Stdout)
-	if _, err := io.Copy(w, os.Stdin); err != nil {
-		log.Fatalf("bzipper: %v\n", err)
+func (w *writer) Write(data []byte) (int, error) {
+	if w.stream == nil {
+		panic("closed")
 	}
-	if err := w.Close(); err != nil {
-		log.Fatalf("bzipper: close: %v\n", err)
+	var total int // uncompressed bytes written
+
+	w.Lock()
+	defer w.Unlock()
+	for len(data) > 0 {
+		inlen, outlen := C.uint(len(data)), C.uint(cap(w.outbuf))
+		C.bz2compress(w.stream, C.BZ_RUN,
+			(*C.char)(unsafe.Pointer(&data[0])), &inlen,
+			(*C.char)(unsafe.Pointer(&w.outbuf)), &outlen)
+		total += int(inlen)
+		data = data[inlen:]
+		if _, err := w.w.Write(w.outbuf[:outlen]); err != nil {
+			return total, err
+		}
+	}
+	return total, nil
+}
+
+// Close flushes the compressed data and closes the stream.
+// It does not close the underlying io.Writer.
+func (w *writer) Close() error {
+	if w.stream == nil {
+		panic("closed")
+	}
+	w.Lock()
+	defer func() {
+		C.BZ2_bzCompressEnd(w.stream)
+		C.bz2free(w.stream)
+		w.Unlock()
+		w.stream = nil
+	}()
+	for {
+		inlen, outlen := C.uint(0), C.uint(cap(w.outbuf))
+		r := C.bz2compress(w.stream, C.BZ_FINISH, nil, &inlen,
+			(*C.char)(unsafe.Pointer(&w.outbuf)), &outlen)
+		if _, err := w.w.Write(w.outbuf[:outlen]); err != nil {
+			return err
+		}
+		if r == C.BZ_STREAM_END {
+			return nil
+		}
 	}
 }
