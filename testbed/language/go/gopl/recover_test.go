@@ -27,10 +27,7 @@ func TestTypeAssertion(t *testing.T) {
 	var v interface{} = os.Stdout
 	v2 := v.(io.ReadWriter)
 	fmt.Println(v2)
-	// go internal package
 	// go map value *=
 	// go module
-	// go flag
 	// tcp Dial
-
 }
