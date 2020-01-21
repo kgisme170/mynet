@@ -4,7 +4,7 @@ obj-m += mylist.o
 obj-m += phymem.o
 obj-m += cdevtest.o
 module-objs := hellomod.o mylist.o
-KERNEL ?= /lib/modules/$(shell uname -r)/build
+KERNEL ?= /lib/modules/4.15.0-74-generic/build
 all:
 	make -C $(KERNEL) M=$(PWD) modules
 clean:

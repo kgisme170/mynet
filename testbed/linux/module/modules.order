@@ -1,0 +1,5 @@
+kernel//mynet/testbed/linux/module/hellomod.ko
+kernel//mynet/testbed/linux/module/print_pid.ko
+kernel//mynet/testbed/linux/module/mylist.ko
+kernel//mynet/testbed/linux/module/phymem.ko
+kernel//mynet/testbed/linux/module/cdevtest.ko

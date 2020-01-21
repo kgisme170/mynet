@@ -1,0 +1,1 @@
+cmd_/mynet/testbed/linux/module/phymem.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /mynet/testbed/linux/module/phymem.ko /mynet/testbed/linux/module/phymem.o /mynet/testbed/linux/module/phymem.mod.o ;  true

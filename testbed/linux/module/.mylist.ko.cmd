@@ -1,0 +1,1 @@
+cmd_/mynet/testbed/linux/module/mylist.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /mynet/testbed/linux/module/mylist.ko /mynet/testbed/linux/module/mylist.o /mynet/testbed/linux/module/mylist.mod.o ;  true
