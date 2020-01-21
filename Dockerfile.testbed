@@ -9,8 +9,12 @@ RUN apt-get update \
     && apt-get -y install --fix-missing lua5.1 llvm make maven ninja-build openjdk-8-jdk openjdk-8-jre openssl pkg-config \
     && apt-get -y install --fix-missing gradle python python-dev ruby scons snapd snapd-xdg-open swig uuid-dev vim wget \
     && apt-get -y install --fix-missing build-essential libgl1-mesa-dev freeglut3-dev libglew-dev libsdl2-dev libsdl2-image-dev libglm-dev libfreetype6-dev \
-    && apt-get -y install --fix-missing libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev libbz2-dev
+    && apt-get -y install --fix-missing libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev libbz2-dev \
     && apt-get -y install --fix-missing erlang \
+    && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF \
+    && sh -c 'echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" > /etc/apt/sources.list.d/mono-official-stable.list' \
+    && apt -y update \
+    && apt -y install mono-complete \
     && wget www.scala-lang.org/files/archive/scala-2.11.8.deb \
     && dpkg -i scala-2.11.8.deb \
     && echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | tee /etc/apt/sources.list.d/bazel.list \
