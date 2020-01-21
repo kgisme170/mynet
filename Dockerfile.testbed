@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt -y install tcl tcl-dev \
  && apt-get -y upgrade \
  && apt-get -y install --fix-missing software-properties-common \
- && apt-get -y install --fix-missing ant apt-transport-https autoconf autogen automake bison ca-certificates clang cmake curl dirmngr erlang flex git gcc gnupg graphviz g++ libc6-dev libtool
+ && apt-get -y install --fix-missing ant apt-transport-https autoconf autogen automake bison ca-certificates clang cmake curl dirmngr flex git gcc gnupg graphviz g++ libc6-dev libtool
 
 RUN apt-get -y install --fix-missing libaio-dev libev-dev libevent-dev libleveldb-dev liblz4-dev libomp-dev libprotobuf-dev libsnappy-dev libssl-dev libxml2-dev libzstd-dev \
  && apt-get -y install --fix-missing lua5.1 llvm make maven ninja-build openjdk-8-jdk openjdk-8-jre openssl pkg-config
@@ -50,5 +50,5 @@ RUN wget www.scala-lang.org/files/archive/scala-2.11.8.deb \
 # Force the go compiler to use modules
 COPY environment /etc/environment
 ENV GO111MODULE=on
-ENTRYPOINT ["source /etc/environment"]
+ENTRYPOINT [source "/etc/environment"]
 CMD ["/bin/bash"]
