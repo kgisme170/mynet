@@ -50,5 +50,4 @@ RUN wget www.scala-lang.org/files/archive/scala-2.11.8.deb \
 # Force the go compiler to use modules
 COPY environment /etc/environment
 ENV GO111MODULE=on
-ENTRYPOINT [source "/etc/environment"]
 CMD ["/bin/bash"]
