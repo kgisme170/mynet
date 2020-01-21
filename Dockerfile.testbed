@@ -1,7 +1,8 @@
 # Base build image
 FROM ubuntu:18.04 AS build_base
 # Install some dependencies needed to build the project
-RUN apt-get update \
+ENV DEBIAN_FRONTEND noninteractive
+RUN apt-get update && apt -y install tcl tcl-dev \
     && apt-get -y upgrade \
     && apt-get -y install --fix-missing software-properties-common \
     && apt-get -y install --fix-missing ant apt-transport-https autoconf autogen automake bison ca-certificates clang cmake curl dirmngr flex git gcc gnupg graphviz g++ libc6-dev libtool \
