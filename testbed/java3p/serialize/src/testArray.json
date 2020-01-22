@@ -1,20 +1,3 @@
-{
-  "mode": 2,
-  "machine": {
-    "m1": {
-      "location": "localhost",
-      "quota": 1,
-      "others": []},
-    "m2": {
-      "location": "remote",
-      "quota": 3,
-      "others": []}
-  },
-  "root": "---",
-  "createTime": 1494476711,
-  "lastModified": 1539935772,
-  "user": "user1",
-  "location": "localhost",
-  "user": "me",
-  "name": "admin_task_project",
-  "reserved": {}}
+version https://git-lfs.github.com/spec/v1
+oid sha256:91d0e4f9ec8d32d02ab55caff7a79e5e363159f3af0c7f367be449cabfdfeb2b
+size 381
