@@ -11,7 +11,7 @@ RUN apt-get update && apt -y install tcl tcl-dev \
 RUN apt-get -y install --fix-missing libaio-dev libev-dev libevent-dev libleveldb-dev liblz4-dev libomp-dev libprotobuf-dev libsnappy-dev libssl-dev libxml2-dev libzstd-dev \
  && apt-get -y install --fix-missing lua5.1 llvm make maven ninja-build openjdk-8-jdk openjdk-8-jre openssl pkg-config
 
-RUN apt-get -y install --fix-missing gradle python python-dev ruby scons snapd snapd-xdg-open swig uuid-dev vim wget \
+RUN apt-get -y install --fix-missing gradle python python-dev ruby scons snapd snapd-xdg-open sudo swig uuid-dev vim wget \
  && apt-get -y install --fix-missing build-essential libgl1-mesa-dev freeglut3-dev libglew-dev libsdl2-dev libsdl2-image-dev libglm-dev libfreetype6-dev \
  && apt-get -y install --fix-missing libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev libbz2-dev
 
