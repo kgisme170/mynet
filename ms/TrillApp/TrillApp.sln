@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlterPointEvent", "AlterPoi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamInsightApp1", "StreamInsightApp1\StreamInsightApp1.csproj", "{71379EFE-0B1E-4627-8567-B013D91D5E41}"
 EndProject
-Project("{16730046-AB7A-431B-B756-05245A4DDAE1}") = "iScopeProject1", "iScopeProject1\iScopeProject1.iscopeproj", "{0B749EED-4EB1-45D4-A0E1-BB2A8AFDB46B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamProcessing", "StreamProcessing\StreamProcessing.csproj", "{5C1256BC-7D7B-4B93-8BDB-EC8454227E8B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.StreamProcessing", "Trill\Sources\Core\Microsoft.StreamProcessing\Microsoft.StreamProcessing.csproj", "{B0B52124-4DAF-4E38-8672-F99E85D89123}"
@@ -24,8 +22,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eventBasedAsynchronousPattern", "eventBasedAsynchronousPattern\eventBasedAsynchronousPattern.csproj", "{0928C2E7-1D7A-43F0-8FE5-3B475F60C79F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqRx", "LinqRx\LinqRx.csproj", "{39306A81-938F-4BCE-8032-8EB1AA5FFBCD}"
-EndProject
-Project("{202899A3-C531-4771-9089-0213D66978AE}") = "ScopeApp1", "ScopeApp1\ScopeApp1.scopeproj", "{6C615E4F-C206-4977-BB8D-4D71644FB514}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskAsync", "TaskAsync\TaskAsync.csproj", "{2AC583A7-4758-48E7-A73B-D47E4107BB9F}"
 EndProject
@@ -89,18 +85,6 @@ Global
 		{71379EFE-0B1E-4627-8567-B013D91D5E41}.Release|x64.Build.0 = Release|Any CPU
 		{71379EFE-0B1E-4627-8567-B013D91D5E41}.Release|x86.ActiveCfg = Release|Any CPU
 		{71379EFE-0B1E-4627-8567-B013D91D5E41}.Release|x86.Build.0 = Release|Any CPU
-		{0B749EED-4EB1-45D4-A0E1-BB2A8AFDB46B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B749EED-4EB1-45D4-A0E1-BB2A8AFDB46B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B749EED-4EB1-45D4-A0E1-BB2A8AFDB46B}.Debug|x64.ActiveCfg = Debug|x64
-		{0B749EED-4EB1-45D4-A0E1-BB2A8AFDB46B}.Debug|x64.Build.0 = Debug|x64
-		{0B749EED-4EB1-45D4-A0E1-BB2A8AFDB46B}.Debug|x86.ActiveCfg = Debug|x86
-		{0B749EED-4EB1-45D4-A0E1-BB2A8AFDB46B}.Debug|x86.Build.0 = Debug|x86
-		{0B749EED-4EB1-45D4-A0E1-BB2A8AFDB46B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B749EED-4EB1-45D4-A0E1-BB2A8AFDB46B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0B749EED-4EB1-45D4-A0E1-BB2A8AFDB46B}.Release|x64.ActiveCfg = Release|x64
-		{0B749EED-4EB1-45D4-A0E1-BB2A8AFDB46B}.Release|x64.Build.0 = Release|x64
-		{0B749EED-4EB1-45D4-A0E1-BB2A8AFDB46B}.Release|x86.ActiveCfg = Release|x86
-		{0B749EED-4EB1-45D4-A0E1-BB2A8AFDB46B}.Release|x86.Build.0 = Release|x86
 		{5C1256BC-7D7B-4B93-8BDB-EC8454227E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5C1256BC-7D7B-4B93-8BDB-EC8454227E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C1256BC-7D7B-4B93-8BDB-EC8454227E8B}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -173,18 +157,6 @@ Global
 		{39306A81-938F-4BCE-8032-8EB1AA5FFBCD}.Release|x64.Build.0 = Release|Any CPU
 		{39306A81-938F-4BCE-8032-8EB1AA5FFBCD}.Release|x86.ActiveCfg = Release|Any CPU
 		{39306A81-938F-4BCE-8032-8EB1AA5FFBCD}.Release|x86.Build.0 = Release|Any CPU
-		{6C615E4F-C206-4977-BB8D-4D71644FB514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6C615E4F-C206-4977-BB8D-4D71644FB514}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6C615E4F-C206-4977-BB8D-4D71644FB514}.Debug|x64.ActiveCfg = Debug|x64
-		{6C615E4F-C206-4977-BB8D-4D71644FB514}.Debug|x64.Build.0 = Debug|x64
-		{6C615E4F-C206-4977-BB8D-4D71644FB514}.Debug|x86.ActiveCfg = Debug|x86
-		{6C615E4F-C206-4977-BB8D-4D71644FB514}.Debug|x86.Build.0 = Debug|x86
-		{6C615E4F-C206-4977-BB8D-4D71644FB514}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6C615E4F-C206-4977-BB8D-4D71644FB514}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6C615E4F-C206-4977-BB8D-4D71644FB514}.Release|x64.ActiveCfg = Release|x64
-		{6C615E4F-C206-4977-BB8D-4D71644FB514}.Release|x64.Build.0 = Release|x64
-		{6C615E4F-C206-4977-BB8D-4D71644FB514}.Release|x86.ActiveCfg = Release|x86
-		{6C615E4F-C206-4977-BB8D-4D71644FB514}.Release|x86.Build.0 = Release|x86
 		{2AC583A7-4758-48E7-A73B-D47E4107BB9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2AC583A7-4758-48E7-A73B-D47E4107BB9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AC583A7-4758-48E7-A73B-D47E4107BB9F}.Debug|x64.ActiveCfg = Debug|Any CPU
