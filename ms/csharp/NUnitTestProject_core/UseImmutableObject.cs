@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace ConsoleApp1
+namespace NUnitTestProject_core
 {
     struct MyStruct
     {
@@ -14,8 +14,7 @@ namespace ConsoleApp1
         public int mJ;
         public MyStruct st;
     }
-
-    class UseStruct
+    class UseImmutableObject
     {
         public static void Test()
         {
@@ -45,7 +44,19 @@ namespace ConsoleApp1
                     mS = "immutable"
                 }
             };
+            // TODO why can still change?
+            cs.mJ = 7;
             cs.st.mS = "Changed";
+
+            cs = new ComplexStruct
+            {
+                mJ = 8,
+                st = new MyStruct
+                {
+                    mI = 9,
+                    mS = "changed?"
+                }
+            };
             Console.WriteLine(cs.st.mS);
             cs.st = new MyStruct
             {

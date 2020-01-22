@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace ConsoleApp1
+namespace NUnitTestProject_core
 {
     class Volatile
     {
@@ -17,7 +17,7 @@ namespace ConsoleApp1
             Console.WriteLine("e");
         }
 
-        public static void Test(String[] args)
+        public static void Test(string[] args)
         {
             new Thread(Method).Start();
             Thread.Sleep(4000);
