@@ -18,7 +18,7 @@ RUN apt-get -y install --fix-missing gradle python python-dev ruby scons snapd s
 # linux headers and kernel
 RUN apt-get remove --purge linux-headers-* \
  && apt-get autoremove && apt autoclean \
- && apt-get install -y libelf-dev linux-headers-generic \
+ && apt-get install -y kernel-package libelf-dev linux-headers-generic \
  && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 
 # linux Mono, optional
