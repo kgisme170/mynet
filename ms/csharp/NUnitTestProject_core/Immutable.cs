@@ -1,6 +1,9 @@
-﻿namespace ConsoleApp1
+﻿using NUnit.Framework;
+
+namespace NUnitTestProject_core
 {
-    class Immutable // immutable object
+    [TestFixture("", "")]
+    class Immutable
     {
         public Immutable(string _cur, string _addr)
         {
@@ -10,14 +13,13 @@
 
         public string Currency { get; }
         public string Address { get; }
-    }
 
-    class ImmutableTest
-    {
+        [Test]
         public static void Test()
         {
             var m = new Immutable("usd", "us");
             string s = m.Currency;
+            Assert.AreEqual("usd", s);
         }
     }
 }

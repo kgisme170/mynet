@@ -1,19 +1,10 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
 
-namespace ConsoleApp1
+namespace NUnitTestProject_core
 {
-    class Indexer
+    class OverrideProperty
     {
-        class Math
-        {
-            public int this[int i]
-            {
-                get
-                {
-                    return i + 1;
-                }
-            }
-        }
         class Base
         {
             protected int mI;
@@ -27,14 +18,15 @@ namespace ConsoleApp1
             public new int MI { get => mI; set => mI = value + 1; }
             public new DateTime MJ { get => dt; set => dt = value; }
         }
-        static void Test(string[] args)
+        [Test]
+        public static void Test()
         {
-            Console.WriteLine(new Math()[3]);
             Derived d = new Derived
             {
                 MI = 3,
                 MJ = DateTime.Now
             };
+            Assert.AreEqual(4, d.MI);
         }
     }
 }

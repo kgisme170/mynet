@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Threading;
 
-namespace ConsoleApp1
+namespace NUnitTestProject_core
 {
-    class ResetEvent
+    class UseEventSetAndWaitOne
     {
         static AutoResetEvent e = new AutoResetEvent(false);
         //static ManualResetEvent e = new ManualResetEvent(false);//signal all the WaitOne() calls
@@ -15,7 +15,6 @@ namespace ConsoleApp1
             e.Set();
             Console.ReadLine();
             e.Set();
-            Coalescing.Test();
         }
         public static void Method()
         {

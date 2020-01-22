@@ -1,5 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
-namespace ConsoleApp1
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+
+namespace NUnitTestProject_core
 {
     class UseDataAnnotations
     {
@@ -9,7 +11,7 @@ namespace ConsoleApp1
         [DataType(DataType.Text)]
         public string Name { get; set; }
 
-        [Range(0,120, ErrorMessage ="Age between 0 to 120")]
+        [Range(0, 120, ErrorMessage = "Age between 0 to 120")]
         public int Age { get; set; }
 
         [DataType(DataType.PhoneNumber)]

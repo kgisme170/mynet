@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1
+﻿namespace NUnitTestProject_core
 {
     class UseGeneric<UNKNOWN>
     {
