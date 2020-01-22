@@ -1,16 +1,18 @@
-﻿using System;
-namespace ConsoleApp1
+﻿using NUnit.Framework;
+
+namespace NUnitTestProject_core
 {
     class Coalescing
     {
-        public static void Test()
+        [Test]
+        public static void TestCoalescing()
         {
             string str1 = null;
             string str2 = null;
             string str3 = null;
             string str4 = "abc";
             string str5 = str1 ?? str2 ?? str3 ?? str4;
-            Console.WriteLine(str5);
+            Assert.True(str5.Equals(str4));
         }
     }
 }
