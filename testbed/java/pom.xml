@@ -11,7 +11,6 @@
     <modules>
         <module>jLang</module>
         <module>javaconcurrent</module>
-        <module>network</module>
         <module>security</module>
         <module>useAnnotation</module>
         <module>useBean</module>
