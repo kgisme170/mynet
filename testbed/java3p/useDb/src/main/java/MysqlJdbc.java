@@ -8,14 +8,13 @@ public class MysqlJdbc {
         try {
             Class.forName("com.mysql.jdbc.Driver");
         } catch (java.lang.ClassNotFoundException e) {
-            System.out.println("=>不能加载驱动");
+            System.out.println("=>");
         }
         try {
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/db1",
                     "root",
                     "mypassword");
-            System.out.println("连接成功");
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery("select * from t1");
             if (rs != null) {
@@ -39,7 +38,7 @@ public class MysqlJdbc {
             st.close();
             con.close();
         } catch (Exception e) {
-            System.out.println("=>连接失败:" + e.getMessage());
+            System.out.println(e.getMessage());
         }
     }
 }

@@ -1,27 +1,10 @@
 interface IMy {
-    /**
-     * 测试方法
-     */
-    default void f1() {
-    }
-
-    /**
-     * 测试方法
-     */
-    default void f2() {
-    }
-
-    /**
-     * 测试方法
-     */
+    default void f1() { }
+    default void f2() { }
     default void f3() {
         System.out.println("f3");
         sf();
     }
-
-    /**
-     * 测试方法
-     */
     static void sf() {
         System.out.println("f1, f2");
     }

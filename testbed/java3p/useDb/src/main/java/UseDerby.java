@@ -41,11 +41,8 @@ class ConnectDerby {
 
     public void iterateCachedRs() {
         try {
-            // CachedRowSetImpl rowSet = new CachedRowSetImpl();
-            // 用factory的方式比上面一句更好
             CachedRowSet rowSet = factory.createCachedRowSet();
             rowSet.populate(resultSet);
-            System.out.println("----------------");
 
             while (rowSet.next()) {
                 System.out.println("id:" + rowSet.getString(1));
@@ -54,12 +51,12 @@ class ConnectDerby {
             System.out.println("----------------");
 
             rowSet.absolute(2);
-            rowSet.updateString("name", "王二");
+            rowSet.updateString("name", "my");
             System.out.println(rowSet.getString(1));
             rowSet.updateRow();
             rowSet.moveToInsertRow();
 
-            rowSet.updateString("name", "麻子");
+            rowSet.updateString("name", "you");
             rowSet.updateInt("age", 33);
             rowSet.insertRow();
             System.out.println("----------------");
@@ -67,27 +64,24 @@ class ConnectDerby {
             e.printStackTrace();
         }
     }
-    private final String user = "用户1";
-    private final String password = "用户11";
+    private final String user = "myuser";
+    private final String password = "mypassword";
     private final String url = "org.apache.derby.jdbc.EmbeddedDriver";
 
     public void init() {
         try {
             Class.forName(url).newInstance();
-            System.out.println("加载嵌入式驱动");
             properties = new Properties();
             properties.put("user", user);
             properties.put("password", password);
 
             connection = DriverManager.getConnection("jdbc:derby:hello;create=true", properties);
-            System.out.println("创建数据库hello");
             connection.setAutoCommit(false);
 
             statement = connection.createStatement();
             statement.execute("create table t(name varchar(40), age int)");
-            System.out.println("创建表 t");
-            statement.execute("insert into t values('张三', 26)");
-            statement.execute("insert into t values ('李四', 32)");
+            statement.execute("insert into t values('ab', 26)");
+            statement.execute("insert into t values ('xyz', 32)");
             resultSet = statement.executeQuery("SELECT name, age FROM t ORDER BY age");
         } catch (Exception e) {
             e.printStackTrace();
@@ -97,18 +91,14 @@ class ConnectDerby {
     public void destroy() {
         try {
             statement.execute("drop table t");
-            System.out.println("删除表 t");
 
             resultSet.close();
             statement.close();
-            System.out.println("关闭返回的 set 和 statement");
             connection.commit();
             connection.close();
-            System.out.println("提交 transaction 并关闭连接");
             try {
                 DriverManager.getConnection("jdbc:derby:;shutdown=true");
             } catch (SQLException se) {
-                System.out.println("Database 正常关闭");
             }
         } catch (Throwable e) {
             e.printStackTrace();
@@ -124,7 +114,7 @@ class ConnectDerby {
                 return;
             }
 
-            rowSet.updateString("name", "王二");
+            rowSet.updateString("name", "him");
             rowSet.updateRow();
             try {
                 rowSet.acceptChanges(connection);
@@ -153,7 +143,6 @@ class ConnectDerby {
             jdbcRS.setCommand(sql);
             jdbcRS.execute();
             while (jdbcRS.next()) {
-                // each call to next, generates a cursorMoved event
                 System.out.println("name = " + jdbcRS.getString(1));
                 System.out.println("age = " + jdbcRS.getInt(2));
             }

@@ -127,10 +127,8 @@ public class JdbcRowSetWithListenerFilter extends PostgreConfig {
             // destroy
             resultSet.close();
             statement.close();
-            System.out.println("关闭返回的 set 和 statement");
             connection.commit();
             connection.close();
-            System.out.println("提交 transaction 并关闭连接");
         } catch (Exception e) {
             e.printStackTrace();
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
