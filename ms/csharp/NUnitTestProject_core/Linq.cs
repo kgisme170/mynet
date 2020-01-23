@@ -3,12 +3,21 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Xml.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NUnitTestProject_core
 {
+    public static class Extensions
+    {
+        public static void ForAll<T>(this IEnumerable<T> seq, Action<T> act)
+        {
+            foreach (T t in seq)
+            {
+                act(t);
+            }
+        }
+    }
     class Linq
     {
         [Test]
@@ -90,7 +99,8 @@ namespace NUnitTestProject_core
                     select e;
             Assert.AreEqual(d.Count(), 1);
         }
-        /*
+
+
         public static void UseMethod()
         {
             int[] foo =
@@ -102,7 +112,7 @@ namespace NUnitTestProject_core
                 .Take(5)
                 .Skip(1)
                 .ForAll(Console.WriteLine);
-        }*/ // TODO
+        }
         class Student
         {
             public int Sno { get; set; } // Student number
@@ -423,6 +433,271 @@ namespace NUnitTestProject_core
                 }
             }
             Console.WriteLine("---------------------------");
+        }
+
+        [Test]
+        public static void Query()
+        {
+            int[] foo = //new int[100];
+                (from n in Enumerable.Range(0, 100)
+                 select n * n).ToArray();
+            foreach (int i in foo) { Console.WriteLine(i); }
+            foo.ForAll(Console.WriteLine);
+
+            Produce1().ForAll(Console.Write);
+            Console.WriteLine();
+            Console.WriteLine();
+            Produce2().ForAll(Console.Write);
+            Console.WriteLine();
+            Console.WriteLine();
+            Produce3().ForAll(Console.Write);
+            Console.WriteLine();
+            Console.WriteLine();
+            Produce4().ForAll(Console.Write);
+            Console.WriteLine();
+            Console.WriteLine();
+            Produce5().ForAll(Console.Write);
+            Console.WriteLine();
+
+            Enumerable.Range(1, 15).Where(i => i % 2 == 0).ForAll(Console.Write);
+            Console.WriteLine();
+        }
+
+        public static IEnumerable<Tuple<int, int>> Produce1()
+        {
+            for (int x = 0; x < 10; ++x)
+            {
+                for (int y = 0; y < 10; ++y)
+                {
+                    if (x + y < 15)
+                    {
+                        yield return Tuple.Create(x, y);
+                    }
+                }
+            }
+        }
+
+        public static IEnumerable<Tuple<int, int>> Produce2()
+        {
+            return
+                from x in Enumerable.Range(11, 10)
+                from y in Enumerable.Range(11, 10)
+                where x + y < 35
+                select Tuple.Create(x, y);
+        }
+
+        public static IEnumerable<Tuple<int, int>> Produce3()
+        {
+            var storage = new List<Tuple<int, int>>();
+            for (int x = 0; x < 10; ++x)
+            {
+                for (int y = 0; y < 10; ++y)
+                {
+                    if (x + y < 15)
+                    {
+                        storage.Add(Tuple.Create(x, y));
+                    }
+                }
+            }
+            storage.Sort((p1, p2) =>
+                (p2.Item1 * p2.Item1 + p2.Item2 * p2.Item2).CompareTo(p1.Item1 * p1.Item1 + p1.Item2 * p1.Item2)
+            );
+            return storage;
+        }
+
+        public static IEnumerable<Tuple<int, int>> Produce4()
+        {
+            return
+                from x in Enumerable.Range(11, 10)
+                from y in Enumerable.Range(11, 10)
+                where x + y < 35
+                orderby (x * x + y * y) descending
+                select Tuple.Create(x, y);
+        }
+
+        public static IEnumerable<Tuple<int, int>> Produce5()
+        {
+            return
+                Enumerable.Range(1, 10)
+                .SelectMany(
+                    x => Enumerable.Range(1, 10),
+                    (x, y) => Tuple.Create(x, y)
+                )
+                .Where(pt => pt.Item1 + pt.Item2 < 10)
+                .OrderByDescending(pt => pt.Item1 * pt.Item1 + pt.Item2 + pt.Item2);
+        }
+
+        public class User
+        {
+            public int ID
+            {
+                get;
+                set;
+            }
+            public string FirstName
+            {
+                get;
+                set;
+            }
+            public string LastName
+            {
+                get;
+                set;
+            }
+        }
+        private static void PrintNames(IEnumerable<User> users)
+        {
+            Console.WriteLine();
+            users.ForAll(user => Console.WriteLine(user.FirstName + " " + user.LastName));
+        }
+        private static List<User> ListUsers()
+        {
+            return new List<User>
+            {
+                new User {ID = 1, FirstName = "john", LastName = "Baby1"},
+                new User {ID = 2, FirstName = "kevin", LastName = "Baby1"},
+                new User {ID = 3, FirstName = "kate", LastName = "Baby2"}
+            };
+        }
+        [Test]
+        public static void TestExpression()
+        {
+            Expression<Func<int, bool>> exp = i => i > 5;
+            BinaryExpression binary = (BinaryExpression)exp.Body;
+            Console.WriteLine(exp.Body.GetType());
+            Console.WriteLine(binary.Left);
+            Console.WriteLine(binary.NodeType);
+            Console.WriteLine(binary.Right);
+
+            Func<int, bool> f = i => i > 4;
+
+            Expression<Action> e = Expression.Lambda<Action>(
+                Expression.Call(
+                    typeof(Console).GetMethod("WriteLine", new[] { typeof(string) }),
+                    Expression.Constant("hello world！")
+                )
+            );
+            e.Compile()();
+
+            Expression<Action> e2 = () => Console.WriteLine("hw");
+            e2.Compile()();
+            //
+            var firstArg = Expression.Constant(2);
+            var secondArg = Expression.Constant(4);
+            var add = Expression.Add(firstArg, secondArg);
+            Assert.AreEqual("(2 + 4)", add.Reduce().ToString());
+            //
+            Expression<Func<User, bool>> FirstExp = (x => x.LastName == "Baby1");
+
+            var qusers = ListUsers().AsQueryable();
+            var lusers = ListUsers();
+            var ausers = ListUsers().ToArray();
+
+            var result1 = qusers.Where(FirstExp);
+            var result11 = qusers.Where(x => x.LastName == "Baby1");
+            var result2 = lusers.Where(x => x.LastName == "Baby2");
+            var result3 = ausers.Where(x => x.FirstName == "Kevin");
+
+            Console.WriteLine();
+            PrintNames(result1);
+            PrintNames(result11);
+            PrintNames(result2);
+            PrintNames(result3);
+
+            Console.WriteLine();
+        }
+
+        [Test]
+        public static void TestBlockExpression()
+        {
+            // ms code
+            ParameterExpression value = Expression.Parameter(typeof(int), "value");
+            ParameterExpression result = Expression.Parameter(typeof(int), "result");
+
+            LabelTarget label = Expression.Label(typeof(int));
+
+            BlockExpression block = Expression.Block(
+                new[] { result }, // 返回值
+                Expression.Assign( // 初始化返回值
+                    result,
+                    Expression.Constant(1)
+                ),
+                Expression.Loop(
+                    Expression.IfThenElse(
+                        Expression.GreaterThan(value, Expression.Constant(1)), // if
+                        Expression.MultiplyAssign( // when true
+                            result,
+                            Expression.PostDecrementAssign(value)), // result *= value--
+                        Expression.Break(label, result) // when false
+                    ),
+                    label
+                )
+            );
+
+            int factorial = Expression
+                .Lambda<Func<int, int>>(block, value)
+                .Compile()(5);
+
+            Assert.AreEqual(120, factorial);
+        }
+        class Content
+        {
+            public int Id { get; set; }
+            public string Inst { get; set; }
+            public string Name { get; set; }
+            public override string ToString()
+            {
+                return "id=" + Id + ",inst=" + Inst + ",name=" + Name;
+            }
+        }
+        [Test]
+        public static void TestOrderby()
+        {
+            var beatles = (new[]
+            {
+                new Content(){Id = 1, Inst = "guitar", Name = "john"},
+                new Content(){Id = 2, Inst = "guitar", Name = "george"},
+                new Content(){Id = 3, Inst = "guitar", Name = "paul"},
+                new Content(){Id = 4, Inst = "drums", Name = "ringo"},
+                new Content(){Id = 5, Inst = "drums", Name = "pete"}
+            });
+
+            var result = beatles
+                .GroupBy(g => g.Inst)
+                .Select(c => c.OrderBy(o => o.Id).Select((v, i) => new { i, v }))
+                .SelectMany(c => c)
+                .Select(c => new { c.v.Id, c.v.Inst, c.v.Name, rn = c.i + 1 })
+                .ToList();
+
+            Console.WriteLine("id | inst \t| name  \t| rn");
+            foreach (var row in result)
+            {
+                Console.WriteLine($"{row.Id}  | {row.Inst}\t| {row.Name}  \t| {row.rn}");
+            }
+            var groups = from b in beatles
+                         group b by b.Inst into g
+                         select g;
+
+            var r1 = from g in groups
+                     from r in g
+                     orderby r.Id
+                     select r;
+
+            var r2 = groups.Select(c => c.OrderBy(o => o.Id).Select((content, index) => new { index, content }));
+            foreach (var list in r2)
+            {
+                foreach (var line in list)
+                {
+                    Console.WriteLine(line.content.ToString() + ":" + line.index);
+                }
+            }
+
+            var r3 = r2.SelectMany(c => c).Select(c => new { c.content.Id, c.content.Inst, c.content.Name, rowNumber = c.index + 1 }).ToList();
+            Console.WriteLine("id | inst \t| name  \t| rowNumber");
+            foreach (var row in r3)
+            {
+                Console.WriteLine($"{row.Id}  | {row.Inst}\t| {row.Name}  \t| {row.rowNumber}");
+            }
         }
     }
 }

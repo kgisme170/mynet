@@ -1,15 +1,16 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
 using System.Threading;
 
-namespace DataApp1
+namespace NUnitTestProject_core
 {
     class Person
     {
-        private int mI = 3;
-        public int MI { get => mI; set => mI = value; }
+        public int MI { get; set; } = 3;
     }
     class UseWeakReference
     {
+        [Test]
         public static void Test()
         {
             Person person = new Person();
@@ -27,7 +28,7 @@ namespace DataApp1
             System.GC.Collect();
             Thread.Sleep(1000);
             wr.TryGetTarget(out Person p3);
-            Console.WriteLine(p3); // I expected null here becaure person is collected.
+            Assert.AreEqual(3, p3.MI);
         }
     }
 }
