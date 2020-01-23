@@ -9,17 +9,18 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>useAnnotation</module>
-        <module>jLang</module>
-        <module>useJunit</module>
-        <module>useXml</module>
         <module>classCompiler</module>
-        <module>security</module>
+        <module>jLang</module>
+        <module>javaconcurrent</module>
         <module>network</module>
-        <module>useServiceLoader</module>
-        <module>useJass</module>
-        <module>useRmi</module>
+        <module>security</module>
+        <module>useAnnotation</module>
         <module>useBean</module>
+        <module>useJass</module>
+        <module>useJunit</module>
+        <module>useRmi</module>
+        <module>useServiceLoader</module>
+        <module>useXml</module>
     </modules>
     <build>
         <plugins>
