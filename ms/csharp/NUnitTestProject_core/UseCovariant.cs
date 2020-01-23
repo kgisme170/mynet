@@ -22,7 +22,7 @@ namespace NUnitTestProject_core
         {
             public T GetDefault()
             {
-                return default(T);
+                return default;
             }
         }
         [Test]

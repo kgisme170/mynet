@@ -1,11 +1,22 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
 using System.Threading;
 
-namespace BeginInvoke
+namespace NUnitTestProject_core
 {
-    class Program
+    class UseAsyncDelegateInvoke
     {
-        static void Main(string[] args)
+        class AsyncDemo
+        {
+            public string TestMethod(int callTime)
+            {
+                Console.WriteLine("async begins");
+                Thread.Sleep(callTime);
+                return "Method cost time" + callTime / 1000 + "s";
+            }
+        }
+        [Test]
+        public static void Test()
         {
             AsyncDemo ad = new AsyncDemo();
             AsyncDelegate dlgt = new AsyncDelegate(ad.TestMethod);
@@ -25,15 +36,6 @@ namespace BeginInvoke
             string result = dlgt.EndInvoke(ar);
             Console.WriteLine("async finishes，{0}！", result);
             Console.WriteLine("ar.AsyncState value:{0}", iTest);
-        }
-        class AsyncDemo
-        {
-            public string TestMethod(int callTime)
-            {
-                Console.WriteLine("async begins");
-                Thread.Sleep(callTime);
-                return "Method cost time" + callTime / 1000 + "s";
-            }
         }
     }
 }

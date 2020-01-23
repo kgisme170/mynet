@@ -6,59 +6,11 @@ namespace ConsoleApp1
 {
     class IterateYield
     {
-        public static int Sum(params int[] nums)
-        {
-            int s = 0;
-            foreach (int n in nums)
-            {
-                s += n;
-            }
-            return s;
-        }
-
         public static readonly double PI = Convert.ToDouble(ConfigurationManager.AppSettings[0]);
 
-        public static IEnumerable<int> Filter(IEnumerable<int> ii)
-        {
-            foreach (var i in ii)
-            {
-                if (i > 2)
-                {
-                    yield return i;
-                }
-            }
-        }
-
-        public static IEnumerable<int> RunningTotal(IEnumerable<int> ii)
-        {
-            int t = 0;
-            foreach (var i in ii)
-            {
-                t += i;
-                yield return t;
-            }
-        }
         public static void Test(string[] args)
         {
-            List<int> li = new List<int>()
-            {
-                1,2,3,4,5
-            };
-            foreach (var k in Filter(li))
-            {
-                Console.WriteLine(k);
-            }
-            Console.WriteLine("--------");
-            foreach (var k in RunningTotal(li))
-            {
-                Console.WriteLine(k);
-            }
-            Console.WriteLine("--------");
-            IEnumerable<int> iei = li;
-            foreach (var j in li)
-            {
-                Console.WriteLine(j);
-            }
+
             IEnumerator<int> ei = li.GetEnumerator();
             while (ei.MoveNext())
             {
