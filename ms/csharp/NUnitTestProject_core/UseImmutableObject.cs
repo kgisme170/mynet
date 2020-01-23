@@ -11,46 +11,28 @@ namespace NUnitTestProject_core
     [ImmutableObject(true)]
     struct ComplexStruct
     {
-        public int mJ;
+        public int MJ { get; set; }
         public MyStruct st;
     }
     class UseImmutableObject
     {
         public static void Test()
         {
-            MyStruct s1;
-            s1.mI = 1;
-            s1.mS = "ab";
-
-            MyStruct s2 = new MyStruct
-            {
-                mI = 2,
-                mS = "xy"
-            };
-
-            MyStruct s3 = s1;
-            s3.mI = 4;
-            MyStruct s4 = s2;
-            s4.mI = 5;
-            Console.WriteLine(s1.mI);
-            Console.WriteLine(s2.mI);
-
             ComplexStruct cs = new ComplexStruct
             {
-                mJ = 6,
+                MJ = 6,
                 st = new MyStruct
                 {
                     mI = 7,
                     mS = "immutable"
                 }
             };
-            // TODO why can still change?
-            cs.mJ = 7;
+            cs.MJ = 7;
             cs.st.mS = "Changed";
 
             cs = new ComplexStruct
             {
-                mJ = 8,
+                MJ = 8,
                 st = new MyStruct
                 {
                     mI = 9,

@@ -1,30 +1,28 @@
-﻿using System;
+﻿using NUnit.Framework;
 using System.Collections.Generic;
 
-namespace ConsoleApp1
+namespace NUnitTestProject_core
 {
-    class Program
+    class IEnumerableYield
     {
         public static IEnumerable<int> MyFun(int i)
         {
             int counter = i;
-            while (counter-- >0)
+            while (counter-- > 0)
             {
                 yield return counter;
             }
             yield return 10000;
         }
+        [Test]
         public static void Test()
         {
+            int sum = 0;
             foreach (int i in MyFun(5))
             {
-                Console.WriteLine(i);
+                sum += i;
             }
-        }
-
-        static void Main(string[] args)
-        {
-            UseToString.Test();
+            Assert.AreEqual(10010, sum);
         }
     }
 }

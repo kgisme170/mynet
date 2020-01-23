@@ -5,9 +5,9 @@ namespace NUnitTestProject_core
 {
     class UseEventSetAndWaitOne
     {
-        static AutoResetEvent e = new AutoResetEvent(false);
+        static readonly AutoResetEvent e = new AutoResetEvent(false);
         //static ManualResetEvent e = new ManualResetEvent(false);//signal all the WaitOne() calls
-        public static void Test(string[] args)
+        public static void Test()
         {
             Thread t = new Thread(Method);
             t.Start();
