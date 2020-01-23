@@ -15,7 +15,6 @@
         <module>useAnnotation</module>
         <module>useBean</module>
         <module>useJass</module>
-        <module>useJunit</module>
         <module>useRmi</module>
         <module>useServiceLoader</module>
         <module>useXml</module>
