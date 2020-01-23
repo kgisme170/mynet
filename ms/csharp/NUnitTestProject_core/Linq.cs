@@ -332,7 +332,7 @@ namespace NUnitTestProject_core
                 new Course(2, "physics"),
                 new Course(2, "math"),
                 new Course(3, "physics"),
-            };//TODO
+            };
 
             var ret = students // 高于平均分的所有课程
                 .Where(s =>
