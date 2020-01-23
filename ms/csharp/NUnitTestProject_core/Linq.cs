@@ -382,7 +382,7 @@ namespace NUnitTestProject_core
                 return new Pupil(s.Year + 1, s.FirstName, s.LastName);
             }
         }
-        [Test]//TODO
+        [Test]
         public static void Group()
         {
             var students = new[]
