@@ -2,11 +2,11 @@
 using System.Data.SqlClient;
 using System.Diagnostics;
 
-namespace Usesql
+namespace NUnitTestProject_core
 {
-    class Program
+    class UseSqlClient
     {
-        static void Main(string[] args)
+        public static void Test()
         {
             SqlConnection conn = new SqlConnection("Data Source=MININT-EP12N1V;Initial Catalog=EmployeeDB;Integrated Security=True");
             conn.Open();
