@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookshelf>
+    <book ISBN="c01">
+        <name>Oracle Pgsql</name>
+        <Author>Smith</Author>
+        <price>32.00</price>
+        <no>1</no>
+        <special>22</special>
+    </book>
+    <book ISBN="b11">
+        <name>Android programming</name>
+        <Author>Very</Author>
+        <price>35.00</price>
+        <no>2</no>
+    </book>
+    <book ISBN="a32">
+        <name>Thinking in Java</name>
+        <Author>John</Author>
+        <price>33.00</price>
+        <no>3</no>
+    </book>
+</bookshelf>

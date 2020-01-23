@@ -17,7 +17,6 @@
         <module>useJass</module>
         <module>useRmi</module>
         <module>useServiceLoader</module>
-        <module>useXml</module>
     </modules>
     <build>
         <plugins>
