@@ -9,11 +9,11 @@ void f(int& j, int& k){
 int main(){
     int j=3;
     int k=4;
-    thread t1(f, j, k);
+    thread t1(f, ref(j), ref(k));
     t1.join();
-    cout<<j<<','<<k;
+    cout<<j<<','<<k<<endl;
     thread t2(f, ref(j), ref(k));
     t2.join();
-    cout<<j<<','<<k;
+    cout<<j<<','<<k<<endl;
     return 0;
 }
