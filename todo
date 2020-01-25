@@ -8,3 +8,8 @@ future set_exception
 5. param pack
 6. atomic_thread_fence
 7. atomic<T*>
+8. fedoration
+9. kafka, flume
+10. Google guava
+11. Shard/partition
+12. Lucene gramma?
