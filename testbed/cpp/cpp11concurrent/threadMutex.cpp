@@ -4,7 +4,7 @@
 #include <functional>
 #include <mutex>
 using namespace std;
-/*功能: 测试线程和mutex的功能*/
+
 mutex m;
 int main() {
     thread([]() { cout << "hello\n"; }).join();
