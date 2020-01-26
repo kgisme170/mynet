@@ -38,4 +38,5 @@ conf = Configure(env)
 if conf.CheckCXX():
    print("Yes CXX17")
    env.SConscript(dirs=['cpp17'])
+   env.SConscript(dirs=['cpp17concurrent'])
 env = conf.Finish()
