@@ -5,7 +5,8 @@ using namespace std;
 using namespace std::chrono;
 int main(){
 	promise<void> p, p1, p2;
-	shared_future<void> sf(p.get_future());
+	// shared_future<void> sf(p.get_future());
+	auto sf = p.get_future().share();
 	time_point<high_resolution_clock> from;
 	auto f1 = [&, sf]()->duration<double, milli>{
 		p1.set_value();
