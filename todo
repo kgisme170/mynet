@@ -1,12 +1,7 @@
-1. get_future().shared/shared_future
-
-call static/future multiple times/from multiple threads
-future set_exception
-2. atomic+lock, atomic_flag ATOMIC_  load, store, compare_exchange, compare_set, memory_order_relaxed/aquire/release 
+test_and_set, memory_order_relaxed/aquire/release 
 3. java lockfree list
 4. cond_any / cond notify_all_at_thread_exit
 5. param pack
-6. atomic_thread_fence
 7. atomic<T*>
 8. fedoration
 9. kafka, flume
