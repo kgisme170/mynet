@@ -21,6 +21,7 @@ if conf.CheckCXX():
    env.SConscript(dirs=['cpp11'])
    env.SConscript(dirs=['cpp11concurrent'])
    env.SConscript(dirs=['cpp11initializer'])
+   env.SConscript(dirs=['cpp11pthread'])
    env.SConscript(dirs=['cpp11share'])
    env.SConscript(dirs=['cpp11variadic'])
 env = conf.Finish()
@@ -37,4 +38,5 @@ conf = Configure(env)
 if conf.CheckCXX():
    print("Yes CXX17")
    env.SConscript(dirs=['cpp17'])
+   env.SConscript(dirs=['cpp17concurrent'])
 env = conf.Finish()
