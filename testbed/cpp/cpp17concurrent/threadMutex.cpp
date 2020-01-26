@@ -11,7 +11,7 @@ void print_thread_id(int id){
 	m.unlock();
 }
 int main() {
-	if (m.try_lock()) {//try_lock()) {
+	if (m.try_lock()) {
 		m.unlock();
 	}
 	using Ms = chrono::milliseconds;
