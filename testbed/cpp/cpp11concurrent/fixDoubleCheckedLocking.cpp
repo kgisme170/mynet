@@ -1,7 +1,5 @@
 #include <atomic>
-#include <chrono>
 #include <mutex>
-#include <thread>
 using namespace std;
 struct Singleton {
 	static Singleton* getInstance();
