@@ -2,7 +2,8 @@
 import os
 env=Environment(ENV=os.environ)
 env.Append(CXXFLAGS="--std=c++17")
+env.AppendUnique(LIBS=['atomic', 'pthread'])
 #2. Targets
-env.Program(target='rwlock', source='rwlock.cpp', LIBS = 'pthread')
-env.Program(target='typeDeductionForAutoCpp17', source='typeDeductionForAutoCpp17.cpp')
-env.Program(target='useVariadic', source='useVariadic.cpp')
+for f in env.Glob("*.cpp"):
+    if "error" not in str(f):
+        env.Program("${SOURCE.base}",f)
