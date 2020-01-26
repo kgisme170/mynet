@@ -12,7 +12,7 @@ void write()
 }
 void read()
 {
-    while(!y.load(memory_order_relaxed));
+    while(!y.load(memory_order_relaxed)); // spin to wait for atomic::store
     cout<<"end load\n";
 }
 int main() {
