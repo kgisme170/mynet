@@ -1,7 +1,4 @@
 3. java lockfree list
-4. cond_any / cond notify_all_at_thread_exit
-5. param pack
-7. atomic<T*>
 8. fedoration
 9. kafka, flume
 10. Google guava
