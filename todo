@@ -1,4 +1,3 @@
-test_and_set, memory_order_relaxed/aquire/release 
 3. java lockfree list
 4. cond_any / cond notify_all_at_thread_exit
 5. param pack

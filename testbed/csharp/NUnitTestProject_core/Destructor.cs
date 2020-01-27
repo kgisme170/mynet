@@ -22,6 +22,7 @@ namespace NUnitTestProject_core
             Thread.Sleep(2000);
             Console.WriteLine("after sleep 1, begin GC");
             GC.Collect();
+            GC.WaitForPendingFinalizers();
             Thread.Sleep(2000);
             Console.WriteLine("after sleep 2");
         }
@@ -30,7 +31,7 @@ namespace NUnitTestProject_core
         public static void TestDestructor()
         {
             Test();
-            // Assert.AreEqual(i, 111); // TODO seems in test project, destructors are not called.
+            Assert.AreEqual(i, 111); // TODO seems in test project, destructors are not called.
         }
         class A
         {
