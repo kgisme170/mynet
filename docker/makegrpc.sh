@@ -13,4 +13,4 @@ cmake \
   -DgRPC_SSL_PROVIDER=package \
   -DgRPC_ZLIB_PROVIDER=package \
   .
-make -j8 install
+make -j8 && make install prefix=/usr/local/ && ldconfig
