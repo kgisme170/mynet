@@ -1,5 +1,6 @@
 #!/bin/bash
 # Install gRPC and its dependencies
+cd /grpc/third_party/protobuf && ./autogen.sh && ./configure --with-python=no --with-ruby=no --with-php=no --with-objective_c=no && make -j8 && make install
 cd /grpc
 cmake \
   -DBUILD_SHARED_LIBS=ON \
