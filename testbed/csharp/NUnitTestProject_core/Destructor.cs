@@ -8,8 +8,8 @@ namespace NUnitTestProject_core
     class Destructor
     {
         public static int i = 0;
-
-        public static void Test()
+        [Test]
+        public static void TestDestructor()
         {
             using (C o = new C())
             {
@@ -25,13 +25,7 @@ namespace NUnitTestProject_core
             GC.WaitForPendingFinalizers();
             Thread.Sleep(2000);
             Console.WriteLine("after sleep 2");
-        }
-
-        [Test]
-        public static void TestDestructor()
-        {
-            Test();
-            Assert.AreEqual(i, 111); // TODO seems in test project, destructors are not called.
+            Assert.AreEqual(i, 111);
         }
         class A
         {
@@ -64,7 +58,6 @@ namespace NUnitTestProject_core
                 GC.SuppressFinalize(this);
             }
             private bool disposed = false;
-            private IntPtr handle;
             private Component component = new Component();
             protected virtual void Dispose(bool disposing)
             {
@@ -79,21 +72,10 @@ namespace NUnitTestProject_core
                         // Dispose managed resources.
                         component.Dispose();
                     }
-
-                    // Call the appropriate methods to clean up
-                    // unmanaged resources here.
-                    // If disposing is false,
-                    // only the following code is executed.
-                    CloseHandle(handle);
-                    handle = IntPtr.Zero;
-
                     // Note disposing has been done.
                     disposed = true;
                 }
             }
-            [System.Runtime.InteropServices.DllImport("Kernel32")]
-            private extern static Boolean CloseHandle(IntPtr handle);
-
             public void F() { Console.WriteLine("start"); }
         }
     }
