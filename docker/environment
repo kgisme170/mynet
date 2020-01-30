@@ -6,12 +6,12 @@ export JRE_HOME
 GOROOT=/usr/local/go
 GOPATH=$HOME/goproj
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$JAVA_HOME/bin:$PATH
-PATH=$GOPATH/bin:$GOROOT/bin:$PATH:/grpc:.
+PATH=$GOPATH/bin:$GOROOT/bin:$PATH:/usr/local/bin:.
 CLASSPATH=$JAVA_HOME/lib:.
 
 C_INCLUDE_PATH=$JAVA_HOME/include:$JAVA_HOME/include/linux:/usr/include/llvm-c-8/llvm-c/Transforms:/usr/include/python2.7:/usr/include/tcl8.6:/thrift-0.10.0/lib/cpp/src:/grpc/include:.
 CPLUS_INCLUDE_PATH=$JAVA_HOME/include:$JAVA_HOME/include/linux:/usr/include/llvm-c-8/llvm-c/Transforms:/usr/include/python2.7:/usr/include/tcl8.6:/thrift-0.10.0/lib/cpp/src:/grpc/include:.
-LD_LIBRARY_PATH=/lib:/usr/lib:/usr/local/lib:$JAVA_HOME/jre/lib/amd64/server:/thrift-0.10.0/lib/cpp/.libs:/grpc:.
+LD_LIBRARY_PATH=/lib:/usr/lib:/usr/local/lib:$JAVA_HOME/jre/lib/amd64/server:/thrift-0.10.0/lib/cpp/.libs:/usr/local/lib:.
 
 export GOROOT
 export GOPATH
