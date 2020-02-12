@@ -1,3 +1,3 @@
 #!/bin/bash
 
-protoc --go_out=plugin=grpc:. *.proto
+protoc --go_out=plugin=grpc:. helloworld.proto
