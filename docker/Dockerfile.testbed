@@ -12,17 +12,9 @@ RUN apt-get -y install --fix-missing libaio-dev libev-dev libevent-dev libleveld
  && apt-get -y install --fix-missing lua5.1 llvm make man manpages-dev manpages-posix-dev maven ninja-build openssl pkg-config \
  && apt-get -y install --fix-missing python python-dev ruby scons swig vim wget
 
-RUN apt-get -y install --fix-missing build-essential
-# libgl1-mesa-dev freeglut3-dev libglew-dev libsdl2-dev libsdl2-image-dev libglm-dev libfreetype6-dev \
-RUN apt-get -y install --fix-missing libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev libbz2-dev
-# libxml2-dev snapd snapd-xdg-open
-# linux headers and kernel
-#
-#RUN apt-get remove --purge linux-headers-* \
-# && apt-get autoremove && apt autoclean \
-# && apt-get -y install --fix-missing kernel-package libelf-dev linux-headers-generic \
-# && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
-#RUN echo "---------------get dotnet-------------"
+RUN apt-get -y install --fix-missing build-essential \
+ && apt-get -y install --fix-missing libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev libbz2-dev
+
 # New version of dotnet, scala2.11, bazel, go1.13 and testbed codebase
 RUN wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
  && dpkg -i packages-microsoft-prod.deb \
