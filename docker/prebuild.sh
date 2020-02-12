@@ -11,3 +11,5 @@ apt-get remove -y --purge linux-headers-*
 apt-get autoremove -y && apt autoclean -y
 apt-get -y install --fix-missing kernel-package libelf-dev linux-headers-generic
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+
+go get -u github.com/golang/protobuf/{proto,protoc-gen-go}
