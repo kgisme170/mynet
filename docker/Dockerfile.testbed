@@ -33,6 +33,13 @@ RUN wget www.scala-lang.org/files/archive/scala-2.11.8.deb \
     && mkdir goproj \
     && export GOPATH=$HOME/goproj \
     && export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+RUN git clone https://github.com/kgisme170/mynet.git \
+    && cd /mynet \
+    && git config --global user.email kgisme170@163.com \
+    && git config --global user.name kgisme170 \
+    && git config credential.helper store
+
 #
 # Force the go compiler to use modules
 COPY environment /etc/environment

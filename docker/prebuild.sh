@@ -5,12 +5,6 @@ apt-get remove -y libprotobuf-dev libprotobuf*
 cp /mynet/docker/environment /etc/
 source /etc/environment
 
-git clone https://github.com/kgisme170/mynet.git \
-cd /mynet \
-git config --global user.email kgisme170@163.com \
-git config --global user.name kgisme170 \
-git config credential.helper store
-
 cd / && rm -fr /libevent && git clone https://github.com/libevent/libevent.git \
 cd / && rm -fr /grpc && git clone https://github.com/grpc/grpc.git \
 cd /grpc/third_party/protobuf/ && git submodule update --init --recursive \
