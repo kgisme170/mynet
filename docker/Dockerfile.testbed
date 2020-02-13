@@ -6,13 +6,11 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt -y install tcl tcl-dev \
  && apt-get -y upgrade \
  && apt-get -y install --fix-missing software-properties-common \
- && apt-get -y install --fix-missing ant apt-transport-https autoconf autogen automake bison ca-certificates clang cmake curl dirmngr flex git gcc gnupg graphviz g++ libc6-dev libtool
-
-RUN apt-get -y install --fix-missing libaio-dev libev-dev libevent-dev libleveldb-dev liblz4-dev libomp-dev libprotobuf-dev libsnappy-dev libssl-dev libzstd-dev \
+ && apt-get -y install --fix-missing ant apt-transport-https autoconf autogen automake bison ca-certificates clang cmake curl dirmngr flex git gcc gnupg graphviz g++ libc6-dev libtool \
+ && apt-get -y install --fix-missing libaio-dev libev-dev libevent-dev libleveldb-dev liblz4-dev libomp-dev libprotobuf-dev libsnappy-dev libssl-dev libzstd-dev \
  && apt-get -y install --fix-missing lua5.1 llvm make man manpages-dev manpages-posix-dev maven ninja-build openssl pkg-config \
- && apt-get -y install --fix-missing python python-dev ruby scons swig tree vim wget
-
-RUN apt-get -y install --fix-missing build-essential \
+ && apt-get -y install --fix-missing python python-dev ruby scons swig tree vim wget \
+ && apt-get -y install --fix-missing build-essential \
  && apt-get -y install --fix-missing libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev libbz2-dev
 
 # New version of dotnet, scala2.11, bazel, go1.13 and testbed codebase
@@ -34,19 +32,8 @@ RUN wget www.scala-lang.org/files/archive/scala-2.11.8.deb \
     && export GOROOT=/usr/local/go \
     && mkdir goproj \
     && export GOPATH=$HOME/goproj \
-    && export PATH=$GOPATH/bin:$GOROOT/bin:$PATH \
-    && git clone https://github.com/kgisme170/mynet.git \
-    && cd /mynet \
-    && git config --global user.email kgisme170@163.com \
-    && git config --global user.name kgisme170 \
-    && git config credential.helper store
-
-RUN cd / && rm -fr /libevent && git clone https://github.com/libevent/libevent.git \
-    && cd / && rm -fr /grpc && git clone https://github.com/grpc/grpc.git \
-    && cd /grpc/third_party/protobuf/ && git submodule update --init --recursive \
-    && cd / && wget https://download.open-mpi.org/release/open-mpi/v3.1/openmpi-3.1.1.tar.gz && tar xvf openmpi-3.1.1.tar.gz \
-    && cd / && wget http://archive.apache.org/dist/thrift/0.10.0/thrift-0.10.0.tar.gz && tar xvf thrift-0.10.0.tar.gz
-
+    && export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+#
 # Force the go compiler to use modules
 COPY environment /etc/environment
 COPY vimrc /root/.vimrc
