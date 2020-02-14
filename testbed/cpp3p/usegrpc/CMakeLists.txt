@@ -36,7 +36,7 @@ add_custom_command(TARGET myPreprocess
   COMMENT "This command will be executed before building target myPreprocess"
 )
 include_directories(${BUILD})
-link_directories("/usr/local/lib")
+link_directories("/grpc")
 link_libraries(grpc++_unsecure grpc gpr ${PROTOBUF_LIBRARY})
 
 add_library(examples ${EXAMPLES_PB_CC} ${EXAMPLES_GRPC_PB_CC})
