@@ -16,7 +16,7 @@ object FileSs {
     val lines = spark.readStream
       .option("sep", ";")
       .schema(userSchema)
-      .csv("file:///my.csv")
+      .csv("file:///data/*")
 
     val query = lines.writeStream
       .outputMode("append")
