@@ -8,7 +8,7 @@ RUN apt-get update && apt -y install tcl tcl-dev \
  && apt-get -y install --fix-missing software-properties-common \
  && apt-get -y install --fix-missing ant apt-transport-https autoconf autogen automake bison ca-certificates clang cmake curl dirmngr flex git gcc gnupg graphviz g++ libc6-dev libtool \
  && apt-get -y install --fix-missing libaio-dev libev-dev libevent-dev libleveldb-dev liblz4-dev libomp-dev libprotobuf-dev libsnappy-dev libssl-dev libzstd-dev \
- && apt-get -y install --fix-missing lua5.1 llvm make man manpages-dev manpages-posix-dev maven ninja-build openssl pkg-config \
+ && apt-get -y install --fix-missing lua5.1 llvm make man manpages-dev manpages-posix-dev maven net-tools ninja-build openssh-server openssl pkg-config \
  && apt-get -y install --fix-missing python python-dev ruby scons swig tree vim wget \
  && apt-get -y install --fix-missing build-essential \
  && apt-get -y install --fix-missing libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev libbz2-dev
