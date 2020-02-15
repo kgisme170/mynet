@@ -18,12 +18,12 @@ object FileSs {
       .schema(userSchema)
       .csv("file:///data/*")
 
-    //val query = lines.writeStream
-      //.outputMode("append")
-      //.format("console")
-      //.start()
-    //query.awaitTermination()
-    var query = lines.writeStream
+    val query = lines.writeStream
+      .outputMode("append")
+      .format("console")
+      .start()
+    query.awaitTermination()
+    /*var query = lines.writeStream
       .queryName("aggs")
       .outputMode("complete")
       .format("memory")
@@ -31,5 +31,6 @@ object FileSs {
     
     spark.sql("select * from aggs").show()
     query.awaitTermination()
+    */
   }
 }
