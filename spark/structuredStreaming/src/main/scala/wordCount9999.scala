@@ -11,7 +11,6 @@ object WordCount {
     spark.sparkContext.setLogLevel("WARN")
 
     import spark.implicits._
-    // 创建DataFrame
     // Create DataFrame representing the stream of input lines from connection to localhost:9999
     val lines = spark.readStream
       .format("socket")
@@ -23,13 +22,12 @@ object WordCount {
     val words = lines.as[String].flatMap(_.split(" "))
 
     // Generate running word count
-    val wordCounts = words.groupBy("value").count()
+    //val wordCounts = words.groupBy("value").count()
 
-    // Start running the query that prints the running counts to the console
-    // 三种模式：
-    // 1 complete 所有内容都输出
-    // 2 append   新增的行才输出
-    // 3 update   更新的行才输出
+    var wordCounts = words.groupBy(
+      window($"timestamp", "10 minutes", "5 minutes"),
+      $"word"
+    ).count()
     val query = wordCounts.writeStream
       .outputMode("complete")
       .format("console")
