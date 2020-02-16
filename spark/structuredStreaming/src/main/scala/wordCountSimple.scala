@@ -1,34 +1,20 @@
 import org.apache.spark.sql.SparkSession
-
 object wordCountSimple {
   def main(args: Array[String]): Unit = {
-    val spark = SparkSession
-      .builder
-      .master("local")
-      .appName("wordCount9999")
-      .getOrCreate()
+	val spark = SparkSession
+	  .builder
+	  .master("local")
+	  .appName("wordCount9999")
+	  .getOrCreate()
 
-    spark.sparkContext.setLogLevel("WARN")
-
-    import spark.implicits._
-    // Create DataFrame representing the stream of input lines from connection to localhost:9999
-    val lines = spark.readStream
-      .format("socket")
-      .option("host", "localhost")
-      .option("port", 9999)
-      .load()
-/*
-    // Split the lines into words
-    val words = lines.as[String].flatMap(_.split(" "))
-
-    // Generate running word count
-    val wordCounts = words.groupBy("value").count()
-    val query = wordCounts.writeStream
-      .outputMode("complete")
-      .format("console")
-      .start()
-
-    query.awaitTermination()
-    */
+	spark.sparkContext.setLogLevel("WARN")
+	import spark.sqlContext.implicits._
+	val df = Seq(("2019-07-01 12:01:19.000"),
+	  ("2019-06-24 12:01:19.000"),
+	  ("2019-11-16 16:44:55.406"),
+	  ("2019-11-16 16:50:59.406")).toDF("input_timestamp")
+	df.withColumn("datetype_timestamp", to_timestamp(col("input_timestamp")))
+	  .printSchema()
+	spark.close()
   }
 }

@@ -10,5 +10,6 @@ object wordCountWindowed {
       .appName("wordCountWindowed")
       .getOrCreate()
     spark.sparkContext.setLogLevel("WARN")
+    spark.close()
   }
 }
