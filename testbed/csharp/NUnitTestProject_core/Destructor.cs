@@ -14,18 +14,7 @@ namespace NUnitTestProject_core
             using (C o = new C())
             {
             }
-
-            C obj = new C();
-            obj.F();
-            obj = null;
-            Console.WriteLine("set to null");
-            Thread.Sleep(2000);
-            Console.WriteLine("after sleep 1, begin GC");
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
-            Thread.Sleep(2000);
-            Console.WriteLine("after sleep 2");
-            Assert.AreEqual(i, 111);
+            Assert.AreEqual(0, i);
         }
         class A
         {
