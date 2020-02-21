@@ -21,5 +21,16 @@ object o101 { //extends App {
         print(i*j)
         print(',')
     }
+    val list: List[Any] = List(
+        "string",
+        123,
+        'a',
+        true,
+        (x:Int)=>print(x)
+    )
+    list.foreach(e=>println(e))
+    val face: Char = '☺'
+    val number: Int = face
+    print(number)
   }
 }
