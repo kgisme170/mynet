@@ -20,7 +20,7 @@ void th_function() {
 int main() {
     auto th = std::thread{th_function};
     // sleep for 2 seconds
-    std::this_thread::sleep_for(std::chrono::seconds(2));
+    std::this_thread::sleep_for(chrono::seconds(2));
     // signal and change the variable
     {
         std::lock_guard <std::mutex> lck{mtx};

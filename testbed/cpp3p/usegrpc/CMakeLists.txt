@@ -23,7 +23,7 @@ add_custom_command(
     COMMAND ${PROTOBUF_PROTOC_EXECUTABLE}
     ARGS "--proto_path=."
          "--grpc_out=${BUILD}"
-         "--plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin"
+         "--plugin=protoc-gen-grpc=/grpc/grpc_cpp_plugin"
 	 "${EXAMPLES_PROTO}"
     COMMENT "genProto"
 )
@@ -36,6 +36,7 @@ add_custom_command(TARGET myPreprocess
   COMMENT "This command will be executed before building target myPreprocess"
 )
 include_directories(${BUILD})
+link_directories("/grpc")
 link_libraries(grpc++_unsecure grpc gpr ${PROTOBUF_LIBRARY})
 
 add_library(examples ${EXAMPLES_PB_CC} ${EXAMPLES_GRPC_PB_CC})

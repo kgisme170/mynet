@@ -1,0 +1,22 @@
+#include <algorithm>
+#include <execution>
+#include <iostream>
+#include <vector>
+using namespace std;
+template <typename T>
+void divide(vector<T> result, const float div) {
+    for_each(
+        execution::par, 
+        begin(result), 
+        end(result), 
+        [divisor](T& val) {
+            val /= div;
+        });
+}
+
+int main() {
+	vector<float> v{1,2,3,4,5};
+	divide(v,2.5);
+	for(auto f : v)cout<<f<<endl;
+	return 0;
+}

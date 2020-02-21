@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 add_definitions(-std=c++11)
-include_directories(.)
+include_directories(/thrift-0.10.0/lib/cpp/src)
 message( "Found environment variable LD_LIBRARY_PATH=$ENV{LD_LIBRARY_PATH}" )
 set(directory build)
 file(MAKE_DIRECTORY ${directory})

@@ -1,32 +1,25 @@
 # Base build image
-FROM ubuntu:18.04 AS build_base
+FROM rtfpessoa/ubuntu-jdk8
 MAINTAINER Liming Gong "kgisme170@163.com"
 # Install some dependencies needed to build the project
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt -y install tcl tcl-dev \
  && apt-get -y upgrade \
  && apt-get -y install --fix-missing software-properties-common \
- && apt-get -y install --fix-missing ant apt-transport-https autoconf autogen automake bison ca-certificates clang cmake curl dirmngr flex git gcc gnupg graphviz g++ libc6-dev libtool
-
-RUN apt-get -y install --fix-missing libaio-dev libev-dev libevent-dev libleveldb-dev liblz4-dev libomp-dev libprotobuf-dev libsnappy-dev libssl-dev libxml2-dev libzstd-dev \
- && apt-get -y install --fix-missing lua5.1 llvm make maven ninja-build openjdk-8-jdk openjdk-8-jre openssl pkg-config
-
-RUN apt-get -y install --fix-missing gradle python python-dev ruby scons snapd snapd-xdg-open sudo swig uuid-dev vim wget \
- && apt-get -y install --fix-missing build-essential libgl1-mesa-dev freeglut3-dev libglew-dev libsdl2-dev libsdl2-image-dev libglm-dev libfreetype6-dev \
+ && apt-get -y install --fix-missing ant apt-transport-https autoconf autogen automake bison ca-certificates clang cmake curl dirmngr flex git gcc gnupg graphviz g++ libc6-dev libtool \
+ && apt-get -y install --fix-missing libaio-dev libev-dev libevent-dev libleveldb-dev liblz4-dev libomp-dev libprotobuf-dev libsnappy-dev libssl-dev libzstd-dev \
+ && apt-get -y install --fix-missing lua5.1 llvm make man manpages-dev manpages-posix-dev maven net-tools ninja-build openssh-server openssl pkg-config \
+ && apt-get -y install --fix-missing python python-dev ruby scons swig tree vim wget \
+ && apt-get -y install --fix-missing build-essential \
  && apt-get -y install --fix-missing libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev libbz2-dev
 
-# linux headers and kernel
-RUN apt-get remove --purge linux-headers-* \
- && apt-get autoremove && apt autoclean \
- && apt-get install -y kernel-package libelf-dev linux-headers-generic \
- && apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+# New version of dotnet, scala2.11, bazel, go1.13 and testbed codebase
+RUN wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
+ && dpkg -i packages-microsoft-prod.deb \
+ && add-apt-repository universe \
+ && apt-get update \
+ && apt-get install -y apt-transport-https dotnet-sdk-3.1 aspnetcore-runtime-3.1 dotnet-runtime-3.1
 
-# linux Mono, optional
-#RUN && sh -c 'echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" > /etc/apt/sources.list.d/mono-official-stable.list' \
-#    && apt -y update \
-#    && apt -y install mono-complete \
-
-# New version of scala2.11, bazel, go1.13 and testbed codebase
 RUN wget www.scala-lang.org/files/archive/scala-2.11.8.deb \
     && dpkg -i scala-2.11.8.deb \
     && echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | tee /etc/apt/sources.list.d/bazel.list \
@@ -39,14 +32,17 @@ RUN wget www.scala-lang.org/files/archive/scala-2.11.8.deb \
     && export GOROOT=/usr/local/go \
     && mkdir goproj \
     && export GOPATH=$HOME/goproj \
-    && export PATH=$GOPATH/bin:$GOROOT/bin:$PATH \
-    && git clone https://github.com/kgisme170/mynet.git \
+    && export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+RUN git clone https://github.com/kgisme170/mynet.git \
     && cd /mynet \
     && git config --global user.email kgisme170@163.com \
     && git config --global user.name kgisme170 \
     && git config credential.helper store
 
+#
 # Force the go compiler to use modules
 COPY environment /etc/environment
+COPY vimrc /root/.vimrc
 ENV GO111MODULE=on
 CMD ["/bin/bash"]
