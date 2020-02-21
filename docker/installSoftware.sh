@@ -1,33 +1,8 @@
-apt-get update && apt -y install tcl tcl-dev \
- && apt-get -y upgrade \
- && apt-get -y install --fix-missing software-properties-common \
- && apt-get -y install --fix-missing ant apt-transport-https autoconf autogen automake bison ca-certificates clang cmake curl dirmngr flex git gcc gnupg graphviz g++ libc6-dev libtool \
- && apt-get -y install --fix-missing libaio-dev libev-dev libevent-dev libleveldb-dev liblz4-dev libomp-dev libprotobuf-dev libsnappy-dev libssl-dev libzstd-dev \
- && apt-get -y install --fix-missing lua5.1 llvm make man manpages-dev manpages-posix-dev maven net-tools ninja-build openssh-server openssl pkg-config \
- && apt-get -y install --fix-missing python python-dev ruby scons swig tree vim wget \
- && apt-get -y install --fix-missing build-essential \
- && apt-get -y install --fix-missing libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev libbz2-dev
+apt-get update && apt -y install tcl tcl-dev && apt-get -y upgrade && apt-get -y install --fix-missing software-properties-common && apt-get -y install --fix-missing ant apt-transport-https autoconf autogen automake bison ca-certificates clang cmake curl dirmngr flex git gcc gnupg graphviz g++ libc6-dev libtool && apt-get -y install --fix-missing libaio-dev libev-dev libevent-dev libleveldb-dev liblz4-dev libomp-dev libprotobuf-dev libsnappy-dev libssl-dev libzstd-dev && apt-get -y install --fix-missing lua5.1 llvm make man manpages-dev manpages-posix-dev maven net-tools ninja-build openssh-server openssl pkg-config && apt-get -y install --fix-missing python python-dev ruby scons swig tree vim wget && apt-get -y install --fix-missing build-essential && apt-get -y install --fix-missing libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev libbz2-dev
 
 # New version of dotnet, scala2.11, bazel, go1.13 and testbed codebase
-wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
- && dpkg -i packages-microsoft-prod.deb \
- && add-apt-repository universe \
- && apt-get update \
- && apt-get install -y apt-transport-https dotnet-sdk-3.1 aspnetcore-runtime-3.1 dotnet-runtime-3.1
+wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb && dpkg -i packages-microsoft-prod.deb && add-apt-repository universe && apt-get update && apt-get install -y apt-transport-https dotnet-sdk-3.1 aspnetcore-runtime-3.1 dotnet-runtime-3.1
 
-wget www.scala-lang.org/files/archive/scala-2.11.8.deb \
-    && dpkg -i scala-2.11.8.deb \
-    && echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | tee /etc/apt/sources.list.d/bazel.list \
-    && curl https://bazel.build/bazel-release.pub.gpg | apt-key add - \
-    && apt-get update \
-    && apt-get -y install --fix-missing bazel \
-    && wget https://dl.google.com/go/go1.13.3.linux-amd64.tar.gz \
-    && tar -xvf go1.13.3.linux-amd64.tar.gz \
-    && rm -fr /usr/local/go \
-    && mv go /usr/local \
-    && export GOROOT=/usr/local/go \
-    && mkdir goproj \
-    && export GOPATH=$HOME/goproj \
-    && export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+wget www.scala-lang.org/files/archive/scala-2.11.8.deb && dpkg -i scala-2.11.8.deb && echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | tee /etc/apt/sources.list.d/bazel.list && curl https://bazel.build/bazel-release.pub.gpg | apt-key add - && apt-get update && apt-get -y install --fix-missing bazel && wget https://dl.google.com/go/go1.13.3.linux-amd64.tar.gz && tar -xvf go1.13.3.linux-amd64.tar.gz && rm -fr /usr/local/go && mv go /usr/local && export GOROOT=/usr/local/go && mkdir goproj && export GOPATH=$HOME/goproj && export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
 export GO111MODULE=on
