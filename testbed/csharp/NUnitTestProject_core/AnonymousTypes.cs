@@ -31,7 +31,7 @@ namespace NUnitTestProject_core
         }
 
         [Test]
-        public static void TestAnonymous()
+        public static void TestAnonymousTypes()
         {
             string s = "john,20st,100020";
 

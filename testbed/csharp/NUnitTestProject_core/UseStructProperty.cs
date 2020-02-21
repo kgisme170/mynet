@@ -17,7 +17,7 @@ namespace NUnitTestProject_core
     }
     class UseStructProperty
     {
-        static void Test(string[] args)
+        static void TestUseStructProperty(string[] args)
         {
             Room r = new Room()
             {

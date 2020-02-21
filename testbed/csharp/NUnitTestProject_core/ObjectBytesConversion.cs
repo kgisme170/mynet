@@ -44,7 +44,7 @@ namespace NUnitTestProject_core
             return new BinaryFormatter().Deserialize(memStream);
         }
         [Test]
-        public static void Test()
+        public static void TestObjectBytesConversion()
         {
             Outter o = new Outter();
             byte[] bytes = ObjectToByteArray(o);

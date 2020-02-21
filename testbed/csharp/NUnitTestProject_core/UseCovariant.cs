@@ -26,7 +26,7 @@ namespace NUnitTestProject_core
             }
         }
         [Test]
-        public static void Test()
+        public static void TestUseCovariant()
         {
             List<Dog> ld = new List<Dog>();
             IEnumerable<Dog> it = ld;

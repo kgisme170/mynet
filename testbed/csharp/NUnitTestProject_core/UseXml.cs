@@ -15,8 +15,8 @@ namespace NUnitTestProject_core
             var location = new Uri(Assembly.GetEntryAssembly().GetName().CodeBase);
             return new FileInfo(location.AbsolutePath).Directory;
         }
-        //[Test]
-        public static void Test()
+        [Test]
+        public static void TestUseXml()
         {
             var exePath = GetExecutingDirectory();
             var di = new DirectoryInfo(exePath.FullName);
