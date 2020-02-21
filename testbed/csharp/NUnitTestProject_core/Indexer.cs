@@ -15,7 +15,7 @@ namespace NUnitTestProject_core
             }
         }
         [Test]
-        public static void Test()
+        public static void TestIndexer()
         {
             Assert.AreEqual(4, new C()[3]);
         }

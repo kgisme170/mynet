@@ -27,7 +27,7 @@ namespace NUnitTestProject_core
             }
         }
         [Test]
-        public static void Test()
+        public static void TestUseDelegate()
         {
             TrainSignal trainSignal = new TrainSignal();
             new Car(trainSignal);

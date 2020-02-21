@@ -19,7 +19,7 @@ namespace NUnitTestProject_core
             public new DateTime MJ { get => dt; set => dt = value; }
         }
         [Test]
-        public static void Test()
+        public static void TestOverrideProperty()
         {
             Derived d = new Derived
             {

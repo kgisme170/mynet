@@ -18,7 +18,7 @@ namespace NUnitTestProject_core
             public string Salary { get; set; }
         }
         [Test]
-        public static void Test()
+        public static void TestCreateMapper()
         {
             var config = new MapperConfiguration(cfg => cfg.CreateMap<Person, Employee>());
             var mapper = config.CreateMapper();

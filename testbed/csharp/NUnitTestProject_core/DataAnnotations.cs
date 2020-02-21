@@ -24,7 +24,7 @@ namespace NUnitTestProject_core
         public string Email { get; set; }
 
         [Test]
-        public static void Test()
+        public static void TestDataAnnotations()
         {
             DataAnnotations obj = new DataAnnotations
             {

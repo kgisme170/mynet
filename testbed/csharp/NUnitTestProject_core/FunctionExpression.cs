@@ -20,7 +20,7 @@ namespace NUnitTestProject_core
             return r * r;
         }
         [Test]
-        public static void Test()
+        public static void TestFunctionExpression()
         {
             Assert.AreEqual(2, mFunc());
             Assert.AreEqual(9, aFunc(3));

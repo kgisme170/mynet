@@ -17,7 +17,7 @@ namespace NUnitTestProject_core
             Console.WriteLine("e");
         }
 
-        public static void Test(string[] args)
+        public static void TestVolatile(string[] args)
         {
             new Thread(Method).Start();
             Thread.Sleep(4000);
