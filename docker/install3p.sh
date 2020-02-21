@@ -1,5 +1,5 @@
 #!/bin/bash
-apt-get install -y gradle uuid-dev libxml2-dev snapd snapd-xdg-open libgl1-mesa-dev freeglut3-dev libglew-dev libsdl2-dev libsdl2-image-dev libglm-dev libfreetype6-dev && apt-get remove -y libprotobuf-dev libprotobuf* && cp /mynet/docker/environment /etc/ && source /etc/environment
+apt-get install -y gradle uuid-dev libxml2-dev snapd snapd-xdg-open libgl1-mesa-dev freeglut3-dev libglew-dev libsdl2-dev libsdl2-image-dev libglm-dev libfreetype6-dev && apt-get remove -y libprotobuf-dev libprotobuf* && cp ~/mynet/docker/environment /etc/ && source /etc/environment
 [ $? -ne 0 ] && echo "Install extra dev tools failed" && exit 1
 
 cd / && rm -fr /libevent && git clone https://github.com/libevent/libevent.git && cd / && rm -fr /grpc && git clone https://github.com/grpc/grpc.git
