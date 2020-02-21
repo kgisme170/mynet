@@ -10,3 +10,9 @@ add_subdirectory(linkerDynamic)
 add_subdirectory(linkerExtension)
 add_subdirectory(linkerPreload)
 add_subdirectory(useLlvm)
+if(UNIX)
+    execute_process(
+        COMMAND ls /lib/modules
+        OUTPUT_VARIABLE MY_VERSIONED_DIR 
+    )
+endif()
