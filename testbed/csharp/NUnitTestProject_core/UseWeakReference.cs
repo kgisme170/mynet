@@ -11,7 +11,7 @@ namespace NUnitTestProject_core
     class UseWeakReference
     {
         [Test]
-        public static void Test()
+        public static void TestUseWeakReference()
         {
             Person person = new Person();
             WeakReference<Person> wr = new WeakReference<Person>(person);

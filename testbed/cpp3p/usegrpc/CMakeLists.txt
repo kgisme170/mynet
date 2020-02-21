@@ -23,7 +23,7 @@ add_custom_command(
     COMMAND ${PROTOBUF_PROTOC_EXECUTABLE}
     ARGS "--proto_path=."
          "--grpc_out=${BUILD}"
-         "--plugin=protoc-gen-grpc=/grpc/grpc_cpp_plugin"
+         "--plugin=protoc-gen-grpc=/grpc/bins/opt/grpc_cpp_plugin"
 	 "${EXAMPLES_PROTO}"
     COMMENT "genProto"
 )

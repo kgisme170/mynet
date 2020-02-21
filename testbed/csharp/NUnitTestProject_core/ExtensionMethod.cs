@@ -17,7 +17,7 @@ namespace NUnitTestProject_core
     class ExtensionMethod
     {
         [Test]
-        public static void Test()
+        public static void TestExtensionMethod()
         {
             My m = new My();
             Assert.AreEqual(6, m.G(3));

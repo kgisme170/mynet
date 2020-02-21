@@ -9,7 +9,7 @@ namespace NUnitTestProject_core
             return x.Equals(y);
         }
         [Test]
-        public static void Test()
+        public static void TestGeneric()
         {
             var u = new Generic<int>();
             Assert.False(u.Compare(1, 2));

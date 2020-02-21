@@ -6,7 +6,7 @@ namespace NUnitTestProject_core
 {
     class UseSqlClient
     {
-        public static void Test()
+        public static void TestUseSqlClient()
         {
             SqlConnection conn = new SqlConnection("Data Source=MININT-EP12N1V;Initial Catalog=EmployeeDB;Integrated Security=True");
             conn.Open();

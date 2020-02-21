@@ -24,7 +24,7 @@ namespace NUnitTestProject_core
     class OperatorOverloading
     {
         [Test]
-        public static void Test()
+        public static void TestOperatorOverloading()
         {
             C obj1 = new C(1);
             C obj2 = new C(2);

@@ -15,7 +15,7 @@ namespace NUnitTestProject_core
         public string Address { get; }
 
         [Test]
-        public static void Test()
+        public static void TestImmutable()
         {
             var m = new Immutable("usd", "us");
             string s = m.Currency;

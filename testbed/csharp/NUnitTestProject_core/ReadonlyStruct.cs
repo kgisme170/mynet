@@ -22,7 +22,7 @@ namespace NUnitTestProject_core
     class ReadonlyStruct
     {
         [Test]
-        public static void Test()
+        public static void TestReadonlyStruct()
         {
             ComplexStruct cs = new ComplexStruct
             (

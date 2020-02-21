@@ -9,8 +9,6 @@
     <modules>
         <module>spark_remote</module>
         <module>streaming</module>
-        <module>scalaLang</module>
         <module>structuredStreaming</module>
-      <module>my-app</module>
   </modules>
 </project>

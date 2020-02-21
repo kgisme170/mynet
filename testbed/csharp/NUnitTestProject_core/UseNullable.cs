@@ -19,7 +19,7 @@ namespace NUnitTestProject_core
             public Inner Inner { get; set; }
         }
         [Test]
-        public static void Test()
+        public static void TestUseNullable()
         {
             Outter outter = new Outter();
             Console.WriteLine(outter?.Inner?.MI?.Name);

@@ -60,7 +60,7 @@ namespace NUnitTestProject_core
             }
         }
         [Test]
-        public static void TestAttribute()
+        public static void TestLengthAttribute()
         {
             var people = new People()
             {

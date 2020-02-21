@@ -26,7 +26,7 @@ namespace NUnitTestProject_core
             }
         }
         [Test]
-        public static void Test()
+        public static void TestIEnumerableYield()
         {
             int sum = 0;
             foreach (int i in MyFun(5))
