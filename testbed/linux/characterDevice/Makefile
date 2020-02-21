@@ -1,5 +1,5 @@
 obj-m += hello.o
 all:
-	make -C /lib/modules/4.15.0-76-generic/build M=$(PWD) modules
+	make -C $(shell ls -d /lib/modules/*-generic/build) M=$(PWD) modules
 clean:
-	make -C /lib/modules/4.15.0-76-generic/build M=$(PWD) clean
+	make -C $(shell ls -d /lib/modules/*-generic/build) M=$(PWD) clean

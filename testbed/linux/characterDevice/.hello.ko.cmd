@@ -1,0 +1,1 @@
+cmd_/mynet/testbed/linux/characterDevice/hello.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /mynet/testbed/linux/characterDevice/hello.ko /mynet/testbed/linux/characterDevice/hello.o /mynet/testbed/linux/characterDevice/hello.mod.o ;  true
