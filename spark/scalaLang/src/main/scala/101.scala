@@ -1,5 +1,26 @@
 object o101 { //extends App {
   def main(args: Array[String]): Unit = {
+  }
+
+  val A : Map[Int, Int] = Map()
+  def fibonacci(n : Int) : Int = {
+      if n<=0 {
+          panic("Should not have n <= 0")
+      } else if n <= 2 {
+          return 1
+      } else {
+          val ret = 0
+          if ! A.contains(n-1) {
+              A[n-1] = fibonacci(n-1)
+          }
+          if ! A.contains(n-2) {
+              A[n-2] = fibonacci(n-2)
+          }
+          return A[n-1] + A[n-2]
+      }
+  }
+
+  def func01() : Unit = {
     val vb : Byte = '1'
     val vc : Char = 2
     val vs : Short = 3
@@ -33,4 +54,6 @@ object o101 { //extends App {
     val number: Int = face
     print(number)
   }
+  println(fibonacci(5))
+  println(fibonacci(8))
 }
