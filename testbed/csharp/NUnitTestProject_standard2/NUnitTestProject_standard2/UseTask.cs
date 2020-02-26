@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace NUnitTestProject_standard2
@@ -14,10 +15,14 @@ namespace NUnitTestProject_standard2
 
         public Task<int> GetIntAsync()
         {
+            TaskScheduler uiScheduler = TaskScheduler.FromCurrentSynchronizationContext();
             return Task<int>.Factory.StartNew(() =>
             {
                 return 1;
-            });
+            },
+            CancellationToken.None,
+            TaskCreationOptions.None,
+            uiScheduler);
         }
 
         public Task<IList<int>> GetListIntAsync()
@@ -25,7 +30,10 @@ namespace NUnitTestProject_standard2
             return Task<IList<int>>.Factory.StartNew(() =>
             {
                 return new List<int>();
-            });
+            },
+            CancellationToken.None,
+            TaskCreationOptions.None,
+            TaskScheduler.Default);
         }
 
         [Test]
