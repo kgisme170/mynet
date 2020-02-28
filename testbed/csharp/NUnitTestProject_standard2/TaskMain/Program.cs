@@ -148,5 +148,33 @@ namespace TaskMain
                 Thread.Sleep(1000);
             }
         }
+
+        private static async Task<string> TestWithResultAsync()
+        {
+            Console.WriteLine("1. 异步任务start……");
+            await Task.Delay(2000);
+            Console.WriteLine("2. 异步任务end……");
+            return "2秒以后";
+        }
+
+        private void TaskCompleteSource()
+        {
+            var result = AwaitByTaskCompleteSource(TestWithResultAsync);
+            Console.WriteLine($"4. TaskCompleteSource_OnClick end:{result}");
+        }
+
+        private string AwaitByTaskCompleteSource(Func<Task<string>> func)
+        {
+            var taskCompletionSource = new TaskCompletionSource<string>();
+            var task1 = taskCompletionSource.Task;
+            Task.Run(async () =>
+            {
+                var result = await func.Invoke();
+                taskCompletionSource.SetResult(result);
+            });
+            var task1Result = task1.Result;
+            Console.WriteLine($"3. AwaitByTaskCompleteSource end:{task1Result}");
+            return task1Result;
+        }
     }
 }
