@@ -145,7 +145,6 @@ namespace NUnitTestProject_standard2
 
         public static async void TestDoubleTask()
         {
-
             Task<int> t1 = CalcAsync(1000, 1);
             Task<int> t2 = CalcAsync(2000, 2);
             int r1 = await t1;
