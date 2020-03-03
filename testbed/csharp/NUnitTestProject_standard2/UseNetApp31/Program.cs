@@ -20,9 +20,39 @@ namespace UseNetApp31
             var clusterPath = @"local/users/limgong/dir1";
             TraverseDirectory(clusterPath);
 
-            string from = @"local/users/limgong/dir1/log.txt";
-            string to = @"local/users/limgong/dir2/log.txt";
-            MoveFile(from, to);
+            //string from = @"local/users/limgong/dir2/log.txt";
+            string to = @"local/users/limgong/dir1/log.txt";
+            // MoveFile(to, from);
+            // CopyFile(from, to);
+            // DeleteFile(from);
+            DateTime oneMonthLater = DateTime.Now.AddDays(30);
+            ChangeExpiryTime(to, oneMonthLater);
+        }
+
+        public static void ChangeExpiryTime(string fileName, DateTime dateTime)
+        {
+            try
+            {
+                VC.SetStreamExpirationTime(fileName, dateTime - DateTime.Now);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            Console.WriteLine($"ChangeExpiryTime {fileName} to expiry time of {dateTime} ok");
+        }
+
+        static void DeleteFile(string fn)
+        {
+            try
+            {
+                VC.Delete(fn);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            Console.WriteLine($"{fn} deleted");
         }
 
         static void MoveFile(string from, string to)
@@ -35,6 +65,20 @@ namespace UseNetApp31
             {
                 Console.WriteLine(e.Message);
             }
+            Console.WriteLine($"{from} moved to {to}");
+        }
+
+        static void CopyFile(string from, string to)
+        {
+            try
+            {
+                VC.Concatenate(from, to);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            Console.WriteLine($"{from} copied to {to}");
         }
 
         static void TraverseDirectory(string dir)
