@@ -5,4 +5,19 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Cosmos.VcClient" Version="2.0.10" />
+    <PackageReference Include="Microsoft.Rest.ClientRuntime" Version="2.3.21" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Rest.ClientRuntime">
+      <HintPath>Microsoft.Rest.ClientRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="VcClient">
+      <HintPath>..\..\..\..\..\msproject\mytest1\202001_restatement\PerformanceComparison\PerformanceComparison\VcClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
