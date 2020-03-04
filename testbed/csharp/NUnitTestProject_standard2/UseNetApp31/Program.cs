@@ -10,23 +10,34 @@ namespace UseNetApp31
 {
     class Program
     {
-        private const string vcName = @"https://cosmos08.osdinfra.net/cosmos/sharedData.Ads.Dev/";
-        private const string thumbprint = @"4ae99066ff4c9c45f2a0f5ad699c758000bd35db";
+        // private const string vcName = @"https://cosmos08.osdinfra.net/cosmos/sharedData.Ads.Dev/";
+        private const string vcName = @"https://cosmos08.osdinfra.net:443/cosmos/adcenter.bicore.prod2";
+        
+        // private const string thumbprint = @"4ae99066ff4c9c45f2a0f5ad699c758000bd35db";
+        private const string thumbprint = @"02fb39616d412c39392293096dcd3f881f4d7072";
 
         public static void Main(string[] args)
         {
             TrySetupUsingCertThumbprint(vcName, thumbprint);
 
-            var clusterPath = @"local/users/limgong/dir1";
-            TraverseDirectory(clusterPath);
+            // var clusterPath = @"local/users/limgong/dir1";
+            // TraverseDirectory(clusterPath);
 
-            //string from = @"local/users/limgong/dir2/log.txt";
-            string to = @"local/users/limgong/dir1/log.txt";
-            // MoveFile(to, from);
+            // 所有streaming名字都是类似 /local/path/to/stream这种
+            // -> ui上做了一些trick，让你能够浏览所有前缀为 /local的stream
+            // -> 可以move一个文件比如log.txt成为dir1/dir2/dir3/log.txt，而我不需要事先创建dir1/dir2/dir3这样的目录结构。
+
+            string from = @"users/limgong/testdir1/log2.txt";
+            string to = @"users/limgong/02/test_01_log2.txt";
+            CopyFile(from, to);
+
+            // string from = @"local/users/limgong/log.txt";
+            // string to = @"local/users/limgong/dir1/dir1a/dir1b/log.txt";
+            // MoveFile(from, to);
             // CopyFile(from, to);
             // DeleteFile(from);
-            DateTime oneMonthLater = DateTime.Now.AddDays(30);
-            ChangeExpiryTime(to, oneMonthLater);
+            // DateTime oneMonthLater = DateTime.Now.AddDays(30);
+            // ChangeExpiryTime(to, oneMonthLater);
         }
 
         public static void ChangeExpiryTime(string fileName, DateTime dateTime)
