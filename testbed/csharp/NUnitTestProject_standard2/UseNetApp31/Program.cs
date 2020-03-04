@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Net;
 using System.Security;
 using System.Security.Cryptography.X509Certificates;
-using System.Security.Policy;
-using System.Web;
 using VcClient;
 
 namespace UseNetApp31
@@ -53,11 +52,13 @@ namespace UseNetApp31
 
         public static void Main(string[] args)
         {
+            TrySetupUsingCertThumbprint(vcName, thumbprint);
+            // https://stackoverflow.com/questions/2960056/trying-to-run-multiple-http-requests-in-parallel-but-being-limited-by-windows
+
+            ServicePointManager.DefaultConnectionLimit = 1000;
             var entryName = @"https://aad.cosmos08.osdinfra.net:443/cosmos/adcenter.bicore.prod2/users/limgong/dir1/file01";
             var relativePath = RelativePath(vcName, entryName);
             Console.WriteLine(relativePath);
-
-            TrySetupUsingCertThumbprint(vcName, thumbprint);
 
             // var clusterPath = @"local/users/limgong/dir1";
             // TraverseDirectory(clusterPath);
