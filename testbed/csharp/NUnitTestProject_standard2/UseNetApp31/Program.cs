@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Net;
 using System.Security;
 using System.Security.Cryptography.X509Certificates;
 using VcClient;
@@ -10,23 +11,73 @@ namespace UseNetApp31
 {
     class Program
     {
-        private const string vcName = @"https://cosmos08.osdinfra.net/cosmos/sharedData.Ads.Dev/";
-        private const string thumbprint = @"4ae99066ff4c9c45f2a0f5ad699c758000bd35db";
+        // private const string vcName = @"https://cosmos08.osdinfra.net/cosmos/sharedData.Ads.Dev/";
+        private const string vcName = @"https://cosmos08.osdinfra.net:443/cosmos/adcenter.bicore.prod2";
+
+        // private const string thumbprint = @"4ae99066ff4c9c45f2a0f5ad699c758000bd35db";
+        private const string thumbprint = @"02fb39616d412c39392293096dcd3f881f4d7072";
+
+        private static string TrimUrlAddress(string urlString)
+        {
+            int index = 0;
+            int count = 0;
+            var chars = urlString.ToCharArray();
+            foreach (var c in chars)
+            {
+                ++index;
+                if (c == '/')
+                {
+                    ++count;
+                }
+                if (count == 3)
+                {
+                    break;
+                }
+            }
+
+            if (count != 3)
+            {
+                return string.Empty;
+            }
+
+            return urlString[index..];
+        }
+
+        private static string RelativePath(string vcName, string entryName)
+        {
+            var trimmedVcName = TrimUrlAddress(vcName); // cosmos/adcenter.bicore.prod2
+            var trimmedEntryName = TrimUrlAddress(entryName); // cosmos/adcenter.bicore.prod2/dir01/file01
+            return trimmedEntryName[trimmedVcName.Length..];
+        }
 
         public static void Main(string[] args)
         {
             TrySetupUsingCertThumbprint(vcName, thumbprint);
+            // https://stackoverflow.com/questions/2960056/trying-to-run-multiple-http-requests-in-parallel-but-being-limited-by-windows
 
-            var clusterPath = @"local/users/limgong/dir1";
-            TraverseDirectory(clusterPath);
+            ServicePointManager.DefaultConnectionLimit = 1000;
+            var entryName = @"https://aad.cosmos08.osdinfra.net:443/cosmos/adcenter.bicore.prod2/users/limgong/dir1/file01";
+            var relativePath = RelativePath(vcName, entryName);
+            Console.WriteLine(relativePath);
 
-            //string from = @"local/users/limgong/dir2/log.txt";
-            string to = @"local/users/limgong/dir1/log.txt";
-            // MoveFile(to, from);
+            // var clusterPath = @"local/users/limgong/dir1";
+            // TraverseDirectory(clusterPath);
+
+            // 所有streaming名字都是类似 /local/path/to/stream这种
+            // -> ui上做了一些trick，让你能够浏览所有前缀为 /local的stream
+            // -> 可以move一个文件比如log.txt成为dir1/dir2/dir3/log.txt，而我不需要事先创建dir1/dir2/dir3这样的目录结构。
+
+            string from = @"users/limgong/testdir1/log2.txt";
+            string to = relativePath;
+            CopyFile(from, to);
+
+            // string from = @"local/users/limgong/log.txt";
+            // string to = @"local/users/limgong/dir1/dir1a/dir1b/log.txt";
+            // MoveFile(from, to);
             // CopyFile(from, to);
             // DeleteFile(from);
-            DateTime oneMonthLater = DateTime.Now.AddDays(30);
-            ChangeExpiryTime(to, oneMonthLater);
+            // DateTime oneMonthLater = DateTime.Now.AddDays(30);
+            // ChangeExpiryTime(to, oneMonthLater);
         }
 
         public static void ChangeExpiryTime(string fileName, DateTime dateTime)
