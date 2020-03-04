@@ -4,6 +4,8 @@ using System.Diagnostics;
 using System.IO;
 using System.Security;
 using System.Security.Cryptography.X509Certificates;
+using System.Security.Policy;
+using System.Web;
 using VcClient;
 
 namespace UseNetApp31
@@ -12,12 +14,49 @@ namespace UseNetApp31
     {
         // private const string vcName = @"https://cosmos08.osdinfra.net/cosmos/sharedData.Ads.Dev/";
         private const string vcName = @"https://cosmos08.osdinfra.net:443/cosmos/adcenter.bicore.prod2";
-        
+
         // private const string thumbprint = @"4ae99066ff4c9c45f2a0f5ad699c758000bd35db";
         private const string thumbprint = @"02fb39616d412c39392293096dcd3f881f4d7072";
 
+        private static string TrimUrlAddress(string urlString)
+        {
+            int index = 0;
+            int count = 0;
+            var chars = urlString.ToCharArray();
+            foreach (var c in chars)
+            {
+                ++index;
+                if (c == '/')
+                {
+                    ++count;
+                }
+                if (count == 3)
+                {
+                    break;
+                }
+            }
+
+            if (count != 3)
+            {
+                return string.Empty;
+            }
+
+            return urlString[index..];
+        }
+
+        private static string RelativePath(string vcName, string entryName)
+        {
+            var trimmedVcName = TrimUrlAddress(vcName); // cosmos/adcenter.bicore.prod2
+            var trimmedEntryName = TrimUrlAddress(entryName); // cosmos/adcenter.bicore.prod2/dir01/file01
+            return trimmedEntryName[trimmedVcName.Length..][1..];
+        }
+
         public static void Main(string[] args)
         {
+            var entryName = @"https://aad.cosmos08.osdinfra.net:443/cosmos/adcenter.bicore.prod2/users/limgong/dir1/file01";
+            var relativePath = RelativePath(vcName, entryName);
+            Console.WriteLine(relativePath);
+
             TrySetupUsingCertThumbprint(vcName, thumbprint);
 
             // var clusterPath = @"local/users/limgong/dir1";
@@ -28,7 +67,7 @@ namespace UseNetApp31
             // -> 可以move一个文件比如log.txt成为dir1/dir2/dir3/log.txt，而我不需要事先创建dir1/dir2/dir3这样的目录结构。
 
             string from = @"users/limgong/testdir1/log2.txt";
-            string to = @"users/limgong/02/test_01_log2.txt";
+            string to = relativePath;
             CopyFile(from, to);
 
             // string from = @"local/users/limgong/log.txt";
