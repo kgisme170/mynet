@@ -48,7 +48,7 @@ namespace UseNetApp31
         {
             var trimmedVcName = TrimUrlAddress(vcName); // cosmos/adcenter.bicore.prod2
             var trimmedEntryName = TrimUrlAddress(entryName); // cosmos/adcenter.bicore.prod2/dir01/file01
-            return trimmedEntryName[trimmedVcName.Length..][1..];
+            return trimmedEntryName[trimmedVcName.Length..];
         }
 
         public static void Main(string[] args)
