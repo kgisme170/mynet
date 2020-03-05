@@ -14,22 +14,10 @@ public:
     short get() const { return getShort(); }
 };
 
-struct Proxy{
-    My const* myOwner;
-    Proxy(My const* owner):myOwner(owner){}
-    operator int() const { return myOwner->get<int>(); }
-    operator short() const { return myOwner->get<short>(); }
-};
-
 int main(){
     My m;
-    Proxy p(&m);
-    int _i = p;
-    short _s = p;
-    cout<<_i<<","<<_s<<",\n";
-
-    int i = m.get<int>();
-    short s = m.get<short>();
+    auto i = m.get<int>();
+    auto s = m.get<short>();
     cout<<i<<","<<s<<",\n";
     return 0;
 }
