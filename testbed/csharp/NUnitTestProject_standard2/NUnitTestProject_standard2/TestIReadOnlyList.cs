@@ -10,7 +10,6 @@ namespace NUnitTestProject_standard2
         [Test]
         public void TestNullIReadOnlyList()
         {
-            IReadOnlyList<string> list = null;
             Assert.Pass();
         }
     }

@@ -70,6 +70,7 @@ namespace NUnitTestProject_standard2
                 {
                     var result = await LongRunningCancellableOperation(500, cancellationTokenSource.Token);
                     Console.WriteLine("Result {0}", result);
+                    cancellationTokenSource.Cancel();
                 }
                 catch (TaskCanceledException)
                 {
@@ -92,20 +93,14 @@ namespace NUnitTestProject_standard2
         [Test]
         public void Test1()
         {
-            // Assert.Pass();
-            var task = Task<int>.Factory.StartNew(() =>
-            {
-                return 1;
-            });
-            System.Diagnostics.Debug.WriteLine(task.Result);
-
             var task01 = Task<IReadOnlyList<int>>.Factory.StartNew(() =>
             {
                 return new List<int>() { 4, 5, 11 };
             });
+            task01.Wait();
 
             System.Diagnostics.Debug.WriteLine(task01.Result.Count);
-
+            Assert.Equals(3, task01.Result.Count);
             Console.WriteLine(nameof(Test1));
 
             Task t = ExecuteTaskWithTimeoutAsync(new TimeSpan(0, 0, 1)); // 1 seconds

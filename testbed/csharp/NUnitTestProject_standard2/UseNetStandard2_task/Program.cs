@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
@@ -47,6 +48,8 @@ namespace UseNetStandard2_task
                 // 按照声明的顺序
                 Console.WriteLine(i);
             }
+
+            var tuple = new Tuple<List<int>, List<int>>(new List<int>() { 1 }, new List<int>() { 2 });
         }
     }
 }
