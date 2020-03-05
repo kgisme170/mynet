@@ -14,8 +14,8 @@ namespace UseNetApp31
         // private const string vcName = @"https://cosmos08.osdinfra.net/cosmos/sharedData.Ads.Dev/";
         private const string vcName = @"https://cosmos08.osdinfra.net:443/cosmos/adcenter.bicore.prod2";
 
-        // private const string thumbprint = @"4ae99066ff4c9c45f2a0f5ad699c758000bd35db";
-        private const string thumbprint = @"02fb39616d412c39392293096dcd3f881f4d7072";
+        // private const string thumbprint = @"4ae99066ff4c9c45f2a0f5ad699c758000bd35db"; // dev
+        private const string thumbprint = @"02fb39616d412c39392293096dcd3f881f4d7072"; // prod
 
         private static string TrimUrlAddress(string urlString)
         {
