@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -9,6 +8,43 @@ namespace TaskMain
 {
     class Program
     {
+        static async Task<int> DelayAndReturnAsync(int val)
+        {
+            await Task.Delay(TimeSpan.FromSeconds(val));
+            return val;
+        }
+
+        static async Task AwaitAndProcessAsync(Task<int> task)
+        {
+            var result = await task;
+            Console.WriteLine(result);
+        }
+
+        static async Task ProcessTaskAsync()
+        {
+            Task<int> taskA = DelayAndReturnAsync(4);
+            Task<int> taskB = DelayAndReturnAsync(6);
+            Task<int> taskC = DelayAndReturnAsync(2);
+            var tasks = new[] { taskA, taskB, taskC };
+
+            var processingTasks = tasks.Select(async t =>
+            {
+                var result = await t;
+                Console.WriteLine(result); // 按照完成的顺序
+                return result;
+            }).ToArray(); // or var processingTasks = (from t in tasks select AwaitAndProcessAsyc(t))
+            Console.WriteLine("----------");
+            var t1 = await Task.WhenAll(processingTasks);
+            Console.WriteLine("----------");
+            foreach (var i in t1)
+            {
+                // 按照声明的顺序
+                Console.WriteLine(i);
+            }
+
+            var tuple = new Tuple<List<int>, List<int>>(new List<int>() { 1 }, new List<int>() { 2 });
+        }
+
         public static async Task<int> CalcAsync(int wait, int x)
         {
             await Task.Run(() => Thread.Sleep(wait));
@@ -49,7 +85,7 @@ namespace TaskMain
             return tcs.Task;
         }
 
-        public static void Main(string[] args)
+        public static void Test01()
         {
             Task task = Task.Run(() =>
             {
@@ -75,22 +111,20 @@ namespace TaskMain
 
             Console.WriteLine("Main");
             TestDoubleTask();
+        }
 
-
+        public static void Main(string[] args)
+        {
             Task<int> primeNumberTask = Task.Run(() =>
                 Enumerable.Range(2, 3000000).Count(
                     n => Enumerable.Range(2, (int)Math.Sqrt(n) - 1).All(i => n % i > 0)));
 
-            //获取用于等待此 System.Threading.Tasks.Task<TResult>的等待者
             var awaiter = primeNumberTask.GetAwaiter();
-            //将操作设置为当 System.Runtime.CompilerServices.TaskAwaiter<TResult> 对象停止等待异步任务完成时执行
             awaiter.OnCompleted(() =>
             {
-                int result = awaiter.GetResult(); //异步任务完成后关闭等待任务
-                Console.WriteLine(result);       //打印结果
+                int result = awaiter.GetResult();
+                Console.WriteLine(result);
             });
-            var aw = GetAnswerToLife().GetAwaiter();
-            aw.OnCompleted(() => Console.WriteLine(awaiter.GetResult()));
 
             Task<int> primeNumberTask2 = Task.Run(() =>
                 Enumerable.Range(2, 3000000).Count(
@@ -99,7 +133,7 @@ namespace TaskMain
             primeNumberTask2.ContinueWith(antecedent =>
             {
                 int result = antecedent.Result;
-                Console.WriteLine(result);          // Writes 123
+                Console.WriteLine(result); // Writes 123
             });
         }
 
