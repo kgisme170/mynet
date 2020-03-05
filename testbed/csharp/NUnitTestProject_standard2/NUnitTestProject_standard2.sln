@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UseNewtonSoftJson", "UseNew
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseNetCore31_task", "UseNetCore31_task\UseNetCore31_task.csproj", "{FDFD284A-BB31-463A-9A68-85341D4014D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseFramework472", "UseFramework472\UseFramework472.csproj", "{F8DCBAD4-30C8-4B84-BB1A-8FE2AAA0C3D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{FDFD284A-BB31-463A-9A68-85341D4014D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDFD284A-BB31-463A-9A68-85341D4014D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDFD284A-BB31-463A-9A68-85341D4014D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8DCBAD4-30C8-4B84-BB1A-8FE2AAA0C3D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8DCBAD4-30C8-4B84-BB1A-8FE2AAA0C3D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8DCBAD4-30C8-4B84-BB1A-8FE2AAA0C3D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8DCBAD4-30C8-4B84-BB1A-8FE2AAA0C3D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
