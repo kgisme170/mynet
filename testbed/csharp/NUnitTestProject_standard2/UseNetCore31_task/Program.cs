@@ -1,33 +1,14 @@
-﻿using Nito.AsyncEx;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
 using System.Reactive.Linq;
-using System.Threading.Tasks;
 
-namespace UseNetStandard2_task
+namespace TestRx
 {
     class Program
     {
-
-        public static async Task MainAsync(string[] args)
-        {
-            await Task.Delay(TimeSpan.FromSeconds(2));
-        }
-
         public static void Main(string[] args)
         {
             Console.WriteLine("hi");
-            /*
-            try
-            {
-                AsyncContext.Run(() => MainAsync(args));
-            }
-            catch (Exception e)
-            {
-                Console.Error.WriteLine(e);
-            }*/
-
             IObservable<DateTimeOffset> timestamps =
                 Observable.Interval(TimeSpan.FromSeconds(1))
                 .Timestamp()
