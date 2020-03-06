@@ -7,16 +7,16 @@ namespace NUnitTestProject_core
     {
         class Member
         {
-            public string Name { get; set; }
+            public string Name { get; set; } = string.Empty;
         }
         class Inner
         {
-            public Member MI { get; set; }
-            public Member MJ { get; set; }
+            public Member MI { get; set; } = new Member();
+            public Member MJ { get; set; } = new Member();
         }
         class Outter
         {
-            public Inner Inner { get; set; }
+            public Inner Inner { get; set; } = new Inner();
         }
         [Test]
         public static void TestUseNullable()

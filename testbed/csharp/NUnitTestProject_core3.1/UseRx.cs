@@ -70,9 +70,8 @@ namespace NUnitTestProject_core
         {
             return Observable.Create<int>(observer =>
             {
-                Timer timer = null;
                 int counter = 0;
-                timer = new Timer(o =>
+                var timer = new Timer(o =>
                 {
                     if (counter == 3)
                     {
@@ -117,7 +116,7 @@ namespace NUnitTestProject_core
                 {
                     var stack = new StackTrace();
                     var methodBase = stack.GetFrame(1)?.GetMethod();
-                    var typename = methodBase?.DeclaringType.FullName;
+                    var typename = methodBase!.DeclaringType!.FullName;
                     var methodName = methodBase.Name;
                     var msg = string.Format($"Dispose called by {typename}.{methodName}.");
                     Debug.Print(msg);

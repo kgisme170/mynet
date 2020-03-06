@@ -9,10 +9,14 @@ namespace NUnitTestProject_core
     {
         class TrainSignal
         {
-            public Action TrainsAreComing;
+            public Action? TrainsAreComing;
             public void HereComesTheTain()
             {
-                TrainsAreComing();
+                if (TrainsAreComing == null)
+                {
+                    return;
+                }
+                TrainsAreComing!();
             }
         }
         class Car

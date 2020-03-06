@@ -198,7 +198,7 @@ namespace NUnitTestProject_core
         class Pet
         {
             public string Name { get; set; } = string.Empty;
-            public Person Owner { get; set; } = string.Empty;
+            public Person Owner { get; set; } = new Person();
         }
         public static void XElement()
         {

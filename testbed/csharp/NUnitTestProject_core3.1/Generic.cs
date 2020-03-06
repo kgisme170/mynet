@@ -6,7 +6,7 @@ namespace NUnitTestProject_core
     {
         public bool Compare(UNKNOWN x, UNKNOWN y)
         {
-            return x.Equals(y);
+            return x!.Equals(y);
         }
         [Test]
         public static void TestGeneric()

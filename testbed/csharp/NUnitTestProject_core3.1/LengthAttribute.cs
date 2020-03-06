@@ -44,7 +44,7 @@ namespace NUnitTestProject_core
                     var attributes = property.GetCustomAttributes(true);
                     foreach (var attribute in attributes)
                     {
-                        var maxinumLength = (int)attribute.GetType().
+                        var maxinumLength = (int)(attribute.GetType()).
                           GetProperty("MaximumLength").
                           GetValue(attribute);
 

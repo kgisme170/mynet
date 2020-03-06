@@ -12,7 +12,17 @@ namespace NUnitTestProject_core
     {
         public static DirectoryInfo GetExecutingDirectory()
         {
-            var location = new Uri(Assembly.GetEntryAssembly().GetName().CodeBase);
+            var assembly = Assembly.GetEntryAssembly();
+            if (assembly == null)
+            {
+                throw new Exception("cannot find exe assembly");
+            }
+            var s = assembly.GetName().CodeBase;
+            if (s == null)
+            {
+                throw new Exception("cannot get assembly name");
+            }
+            var location = new Uri(s);
             return new FileInfo(location.AbsolutePath).Directory;
         }
         [Test]

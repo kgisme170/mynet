@@ -29,7 +29,7 @@ namespace NUnitTestProject_core
         {
             if (obj == null)
             {
-                return null;
+                return new byte[0];
             }
 
             MemoryStream ms = new MemoryStream();
