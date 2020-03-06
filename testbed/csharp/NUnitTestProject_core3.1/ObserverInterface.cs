@@ -13,7 +13,7 @@ namespace NUnitTestProject_core
             public int Y { get; set; }
             class PositionObserver : IObserver<Position>
             {
-                IDisposable _unsubscribe;
+                IDisposable? _unsubscribe;
                 readonly string _obName;
                 public PositionObserver(string obName)
                 {
@@ -30,7 +30,7 @@ namespace NUnitTestProject_core
 
                 public void Unsubscribe()
                 {
-                    _unsubscribe.Dispose();
+                    _unsubscribe!.Dispose();
                 }
 
                 // implement interface
