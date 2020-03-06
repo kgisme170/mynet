@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
 namespace NUnitTestProject_core
 {
@@ -18,11 +19,11 @@ namespace NUnitTestProject_core
         {
             T GetDefault();
         }
-        class MyList<T> : IMyEnumberable<T>
+        class MyList<T> : IMyEnumberable<T> where T: class
         {
             public T GetDefault()
             {
-                return default;
+                return default!;
             }
         }
         [Test]
