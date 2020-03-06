@@ -25,10 +25,10 @@ namespace NUnitTestProject_core
         public class People
         {
             [StringLength(5)]
-            public string Name { get; set; }
+            public string Name { get; set; } = string.Empty;
 
             [StringLength(20)]
-            public string Description { get; set; }
+            public string Description { get; set; } = string.Empty;
         }
         public class ValidationModel
         {

@@ -10,18 +10,18 @@ namespace NUnitTestProject_core
         [StringLength(20)]
         [RegularExpression(@"^[A-Z]{5, 20}$")]
         [DataType(DataType.Text)]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         [System.ComponentModel.DataAnnotations.Range(0, 120, ErrorMessage = "Age between 0 to 120")]
         public int Age { get; set; }
 
         [DataType(DataType.PhoneNumber)]
         [Phone]
-        public string Cell { get; set; }
+        public string Cell { get; set; } = string.Empty;
 
         [DataType(DataType.EmailAddress)]
         [EmailAddress]
-        public string Email { get; set; }
+        public string Email { get; set; } = string.Empty;
 
         [Test]
         public static void TestDataAnnotations()

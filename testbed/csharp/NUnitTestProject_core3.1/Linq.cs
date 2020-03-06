@@ -191,14 +191,14 @@ namespace NUnitTestProject_core
 
         class Person
         {
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
+            public string FirstName { get; set; } = string.Empty;
+            public string LastName { get; set; } = string.Empty;
         }
 
         class Pet
         {
-            public string Name { get; set; }
-            public Person Owner { get; set; }
+            public string Name { get; set; } = string.Empty;
+            public Person Owner { get; set; } = string.Empty;
         }
         public static void XElement()
         {
@@ -238,13 +238,13 @@ namespace NUnitTestProject_core
 
         class Employee
         {
-            public string EmpName { get; set; }
+            public string EmpName { get; set; } = string.Empty;
             public int DeptId { get; set; }
         }
         class Department
         {
             public int DeptId { get; set; }
-            public string DeptName { get; set; }
+            public string DeptName { get; set; } = string.Empty;
         }
         public static void Join()
         {
@@ -538,12 +538,12 @@ namespace NUnitTestProject_core
             {
                 get;
                 set;
-            }
+            } = string.Empty;
             public string LastName
             {
                 get;
                 set;
-            }
+            } = string.Empty;
         }
         private static void PrintNames(IEnumerable<User> users)
         {
@@ -643,8 +643,8 @@ namespace NUnitTestProject_core
         class Content
         {
             public int Id { get; set; }
-            public string Inst { get; set; }
-            public string Name { get; set; }
+            public string Inst { get; set; } = string.Empty;
+            public string Name { get; set; } = string.Empty;
             public override string ToString()
             {
                 return "id=" + Id + ",inst=" + Inst + ",name=" + Name;

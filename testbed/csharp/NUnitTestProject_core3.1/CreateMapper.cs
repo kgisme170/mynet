@@ -8,14 +8,14 @@ namespace NUnitTestProject_core
     {
         class Person
         {
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
+            public string FirstName { get; set; } = string.Empty;
+            public string LastName { get; set; } = string.Empty;
         }
         class Employee
         {
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
-            public string Salary { get; set; }
+            public string FirstName { get; set; } = string.Empty;
+            public string LastName { get; set; } = string.Empty;
+            public string Salary { get; set; } = string.Empty;
         }
         [Test]
         public static void TestCreateMapper()
