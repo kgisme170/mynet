@@ -31,56 +31,6 @@ namespace NUnitTestProject_standard2
                 TaskScheduler.Default);
         }
 
-        private static Task<decimal> LongRunningCancellableOperation(int loop, CancellationToken cancellationToken)
-        {
-            Task<decimal> task = null;
-
-            // Start a task and return it
-            task = Task.Run(() =>
-            {
-                decimal result = 0;
-
-                // Loop for a defined number of iterations
-                for (int i = 0; i < loop; i++)
-                {
-                    // Check if a cancellation is requested, if yes,
-                    // throw a TaskCanceledException.
-
-                    if (cancellationToken.IsCancellationRequested)
-                        throw new TaskCanceledException(task);
-
-                    // Do something that takes times like a Thread.Sleep in .NET Core 2.
-                    Thread.Sleep(10);
-                    result += i;
-                }
-
-                return result;
-            });
-
-            return task;
-        }
-
-        public static async Task ExecuteTaskWithTimeoutAsync(TimeSpan timeSpan)
-        {
-            Console.WriteLine(nameof(ExecuteTaskWithTimeoutAsync));
-
-            using (var cancellationTokenSource = new CancellationTokenSource(timeSpan))
-            {
-                try
-                {
-                    var result = await LongRunningCancellableOperation(500, cancellationTokenSource.Token);
-                    Console.WriteLine("Result {0}", result);
-                    cancellationTokenSource.Cancel();
-                }
-                catch (TaskCanceledException)
-                {
-                    Console.WriteLine("Task was cancelled");
-                }
-            }
-            Console.WriteLine("Press enter to continue");
-            Console.ReadLine();
-        }
-
         static T Swap<T>(ref T lhs, ref T rhs)
         {
             T temp;
@@ -102,9 +52,6 @@ namespace NUnitTestProject_standard2
             System.Diagnostics.Debug.WriteLine(task01.Result.Count);
             Assert.Equals(3, task01.Result.Count);
             Console.WriteLine(nameof(Test1));
-
-            Task t = ExecuteTaskWithTimeoutAsync(new TimeSpan(0, 0, 1)); // 1 seconds
-            t.Wait();
         }
 
         public async static void RunTest2()

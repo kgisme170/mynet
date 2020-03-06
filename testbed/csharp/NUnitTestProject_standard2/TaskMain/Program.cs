@@ -197,12 +197,12 @@ namespace TaskMain
             await Task.Delay(1000);
         }
 
-        public static async Task<Task> F6()
+        public static Task F6()
         {
             return Task.CompletedTask;
         }
 
-        public static void TestNewTas()
+        public static void TestNewTask()
         {
             var task = new Task(() => Thread.Sleep(TimeSpan.FromSeconds(3)));
             task.RunSynchronously();
@@ -327,7 +327,7 @@ namespace TaskMain
             task.Wait();
             Console.WriteLine(task.IsCompleted); //True
 
-            Task t = Task.Run(() => { throw null; });
+            Task t = Task.Run(() => { throw new Exception("Test01"); });
             try
             {
                 t.Wait();
