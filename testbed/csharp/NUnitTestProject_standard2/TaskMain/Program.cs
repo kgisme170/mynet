@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -8,6 +9,221 @@ namespace TaskMain
 {
     class Program
     {
+        public static Task F7(int i = 1)
+        {
+            if (i == 1)
+            {
+                return Task.CompletedTask;
+            }
+            return Task.Delay(1000);
+        }
+
+        public static void F8()
+        {
+            var cts = new CancellationTokenSource();
+            var logTask = new Task(() => Thread.Sleep(3000), cts.Token);
+            /*
+            Console.WriteLine(logTask.Status);
+            cts.Cancel();
+            Console.WriteLine(logTask.Status);
+            logTask.RunSynchronously();
+            */
+            logTask.Start();
+            Thread.Sleep(1000);
+            Console.WriteLine("After sleeping 1s");
+            Console.WriteLine(logTask.Status);
+            cts.Cancel();
+            Thread.Sleep(1000);
+            Console.WriteLine("After sleeping 1s");
+            Console.WriteLine(logTask.Status);
+
+            Thread.Sleep(3000);
+            Console.WriteLine(logTask.Status);
+            Console.WriteLine("After sleeping 3s");
+        }
+
+        interface IMy
+        {
+            Task<int> DosthAsync();
+        }
+
+        public class My : IMy
+        {
+            public Task<int> DosthAsync()
+            {
+                return Task.FromResult(1);
+            }
+        }
+
+        public static Task<int> GetValueFromCache(int key)
+        {
+            if (key == 1)
+            {
+                return Task.FromResult(key);
+            }
+            return GetAsync(key);
+        }
+
+        public static async Task<int> GetAsync(int key)
+        {
+            await Task.Delay(0);
+            return key;
+        }
+        public static async Task<int> F01(int i)
+        {
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            if (i == 1)
+            {
+                throw new Exception("ok");
+            }
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            return 2;
+        }
+
+        public static void UseBgWorker()
+        {
+            var bgworker = new BackgroundWorker()
+            {
+                WorkerSupportsCancellation = true
+            };
+            bgworker.DoWork += (object sender, DoWorkEventArgs e) =>
+            {
+                Console.WriteLine("Begin bgworker sleep {0}", DateTime.Now);
+                Thread.Sleep(15000);
+                Console.WriteLine("bgworker ends {0}", DateTime.Now);
+            };
+            bgworker.RunWorkerAsync();
+            Console.WriteLine(bgworker.CancellationPending);
+            Thread.Sleep(3000);
+            Console.WriteLine("Call cancel {0}", DateTime.Now);
+            Console.WriteLine(bgworker.CancellationPending);
+            Console.WriteLine("-----------");
+            bgworker.CancelAsync();
+            Console.WriteLine(bgworker.CancellationPending);
+            Console.WriteLine(bgworker.CancellationPending);
+            Thread.Sleep(3000);
+            Console.WriteLine(bgworker.CancellationPending);
+            Console.WriteLine("main ends {0}", DateTime.Now);
+        }
+
+        public class CustomException : Exception
+        {
+            public CustomException(string message) : base(message)
+            { }
+        }
+
+        public static void F2()
+        {
+            var task1 = Task.Factory.StartNew(() => {
+                var child1 = Task.Factory.StartNew(() => {
+                    var child2 = Task.Factory.StartNew(() => {
+                        // This exception is nested inside three AggregateExceptions.
+                        throw new CustomException("Attached child2 faulted.");
+                    }, TaskCreationOptions.AttachedToParent);
+
+                    // This exception is nested inside two AggregateExceptions.
+                    throw new CustomException("Attached child1 faulted.");
+                }, TaskCreationOptions.AttachedToParent);
+            });
+
+            try
+            {
+                task1.Wait();
+            }
+            catch (AggregateException ae)
+            {
+                foreach (var e in ae.Flatten().InnerExceptions)
+                {
+                    if (e is CustomException)
+                    {
+                        Console.WriteLine(e.Message);
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+            }
+        }
+
+        public static void F3()
+        {
+            Console.WriteLine("hi");
+
+            try
+            {
+                var task = F01(1);
+                task.Wait();
+            }
+            /*
+            catch (AggregateException e)
+            {
+                Console.WriteLine(e.Message);
+            }*/
+            catch (Exception e)
+            {
+                Console.WriteLine(e.GetType().Name);
+                Console.WriteLine(e.Message);
+            }
+        }
+
+        public static async Task<int> F4()
+        {
+            await Task.Delay(1000);
+            return await Task<int>.Run(() =>
+            {
+                Console.WriteLine("");
+                return 2;
+            }); // CompletedTask;
+        }
+
+        public static async Task F5()
+        {
+            await Task.Delay(1000);
+        }
+
+        public static async Task<Task> F6()
+        {
+            return Task.CompletedTask;
+        }
+
+        public static void TestNewTas()
+        {
+            var task = new Task(() => Thread.Sleep(TimeSpan.FromSeconds(3)));
+            task.RunSynchronously();
+            Task.WaitAll(task);
+        }
+
+        public static async Task TaskTest()
+        {
+            try
+            {
+                await Task.Delay(8000, tokenSource.Token);
+            }
+            catch (TaskCanceledException e)
+            {
+                Console.WriteLine("catch task cancellation {0}", e.Message);
+            }
+
+            Console.WriteLine("task done");
+        }
+
+        static CancellationTokenSource tokenSource = new CancellationTokenSource();
+
+        public static void TestCancelTask()
+        {
+            _ = TaskTest();
+            Console.WriteLine("Main not blocked");
+            var input = Console.ReadLine();
+            if (input == "s")
+            {
+                Console.WriteLine("Manual cancel begin");
+                tokenSource.Cancel();
+                Console.WriteLine("Manual cancel end");
+            }
+            Console.WriteLine("main done");
+        }
+
         static async Task<int> DelayAndReturnAsync(int val)
         {
             await Task.Delay(TimeSpan.FromSeconds(val));
