@@ -1,5 +1,5 @@
-﻿using Microsoft.VisualBasic.CompilerServices;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Reactive.Linq;
@@ -10,10 +10,9 @@ namespace TestRx
 {
     class Program
     {
-        // await and WaitAll
-
         public static void Main(string[] args)
         {
+
             /*
             IObservable<DateTimeOffset> timestamps =
                 Observable.Interval(TimeSpan.FromSeconds(1))

@@ -9,6 +9,21 @@ namespace TaskMain
 {
     class Program
     {
+        private void flatternList()
+        {
+            var listOfList = new List<List<int>>()
+            {
+                new List<int>() {1, 2, 3},
+                new List<int>() {4, 5},
+                new List<int>() {10, 20},
+            };
+            var flattern1 = listOfList.SelectMany(x => x).ToList();
+            Console.WriteLine(string.Join(",", flattern1));
+
+            var flattern2 = from list in listOfList from item in list select item;
+            Console.WriteLine(string.Join(",", flattern2));
+        }
+
         public static Task F7(int i = 1)
         {
             if (i == 1)
