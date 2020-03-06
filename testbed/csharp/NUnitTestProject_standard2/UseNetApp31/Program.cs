@@ -158,7 +158,7 @@ namespace UseNetApp31
         public static void SetupUsingCertFile(
             string vcName,
             string certFilePath,
-            SecureString password = null)
+            SecureString password)
         {
             if (string.IsNullOrEmpty(vcName))
             {
@@ -214,7 +214,7 @@ namespace UseNetApp31
         public static bool TrySetupUsingCertFile(
             string vcName,
             string certFilePath,
-            SecureString password = null)
+            SecureString password)
         {
             try
             {
