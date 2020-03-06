@@ -6,20 +6,23 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace NUnitTestProject_core
 {
-    [Serializable]
     class Inner
     {
-        public readonly int mI;
-        public readonly string s = "abc";
-        public Inner(int i) { mI = i; }
+        public int Mi { get; set; }
+
+        public string S = string.Empty;
+        public string T = string.Empty;
+
+        public Inner(int i, string t) { Mi = i; T = t; }
     }
     [Serializable]
     class Outter
     {
+        [NonSerialized]
         public readonly List<Inner> li = new List<Inner>()
         {
-            new Inner(2),
-            new Inner(3)
+            new Inner(2, ""),
+            new Inner(3, "")
         };
     }
 
@@ -50,7 +53,7 @@ namespace NUnitTestProject_core
             byte[] bytes = ObjectToByteArray(o);
 
             Outter obj = (Outter)ByteArrayToObject(bytes);
-            Assert.AreEqual(3, obj.li[1].mI);
+            Assert.AreEqual(3, obj.li[1].Mi);
         }
     }
 }
