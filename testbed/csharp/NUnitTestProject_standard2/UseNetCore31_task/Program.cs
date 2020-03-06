@@ -14,37 +14,13 @@ namespace TestRx
     {
         
     }
+
     class Program
     {
-        test !
-        private static async Task ProcessAsync(string s)
-        {
-            Console.WriteLine("call function");
-            if (s == null)
-            {
-                Console.WriteLine("throw");
-                throw new ArgumentNullException("s");
-            }
-            Console.WriteLine("print");
-            await Task.Run(() => Console.WriteLine(s));
-            Console.WriteLine("end");
-        }
-
-        private static async void Caller()
-        {
-            try
-            {
-                await ProcessAsync("");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-        }
-
         public static void Main(string[] args)
         {
-            Caller();
+            int?[] data = { 1, null, 18, 22, 255 };
+            var result = data.OfType<int>();
             var o = Observable.Create<int>(ob =>
             {
                 for (int i = 0; i < 5; ++i)

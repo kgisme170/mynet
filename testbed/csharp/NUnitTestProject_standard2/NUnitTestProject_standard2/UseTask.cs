@@ -88,5 +88,43 @@ namespace NUnitTestProject_standard2
             Console.WriteLine(r1);
             Console.WriteLine(r2);
         }
+
+        private static async Task ProcessAsync(string s)
+        {
+            Console.WriteLine("call function");
+            if (s == null)
+            {
+                Console.WriteLine("throw");
+                throw new ArgumentNullException("s");
+            }
+            Console.WriteLine("print");
+            await Task.Run(() => Console.WriteLine(s));
+            Console.WriteLine("end");
+        }
+
+        private static async void Caller()
+        {
+            try
+            {
+                await ProcessAsync("");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+
+        class You
+        {
+            private int M = 2;
+            public void print() { Console.WriteLine(M); }
+            public void print2() { Console.WriteLine("2"); }
+        }
+        public static void F01()
+        {
+            You? y = null;
+            y!.print2();
+            y!.print();
+        }
     }
 }
