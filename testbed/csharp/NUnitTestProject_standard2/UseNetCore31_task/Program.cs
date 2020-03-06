@@ -4,13 +4,19 @@ using System.ComponentModel;
 using System.Linq;
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace TestRx
 {
+    interface IMy
+    {
+        
+    }
     class Program
     {
+        test !
         private static async Task ProcessAsync(string s)
         {
             Console.WriteLine("call function");

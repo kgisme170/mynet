@@ -1,8 +1,5 @@
 ﻿using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace NUnitTestProject_core
 {
@@ -44,9 +41,9 @@ namespace NUnitTestProject_core
                     var attributes = property.GetCustomAttributes(true);
                     foreach (var attribute in attributes)
                     {
-                        var maxinumLength = (int)(attribute.GetType()).
-                          GetProperty("MaximumLength").
-                          GetValue(attribute);
+                        var type = attribute.GetType();
+                        var prop = type.GetProperty("MaximumLength")!.GetValue(attribute);
+                        var maxinumLength = (int)prop!;
 
                         if (!(property.GetValue(obj) is string propertyValue))
                         {
