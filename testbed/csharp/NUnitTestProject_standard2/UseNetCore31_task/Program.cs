@@ -15,6 +15,8 @@ namespace TestRx
     {
         public static void Main(string[] args)
         {
+            /*
+            Console.WriteLine("1..........");
             var o = Observable.Create<int>(ob =>
             {
                 for (int i = 0; i < 5; ++i)
@@ -24,42 +26,52 @@ namespace TestRx
                 ob.OnCompleted();
                 return Disposable.Empty;
             });
-            o.Subscribe(Console.WriteLine);
+            o.Subscribe(Console.Write);
+            Console.WriteLine("\n2..........");
+            Observable.Generate(
+                0,              //initial state
+                i => i < 10,    //condition (false means terminate)
+                i => i + 1,     //next iteration step
+                i => i * 2).Subscribe(Console.Write);
+            Console.WriteLine("\n3..........");
+            Observable.Range(0, 10).Select(i => i * 2).Subscribe(Console.Write);
+            Console.WriteLine("\n4..........");
+            Observable.Return("Hello World").Subscribe(Console.Write);
+            Console.WriteLine("\n5..........");
+            Observable.Never<string>().Subscribe(Console.Write);
+            Observable.Empty<string>().Subscribe(Console.Write);
+            Console.WriteLine("\n6..........");
+            Enumerable.Range(1, 10).ToObservable().Subscribe(Console.Write);
+            Console.WriteLine("\n7..........");
+            */
 
-            IObservable<int> o1 =
-                Observable.Generate(
-                    0,              //initial state
-                    i => i < 10,    //condition (false means terminate)
-                    i => i + 1,     //next iteration step
-                    i => i * 2);    //the value in each iteration
+            /*
+            Observable.Throw<ApplicationException>(
+                new ApplicationException("something bad happened")
+                ).Subscribe(Console.WriteLine);
+            */
 
-            IObservable<int> o2 = Observable.Range(0, 10).Select(i => i * 2);
-
-            var o3 = Observable.Return("Hello World");//创建单个元素的可观察序列
-            var o4 = Observable.Never<string>();//创建一个空的永远不会结束的可观察序列
-            var o5 = Observable.Throw<ApplicationException>(new ApplicationException("something bad happened"));//创建一个抛出指定异常的可观察序列
-            var o6 = Observable.Empty<string>();//创建一个空的立即结束的可观察序列
-
-            var o7 = Enumerable.Range(1, 10).ToObservable();
-
+            /*
             IObservable<string?> lines =
                 Observable.Using(
-                    () => File.OpenText("TextFile.txt"), // opens the file and returns the stream we work with
+                    () => File.OpenText("m.txt"),
                     stream =>
                     Observable.Generate(
                         stream, //initial state
-                        s => !s.EndOfStream, //we continue until we reach the end of the file
+                        s => !s.EndOfStream,
                         s => s, //the stream is our state, it holds the position in the file 
                         s => s.ReadLine()) //each iteration will emit the current line (and moves to the next)
                 );
-            /*
+            lines.Subscribe(Console.WriteLine);
+            Environment.Exit(0);
+            */
+
             IObservable<DateTimeOffset> timestamps =
                 Observable.Interval(TimeSpan.FromSeconds(1))
                 .Timestamp()
                 .Where(x => x.Value % 2 == 0)
                 .Select(x => x.Timestamp);
             timestamps.Subscribe(x => Console.WriteLine(x));
-            */
 
             var timer = Observable.Timer(dueTime: TimeSpan.FromSeconds(2),
                 period: TimeSpan.FromSeconds(1));
