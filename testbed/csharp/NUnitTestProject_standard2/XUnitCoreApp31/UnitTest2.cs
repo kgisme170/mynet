@@ -29,7 +29,6 @@ namespace XUnitCoreApp31
         public static void UseMock()
         {
             var mock = new Mock<IFoo>();
-            /*
             mock.Setup(foo => foo.DoSomething("ping")).Returns(true);
             mock.Setup(foo => foo.DoSomething("reset")).Throws<InvalidOperationException>();
             mock.Setup(foo => foo.DoSomething("")).Throws(new ArgumentException("command"));
@@ -41,10 +40,9 @@ namespace XUnitCoreApp31
             mock.Setup(foo => foo.Submit(ref instance)).Returns(true);
             mock.Setup(x => x.DoSomethingStringy(It.IsAny<string>())).Returns((string s) => s.ToLower());
             mock.Setup(foo => foo.GetCount()).Returns(() => 1);
-            */
-            // mock.Setup(foo => foo.Name).Returns("bar");
+            mock.Setup(foo => foo.Name).Returns("bar");
             mock.SetupSet(foo => foo.Name = "foo");
-            mock.VerifySet(foo => foo.Name = "foo");
+            mock.VerifySet(foo => foo.Name = "foo"); // TODO
 
             mock.SetupProperty(f => f.Name);
             mock.SetupProperty(f => f.Name, "foo");
