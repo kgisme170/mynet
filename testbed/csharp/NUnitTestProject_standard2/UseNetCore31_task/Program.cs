@@ -13,38 +13,9 @@ namespace TestRx
 {
     class Program
     {
+
         public static void Main(string[] args)
         {
-            /*
-            Console.WriteLine("1..........");
-            var o = Observable.Create<int>(ob =>
-            {
-                for (int i = 0; i < 5; ++i)
-                {
-                    ob.OnNext(i);
-                }
-                ob.OnCompleted();
-                return Disposable.Empty;
-            });
-            o.Subscribe(Console.Write);
-            Console.WriteLine("\n2..........");
-            Observable.Generate(
-                0,              //initial state
-                i => i < 10,    //condition (false means terminate)
-                i => i + 1,     //next iteration step
-                i => i * 2).Subscribe(Console.Write);
-            Console.WriteLine("\n3..........");
-            Observable.Range(0, 10).Select(i => i * 2).Subscribe(Console.Write);
-            Console.WriteLine("\n4..........");
-            Observable.Return("Hello World").Subscribe(Console.Write);
-            Console.WriteLine("\n5..........");
-            Observable.Never<string>().Subscribe(Console.Write);
-            Observable.Empty<string>().Subscribe(Console.Write);
-            Console.WriteLine("\n6..........");
-            Enumerable.Range(1, 10).ToObservable().Subscribe(Console.Write);
-            Console.WriteLine("\n7..........");
-            */
-
             /*
             Observable.Throw<ApplicationException>(
                 new ApplicationException("something bad happened")
