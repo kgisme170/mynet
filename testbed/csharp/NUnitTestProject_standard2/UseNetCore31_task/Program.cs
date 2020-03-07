@@ -12,24 +12,6 @@ namespace TestRx
 {
     class Program
     {
-        public static async Task Throw01()
-        {
-            await Task.Delay(0);
-            throw new Exception("ok");
-        }
-
-        public static async Task Catch()
-        {
-            try
-            {
-                await Throw01();
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-        }
-
         public static async Task Main(string[] args)
         {
             await Catch();
