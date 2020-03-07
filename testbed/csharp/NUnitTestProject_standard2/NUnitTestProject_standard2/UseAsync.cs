@@ -1,13 +1,15 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Globalization;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace TaskMain
 {
-    class Program
+    class UseAsync
     {
         private void flatternList()
         {
@@ -24,6 +26,7 @@ namespace TaskMain
             Console.WriteLine(string.Join(",", flattern2));
         }
 
+        [Test]
         public static Task F7(int i = 1)
         {
             if (i == 1)
@@ -33,6 +36,7 @@ namespace TaskMain
             return Task.Delay(1000);
         }
 
+        [Test]
         public static void F8()
         {
             var cts = new CancellationTokenSource();
@@ -70,6 +74,7 @@ namespace TaskMain
             }
         }
 
+        [Test]
         public static Task<int> GetValueFromCache(int key)
         {
             if (key == 1)
@@ -84,6 +89,8 @@ namespace TaskMain
             await Task.Delay(0);
             return key;
         }
+
+        [Test]
         public static async Task<int> F01(int i)
         {
             await Task.Delay(TimeSpan.FromSeconds(3));
@@ -95,6 +102,7 @@ namespace TaskMain
             return 2;
         }
 
+        [Test]
         public static void UseBgWorker()
         {
             var bgworker = new BackgroundWorker()
@@ -126,7 +134,8 @@ namespace TaskMain
             public CustomException(string message) : base(message)
             { }
         }
-
+        
+        [Test]
         public static void F2()
         {
             var task1 = Task.Factory.StartNew(() => {
@@ -161,6 +170,7 @@ namespace TaskMain
             }
         }
 
+        [Test]
         public static void F3()
         {
             Console.WriteLine("hi");
@@ -182,6 +192,7 @@ namespace TaskMain
             }
         }
 
+        [Test]
         public static async Task<int> F4()
         {
             await Task.Delay(1000);
@@ -225,6 +236,7 @@ namespace TaskMain
 
         static CancellationTokenSource tokenSource = new CancellationTokenSource();
 
+        [Test]
         public static void TestCancelTask()
         {
             _ = TaskTest();
@@ -251,6 +263,7 @@ namespace TaskMain
             Console.WriteLine(result);
         }
 
+        [Test]
         static async Task ProcessTaskAsync()
         {
             Task<int> taskA = DelayAndReturnAsync(4);
@@ -283,6 +296,7 @@ namespace TaskMain
             return x;
         }
 
+        [Test]
         public static async Task<int> TestTrippleTask()
         {
             Task<int> t1 = CalcAsync(6000, 6);
@@ -298,6 +312,7 @@ namespace TaskMain
             return r1 + r2 + r3;
         }
 
+        [Test]
         public static void TestDoubleTask()
         {
             Task<int> t1 = CalcAsync(6000, 6);
@@ -316,6 +331,7 @@ namespace TaskMain
             return tcs.Task;
         }
 
+        [Test]
         public static void Test01()
         {
             Task task = Task.Run(() =>
@@ -344,7 +360,8 @@ namespace TaskMain
             TestDoubleTask();
         }
 
-        public static void Main(string[] args)
+        [Test]
+        public static void T()
         {
             Task<int> primeNumberTask = Task.Run(() =>
                 Enumerable.Range(2, 3000000).Count(
@@ -385,7 +402,8 @@ namespace TaskMain
             Console.WriteLine(task.Result);
             Console.Read();
         }
-
+        
+        [Test]
         public static void Main2(string[] args)
         {
             var awaiter = GetAnswerToLife2().GetAwaiter();
@@ -422,6 +440,7 @@ namespace TaskMain
             return "2秒以后";
         }
 
+        [Test]
         private void TaskCompleteSource()
         {
             var result = AwaitByTaskCompleteSource(TestWithResultAsync);

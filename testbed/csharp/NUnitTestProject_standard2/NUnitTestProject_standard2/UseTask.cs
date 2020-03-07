@@ -54,6 +54,7 @@ namespace NUnitTestProject_standard2
             Console.WriteLine(nameof(Test1));
         }
 
+        [Test]
         public async static void RunTest2()
         {
             var t = GetIntAsync();
@@ -72,6 +73,7 @@ namespace NUnitTestProject_standard2
             throw new Exception("ok");
         }
 
+        [Test]
         public static async Task Catch()
         {
             try
@@ -97,6 +99,7 @@ namespace NUnitTestProject_standard2
             return x;
         }
 
+        [Test]
         public static async void TestDoubleTask()
         {
             Task<int> t1 = CalcAsync(1000, 1);
@@ -120,6 +123,7 @@ namespace NUnitTestProject_standard2
             Console.WriteLine("end");
         }
 
+        [Test]
         private static async void Caller()
         {
             try
@@ -138,6 +142,8 @@ namespace NUnitTestProject_standard2
             public void print() { Console.WriteLine(M); }
             public void print2() { Console.WriteLine("2"); }
         }
+
+        [Test]
         public static void F01()
         {
             You? y = null;
