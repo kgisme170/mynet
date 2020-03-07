@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System;
+using System.Linq;
 
 namespace NUnitTestProject_standard2
 {
@@ -7,23 +8,23 @@ namespace NUnitTestProject_standard2
     {
         interface IMy
         {
-            void f();
+            void F();
         }
 
         interface IYou
         {
-            void f();
+            void F();
         }
 
         class My01 : IMy, IYou
         {
-            public void f() { Console.WriteLine("My01"); }
+            public void F() { Console.WriteLine("My01"); }
         }
 
         class My02 : IMy, IYou
         {
-            void IMy.f() { Console.WriteLine("My02"); }
-            void IYou.f() { Console.WriteLine("You02"); }
+            void IMy.F() { Console.WriteLine("My02"); }
+            void IYou.F() { Console.WriteLine("You02"); }
         }
 
         [Test]
@@ -31,21 +32,25 @@ namespace NUnitTestProject_standard2
         {
             Assert.Pass();
             var my = new My01();
-            my.f();
+            my.F();
             IMy im = my;
-            im.f();
+            im.F();
 
             var m = new My02();
             //m.f();
             IMy i01 = (IMy)m;
-            i01.f();
+            i01.F();
             IYou i02 = (IYou)m;
-            i02.f();
+            i02.F();
 
             Environment.Exit(0);
 
             int?[] data = { 1, null, 18, 22, 255 };
             var result = data.OfType<int>();
+            foreach (var r in result)
+            {
+                Console.WriteLine(r);
+            }
         }
     }
 }
