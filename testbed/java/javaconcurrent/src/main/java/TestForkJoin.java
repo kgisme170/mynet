@@ -1,31 +1,28 @@
 import java.util.concurrent.*;
 public class TestForkJoin extends RecursiveTask<Long> {
-    /**
-     *
-     */
     private static final long serialVersionUID = 1L;
-    private static final long THRESHOLD = 10000;
+    private static final long PARTITION = 10000;
     private static final long LOOPEND = 100000000;
-    private final long start;
-    private final long end;
+    private final long from;
+    private final long to;
 
-    public TestForkJoin(final long start, final long end) {
-        this.start = start;
-        this.end = end;
+    public TestForkJoin(final long from, final long to) {
+        this.from = from;
+        this.to = to;
     }
 
     @Override
     protected Long compute() {
         long sum = 0;
-        final boolean canComplute = (end - start) <= THRESHOLD;
+        final boolean canComplute = (to - from) <= PARTITION;
         if (canComplute) {
-            for (long i = start; i <= end; i++) {
+            for (long i = from; i <= to; ++i) {
                 sum += i;
             }
         } else {
-            final long middle = (start + end) / 2;
-            final TestForkJoin left = new TestForkJoin(start, middle);
-            final TestForkJoin right = new TestForkJoin(middle + 1, end);
+            final long middle = (from + to) / 2;
+            final TestForkJoin left = new TestForkJoin(from, middle);
+            final TestForkJoin right = new TestForkJoin(middle + 1, to);
             invokeAll(left, right);
             final long lResult = left.join();
             final long rRight = right.join();
@@ -52,7 +49,7 @@ public class TestForkJoin extends RecursiveTask<Long> {
 
         s = System.currentTimeMillis();
         long sum = 0;
-        for(int i = 1; i <= LOOPEND ; i++) {
+        for(long i = 1; i <= LOOPEND; ++i) {
             sum += i;
         }
         System.out.println("normal result：" + sum);
