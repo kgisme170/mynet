@@ -10,17 +10,10 @@ using System.Threading.Tasks;
 
 namespace TestRx
 {
-    interface IMy
-    {
-        
-    }
-
     class Program
     {
         public static void Main(string[] args)
         {
-            int?[] data = { 1, null, 18, 22, 255 };
-            var result = data.OfType<int>();
             var o = Observable.Create<int>(ob =>
             {
                 for (int i = 0; i < 5; ++i)
