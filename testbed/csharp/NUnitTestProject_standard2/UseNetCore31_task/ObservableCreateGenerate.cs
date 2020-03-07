@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
@@ -36,6 +37,22 @@ namespace UseNetCore31_task
             Console.WriteLine("\n6..........");
             Enumerable.Range(1, 10).ToObservable().Subscribe(Console.Write);
             Console.WriteLine("\n7..........");
+
+            Observable.Throw<ApplicationException>(
+                new ApplicationException("something bad happened")
+                ).Subscribe(Console.WriteLine);
+            IObservable<string?> lines =
+                Observable.Using(
+                    () => File.OpenText("m.txt"),
+                    stream =>
+                    Observable.Generate(
+                        stream, //initial state
+                        s => !s.EndOfStream,
+                        s => s, //the stream is our state, it holds the position in the file 
+                        s => s.ReadLine()) //each iteration will emit the current line (and moves to the next)
+                );
+            lines.Subscribe(Console.WriteLine);
+            Environment.Exit(0);
         }
     }
 }
