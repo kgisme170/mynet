@@ -12,11 +12,8 @@ namespace TestRx
 {
     class Program
     {
-        public static async Task Main(string[] args)
+        public static void Main(string[] args)
         {
-            await Catch();
-            Environment.Exit(0);
-
             var o = Observable.Create<int>(ob =>
             {
                 for (int i = 0; i < 5; ++i)
