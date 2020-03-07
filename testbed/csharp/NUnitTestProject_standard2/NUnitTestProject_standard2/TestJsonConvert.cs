@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
 using Newtonsoft.Json;
 
 namespace UseNewtonSoftJson
@@ -10,9 +11,10 @@ namespace UseNewtonSoftJson
         public string MyStr { get; set; } = string.Empty;
     }
 
-    public static class Program
+    public static class TestJsonConvert
     {
-        public static void Main(string[] args)
+        [Test]
+        public static void Convert(string[] args)
         {
             Console.WriteLine("Hello World!");
             MyClass myClass = new MyClass { MyNum = 10, MyStr = "Hello World" };
