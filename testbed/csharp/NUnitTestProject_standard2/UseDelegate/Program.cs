@@ -18,6 +18,7 @@ namespace UseDelegate
         {
             var i = new Inner();
             Func<int> f = i.F;
+            var f1 = (Func<int>)i.F;
             Action g = i.G;
             f();
             g();
