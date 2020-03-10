@@ -71,6 +71,29 @@ namespace TestRx
 
         static void Main(string[] args)
         {
+            var list = new List<int> { 1, 3, 6, 7, 9, 8, 12, 5, 1, 3, 6, 7, 9, 8, 12, 5 };
+            //Parallel.ForEach(list, i => Console.WriteLine(i));
+            /*
+            Parallel.ForEach(list, (i, state) =>
+            {
+                if (i == 7)
+                {
+                    state.Stop();
+                }
+                else
+                    Console.WriteLine(i);
+            });
+            */
+            var tokenSource = new CancellationTokenSource();
+            Parallel.ForEach(list, new ParallelOptions { CancellationToken = tokenSource.Token }, i =>
+            {
+                Thread.Sleep(500);
+                Console.WriteLine(i);
+            });
+        }
+        
+        public void UnhandledException()
+        {
             var task = Task.Run(() => { throw new Exception("This exception is expected!"); });
             AppDomain.CurrentDomain.UnhandledException += (object sender, UnhandledExceptionEventArgs e) =>
             {
