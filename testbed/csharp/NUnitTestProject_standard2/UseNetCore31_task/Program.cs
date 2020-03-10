@@ -90,6 +90,8 @@ namespace TestRx
                 Thread.Sleep(500);
                 Console.WriteLine(i);
             });
+            var ag = list.AsParallel().Aggregate(seed: 0, func: (sum, item) => sum + item);
+            Console.WriteLine(ag);
         }
         
         public void UnhandledException()
