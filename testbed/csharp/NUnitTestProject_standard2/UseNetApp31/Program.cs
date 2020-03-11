@@ -7,6 +7,16 @@ using System.Security;
 using System.Security.Cryptography.X509Certificates;
 using VcClient;
 
+/*
+ * Test parameter setup:
+ * (1) Prod: Copy d:\copy.json https://cosmos08.osdinfra.net/cosmos/adcenter.bicore.prod2 xx d:\copy.result.json
+ * (2) Dev: Copy d:\copy_dev.json https://cosmos08.osdinfra.net/cosmos/sharedData.Ads.Dev xx d:\copy_dev.result.json
+ *          Move d:\move_dev.json https://cosmos08.osdinfra.net/cosmos/sharedData.Ads.Dev xx d:\move_dev.result.json
+ *          List d:\list_dev.json https://cosmos08.osdinfra.net/cosmos/sharedData.Ads.Dev xx d:\list_dev.result.json
+ *          Delete d:\delete_dev.json https://cosmos08.osdinfra.net/cosmos/sharedData.Ads.Dev xx d:\delete_dev.result.json
+ *          ChangeExpiryTime d:\expiry_dev.json https://cosmos08.osdinfra.net/cosmos/sharedData.Ads.Dev xx d:\expiry_dev.result.json
+ */
+
 namespace UseNetApp31
 {
     class Program
