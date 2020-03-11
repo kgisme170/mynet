@@ -14,33 +14,13 @@ namespace TestRx
 {
     class Program
     {
-        public static async Task Main(string[] args)
+        public static void Main(string[] args)
         {
-            var multiplyBlock = new TransformBlock<int, int>(x => x * 2);
-            var additionBlock = new TransformBlock<int, int>(x => x + 2);
-            multiplyBlock.LinkTo(additionBlock, new DataflowLinkOptions { PropagateCompletion = true });
 
-            multiplyBlock.Complete();
-            await additionBlock.Completion;
-
-            UseParallel();
         }
 
-        static void UseParallel()
+        static void UseTransformBlock()
         {
-            var printResult = new ActionBlock<int>(x =>
-            {
-                Console.WriteLine(x);
-            });
-            var countBytes = new TransformBlock<int, int>(
-                new Func<int, int>((x)=> { return 2 * x; }));
-            countBytes.LinkTo(printResult);
-            countBytes.Completion.ContinueWith(delegate { printResult.Complete(); });
-            countBytes.Complete();
-            printResult.Completion.Wait();
-            Console.ReadKey();
-            Environment.Exit(1);
-
             var list = new List<int> { 1, 3, 6, 7, 9, 8, 12, 5, 1, 3, 6, 7, 9, 8, 12, 5 };
             //Parallel.ForEach(list, i => Console.WriteLine(i));
             /*
