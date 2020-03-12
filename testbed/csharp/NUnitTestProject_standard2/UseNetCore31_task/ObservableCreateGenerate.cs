@@ -6,7 +6,7 @@ using System.Reactive.Linq;
 
 namespace UseNetCore31_task
 {
-    partial class Program
+    class UseObserver
     {
         private static void TestCreate()
         {

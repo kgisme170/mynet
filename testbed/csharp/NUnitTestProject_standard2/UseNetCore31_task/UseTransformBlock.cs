@@ -8,7 +8,7 @@ namespace UseNetCore31_task
     {
         static void Consume1()
         {
-            var multiplyBlock = new TransformBlock<int, int>(x => x * 2);
+            var multiplyBlock = new TransformBlock<int, int>(x => x * 2, new ExecutionDataflowBlockOptions { MaxDegreeOfParallelism = DataflowBlockOptions.Unbounded });
             var additionBlock = new TransformBlock<int, int>(x => x + 2);
             var outputBlock = new ActionBlock<int>(Console.WriteLine);
 

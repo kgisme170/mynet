@@ -33,7 +33,7 @@ namespace UseNetCore31_task
         }
     }
 
-    partial class Program
+    class UseIProgress
     {
         private static void Solve(IProgress<int> progress)
         {
@@ -44,7 +44,7 @@ namespace UseNetCore31_task
             }
         }
 
-        private static void UseIProgress()
+        private static void Test()
         {
             Solve(new Progress<int>(    // ctor parameter of Progress<> it
                 i => Console.Write(".") // Report function
