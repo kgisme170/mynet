@@ -29,7 +29,10 @@ namespace UseNetCore31_task
                 Thread.Sleep(500);
                 Console.WriteLine(i);
             });
-            var ag = list.AsParallel().Aggregate(seed: 0, func: (sum, item) => sum + item);
+            var ag = list
+                .AsParallel()
+                .WithCancellation(tokenSource.Token)
+                .Aggregate(seed: 0, func: (sum, item) => sum + item);
             Console.WriteLine(ag);
         }
     }

@@ -420,11 +420,14 @@ namespace TaskMain
             return tcs.Task;
         }
 
-        public static void UseParallel(IList<Task<int>> taskList)
+        public static void UseParallel(IList<Task<int>> taskList, CancellationToken token)
         {
             while (true)
             {
-                Parallel.ForEach(taskList, new Action<Task>(task =>
+                Parallel.ForEach(
+                    taskList,
+                    new ParallelOptions { CancellationToken = token },
+                    new Action<Task>(task =>
                 {
                     //...
                 }));

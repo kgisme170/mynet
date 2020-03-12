@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
 
@@ -66,6 +67,27 @@ namespace UseNetCore31_task
             {
                 Console.WriteLine(e.Message);
             }
+        }
+
+        static IPropagatorBlock<int, int> CreateMyCustomBlock(CancellationToken token)
+        {
+            var blockOptions = new ExecutionDataflowBlockOptions
+            {
+                CancellationToken = token,
+            };
+
+            var multiplyBlock = new TransformBlock<int, int>(x => x * 2, blockOptions);
+            var additionBlock = new TransformBlock<int, int>(x => x + 2, blockOptions);
+            var divisionBlock = new TransformBlock<int, int>(x => x / 2, blockOptions);
+
+            var flowCompletion = new DataflowLinkOptions
+            {
+                PropagateCompletion = true
+            };
+            multiplyBlock.LinkTo(additionBlock, flowCompletion);
+            additionBlock.LinkTo(divisionBlock, flowCompletion);
+
+            return DataflowBlock.Encapsulate(multiplyBlock, divisionBlock);
         }
     }
 }
