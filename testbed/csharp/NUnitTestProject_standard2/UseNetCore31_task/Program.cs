@@ -14,9 +14,29 @@ namespace TestRx
 {
     class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
+            try
+            {
+                var block = new TransformBlock<int, int>(x =>
+                {
+                    if (x == 1)
+                    {
+                        throw new Exception("transform");
+                    }
+                    return x * 2;
+                });
 
+                var outputBlock = new ActionBlock<int>(Console.WriteLine);
+                block.LinkTo(outputBlock, new DataflowLinkOptions { PropagateCompletion = true });
+                block.Post(4);
+                block.Complete();
+                await block.Completion;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
 
         static void UseTransformBlock()
