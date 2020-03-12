@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
 
 namespace UseNetCore31_task
 {
     class UseTransformBlock
     {
-        static void ConsumeTransformBlock()
+        static void Consume1()
         {
             var multiplyBlock = new TransformBlock<int, int>(x => x * 2);
             var additionBlock = new TransformBlock<int, int>(x => x + 2);
@@ -38,6 +37,35 @@ namespace UseNetCore31_task
             Console.WriteLine("Done");
             Console.ReadKey();
             Environment.Exit(1);
+        }
+
+        static async Task Consume3()
+        {
+            try
+            {
+                var block = new TransformBlock<int, int>(x =>
+                {
+                    if (x == 1)
+                    {
+                        throw new Exception("transform");
+                    }
+                    return x * 2;
+                });
+
+                var outputBlock = new ActionBlock<int>(Console.WriteLine);
+                using var link = block.LinkTo(outputBlock,
+                    new DataflowLinkOptions
+                    {
+                        PropagateCompletion = true,
+                    });// break link by link.Dispose()
+                block.Post(4);
+                block.Complete();
+                await block.Completion;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }
