@@ -33,7 +33,7 @@ namespace UseNetCore31_task
             countBytes.Post(1);
             printResult.Completion.ContinueWith(x => Console.WriteLine("printResult done"));
             countBytes.Completion.ContinueWith(x => Console.WriteLine("countBytes done"));
-            countBytes.Complete();
+            countBytes.Complete(); // start async task in the backend
             printResult.Completion.Wait();
             Console.WriteLine("Done");
             Console.ReadKey();
