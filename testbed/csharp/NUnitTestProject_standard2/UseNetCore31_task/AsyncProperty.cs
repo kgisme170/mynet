@@ -35,15 +35,5 @@ namespace UseNetCore31_task
         {
             Console.WriteLine(_value);
         }
-
-        public static void Test()
-        {
-            var p = new Program();
-            AsyncContext.Run(async () =>
-            {
-                await p.IncrementValue();
-                p.Print();
-            });
-        }
     }
 }

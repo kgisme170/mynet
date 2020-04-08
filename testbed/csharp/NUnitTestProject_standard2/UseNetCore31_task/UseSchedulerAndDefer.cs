@@ -9,9 +9,6 @@ namespace UseNetCore31_task
 {
     class UseSchedulerAndDefer
     {
-        public static void Main(string[] args)
-        {
-        }
         /*
         int _v0;
         readonly int Myv0 = _v0++;
