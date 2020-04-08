@@ -4,7 +4,7 @@ using Xunit;
 
 namespace XUnitCoreApp31
 {
-    public class UnitTest1
+    public class UseMock1
     {
         public interface IWebService
         {

@@ -1,10 +1,9 @@
 ﻿using Moq;
-using System;
 using Xunit;
 
 namespace XUnitCoreApp31
 {
-    public class UnitTest3
+    public class UseMockVerify
     {
         public interface IFoo
         {
